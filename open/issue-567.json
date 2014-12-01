@@ -1,0 +1,24 @@
+{
+  "status": "accepted",
+  "body": "What steps will reproduce the problem? 1. Attack with a creature\r\n2. if it's not blocked, use Ninjutsu\r\n3. Sakashima's Student is put onto battlefield as a 0/0 creature, most likely dying the very same moment (if you don't have a Glen Elandra Liege out there)",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Sakashima's Student: using its Ninjutsu ability creates a 0/0 creature",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 31, 2014 04:18:41",
+      "body": "Looking at the groovy, it's only been coded to trigger cloning when cast, not when it enters the battlefield via ninjutsu (or other means, eg flicker)\n\n**Status:** Accepted  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 31, 2014 16:43:23_\n\nWhat steps will reproduce the problem? 1. Attack with a creature\r\n2. if it's not blocked, use Ninjutsu\r\n3. Sakashima's Student is put onto battlefield as a 0/0 creature, most likely dying the very same moment (if you don't have a Glen Elandra Liege out there)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=567_",
+  "date": "2014-03-31T16:43:23",
+  "state": "open",
+  "gid": 567,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=567",
+  "owner": ""
+}

@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "It seems more natural to move the images folder setting from the preferences dialog to the download dialog. Rename the download dialog to [Card] Images Manager (or something). Display available free space for selected drive.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Move card images folder setting to download dialog.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 21, 2014 14:31:36_\n\nIt seems more natural to move the images folder setting from the preferences dialog to the download dialog. Rename the download dialog to [Card] Images Manager (or something). Display available free space for selected drive.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=658_",
+  "date": "2014-08-21T14:31:36",
+  "state": "open",
+  "gid": 658,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=658",
+  "owner": "lodici123"
+}

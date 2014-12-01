@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "What steps will reproduce the problem? 1. select card in deck.\r\n2. click Remove to remove first card from deck.\r\n3. click Remove to remove second card from deck. What is the expected output? What do you see instead? Should remove second card from deck. Instead displays \"Select a valid card in the deck to remove it\" message because the deck list entry has lost focus when Remove was clicked the first time.\r\n\r\nWith a mouse, the easiest way to remove a card is to double-click it.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "deck editor: removed card button just about unusable.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on December 05, 2013 22:32:43_\n\nWhat steps will reproduce the problem? 1. select card in deck.\r\n2. click Remove to remove first card from deck.\r\n3. click Remove to remove second card from deck. What is the expected output? What do you see instead? Should remove second card from deck. Instead displays \"Select a valid card in the deck to remove it\" message because the deck list entry has lost focus when Remove was clicked the first time.\r\n\r\nWith a mouse, the easiest way to remove a card is to double-click it.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=434_",
+  "date": "2013-12-05T22:32:43",
+  "state": "open",
+  "gid": 434,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=434",
+  "owner": "lodici123"
+}

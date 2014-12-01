@@ -1,0 +1,25 @@
+{
+  "status": "accepted",
+  "body": "This only really applies if the setting \"Popup card image using mouse wheel...\" is true in which case when the mouse cursor moves over a face down morph card on the battlefield show the front face to quickly see the type of morph card it is. This means you do not have to popup the card image via the mousewheel just to identify the card which is cumbersome if you have a number of face down morphs.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Show morph card on mouse over.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 08, 2014 06:53:45",
+      "body": "I'd hope this would be implemented with an additional option to turn it off. I use \"Popup card image using mouse wheel\", and wouldn't expect images to pop up when mouse-over when I have it selected.\r\n\r\nHow about... Instead of having a pop-up image for displaying morph cards on mouse-over. What about literally 'peeking' at the card by replacing the card image on mouse-over?",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 08, 2014 04:38:50_\n\nThis only really applies if the setting \"Popup card image using mouse wheel...\" is true in which case when the mouse cursor moves over a face down morph card on the battlefield show the front face to quickly see the type of morph card it is. This means you do not have to popup the card image via the mousewheel just to identify the card which is cumbersome if you have a number of face down morphs.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=642_",
+  "date": "2014-08-08T04:38:50",
+  "state": "open",
+  "gid": 642,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=642",
+  "owner": "lodici123"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "accepted",
+  "body": "this can initially be used to display the result of \"clash\" - both avatar images side by side with the revealed card image below each avatar and the result of the clash.\r\n\r\nmight be able to use similar feature to display the results of other actions.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "create gameplay resolution overlay for clash.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 10, 2014 08:06:11",
+      "body": "I'm thinking coin-flipping!\r\n\r\nAnd if you're feeling brave - 'piles' (No, not that kind)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 10, 2014 15:33:27_\n\nthis can initially be used to display the result of \"clash\" - both avatar images side by side with the revealed card image below each avatar and the result of the clash.\r\n\r\nmight be able to use similar feature to display the results of other actions.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=686_",
+  "date": "2014-09-10T15:33:27",
+  "state": "open",
+  "gid": 686,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=686",
+  "owner": "lodici123"
+}

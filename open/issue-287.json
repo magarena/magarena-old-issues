@@ -1,0 +1,40 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1.  Create a 100 card deck and save it\r\n2.  Attempt to load same deck on different play attempt What is the expected output? What do you see instead? Game immediatley crashes upon attempt to load the deck.  Decks with 100 cards or more in them cannot be edited. What version of the product are you using? On what operating system? Magarena 1.28 on Windows XP. If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[True.Str...@gmail.com](https://code.google.com/u/113611120031645723895/)",
+  "title": "100 card decks cause game to crash on attempted load",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 31, 2012 06:27:20",
+      "body": "Crash continues in 1.29, just confirmed\n\n**Attachment:** [crash.log game.log](http://code.google.com/p/magarena/issues/detail?id=287#hc1)",
+      "author": "[True.Str...@gmail.com](https://code.google.com/u/113611120031645723895/)"
+    },
+    {
+      "date": "September 01, 2012 06:49:12",
+      "body": "Please attach the deck that causes the crash as an attachment. Thanks!",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 02, 2012 14:46:20",
+      "body": "Here are two decks I've built containing a high volume of total cards.\n\n**Attachment:** [4color Angel.dec Dragon Conflux.dec](http://code.google.com/p/magarena/issues/detail?id=287#hc3)",
+      "author": "[True.Str...@gmail.com](https://code.google.com/u/113611120031645723895/)"
+    },
+    {
+      "date": "December 05, 2013 03:02:18",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [True.Str...@gmail.com](https://code.google.com/u/113611120031645723895/) on August 31, 2012 21:12:09_\n\nWhat steps will reproduce the problem? 1.  Create a 100 card deck and save it\r\n2.  Attempt to load same deck on different play attempt What is the expected output? What do you see instead? Game immediatley crashes upon attempt to load the deck.  Decks with 100 cards or more in them cannot be edited. What version of the product are you using? On what operating system? Magarena 1.28 on Windows XP. If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n**Attachment:** [crash.log](http://code.google.com/p/magarena/issues/detail?id=287)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=287_",
+  "date": "2012-08-31T21:12:09",
+  "state": "open",
+  "gid": 287,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=287",
+  "owner": ""
+}

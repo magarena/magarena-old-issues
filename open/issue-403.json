@@ -1,0 +1,44 @@
+{
+  "status": "accepted",
+  "body": "hong yie @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=10323&start=105#p131258 suggested\r\n\r\ndo we have someway to apply \"tap an untapped ... creature\" to pay a cost of ability before? i see many interesting cards use this \"tap\" to pay a cost of its ability",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "allow tap an untapped ... creature as cost",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 15, 2013 02:37:48",
+      "body": "**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 22, 2014 05:21:17",
+      "body": "we are already there, aren't we?",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 22, 2014 05:25:16",
+      "body": "Almost, we only support specifically \"tap an untapped creature you control\" I think a more complete solution should support \"tap an untapped <subtype> creature you control\" and other variants.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 22, 2014 05:51:04",
+      "body": "better: \"tap an untapped <subtype || type> you crontrol\"\r\n\r\nremember Benthicore? it doesn't necessarily need to be a creature to be tapped.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 22, 2014 06:29:47",
+      "body": "I see your \"tap an untapped <subtype || type> you control\" and raise you:\r\n\r\n    \"tap <amount> untapped <subtype || type> you control\"",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 15, 2013 17:36:53_\n\nhong yie @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=10323&start=105#p131258 suggested\r\n\r\ndo we have someway to apply \"tap an untapped ... creature\" to pay a cost of ability before? i see many interesting cards use this \"tap\" to pay a cost of its ability\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=403_",
+  "date": "2013-09-15T17:36:53",
+  "state": "open",
+  "gid": 403,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=403",
+  "owner": "melvinzh...@gmail.com"
+}

@@ -1,0 +1,29 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. Start a duel with a random color(s) deck\r\n2. Click \"Generate Deck\" What is the expected output? What do you see instead? Expected: Get a new random color(s) deck\r\nWhat you get: Always a random deck of the same color(s) you got at the start.\r\n\r\ne.g. you got a blue deck and every click on generate deck will get you a new blue deck. Why not a white or red one? The same goes for random colored decks of 2 or 3 colors. You will always get the same colors. What version of the product are you using? On what operating system? 1.27 on WinXP SP3",
+  "author": "[Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/)",
+  "title": "Generate Deck working as intended?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:42:48",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 04:09:41",
+      "body": "Not necessarily a UI issue. More a behind-the-scenes algorithm.\n\n**Labels:** -Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/) on July 27, 2012 22:11:31_\n\nWhat steps will reproduce the problem? 1. Start a duel with a random color(s) deck\r\n2. Click \"Generate Deck\" What is the expected output? What do you see instead? Expected: Get a new random color(s) deck\r\nWhat you get: Always a random deck of the same color(s) you got at the start.\r\n\r\ne.g. you got a blue deck and every click on generate deck will get you a new blue deck. Why not a white or red one? The same goes for random colored decks of 2 or 3 colors. You will always get the same colors. What version of the product are you using? On what operating system? 1.27 on WinXP SP3\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=266_",
+  "date": "2012-07-27T22:11:31",
+  "state": "open",
+  "gid": 266,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=266",
+  "owner": ""
+}

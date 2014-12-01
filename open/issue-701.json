@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "from @jerichopumpkin in forum ( http://www.slightlymagic.net/forum/viewtopic.php?f=115&t=15596&p=162942&sid=f23633a9ba6d50fb491e11cac69c8d62#p162819 ).",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Deck Editor: use mouse wheel to adjust card quantity.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 27, 2014 01:14:30_\n\nfrom @jerichopumpkin in forum ( http://www.slightlymagic.net/forum/viewtopic.php?f=115&t=15596&p=162942&sid=f23633a9ba6d50fb491e11cac69c8d62#p162819 ).\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=701_",
+  "date": "2014-09-27T01:14:30",
+  "state": "open",
+  "gid": 701,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=701",
+  "owner": "lodici123"
+}

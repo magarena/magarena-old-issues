@@ -1,0 +1,25 @@
+{
+  "status": "accepted",
+  "body": "Reported by jeffwadsworth @ http://www.slightlymagic.net/forum/viewtopic.php?t=3735&p=86032#p86032",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Rage Nimbus will use its ability on creatures with Defender",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "March 30, 2012 02:15:22",
+      "body": "Rage Nimbus uses MagicMustAttackTargetPicker and that returns a target score of -100 for permanents with the Defender ability. This fact and a few test games suggest that choosing a target with Defender is very rare so I'm not sure this is fixable without resorting to explicitly preventing such targets to be chosen at all.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on March 28, 2012 13:09:19_\n\nReported by jeffwadsworth @ http://www.slightlymagic.net/forum/viewtopic.php?t=3735&p=86032#p86032\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=197_",
+  "date": "2012-03-28T13:09:19",
+  "state": "open",
+  "gid": 197,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=197",
+  "owner": "melvinzh...@gmail.com"
+}

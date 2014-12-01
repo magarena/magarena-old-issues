@@ -1,0 +1,24 @@
+{
+  "status": "new",
+  "body": "When a spell or effect is cast and the target is one of 2 or more identical permanents, I have no idea which permanent is targeted. When you want to respond with an instant or an activated ability to make it indestructible or prevent damage, it turns into a guessing game.\r\n\r\n--------------\r\nThis happened to me:\r\n\r\nMe:\r\n2x Abuna Acolyte (T: prevent 1 damage)\r\n\r\nOpponent:\r\nZealot il-Vec (Shadow; when it deals damage to opponent you may have it deal 1 damage to target creature instead)\r\n\r\nOpponent \"redirects\" damage to Abuna Acolyte, or so the text says. But which one ? I guessed wrong, I assumed the one more on the left. They were both untapped and unbuffed.",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "Ambiguous target when there are 2+ permanents with the same name",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 18, 2012 01:56:29",
+      "body": "I've experience something similar before. Thanks for bringing this up to our attention.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on June 18, 2012 16:48:14_\n\nWhen a spell or effect is cast and the target is one of 2 or more identical permanents, I have no idea which permanent is targeted. When you want to respond with an instant or an activated ability to make it indestructible or prevent damage, it turns into a guessing game.\r\n\r\n--------------\r\nThis happened to me:\r\n\r\nMe:\r\n2x Abuna Acolyte (T: prevent 1 damage)\r\n\r\nOpponent:\r\nZealot il-Vec (Shadow; when it deals damage to opponent you may have it deal 1 damage to target creature instead)\r\n\r\nOpponent \"redirects\" damage to Abuna Acolyte, or so the text says. But which one ? I guessed wrong, I assumed the one more on the left. They were both untapped and unbuffed.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=228_",
+  "date": "2012-06-18T16:48:14",
+  "state": "open",
+  "gid": 228,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=228",
+  "owner": ""
+}

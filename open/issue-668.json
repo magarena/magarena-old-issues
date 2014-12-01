@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "The \"Large Card Images\" setting should have the following values...\r\n- None\r\n- Always\r\n- Full screen only\r\n\r\nI am always switching back and forth between full screen (1280 x 1024) and small screen (1024 x 600 ) views and the \"Full screen only\" option would be very useful since I like to see the images at full scale when there is space available. Probably not a major requirement for general use.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Extend \"Large Card Images\" setting.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 29, 2014 13:33:11_\n\nThe \"Large Card Images\" setting should have the following values...\r\n- None\r\n- Always\r\n- Full screen only\r\n\r\nI am always switching back and forth between full screen (1280 x 1024) and small screen (1024 x 600 ) views and the \"Full screen only\" option would be very useful since I like to see the images at full scale when there is space available. Probably not a major requirement for general use.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=668_",
+  "date": "2014-08-29T13:33:11",
+  "state": "open",
+  "gid": 668,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=668",
+  "owner": "lodici123"
+}

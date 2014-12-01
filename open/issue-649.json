@@ -1,0 +1,19 @@
+{
+  "status": "new",
+  "body": "During a game, rotating the mouse wheel forward will popup a full sized image of the card. If the card can be transformed or flipped then rotating the mouse wheel forward again should display the other side of the card. And so on.\r\n\r\nVersion 2 could use a spin/rotating animation.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Use mousewheel to show reverse side of card.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 11, 2014 18:35:46_\n\nDuring a game, rotating the mouse wheel forward will popup a full sized image of the card. If the card can be transformed or flipped then rotating the mouse wheel forward again should display the other side of the card. And so on.\r\n\r\nVersion 2 could use a spin/rotating animation.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=649_",
+  "date": "2014-08-11T18:35:46",
+  "state": "open",
+  "gid": 649,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=649",
+  "owner": "lodici123"
+}

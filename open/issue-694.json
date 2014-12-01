@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "AI is able to simulate the opponent activating the morph special action. Face down permanents needs to be hidden.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "non cheating AI knows real identity of morph permaments",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 16, 2014 08:21:52_\n\nAI is able to simulate the opponent activating the morph special action. Face down permanents needs to be hidden.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=694_",
+  "date": "2014-09-16T08:21:52",
+  "state": "open",
+  "gid": 694,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=694",
+  "owner": "melvinzh...@gmail.com"
+}

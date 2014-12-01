@@ -1,0 +1,35 @@
+{
+  "status": "new",
+  "body": "AI seems to make choices that are clearly and immediately detrimental to its game. In this case (see screenshot), it played Skinrender and had it put -1/-1 counters on its own creature, when it could have killed one of mine.\r\n\r\nPlaying against Monte Carlo(cheat), with AI level 8 (maximum) What version of the product are you using? On what operating system? Magarena 1.23 on WinXP",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "AI had Skinrender put -1/-1 counters on its own creature",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 25, 2012 18:42:46",
+      "body": "Thanks for the report, we will look into it.\n\n**Labels:** Component-AI  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 25, 2012 20:22:32",
+      "body": "Here's another example (see screenshot). AI chose a power 3 creature for Wall of Reverence effect, when it could have chosen power 5.\n\n**Attachment:** [wall-of-reverence.PNG](http://code.google.com/p/magarena/issues/detail?id=168#hc2)",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)"
+    },
+    {
+      "date": "February 26, 2012 17:00:52",
+      "body": "Here's another. AI plays Glorious Charge during my upkeep, while not having any creatures in play.\n\n**Attachment:** [glorious-charge.PNG](http://code.google.com/p/magarena/issues/detail?id=168#hc3)",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on February 26, 2012 05:43:09_\n\nAI seems to make choices that are clearly and immediately detrimental to its game. In this case (see screenshot), it played Skinrender and had it put -1/-1 counters on its own creature, when it could have killed one of mine.\r\n\r\nPlaying against Monte Carlo(cheat), with AI level 8 (maximum) What version of the product are you using? On what operating system? Magarena 1.23 on WinXP\n\n**Attachment:** [skinrender.PNG](http://code.google.com/p/magarena/issues/detail?id=168)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=168_",
+  "date": "2012-02-26T05:43:09",
+  "state": "open",
+  "gid": 168,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=168",
+  "owner": ""
+}

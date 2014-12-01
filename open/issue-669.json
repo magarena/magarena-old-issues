@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "Double-clicking a deck in the Decks screen should perform the same action as selecting a deck and clicking on the Select action.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Double click deck = select deck",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 30, 2014 04:00:15_\n\nDouble-clicking a deck in the Decks screen should perform the same action as selecting a deck and clicking on the Select action.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=669_",
+  "date": "2014-08-30T04:00:15",
+  "state": "open",
+  "gid": 669,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=669",
+  "owner": "lodici123"
+}

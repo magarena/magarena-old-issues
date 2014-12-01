@@ -1,0 +1,40 @@
+{
+  "status": "new",
+  "body": "I know this a bit of a big undertaking, for not a massive amount of benefit.\r\n\r\nCards being put together programmatically from images, text etc would help with older cards which have since been errata'd or have more legible oracle text.\r\n\r\nAlthough thinking about it - some kind of pop-up for oracle-type text would achieve the same thing.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Programatically Created Card Images",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "December 07, 2013 07:41:33",
+      "body": "Do you have some specific example cards where this is the case? My understanding is that if you regularly run the Download Images option you should never have missing cards. I could be wrong though. \r\n\r\nTo create a mock card image based on card info in the database would not be too difficult.\n\n**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 07, 2013 09:45:12",
+      "body": "It's not for cards without images - it's for legibility/revised ruling on older cards. One of the things that springs to mind is the 'Grand Creature-Type Update' - Lots of Humans were added among many other changes. Can't think right now of any older cards that have printed text very different to their oracle text which haven't been reprinted.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "December 07, 2013 18:35:36",
+      "body": "I've been thinking of solving this a different way. Using the HQ Card Generator @ http://www.slightlymagic.net/forum/viewforum.php?f=30 to generate card images with updated oracle text and link to those in the scripts. \r\n\r\nI was inspired by MTG Remastered Editions @ http://www.slightlymagic.net/forum/viewtopic.php?f=15&t=8136 unfortunately that project hasn't been updated in a while and they only distribute the files in sets.\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 08, 2013 02:49:56",
+      "body": "Looks like a good solution - no changes required to Magarena (UI) code :)",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on December 07, 2013 09:59:05_\n\nI know this a bit of a big undertaking, for not a massive amount of benefit.\r\n\r\nCards being put together programmatically from images, text etc would help with older cards which have since been errata'd or have more legible oracle text.\r\n\r\nAlthough thinking about it - some kind of pop-up for oracle-type text would achieve the same thing.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=442_",
+  "date": "2013-12-07T09:59:05",
+  "state": "open",
+  "gid": 442,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=442",
+  "owner": ""
+}

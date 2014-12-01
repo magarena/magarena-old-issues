@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "The combo:\r\n- Restoration Angel\r\n- Kiki-Jiki, Mirror Breaker\r\n\r\nis able to generate infinite Restoration Angels with haste. The problem is the AI doesn't know when to stop. The deck is sure powerful, but I doubt it was playtested against AI.\r\n\r\nOh wait, it stopped. And AI is attacking ! Still, waiting until it has 81 Restoration Angels is no fun. It should have stopped much earlier, especially considering I have no cards in hand. Another condition for early stop could be all lands tapped out (and nothing threatening on the board, of course)\r\n\r\nI'm attaching the game log.\r\n\r\nMagarena 1.29, Debian Linux 64 bit (Testing - Wheezy)",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "Infinite AI loop with infinite combo (Restoration Angel/Kiki-Jiki)",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on September 05, 2012 19:59:56_\n\nThe combo:\r\n- Restoration Angel\r\n- Kiki-Jiki, Mirror Breaker\r\n\r\nis able to generate infinite Restoration Angels with haste. The problem is the AI doesn't know when to stop. The deck is sure powerful, but I doubt it was playtested against AI.\r\n\r\nOh wait, it stopped. And AI is attacking ! Still, waiting until it has 81 Restoration Angels is no fun. It should have stopped much earlier, especially considering I have no cards in hand. Another condition for early stop could be all lands tapped out (and nothing threatening on the board, of course)\r\n\r\nI'm attaching the game log.\r\n\r\nMagarena 1.29, Debian Linux 64 bit (Testing - Wheezy)\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=291)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=291_",
+  "date": "2012-09-05T19:59:56",
+  "state": "open",
+  "gid": 291,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=291",
+  "owner": ""
+}

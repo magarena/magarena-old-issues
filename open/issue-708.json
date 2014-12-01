@@ -1,0 +1,20 @@
+{
+  "status": "accepted",
+  "body": "reported by jerichopumpkin: http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=15630#p163610 MiniMax likes to Graft opponents creatures.\r\n\r\nA blanket solution could be only allowing the AI to graft it's own creatures.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Some AI prefer to Graft opponents creatures",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Component-Logic",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on October 10, 2014 20:54:38_\n\nreported by jerichopumpkin: http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=15630#p163610 MiniMax likes to Graft opponents creatures.\r\n\r\nA blanket solution could be only allowing the AI to graft it's own creatures.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=708_",
+  "date": "2014-10-10T20:54:38",
+  "state": "open",
+  "gid": 708,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=708",
+  "owner": "ShawnieBoyUK"
+}

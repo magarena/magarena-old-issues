@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. cast Pariah on a creature you control\r\n2. wait until opponent is about to attack you\r\n3. cast Festival of the Guildpact, preventing X damage to you\r\n4. all damage is redirected to enchanted creature, none is prevented What is the expected output? What do you see instead? http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=135248 All damage being dealt to you at one time gets redirected to one Pariah. If you take 3 damage at once, all 3 damage goes to one Pariah. If you take damage from multiple creatures in combat, all the combat damage goes to one Pariah.\r\n\r\nDamage prevention needs to happen before damage is actually dealt and redirected What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Festival of the Guildpact and Pariah: damage is redirected before it gets prevented",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 23, 2014 19:53:35_\n\nWhat steps will reproduce the problem? 1. cast Pariah on a creature you control\r\n2. wait until opponent is about to attack you\r\n3. cast Festival of the Guildpact, preventing X damage to you\r\n4. all damage is redirected to enchanted creature, none is prevented What is the expected output? What do you see instead? http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=135248 All damage being dealt to you at one time gets redirected to one Pariah. If you take 3 damage at once, all 3 damage goes to one Pariah. If you take damage from multiple creatures in combat, all the combat damage goes to one Pariah.\r\n\r\nDamage prevention needs to happen before damage is actually dealt and redirected What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=546_",
+  "date": "2014-03-23T19:53:35",
+  "state": "open",
+  "gid": 546,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=546",
+  "owner": ""
+}

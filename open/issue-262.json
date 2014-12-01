@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "1. Equip Umezawa's Jitte\r\n2. Accumulate two counters on it\r\n3. Provoke AI to cast Master Thief targeting Umezawa's Jitte\r\n4. In response to \"comes into play\" effect, make Master Thief get -2/-2 until end of turn (die).\r\n\r\nMaster Thief dies, but Umezawa's Jitte will be controlled by your opponent, forever. Presumably this also works with any other fast effect removal.\r\n\r\n\"9/22/2011: If Master Thief ceases to be under your control before its ability resolves, you won't gain control of the targeted artifact at all.\" http://magiccards.info/m12/en/64.html Magarena 1.27, Debian Linux 64bit (wheezy)",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "Eternal artifact control with Master Thief",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on July 24, 2012 14:19:19_\n\n1. Equip Umezawa's Jitte\r\n2. Accumulate two counters on it\r\n3. Provoke AI to cast Master Thief targeting Umezawa's Jitte\r\n4. In response to \"comes into play\" effect, make Master Thief get -2/-2 until end of turn (die).\r\n\r\nMaster Thief dies, but Umezawa's Jitte will be controlled by your opponent, forever. Presumably this also works with any other fast effect removal.\r\n\r\n\"9/22/2011: If Master Thief ceases to be under your control before its ability resolves, you won't gain control of the targeted artifact at all.\" http://magiccards.info/m12/en/64.html Magarena 1.27, Debian Linux 64bit (wheezy)\n\n**Attachment:** [game.log masterthief.png](http://code.google.com/p/magarena/issues/detail?id=262)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=262_",
+  "date": "2012-07-24T14:19:19",
+  "state": "open",
+  "gid": 262,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=262",
+  "owner": ""
+}

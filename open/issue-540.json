@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. play Wall of Essence (which can attack as of 1.48.862)\r\n2. cast Pariah on it\r\n3. cast Indestructibility on it\r\n4. cast Spiteful Shadows on it \r\n5. congratulation, you just created an infinite loop: whenever Wall of Essence is dealt damage, you are dealt damage, which is redirected back to Wall of Essence, which causes it to deal damage to you... and so on. You gain infinite life in the process as well\r\n6. attack with Wall of Essence, AI cannot decide whether to block or not. magarena freezes. Then crashes. What is the expected output? What do you see instead? I think the output is expected - infinite life gain. I see no possibility to break the circle by the rules. But for the program the should be an escape... because though I created this loop intentionally, it could always be the opponent who casts Spiteful Shadows. What version of the product are you using? On what operating system? Linux Mint 16, magarena 1.48.862 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). https://www.dropbox.com/s/zlmkvlrzqeavupd/spiteful_loop.crash.log https://www.dropbox.com/s/hwhmtar9mmg4nq2/spiteful_loop.crash.png https://www.dropbox.com/s/sv6posysvpiugwo/spiteful_loop.game.log Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "AI hang-up and crash while deciding, whether to block or not to block",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 22, 2014 20:15:01_\n\nWhat steps will reproduce the problem? 1. play Wall of Essence (which can attack as of 1.48.862)\r\n2. cast Pariah on it\r\n3. cast Indestructibility on it\r\n4. cast Spiteful Shadows on it \r\n5. congratulation, you just created an infinite loop: whenever Wall of Essence is dealt damage, you are dealt damage, which is redirected back to Wall of Essence, which causes it to deal damage to you... and so on. You gain infinite life in the process as well\r\n6. attack with Wall of Essence, AI cannot decide whether to block or not. magarena freezes. Then crashes. What is the expected output? What do you see instead? I think the output is expected - infinite life gain. I see no possibility to break the circle by the rules. But for the program the should be an escape... because though I created this loop intentionally, it could always be the opponent who casts Spiteful Shadows. What version of the product are you using? On what operating system? Linux Mint 16, magarena 1.48.862 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). https://www.dropbox.com/s/zlmkvlrzqeavupd/spiteful_loop.crash.log https://www.dropbox.com/s/hwhmtar9mmg4nq2/spiteful_loop.crash.png https://www.dropbox.com/s/sv6posysvpiugwo/spiteful_loop.game.log Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=540_",
+  "date": "2014-03-22T20:15:01",
+  "state": "open",
+  "gid": 540,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=540",
+  "owner": ""
+}

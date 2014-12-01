@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "Please provide any additional information below. Game Log is too long to be posted here, grab it from dropbox instead https://www.dropbox.com/s/sik9hxtxyj8w87m/game_2.log Seems to me if mini max wants to give up but then it wouldn't find the concede button...",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Mini Max AI 6/8 has 12 cards on hand, no land out there, passes the turn and discards 2 swamps at end",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 22, 2014 08:12:44_\n\nPlease provide any additional information below. Game Log is too long to be posted here, grab it from dropbox instead https://www.dropbox.com/s/sik9hxtxyj8w87m/game_2.log Seems to me if mini max wants to give up but then it wouldn't find the concede button...\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=536_",
+  "date": "2014-03-22T08:12:44",
+  "state": "open",
+  "gid": 536,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=536",
+  "owner": ""
+}

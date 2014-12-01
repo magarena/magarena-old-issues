@@ -1,0 +1,29 @@
+{
+  "status": "accepted",
+  "body": "What steps will reproduce the problem? 1. play Ronin Warclub\r\n2. attach it to any one creature you control\r\n3. cast Force of Savagery What is the expected output? What do you see instead? don't know exactly what to expect. First of all I had the living weapons in mind:\r\n\"When a card with Living weapon enters the battlefield, it puts a 0/0 black Germ creature token into play and attaches itself to it.\"\r\nNow, if a creature with toughness = 0 enters battlefield, wouldn't the ronin warclub attach itself to that creature before it is placed in the graveyard?\r\n\r\nNext issue: when Force of Savagery is placed in the graveyard, it became unequippable for Ronin Warclub. Ronin Warclub should not move in this case.\r\n\r\n701.3b If an effect tries to attach an Aura, Equipment, or Fortification to an object it can’t be attached to, the Aura, Equipment, or Fortification doesn’t move. What version of the product are you using? On what operating system? magarena 1.49.933",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Force of Savagery + Ronin Warclub: Force is going to graveyard before Ronin Warclub is attached",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 31, 2014 04:32:57",
+      "body": "This is a tricky one:\r\n\r\nCreatures with a 0 toughness die immediately as a state based effect, nothing that uses the stack can save them. In this instance, the Warclub is too slow, so Force of Savagery will die. However, the warclub should stay where it is - so this is a bug.\r\n\r\nAs for Living Weapon, the creating a creature and attaching the equipment both happen at the same time as one item on the stack. So when the 0/0 enters the battlefield, the attachment of the equipment doesn't use the stack. Not even a card with Split Second can get between the two :)\n\n**Status:** Accepted  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 31, 2014 06:42:07",
+      "body": "I guess same will be true for all autoattaching equipments, then.\r\n\r\nVeteran's Armaments, Obsidian Battleaxe, Diviner's Wand, Thornbite Staff and Cloak and Dagger\r\n\r\nimagine some Flowstone Surges in play, any given Soldier, Wizard, Shaman, Warrior or Rogue could enter battlefield with 0 toughness.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 31, 2014 18:56:27_\n\nWhat steps will reproduce the problem? 1. play Ronin Warclub\r\n2. attach it to any one creature you control\r\n3. cast Force of Savagery What is the expected output? What do you see instead? don't know exactly what to expect. First of all I had the living weapons in mind:\r\n\"When a card with Living weapon enters the battlefield, it puts a 0/0 black Germ creature token into play and attaches itself to it.\"\r\nNow, if a creature with toughness = 0 enters battlefield, wouldn't the ronin warclub attach itself to that creature before it is placed in the graveyard?\r\n\r\nNext issue: when Force of Savagery is placed in the graveyard, it became unequippable for Ronin Warclub. Ronin Warclub should not move in this case.\r\n\r\n701.3b If an effect tries to attach an Aura, Equipment, or Fortification to an object it can’t be attached to, the Aura, Equipment, or Fortification doesn’t move. What version of the product are you using? On what operating system? magarena 1.49.933\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=568_",
+  "date": "2014-03-31T18:56:27",
+  "state": "open",
+  "gid": 568,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=568",
+  "owner": ""
+}

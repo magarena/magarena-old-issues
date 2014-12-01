@@ -1,0 +1,39 @@
+{
+  "status": "accepted",
+  "body": "What steps will reproduce the problem? 1.gain control of opponents Argent Sphinx\r\n2.use its ability\r\n3.at end of turn it reappears under owner's control What is the expected output? What do you see instead? text states: \"Return [...] under your control [...]\" What version of the product are you using? On what operating system? 1.49.990 or 991, linux mint petra",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Argent Sphinx: activating its ability while it is being controled, but not owned, returns it to owner",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 09, 2014 11:26:02",
+      "body": "You're correct, normally flicker-type abilities wouldn't always do this, but the ability on the sphinx specifically states 'your control'\n\n**Status:** Accepted  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 09, 2014 12:16:39",
+      "body": "maybe it could be done on the card itself. Remove the card, player gains ability until end of turn, which is an MagicAtEndOfTurnTrigger, which puts it back into play under his or her control.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 09, 2014 12:19:41",
+      "body": "or better, player gains ability, which removes itself upon resolution. because ability until end of turn expires at end of end phase, doesn't it? would be problematic, if Argent Sphinx's ability would be activated in end phase.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 09, 2014 13:24:48",
+      "body": "Yes, activating it during the end step would have it wait in exile until the next one.\r\n\r\nNot using the MagicExileUntilEndOfTTurnAction, and manually moving it to and from exile under the control of the effect's controller is definitely preferable.\r\n\r\nThis would/should also result in an indefinite control of the Sphinx by whoever activates it.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on April 10, 2014 02:14:57_\n\nWhat steps will reproduce the problem? 1.gain control of opponents Argent Sphinx\r\n2.use its ability\r\n3.at end of turn it reappears under owner's control What is the expected output? What do you see instead? text states: \"Return [...] under your control [...]\" What version of the product are you using? On what operating system? 1.49.990 or 991, linux mint petra\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=584_",
+  "date": "2014-04-10T02:14:57",
+  "state": "open",
+  "gid": 584,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=584",
+  "owner": ""
+}

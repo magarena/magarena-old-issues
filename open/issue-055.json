@@ -1,0 +1,39 @@
+{
+  "status": "new",
+  "body": "i want use localize image and message, just download via magiccards.info with my custom loclae, its possibly (i unknown how to replace the cards/*.jpg)?\r\n\r\nfor exmaple: http://magiccards.info/query?q=%E5%A4%A7%E5%9C%B0%E5%85%83%E7%B4%A0&v=card&s=cname i very love this great project, thank you for that.\r\nof course, i can help to translate UI message to chinese, just mail to me.",
+  "author": "[arliw...@gmail.com](https://code.google.com/u/107126573161021836446/)",
+  "title": "localize request",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 20, 2011 12:44:06",
+      "body": "for exmaple(chinese image content): http://magiccards.info/cfx/cn/144.html",
+      "author": "[arliw...@gmail.com](https://code.google.com/u/107126573161021836446/)"
+    },
+    {
+      "date": "September 20, 2011 23:48:34",
+      "body": "Hi, thanks for your interest and kind words.\r\n\r\nFor personal use you can replace the images in Magarena/cards/ with the chinese card images and just make sure the file names are the same.\r\nI see you made a clone, so you can also edit the \\resources\\magic\\data\\cards.txt and cards2.txt and change the lines that point to the image url (image= http://magiccards.info/... ) to point to the chinese versions.\r\n\r\nChanging the UI messages would be a lot of work because many card classes also have english text in them.\r\n\r\nMaybe this can eventually be a user preference in Magarena. Loading a different set of images seems quite easy to do but I don't know how much work it would be to change the messages in game.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 21, 2011 00:10:10",
+      "body": ";-) thank you for that\r\ni known how replace the image, and work fine.\r\nand, i checkout new version 1.18,, is too beautiful~~\r\n\r\nbtw: hope don't competitive in the cord size(like Forge too much card, but too many card without AI work, just an images-downloader i think), keep automation,simple and good UI-speed, its number one for now. thank you for great project again.",
+      "author": "[arliw...@gmail.com](https://code.google.com/u/107126573161021836446/)"
+    },
+    {
+      "date": "September 21, 2011 00:36:42",
+      "body": "No worries, we aren't competing with anything. Forge is a great project but focuses on different things.\r\nI have been adding a lot of cards but I try to make sure that the AI can handle them well. I'm confident we can add far more cards without losing a challenging AI.\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [arliw...@gmail.com](https://code.google.com/u/107126573161021836446/) on September 21, 2011 03:41:35_\n\ni want use localize image and message, just download via magiccards.info with my custom loclae, its possibly (i unknown how to replace the cards/*.jpg)?\r\n\r\nfor exmaple: http://magiccards.info/query?q=%E5%A4%A7%E5%9C%B0%E5%85%83%E7%B4%A0&v=card&s=cname i very love this great project, thank you for that.\r\nof course, i can help to translate UI message to chinese, just mail to me.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=55_",
+  "date": "2011-09-21T03:41:35",
+  "state": "open",
+  "gid": 55,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=55",
+  "owner": ""
+}

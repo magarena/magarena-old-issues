@@ -1,0 +1,19 @@
+{
+  "status": "new",
+  "body": "Consider updating themes with a new property that will let you specify a custom font that will, initially, be applied to the screen menus, status and action bars.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Add new custom font property to themes.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 11, 2014 14:51:06_\n\nConsider updating themes with a new property that will let you specify a custom font that will, initially, be applied to the screen menus, status and action bars.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=648_",
+  "date": "2014-08-11T14:51:06",
+  "state": "open",
+  "gid": 648,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=648",
+  "owner": "lodici123"
+}

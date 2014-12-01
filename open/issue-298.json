@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "It seems like quite a few of the newer decks people are submitting are illegal in all known Magic formats (in particular, because they play quadruple Ancestral Recall).\r\n\r\nI'm not saying Magarena shouldn't come with decks like this -- it can sometimes be a lot of fun to play with/against something that uses really broken cards -- but it'd be nice to get some kind of warning about it...",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Premade decks should have some indication of format legality",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on September 30, 2012 07:40:01_\n\nIt seems like quite a few of the newer decks people are submitting are illegal in all known Magic formats (in particular, because they play quadruple Ancestral Recall).\r\n\r\nI'm not saying Magarena shouldn't come with decks like this -- it can sometimes be a lot of fun to play with/against something that uses really broken cards -- but it'd be nice to get some kind of warning about it...\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=298_",
+  "date": "2012-09-30T07:40:01",
+  "state": "open",
+  "gid": 298,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=298",
+  "owner": ""
+}

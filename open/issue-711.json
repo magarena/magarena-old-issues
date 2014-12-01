@@ -1,0 +1,24 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? What version of the product are you using? On what operating system? 1.54 on OSX 10.8.5 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. installed magarena 1.54 just fine, but when i choose download images from settings it starts to run, then produces \"Error! See console for details\" (???) thanks for your consideration.",
+  "author": "[neilcole...@gmail.com](https://code.google.com/u/109538571746255992262/)",
+  "title": "Image download Error: See Console for Details?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "October 22, 2014 00:42:54",
+      "body": "Sorry, I do not have access to OSX. Have you checked it is not being blocked by a firewall? Permission-related issues on download location? Might be worth posting your problem in the community forum ( http://www.slightlymagic.net/forum/viewforum.php?f=82 ) where it will be more visible and other Mac users might be able to help.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [neilcole...@gmail.com](https://code.google.com/u/109538571746255992262/) on October 22, 2014 07:53:28_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? What version of the product are you using? On what operating system? 1.54 on OSX 10.8.5 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. installed magarena 1.54 just fine, but when i choose download images from settings it starts to run, then produces \"Error! See console for details\" (???) thanks for your consideration.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=711_",
+  "date": "2014-10-22T07:53:28",
+  "state": "open",
+  "gid": 711,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=711",
+  "owner": ""
+}

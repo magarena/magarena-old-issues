@@ -1,0 +1,24 @@
+{
+  "status": "new",
+  "body": "spartan vi @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=95322&sid=ef6347e1478024edb4827ea10688a89d#p95322 Order of Yawgmoth equipped with Umezawa's Jitte\r\ndealt combat damage to me forcing me to discard a card and placed a charge of Umezawa's Jitte, then after combat was resolved I was forced to discard another card and another charge was placed on Umezawa's Jitte. Both of these effects should only have occurred once. AI used the BW Fallen Knights deck.\r\n\r\nLooking at the play-by-play, the AI didn't play any other card that would explain this effect.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Order of Yawgmoth equipped with Umezawa's Jitte causes two discards",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 11, 2014 04:30:12",
+      "body": "Looks like double strike to me - Kinsbaile Cavalier on the battlefield?",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on August 09, 2012 11:13:38_\n\nspartan vi @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=95322&sid=ef6347e1478024edb4827ea10688a89d#p95322 Order of Yawgmoth equipped with Umezawa's Jitte\r\ndealt combat damage to me forcing me to discard a card and placed a charge of Umezawa's Jitte, then after combat was resolved I was forced to discard another card and another charge was placed on Umezawa's Jitte. Both of these effects should only have occurred once. AI used the BW Fallen Knights deck.\r\n\r\nLooking at the play-by-play, the AI didn't play any other card that would explain this effect.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=271_",
+  "date": "2012-08-09T11:13:38",
+  "state": "open",
+  "gid": 271,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=271",
+  "owner": "melvinzh...@gmail.com"
+}

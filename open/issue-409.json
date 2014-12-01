@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. play any \"Vivid\" land\r\n2.. play any card with more than one colored mana of the same type in the casting cost. That mana should be different from the one produced by the \"Vivid\" land, and you should be able to pay the ccard without removing a counter from the \"Vivid\" land What is the expected output? What do you see instead? I can choose which lands to tap to pay. The \"Vivid\" land is automatically used instead and expends a counter. What version of the product are you using? On what operating system? Magarena 1.42, win 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. Game Log is missing because the game did not log it (I was playing with unsaved random decks)",
+  "author": "[Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/)",
+  "title": "Vivid lands bug",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/) on September 30, 2013 01:41:04_\n\nWhat steps will reproduce the problem? 1. play any \"Vivid\" land\r\n2.. play any card with more than one colored mana of the same type in the casting cost. That mana should be different from the one produced by the \"Vivid\" land, and you should be able to pay the ccard without removing a counter from the \"Vivid\" land What is the expected output? What do you see instead? I can choose which lands to tap to pay. The \"Vivid\" land is automatically used instead and expends a counter. What version of the product are you using? On what operating system? Magarena 1.42, win 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. Game Log is missing because the game did not log it (I was playing with unsaved random decks)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=409_",
+  "date": "2013-09-30T01:41:04",
+  "state": "open",
+  "gid": 409,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=409",
+  "owner": ""
+}

@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "Currently if you open the menu screen it continues playing in the background.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Pause game loop when opening menu screen while playing a game.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 07, 2014 18:23:46_\n\nCurrently if you open the menu screen it continues playing in the background.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=684_",
+  "date": "2014-09-07T18:23:46",
+  "state": "open",
+  "gid": 684,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=684",
+  "owner": "lodici123"
+}

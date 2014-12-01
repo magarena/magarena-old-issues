@@ -1,0 +1,18 @@
+{
+  "status": "accepted",
+  "body": "The PumpGain abilities should have some kind of modified TimingHint. Currently have a Korozda Guildmage giving an attacker +1/+1 and intimitate after blockers (Which is still handy, but never gives intimidate when useful due to Pump timing instead of Attack)",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "PumpGain timing with combat abilities",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on April 15, 2014 06:07:42_\n\nThe PumpGain abilities should have some kind of modified TimingHint. Currently have a Korozda Guildmage giving an attacker +1/+1 and intimitate after blockers (Which is still handy, but never gives intimidate when useful due to Pump timing instead of Attack)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=586_",
+  "date": "2014-04-15T06:07:42",
+  "state": "open",
+  "gid": 586,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=586",
+  "owner": ""
+}

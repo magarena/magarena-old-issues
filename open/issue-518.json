@@ -1,0 +1,54 @@
+{
+  "status": "new",
+  "body": "It's not a problem, just an idea:\r\n\r\nto implement cards like Dark Ritual without changing your whole system - just let the spell create mana tokens.\r\n\r\nLike this:\r\n1.) Play Dark Ritual, tap Swamp\r\n2.) 3 somewhat bigger black mana symbols appear next to the lands, which can be used as mana sources for 1 black mana each. If used, exile the token.\r\n3.) unused mana tokes are exiled at end of step\r\n\r\nwell, I know, it wouldn't be the same... as I wrote, it's just an idea",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Dark Ritual idea",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "March 15, 2014 01:23:56",
+      "body": "**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 15, 2014 10:07:41",
+      "body": "Could be an interesting way of implementing a mana-pool. If it's possible to create a separate 'play area' for them would help a lot, and keep them out of the way from other cards that could end up interacting with them (turning them into creatures etc.) That zone could then be emptied at the end of every phase.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 15, 2014 11:34:15",
+      "body": "I am not 100% certain but I am sure I read a comment from @melvin somewhere that indicated that it it difficult to get the AI to work well with a mana pool which is why it has not been implemented yet.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 15, 2014 12:51:42",
+      "body": "I've read something like that, too. The AI depends on the assumption, that every manasource produces exactly one mana.\r\n\r\nOn the one hand, that would be true for the mana tokens, too... they produce exacly one mana and are removed afterwards. And a very specific mana at that as well - you would need only 6 mana tokens: white, blue, black, red, green and colorless. Phyrexian mana, hybrid mana, snow, \"mana of any color\", all that does not go to the mana pool - you have to make a choice beforehand what will be.\r\n\r\nOn the other hand though, I don't understand well, how the AI works.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 15, 2014 18:32:20",
+      "body": "Yup, that's the assumption. Mana tokens as described would work, as ShawnieBoyUK pointed out they will need to represented as a new kind of Permanent that cannot be interacted with normally. If we have such a mechanism, we can use it for Emblems as well, which are currently not represented in game.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 16, 2014 03:37:52",
+      "body": "maybe then, mana tokens shouldn't be considered \"permanents\" at all... there are enough cards that target or count permanents in play.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 26, 2014 13:57:02",
+      "body": "Issue 259 has been merged into this issue.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 14, 2014 06:05:59_\n\nIt's not a problem, just an idea:\r\n\r\nto implement cards like Dark Ritual without changing your whole system - just let the spell create mana tokens.\r\n\r\nLike this:\r\n1.) Play Dark Ritual, tap Swamp\r\n2.) 3 somewhat bigger black mana symbols appear next to the lands, which can be used as mana sources for 1 black mana each. If used, exile the token.\r\n3.) unused mana tokes are exiled at end of step\r\n\r\nwell, I know, it wouldn't be the same... as I wrote, it's just an idea\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=518_",
+  "date": "2014-03-14T06:05:59",
+  "state": "open",
+  "gid": 518,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=518",
+  "owner": ""
+}

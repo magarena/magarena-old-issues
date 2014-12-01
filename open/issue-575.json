@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "Monty has a number of creatures in play and a Tawno's Wand. now its attacking with some of his creatures, taps Tawno's Wand, pays the mana cost and makes one of its remaining creature unblockable. More so, if it attacks with all its creatures, it uses Tawno's Wand to make one of my creature unblockable...",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "MCST AI 2/8: Tawno's Wand used to make non-attacking creatures unblockable",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on April 04, 2014 03:14:16_\n\nMonty has a number of creatures in play and a Tawno's Wand. now its attacking with some of his creatures, taps Tawno's Wand, pays the mana cost and makes one of its remaining creature unblockable. More so, if it attacks with all its creatures, it uses Tawno's Wand to make one of my creature unblockable...\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=575_",
+  "date": "2014-04-04T03:14:16",
+  "state": "open",
+  "gid": 575,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=575",
+  "owner": ""
+}

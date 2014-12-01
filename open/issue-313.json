@@ -1,0 +1,30 @@
+{
+  "status": "accepted",
+  "body": "Aunukia@yahoo.com on forum suggested:\r\n\r\nAdding/removing cards from a deck is very labor-intensive and time consuming. I suggest a way (if one already exists, please let me know) to simply click on the card and add or subtract cards by key press - perhaps - / = (+) or delete / enter or something",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "add/remove cards from deck using keyboard shortcut",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:46:14",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 04:05:22",
+      "body": "**Owner:** lodici123  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on December 30, 2012 08:48:54_\n\nAunukia@yahoo.com on forum suggested:\r\n\r\nAdding/removing cards from a deck is very labor-intensive and time consuming. I suggest a way (if one already exists, please let me know) to simply click on the card and add or subtract cards by key press - perhaps - / = (+) or delete / enter or something\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=313_",
+  "date": "2012-12-30T08:48:54",
+  "state": "open",
+  "gid": 313,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=313",
+  "owner": "lodici123"
+}

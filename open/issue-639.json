@@ -1,0 +1,30 @@
+{
+  "status": "accepted",
+  "body": "I'm not sure if this would be possible without a lot of editing but...\r\n\r\nIn the game log, when cards are referenced they appear in blue and in brackets (To me, suggesting a link - been well-trained from the internet :D). I think it could be helpful if these could produce a pop-up of the referenced card.\r\n\r\nAn example would be 'PLAYER discards two cards. (card1) {card2)' Normally if you see a card you're not sure of, you would look into that player's graveyard to see what it is. Being able to cursor over the displayed card names to get the card images would be a nice touch.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Pop-up Imaged for 'Hyperlinked' items in Game Log",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 05, 2014 07:20:02",
+      "body": "Do you mean the game log or the prompt? For example, if I play Temple Garden the prompt will display \"Proceed with \"may\" action?\" and display Temple Garden in blue above it. If I move the mouse cursor over the prompt it displays the card image although it is a very small \"hit\" area which needs looking at. Plus, I am not sure whether I even like this feature - I would prefer it if the card was displayed to you full size with the prompt next to it since it is not always obvious to me that the prompt is actually waiting for me to respond.\r\n\r\nIn terms of the log I think any card name displayed in the log should be a hot link that can be clicked or hovered-over to display the associated card image. I think it would be quite a challenge UI component-wise but not impossible.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 05, 2014 07:59:44",
+      "body": "Just the game log, not the prompt. If you're having a prompt, it's most likely a permanent on the battlefield already that can be seen. If it's on the stack, then the card link would be in the log already.\r\n\r\nGood to see it could be possible",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on August 05, 2014 21:01:34_\n\nI'm not sure if this would be possible without a lot of editing but...\r\n\r\nIn the game log, when cards are referenced they appear in blue and in brackets (To me, suggesting a link - been well-trained from the internet :D). I think it could be helpful if these could produce a pop-up of the referenced card.\r\n\r\nAn example would be 'PLAYER discards two cards. (card1) {card2)' Normally if you see a card you're not sure of, you would look into that player's graveyard to see what it is. Being able to cursor over the displayed card names to get the card images would be a nice touch.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=639_",
+  "date": "2014-08-05T21:01:34",
+  "state": "open",
+  "gid": 639,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=639",
+  "owner": "ShawnieBoyUK"
+}

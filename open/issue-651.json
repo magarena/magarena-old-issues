@@ -1,0 +1,109 @@
+{
+  "status": "new",
+  "body": "Because of the new double-faced cards the playable cards displayed in the explorer is different to the count displayed in the deck editor. For example, at the time of writing the explorer (and splash screen) states there are 7,628 playable cards but the deck editor shows 7,597. Obviously, the explorer counts flip, double-faced, etc cards as two distinct cards whereas only the \"front\" side is included in the deck editor card pool. What to do?",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Latest card mechanics = discrepancy in explorer/editor card count.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 12, 2014 09:32:13",
+      "body": "It's a tricky one - I'd try for allowing the extra sided cards to be visible in the deck editor (Handy for searching), but if an attempt is made to put them into the deck, it only adds the proper \"front\" side only.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 12, 2014 11:10:19",
+      "body": "That seems like a good solution which should sync the totals although it would be the wrong total (but I don't think it is worth losing any sleep over!). \r\n\r\nMagicCardDefinition has the \"getFlippedDefinition()\" and \"getTransformedDefinition()\" - do these methods work both ways such that if I select the flipped definition of a card in the card pool I can easily identify the non-flipped definition for adding to the deck using its \"getFlippedDefintion()?",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 12, 2014 15:16:26",
+      "body": "They were included in the scripts as a failsafe - Melvin was removing them, hopefully as they were seen as redundant and not because of problems (Like re-loading the groovy?).\r\n\r\nIf it's safe to include them again, that would make them work both ways.\n\n**Cc:** melvinzh...@gmail.com  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 12, 2014 15:18:04",
+      "body": "Additionally you could prevent the other halves from being counted to give the 'real' number of cards.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 12, 2014 17:53:12",
+      "body": "get*Definition is only one way, to ensure that loading of abilities does not call itself due to a cyclic reference.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 12, 2014 17:55:09",
+      "body": "How about not adding hidden cards to playableCards?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 12, 2014 22:19:30",
+      "body": "> How about not adding hidden cards to playableCards?\r\nThe \"other\" side of the card would then disappear from the explorer card pool.\r\n\r\n>get*Definition is only one way, to ensure that loading of abilities does not call itself due to a cyclic reference.\r\nThen I think we have reached a design limitation. A bit of a hack, but one way to solve it might be to create an additional HashMap at startup during the loading of MagicCardDefinitions - new HashMap<{hidden MagicCardDefinition},{front MagicCardDefinition}>. We can then use this to lookup the \"front\" side of a hidden MagicCardDefinition.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 12, 2014 22:41:17",
+      "body": "We can use a different property to avoid cyclic reference. How about generalizing hidden from a true/false to the name of the default card. Say normal=<name of definition for normal characteristics>? Then we don't need to have both hidden and flip/transform at the same time for the alternative characteristics, just normal=<name>.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 12, 2014 22:57:19",
+      "body": "Sorry, not sure I follow. Can you give an example of how you would get from say, \"Gatstaf Shepherd\" to \"Gatstaf Howler\" and more importantly, vice-versa.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 12, 2014 23:01:56",
+      "body": "in Sheperd.txt: transform=Howler\r\nShepherd -> cdef.getTransformCardDefinition() -> Howler\r\n\r\nin Howler.txt: normal=Sheperd\r\nHowler   -> cdef.getNormalCardDefinition()    -> Shepherd",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 12, 2014 23:13:04",
+      "body": "the normal property will replace the current hidden property",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 12, 2014 23:47:03",
+      "body": "ok, but for consistency I would have...\r\n\r\nin Bushi.txt: flip=Kenzo\r\nBushi -> cdef.getFlipCardDefinition() -> Kenzo\r\nin Kenzo.txt: normal=Bushi\r\nKenzo -> cdef.getNormalCardDefinition() -> Bushi\r\n\r\nthen we can get rid of the variables hidden, flipCard, transformCard, etc and properties can use these definitions to identify card type...\r\n\r\nisTransformed() { getNormalCardDefinition() != null }\r\nisHidden() { isTransformed() } // for initial backwards compatibility\r\nisFlipCard() { getFlipCardDefinition() != null }\r\nisDoubleFaced() { getTransformCardDefinition() != null }\r\nisSplitCard() { getSplitCardDefinition() != null }\r\n\r\nin fact with a slight amendment you can now easily identify the card type for the transformed side as well, eg.\r\n\r\nisFlipCard() { getFlipCardDefinition() != null } || isTransformed() && getNormalCardDefinition().isFlipCard() }",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 13, 2014 00:31:51",
+      "body": "yes, for flip cards it will still be flip=. I don't think we can get rid of the flipCard, transformCard string cause we can't resolve them to MagicCardDefinition at MagicCardDefinition load time because we cannot guarantee that the referred card is loaded before the card that refers to it.\r\n\r\nI don't like using null in general, for non-flip/transform cards, getNormalCardDefinition will return itself.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 13, 2014 00:43:51",
+      "body": "Ok, well from a UI pov I need to know the type of transformable card it is so I can generate a suitable animation and be able to easily switch back and forth between the card definitions predominantly to display the appropriate image. I would expect to be able to do that with a single method call given a MagicCardDefinition.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 13, 2014 00:49:21",
+      "body": "Would\r\nisFlipped() { getNormalCardDefinition().isFlipCard() }\r\nisTransformed() { getNormalCardDefinition().isDoubleFaced() }\r\nbe sufficient?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 13, 2014 01:22:32",
+      "body": "Basically, in explorer/deck editor on clicking/moving the mousewheel on the image displayed...\r\n\r\nif (carddef.isFlipCard()) {\r\n    spin card;\r\n} else if (carddef.isDoubleFaced()) {\r\n    nextImage = getImage(cardDef.getOtherCardDef().getImageName());\r\n    rotate card;      \r\n}\r\nselect cardDef.getOtherCardDef() in card pool;\r\n\r\nNote, I am more interested here in the type of card as opposed to its state - ie. isFlipCard() instead of isFlipped() - although that might be useful to know in other circumstances.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 13, 2014 01:54:10",
+      "body": "Thanks for the sample usage, that really help to clarify matters. I think from the UI pov, it is simpler to put back the flip= and transform= on the non-default card definition so that it is easy to go from flip top to flop bottom using the same method, eg getFlipCardDefinition.\r\n\r\nThe recursive reference can be solved in the a different way by using the hidden property.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 13, 2014 02:18:31",
+      "body": "https://code.google.com/p/magarena/source/detail?r=6fa183725e54284c1aaca80bbcd1c6477c9f937a restores the flip/transform property to hidden cards.\r\n\r\nisFlipCard return true for either side of a flip card, same for isDoubleFaced().\r\n\r\ngetFlippedCardDefinition/getTransformedCardDefinition works both ways now, able to go from regular side to flip/transformed side and back.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 13, 2014 00:17:04_\n\nBecause of the new double-faced cards the playable cards displayed in the explorer is different to the count displayed in the deck editor. For example, at the time of writing the explorer (and splash screen) states there are 7,628 playable cards but the deck editor shows 7,597. Obviously, the explorer counts flip, double-faced, etc cards as two distinct cards whereas only the \"front\" side is included in the deck editor card pool. What to do?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=651_",
+  "date": "2014-08-13T00:17:04",
+  "state": "open",
+  "gid": 651,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=651",
+  "owner": "lodici123"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "accepted",
+  "body": "elias @ http://www.slightlymagic.net/forum/posting.php?mode=quote&f=82&p=127744#pr127744 Not sure if this can be fixed, but if you change theme during a duel some objects will not update. Such as the message icon, table heading background color, and spacing between borders in the game field (there might be more things not being updated). Creating a new duel will fix the theme.\r\n\r\nThe easiest way to \"solve\" this is probably just to inform the player that once a theme has been changed during a duel a new duel needs to be created to load the theme fully.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "theme change during duel does not use the new theme fully, need to start a new duel",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:50:31",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 04, 2013 06:36:31",
+      "body": "**Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 03:59:21",
+      "body": "**Owner:** lodici123  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on August 02, 2013 13:56:53_\n\nelias @ http://www.slightlymagic.net/forum/posting.php?mode=quote&f=82&p=127744#pr127744 Not sure if this can be fixed, but if you change theme during a duel some objects will not update. Such as the message icon, table heading background color, and spacing between borders in the game field (there might be more things not being updated). Creating a new duel will fix the theme.\r\n\r\nThe easiest way to \"solve\" this is probably just to inform the player that once a theme has been changed during a duel a new duel needs to be created to load the theme fully.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=382_",
+  "date": "2013-08-02T13:56:53",
+  "state": "open",
+  "gid": 382,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=382",
+  "owner": "lodici123"
+}

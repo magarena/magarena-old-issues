@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "It seems that AI regenerate it's creatures whenever possible, even if it's not needed and there are no threats.",
+  "author": "[ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/)",
+  "title": "Odd AI: regenerate creatures when not needed",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/) on August 23, 2013 02:02:57_\n\nIt seems that AI regenerate it's creatures whenever possible, even if it's not needed and there are no threats.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=394_",
+  "date": "2013-08-23T02:02:57",
+  "state": "open",
+  "gid": 394,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=394",
+  "owner": ""
+}

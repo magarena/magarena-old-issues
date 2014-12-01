@@ -1,0 +1,30 @@
+{
+  "status": "accepted",
+  "body": "Notes are currently not editable",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Make it possible to edit notes for a deck",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:46:30",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 04:04:38",
+      "body": "see also Issue 630 : Implement custom save deck dialog.\n\n**Owner:** lodici123  \n  **Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on December 30, 2012 08:50:19_\n\nNotes are currently not editable\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=314_",
+  "date": "2012-12-30T08:50:19",
+  "state": "open",
+  "gid": 314,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=314",
+  "owner": "lodici123"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "new",
+  "body": "I had a 10/10 creature which had first strike, lifelink and trample through equipment which was attacking and Ajani's Pridemate which was not. The attacking creature was blocked by a 5/3 creature.\r\n\r\nExpected to gain one +1/+1 for Ajani but it got two instead. O_o What version of the product are you using? On what operating system? 1.27 on WinXP SP3\r\n\r\nIf you look through the log, you will see, that I used undo at some times. One of them was something similar, but I didn't get any life or counter for Ajani, still I was attacking with a creature with lifelink. :/",
+  "author": "[Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/)",
+  "title": "Problem with Lifelink in combination with trample and first strike?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 31, 2012 06:19:41",
+      "body": "The issue persists with not just Lifelink, but any abilty that correlates damage dealt to lifegain with trample.\r\n\r\nThe ability should trigger once, not separately for damaging a creature and a player.\r\n\r\nDone with Magarena 1.28 on Windows XP\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=268#hc1)",
+      "author": "[True.Str...@gmail.com](https://code.google.com/u/113611120031645723895/)"
+    }
+  ],
+  "content": "_From [Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/) on July 31, 2012 21:44:04_\n\nI had a 10/10 creature which had first strike, lifelink and trample through equipment which was attacking and Ajani's Pridemate which was not. The attacking creature was blocked by a 5/3 creature.\r\n\r\nExpected to gain one +1/+1 for Ajani but it got two instead. O_o What version of the product are you using? On what operating system? 1.27 on WinXP SP3\r\n\r\nIf you look through the log, you will see, that I used undo at some times. One of them was something similar, but I didn't get any life or counter for Ajani, still I was attacking with a creature with lifelink. :/\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=268)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=268_",
+  "date": "2012-07-31T21:44:04",
+  "state": "open",
+  "gid": 268,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=268",
+  "owner": ""
+}

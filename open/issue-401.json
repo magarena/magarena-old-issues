@@ -1,0 +1,39 @@
+{
+  "status": "accepted",
+  "body": "Turn 1: Forest, Arbor Elf\r\nTurn 2: land; unable to cast a spell that costs 3 mana\r\n\r\nThis is a rather large deviation from how Arbor Elf plays in Magic. It's because you can't use its Forest-untapping ability while paying for mana costs, unlike in Magic. This makes its \"virtual mana\" only available for casting multiple cheap spells in succession, but not one more expensive one.",
+  "author": "[core...@gmail.com](https://code.google.com/u/103434827021553153452/)",
+  "title": "Arbor Elf doesn't mana accelerate under current deviant rules",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 14, 2013 19:12:11",
+      "body": "This is due to a lack of mana pool. As a consequence, when paying mana cost, only mana abilities can be activated.\n\n**Status:** Accepted  \n  **Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 20, 2013 05:17:33",
+      "body": "is this means Magarena will find somehow to implement \"mana pool\"?\r\nthis can open opportunity to \"Priest of Ghix\", \"Dark Ritual\",....  :)",
+      "author": "[huanghon...@gmail.com](https://code.google.com/u/117260737072923055970/)"
+    },
+    {
+      "date": "September 20, 2013 05:46:30",
+      "body": "It is something we think about, but we don't have a way to do it yet as the AI strongly relies on two assumptions\r\n1) each mana source produces only one mana and\r\n2) only mana abilities are activated when paying mana",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 20, 2013 17:48:44",
+      "body": "Also affects Ramos artifacts, reported by sponeta on the forum",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [core...@gmail.com](https://code.google.com/u/103434827021553153452/) on September 14, 2013 22:09:59_\n\nTurn 1: Forest, Arbor Elf\r\nTurn 2: land; unable to cast a spell that costs 3 mana\r\n\r\nThis is a rather large deviation from how Arbor Elf plays in Magic. It's because you can't use its Forest-untapping ability while paying for mana costs, unlike in Magic. This makes its \"virtual mana\" only available for casting multiple cheap spells in succession, but not one more expensive one.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=401_",
+  "date": "2013-09-14T22:09:59",
+  "state": "open",
+  "gid": 401,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=401",
+  "owner": ""
+}

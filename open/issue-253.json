@@ -1,0 +1,24 @@
+{
+  "status": "accepted",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? GHI already selected to be hawk during turn when AI played another artifact. Yet AI pumped mana into it again. have seen this a few times. \r\nnothing major, just seems foolish. What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "Glint Hawk Idol - AI powers after done",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 16, 2014 03:34:52",
+      "body": "Currently has max activations per turn set to 1.\r\n\r\nPossibly a default for all self-animating permanents? Or maybe check self isn't already the creature it can turn into (in case animated into a different creature)\n\n**Status:** Accepted  \n  **Cc:** melvinzh...@gmail.com  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on July 10, 2012 10:06:18_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? GHI already selected to be hawk during turn when AI played another artifact. Yet AI pumped mana into it again. have seen this a few times. \r\nnothing major, just seems foolish. What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=253_",
+  "date": "2012-07-10T10:06:18",
+  "state": "open",
+  "gid": 253,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=253",
+  "owner": ""
+}

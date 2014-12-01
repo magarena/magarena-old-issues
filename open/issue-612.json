@@ -1,0 +1,18 @@
+{
+  "status": "accepted",
+  "body": "Gain life trigger should not occur as removal happens before gain life in text of Swords to Plowshares. \r\n\r\nRef: http://www.mtgsalvation.com/forums/magic-fundamentals/magic-rulings/magic-rulings-archives/300631-drogskoll-reaver-swords-to-plowshares Issue is due to the fact that for all removal from play, the removal of the triggers and statics occur after the resolution of the effect, instead of after the resolution of the removal step.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Swords to Plowshares target Ajani's Pridemate triggers Pridemate's gain life trigger",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on June 15, 2014 10:29:29_\n\nGain life trigger should not occur as removal happens before gain life in text of Swords to Plowshares. \r\n\r\nRef: http://www.mtgsalvation.com/forums/magic-fundamentals/magic-rulings/magic-rulings-archives/300631-drogskoll-reaver-swords-to-plowshares Issue is due to the fact that for all removal from play, the removal of the triggers and statics occur after the resolution of the effect, instead of after the resolution of the removal step.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=612_",
+  "date": "2014-06-15T10:29:29",
+  "state": "open",
+  "gid": 612,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=612",
+  "owner": "melvinzh...@gmail.com"
+}

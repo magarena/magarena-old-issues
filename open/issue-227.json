@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. enable sound effects and play the game What is the expected output? What do you see instead? Instead of continuing, the game gets stuck at the end of turn 2. Similar to issue #71 What version of the product are you using? On what operating system? Magarena-1.26 on Linux Mint 64-bit Cinnamon If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. Disabling sound effects causes the game to run perfectly.",
+  "author": "[greaz...@gmail.com](https://code.google.com/u/100137911424310652373/)",
+  "title": "Game gets stuck on the end of turn 2",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [greaz...@gmail.com](https://code.google.com/u/100137911424310652373/) on June 16, 2012 21:47:32_\n\nWhat steps will reproduce the problem? 1. enable sound effects and play the game What is the expected output? What do you see instead? Instead of continuing, the game gets stuck at the end of turn 2. Similar to issue #71 What version of the product are you using? On what operating system? Magarena-1.26 on Linux Mint 64-bit Cinnamon If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. Disabling sound effects causes the game to run perfectly.\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=227)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=227_",
+  "date": "2012-06-16T21:47:32",
+  "state": "open",
+  "gid": 227,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=227",
+  "owner": ""
+}

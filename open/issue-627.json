@@ -1,0 +1,39 @@
+{
+  "status": "new",
+  "body": "v1.52. In the card explorer, why is there Legacy, Modern and Standard cubes when there is also Legacy, Modern and Standard formats? This is confusing especially as the cards in each do not match.\r\n\r\nWhy is there an Extended cube but no Extended format filter? Why is there a Vintage format but no Vintage cube filter? It would help to be consistent.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Cubes and Formats overlap confusion!",
+  "labels": [
+    "imported",
+    "Priority-Low",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 28, 2014 04:11:53",
+      "body": "I'm assuming that the cubes function differently somehow. I always thought that it was strange having to construct a card list for the cubes, when the filters will do it for you.\r\n\r\nFilters take into account cards that are not implemented yet, where cubes don't?\r\n\r\nExtended doesn't exist as a format anymore, that's why I didn't include it in the formats.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 01, 2014 05:29:15",
+      "body": "Currently cubes are takes into account for deck generation, formats are used for filtering in card explorer. We should merge these concepts for simplicity, the combined concept should support the following\r\n1) all the user to define a custom set of cards (like the current cube)\r\n2) be used as a filter in explorer\r\n3) be used to limit cards in deck generation",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 01, 2014 06:24:40",
+      "body": "The filters are more easily maintained than the current cubes - They need no maintenance as they contain all the cards for those set/formats regardless of whether they are implemented or not.\r\n\r\nAs the cubes are also a list of cards, having some logic in the deckbuilder and random deckbuilder to only choose cards that are implemented would probably solve that.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 11, 2014 00:05:02",
+      "body": "**Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on July 28, 2014 18:50:16_\n\nv1.52. In the card explorer, why is there Legacy, Modern and Standard cubes when there is also Legacy, Modern and Standard formats? This is confusing especially as the cards in each do not match.\r\n\r\nWhy is there an Extended cube but no Extended format filter? Why is there a Vintage format but no Vintage cube filter? It would help to be consistent.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=627_",
+  "date": "2014-07-28T18:50:16",
+  "state": "open",
+  "gid": 627,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=627",
+  "owner": "lodici123"
+}

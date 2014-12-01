@@ -1,0 +1,25 @@
+{
+  "status": "accepted",
+  "body": "- Popular: shows the most often played decks.\r\n- Favorite: shows decks manually tagged by player as a favorite deck.\r\n- Recent: shows the most recently played decks.\r\n- Random: lets you generate a random deck. Potentially quite complicated since you will probably want to define the set of cards on which to base the deck.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Additional deck groupings on Decks screen",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 10, 2014 23:52:22",
+      "body": "**Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on July 28, 2014 19:39:35_\n\n- Popular: shows the most often played decks.\r\n- Favorite: shows decks manually tagged by player as a favorite deck.\r\n- Recent: shows the most recently played decks.\r\n- Random: lets you generate a random deck. Potentially quite complicated since you will probably want to define the set of cards on which to base the deck.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=633_",
+  "date": "2014-07-28T19:39:35",
+  "state": "open",
+  "gid": 633,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=633",
+  "owner": "lodici123"
+}

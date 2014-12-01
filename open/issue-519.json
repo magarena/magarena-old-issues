@@ -1,0 +1,25 @@
+{
+  "status": "accepted",
+  "body": "from http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=12809&p=148431#p148431 -\r\n\r\nsometime i need to read a message log that has scrolled away caused by many events. a scroll bar maybe would do. just to be more informative. thanx",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "add scroll bar to game log",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 11, 2014 00:09:04",
+      "body": "**Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on March 15, 2014 16:15:45_\n\nfrom http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=12809&p=148431#p148431 -\r\n\r\nsometime i need to read a message log that has scrolled away caused by many events. a scroll bar maybe would do. just to be more informative. thanx\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=519_",
+  "date": "2014-03-15T16:15:45",
+  "state": "open",
+  "gid": 519,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=519",
+  "owner": "lodici123"
+}

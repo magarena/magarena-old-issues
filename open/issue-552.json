@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. play Phantom Nomad\r\n2. attack or block with Phantom Nomad\r\n3. cast Fog\r\n4. although all combat damage is prevented by fog, Phantom Nomad still loses a +1/+1 counter What is the expected output? What do you see instead? What version of the product are you using? On what operating system? 1.48.873 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Phantom Nomad + Fog: still using a +1/+1 counter to prevent damage",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 25, 2014 18:34:54_\n\nWhat steps will reproduce the problem? 1. play Phantom Nomad\r\n2. attack or block with Phantom Nomad\r\n3. cast Fog\r\n4. although all combat damage is prevented by fog, Phantom Nomad still loses a +1/+1 counter What is the expected output? What do you see instead? What version of the product are you using? On what operating system? 1.48.873 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=552_",
+  "date": "2014-03-25T18:34:54",
+  "state": "open",
+  "gid": 552,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=552",
+  "owner": ""
+}

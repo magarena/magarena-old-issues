@@ -1,0 +1,40 @@
+{
+  "status": "new",
+  "body": "Scaled card images look ugly due to (lack of)? image scaling algorithm (linear, cubic etc.).\r\n\r\nThanks for your efforts.",
+  "author": "[ousc...@gmail.com](https://code.google.com/u/111017566362523197795/)",
+  "title": "Ugly image scaling issue",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 11, 2013 06:43:32",
+      "body": "Agreed. But need to weigh up cost between quality and performance. The fact that you can popup a full size image of a card alleviates this issue somewhat. The biggest issue with poor quality of thumbnails IMHO is that the card name is ineligible. Could possibly look at adding overlay like in Forge.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "November 11, 2013 12:50:03",
+      "body": "Out of curiosity: why would using a better image scaling algorithm have a significant performance impact? scaling images in real time on a basic machine is almost possible, nowadays. Furthermore, scaled card images could be calculated quickly on the fly and cached, no?",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "November 15, 2013 17:39:21",
+      "body": "Categorized as UI\n\n**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 04:08:31",
+      "body": "**Owner:** lodici123  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [ousc...@gmail.com](https://code.google.com/u/111017566362523197795/) on May 29, 2012 23:37:18_\n\nScaled card images look ugly due to (lack of)? image scaling algorithm (linear, cubic etc.).\r\n\r\nThanks for your efforts.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=217_",
+  "date": "2012-05-29T23:37:18",
+  "state": "open",
+  "gid": 217,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=217",
+  "owner": "lodici123"
+}

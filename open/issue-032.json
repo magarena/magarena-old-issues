@@ -1,0 +1,30 @@
+{
+  "status": "accepted",
+  "body": "Huggybaby on the forum wrote:\r\n\r\nHere's a niggle I've had for a while. It's not a bug really, but does affect game flow a bit:\r\n\r\nWhen you play a card from your hand, the next card under the cursor does not pop up until the cursor is moved. I think the pop up should be refreshed automatically, without having to move your mouse.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "refresh popup automatically",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:24:20",
+      "body": "Categorized as UI\n\n**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 04, 2013 05:47:40",
+      "body": "This is a very old issue. I imagine Magarena has changed considerably since July 2011. I suggest it is closed - if it is still a problem then I am sure it will be raised again.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 25, 2011 14:26:41_\n\nHuggybaby on the forum wrote:\r\n\r\nHere's a niggle I've had for a while. It's not a bug really, but does affect game flow a bit:\r\n\r\nWhen you play a card from your hand, the next card under the cursor does not pop up until the cursor is moved. I think the pop up should be refreshed automatically, without having to move your mouse.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=32_",
+  "date": "2011-07-25T14:26:41",
+  "state": "open",
+  "gid": 32,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=32",
+  "owner": "melvinzh...@gmail.com"
+}

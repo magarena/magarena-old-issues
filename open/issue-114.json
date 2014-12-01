@@ -1,0 +1,80 @@
+{
+  "status": "accepted",
+  "body": "muaddib @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&start=150#p75889 Very often this situation appears: AI attack with creature/creatures, which will be destroy by my blockers. \r\n\r\nFor example, I attack with creature 3/3 with vigilance. AI has creature 2/3.\r\nAI does not block, then AI go attack with creature 2/3 and I block by creature 3/3 with vigilance. In this result AI simply lose creature without any compensation.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "AI attacks with creature/creatures which will be destroyed by blockers",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-High",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "December 04, 2011 06:08:20",
+      "body": "I have Amphibious Kavu, Hada Spy Patrol (tapped).\r\nAI has Thalakos Seer with shadow.\r\nIt's AI turn Thalakos Seer doesn't attack.\n\n**Attachment:** [scr2.jpg](http://code.google.com/p/magarena/issues/detail?id=114#hc1)",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 04, 2011 06:09:01",
+      "body": "AI has Accorder Palladin and Loxodon Warefarer.\r\nI cast Guardian of Akrasa.\r\nAI casts Journey to NoWhere on Loxodon Warefarer and then attack Accorder Palladin.\n\n**Attachment:** [scr1.png](http://code.google.com/p/magarena/issues/detail?id=114#hc2)",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 04, 2011 06:09:39",
+      "body": "AI has Wasp Lancer (3/2 creature with flying.\r\nI have Kor FireWalker and Rusted Sentinel with Enchantment Aether Web (creature 3/4 with reach).\r\nAI attack Wasp Lancer, I blocked it by Rusted Sentinel. AI lose Wasp Lancer.\n\n**Attachment:** [scr2.png](http://code.google.com/p/magarena/issues/detail?id=114#hc3)",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 04, 2011 06:10:27",
+      "body": "I have Samite Healer (tapped), With-Leaf Cavaliers and Stirring WildWood and enough land that Stirring Wildwood become 3/4 creature elemental with reach.\r\nAI has Mourning Thrull 1/1 creature with flying.\r\nAI atack Mourning Thrull, I block him with 3/4 creature elemental with reach.\r\nAI lose Mourning Thrull.\n\n**Attachment:** [scr3.png](http://code.google.com/p/magarena/issues/detail?id=114#hc4)",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 09, 2011 23:35:44",
+      "body": "Note that some of these bad AI decisions were seen before the changes to speed up the AI's blocking options in 1.19.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 11, 2012 01:09:16",
+      "body": "Some bad decisions were seen in 1.18 but seldom.",
+      "author": "[muaddib2...@gmail.com](https://code.google.com/u/110287243301853727062/)"
+    },
+    {
+      "date": "January 25, 2012 06:40:54",
+      "body": "**Labels:** Component-AI  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 03, 2012 07:54:29",
+      "body": "**Labels:** -Priority-Medium Priority-High  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 03, 2014 04:21:02",
+      "body": "I think I may have found something to do with this. The Pump timing doesn't allow casting or activating abilities during a block phase.\r\n\r\nIf the AI has something in hand which could be cast as an instant, and 'waiting to see' if a creature would be blocked, it's unable to activate or cast anything in response. All Pump activations assume aggressive play, not defensive or reactionary. The 'Response' in the MagicTimings only takes into account items on stack.\r\n\r\nAdding Declare Blockers step to Pump timing may help",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "July 03, 2014 18:11:20",
+      "body": "Isn't declare blockers phase included in Pump by the expression 'game.isPhase(MagicPhaseType.DeclareBlockers)' in the case for Pump?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 04, 2014 03:30:51",
+      "body": "Oh yes, got that the wrong way round >.< It's not in declare attackers. My bad.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "July 05, 2014 17:40:35",
+      "body": "You mean add \"Declare Attackers\" to Pump timing?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on December 04, 2011 22:07:12_\n\nmuaddib @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&start=150#p75889 Very often this situation appears: AI attack with creature/creatures, which will be destroy by my blockers. \r\n\r\nFor example, I attack with creature 3/3 with vigilance. AI has creature 2/3.\r\nAI does not block, then AI go attack with creature 2/3 and I block by creature 3/3 with vigilance. In this result AI simply lose creature without any compensation.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=114_",
+  "date": "2011-12-04T22:07:12",
+  "state": "open",
+  "gid": 114,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=114",
+  "owner": "melvinzh...@gmail.com"
+}

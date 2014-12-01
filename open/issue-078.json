@@ -1,0 +1,54 @@
+{
+  "status": "accepted",
+  "body": "Reported on the forum by goonjamin and something that has been talked about before.\r\n\r\nSince we now have basic deck construction rule checking, this shouldn't be that hard to add?",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Add different gameplay formats",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 01, 2011 08:33:31",
+      "body": "Can you be more specific on what you're requesting? Do you just mean adding 60 card decks?",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "November 01, 2011 08:59:30",
+      "body": "The post I made on the forum that Beholder is referencing was regarding different play formats like Momir basic, Hermit Druid, and Stone Hewer (Wagic that I play on my psp has these).",
+      "author": "[mikewpea...@gmail.com](https://code.google.com/u/118017494362655792385/)"
+    },
+    {
+      "date": "November 01, 2011 23:29:49",
+      "body": "I can't find what the Hermit Druid and Stone Hewer formats are but those cards are both not supported at the moment(revealing cards and searching the library).\r\nMomir basic looks doable, I just hope our cardpool is big enough to make it fun.\r\nOther formats that can maybe be added:\r\nSingleton, Prismatic, Pauper, Tribal, Type 4. http://en.wikipedia.org/wiki/Magic:_The_Gathering_formats",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "November 02, 2011 05:59:37",
+      "body": "here is the link to the svn revision of Wagic that added these modes to that program.  There are some details there in the body of the commit notes and a few more in the comments below. https://code.google.com/p/wagic/source/detail?r=3687",
+      "author": "[mikewpea...@gmail.com](https://code.google.com/u/118017494362655792385/)"
+    },
+    {
+      "date": "June 14, 2012 11:13:51",
+      "body": "I'm not sure if this is the right place - but I would like to see \"Core set only\" format. Only 11th edition, 10th edition, 9th edition and so on.",
+      "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)"
+    },
+    {
+      "date": "June 14, 2012 11:16:48",
+      "body": "\"core sets only\" format would be very useful for beginners, because they contain simpler cards. I actually think it should be made the default, because it's simpler and all decent M:tG players will know there are more cards. They will look for a way to enable it.",
+      "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)"
+    },
+    {
+      "date": "June 14, 2012 22:58:43",
+      "body": "@ jazevec:\r\n\r\nI don't know if I'd call \"core sets only\" a different format but it's a good suggestion and looks not very hard to implement.\r\nDid you see issue 198 ?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on October 21, 2011 00:40:43_\n\nReported on the forum by goonjamin and something that has been talked about before.\r\n\r\nSince we now have basic deck construction rule checking, this shouldn't be that hard to add?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=78_",
+  "date": "2011-10-21T00:40:43",
+  "state": "open",
+  "gid": 78,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=78",
+  "owner": "BeHold...@gmail.com"
+}

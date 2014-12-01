@@ -1,0 +1,24 @@
+{
+  "status": "accepted",
+  "body": "@Huggbaby - New Duel, load a couple of precons, say Elf Hordes, Deck Settings screen comes up, and both decks just say Deck (Unsaved Deck) 40 cards. They should say Elf Hordes.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Deck names revert to \"Unsaved Deck\" too easily.",
+  "labels": [
+    "imported",
+    "Priority-High",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 11, 2014 00:45:45",
+      "body": "**Labels:** -Priority-Medium Priority-High  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on February 05, 2014 14:31:00_\n\n@Huggbaby - New Duel, load a couple of precons, say Elf Hordes, Deck Settings screen comes up, and both decks just say Deck (Unsaved Deck) 40 cards. They should say Elf Hordes.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=474_",
+  "date": "2014-02-05T14:31:00",
+  "state": "open",
+  "gid": 474,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=474",
+  "owner": "lodici123"
+}

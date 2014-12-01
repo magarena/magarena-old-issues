@@ -1,0 +1,18 @@
+{
+  "status": "accepted",
+  "body": "A spell with buyback (well, any spell for that matter) should be countered when targeting a permanent that becomes sacrificed when targeted. (As long as it's the only target).\r\n\r\nThis isn't happening at the moment.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Sac When Targeted and Buyback",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on May 21, 2014 21:40:39_\n\nA spell with buyback (well, any spell for that matter) should be countered when targeting a permanent that becomes sacrificed when targeted. (As long as it's the only target).\r\n\r\nThis isn't happening at the moment.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=602_",
+  "date": "2014-05-21T21:40:39",
+  "state": "open",
+  "gid": 602,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=602",
+  "owner": "ShawnieBoyUK"
+}

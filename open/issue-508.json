@@ -1,0 +1,29 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. play Amulet of Vigor\r\n2. play Stomping Ground, do not pay 2 life when prompted\r\n3. Stomping Ground enters the battlefield tapped without being untapped What is the expected output? What do you see instead? I think the mechanic here is, like, magarena let Stomping Ground enter battlefield untapped, then you're prompted to pay 2 life, if you don't, Stomping Ground becomes tapped. Since it was already on the battlefield before it became tapped, Amulet of Vigor doesn't trigger, maybe? What version of the product are you using? On what operating system? Linux Mint 16, magarena 1.48.827 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Amulet of Vigor + Stomping Ground: not paying 2 life, Amulet of Vigor does not trigger",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 12, 2014 09:37:50",
+      "body": "Exactly right. The shock land ability is linked to the MagicRavnicaLandTrigger which only fires once the land is already in play. The land is being tapped by this while already on the battlefield instead of before. The life payment is almost like an alternative cost, but isnt.\r\n\r\nIn fact lots of the tapped into play triggers tap a permanent on the battlefield instead of a play modifier of coming into play tapped.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 14, 2014 08:44:02",
+      "body": "I tried some combination of cards.\r\n\r\ne.g. play Farseek, choose Stoming Ground, Stomping Ground enters battlefield tapped, whether the life was paid or not. Amulet of Vigor should untap Stomping Ground then.\r\nWhich it does - this works in magarena.\r\n\r\n\r\nIt's the same with Perilous Forays and Primeval Titan - tested both - shock land comes into play tapped and is untapped by Amulet of Vigor.\r\n\r\nI have yet to test the spells which put a land on the table untapped.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 12, 2014 23:08:29_\n\nWhat steps will reproduce the problem? 1. play Amulet of Vigor\r\n2. play Stomping Ground, do not pay 2 life when prompted\r\n3. Stomping Ground enters the battlefield tapped without being untapped What is the expected output? What do you see instead? I think the mechanic here is, like, magarena let Stomping Ground enter battlefield untapped, then you're prompted to pay 2 life, if you don't, Stomping Ground becomes tapped. Since it was already on the battlefield before it became tapped, Amulet of Vigor doesn't trigger, maybe? What version of the product are you using? On what operating system? Linux Mint 16, magarena 1.48.827 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=508_",
+  "date": "2014-03-12T23:08:29",
+  "state": "open",
+  "gid": 508,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=508",
+  "owner": ""
+}

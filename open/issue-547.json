@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. cast Mentor of the Meek\r\n2. cast Apex Hawks, kick it once, put a 2/2 creature with one +1/+1 counter onto battlefield (effectivly a 3/3 creature)\r\n3. pay {1} to draw a card What is the expected output? What do you see instead? http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=244682 You only check the power of the other creature when it enters the battlefield. --If it's 2 or less, the ability will trigger. Once the ability triggers, raising that creature's power above 2 won't affect that ability. --Similarly, reducing the creature's power to 2 or less after it enters the battlefield won't cause the ability to trigger.\r\n\r\nApply power bonuses from counters the creature enters the battlefield with and continuous effects like Mayor of Avabruck's when checking to see if Mentor of the Meek's ability will trigger. What version of the product are you using? On what operating system? 1.48.862 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Mentor of the Meek: disregards +1/+1 counter",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 23, 2014 20:51:57_\n\nWhat steps will reproduce the problem? 1. cast Mentor of the Meek\r\n2. cast Apex Hawks, kick it once, put a 2/2 creature with one +1/+1 counter onto battlefield (effectivly a 3/3 creature)\r\n3. pay {1} to draw a card What is the expected output? What do you see instead? http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=244682 You only check the power of the other creature when it enters the battlefield. --If it's 2 or less, the ability will trigger. Once the ability triggers, raising that creature's power above 2 won't affect that ability. --Similarly, reducing the creature's power to 2 or less after it enters the battlefield won't cause the ability to trigger.\r\n\r\nApply power bonuses from counters the creature enters the battlefield with and continuous effects like Mayor of Avabruck's when checking to see if Mentor of the Meek's ability will trigger. What version of the product are you using? On what operating system? 1.48.862 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=547_",
+  "date": "2014-03-23T20:51:57",
+  "state": "open",
+  "gid": 547,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=547",
+  "owner": ""
+}

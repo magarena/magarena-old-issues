@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "sponeta @ http://www.slightlymagic.net/forum/posting.php?mode=reply&f=82&t=3735#pr132809 reported\r\n\r\nAI cast Farbog Boneflinger, then chose one of its own creatures (Bane Alley Blackguard) to get -2/-2, even though I had two creatures too, one of which (Will-o'-the-Wisp) would have been killed if the AI had targeted that. There were no effects preventing the AI from targeting my creatures.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Poor play with Farbog Boneflinger",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 26, 2013 10:06:27_\n\nsponeta @ http://www.slightlymagic.net/forum/posting.php?mode=reply&f=82&t=3735#pr132809 reported\r\n\r\nAI cast Farbog Boneflinger, then chose one of its own creatures (Bane Alley Blackguard) to get -2/-2, even though I had two creatures too, one of which (Will-o'-the-Wisp) would have been killed if the AI had targeted that. There were no effects preventing the AI from targeting my creatures.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=406_",
+  "date": "2013-09-26T10:06:27",
+  "state": "open",
+  "gid": 406,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=406",
+  "owner": "melvinzh...@gmail.com"
+}

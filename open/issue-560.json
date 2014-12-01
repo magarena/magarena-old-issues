@@ -1,0 +1,30 @@
+{
+  "status": "new",
+  "body": "The Deck Strength (AI vs AI option) on the duel screen only has a visible indicator for the total number of games played.\r\n\r\nIt would be handy to have something to show that an individual game is being played, as the games tend to take a long time (for me anyway) to complete. I can imagine some users thinking that nothing's happening at all.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Deck Strength in progress indicator",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "March 28, 2014 06:05:18",
+      "body": "I guess the indicator is if the button has a red cross instead of the green \"play\" icon. Still, it would be simple to enough to add the animated busy icon (similar to when the AI is thinking during a duel) if that would be clearer.\n\n**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 03:42:02",
+      "body": "**Owner:** lodici123  \n  **Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on March 28, 2014 19:17:12_\n\nThe Deck Strength (AI vs AI option) on the duel screen only has a visible indicator for the total number of games played.\r\n\r\nIt would be handy to have something to show that an individual game is being played, as the games tend to take a long time (for me anyway) to complete. I can imagine some users thinking that nothing's happening at all.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=560_",
+  "date": "2014-03-28T19:17:12",
+  "state": "open",
+  "gid": 560,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=560",
+  "owner": "lodici123"
+}

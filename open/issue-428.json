@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "Using pure scripting, and no groovy code, Using Exile Target and Leave Return Exile doesn't return the exiled card - functioning cards currently use groovy.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Exile Target doesn't seem to work with Leave Return Exile",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on December 02, 2013 01:22:38_\n\nUsing pure scripting, and no groovy code, Using Exile Target and Leave Return Exile doesn't return the exiled card - functioning cards currently use groovy.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=428_",
+  "date": "2013-12-02T01:22:38",
+  "state": "open",
+  "gid": 428,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=428",
+  "owner": ""
+}

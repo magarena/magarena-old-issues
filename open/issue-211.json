@@ -1,0 +1,24 @@
+{
+  "status": "accepted",
+  "body": "What steps will reproduce the problem? 1. Assume creature A on the battlefield\r\n2. Assume creature B in the graveyard\r\n3. Play recurring nightmare What is the expected output? What do you see instead? Lands are tapped, creature A is sacrificed as part of the cost.\r\nNow creature A and B are in the graveyard, so you can put\r\ncreature A in play again.\r\n\r\nThis should happend the other way around. MTG rules require all\r\ntargets to be selected before the spell is cast. After activating\r\nrecurring nightmare you should be presented with the list of \r\ncreatures from your graveyard, then tap the lands, and finally\r\nask for a creature to sacrifice. What version of the product are you using? On what operating system? Magarena 1.24 on Ubuntu 11.10",
+  "author": "[pablo.ca...@gmail.com](https://code.google.com/u/100883785716832971309/)",
+  "title": "Target selection should be done before paying costs",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 28, 2012 19:32:51",
+      "body": "Agree, choosing targets should happen before paying costs. Thanks for bringing this to our attention.\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [pablo.ca...@gmail.com](https://code.google.com/u/100883785716832971309/) on April 29, 2012 07:15:43_\n\nWhat steps will reproduce the problem? 1. Assume creature A on the battlefield\r\n2. Assume creature B in the graveyard\r\n3. Play recurring nightmare What is the expected output? What do you see instead? Lands are tapped, creature A is sacrificed as part of the cost.\r\nNow creature A and B are in the graveyard, so you can put\r\ncreature A in play again.\r\n\r\nThis should happend the other way around. MTG rules require all\r\ntargets to be selected before the spell is cast. After activating\r\nrecurring nightmare you should be presented with the list of \r\ncreatures from your graveyard, then tap the lands, and finally\r\nask for a creature to sacrifice. What version of the product are you using? On what operating system? Magarena 1.24 on Ubuntu 11.10\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=211_",
+  "date": "2012-04-29T07:15:43",
+  "state": "open",
+  "gid": 211,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=211",
+  "owner": ""
+}

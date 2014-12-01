@@ -1,0 +1,44 @@
+{
+  "status": "accepted",
+  "body": "What steps will reproduce the problem? 1. cast 3 creatures, one of them being Mothdust Changeling\r\n2. activate Mothdust Changeling, tap target creature you control, Mothdust Changeling gains flying\r\n3. Mothdost Changeling could not be activated a second time What is the expected output? What do you see instead? you should get to activate Mothdust Changeling as much as you control untapped creatures, including Mothdust Changeling itself What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). 1.48.873 Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Mothdust Cangeling: ability can be used only once",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 23, 2014 11:09:30",
+      "body": "It looks like the 'gain ability' abilities for creature that give themselves an ability have a condition that they don't already have the ability.\r\n\r\nI would guess this is to prevent the AI from repeatedly giving a creature an ability it already has.\n\n**Status:** Accepted  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 23, 2014 13:08:49",
+      "body": "my testdeck:\r\n\r\n# 10 creatures\r\n4 Coralhelm Commander\r\n4 Fallowsage\r\n4 Judge of Currents\r\n2 Lord of Atlantis\r\n4 Master of Waves\r\n2 Master of the Pearl Trident\r\n4 Mothdust Changeling\r\n4 Stonybrook Schoolmaster\r\n2 Surgespanner\r\n2 Veteran of the Depths\r\n\r\n# 4 spells\r\n4 Merrow Commerce\r\n4 Mox Pearl\r\n4 Mox Sapphire\r\n4 Paradise Mantle\r\n\r\n# 3 lands\r\n4 Glacial Fortress\r\n4 Hallowed Fountain\r\n4 Tundra\r\n\r\nthe Mothdust Changeling would be an excellent way to tap all these merfolks with tap abilities, plus it gets stronger for being merfolk and elemental, plus it gains flying. I like this card.\r\n\r\nApropos AI: once I saw the AI doing something very weird with Paradis Mantle. It equipped one creature with it, than tapped that creature for mana to hand the Paradise Mantle to the next creature. 7 times in a row, effectivly tapping all its available creatures. On the one hand it was annoying, because it needed quite some time... but on the other hand it gave me this idea.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 23, 2014 13:14:45",
+      "body": "which reminds me:\r\n\r\n\r\nBenthicore - not available yet - would fit into that deck, too. \r\nDo you guys card requests?",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 23, 2014 13:30:51",
+      "body": "Yes, we do accept requests :) http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3700&sid=260c7520d35509acbc2cfbc163e2579f is a place on the forums to put up requests. Probably the best place to put them.\r\n\r\nTapping two untapped Merfolk as a cost isn't currently implemented, but can be.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 24, 2014 00:24:17",
+      "body": "We could limit the check to the AI only by wrapping it in a MagicArtificialCondition, similar to what we do for the man lands to prevent the AI frin tapping the land to pay the activation cost.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 24, 2014 00:26:37_\n\nWhat steps will reproduce the problem? 1. cast 3 creatures, one of them being Mothdust Changeling\r\n2. activate Mothdust Changeling, tap target creature you control, Mothdust Changeling gains flying\r\n3. Mothdost Changeling could not be activated a second time What is the expected output? What do you see instead? you should get to activate Mothdust Changeling as much as you control untapped creatures, including Mothdust Changeling itself What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). 1.48.873 Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=549_",
+  "date": "2014-03-24T00:26:37",
+  "state": "open",
+  "gid": 549,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=549",
+  "owner": ""
+}

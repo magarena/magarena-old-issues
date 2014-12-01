@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "Magarena 1.26, Debian Linux (Wheezy)\r\n\r\nI'm not sure how to reproduce it, but you can see the table and the game log in pictures.\r\n\r\nHunting Moa makes the caster put a +1/+1 counter on the target creature as it enters the game. AI chose my creature, despite having more than enough targets of its own !",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "AI buffs my creature with Hunting Moa",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on June 25, 2012 15:08:27_\n\nMagarena 1.26, Debian Linux (Wheezy)\r\n\r\nI'm not sure how to reproduce it, but you can see the table and the game log in pictures.\r\n\r\nHunting Moa makes the caster put a +1/+1 counter on the target creature as it enters the game. AI chose my creature, despite having more than enough targets of its own !\n\n**Attachment:** [moaonhostile1.jpg moaonhostile2.jpg](http://code.google.com/p/magarena/issues/detail?id=238)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=238_",
+  "date": "2012-06-25T15:08:27",
+  "state": "open",
+  "gid": 238,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=238",
+  "owner": ""
+}

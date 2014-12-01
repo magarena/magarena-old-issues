@@ -1,0 +1,30 @@
+{
+  "status": "accepted",
+  "body": "Not sure if it is by design, but the ordering in the sub-type filter seems to be in blocks of alphabetical sort order. Took a while to find \"Aura\".",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Update sort order of sub-type filter?",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "Type-Review"
+  ],
+  "comments": [
+    {
+      "date": "September 27, 2014 03:46:47",
+      "body": "I think it's just taking them as they come from MagicSubType. They're grouped in there for separate enum-sets for creature-subtypes, planeswalker-subtypes etc.\r\n\r\nTaking that list and sorting it before listing filters could help finding things. Or having a search bar for the search filter, hehe.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 27, 2014 04:00:35",
+      "body": "Ok, I will take a look at sorting the sub-types before adding to the filter.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 27, 2014 14:50:28_\n\nNot sure if it is by design, but the ordering in the sub-type filter seems to be in blocks of alphabetical sort order. Took a while to find \"Aura\".\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=702_",
+  "date": "2014-09-27T14:50:28",
+  "state": "open",
+  "gid": 702,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=702",
+  "owner": "lodici123"
+}

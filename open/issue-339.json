@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. Creature attacks\r\n2. Combat damage is redirected to Planeswalker 3. What is the expected output? What do you see instead? It would be nice to have the real Planeswalker rule applied, where each creature can decide to attack either a player or a Planeswalker. What version of the product are you using? On what operating system? 1.36, Mac OS X 10.7. Please provide any additional information below. Having Planeswalers and the current redirection system is already interesting, but it does not lead to the exact same reasonings as in a real game, when a Planeswalker is present.",
+  "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)",
+  "title": "More normal Planeswalker rule: creature can attack Planeswalker",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/) on April 05, 2013 19:11:44_\n\nWhat steps will reproduce the problem? 1. Creature attacks\r\n2. Combat damage is redirected to Planeswalker 3. What is the expected output? What do you see instead? It would be nice to have the real Planeswalker rule applied, where each creature can decide to attack either a player or a Planeswalker. What version of the product are you using? On what operating system? 1.36, Mac OS X 10.7. Please provide any additional information below. Having Planeswalers and the current redirection system is already interesting, but it does not lead to the exact same reasonings as in a real game, when a Planeswalker is present.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=339_",
+  "date": "2013-04-05T19:11:44",
+  "state": "open",
+  "gid": 339,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=339",
+  "owner": ""
+}

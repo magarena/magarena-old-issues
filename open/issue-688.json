@@ -1,0 +1,30 @@
+{
+  "status": "accepted",
+  "body": "AI has problems with self-animating permanents. Issues include:\r\n\r\nTapping self for animate ability.\r\nLow priority for animating (Having no creatures, rarely animate permanents).\r\nCan AI 'identify' potential creatures if they are also mana sources?\r\n\r\nInitially reported by Agetian http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=160312#p160283 Test Deck for mirror-match: http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=160312#p160312",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "AI and Animating Lands",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 10, 2014 18:08:55",
+      "body": "AI make a decision at the start of the turn for cards with mana_or_combat on whether to exclude them from combat and use them for mana. It shows \"...\" on the choice panel when the AI is making this decision.\r\n\r\nThe logic is in MagicExcludeChoice.getArtificialOptions @ src/magic/model/choice/MagicExcludeChoice.java\r\n\r\nIn particular, if there are more than 3 of such permanents around, it always excludes all of them from combat. Could be causing issues in such decks. For 3 or less, it considers all possible options. I suppose the reason for the 3 or more heuristic is to avoid the huge number of possible options (for 4, there are 16 options).\r\n\r\nPersonally I wonder if this special AI only decision is needed at all? What if we remove it altogether and decide on the fly rather than at the start of the turn?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 11, 2014 13:08:16",
+      "body": "That would certainly allow for more flexible plays.\r\n\r\nAlso thought about the animate timing - activating during your opponent's attack phase(can't be block, as it's not fast enough) should be dependent on them actually attacking with something that can be blocked.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on September 10, 2014 22:52:44_\n\nAI has problems with self-animating permanents. Issues include:\r\n\r\nTapping self for animate ability.\r\nLow priority for animating (Having no creatures, rarely animate permanents).\r\nCan AI 'identify' potential creatures if they are also mana sources?\r\n\r\nInitially reported by Agetian http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=160312#p160283 Test Deck for mirror-match: http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=160312#p160312\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=688_",
+  "date": "2014-09-10T22:52:44",
+  "state": "open",
+  "gid": 688,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=688",
+  "owner": ""
+}

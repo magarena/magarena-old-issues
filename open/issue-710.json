@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "The AI although pretty good makes a lot of bad mistakes. Not attacking when it should, blocking when it shouldn't, using enchantments on my creatures that help me.\r\n\r\nI think the best way to fix this would be to allow the user to take control of the AI and undo a dumb move by the AI.\r\n\r\nWe have the back button, however you have to do it 3 or 4 times hoping the AI realizes it was a bad move... Sometimes it will never realize it was a bad move. \r\n\r\nIf I could just click on the AI card so It would take the move back that would fix a lot of problems.\r\n\r\nThanks",
+  "author": "[jgjohn....@gmail.com](https://code.google.com/u/106532616985828525979/)",
+  "title": "Fix AI Mistakes",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [jgjohn....@gmail.com](https://code.google.com/u/106532616985828525979/) on October 13, 2014 05:30:03_\n\nThe AI although pretty good makes a lot of bad mistakes. Not attacking when it should, blocking when it shouldn't, using enchantments on my creatures that help me.\r\n\r\nI think the best way to fix this would be to allow the user to take control of the AI and undo a dumb move by the AI.\r\n\r\nWe have the back button, however you have to do it 3 or 4 times hoping the AI realizes it was a bad move... Sometimes it will never realize it was a bad move. \r\n\r\nIf I could just click on the AI card so It would take the move back that would fix a lot of problems.\r\n\r\nThanks\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=710_",
+  "date": "2014-10-13T05:30:03",
+  "state": "open",
+  "gid": 710,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=710",
+  "owner": ""
+}

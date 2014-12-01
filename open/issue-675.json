@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "Originally raised by shawnieboy in issue 673 (comment #5)...\r\n\r\nI see - fiddling with the large card images and various card image sizes on the battlefield. (And with mouse wheel to pop-up)\r\n\r\nIf you view a Large card image with popup - then view a low res image. The top left corner of the low res card image, appears at the top left corner of where a large card image would be. Viewing it again fixes it.\r\n\r\nHowever if you then view a large image after a low res image, it does the same, ie the top left corner is where the low res image would begin.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Fix mousewheel popup image quirk",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 01, 2014 15:42:59_\n\nOriginally raised by shawnieboy in issue 673 (comment #5)...\r\n\r\nI see - fiddling with the large card images and various card image sizes on the battlefield. (And with mouse wheel to pop-up)\r\n\r\nIf you view a Large card image with popup - then view a low res image. The top left corner of the low res card image, appears at the top left corner of where a large card image would be. Viewing it again fixes it.\r\n\r\nHowever if you then view a large image after a low res image, it does the same, ie the top left corner is where the low res image would begin.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=675_",
+  "date": "2014-09-01T15:42:59",
+  "state": "open",
+  "gid": 675,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=675",
+  "owner": "lodici123"
+}

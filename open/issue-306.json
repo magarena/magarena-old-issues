@@ -1,0 +1,30 @@
+{
+  "status": "accepted",
+  "body": "Huggybaby @ http://www.slightlymagic.net/forum/viewtopic.php?t=3736&p=100223#p102274 When playing precon decks, add title of decks somewhere, probably on top of the playfield in the white bar that says \"Magarena by ubeefx\".\r\n\r\neg. Player 1: Blue/Green aggro vs. Player 2: Red/Blue Loser",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Add title of deck to top of playing field",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:45:45",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 04:07:26",
+      "body": "**Owner:** lodici123  \n  **Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on November 22, 2012 20:16:06_\n\nHuggybaby @ http://www.slightlymagic.net/forum/viewtopic.php?t=3736&p=100223#p102274 When playing precon decks, add title of decks somewhere, probably on top of the playfield in the white bar that says \"Magarena by ubeefx\".\r\n\r\neg. Player 1: Blue/Green aggro vs. Player 2: Red/Blue Loser\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=306_",
+  "date": "2012-11-22T20:16:06",
+  "state": "open",
+  "gid": 306,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=306",
+  "owner": "lodici123"
+}

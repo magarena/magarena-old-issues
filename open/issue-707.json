@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "when opponent plays a card face down with morph, you can see what he is playing with mouseover on the stack ( http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=163682&sid=37dad643779c1ef87f3d284312c3c940#p163614 ).",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "mouse over stack lets you see face down morph card.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on October 02, 2014 12:39:59_\n\nwhen opponent plays a card face down with morph, you can see what he is playing with mouseover on the stack ( http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=163682&sid=37dad643779c1ef87f3d284312c3c940#p163614 ).\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=707_",
+  "date": "2014-10-02T12:39:59",
+  "state": "open",
+  "gid": 707,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=707",
+  "owner": "lodici123"
+}

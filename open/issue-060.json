@@ -1,0 +1,24 @@
+{
+  "status": "started",
+  "body": "The getTargetChoice method in MagicCardActivation and MagicPermanentActivation calls getEvent to construct a MagicEvent and then gets the target choice from the event object. This is done when cards are loaded at the beginning of the game before any MagicGame object has been created.\r\n\r\nThis prevents us from creating cards where the getEvent method depends on the game state.\r\n\r\nSolution is to separate out the MagicTargetChoice of an event from the event itself so that there is no need to create the event to get the MagicTargetChoice.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "getTargetChoice creating a dummy MagicEvent object and retrieves the target choice from the object",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 24, 2011 02:09:36",
+      "body": "started thinking about how to redesign this system with minimal impact to the rest of the game, especially the existing cards.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 24, 2011 17:08:08_\n\nThe getTargetChoice method in MagicCardActivation and MagicPermanentActivation calls getEvent to construct a MagicEvent and then gets the target choice from the event object. This is done when cards are loaded at the beginning of the game before any MagicGame object has been created.\r\n\r\nThis prevents us from creating cards where the getEvent method depends on the game state.\r\n\r\nSolution is to separate out the MagicTargetChoice of an event from the event itself so that there is no need to create the event to get the MagicTargetChoice.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=60_",
+  "date": "2011-09-24T17:08:08",
+  "state": "open",
+  "gid": 60,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=60",
+  "owner": "melvinzh...@gmail.com"
+}

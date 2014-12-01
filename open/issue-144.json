@@ -1,0 +1,40 @@
+{
+  "status": "new",
+  "body": "I had an untapped creature and a tapped one. GC attacked, and again tapped the tapped one. Waste of a good ability.",
+  "author": "[georgeru...@gmail.com](https://code.google.com/u/115988881252246409393/)",
+  "title": "Gustcloak Cavalier tapped an already tapped creature",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "January 24, 2012 18:37:47",
+      "body": "Noted, but it is hard for us to replicate this without knowing that other cards are on the battlefield. Do try to capture a screenshot of the game and attach it to the issue if you come across a similar situation.\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 25, 2012 06:38:53",
+      "body": "**Labels:** Component-AI  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 14, 2012 11:26:43",
+      "body": "The same happens with the 2W/U Faerie and Icy Manipulator. My creatures were already attacking, and AI decided to \"tap\" them.",
+      "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)"
+    },
+    {
+      "date": "November 27, 2013 14:17:51",
+      "body": "With the addition of Ali-Baba, play with steel walls (or other cheap walls) - Will regularly re-tap tapped walls. It appears to happen most when there is mana going spare, and nothing else for the AI to use it on.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [georgeru...@gmail.com](https://code.google.com/u/115988881252246409393/) on January 21, 2012 12:43:04_\n\nI had an untapped creature and a tapped one. GC attacked, and again tapped the tapped one. Waste of a good ability.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=144_",
+  "date": "2012-01-21T12:43:04",
+  "state": "open",
+  "gid": 144,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=144",
+  "owner": ""
+}

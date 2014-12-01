@@ -1,0 +1,40 @@
+{
+  "status": "accepted",
+  "body": "The json feed from mtgjson.com contains a \"variations\" property which identifies alternative card images. By adding this information to the card script a new feature that lets a player choose from an alternative image for a card can be added to the explorer/deck editor. See also https://groups.google.com/d/msg/magarena/ItBNX-x7znU/wIiRYEUAqnkJ .",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Option to select alternative card image.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 11, 2014 00:00:58",
+      "body": "**Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 10, 2014 00:46:58",
+      "body": "**Labels:** -Priority-Low Priority-Medium  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 10, 2014 10:57:38",
+      "body": "for future reference, mtgimage.com accepts our current card script file names as jpg. eg: http://mtgimage.com/card/Chorus_of_Might.jpg instead of http://mtgimage.com/card/chorus%20of%20might.jpg",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 10, 2014 11:18:31",
+      "body": "- But only if there's no other punctuation involved - Bah :(",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 09, 2014 15:20:13_\n\nThe json feed from mtgjson.com contains a \"variations\" property which identifies alternative card images. By adding this information to the card script a new feature that lets a player choose from an alternative image for a card can be added to the explorer/deck editor. See also https://groups.google.com/d/msg/magarena/ItBNX-x7znU/wIiRYEUAqnkJ .\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=645_",
+  "date": "2014-08-09T15:20:13",
+  "state": "open",
+  "gid": 645,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=645",
+  "owner": "lodici123"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "accepted",
+  "body": "What steps will reproduce the problem? 1. Cascade into Fling\r\n\r\nWhat is the expected output?\r\nAsk to pay additional cost of sacrificing a creature. \r\n\r\nWhat do you see instead?\r\nNot asked, program crashes as Fling expects a creature to be referenced in the cost",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "when casting card without their mana cost, mandatory additional costs must still be paid",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 17, 2014 20:58:02",
+      "body": "optional costs such as kicker may be paid when casting without paying mana cost",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 18, 2014 04:26:52",
+      "body": "Ah yes, I forgot that - happened to me with Isochron Scepter and Shrapnel Blast as well - I wasn't asked to sacrifce an artifact.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 18, 2014 05:09:47",
+      "body": "One more thing: if spells are casted without paying their mana cost, alternative costs are disregarded. Additional costs, though may be paid - mandatory additional cost must be paid.\r\n\r\ne.g.: Violent Outburst cascades into Vines of Vastwood, you should be propted to pay the kicker cost. Same when imprinting Vines of Vastwood onto Isocrone Scepter and casting a copy of the spell from there.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 18, 2014 06:58:08",
+      "body": "... same goes for Replicate, which is an addition cost, too\r\n\r\n702.55a Replicate is a keyword that represents two abilities. The first is a static ability that functions while the spell is on the stack. The second is a triggered ability that functions while the spell is on the stack. “Replicate [cost]” means “As an additional cost to play this spell, you may pay [cost] any number of times” and “When you cast this spell, if a replicate cost was paid for it, copy it for each time its replicate cost was paid. If the spell has any targets, you may choose new targets for any number of the copies.”",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 21, 2014 07:57:43",
+      "body": "Issue 533 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on March 18, 2014 11:57:16_\n\nWhat steps will reproduce the problem? 1. Cascade into Fling\r\n\r\nWhat is the expected output?\r\nAsk to pay additional cost of sacrificing a creature. \r\n\r\nWhat do you see instead?\r\nNot asked, program crashes as Fling expects a creature to be referenced in the cost\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=528_",
+  "date": "2014-03-18T11:57:16",
+  "state": "open",
+  "gid": 528,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=528",
+  "owner": "melvinzh...@gmail.com"
+}

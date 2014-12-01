@@ -1,0 +1,18 @@
+{
+  "status": "accepted",
+  "body": "add properties to player.profile for AI players to selectively enable/disable use of target hint and target picker\r\n\r\neg.\r\nuseTargetHint=true/false\r\nuseTargetPicker=true/false",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Enable per AI configuration of target hint and target picker",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 25, 2014 10:37:38_\n\nadd properties to player.profile for AI players to selectively enable/disable use of target hint and target picker\r\n\r\neg.\r\nuseTargetHint=true/false\r\nuseTargetPicker=true/false\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=698_",
+  "date": "2014-09-25T10:37:38",
+  "state": "open",
+  "gid": 698,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=698",
+  "owner": "melvinzh...@gmail.com"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "accepted",
+  "body": "requested by kannikkiy on http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=10144",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "separate interface text from code to support translation",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:49:24",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on June 01, 2013 22:06:30_\n\nrequested by kannikkiy on http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=10144\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=355_",
+  "date": "2013-06-01T22:06:30",
+  "state": "open",
+  "gid": 355,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=355",
+  "owner": "melvinzh...@gmail.com"
+}

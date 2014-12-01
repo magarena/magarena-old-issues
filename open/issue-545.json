@@ -1,0 +1,29 @@
+{
+  "status": "started",
+  "body": "What steps will reproduce the problem? 1. I don't know how to reproduce this, is just happens sometimes 2. 3. What is the expected output? What do you see instead? https://www.dropbox.com/s/swvt2t9szu38idu/deathbringer_liege_stack_order.png What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Deathbringer Liege: when casting a spell both black and white normally the tap ability lies on top of the stack. sometimes, though, the order is reversed",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 27, 2014 09:42:00",
+      "body": "http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=157288 If you cast a spell that's both white and black, the last two abilities will both trigger. You may use them together to destroy any creature. To do so, put the \"destroy\" ability on the stack first, then put the \"tap\" ability on the stack, with each one targeting the same creature. When the abilities resolve, they'll tap the creature, then destroy it.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 27, 2014 19:43:04",
+      "body": "**Status:** Started  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 23, 2014 10:12:27_\n\nWhat steps will reproduce the problem? 1. I don't know how to reproduce this, is just happens sometimes 2. 3. What is the expected output? What do you see instead? https://www.dropbox.com/s/swvt2t9szu38idu/deathbringer_liege_stack_order.png What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=545_",
+  "date": "2014-03-23T10:12:27",
+  "state": "open",
+  "gid": 545,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=545",
+  "owner": ""
+}

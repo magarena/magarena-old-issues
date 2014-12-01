@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. Opponent is Minimax level 6, has 6 life, no untapped mana and 2 creatures (Kami of Old stone 1/7, Soulbound guardians 4/5 defender flying)\r\n2. I attack with 2 creatures (Raging Ravine 7/7, Murasa Pyromancer 3/2)\r\n3. Opponent blocks Murasa Pyromancer with both creatures, resulting in their death by the unblocked Raging Ravine. The second blocker was also unnecessary, Soulbound Guardians alone would have destroyed the Pyromancer What is the expected output? What do you see instead? Opponent probably should have blocked both creatures, would have survived at least one more turn that way What version of the product are you using? On what operating system? Magarena 1.31, Windows 7 64-bit Please provide any additional information below. I wonder if the computer didn't block Raging Ravine because it didn't recognize it as a creature? (card is a land that can be turned into a creature for one turn by spending 4 mana)",
+  "author": "[Jupia...@gmail.com](https://code.google.com/u/110087487285037268714/)",
+  "title": "A.I. chooses to block in a way that will result in it's immediate defeat",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [Jupia...@gmail.com](https://code.google.com/u/110087487285037268714/) on November 09, 2012 08:39:57_\n\nWhat steps will reproduce the problem? 1. Opponent is Minimax level 6, has 6 life, no untapped mana and 2 creatures (Kami of Old stone 1/7, Soulbound guardians 4/5 defender flying)\r\n2. I attack with 2 creatures (Raging Ravine 7/7, Murasa Pyromancer 3/2)\r\n3. Opponent blocks Murasa Pyromancer with both creatures, resulting in their death by the unblocked Raging Ravine. The second blocker was also unnecessary, Soulbound Guardians alone would have destroyed the Pyromancer What is the expected output? What do you see instead? Opponent probably should have blocked both creatures, would have survived at least one more turn that way What version of the product are you using? On what operating system? Magarena 1.31, Windows 7 64-bit Please provide any additional information below. I wonder if the computer didn't block Raging Ravine because it didn't recognize it as a creature? (card is a land that can be turned into a creature for one turn by spending 4 mana)\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=304)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=304_",
+  "date": "2012-11-09T08:39:57",
+  "state": "open",
+  "gid": 304,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=304",
+  "owner": ""
+}

@@ -1,0 +1,34 @@
+{
+  "status": "accepted",
+  "body": "What steps will reproduce the problem? 1. play Glen Elandra Archmage\r\n2. play Evil Twin, copy Glen Elandra Archmage\r\n3. use Evil Twins copied ability to counterspell, sacrificing it in the process What is the expected output? What do you see instead? that's the big question, isn't it. Evil Twin got persist, and even if it stops being a Glen Elandra Archmage copy, persist shloud still trigger. And when Evil Twin put back onto the battlefield, you should put a -1/-1 counter on it and you should get to choose a new source to copy.\r\n\r\nI'm referring to: http://wiki.mtgsalvation.com/article/Persist - Persist triggers when the permanent is put into a graveyard and relies on the last known information about that permanent when it left the battlefield.\r\n- When a permanent with persist is put into a graveyard and then returns to the battlefield, it becomes a new object with no memory of its previous existence. It has \"summoning sickness.\" \r\n\r\nThe same goes for undying. http://wiki.mtgsalvation.com/article/Undying - Undying relies on the last known information about the permanent just before it was put into a graveyard.\r\n- An object returned to the battlefield with the undying ability is a new object with no memory of its previous existence. It has \"summoning sickness\". What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "MagicPlayCardAction does not use custom MagicSpellCardEvent",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 15, 2014 19:47:16",
+      "body": "confirmed, it is a bug with MagicReanimateAction used by persist and undying\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 16, 2014 23:44:49",
+      "body": "Issue 513 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 17, 2014 19:27:37",
+      "body": "**Summary:** MagicPlayCardAction does not use custom MagicSpellCardEvent  <span class=\"oldvalue\"> (was: Evil Twin and persist ) </span>  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 16, 2014 05:57:13_\n\nWhat steps will reproduce the problem? 1. play Glen Elandra Archmage\r\n2. play Evil Twin, copy Glen Elandra Archmage\r\n3. use Evil Twins copied ability to counterspell, sacrificing it in the process What is the expected output? What do you see instead? that's the big question, isn't it. Evil Twin got persist, and even if it stops being a Glen Elandra Archmage copy, persist shloud still trigger. And when Evil Twin put back onto the battlefield, you should put a -1/-1 counter on it and you should get to choose a new source to copy.\r\n\r\nI'm referring to: http://wiki.mtgsalvation.com/article/Persist - Persist triggers when the permanent is put into a graveyard and relies on the last known information about that permanent when it left the battlefield.\r\n- When a permanent with persist is put into a graveyard and then returns to the battlefield, it becomes a new object with no memory of its previous existence. It has \"summoning sickness.\" \r\n\r\nThe same goes for undying. http://wiki.mtgsalvation.com/article/Undying - Undying relies on the last known information about the permanent just before it was put into a graveyard.\r\n- An object returned to the battlefield with the undying ability is a new object with no memory of its previous existence. It has \"summoning sickness\". What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=525_",
+  "date": "2014-03-16T05:57:13",
+  "state": "open",
+  "gid": 525,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=525",
+  "owner": ""
+}

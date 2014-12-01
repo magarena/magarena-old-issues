@@ -1,0 +1,30 @@
+{
+  "status": "new",
+  "body": "It would be nice to have an option in the preferences to sort player's hand:\r\n- by card type (creatures, lands, spells...)\r\n- by manacost\r\n- by card type, then manacost",
+  "author": "[ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/)",
+  "title": "Option for sorting player's hand is needed",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:51:12",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 03:50:03",
+      "body": "**Owner:** lodici123  \n  **Labels:** -Type-Defect -Priority-Medium Type-Enhancement Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/) on August 23, 2013 15:40:26_\n\nIt would be nice to have an option in the preferences to sort player's hand:\r\n- by card type (creatures, lands, spells...)\r\n- by manacost\r\n- by card type, then manacost\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=395_",
+  "date": "2013-08-23T15:40:26",
+  "state": "open",
+  "gid": 395,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=395",
+  "owner": "lodici123"
+}

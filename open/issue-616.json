@@ -1,0 +1,29 @@
+{
+  "status": "accepted",
+  "body": "Just an idea as I start adding M15 cards...\r\n\r\nIf a card has a missing script and the empty file is viewed in the card explorer. Having an option to create a blank template for that file would be really useful.\r\n\r\nThe file-name is already present there in the link, and the card-name is also known.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Missing Card Scripts",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "July 04, 2014 05:07:06",
+      "body": "Sorry, not sure I completely understand. I am guessing that when you click on the file link in the script viewer, if the file does not exist it should create an empty script file in \"scripts_missing\" and then open in the default editor. The advantage being that the file is named correctly?",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "July 04, 2014 14:18:26",
+      "body": "Yup, that's it - Probably with the name, image, and value filled in (all taken from the name, or in the case of value, default of 2.50).\r\n\r\nIt's not something that would come up very often, but was something which occurred to me while making a start before waiting for mtgjson to add M15 (once Wizards adds it to gatherer)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on July 04, 2014 19:45:23_\n\nJust an idea as I start adding M15 cards...\r\n\r\nIf a card has a missing script and the empty file is viewed in the card explorer. Having an option to create a blank template for that file would be really useful.\r\n\r\nThe file-name is already present there in the link, and the card-name is also known.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=616_",
+  "date": "2014-07-04T19:45:23",
+  "state": "open",
+  "gid": 616,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=616",
+  "owner": "ShawnieBoyUK"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "new",
+  "body": "let's say, computer has 6 cards on hand. I play 1 Ancestral Recall, copy it 4 times with my two Echo Mages. Computer draws 15 cards, make it 21 on hand. It casts maybe 1 or 2 and then its mana sources are all used up. 19 cards left on hand.\r\n\r\nClean UP step... computer needs to discard 12 out of 19 cards.\r\nmagarena freezes. My resource monitor shows something like 600M RAM usage, 80+ CPU usage, magarena does not respond anymore. doesn't matter how long I wait, in the end I have to remove the process by kill PID.\r\n\r\nNow I tried something, I changed the values in magarena.sh to:\r\n\r\n#!/bin/sh\r\nself=`readlink -en \"$0\"`\r\nbase=`dirname \"$self\"`\r\ncd \"$base\"\r\nexec java -Xms512M -Xmx1024M -jar Magarena.exe\r\n\r\nwhat happens now: similar situation, a very short freeze, then magarena responds again. Resource monitor shows something like 1000M RAM and 32%, 34% CPU usage.\r\n\r\n\r\ngame.log shows hundreds of lines like these:\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Nuisance Engine)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Nuisance Engine)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Nuisance Engine, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Nuisance Engine)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Nuisance Engine, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Nuisance Engine, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Nuisance Engine)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Nuisance Engine, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Nuisance Engine, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Nuisance Engine, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Mountain)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Mountain)\r\n\r\nWhat did I do exactly? Set magarena's memory-usage to 512-1024 MB?\r\n\r\nI'm at my Laptop right now: \r\nIntel(R) Core(TM)2 CPU T7200  @ 2.00GHz\r\n2 GB RAM\r\nLinux Zorin 8\r\nGNOME 3.8.4 (Ubuntu 2013-12-05)\r\nKernel 3.11.0-18-generic (#32-Ubuntu SMP Tue Feb 18 21:13:28 UTC 2014)\r\nmagarena 1.48.862",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "magarena freezes with mini max 6/8 when it needs to discard 9+ cards at cleanup",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 21, 2014 20:10:34",
+      "body": "We need a better way to generate the discard options. Currently it is considering all 19 choose 12 = 50388 options at once. This takes up more memory then we usually set for Magarena, increasing the memory allocated allowed it to generate all the options. A better way is to avoid generating all options at once, do it incrementally. Choose one card to discard, then another, etc.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 21, 2014 20:57:55",
+      "body": "Another thought: If the amount to discard is greater than half the hand, the AI chooses which cards to keep, then discards the rest.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 22, 2014 01:29:22",
+      "body": "The number of options is the same, 19 choose 12 = 19 choose 7",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 22, 2014 01:56:00",
+      "body": "divide and conquer... make it random 10 choose 4 and leftover 9 choose 3",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 22, 2014 03:18:49",
+      "body": "I meant with the incremental discard option. If the amount to discard incrementally is high, switching it round to incremental keep would be quicker.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 22, 2014 09:44:42_\n\nlet's say, computer has 6 cards on hand. I play 1 Ancestral Recall, copy it 4 times with my two Echo Mages. Computer draws 15 cards, make it 21 on hand. It casts maybe 1 or 2 and then its mana sources are all used up. 19 cards left on hand.\r\n\r\nClean UP step... computer needs to discard 12 out of 19 cards.\r\nmagarena freezes. My resource monitor shows something like 600M RAM usage, 80+ CPU usage, magarena does not respond anymore. doesn't matter how long I wait, in the end I have to remove the process by kill PID.\r\n\r\nNow I tried something, I changed the values in magarena.sh to:\r\n\r\n#!/bin/sh\r\nself=`readlink -en \"$0\"`\r\nbase=`dirname \"$self\"`\r\ncd \"$base\"\r\nexec java -Xms512M -Xmx1024M -jar Magarena.exe\r\n\r\nwhat happens now: similar situation, a very short freeze, then magarena responds again. Resource monitor shows something like 1000M RAM and 32%, 34% CPU usage.\r\n\r\n\r\ngame.log shows hundreds of lines like these:\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Nuisance Engine)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Nuisance Engine)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Nuisance Engine, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Nuisance Engine)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Nuisance Engine, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Nuisance Engine, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Nuisance Engine)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Nuisance Engine, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Nuisance Engine, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Nuisance Engine, Stun)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Mountain)\r\n  [-1/1/none] (Flowstone Wall, Frost Giant, Goblin Hero, Kiln Fiend, Mountain, Mountain, Mountain, Mountain, Mountain)\r\n\r\nWhat did I do exactly? Set magarena's memory-usage to 512-1024 MB?\r\n\r\nI'm at my Laptop right now: \r\nIntel(R) Core(TM)2 CPU T7200  @ 2.00GHz\r\n2 GB RAM\r\nLinux Zorin 8\r\nGNOME 3.8.4 (Ubuntu 2013-12-05)\r\nKernel 3.11.0-18-generic (#32-Ubuntu SMP Tue Feb 18 21:13:28 UTC 2014)\r\nmagarena 1.48.862\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=538_",
+  "date": "2014-03-22T09:44:42",
+  "state": "open",
+  "gid": 538,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=538",
+  "owner": ""
+}

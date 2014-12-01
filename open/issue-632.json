@@ -1,0 +1,25 @@
+{
+  "status": "accepted",
+  "body": "There is currently no way for player decks to be removed from Magarena.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Add option to delete a player deck.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 11, 2014 00:04:29",
+      "body": "**Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on July 28, 2014 19:26:37_\n\nThere is currently no way for player decks to be removed from Magarena.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=632_",
+  "date": "2014-07-28T19:26:37",
+  "state": "open",
+  "gid": 632,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=632",
+  "owner": "lodici123"
+}

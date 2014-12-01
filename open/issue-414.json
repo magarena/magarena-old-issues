@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. play a penta color land with counters\r\n2. play at least two other lands producing the same mana color\r\n3. play a spell with two mana of that color in its casting cost What is the expected output? What do you see instead? I can choose which two lands tap to add the needed colored mana. Instead I can only choose the first one, and Magarena automatically use the land with expendable counters to pay for the second one. What version of the product are you using? On what operating system? 1.43, win 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/)",
+  "title": "Automated payment of colored mana has weird priority",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/) on October 29, 2013 18:56:43_\n\nWhat steps will reproduce the problem? 1. play a penta color land with counters\r\n2. play at least two other lands producing the same mana color\r\n3. play a spell with two mana of that color in its casting cost What is the expected output? What do you see instead? I can choose which two lands tap to add the needed colored mana. Instead I can only choose the first one, and Magarena automatically use the land with expendable counters to pay for the second one. What version of the product are you using? On what operating system? 1.43, win 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=414_",
+  "date": "2013-10-29T18:56:43",
+  "state": "open",
+  "gid": 414,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=414",
+  "owner": ""
+}

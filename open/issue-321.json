@@ -1,0 +1,30 @@
+{
+  "status": "new",
+  "body": "Minmax (cheat) AI just cast Paralyzing Grasp, an aura that prevents a creature from untapping during it's controller's untap step, targeting my Galvanic Juggearnaut, which doesn't untap during my untap step to begin with, thus utterly wasting the card. What version of the product are you using? On what operating system? MAGARENA VERSION 1.32, JRE 1.7.0_11, OS Windows XP_5.1 x86",
+  "author": "[core...@gmail.com](https://code.google.com/u/103434827021553153452/)",
+  "title": "AI targets Galvanic Juggernaut with Paralyzing Grasp",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "January 20, 2013 18:38:55",
+      "body": "Thanks for the report. What were the other choices for Paralyzing Grasp?\n\n**Labels:** -Type-Defect Type-Enhancement Component-AI  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 20, 2013 19:58:22",
+      "body": "I believe my Galvanic Juggernaut was the only nonland permanent on the battlefield at the time",
+      "author": "[core...@gmail.com](https://code.google.com/u/103434827021553153452/)"
+    }
+  ],
+  "content": "_From [core...@gmail.com](https://code.google.com/u/103434827021553153452/) on January 19, 2013 19:43:26_\n\nMinmax (cheat) AI just cast Paralyzing Grasp, an aura that prevents a creature from untapping during it's controller's untap step, targeting my Galvanic Juggearnaut, which doesn't untap during my untap step to begin with, thus utterly wasting the card. What version of the product are you using? On what operating system? MAGARENA VERSION 1.32, JRE 1.7.0_11, OS Windows XP_5.1 x86\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=321_",
+  "date": "2013-01-19T19:43:26",
+  "state": "open",
+  "gid": 321,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=321",
+  "owner": ""
+}

@@ -1,0 +1,18 @@
+{
+  "status": "accepted",
+  "body": "The keywords glossary is looking a bit out of date - there are quite a few new mechanics that could do with a new entry (Miracle, morph, etc).",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Update keywords glossary.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 27, 2014 14:58:06_\n\nThe keywords glossary is looking a bit out of date - there are quite a few new mechanics that could do with a new entry (Miracle, morph, etc).\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=703_",
+  "date": "2014-09-27T14:58:06",
+  "state": "open",
+  "gid": 703,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=703",
+  "owner": "lodici123"
+}

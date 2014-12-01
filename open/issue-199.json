@@ -1,0 +1,35 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. Create a new duel (on Mac OS X 10.7.3)\r\n2. Put the mouse/trackpad cursor on the list of cards\r\n3. Scroll with 2 fingers on the trackpad *horizontally* to see the right-most columns What is the expected output? What do you see instead? The list should shift to the left and show the right-most columns. Instead, the list does not move (or only moves vertically). What version of the product are you using? On what operating system? Magarena 1.24, Mac OS X 10.7.3. If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. Using the bottom scroll thumb for horizontal scrolling works, but is cumbersom. Most Mac applications have a working 2-finger-trackpad or mouse horizontal scroll. I believe that Magarena used to have this too. It would be convenient to be able to easily see the right-most columns of the card list by simply swiping 2 fingers horizontally.\r\n\r\nAnyway, keep up the good work!  I had been waiting anxiously for the March version, and I'm very happy it's now available. :)",
+  "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)",
+  "title": "Horizontal scrolling in card list: gone",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:38:14",
+      "body": "Categorized as UI\n\n**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 04:10:27",
+      "body": "**Owner:** lodici123  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 05:28:50",
+      "body": "**Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/) on April 01, 2012 09:08:11_\n\nWhat steps will reproduce the problem? 1. Create a new duel (on Mac OS X 10.7.3)\r\n2. Put the mouse/trackpad cursor on the list of cards\r\n3. Scroll with 2 fingers on the trackpad *horizontally* to see the right-most columns What is the expected output? What do you see instead? The list should shift to the left and show the right-most columns. Instead, the list does not move (or only moves vertically). What version of the product are you using? On what operating system? Magarena 1.24, Mac OS X 10.7.3. If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. Using the bottom scroll thumb for horizontal scrolling works, but is cumbersom. Most Mac applications have a working 2-finger-trackpad or mouse horizontal scroll. I believe that Magarena used to have this too. It would be convenient to be able to easily see the right-most columns of the card list by simply swiping 2 fingers horizontally.\r\n\r\nAnyway, keep up the good work!  I had been waiting anxiously for the March version, and I'm very happy it's now available. :)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=199_",
+  "date": "2012-04-01T09:08:11",
+  "state": "open",
+  "gid": 199,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=199",
+  "owner": "lodici123"
+}

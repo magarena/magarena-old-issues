@@ -1,0 +1,35 @@
+{
+  "status": "accepted",
+  "body": "Based on feedback from the forum post, http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=13888 , need to identify what features are unique to Text Mode and determine how to migrate these into Image Mode. Then we can dump text mode and lots of code clutter.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "What does Text Mode do that Image Mode does not?",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 04, 2014 00:24:08",
+      "body": "see also comment #2 in issue 490 .",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 04, 2014 22:52:18",
+      "body": "added commit ( https://bitbucket.org/lodici/magarena/commits/116127d448702fc0e8a28aeef351e38489a5bdeb ) that makes text mode session only. It will reset back to image mode each time you restart Magarena. This ties in with how it appears to be used which is to open it temporarily to check info that is not currently available in image mode.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 05, 2014 04:21:46",
+      "body": "further update so that Text Mode is now just a a temporary alternative view during a duel. it has no persistence beyond the current duel - https://bitbucket.org/lodici/magarena/commits/de1e6ae7f1e53bcfbd4d5c9f62bb621415ba7bbd .",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 04, 2014 15:09:16_\n\nBased on feedback from the forum post, http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=13888 , need to identify what features are unique to Text Mode and determine how to migrate these into Image Mode. Then we can dump text mode and lots of code clutter.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=679_",
+  "date": "2014-09-04T15:09:16",
+  "state": "open",
+  "gid": 679,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=679",
+  "owner": "lodici123"
+}

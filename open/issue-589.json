@@ -1,0 +1,55 @@
+{
+  "status": "new",
+  "body": "With the new option of being able to cast from the graveyard. Would it be able to add a 'green highlight' glow to the graveyard button if a card in the graveyard is highlighted as being able to cast?",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Casting from graveyard",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "April 21, 2014 08:34:18",
+      "body": "If I may extent that request:\r\n\r\nwe have 6 viewers from which target could be selected: Hand, Graveyard, OpponentsGraveyard, Exile (player), Exile (opponent), special.\r\n\r\ninteraction wird elements from any viewer soon will be availabe \r\nHand: casting, discarding\r\nGraveyard: exile, reanimate, casting\r\nOpponentsGraveyard: exile, reanimate, casting\r\nExiles: imprint casting (coming soon)\r\nspecial: CardListChoice\r\n\r\nnot only should the viewer, which has available choices, be highlighted, in addition the viewer focus should automatically jump to the next highlighted viewer as part of the highlighting process.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 21, 2014 08:39:28",
+      "body": "well, typo:\r\n\r\nit should have been: interaction with elements from any viewer*",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 21, 2014 09:31:00",
+      "body": "See setValidChoices() in GameController. I believe this is the starting point for highlighting cards and is currently called from 8 classes which extend MagicChoice. The actual code for rendering the highlight can be found in ImageCardListViewer towards the bottom of PaintComponent() but I can't imagine you will need to change this. So at a guess I would say you could set the focus to the required viewer/zone using a similar solution to that found for issue 570 and then call GameController.setValidChoices() to highlight the cards.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 21, 2014 09:36:40",
+      "body": "Ok, ignore my previous comment. I am talking bollocks! You want to highlight the tiny little 16x16 viewer buttons which is a different thing altogether. I'll get me coat...",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 21, 2014 09:44:09",
+      "body": "I will admit I am not a great fan of the zone buttons. They are far too small and apart from the exile and special buttons they actually replicate the icons used next to the avatar image. If it was my choice I think I would probably prefer to make those icons clickable and highlightable (is that word?) and do away with the tiny buttons altogether.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 21, 2014 13:31:01",
+      "body": "sorry, can't help with that. I quite don't understand the UI, how it works.\r\nWhat you wrote, though, sounds good to me. \r\n\r\nMy guess was, if the highlighting and the changing the focus were thrown together, we wouldn't have any need to do that anywhere else.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "August 29, 2014 09:15:20",
+      "body": "**Owner:** lodici123  \n  **Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on April 17, 2014 22:26:17_\n\nWith the new option of being able to cast from the graveyard. Would it be able to add a 'green highlight' glow to the graveyard button if a card in the graveyard is highlighted as being able to cast?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=589_",
+  "date": "2014-04-17T22:26:17",
+  "state": "open",
+  "gid": 589,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=589",
+  "owner": "lodici123"
+}

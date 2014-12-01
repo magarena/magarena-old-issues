@@ -1,0 +1,30 @@
+{
+  "status": "new",
+  "body": "Enhancement:\r\nI offer for optimization do AI think when player thinking as did in chess. When player do turn AI doesn't lose decision tree, it truncate tree, selecting variant that player do, and continue think. In result  decrement time to think in player turn.",
+  "author": "[muaddib2...@gmail.com](https://code.google.com/u/110287243301853727062/)",
+  "title": "Do AI think when player thinking",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "December 04, 2011 23:52:41",
+      "body": "changed to enhancement\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 25, 2012 06:41:33",
+      "body": "**Labels:** Component-AI  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [muaddib2...@gmail.com](https://code.google.com/u/110287243301853727062/) on December 05, 2011 13:22:45_\n\nEnhancement:\r\nI offer for optimization do AI think when player thinking as did in chess. When player do turn AI doesn't lose decision tree, it truncate tree, selecting variant that player do, and continue think. In result  decrement time to think in player turn.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=115_",
+  "date": "2011-12-05T13:22:45",
+  "state": "open",
+  "gid": 115,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=115",
+  "owner": ""
+}

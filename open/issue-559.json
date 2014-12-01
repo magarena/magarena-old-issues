@@ -1,0 +1,24 @@
+{
+  "status": "new",
+  "body": "What is the expected output? What do you see instead? Turn 25 - game.log (almost at the eof) https://www.dropbox.com/s/cq780ji53fel4ik/trenching-steed_game.log What version of the product are you using? On what operating system? magarena 1.48.909",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "AI issue: computer casts Trenching Steed and sacrifices ALL its lands - without any need.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 28, 2014 03:05:05",
+      "body": "btw: AI is minimax, as always.\r\n\r\nanother weird behaviour - Faerie Impostor. Computer casts it, then returns it to its own hand. Again and again.\r\n\r\ngame.log - most notable in turn 13 https://www.dropbox.com/s/v7cmkp66s9qelhw/faerie-impostor_game.log",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 28, 2014 17:13:27_\n\nWhat is the expected output? What do you see instead? Turn 25 - game.log (almost at the eof) https://www.dropbox.com/s/cq780ji53fel4ik/trenching-steed_game.log What version of the product are you using? On what operating system? magarena 1.48.909\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=559_",
+  "date": "2014-03-28T17:13:27",
+  "state": "open",
+  "gid": 559,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=559",
+  "owner": ""
+}

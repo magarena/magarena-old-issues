@@ -1,0 +1,59 @@
+{
+  "status": "new",
+  "body": "Is it possible in nearest future to change current rules to \"Magic Rules\" ?\r\n\r\ncombat damage is automatically assigned :\r\ndefending player determines order of blockers while declaring blockers\r\nattacker deals lethal combat damage in order of blockers\r\n\r\nand\r\n\r\ntriggered abilities are ordered on the stack automatically",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Damage assign and triggers order",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "January 28, 2012 21:04:07",
+      "body": "defending player determines order of blockers while declaring blockers\r\nattacker deals lethal combat damage in order of blockers\r\n\r\nYes. Pls consider changing it\r\n\r\nIt makes walls (Esp wall of denial) overpowered\r\n(enemy hides behind walls)",
+      "author": "[eng60...@gmail.com](https://code.google.com/u/110165659478391424989/)"
+    },
+    {
+      "date": "January 30, 2012 06:14:01",
+      "body": "I'm in favor of making the engine closer to magic rules without making the game too difficult for the AI.\r\n\r\nAs far I can tell changing it so that the attacker orders the blockers instead of the defender does not increase the complexity of the game for the AI since this decision has to be made anyway.\r\n\r\nMaking it possible to assign damage and order triggers would lead to a much more complicated game for the AI, not to mention a more complicated interface for the user.\r\n\r\nThe difficulty with big changes such as this is that we are currently short on developer time.\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 28, 2012 05:35:09",
+      "body": "Please consider changing it.",
+      "author": "[muaddib2...@gmail.com](https://code.google.com/u/110287243301853727062/)"
+    },
+    {
+      "date": "April 12, 2012 06:48:35",
+      "body": "Issue 202 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 06, 2013 02:09:22",
+      "body": "I also would like a rules set more closer to the actual \"Magic Rules\". I would suggest to leave triggers for the AI as they already are, and I was wondering if it is possible to create a set of different predetermined behaviours for the AI when it needs to block, one of wich will be chosen at random, making it less predictable, allowing at the same time to implement damage assign for the human players...",
+      "author": "[Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/)"
+    },
+    {
+      "date": "September 04, 2013 02:45:40",
+      "body": "up",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "November 29, 2013 03:07:54",
+      "body": "up ?",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "April 25, 2014 13:47:16",
+      "body": "I considered the behaviour a bug before finding this issue.\r\nSeriously: Allowing the defender to order the blockers makes this a totally different game.",
+      "author": "[pfeif...@googlemail.com](https://code.google.com/u/110570234444309201741/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on January 17, 2012 00:20:38_\n\nIs it possible in nearest future to change current rules to \"Magic Rules\" ?\r\n\r\ncombat damage is automatically assigned :\r\ndefending player determines order of blockers while declaring blockers\r\nattacker deals lethal combat damage in order of blockers\r\n\r\nand\r\n\r\ntriggered abilities are ordered on the stack automatically\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=140_",
+  "date": "2012-01-17T00:20:38",
+  "state": "open",
+  "gid": 140,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=140",
+  "owner": ""
+}

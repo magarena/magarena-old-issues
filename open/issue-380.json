@@ -1,0 +1,35 @@
+{
+  "status": "accepted",
+  "body": "elias @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=127305&sid=792923c1277608deba5f37d078e22c2a#p127305 Create a new duel, for both Player and AI choose a random deck.\r\n\r\nThen click generate deck (to generate a new deck for either player or AI), then click Swap decks in the menu. Then click generate deck again. Then keep playing around with these two options.\r\n\r\nWhat you will see is that the deck description is not being updated properly, the previous deck description will continue to stay even when new decks are generated. Seems like this starts to occur after using the swap deck function.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "deck description not being updated after deck swap",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 11, 2013 05:41:40",
+      "body": "Possibly related - issue 420 .",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "November 15, 2013 17:50:06",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 03:50:51",
+      "body": "**Owner:** lodici123  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 30, 2013 09:49:02_\n\nelias @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=127305&sid=792923c1277608deba5f37d078e22c2a#p127305 Create a new duel, for both Player and AI choose a random deck.\r\n\r\nThen click generate deck (to generate a new deck for either player or AI), then click Swap decks in the menu. Then click generate deck again. Then keep playing around with these two options.\r\n\r\nWhat you will see is that the deck description is not being updated properly, the previous deck description will continue to stay even when new decks are generated. Seems like this starts to occur after using the swap deck function.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=380_",
+  "date": "2013-07-30T09:49:02",
+  "state": "open",
+  "gid": 380,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=380",
+  "owner": "lodici123"
+}

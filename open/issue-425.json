@@ -1,0 +1,45 @@
+{
+  "status": "new",
+  "body": "Allowing for more complex and intuitive search possibilities, replacing the Exclude Selected with a checkbox, and switching it to Exclude Unselected, will allow for AND, OR, NOT combinations.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Replace 'Exclude Selected' with 'Exclude Unselected' and make it a checkbox in the Filter options",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 04, 2013 07:39:35",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 03:58:09",
+      "body": "TBH, I think this would be very confusing. Exclude Unselected is a double negative isn't it? Then you can switch it on or off!! My head hurts! Perhaps some examples would help...\n\n**Owner:** lodici123  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 04:22:22",
+      "body": "Hehe, yeah, would probably help to explain that further:\r\n\r\nI'm wanting to make a White and Blue deck:-\r\nSelecting White and Blue in the color filters and choosing:\r\n\r\n'Match any' will also show White and Green cards, and Blue and Red cards (an OR selection for example).\r\nI don't want those so I then choose.\r\n\r\n'Match All Selected' This shows me all cards with White AND Blue, and other colors. So White, Green, and Blue cards are shown.\r\n\r\nStill not what I want to see.\r\n\r\nSo I then have to select Black, Red, Green then select the Exclude Selected - Just to see the cards to go in a White Blue deck (This also then shows all the Artifacts and Land as well)\r\n\r\nSo as I have to select the colors I don't want to use in a deck to show the cards I do want in a deck. Not very intuitive.\r\n\r\nIt would make sense for the Exclude Selected to instead be a checkbox, so I can select the colors I want, select 'Match Any', and then an extra filter of 'Exclude Unselected' to filter out the other colors I haven't selected.\r\n\r\nHope that's clearer - Just something that's always annoyed me when making a deck :)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 11, 2014 05:26:46",
+      "body": "Thanks - that explains the problem clearly.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 05:27:37",
+      "body": "**Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on November 28, 2013 07:52:53_\n\nAllowing for more complex and intuitive search possibilities, replacing the Exclude Selected with a checkbox, and switching it to Exclude Unselected, will allow for AND, OR, NOT combinations.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=425_",
+  "date": "2013-11-28T07:52:53",
+  "state": "open",
+  "gid": 425,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=425",
+  "owner": "lodici123"
+}

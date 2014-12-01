@@ -1,0 +1,24 @@
+{
+  "status": "new",
+  "body": "Turn to Frog and similar 'lose all abilities' effects are not removing triggered abilities (When attacks, When blocks etc)",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Lose all abilities",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 14, 2014 01:51:15",
+      "body": "Removing triggered abilities is implemented in https://code.google.com/p/magarena/source/detail?r=4e10afffb7885137d7b4d4dd99b57493c85019c0 Note that static abilities are not removed.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on May 31, 2014 07:36:50_\n\nTurn to Frog and similar 'lose all abilities' effects are not removing triggered abilities (When attacks, When blocks etc)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=607_",
+  "date": "2014-05-31T07:36:50",
+  "state": "open",
+  "gid": 607,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=607",
+  "owner": ""
+}

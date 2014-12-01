@@ -1,0 +1,18 @@
+{
+  "status": "accepted",
+  "body": "Have a prevent 1 damage effect in play (such as from Hedron-Field Purists).\r\n\r\nAttack with a 9/7, block with a 3/3 and 5/5. Attacker deals 2 to 3/3 and 4 to 5/5 after damage prevention. 1 point of damage is missing.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "not enough damage is dealt when prevent damage effect is active",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on December 22, 2012 13:17:51_\n\nHave a prevent 1 damage effect in play (such as from Hedron-Field Purists).\r\n\r\nAttack with a 9/7, block with a 3/3 and 5/5. Attacker deals 2 to 3/3 and 4 to 5/5 after damage prevention. 1 point of damage is missing.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=311_",
+  "date": "2012-12-22T13:17:51",
+  "state": "open",
+  "gid": 311,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=311",
+  "owner": "melvinzh...@gmail.com"
+}

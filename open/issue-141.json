@@ -1,0 +1,65 @@
+{
+  "status": "new",
+  "body": "I'm playing version 1.21, and it happened in the very first turn, before I had even played a single card, let alone any creatures.",
+  "author": "[davla...@yahoo.com](https://code.google.com/u/104024941793666965200/)",
+  "title": "AI casts Journey to Nowhere or Oblivion Ring when there are no legal targets",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "January 16, 2012 23:52:13",
+      "body": "oops I meant second turn, sorry",
+      "author": "[davla...@yahoo.com](https://code.google.com/u/104024941793666965200/)"
+    },
+    {
+      "date": "January 17, 2012 00:42:53",
+      "body": "Thanks for the report.\r\n\r\nI would call this non optimal play by the AI. Something that is hard to avoid without coding special cases and with so many cards that is simply undoable. The AI doesn't understand what Journey to Nowhere does, it only calculates scores for different actions. That will sometimes lead to decisions that a human opponent wouldn't take.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 25, 2012 06:39:03",
+      "body": "**Labels:** Component-AI  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 05, 2012 08:37:21",
+      "body": "Issue 177 has been merged into this issue.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "March 05, 2012 08:38:27",
+      "body": "Changed summary.\n\n**Summary:** AI casts Journey to Nowhere or Oblivion Ring when there are no legal targets  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "June 14, 2012 11:19:10",
+      "body": "I have also seen AI cast \"mass destruction\" spells when there are no valid targets. A 2RR spell that destroys all artifacts, or (if I recall) a 2W one that destroys enchantments.",
+      "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)"
+    },
+    {
+      "date": "September 29, 2012 22:20:11",
+      "body": "**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 19, 2013 16:48:01",
+      "body": "Doesn't the AI consider 'not doing anything' a valid course of action? Doesn't it value having cards in its hand?",
+      "author": "[core...@gmail.com](https://code.google.com/u/103434827021553153452/)"
+    },
+    {
+      "date": "January 20, 2013 18:48:06",
+      "body": "Yes, passing is a valid course of action. Values are not associated with objects, rather values are associated with actions. These action values are accumulated to get the current value of a position. For example, the value of drawing a card is the value of the card. One issue might be that that putting a card into play doesn't take into account the lost of value of the card, it only looks at the gain in value of having the permanent in play.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [davla...@yahoo.com](https://code.google.com/u/104024941793666965200/) on January 17, 2012 15:49:45_\n\nI'm playing version 1.21, and it happened in the very first turn, before I had even played a single card, let alone any creatures.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=141_",
+  "date": "2012-01-17T15:49:45",
+  "state": "open",
+  "gid": 141,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=141",
+  "owner": ""
+}

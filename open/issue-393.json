@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "Sometimes AI pays for changing equipment from one creature to another, then immediately change this very equipment back, or to yet another creature.\r\n\r\nThis could go as long as AI has mana.\r\n\r\nUsually this re-equip is pointless.",
+  "author": "[ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/)",
+  "title": "Odd AI: re-equip creatures until no mana left",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/) on August 23, 2013 01:11:54_\n\nSometimes AI pays for changing equipment from one creature to another, then immediately change this very equipment back, or to yet another creature.\r\n\r\nThis could go as long as AI has mana.\r\n\r\nUsually this re-equip is pointless.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=393_",
+  "date": "2013-08-23T01:11:54",
+  "state": "open",
+  "gid": 393,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=393",
+  "owner": ""
+}

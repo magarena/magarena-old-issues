@@ -1,0 +1,30 @@
+{
+  "status": "accepted",
+  "body": "If the AI draws a card with Miracle, it displays whether the AI want's to reveal CARDNAME. If the choice is no, then the name is replaced with 'this card', but it's a bit late by then...",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "'Miracle' mechanic revealing cards to opponent",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 23, 2014 13:34:46",
+      "body": "I meant that the block header/event name for the text is the CARDNAME - not the text content, my bad.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 24, 2014 12:56:55",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on September 24, 2014 04:33:18_\n\nIf the AI draws a card with Miracle, it displays whether the AI want's to reveal CARDNAME. If the choice is no, then the name is replaced with 'this card', but it's a bit late by then...\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=697_",
+  "date": "2014-09-24T04:33:18",
+  "state": "open",
+  "gid": 697,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=697",
+  "owner": ""
+}

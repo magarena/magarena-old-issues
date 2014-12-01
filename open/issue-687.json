@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "Don't log game stats if player \"cheats\" by using the 's' key to view the AI's hand. Perhaps even add a \"cheat\" counter. :)",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Don't log game stats if player \"cheats\"",
+  "labels": [
+    "imported",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 10, 2014 21:42:44_\n\nDon't log game stats if player \"cheats\" by using the 's' key to view the AI's hand. Perhaps even add a \"cheat\" counter. :)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=687_",
+  "date": "2014-09-10T21:42:44",
+  "state": "open",
+  "gid": 687,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=687",
+  "owner": "lodici123"
+}

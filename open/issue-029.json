@@ -1,0 +1,44 @@
+{
+  "status": "accepted",
+  "body": "Suggested by pedro1973 on forum\r\n\r\nI think there are 2 type of games that could be cool and increase the longevity of the game and the interest of the games.\r\n\r\nIts fun to play, but funnier to play with a purpose, not \"just to win\". Win, yes, but to get the best position on a league or playoff tournament.\r\n\r\nThe tournament doesn't need to be nothing complex. I prefer to play \"playoff\" games like in Basketball: http://redwings.nhl.com/ext/Player%20Wa ... 24x768.jpg\r\n\r\n16 players, 8 right, 8 left, the winner continues to next stage.\r\n\r\nYou can start with two options:\r\n\r\nPlay always with the same deck or each game a new random deck or your own created deck.\r\nchose to play a best of 1,3 or 5 games.\r\n\r\nThen you should keep record of the number of playoff tournaments played, won and lost.\r\n\r\nAnd the other type of game could is a league game where you will play against all the other 19 Avatars, like in soccer:) http://i262.photobucket.com/albums/ii94 ... Table2.jpg\r\n\r\nYou'll have a table with a list of Avatars position, games won and games lost. Like in soccer.\r\n\r\nHere you can chose to play always with the same deck, always a random deck or with your own created deck.\r\nAnd chose to play in one round or play two rounds:)\r\nThe score you get instead of 1,2 or 3 points, is the life points you end the game with, but no more than 25...\r\n\r\nAnd keep statistical record of this games.\r\n\r\nThat's my opinion, but i think it could be fun to play these type of games. At least i have always wished a game where i can play like that:)\r\n\r\nNothing too complicated:)\r\n\r\nThen your game will be even more fun and offer things that other MTG games don't. No game that i know offer these type of games.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "add tournament mode (league/playoff)",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "February 02, 2012 02:31:55",
+      "body": "http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=6318&p=81563&sid=1380a8e867ee24105df69c24b3b43ad3#p81548 posted by Batman55 at the forums:\r\n\r\nSuggestion: eventually you may want to design a \"campaign mode\" of sorts. it would feature about 10-20 computer opponents, most of them using specially made decks, increasing in difficulty. if you lose once, you lose completely. you should be able to design your own deck, but you won't be able to edit it once you start--excepting a sideboard of 15 cards. it would have the Vintage restrictions (only one Black Vise, for example) to prevent quick and easy wins. After beating certain opponents, you should be rewarded by either choosing cards from your opponent's deck to add to your sideboard, or by gaining access to powerful classic cards not usually found in Magarena.\r\n\r\nA lot of this is similar to Microprose's MTG game from the late 90s, in particular \"Shandalar.\" But my version, described above, is more balanced.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 17, 2012 03:35:37",
+      "body": "from issue 162 Will be good if there's a puzzle mode where the AI is given a set of progressively stronger decks to fight the human.\r\n\r\n--\r\nsome decks are inherent stronger for the AI to use. \r\nthese decks can be submitted by the users so that you can include in to the \"campaign\" mode.  don't need to switch AI. just progressively stronger decks.\r\n\r\nthat way, the game has a purpose and an end goal for the player.\r\n(a player deck that wins all the way,  can be added as a part of the new tournament AI deck so that the decks get stronger over time)",
+      "author": "[eng60...@gmail.com](https://code.google.com/u/110165659478391424989/)"
+    },
+    {
+      "date": "February 20, 2012 03:34:20",
+      "body": "I believe there are 2 different options here: Campaign mode and Multiplayer.\r\n\r\n- Campaign mode\r\n\r\nYou chose a basic deck. You play against the computer. Each time you win you get new cards. You increase your level on the colors of the deck (something like WoW). Each level will have more difficulty (better decks for the computer).\r\n\r\nThis shouldn't be too hard to code, first a very basic version and if people are engaged with it, add more levels and increase the possibilities. It would be like Shandalar but just games (no creatures moving). And the users could be testing the campaign mode and adding new decks to go against.\r\n\r\n- Multiplayer\r\n\r\nYou play a game to another person (like Magic Workstation). This may be more code to add, as you need to build the connection to the other computer, the controller to send/receive the orders. But it would be great, way better than the current options.\r\n\r\nBy the way, have you receive any notice from Wizards as they are very protective....",
+      "author": "[fesjav](https://code.google.com/u/fesjav/)"
+    },
+    {
+      "date": "February 20, 2012 09:51:35",
+      "body": "Thanks for your input fesjav.\r\n\r\nI'd love to see some sort of campaign mode and I'm sure other devs share this opinion. It may not be particularly hard to add but would still be quite an undertaking. Still I'm confident someone will eventually start work on something like this.\r\n\r\nMultiplayer is not in our development plans as we feel there are other projects more suitable for that. So unless someone just hands over a huge, ready-to-go patch, this most likely will never happen.\r\n\r\nI think this isn't the right place to discuss legal matters ;) If you read through some of the posts in the dev mail list, you can get an idea of how we deal with this.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 20, 2012 12:09:20",
+      "body": "+1 for the campaign mode, but as beholder wrote, that would require quite some effort. I would be happy to be of support with that once someone takes the lead and decides this is something which should be done next.",
+      "author": "[jkraus...@gmail.com](https://code.google.com/u/100999209337756385840/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on June 10, 2011 09:47:23_\n\nSuggested by pedro1973 on forum\r\n\r\nI think there are 2 type of games that could be cool and increase the longevity of the game and the interest of the games.\r\n\r\nIts fun to play, but funnier to play with a purpose, not \"just to win\". Win, yes, but to get the best position on a league or playoff tournament.\r\n\r\nThe tournament doesn't need to be nothing complex. I prefer to play \"playoff\" games like in Basketball: http://redwings.nhl.com/ext/Player%20Wa ... 24x768.jpg\r\n\r\n16 players, 8 right, 8 left, the winner continues to next stage.\r\n\r\nYou can start with two options:\r\n\r\nPlay always with the same deck or each game a new random deck or your own created deck.\r\nchose to play a best of 1,3 or 5 games.\r\n\r\nThen you should keep record of the number of playoff tournaments played, won and lost.\r\n\r\nAnd the other type of game could is a league game where you will play against all the other 19 Avatars, like in soccer:) http://i262.photobucket.com/albums/ii94 ... Table2.jpg\r\n\r\nYou'll have a table with a list of Avatars position, games won and games lost. Like in soccer.\r\n\r\nHere you can chose to play always with the same deck, always a random deck or with your own created deck.\r\nAnd chose to play in one round or play two rounds:)\r\nThe score you get instead of 1,2 or 3 points, is the life points you end the game with, but no more than 25...\r\n\r\nAnd keep statistical record of this games.\r\n\r\nThat's my opinion, but i think it could be fun to play these type of games. At least i have always wished a game where i can play like that:)\r\n\r\nNothing too complicated:)\r\n\r\nThen your game will be even more fun and offer things that other MTG games don't. No game that i know offer these type of games.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=29_",
+  "date": "2011-06-10T09:47:23",
+  "state": "open",
+  "gid": 29,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=29",
+  "owner": "melvinzh...@gmail.com"
+}

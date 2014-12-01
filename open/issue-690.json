@@ -1,0 +1,25 @@
+{
+  "status": "accepted",
+  "body": "running linux mint, the default fonts are larger and wider than on windows.\r\nlinux fonts seem to be pretty crap in general TBH (same issue with zorin) - whether it is because it is running in virtual box, I am not sure. Shame really, I could develop in linux if it didn't do my eyes in!\r\n\r\n- Avatar images are not sorted correctly (see issue 683 ).\r\n- About dialog text overlaps each other and falls off edge of dialog.\r\n- Download images dialog need to be a bit wider.\r\n- SliderPanel does not resize well which linux exacerbates.\r\n- AI properties dialog components falling off the edge.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "linux UI layout issues",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 13, 2014 03:51:28",
+      "body": "Also not sure if this is VBox-related but when I click on the options icon on the duel game screen the options overlay is shown but it flickers on/off. If I hit the Escape key it is fine. Very strange.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 13, 2014 18:49:24_\n\nrunning linux mint, the default fonts are larger and wider than on windows.\r\nlinux fonts seem to be pretty crap in general TBH (same issue with zorin) - whether it is because it is running in virtual box, I am not sure. Shame really, I could develop in linux if it didn't do my eyes in!\r\n\r\n- Avatar images are not sorted correctly (see issue 683 ).\r\n- About dialog text overlaps each other and falls off edge of dialog.\r\n- Download images dialog need to be a bit wider.\r\n- SliderPanel does not resize well which linux exacerbates.\r\n- AI properties dialog components falling off the edge.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=690_",
+  "date": "2014-09-13T18:49:24",
+  "state": "open",
+  "gid": 690,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=690",
+  "owner": "lodici123"
+}

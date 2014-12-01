@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. Have X lands that produce one mana each (and no other mana sources)\r\n2. Cast a spell costing exactly X (provided you meet the color requirements)\r\n3. Game asks you to select which lands to produce (some/all(?) of) the colored mana from What is the expected output? What do you see instead? I expect the game to tap all my lands and cast the spell without prompting. Instead, it prompts for sources for the colored mana in the spell. Once the colored mana have been accounted for, it automatically taps the remaining lands to pay for the colorless cost. (not quite the observed behavior, but close; not sure what logic the game uses here exactly) What version of the product are you using? On what operating system? MAGARENA VERSION 1.41, JRE 1.7.0_25, OS Windows XP_5.1 x86",
+  "author": "[core...@gmail.com](https://code.google.com/u/103434827021553153452/)",
+  "title": "Casting a spell that costs all your mana prompts for colored sources",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [core...@gmail.com](https://code.google.com/u/103434827021553153452/) on October 04, 2013 19:02:13_\n\nWhat steps will reproduce the problem? 1. Have X lands that produce one mana each (and no other mana sources)\r\n2. Cast a spell costing exactly X (provided you meet the color requirements)\r\n3. Game asks you to select which lands to produce (some/all(?) of) the colored mana from What is the expected output? What do you see instead? I expect the game to tap all my lands and cast the spell without prompting. Instead, it prompts for sources for the colored mana in the spell. Once the colored mana have been accounted for, it automatically taps the remaining lands to pay for the colorless cost. (not quite the observed behavior, but close; not sure what logic the game uses here exactly) What version of the product are you using? On what operating system? MAGARENA VERSION 1.41, JRE 1.7.0_25, OS Windows XP_5.1 x86\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=410_",
+  "date": "2013-10-04T19:02:13",
+  "state": "open",
+  "gid": 410,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=410",
+  "owner": ""
+}

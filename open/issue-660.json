@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "When a filter is applied to the explorer/editor card pool should add some sort of visual indication such as highlighting the filter button in some way.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Add indicator that a filter has been set.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 21, 2014 14:36:41_\n\nWhen a filter is applied to the explorer/editor card pool should add some sort of visual indication such as highlighting the filter button in some way.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=660_",
+  "date": "2014-08-21T14:36:41",
+  "state": "open",
+  "gid": 660,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=660",
+  "owner": "lodici123"
+}

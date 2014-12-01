@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "Add option to begin a new duel directly from the deck editor using whatever deck is currently being edited.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Start a new duel from the deck editor",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on July 28, 2014 19:04:09_\n\nAdd option to begin a new duel directly from the deck editor using whatever deck is currently being edited.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=629_",
+  "date": "2014-07-28T19:04:09",
+  "state": "open",
+  "gid": 629,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=629",
+  "owner": "lodici123"
+}

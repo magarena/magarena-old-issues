@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "Currently there is no way of distinguishing between activated abilities with the same effect, but different costing. I've noticed this while scripting new cards, and unsure whether this is an engine or scripting issue.\r\n\r\nExample:Compulsion\r\n\r\npay {1}{U},Discard a card:PN draws a card.\r\npay {1}{U},{S}:PN draws a card.\r\n\r\nBoth options appear as an option to {Draw}, but no extra information on how that will be activated.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Multiple activated abilites with the same effect, but different costs",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on November 28, 2013 07:13:45_\n\nCurrently there is no way of distinguishing between activated abilities with the same effect, but different costing. I've noticed this while scripting new cards, and unsure whether this is an engine or scripting issue.\r\n\r\nExample:Compulsion\r\n\r\npay {1}{U},Discard a card:PN draws a card.\r\npay {1}{U},{S}:PN draws a card.\r\n\r\nBoth options appear as an option to {Draw}, but no extra information on how that will be activated.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=424_",
+  "date": "2013-11-28T07:13:45",
+  "state": "open",
+  "gid": 424,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=424",
+  "owner": ""
+}

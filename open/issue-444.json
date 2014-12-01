@@ -1,0 +1,24 @@
+{
+  "status": "accepted",
+  "body": "jerichopumpkin @ forum reported:\r\nClone ability does not target the creature you choose, so it should not be possible to counter Clone removing from the battlefield the chosen creature, contrary to what actually happens\r\n\r\ncopying a Clone in a graveyard with Body Double should prompt you the may choice for Clone ability (at least, I think so based on the rulings on Gatherer, not so sure about it)\r\n\r\nClone ability does not trigger when returning to the battlefield from exile (I copied a Goblin, then exiled it with a Boggart Mob. When Boggart Mob died, I expected to be able to copy a creature, Clone went to the graveyard instead)",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Clone implementation incomplete",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "July 08, 2014 19:02:56",
+      "body": "\"copying a Clone in a graveyard with Body Double should prompt you the may choice for Clone ability\" is fixed for some of the cards with clone, specifically those without further modifications after cloning, using MagicEnterAsCopyAction",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on December 08, 2013 08:50:41_\n\njerichopumpkin @ forum reported:\r\nClone ability does not target the creature you choose, so it should not be possible to counter Clone removing from the battlefield the chosen creature, contrary to what actually happens\r\n\r\ncopying a Clone in a graveyard with Body Double should prompt you the may choice for Clone ability (at least, I think so based on the rulings on Gatherer, not so sure about it)\r\n\r\nClone ability does not trigger when returning to the battlefield from exile (I copied a Goblin, then exiled it with a Boggart Mob. When Boggart Mob died, I expected to be able to copy a creature, Clone went to the graveyard instead)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=444_",
+  "date": "2013-12-08T08:50:41",
+  "state": "open",
+  "gid": 444,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=444",
+  "owner": "melvinzh...@gmail.com"
+}

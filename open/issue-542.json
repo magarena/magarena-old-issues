@@ -1,0 +1,34 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. cast two creatures\r\n2. enchant both of them with Pariah\r\n3. get damage\r\n4. all damage will be dealt to the creature which was enchanted first What is the expected output? What do you see instead? http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=135248 All damage being dealt to you at one time gets redirected to one Pariah. If you take 3 damage at once, all 3 damage goes to one Pariah. If you take damage from multiple creatures in combat, all the combat damage goes to one Pariah.\r\n\r\nThat implies you get to choose which one... What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Pariah: multiple casts don't let you choose where to redirect",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 22, 2014 08:46:08",
+      "body": "I have a question concerning a player being dealt damage and a player losing life:\r\n\r\nit isn't the same, is it? \r\nPariah says: damage will be redirected, a card like Blood Artist says: player loses life. As of now, Pariah does not redirect the \"losing life\" effect from Blood Artist to the enchanted creature. \r\n\r\nMy Question is: is that correct?",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 22, 2014 15:46:40",
+      "body": "You should be able to redirect to the chosen target, that's currently not possible (I think).\r\n\r\nAs for damage dealt and losing life: Being dealt damage fits the criteria of losing life (Your life total has changed). But losing life doesn't fit the criteria of taking damage (Your life total has changed, but no damage was dealt to you).\r\n\r\nPariah will not redirect loss of life. As loss of life isn't damage.\r\n\r\nWhich is just as well, as life can be used as payment :)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 22, 2014 16:23:48",
+      "body": "acknowledged. thanks - makes sense, too.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 22, 2014 23:33:34_\n\nWhat steps will reproduce the problem? 1. cast two creatures\r\n2. enchant both of them with Pariah\r\n3. get damage\r\n4. all damage will be dealt to the creature which was enchanted first What is the expected output? What do you see instead? http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=135248 All damage being dealt to you at one time gets redirected to one Pariah. If you take 3 damage at once, all 3 damage goes to one Pariah. If you take damage from multiple creatures in combat, all the combat damage goes to one Pariah.\r\n\r\nThat implies you get to choose which one... What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=542_",
+  "date": "2014-03-22T23:33:34",
+  "state": "open",
+  "gid": 542,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=542",
+  "owner": ""
+}

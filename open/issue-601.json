@@ -1,0 +1,30 @@
+{
+  "status": "new",
+  "body": "There's a whole host of cards that require the choice of a creature type. Creating panels is a bit beyond me, and having one that can deal with a large amount of options will be a bit of a challenge...",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Creature Type Choice Panel",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "June 03, 2014 12:21:27",
+      "body": "Can you provide a couple of example cards. Providing a list of options in the UI is not too difficult. Ignoring any potential UI limitations or constraints how would you like this kind of feature presented to you by the UI? Perfect-world scenario. We can use that as a starting point.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 03, 2014 13:05:00",
+      "body": "Just going alphabetically: Adaptive Automaton, An-Zerran Ruins, Ashes of the Fallen.\r\n\r\nIn a perfect world, a separate pop-up window, as the list would be large. With a search box at the top so you could filter that giant list.\r\n\r\nThe list would be the list of creatures types a'la changeling.\r\n\r\nThis would also requires linking in with the AI's remembering of cards (in the works), but as default it should already know all the creature types in it's deck to choose from, for beneficial effects at least.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on May 21, 2014 08:16:13_\n\nThere's a whole host of cards that require the choice of a creature type. Creating panels is a bit beyond me, and having one that can deal with a large amount of options will be a bit of a challenge...\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=601_",
+  "date": "2014-05-21T08:16:13",
+  "state": "open",
+  "gid": 601,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=601",
+  "owner": "ShawnieBoyUK"
+}

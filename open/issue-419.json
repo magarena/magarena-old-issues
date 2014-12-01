@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1.Computer has Shuko in play with two or more creatures\r\n2.Computer attaches/reattaches Shuko to a creature\r\n3.Computer repeats this excessively What is the expected output? What do you see instead? Shuko should attach Shuko a few times (maximum 4 or 5 say)\r\ninstead of until it randomly \"chooses\" to What version of the product are you using? On what operating system? Magarena 1.43 on Mac Mountain Lion If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. This is not a bug but reduces game enjoyment while you wait for this to resolve each\r\nComputer turn",
+  "author": "[Dwayne...@gmail.com](https://code.google.com/u/117779160227519969928/)",
+  "title": "Annoying Shuko behaviour",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [Dwayne...@gmail.com](https://code.google.com/u/117779160227519969928/) on November 09, 2013 05:31:00_\n\nWhat steps will reproduce the problem? 1.Computer has Shuko in play with two or more creatures\r\n2.Computer attaches/reattaches Shuko to a creature\r\n3.Computer repeats this excessively What is the expected output? What do you see instead? Shuko should attach Shuko a few times (maximum 4 or 5 say)\r\ninstead of until it randomly \"chooses\" to What version of the product are you using? On what operating system? Magarena 1.43 on Mac Mountain Lion If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. This is not a bug but reduces game enjoyment while you wait for this to resolve each\r\nComputer turn\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=419_",
+  "date": "2013-11-09T05:31:00",
+  "state": "open",
+  "gid": 419,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=419",
+  "owner": ""
+}

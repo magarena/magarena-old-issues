@@ -1,0 +1,18 @@
+{
+  "status": "accepted",
+  "body": "Reported by Aswan jaguar @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=95909&sid=f8e6106afad9816898bf41b2a9eb5f6f#p95909 Game went on an infinite loop when AI targeted mine Reverberate with his Reverberate (with no effect?) and then re-targeting my Reverbate again and again,endlessly.\r\n\r\nI wasn't allowed to reset, only to concede a game that with this combo I had a certain victory.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Infinitely loop with Reverberate targeting Reverberate",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on August 14, 2012 20:52:43_\n\nReported by Aswan jaguar @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=95909&sid=f8e6106afad9816898bf41b2a9eb5f6f#p95909 Game went on an infinite loop when AI targeted mine Reverberate with his Reverberate (with no effect?) and then re-targeting my Reverbate again and again,endlessly.\r\n\r\nI wasn't allowed to reset, only to concede a game that with this combo I had a certain victory.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=276_",
+  "date": "2012-08-14T20:52:43",
+  "state": "open",
+  "gid": 276,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=276",
+  "owner": "melvinzh...@gmail.com"
+}

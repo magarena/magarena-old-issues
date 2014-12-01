@@ -1,0 +1,24 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. play Gemstone Mine and 2 other mana sources\r\n2. play Chromatic Lantern\r\n3. cast any other spell - no matter what mana you'll be drawing from Gemstone Mine, it depletes its counters. What is the expected output? What do you see instead? Chromatic Lantern reads: \"Land you control have \"{T} Add one mana of any color to your mana pool\"\"\r\nGemstone Mine reads: \"{T}, remove a mining counter from Gemstone Mine: [...] \"\r\nAfter Chromatic Lantern enters play, Gemstone Mine has two abilities to draw mana from it. One should get to chose which one... What version of the product are you using? On what operating system? Linux, Zorin 8, magarena 1.48.792 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Chromatic Lantern + Gemstone Mine: still uses the mining counters, resulting in sacrificing the land afer 3 uses",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 08, 2014 16:59:50",
+      "body": "Issue 501 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 08, 2014 23:36:30_\n\nWhat steps will reproduce the problem? 1. play Gemstone Mine and 2 other mana sources\r\n2. play Chromatic Lantern\r\n3. cast any other spell - no matter what mana you'll be drawing from Gemstone Mine, it depletes its counters. What is the expected output? What do you see instead? Chromatic Lantern reads: \"Land you control have \"{T} Add one mana of any color to your mana pool\"\"\r\nGemstone Mine reads: \"{T}, remove a mining counter from Gemstone Mine: [...] \"\r\nAfter Chromatic Lantern enters play, Gemstone Mine has two abilities to draw mana from it. One should get to chose which one... What version of the product are you using? On what operating system? Linux, Zorin 8, magarena 1.48.792 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=500_",
+  "date": "2014-03-08T23:36:30",
+  "state": "open",
+  "gid": 500,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=500",
+  "owner": ""
+}

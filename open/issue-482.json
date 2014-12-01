@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "The AI will always choose a value of 1 for X, with creatures that come into play with X +1/+1 counters eg. Shifting Wall, Ivy Elemental.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "AI and X Permanents",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on February 12, 2014 08:28:40_\n\nThe AI will always choose a value of 1 for X, with creatures that come into play with X +1/+1 counters eg. Shifting Wall, Ivy Elemental.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=482_",
+  "date": "2014-02-12T08:28:40",
+  "state": "open",
+  "gid": 482,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=482",
+  "owner": ""
+}

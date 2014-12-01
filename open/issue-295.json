@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. AI (MCTS-C 6) plays Bloodthrone Vampire (Sac a creature: BVamp gets +2/+2 until EOT)\r\n\r\nAI sacs the Vampire to itself, effectively just killing it's own creature for no benefit at all. Is this just a Bug due to the AI's general random strategy (i.e. not using domain knowledge), simulating moves at random?",
+  "author": "[firat.al...@googlemail.com](https://code.google.com/u/112109140426664196609/)",
+  "title": "Bloodthrone Vampire sacks itself for 0 value",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [firat.al...@googlemail.com](https://code.google.com/u/112109140426664196609/) on September 08, 2012 19:38:45_\n\nWhat steps will reproduce the problem? 1. AI (MCTS-C 6) plays Bloodthrone Vampire (Sac a creature: BVamp gets +2/+2 until EOT)\r\n\r\nAI sacs the Vampire to itself, effectively just killing it's own creature for no benefit at all. Is this just a Bug due to the AI's general random strategy (i.e. not using domain knowledge), simulating moves at random?\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=295)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=295_",
+  "date": "2012-09-08T19:38:45",
+  "state": "open",
+  "gid": 295,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=295",
+  "owner": ""
+}

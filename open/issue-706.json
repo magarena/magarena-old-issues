@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "Currently have to click the minus button to remove the last instance of a card from the deck. Maybe look at RMB double-click or even plain old LMB double click as an alternative confirmation action.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "RMB double-click to remove card from deck.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on October 01, 2014 14:42:54_\n\nCurrently have to click the minus button to remove the last instance of a card from the deck. Maybe look at RMB double-click or even plain old LMB double click as an alternative confirmation action.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=706_",
+  "date": "2014-10-01T14:42:54",
+  "state": "open",
+  "gid": 706,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=706",
+  "owner": "lodici123"
+}

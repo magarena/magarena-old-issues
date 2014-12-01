@@ -1,0 +1,59 @@
+{
+  "status": "accepted",
+  "body": "I'm not sure how to reliably reproduce it, but when it happened to me I was Twincasting a Lightning Helix, and the AI cast Twincast targeting my Twincast while it was on the stack, and then continued to target my Twincast each time its Twincast resolved.\r\n\r\nAs I understand the rules, doing this a finite number of times is legit if strange, but the AI should probably be prohibited from doing it anyway; except possibly for some bizarre corner cases this shouldn't affect anything (since it could have just targeted my original Lightning Helix or the copy created when my Twincast resolved).\r\n\r\nThis is in 1.22.",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Under some circumstances, AI will enter an infinite loop of Twincasts",
+  "labels": [
+    "imported",
+    "Priority-Low",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 06, 2012 03:26:14",
+      "body": "Thanks for your report.\r\n\r\nYes, it is legal to keep targeting the Twincast and create an endless loop. Normally this would result in a draw but we don't support draws, so the only way out of the situation is to concede the game. Now if I was convinced that the AI uses such a loop as a way to force the player to give up that would be kind of cool, but I'm not. Instead my test game suggest that it's simply because out of two options, Twincast happens to be the best. Once Twincast is chosen the options remain the same and we get the endless loop.\r\n\r\nLOG: Tap Rupture Spire. Pay {R}. Play Lightning Bolt.\r\nLOG: Tap Rupture Spire. Tap Rupture Spire. Pay {U}{U}. Play Twincast.\r\nMMAB index=1 life=12 time=59 workers=2 main=6\r\n  [1/1/-1945 at 72] (pass)\r\n* [1/0/0 at 0] (Twincast)\r\nMMAB index=1 life=12 time=41 workers=2 main=6\r\n* [1/0/0 at 0] (Twincast)\r\n  [1/2/-44 at 82] (Lightning Bolt)\r\nLOG: Pay {U}{U}. Tap Rupture Spire. Tap Rupture Spire. Play Twincast.\r\nMMAB index=1 life=12 time=30 workers=2 main=6\r\n* [1/0/0 at 0] (Twincast)\r\n  [1/2/-44 at 82] (Lightning Bolt)\r\nLOG: Copy target instant or sorcery spell (Twincast). You may choose new targets for the copy.\r\nMMAB index=1 life=12 time=32 workers=2 main=6\r\n* [1/0/0 at 0] (Twincast)\r\n  [1/2/-44 at 79] (Lightning Bolt)\r\nLOG: Copy target instant or sorcery spell (Twincast). You may choose new targets for the copy.\r\n\r\nI see no easy way to prevent the above from happening. Luckily it should only happen very rarely.\n\n**Status:** Accepted  \n  **Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 06, 2012 07:38:34",
+      "body": "Hmm, looks intriguing. Can you add your test game to the repo? I would like to investigate this at some later point. Thanks!",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 06, 2012 08:21:48",
+      "body": "I added the test game in Revision 1702bc4596 .\r\n\r\nTo reproduce:\r\n1. cast Lightning Bolt, targeting the AI's Diregraf Ghoul\r\n2. cast Twincast, targeting the Lightning Bolt effect on the stack\r\n3. pass priority\r\n\r\n...endless loop",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 06, 2012 18:14:55",
+      "body": "Thanks, it will be very helpful for tracing the interactions.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 06, 2012 03:13:04",
+      "body": "Fixed in 1.25, there is a still a few (2) loops where the AI targets Twincast with Twincast but in the end it targets Lightnining Bolt with its Twincast.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 06, 2012 03:13:20",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 27, 2012 18:28:16",
+      "body": "Just had it happen to me in 1.29 - an infinite loop of Twincast copying Twincast. At least, I waited a few minutes and it just kept going. Screenshot and game.log attached.\n\n**Attachment:** [twincast-loop.PNG game-twincast-loop.log](http://code.google.com/p/magarena/issues/detail?id=155#hc7)",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)"
+    },
+    {
+      "date": "August 27, 2012 19:15:58",
+      "body": "Thanks for reporting. Darn, thought I'd fixed this for good. The scores are very close for copying Twincast vs copying Lightning bolt.\r\n\r\nAs seen from the game.log when AI is deciding what to target with Twincast. Format is [thread/games evaluated/score at depth], * is chosen option.\r\n  [1/590/1225 at 57] (Vines of Vastwood)\r\n* [1/264/2500 at 12] (Twincast)\r\n  [0/550/2425 at 57] (Lightning Bolt)\r\n\r\nTargeting Twincast has score of 2500, while targeting Lightning Bolt has score of 2425.\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on February 06, 2012 07:46:48_\n\nI'm not sure how to reliably reproduce it, but when it happened to me I was Twincasting a Lightning Helix, and the AI cast Twincast targeting my Twincast while it was on the stack, and then continued to target my Twincast each time its Twincast resolved.\r\n\r\nAs I understand the rules, doing this a finite number of times is legit if strange, but the AI should probably be prohibited from doing it anyway; except possibly for some bizarre corner cases this shouldn't affect anything (since it could have just targeted my original Lightning Helix or the copy created when my Twincast resolved).\r\n\r\nThis is in 1.22.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=155_",
+  "date": "2012-02-06T07:46:48",
+  "state": "open",
+  "gid": 155,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=155",
+  "owner": ""
+}

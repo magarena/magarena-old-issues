@@ -1,0 +1,34 @@
+{
+  "status": "accepted",
+  "body": "I downloaded Magarena-1.49.zip from https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/1112/ .\r\n\r\nIn /mods, the following are all empty...\r\n- extended_cube.txt\r\n- modern_cube.txt\r\n- standard_cube.txt\r\n\r\nThis has happened a few times in the past but assumed it was something to do with my setup. Possibly an issue with the CI build process?",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "*_cube.txt files empty",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 11, 2014 00:08:14",
+      "body": "Not sure what is causing it but does not really matter since it does not affect official releases.\n\n**Status:** WontFix  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 02:44:05",
+      "body": "**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 11, 2014 03:11:13",
+      "body": "Change owner so it disappears from my TODO! :)\r\n\r\nJust to confirm, in https://buildhive.cloudbees.com/job/magarena/job/magarena/lastSuccessfulBuild/artifact/Magarena-1.53.zip , the cubes are empty.\n\n**Owner:** melvinzh...@gmail.com  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on April 27, 2014 14:51:28_\n\nI downloaded Magarena-1.49.zip from https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/1112/ .\r\n\r\nIn /mods, the following are all empty...\r\n- extended_cube.txt\r\n- modern_cube.txt\r\n- standard_cube.txt\r\n\r\nThis has happened a few times in the past but assumed it was something to do with my setup. Possibly an issue with the CI build process?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=595_",
+  "date": "2014-04-27T14:51:28",
+  "state": "open",
+  "gid": 595,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=595",
+  "owner": "melvinzh...@gmail.com"
+}

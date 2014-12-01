@@ -1,0 +1,24 @@
+{
+  "status": "accepted",
+  "body": "text mode currently shows the card name and type of card but does not have the casting cost. since the icons are part of the jar, we can add the casting cost to the display.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "added casting cost to cards in hand when playing in text mode",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "October 30, 2011 06:34:18",
+      "body": "Cards in hand in text mode also lack info on p/t and abilities.\r\nI have my doubts about investing time in improving text mode though. I rather see a good solution to show all abilities and creature types in 'image'-mode.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on October 30, 2011 18:10:59_\n\ntext mode currently shows the card name and type of card but does not have the casting cost. since the icons are part of the jar, we can add the casting cost to the display.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=81_",
+  "date": "2011-10-30T18:10:59",
+  "state": "open",
+  "gid": 81,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=81",
+  "owner": "melvinzh...@gmail.com"
+}

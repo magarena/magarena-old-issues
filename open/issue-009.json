@@ -1,0 +1,104 @@
+{
+  "status": "accepted",
+  "body": "Requested by fuchs232\r\n\r\nUnless an effect forces you to make a decision.\r\nFor instance using the Enter key or a new GUI button.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Automatically pass priority until end of turn",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "December 29, 2011 17:41:19",
+      "body": "**Labels:** -Priority-High Priority-Medium  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 15, 2013 17:32:00",
+      "body": "Issue 422 has been merged into this issue.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 04, 2013 05:53:03",
+      "body": "isn't this already covered by the \"Skip single option choices when appropriate\" setting?",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 08, 2013 06:25:03",
+      "body": "No, for example if I have an applicable instant at hand, but I decided I don't want to cast it this turn, so I want to skip until the end. The tricky part is if something happens during the turn, say the opponent casts a spell, then I want to have priority again.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 08, 2013 07:35:50",
+      "body": "ok, thanks for the example - I think I understand now. In which case this is probably more a logic issue instead of UI so I have removed the UI flag. I am guessing here, but on passing priority to the player, could you just run the same decision process that you would use for the AI but on the player's hand instead to determine whether the player has the capability (eg. an instant) to react to the AI's move (eg. cast a spell)?\n\n**Labels:** -Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 21, 2014 23:15:58",
+      "body": "Lodici:\r\nLet me know what you need to know on the UI front. A simple way to indicate a skipped step or steps (phase?) would be to use a strike-through font. Click on the step/phase to toggle.\r\n\r\nI'm thinking of implementing pass priority until a specific phase as mentioned in issue 422 . Perhaps you click on the phase button to indicate you want to pass priority until that phase (unless the opponent casts a spell).",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 21, 2014 23:37:54",
+      "body": "Ok, probably best to wait until you come up with the actual logic.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 21, 2014 23:57:39",
+      "body": "First draft of skip till end of turn with shortcut key implemented in https://code.google.com/p/magarena/source/detail?r=32ca754be9bf0f355015551a2c60d3eafb9b6e2e Shift+Right or Shift+Space to indicate you want to skip any decisions until end of turn.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 22, 2014 00:22:52",
+      "body": "Nice. For consistency, would probably want to add Shift+Click on the continue button as well. Also, perhaps add some sort of visual indicator - not sure what? Maybe a border around the phase/step bar. Change of color?",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 22, 2014 00:34:47",
+      "body": "I am testing using Fog. At the moment it always stops on UP. I have Fog, Inkmoth Nexus x2 and a forest in my hand. If I then Shift+Space it skips straight to opponents turn. It does not pause to let me play any of the lands.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 22, 2014 00:36:13",
+      "body": "or attack.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 22, 2014 00:37:10",
+      "body": "You mean you Shift+Space during upkeep? If that's the case, it sounds right. Shift+Space means I don't have anything else to do this turn, unless it is in response to something my opponent is doing.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 22, 2014 00:39:57",
+      "body": "Oh, ok.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 22, 2014 00:42:17",
+      "body": "I can't figure out how to to the Shift+Click on continue, appreciate it if you could look into it.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 22, 2014 00:57:22",
+      "body": "This should do it - https://bitbucket.org/lodici/magarena/commits/4217f408ab4ec1347c7c4a520e2acc3c4e36103a .",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 22, 2014 01:04:07",
+      "body": "Actually, I was thinking it might also be useful to implement this if you right click the action button. That way, you do not need to access the keyboard.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 22, 2014 01:22:17",
+      "body": "RMB click on action button also skips till end of turn - https://bitbucket.org/lodici/magarena/commits/91f0de345a67f34370a60baa9bc6f4a4050519c2",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 20, 2011 13:57:53_\n\nRequested by fuchs232\r\n\r\nUnless an effect forces you to make a decision.\r\nFor instance using the Enter key or a new GUI button.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=9_",
+  "date": "2011-05-20T13:57:53",
+  "state": "open",
+  "gid": 9,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=9",
+  "owner": "melvinzh...@gmail.com"
+}

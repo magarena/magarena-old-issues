@@ -1,0 +1,24 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. cast Progenitor Mimic - copying one creature\r\n2. cast the second Progenitor Mimic, copying the first one\r\n3. pass turn, next upkeep each Progenitor Mimic will create one token (making it 2 in total) What is the expected output? What do you see instead? http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=369001 4/15/2013 \t\r\nIf you choose to have Progenitor Mimic enter the battlefield as a copy of a creature, the triggered ability it gains will become part of its copiable values. For example, suppose Progenitor Mimic enters the battlefield as a copy of Runeclaw Bear, a 2/2 green Bear creature with mana cost {1}{G}. The resulting object is a 2/2 green Bear creature named Runeclaw Bear with mana cost {1}{G} and with “At the beginning of your upkeep, if this creature isn't a token, put a token onto the battlefield that's a copy of this creature.” If another Progenitor Mimic enters the battlefield as a copy of that creature, it will be a Runeclaw Bear with two instances of the triggered ability.\r\n\r\nShould be 3 tokens per turn, then. What version of the product are you using? On what operating system? Linux Mint 16, magarena 1.48.827 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Progenitor Mimic: copying Progenitor Mimic with Progenitor Mimic does not copy the triggered effect",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 17, 2014 06:23:10",
+      "body": "Issue 512 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 13, 2014 21:02:16_\n\nWhat steps will reproduce the problem? 1. cast Progenitor Mimic - copying one creature\r\n2. cast the second Progenitor Mimic, copying the first one\r\n3. pass turn, next upkeep each Progenitor Mimic will create one token (making it 2 in total) What is the expected output? What do you see instead? http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=369001 4/15/2013 \t\r\nIf you choose to have Progenitor Mimic enter the battlefield as a copy of a creature, the triggered ability it gains will become part of its copiable values. For example, suppose Progenitor Mimic enters the battlefield as a copy of Runeclaw Bear, a 2/2 green Bear creature with mana cost {1}{G}. The resulting object is a 2/2 green Bear creature named Runeclaw Bear with mana cost {1}{G} and with “At the beginning of your upkeep, if this creature isn't a token, put a token onto the battlefield that's a copy of this creature.” If another Progenitor Mimic enters the battlefield as a copy of that creature, it will be a Runeclaw Bear with two instances of the triggered ability.\r\n\r\nShould be 3 tokens per turn, then. What version of the product are you using? On what operating system? Linux Mint 16, magarena 1.48.827 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=511_",
+  "date": "2014-03-13T21:02:16",
+  "state": "open",
+  "gid": 511,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=511",
+  "owner": ""
+}

@@ -1,0 +1,54 @@
+{
+  "status": "new",
+  "body": "Are you going to port this game to Android?\r\n\r\nIt could be a great idea :)",
+  "author": "[pal...@gmail.com](https://code.google.com/u/109650523438714887696/)",
+  "title": "Porting to other platforms",
+  "labels": [
+    "imported",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "January 24, 2012 17:41:10",
+      "body": "Not in the near future, unless Android start supporting Swing. The current GUI is written using Java's Swing framework which is not supported on the Android platform. A port would require rewriting the GUI using Android's custom UI, and that would be a huge undertaking.\n\n**Summary:** Android port  \n  **Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 28, 2012 05:39:47",
+      "body": "Changed priority to low as this is not likely to be done any time soon.\n\n**Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "March 13, 2012 19:23:01",
+      "body": "Rather than port to a single platform, rewriting the UI layer in something like the PlayN framework, https://developers.google.com/playn/ , would allow us to target multiple platforms. For example, a web based version would make it a lot easier for folks to try out the program without installing anything.\n\n**Summary:** Porting to other platforms  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 12, 2013 19:03:39",
+      "body": "looks like http://libgdx.badlogicgames.com/ is a better choice now",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 13, 2013 12:29:32",
+      "body": "Android port would be great, i would pay for it.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "August 29, 2014 04:40:18",
+      "body": "Cool - who wants to set up a KickStarter account! :)",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "October 27, 2014 12:30:21",
+      "body": "I would pay $5 for an .apk of this were it to become a thing.  I think it would be reasonable to only target tablets and above, screen space wise.",
+      "author": "[kfiresm...@gmail.com](https://code.google.com/u/102768122264957648302/)"
+    }
+  ],
+  "content": "_From [pal...@gmail.com](https://code.google.com/u/109650523438714887696/) on January 25, 2012 04:15:28_\n\nAre you going to port this game to Android?\r\n\r\nIt could be a great idea :)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=147_",
+  "date": "2012-01-25T04:15:28",
+  "state": "open",
+  "gid": 147,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=147",
+  "owner": ""
+}

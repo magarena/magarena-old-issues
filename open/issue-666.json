@@ -1,0 +1,25 @@
+{
+  "status": "accepted",
+  "body": "There are other cards that could do with some version of the 'Cast SN with AI' conditions.\r\n\r\nCards that target a player but affect another zone. ie. Repopulate - Shuffle all creature cards from target player's graveyard into that player's library.\r\n\r\nThe AI will cast this regardless of the contents of a players' graveyard. Whether it's own or the opponents.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Other Cast with AI situations",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 27, 2014 15:04:15",
+      "body": "Just noticed the issue number...",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on August 28, 2014 05:43:44_\n\nThere are other cards that could do with some version of the 'Cast SN with AI' conditions.\r\n\r\nCards that target a player but affect another zone. ie. Repopulate - Shuffle all creature cards from target player's graveyard into that player's library.\r\n\r\nThe AI will cast this regardless of the contents of a players' graveyard. Whether it's own or the opponents.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=666_",
+  "date": "2014-08-28T05:43:44",
+  "state": "open",
+  "gid": 666,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=666",
+  "owner": ""
+}

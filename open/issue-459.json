@@ -1,0 +1,18 @@
+{
+  "status": "accepted",
+  "body": "Currently you can save the state of only one duel which also has to be done manually using the \"Save duel\" option. Very limited and easy to forget.\r\n\r\nInstead auto-save duel before and after game. Add \"Resume duel\" option to main menu to continue the last duel played. The \"Load duel\" option would let you select from the last X duels saved. The \"Save duel\" option then creates a permanent save if required.\r\n\r\nWishlist: currently you cannot save the state of a game but that should be the ultimate goal and would be another distinguishing feature of Magarena. The fact that there is already a mechanism in place for testing game scenarios gives me hope that this might be achievable.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Auto-save the last X duels played.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on December 24, 2013 02:26:28_\n\nCurrently you can save the state of only one duel which also has to be done manually using the \"Save duel\" option. Very limited and easy to forget.\r\n\r\nInstead auto-save duel before and after game. Add \"Resume duel\" option to main menu to continue the last duel played. The \"Load duel\" option would let you select from the last X duels saved. The \"Save duel\" option then creates a permanent save if required.\r\n\r\nWishlist: currently you cannot save the state of a game but that should be the ultimate goal and would be another distinguishing feature of Magarena. The fact that there is already a mechanism in place for testing game scenarios gives me hope that this might be achievable.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=459_",
+  "date": "2013-12-24T02:26:28",
+  "state": "open",
+  "gid": 459,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=459",
+  "owner": "lodici123"
+}

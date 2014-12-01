@@ -1,0 +1,24 @@
+{
+  "status": "new",
+  "body": "When AI plays Brainstorm, the game log displays the cards placed on the top of their deck - In fact it says \"From your hand to the top of your library\" along with displaying the card name.\r\n\r\nI understand that it's handy for debugging, but as intended?",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Opponent's Brainstorm reveals their replaced cards.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 07, 2013 07:46:27",
+      "body": "I can't believe this is correct. Possibly we need to distinguish between what gets shown in the UI log and what gets saved to the game.log file.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on December 07, 2013 08:21:26_\n\nWhen AI plays Brainstorm, the game log displays the cards placed on the top of their deck - In fact it says \"From your hand to the top of your library\" along with displaying the card name.\r\n\r\nI understand that it's handy for debugging, but as intended?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=441_",
+  "date": "2013-12-07T08:21:26",
+  "state": "open",
+  "gid": 441,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=441",
+  "owner": ""
+}

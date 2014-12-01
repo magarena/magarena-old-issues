@@ -1,0 +1,139 @@
+{
+  "status": "accepted",
+  "body": "What steps will reproduce the problem? play a game against the deck \"Disabler\" What is the expected output? What do you see instead? I should be able to target my own creature (e.g. Tormented Soul, which was enchanted with Pillory of the Sleepless), but I can't. What version of the product are you using? On what operating system? Magarena 1.53 on Windows Vista",
+  "author": "[mechsika...@gmail.com](https://code.google.com/u/109554645654543468034/)",
+  "title": "Evaluate usefulness of target hints to the AI",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "Type-Task"
+  ],
+  "comments": [
+    {
+      "date": "September 19, 2014 03:43:00",
+      "body": "In the Preferences -> Gameplay -> General menu, you can uncheck the 'Allow only sensible choices'. This will prevent the game from enforcing the AI's targeting restrictions on you.\r\n\r\nPossibly have this option off as default?\n\n**Status:** Accepted  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 19, 2014 04:23:51",
+      "body": "I agree. Assuming the setting has no effect on the AI I think there might even be an argument to remove it completely - so you accidentally pick the wrong target, hit undo.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 20, 2014 05:26:11",
+      "body": "Thank you, the unchecking of the 'Allow only sensible choices' solved the problem. However it would be great if the program would identify each of my creatures that are enchanted by the opponent as sensible targets. The same would be possible for artifacts, enchantments (e.g. 'Abolish') and lands (e.g. 'Ark of Blight'). Alternatively there could be a button or hotkey to switch the (great!) 'Allow only sensible choices' option on and off quickly in-game for the rare cases it is not wanted.",
+      "author": "[mechsika...@gmail.com](https://code.google.com/u/109554645654543468034/)"
+    },
+    {
+      "date": "September 20, 2014 05:47:54",
+      "body": "The purpose isn't to prevent the player from making wrong choices, it is to make the gameplay smoother by not having the engine stop at every priority to ask you if you want to destroy your own creature with your instant when your opponent has no creatures (and other similar sitations).\r\n\r\nI like the idea of being able to toggle it quickly in game for the rare cases. In most cases, with it enabled it helps you move the game through the various steps/phases without unnecessary pauses, when you need it there is quick way to disable it.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 20, 2014 13:57:23",
+      "body": "I think there would probably be a better way of moving through the phases/steps for the player. Currently it's effectively changing the way that cards work, which is kind of a no-no.\r\n\r\nAll damaging spells read 'target opponent' instead of player, and all removal reads 'target <permanent> you don't control'\r\n\r\nA card should behave as it would in a real game.\r\n\r\nHaving an option to not be prompted per-card/permanent for this turn/game. Pass priority until end of turn, which kinda fits into issue 9",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 20, 2014 19:08:47",
+      "body": "There is a slight difference between this and automatically skip priority until end of turn. There might be an instant I want to cast at the end step, so I don't want to skip my priority all the way, but I do want to skip choices which normally I woudn't want to make.\r\n\r\nThe OP's idea of including permanents enchanted by the opponent is something we can easily add, as the current check is just who is the controller. We can make the check cleverer by including checking if the target is enchanted. This will also improve the AI's decision making.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 21, 2014 01:19:20",
+      "body": "See Issue 689 which is related in that it describes how 'Allow only sensible choices' can affect gameplay. \r\n\r\nAlso, I think kind of related but not affected (I think) by the above setting...try playing a game with Fog in your hand. It constantly pauses because of Fog which I am assuming is what Shawnie is suggesting is fixed in comment #5.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 21, 2014 05:39:37",
+      "body": "I was just pointing to issue 9 as it has adopted the ability to skip to certain phases as well. If you're essentially prompted - \"Do you want to cast this card?\" it would be helpful to be able to essentially reply, \"No not yet/Not this turn/Not until [combat, End of turn, opponent's untap step etc.]\" Issue 422 and phase/step advancement.\r\n\r\nOn the AI side, having the AI contemplate permanents that have been enchanted by the opponent would be a good thing. Playing devil's advocate, there's a part of me that would want to see how long the AI thinks when not restricted.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 21, 2014 17:34:38",
+      "body": "Thanks for pointing out 422, I missed it when reading issue 9 . There is some setup for this in MagicGame.setSkipTurn which is now a boolean. Taking into account 422, it can be changed to a MagicPhase. Need some help on the UI side to enable clicking on the phase buttons though. I can work out the logic and shortcut key for skipping until end of turn.\r\n\r\nI think improving the selection of positive/negative target is a win/win which we should definitely work on. I'm thinking since we have AI personas, more of the AI config can move into the persona, so that we can compare AI that uses hints vs AI that doesn't.\n\n**Summary:** Consider your permanents enchanted by opponent as negative  <span class=\"oldvalue\"> (was: Cannot destroy one of my own creatures with Victim of Night ) </span>  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 21, 2014 23:10:49",
+      "body": "Let me know what you need to know on the UI front. A simple way to indicate a skipped step or steps (phase?) would be to use a strike-through font. Click on the step/phase to toggle.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 22, 2014 06:16:53",
+      "body": "Thinking further on the AI and 'negative' targets.\r\n\r\nIf permanents you control which are enchanted by your opponent were deemed a negative target:\r\n\r\nIf you enchant an AI's creature with Weakness, would the AI then never target it with Giant Growth? Would it then become a legal target for the AI to cast Pacifism on it?\r\n\r\nOr would this be an 'AI for the player' only?\r\n\r\nIf the issue is being able to target, wouldn't having no restriction for the player be preferable if the pass phases/turn functions well?",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 22, 2014 18:24:39",
+      "body": "Negative and positive targets do not have to be mutually exclusive. As currently defined, negative = controlled by opponent, positive = controlled by you.\r\n\r\nThe plan is to refine it as follows:\r\nnegative = controlled by opponent, or enchanted by opponent\r\npositive = controlled by you\r\n\r\nIn your example, of AI's creature enchanted with Weakness, it will be included in both positive (because it is controlled by AI) and negative targets (because it is enchanted by the oppponent).",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 23, 2014 00:53:54",
+      "body": "So the AI would consider casting Pacifism on its own creature enchanted by an opponent.\r\n\r\nI see this as just creating some potentially strange choices from the AI. To the point of trying to get the AI to destroy it's own permanents by casting auras on them. (Like Firebreathing, or Regeneration).",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 23, 2014 01:13:09",
+      "body": "Yes, that could happen, I see what you're getting at. Targeting your own permanent might make sense for some negative effects such as destroy/bounce but not others such as pacifism. Perhaps destroy should just be like bounce where there is no target hint.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 23, 2014 01:15:10",
+      "body": "Just realized we don't actually know what the OP wants to target his creature with...\r\n@mechsikaner: what spell were you trying to target your Tormented Soul with?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 23, 2014 03:33:00",
+      "body": "The spell was Victim of Night.",
+      "author": "[mechsika...@gmail.com](https://code.google.com/u/109554645654543468034/)"
+    },
+    {
+      "date": "September 23, 2014 04:15:12",
+      "body": "Magic is too complex to consider changing hints regarding particular cards. Removing hinting for the player would be far clearer. How would the targeting hint regarding Funeral March work? It's an enchantment you'd want to get rid of, but not by destroying the creature it is on.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 23, 2014 04:50:33",
+      "body": "I don't mean change hints for particular cards, I mean replace the negative hint for the destroy effect with none, so that the AI can destroy its own permanents. Just as we have hint as none for bounce effect so that the AI can bounce its own permanents.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 23, 2014 09:24:35",
+      "body": "That's kinda what I meant - destroy effects are 'particular cards'.\r\nRemoving all hinting would be a fairer representative. There is never a real way of defining whether a card or target would be deemed positive or negative, as it always depends on what other cards are in play.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 23, 2014 17:23:14",
+      "body": "To be clear we're talking about this for the AI right? I assume for the player there isn't as much of an issue since it is configurable.\r\n\r\nI also realized that hinting may play a big role for MCTS as well, since in the random simulation portion the AI makes any valid move randomly, without hinting it will randomly destroy valid targets, which may affect the usefulness of the simulations.\r\n\r\nI think it would be premature of us to discard the entire hinting system without a proper study of its effects on the AI. And to do that we need to be able to enable/disable hinting on a per AI basis and run comparisons.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 23, 2014 17:23:54",
+      "body": "**Summary:** Evaluate usefulness of target hints to the AI  <span class=\"oldvalue\"> (was: Consider your permanents enchanted by opponent as negative) </span>  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 23, 2014 17:24:13",
+      "body": "**Labels:** -Type-Defect Type-Task  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 23, 2014 17:39:04",
+      "body": "Yes, for the AI. \r\n\r\nI know that MCTS needs help with the random nature of its moves, but I think it could also be an improvement on the possible plays that the AI can make. Using card draw to deck an opponent would never currently be considered (as one example).\r\n\r\nWould using a MiniMax loop instead of the random play give less problematic results?\r\n\r\nIf disabling the hints for the AI proves too disruptive, I still feel that disabling them for the player (even if just off as default) would definitely help.\r\n\r\nBeen making some good progress on cards, lets give the AI some love :D",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 23, 2014 17:45:43",
+      "body": "Agree, it could be an improvement or it could make it worst, but without running actual experiments it is hard to speculate purely on theory alone. Hence the next concrete step is to run experiments to validate our hypothesis.\r\n\r\nRegarding using minimax instead of simulation, again we could speculate, but it would be more fruitful to get some real data by comparing one version using minimax and one version using random simulation.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [mechsika...@gmail.com](https://code.google.com/u/109554645654543468034/) on September 15, 2014 20:27:22_\n\nWhat steps will reproduce the problem? play a game against the deck \"Disabler\" What is the expected output? What do you see instead? I should be able to target my own creature (e.g. Tormented Soul, which was enchanted with Pillory of the Sleepless), but I can't. What version of the product are you using? On what operating system? Magarena 1.53 on Windows Vista\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=692_",
+  "date": "2014-09-15T20:27:22",
+  "state": "open",
+  "gid": 692,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=692",
+  "owner": ""
+}

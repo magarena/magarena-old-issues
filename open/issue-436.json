@@ -1,0 +1,24 @@
+{
+  "status": "accepted",
+  "body": "jerichopumpkin @ forum asks:\r\nIs possible to add the X cost to planeswalker abilities? I want to do Chandra Nalaar, but as of things are now, it's not possible.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "support removing X counters as cost",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "January 26, 2014 08:23:53",
+      "body": "I'm having a long-term look at the use of counters, it's a bit of a big project, but I'm hoping that one day I can get to 'Remove <n> <CounterType> counters from SN' as a cost. If that becomes possible, X would be the next step.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on December 06, 2013 10:29:20_\n\njerichopumpkin @ forum asks:\r\nIs possible to add the X cost to planeswalker abilities? I want to do Chandra Nalaar, but as of things are now, it's not possible.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=436_",
+  "date": "2013-12-06T10:29:20",
+  "state": "open",
+  "gid": 436,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=436",
+  "owner": "melvinzh...@gmail.com"
+}

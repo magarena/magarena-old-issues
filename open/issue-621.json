@@ -1,0 +1,24 @@
+{
+  "status": "accepted",
+  "body": "MCTS AI prefers to drag games out when it is only the losing end by making meaningless moves.\r\n\r\nThis is because it prefers moves that lead to longer games as the score of a game is adjusted by the number of moves. This allow it to prefer shorter games when it is about to win, which is good. But in the case of losing games, counting number of turns might be a better approach than counting moves.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "MCTS AI makes meaningless plays when it is on the losing end",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 22, 2014 12:45:51",
+      "body": "This may fix a number of other AI behaviours, such as tapping tapped permanents, and even possibly suicidal attacks.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 16, 2014 14:36:55_\n\nMCTS AI prefers to drag games out when it is only the losing end by making meaningless moves.\r\n\r\nThis is because it prefers moves that lead to longer games as the score of a game is adjusted by the number of moves. This allow it to prefer shorter games when it is about to win, which is good. But in the case of losing games, counting number of turns might be a better approach than counting moves.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=621_",
+  "date": "2014-07-16T14:36:55",
+  "state": "open",
+  "gid": 621,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=621",
+  "owner": "melvinzh...@gmail.com"
+}

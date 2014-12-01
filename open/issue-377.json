@@ -1,0 +1,35 @@
+{
+  "status": "accepted",
+  "body": "elias @ http://www.slightlymagic.net/forum/posting.php?mode=reply&f=82&t=7121#pr127050 an effect when either the player or the computer loses life, for example the player/computer field can flash red. Just adding a 1x1 red.png that tiles over the player/computer field at 50% transparency for 1-2 seconds should do it.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "flash red when losing life",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:49:43",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 04:00:21",
+      "body": "**Owner:** lodici123  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 04:16:52",
+      "body": "**Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 28, 2013 09:37:48_\n\nelias @ http://www.slightlymagic.net/forum/posting.php?mode=reply&f=82&t=7121#pr127050 an effect when either the player or the computer loses life, for example the player/computer field can flash red. Just adding a 1x1 red.png that tiles over the player/computer field at 50% transparency for 1-2 seconds should do it.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=377_",
+  "date": "2013-07-28T09:37:48",
+  "state": "open",
+  "gid": 377,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=377",
+  "owner": "lodici123"
+}

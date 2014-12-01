@@ -1,0 +1,79 @@
+{
+  "status": "accepted",
+  "body": "Provide an option via the menu to automatically update to the current release.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Autoupdate to current release",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "January 16, 2012 03:54:33",
+      "body": "I suggest we provide a zip file that only contains the files that were changed/added and give it a name that clearly distinguishes it from the full package. This will make the download smaller and the autoupdate can use the already existing folder. That way nothing has to be copied from older versions although the user still needs to download the info for added cards.\r\n\r\nThe update would go like this:\r\n- user chooses \"Check for update\" from menu\r\n- compare current version with latest version on code.google\r\n- inform user:\r\n   - no update available  OR\r\n   - confirm download of update\r\n- show non modal progress window\r\n- download on seperate thread\r\n- when finished, set some flag in general.cfg\r\n- inform user that update is downloaded and will be installed next startup\r\n- on startup check flag and extract files\r\n- load as normal and prompt user to download missing images",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 16, 2012 18:40:46",
+      "body": "Thanks for writing out the detailed steps.\r\n\r\nI'm not sure zips with only changed files will be much smaller since the bulk of the download is the exe file, having diff packages will also introduce additional overhead when pushing out a new release as we will need to push out the upgrade zips as well.\r\n\r\nOne thing is that maybe the upgrade happens when the user exits after downloading the new release instead of when the user starts up the program again. This would also remove the need for a flag in general.cfg. Technically, it may be a bit hard to upgrade when the program is running.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 17, 2012 02:11:24",
+      "body": "I'm not that much focused on the smaller download but more on the idea of simplifying an update from a user's perspective. At the moment it requires downloading a zip file, unzipping it, starting the new version and then importing the data from a previous version. I prefer to just keep the files where they are and only add the new or changed files. When we update from a full package then every new file needs to be checked if it already exists and if it has changed which (I'm guessing) might take a while.\r\n\r\nDoesn't upgrading when the app exits lead to the same problem of updating a running jar? A solution could be to have a launcher app that checks for the \"update\" flag and starts unzipping the new files. The launcher can show the splash screen too which will solve the missing splash screen on OS X and will make the download a bit smaller by not needing the .bmp file for launch4j.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 17, 2012 07:30:08",
+      "body": "Agree, the current update process is rather tedious. The partial upgrade package is only simpler if someone is upgrading a single release (eg 1.20 -> 1.21), otherwise multiple partial releases have to be downloaded and applied. Preparing multiple release packages with different sets of files correctly is non trivial and the chance of errors creeping in increases.\r\n\r\nUpgrading using full packages means only the latest release have to be downloaded and it does not introduce additional steps in preparing a release. It does mean the upgrade software have to be a bit smarter and take care of unpacking the new files.\r\n\r\nYes, the problem of updating a running jar is still there. My reasoning is that since this is done just before exit, there is little chance of errors due to the VM trying to load a modified class from the jar. Updating the jar itself should be the very last step before exiting the program. Using a launcher app would solve this problem as well but I was trying to avoid the complexity.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 18, 2012 07:36:46",
+      "body": "Yes, I forgot about the problem of having to download multiple partial releases when a version is really outdated. Let's stick to full updates then and just make the update code check for duplicates and file dates etc.\r\n\r\nI started work on the update part that happens before that. Steps that are done (more or less):\r\n- comparing versions\r\n- informing the user/ask if they want to precede\r\n- non-modal window with progressbar on separate thread\r\n\r\nThe UI part of it needs polishing for sure :)\r\n\r\nNext will be unzipping, then I guess I have to look into updating a running jar. I can start testing the code needed to do the copying in a smart way.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 21, 2012 06:23:52",
+      "body": "After doing a bit of research and some testing it seems you can't overwrite or rename a running .exe through java code on the Windows platform. That would mean that, as far as I can tell, a launcher is the only option left.\r\n\r\nAnother issue is the comparing of new files with the current ones. We can't look at timestamps and when the file size is equal we still can't be sure the files are the same so a byte-by-byte comparison is then needed. When we assume that, for example, most of the scripts will in fact be the same, that means byte comparing about 2000 small files. I think it would be faster to not do any comparing but just overwrite every file instead.\r\n\r\nApart from the above, I got this 90% working.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 21, 2012 08:41:57",
+      "body": "What if we were updating a jar instead of an exe on Windows?\r\n\r\nI think http://jdownloader.org/ solves the update problem without using a launcher. Not sure how they did it but you can checkout their code from http://svn.jdownloader.org/projects/show/jd",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 26, 2012 11:49:24",
+      "body": "I'll look into that soon, just haven't had much time lately. It's clear that I underestimated the amount of work this needs to be done properly, so my comment about \"90% working\" is simply wrong. Still I hope to get this in version 1.23.\r\n\r\nThere are a lot of things to consider:\r\n- should we allow the user to interrupt a part of the update process? If so, which?\r\n- how would we recover from a failure (or the user interrupting)?\r\n   - support partial downloads?\r\n   - make some sort of backup of current version?\r\n   - save .zip file for later use?\r\n\r\nAnd a lot of things to do:\r\n- provide detailed feedback to the user.\r\n   - on every possible error\r\n   - estimate and show progress\r\n   - alerts to trying to interrupt the update\r\n   - small things like disableing \"update\" menu item when update is in progress\r\n- look at how this would work on OS X\r\n- testing, testing and testing",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 26, 2012 18:11:14",
+      "body": "I think allowing for partial download would make things a lot more complicated for the initial version, we can add it later. For now the zip file is always downloaded from scratch each time update is triggered, if a partial file is found it is deleted.\r\n\r\nThe other tricky issue is showing the progress bar, one way I can think of is to take the size of the partial download divided by the full size of the release. http://stackoverflow.com/questions/263013/java-urlconnection-how-could-i-find-out-a-files-size has a discussion on how to get the file size of the remote file.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 27, 2012 00:45:29",
+      "body": "Yeah I think it's a good idea to maybe later add partial downloads. I doubt it's usefulness since it's only a 10MB file, but there could be users with slow connections I guess.\r\n\r\nI already have the progress bar working for downloading and unzipping. I simply let each step fill half of the bar. The final copy step will probably be a bit harder to show progress for but I'm fine with it being less precise. Most important part is that the user can easily tell that there IS progress.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 27, 2012 05:08:55",
+      "body": "I found that the .jar is locked on Windows. So it can't be renamed or overwritten. It may be possible to copy the new classes to the jar file while it's running but there is no command to delete files from a jar (for obvious reasons). While I don't see unused classes being a problem for running the application, it's really ugly to do so.\r\n\r\nThere may still be a way to avoid the need for a launcher:\r\n- old Magarena.exe downloads and unzips to an update folder\r\n- old Magarena.exe copies everything to game folder except for /update/Magarena.exe\r\n- old Magarena.exe copies /update/Magarena.exe to /gamepath/Magarena_new.exe\r\n- old Magarena.exe deletes everything in the update folder except for /update/Magarena.exe\r\n- old Magarena.exe starts Magarena_new.exe with an -update parameter and closes\r\n- Magarena_new.exe deletes the old Magarena.exe\r\n- Magarena_new.exe copies /update/Magarena.exe to the gamefolder\r\n- Magarena_new.exe deletes /update/Magarena.exe\r\n- Magarena_new.exe sets a flag in general.cfg\r\n- update is now done and the user can play the newer version\r\n- next time when the user starts Magarena it will be through:\r\n  1. Magarena.exe : deletes Magarena_new.exe\r\n  OR\r\n  2. Magarena_new.exe : starts Magarena.exe : back to step 1\r\n- unset flag\r\n\r\nWe should stop putting the version number in the folder name too, so that shortcuts/links to the executable don't change. Maybe name the main folder (where the .exe is) simply Magarena and in there have a folder called Data or something (e.g. Magarena/Data/decks).",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "April 08, 2014 01:21:11",
+      "body": "this looks promising https://github.com/UrsKR/updates-r-simple",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on August 02, 2011 12:00:53_\n\nProvide an option via the menu to automatically update to the current release.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=39_",
+  "date": "2011-08-02T12:00:53",
+  "state": "open",
+  "gid": 39,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=39",
+  "owner": "melvinzh...@gmail.com"
+}

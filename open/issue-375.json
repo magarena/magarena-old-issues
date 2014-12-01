@@ -1,0 +1,18 @@
+{
+  "status": "accepted",
+  "body": "elias @ http://www.slightlymagic.net/forum/posting.php?mode=reply&f=82&t=7121#pr127050 more customize-able sound effect possibilities, such as having distinct sound effects when loosing life, being poisoned, drawing a new card, start of players turn, start of computers turn, casting a creature, casting a sorcery, casting an instant, starting a new duel, adding a land, taking a mulligan, win the duel, lost the game, won the game, etc.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "More sound effects",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 28, 2013 09:35:31_\n\nelias @ http://www.slightlymagic.net/forum/posting.php?mode=reply&f=82&t=7121#pr127050 more customize-able sound effect possibilities, such as having distinct sound effects when loosing life, being poisoned, drawing a new card, start of players turn, start of computers turn, casting a creature, casting a sorcery, casting an instant, starting a new duel, adding a land, taking a mulligan, win the duel, lost the game, won the game, etc.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=375_",
+  "date": "2013-07-28T09:35:31",
+  "state": "open",
+  "gid": 375,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=375",
+  "owner": "melvinzh...@gmail.com"
+}

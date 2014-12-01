@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "Currently when a deck is saved from the deck editor the system's default save file dialog is used. This exposes the low level file system to the player which is not appropriate. When starting a new duel and selecting the deck to use, if a Player deck is not saved in the default decks location it will not appear and this could potentially happen with the save file dialog since there are no restrictions on where a deck can be saved (except for the prebuilt folder). A custom save deck dialog should let the player easily update the deck name and description. How, where or in what format the deck file is saved should really be of no interest to your average player.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Implement custom save deck dialog.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on July 28, 2014 19:18:57_\n\nCurrently when a deck is saved from the deck editor the system's default save file dialog is used. This exposes the low level file system to the player which is not appropriate. When starting a new duel and selecting the deck to use, if a Player deck is not saved in the default decks location it will not appear and this could potentially happen with the save file dialog since there are no restrictions on where a deck can be saved (except for the prebuilt folder). A custom save deck dialog should let the player easily update the deck name and description. How, where or in what format the deck file is saved should really be of no interest to your average player.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=630_",
+  "date": "2014-07-28T19:18:57",
+  "state": "open",
+  "gid": 630,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=630",
+  "owner": "lodici123"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "new",
+  "body": "sponeta @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=84303#p84294 writes:\r\n\r\nIf you control Deathbringer Liege and cast a spell that's both white and black, the abilities trigger in the wrong order: first you're asked if you want to destroy target tapped creature, and then you're asked if you want to tap target creature.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Triggers for Deathbringer Liege fire in the wrong order",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 05, 2012 08:00:16",
+      "body": "In my test game the following happens:\r\nLOG: Tap Rupture Spire. Tap Rupture Spire. Tap Rupture Spire. Pay {1}{W}{B}. Play Vindicate.\r\nLOG: Player may (yes) tap target creature (Eager Cadet).\r\nLOG: Player may (yes) destroy target creature (Eager Cadet) if it's tapped.\r\nLOG: Eager Cadet is destroyed.\r\nLOG: Destroy target permanent (Bloodcrazed Neonate). Bloodcrazed Neonate is destroyed.\r\n\r\nNothing wrong there. I guess the fact you first choose the target to be destroyed and then the target to be tapped can be confusing but it's the way the stack works.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "March 06, 2012 21:13:19",
+      "body": "Does the destroy trigger go on the stack first, then the tap trigger? Most of the time players would want this, so even though we don't support trigger ordering, the engine should put the destroy trigger first, then the tap trigger, so that the tap trigger resolves first.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 06, 2012 22:56:29",
+      "body": "Yes, it fires the triggers in such a way that the end result is the most favorable one, i.e. the target gets tapped then destroyed. It'll always do that regardless of whether the mana cost is {B}{W} or {W}{B}. The part that can be confusing is that you choose the destroy target first but that's exactly how it works according to the rules. http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=157288 :\r\n\r\nIf you cast a spell that's both white and black, the last two abilities will both trigger. You may use them together to destroy any creature. To do so, put the \"destroy\" ability on the stack first, then put the \"tap\" ability on the stack, with each one targeting the same creature. When the abilities resolve, they'll tap the creature, then destroy it.\r\n\r\nsponeta responded on the forums and understands this works as it should.\n\n**Status:** CantReproduce  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "November 19, 2013 21:15:38",
+      "body": "I just had this happen to me. The key seems to be having Kingpin's Pet in play, with its Extort effect. The effects went on the stack in this order:\r\n\r\n<top of stack>\r\n- Deathbringer Liege: Igor may destroy target creature if it's tapped\r\n- Deathbringer Liege: Igor may tap target creature\r\n- Kingpin's Pet: you may pay ...\r\n- Put Nip Gwyllion onto the battlefield\r\n<bottom of stack>\r\n\r\nNote how \"destroy\" resolves first, then \"tap\".\r\n\r\nIn case it matters, I have in play: Deathbringer Liege, Kingpin's Pet, Mourning Thrull, Royal Assassin; and casting Nyp Gwillion.\r\n\r\nComputer has in play: Lightning Angel, Llanowar Elves",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)"
+    },
+    {
+      "date": "November 19, 2013 21:29:51",
+      "body": "**Status:** New  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on March 05, 2012 23:37:23_\n\nsponeta @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=84303#p84294 writes:\r\n\r\nIf you control Deathbringer Liege and cast a spell that's both white and black, the abilities trigger in the wrong order: first you're asked if you want to destroy target tapped creature, and then you're asked if you want to tap target creature.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=182_",
+  "date": "2012-03-05T23:37:23",
+  "state": "open",
+  "gid": 182,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=182",
+  "owner": "melvinzh...@gmail.com"
+}

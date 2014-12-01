@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. Play Amulet of Vigor\r\n2. Play Wood Elves, choose Stomping Ground\r\n3. Stomping Ground enters battlefield untapped, you're not promted to pay 2 life, Amulet of Vigor does not trigger What is the expected output? What do you see instead? Wood Elves read: ...and put that card into play.\r\nStomping Ground reads: ... you may pay 2 life. If you don't, Stomping Ground enters battlefield tapped.\r\n\r\nIt should be, like, play Wood Elves, choose Stomping Ground, being prompted to pay 2 life and either way it should be untapped by paying 2 life or by having Amulet of Vigor already in play. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Stomping Ground + Amulet of Vigor + Wood Elves",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 13, 2014 00:06:45_\n\nWhat steps will reproduce the problem? 1. Play Amulet of Vigor\r\n2. Play Wood Elves, choose Stomping Ground\r\n3. Stomping Ground enters battlefield untapped, you're not promted to pay 2 life, Amulet of Vigor does not trigger What is the expected output? What do you see instead? Wood Elves read: ...and put that card into play.\r\nStomping Ground reads: ... you may pay 2 life. If you don't, Stomping Ground enters battlefield tapped.\r\n\r\nIt should be, like, play Wood Elves, choose Stomping Ground, being prompted to pay 2 life and either way it should be untapped by paying 2 life or by having Amulet of Vigor already in play. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=509_",
+  "date": "2014-03-13T00:06:45",
+  "state": "open",
+  "gid": 509,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=509",
+  "owner": ""
+}

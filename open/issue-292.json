@@ -1,0 +1,18 @@
+{
+  "status": "new",
+  "body": "- What steps will reproduce the problem?\r\n1. MCTS-C (6) or MMAB (8) with Haunted_Humans Deck vs. me with 2012gwAggro Deck (although I've changed my lists slightly, i.e. exchanged Noble Hierarch for Avacyn's Pilgrim for example)\r\n2. I have a Blade Splicer + Golem Token\r\n3. AI has Champion of the Parish with p/t <= 2/2. He attacks\r\n\r\n- What is the expected output? What do you see instead?\r\nAI attacks and suicides his Champion into the Blade Splicer Golem for no apparent reason. In other games, it seems like the AI doesn't anticipate the Golem Token to have First Strike\r\n\r\n- What version of the product are you using? On what operating system?\r\nMagarena 1.29, Windows 7, Java 7",
+  "author": "[firat.al...@googlemail.com](https://code.google.com/u/112109140426664196609/)",
+  "title": "Champion of the Parish suicides vs. Blade Splicer Token",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [firat.al...@googlemail.com](https://code.google.com/u/112109140426664196609/) on September 07, 2012 21:10:18_\n\n- What steps will reproduce the problem?\r\n1. MCTS-C (6) or MMAB (8) with Haunted_Humans Deck vs. me with 2012gwAggro Deck (although I've changed my lists slightly, i.e. exchanged Noble Hierarch for Avacyn's Pilgrim for example)\r\n2. I have a Blade Splicer + Golem Token\r\n3. AI has Champion of the Parish with p/t <= 2/2. He attacks\r\n\r\n- What is the expected output? What do you see instead?\r\nAI attacks and suicides his Champion into the Blade Splicer Golem for no apparent reason. In other games, it seems like the AI doesn't anticipate the Golem Token to have First Strike\r\n\r\n- What version of the product are you using? On what operating system?\r\nMagarena 1.29, Windows 7, Java 7\n\n**Attachment:** [game.log 1_gw_aggro.dec 1_uw_humans.dec](http://code.google.com/p/magarena/issues/detail?id=292)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=292_",
+  "date": "2012-09-07T21:10:18",
+  "state": "open",
+  "gid": 292,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=292",
+  "owner": ""
+}

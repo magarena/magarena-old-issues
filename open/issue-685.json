@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "body": "Use \"s\" to switch player positions on screen but the play card animation still thinks AI is at the top.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Animation not in sync if players are switched.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "bug"
+  ],
+  "comments": [],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 07, 2014 18:25:45_\n\nUse \"s\" to switch player positions on screen but the play card animation still thinks AI is at the top.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=685_",
+  "date": "2014-09-07T18:25:45",
+  "state": "open",
+  "gid": 685,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=685",
+  "owner": "lodici123"
+}

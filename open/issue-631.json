@@ -1,0 +1,30 @@
+{
+  "status": "accepted",
+  "body": "Or at least add an option to view the description if one exists.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Show deck description in deck editor.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 11, 2014 00:05:25",
+      "body": "**Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 00:18:43",
+      "body": "Issue 433 has been merged into this issue.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on July 28, 2014 19:24:59_\n\nOr at least add an option to view the description if one exists.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=631_",
+  "date": "2014-07-28T19:24:59",
+  "state": "open",
+  "gid": 631,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=631",
+  "owner": "lodici123"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "new",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? https://www.dropbox.com/s/oh86z9754567hk6/primordial_hydra_1.png https://www.dropbox.com/s/ruawjghynf64f7s/primordial_hydra_2.png Primordial Hydra was a 1073741824/1073741824 creature with trample. When again doubling the +1/+1 counters on it, it died.\r\n\r\nIt would have been a 2147483648/2147483648 creature with trample afterwards. \r\n\r\nbtw. 2147483648=2³¹ What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Primordial Hydra dies if growing too strong",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 26, 2014 13:18:46",
+      "body": "Way to push the limits!\r\n\r\nThe reason for that is probably due to the max value of an int being 2,147,483,647\r\n\r\nI'm guessing it was safe to assume that a value wouldn't need to be that high (this includes life, poison(!), etc. as well), and that although an 'issue' - I doubt that the work involved to replace all int with long would be for much benefit.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 26, 2014 13:26:14",
+      "body": "Oh, and yes, the range for 32bit integer is -2³¹ to 2³¹-1 (to account for 0), it just slips over.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 26, 2014 13:58:51",
+      "body": "yes, I know. The amount of counters became negative, thus the Hydra's toughness became 0 again, most likely that's what happened.\r\n\r\nAs of why: testing is to break to product on purpose. that's why. and it goes hand in hand with a game like magic. Magic The Gathering is all about rules and how to bent and exploit them. And I did it just to see how far it goes.\r\n\r\nWell I had another reason, I half-expected a mayor slowdown with so much counters present - which didn't happen. Which in turn is good, I suppose.\r\n\r\nI didn't intend to create extra work - leave it as it is, for all I care. I just mentioned it, because it is something that could easily be dealt with. If the amount of counters exceeds 1000 it is set to 1000. Maybe in conjunction with a notification concerning counters exceeded. Which could be done once and extended/inherited to all possible counters. But then again, that's your call.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 27, 2014 05:17:35",
+      "body": "I always thought the sheer amount of +1/+1 counters would cause serious hang-ups on magarena, but I think I was mistaken.\r\n\r\nYou see, when I got the Mycloth/Cather's Crusade Combo out almost immediatly I got the hang-ups. I tried it again, this time, though, Cather's Crusade came late to my hand. Mycloth alone was enough to cause hang-ups, just at a smaller rate.\r\n\r\nWhen I write hang-up than I mean magarana was for a short period of time unresponsive. I wouldn't get a tooltip or thumpnail, I wouldn't be able to click anything in the window, the escape-key wouldn'T work... that kind of hang-up.\r\n\r\nBy the time I got Cather's Crusade out on the battlefield, the hang-ups lasts about 5-8 seconds each (every time you pass priority). After it was triggered, the hang-ups grew in duration. I cancelled the game, when each of them would last more than 30 seconds.\r\n\r\ngame.log: https://www.dropbox.com/s/sc5jl4lk7smy08i/hang-up_game.log",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 27, 2014 05:20:54",
+      "body": "Mycloth = Mycoloth, of course, sorry.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 25, 2014 02:34:23_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? https://www.dropbox.com/s/oh86z9754567hk6/primordial_hydra_1.png https://www.dropbox.com/s/ruawjghynf64f7s/primordial_hydra_2.png Primordial Hydra was a 1073741824/1073741824 creature with trample. When again doubling the +1/+1 counters on it, it died.\r\n\r\nIt would have been a 2147483648/2147483648 creature with trample afterwards. \r\n\r\nbtw. 2147483648=2³¹ What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=551_",
+  "date": "2014-03-25T02:34:23",
+  "state": "open",
+  "gid": 551,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=551",
+  "owner": ""
+}

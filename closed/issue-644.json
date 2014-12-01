@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "on the script viewer screen.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Add link to Firemind script submission page",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 10, 2014 02:03:48",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/5bbac729f0b67400c66b924f264de9bd1dd626aa .\r\n\r\nIf there is a Firemind icon that could be used please let me know.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 08, 2014 16:44:11_\n\non the script viewer screen.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=644_",
+  "date": "2014-08-08T16:44:11",
+  "state": "closed",
+  "gid": 644,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=644",
+  "owner": "lodici123"
+}

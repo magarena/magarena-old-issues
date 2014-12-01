@@ -1,0 +1,39 @@
+{
+  "status": "fixed",
+  "body": "Creatures which enter the battlefield with X +1/+1 counters are not triggering effects which check the power or toughness of a creature entering the battlefield - eg. Evolve\r\n\r\nThe MagicWhenComesIntoPlayTrigger.XCounters triggers when the permanent is already on the battlefield. Needs to either be an extension of MagicComesIntoPlayWithCounterTrigger (which is a replacement trigger) or a AsEntersTheBattlefield/EntersTheBattlefieldWith trigger, which ChooseOpponent can also use (along with things like Clone, and other 'as SN enters the battlefield, choose...' or 'SN enters the battlefield as')",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Enters with X +1/+1 not triggering power/toughness checking triggers",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "May 22, 2014 08:06:46",
+      "body": "Partially fixed in revision d07c702b1725 and revision 3953c1f32e40 Still needs multikicker fix",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "May 22, 2014 17:39:48",
+      "body": "Does this work? From what I can tell from the code, the issue is that after the counters are put on the P/T is not updated.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 22, 2014 17:42:25",
+      "body": "My bad, it will work. Triggers with replacement priority execute before the game.update.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 14, 2014 09:11:32",
+      "body": "Multikicker fix: revision 372f4e0755bc\n\n**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on May 22, 2014 09:31:42_\n\nCreatures which enter the battlefield with X +1/+1 counters are not triggering effects which check the power or toughness of a creature entering the battlefield - eg. Evolve\r\n\r\nThe MagicWhenComesIntoPlayTrigger.XCounters triggers when the permanent is already on the battlefield. Needs to either be an extension of MagicComesIntoPlayWithCounterTrigger (which is a replacement trigger) or a AsEntersTheBattlefield/EntersTheBattlefieldWith trigger, which ChooseOpponent can also use (along with things like Clone, and other 'as SN enters the battlefield, choose...' or 'SN enters the battlefield as')\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=604_",
+  "date": "2014-05-22T09:31:42",
+  "state": "closed",
+  "gid": 604,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=604",
+  "owner": "ShawnieBoyUK"
+}

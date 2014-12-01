@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Magarena 1.48\r\n\r\nThe AI played Dominus of Fealty. When its ability triggers, the AI \"may\" select a \"target permanent\". On the spell stack this target is listed as \"(yes)\". As far as I can see, there is no way to see what the target is without resolving the ability and checking its effects.\r\n\r\nI would expect to see the target on the spellstack, maybe even visually linked to the playing board.",
+  "author": "[pfeif...@googlemail.com](https://code.google.com/u/110570234444309201741/)",
+  "title": "Target not displayed",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 23, 2014 06:56:20",
+      "body": "made a commit on my clone which fixes it.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 23, 2014 13:42:03",
+      "body": "Fixed in revision 962891ffce49\n\n**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [pfeif...@googlemail.com](https://code.google.com/u/110570234444309201741/) on April 23, 2014 17:54:04_\n\nMagarena 1.48\r\n\r\nThe AI played Dominus of Fealty. When its ability triggers, the AI \"may\" select a \"target permanent\". On the spell stack this target is listed as \"(yes)\". As far as I can see, there is no way to see what the target is without resolving the ability and checking its effects.\r\n\r\nI would expect to see the target on the spellstack, maybe even visually linked to the playing board.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=591_",
+  "date": "2014-04-23T17:54:04",
+  "state": "closed",
+  "gid": 591,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=591",
+  "owner": ""
+}

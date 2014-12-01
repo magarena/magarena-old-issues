@@ -1,0 +1,30 @@
+{
+  "status": "duplicate",
+  "body": "Originally reported by eng60340 in issue 159 :\r\n\r\nWill be good if there's a puzzle mode where the AI is given a set of progressively stronger decks to fight the human.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "add a puzzle mode where the AI deck gets progressively stronger",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "February 17, 2012 02:45:09",
+      "body": "That sounds more like a tournament mode to me, something that's been requested often and we'd love to add. It's not an easy undertaking and relies on someone finding the time to implement such a thing.\r\n\r\nYou can maybe tell a bit more about how your idea would work and add that to issue 29 .",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 18, 2012 10:37:52",
+      "body": "I'm closing this as duplicate. Let's use issue 29 as a place to gather ideas about what a tournament mode could look like.\r\n\r\nThanks for adding your suggestion eng60340.\n\n**Status:** Duplicate  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on February 17, 2012 18:44:37_\n\nOriginally reported by eng60340 in issue 159 :\r\n\r\nWill be good if there's a puzzle mode where the AI is given a set of progressively stronger decks to fight the human.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=162_",
+  "date": "2012-02-17T18:44:37",
+  "state": "closed",
+  "gid": 162,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=162",
+  "owner": "BeHold...@gmail.com"
+}

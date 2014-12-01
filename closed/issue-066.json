@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "Manor Gargoyle is indestructible as long as it has defender.\r\n\r\nThe obvious implementation is:\r\n\r\npublic static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {\r\n  @Override\r\n  public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {    \r\n  return permanent.hasAbility(game,MagicAbility.Defender) ?\r\n    flags | MagicAbility.Indestructible.getMask() :\r\n    flags;\r\n  }\r\n};\r\n\r\nBut it has an infinite loop due to the call to hasAbility. The problem is the \"as long as\" condition makes it impossible to apply effects one by one as we are doing now because the \"as long as\" condition needs to be continuously checked. So when Manor Gargoyle loses defender due to its activated ability, the \"as long as\" part kicks in and it loses the Indestructible ability.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "implementing \"as long as\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "October 02, 2011 00:10:52",
+      "body": "**Status:** Duplicate  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on October 02, 2011 14:14:42_\n\nManor Gargoyle is indestructible as long as it has defender.\r\n\r\nThe obvious implementation is:\r\n\r\npublic static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {\r\n  @Override\r\n  public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {    \r\n  return permanent.hasAbility(game,MagicAbility.Defender) ?\r\n    flags | MagicAbility.Indestructible.getMask() :\r\n    flags;\r\n  }\r\n};\r\n\r\nBut it has an infinite loop due to the call to hasAbility. The problem is the \"as long as\" condition makes it impossible to apply effects one by one as we are doing now because the \"as long as\" condition needs to be continuously checked. So when Manor Gargoyle loses defender due to its activated ability, the \"as long as\" part kicks in and it loses the Indestructible ability.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=66_",
+  "date": "2011-10-02T14:14:42",
+  "state": "closed",
+  "gid": 66,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=66",
+  "owner": "melvinzh...@gmail.com"
+}

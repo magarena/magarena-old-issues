@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Milod @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=84294#p83769 reports\r\n\r\nfiend hunter exiled my bloodcrazed neonate (equiped with sword of war and peace and 1 counter and tapped) What is the expected output? What do you see instead? Fiend Hunter should not be able to target creature equipped with Sword of War and Peace as it grants protection from white.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Fiend hunter able to target creature equipped with Sword of War and Peace",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 05, 2012 08:11:22",
+      "body": "This issue was closed by revision 7bcd715deea7 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on March 05, 2012 23:21:16_\n\nMilod @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=84294#p83769 reports\r\n\r\nfiend hunter exiled my bloodcrazed neonate (equiped with sword of war and peace and 1 counter and tapped) What is the expected output? What do you see instead? Fiend Hunter should not be able to target creature equipped with Sword of War and Peace as it grants protection from white.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=176_",
+  "date": "2012-03-05T23:21:16",
+  "state": "closed",
+  "gid": 176,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=176",
+  "owner": "melvinzh...@gmail.com"
+}

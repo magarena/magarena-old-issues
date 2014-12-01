@@ -1,0 +1,55 @@
+{
+  "status": "fixed",
+  "body": "Just played a morph card and the card back was scaled too large.\r\n\r\nThe card front image is not high res - wondering if the resolution difference is a cause?\r\n\r\nCan post an image on forums if helpful.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Morphed cards card-back not scaling correctly",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 31, 2014 12:48:35",
+      "body": "What is the card?",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 31, 2014 12:51:22",
+      "body": "Thousand Winds - Already working on Khans of Tarkir ;) I can push it",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 31, 2014 12:55:23",
+      "body": "yes please - the easiest way to fix it is to replicate your issue.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 31, 2014 13:18:17",
+      "body": "I have replicated the problem and it is related to the \"Large Card Images\" setting. If you have it enabled then the back face is scaled correctly, if not then you get the partial image. Not sure why, yet.\n\n**Owner:** lodici123  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 31, 2014 13:24:34",
+      "body": "I see - fiddling with the large card images and various card image sizes on the battlefield. (And with mouse wheel to pop-up)\r\n\r\nIf you view a Large card image with popup - then view a low res image. The top left corner of the low res card image, appears at the top left corner of where a large card image would be. Viewing it again fixes it.\r\n\r\nHowever if you then view a large image after a low res image, it does the same, ie the top left corner is where the low res image would begin.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 01, 2014 00:37:21",
+      "body": "https://bitbucket.org/lodici/magarena/commits/818ead63d0b360f72a6367cddd747eb7342933cd fixes the original issue with morph card image when it is face down.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 01, 2014 00:43:44",
+      "body": "issue raised in comment #5 has been assigned to new separate issue 675 .",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on September 01, 2014 03:44:45_\n\nJust played a morph card and the card back was scaled too large.\r\n\r\nThe card front image is not high res - wondering if the resolution difference is a cause?\r\n\r\nCan post an image on forums if helpful.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=673_",
+  "date": "2014-09-01T03:44:45",
+  "state": "closed",
+  "gid": 673,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=673",
+  "owner": "lodici123"
+}

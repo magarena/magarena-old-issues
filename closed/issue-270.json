@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Make another creature die What is the expected output? What do you see instead? Havengul Vampire should get a +1/+1 counter whenever another creature dies. Instead, it gets a -1/-1 counter. What version of the product are you using? On what operating system? Magarena 1.27, Debian Linux (wheezy - testing) 64 bit",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "Havengul Vampire gets -1/-1 counters",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 07, 2012 18:45:08",
+      "body": "Thanks for reporting. This is fixed in 1.28 (see 1.28 bug fixes on homepage). Please update to 1.28.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on August 08, 2012 00:46:47_\n\nWhat steps will reproduce the problem? 1. Make another creature die What is the expected output? What do you see instead? Havengul Vampire should get a +1/+1 counter whenever another creature dies. Instead, it gets a -1/-1 counter. What version of the product are you using? On what operating system? Magarena 1.27, Debian Linux (wheezy - testing) 64 bit\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=270)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=270_",
+  "date": "2012-08-08T00:46:47",
+  "state": "closed",
+  "gid": 270,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=270",
+  "owner": ""
+}

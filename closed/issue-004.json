@@ -1,0 +1,45 @@
+{
+  "status": "verified",
+  "body": "Reported by project member melvinzhang, Feb 1, 2011\r\nThe AI in Magarena takes quite a long time to plan its move when there are a lot of creatures on the board. This is understandable, however, the user has no way of knowing when it will finish.\r\n\r\nA suggestion for future enhancement is to provide a configurable time limit and a progress bar (or countdown timer) so that the user knows how long more he/she has to wait. When the time is up, the AI should play the best move it can find within the given time limit.\r\n\r\nComment 1 by project member ubeefx, Feb 1, 2011\r\nCount down timer is maybe not that straight forward.\r\nBut stopping thinking of AI should be doable.\r\n\r\nAlso maybe improving the algorithm :\r\n- limit search depth even more in such cases\r\n- handle large number of creatures in better way\r\n\r\nThis only applies to level 6 or below.\r\nAnything above that is not guaranteed to be fast.\r\nInitially this was also the maximum level.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Limit maximum AI thinking time for minimax AI",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "January 25, 2012 06:40:32",
+      "body": "**Labels:** Component-AI  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 04, 2013 23:29:21",
+      "body": "Issue 332 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 06, 2013 04:36:19",
+      "body": "Issue 332 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 31, 2013 18:55:56",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:25:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 20, 2011 13:54:21_\n\nReported by project member melvinzhang, Feb 1, 2011\r\nThe AI in Magarena takes quite a long time to plan its move when there are a lot of creatures on the board. This is understandable, however, the user has no way of knowing when it will finish.\r\n\r\nA suggestion for future enhancement is to provide a configurable time limit and a progress bar (or countdown timer) so that the user knows how long more he/she has to wait. When the time is up, the AI should play the best move it can find within the given time limit.\r\n\r\nComment 1 by project member ubeefx, Feb 1, 2011\r\nCount down timer is maybe not that straight forward.\r\nBut stopping thinking of AI should be doable.\r\n\r\nAlso maybe improving the algorithm :\r\n- limit search depth even more in such cases\r\n- handle large number of creatures in better way\r\n\r\nThis only applies to level 6 or below.\r\nAnything above that is not guaranteed to be fast.\r\nInitially this was also the maximum level.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=4_",
+  "date": "2011-05-20T13:54:21",
+  "state": "closed",
+  "gid": 4,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=4",
+  "owner": "melvinzh...@gmail.com"
+}

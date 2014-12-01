@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "\"Frost Raptor\", \"Adarkar Valkyrie\", ...\r\nnow it throw Exception :\r\n\r\nException from controller.runGame: No corresponding MagicType for Snow\r\njava.lang.RuntimeException: No corresponding MagicType for Snow\r\n\tat magic.model.MagicType.getType(MagicType.java:38)",
+  "author": "[neoedmund](https://code.google.com/u/neoedmund/)",
+  "title": "Snow Creature",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 14, 2012 10:24:59",
+      "body": "\"Goblin Furrier\",\"Creature - Goblin Warrior\",\"Prevent all damage that Goblin Furrier would deal to snow creatures.\"\r\n\r\nso \"snow creature\" should be a type I think.",
+      "author": "[neoedmund](https://code.google.com/u/neoedmund/)"
+    },
+    {
+      "date": "March 16, 2012 23:33:23",
+      "body": "Thanks for the report. Snow is indeed a super type. We've not gotten around to dealing with snow creature hence it was not in the program. I've added in all the current card types and super types in revision 616d2f6e619d\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [neoedmund](https://code.google.com/u/neoedmund/) on March 15, 2012 01:10:44_\n\n\"Frost Raptor\", \"Adarkar Valkyrie\", ...\r\nnow it throw Exception :\r\n\r\nException from controller.runGame: No corresponding MagicType for Snow\r\njava.lang.RuntimeException: No corresponding MagicType for Snow\r\n\tat magic.model.MagicType.getType(MagicType.java:38)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=187_",
+  "date": "2012-03-15T01:10:44",
+  "state": "closed",
+  "gid": 187,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=187",
+  "owner": ""
+}

@@ -1,0 +1,46 @@
+{
+  "status": "wontfix",
+  "body": "add an option that will automatically run the Download Images dialog in the background on start which will check for any new images and download them (in the background). Will need to check for a internet connection first.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "add option to automatically download new images on start.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "December 15, 2013 08:11:17",
+      "body": "**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "February 06, 2014 22:18:51",
+      "body": "Version 1.0 - On startup checks for new images using existing code and displays a message on the main menu screen if there are new downloads available. ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/709/ )\n\n**Status:** Accepted  \n  **Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "February 14, 2014 22:24:20",
+      "body": "**Status:** Started  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 00:15:34",
+      "body": "**Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 20, 2014 23:19:24",
+      "body": "I think the \"new downloads\" notification is sufficient to alert users to new downloads and if you download all unimplemented card images as well even the frequency of this alert will be much reduced.\n\n**Status:** WontFix  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on December 16, 2013 00:11:04_\n\nadd an option that will automatically run the Download Images dialog in the background on start which will check for any new images and download them (in the background). Will need to check for a internet connection first.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=455_",
+  "date": "2013-12-16T00:11:04",
+  "state": "closed",
+  "gid": 455,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=455",
+  "owner": "lodici123"
+}

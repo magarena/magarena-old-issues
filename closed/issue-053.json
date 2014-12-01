@@ -1,0 +1,55 @@
+{
+  "status": "verified",
+  "body": "some problems with current icons: same icon for different abilities, meaning of the icons are not obvious\r\n\r\nsome possible sources of free artwork: http://opengameart.org/content/700-rpg-icons http://opengameart.org/content/700-rpg-icons",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "improve icons for creature abilities",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 14, 2011 00:07:32",
+      "body": "the second link should be http://opengameart.org/content/420-pixel-art-icons-medievalfantasy-rpg",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 16, 2012 08:15:28",
+      "body": "Please change icons for Wither, Infect and Deathtouch so they will be different.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "June 20, 2012 04:37:54",
+      "body": "First Strike and Double Strike too please.\r\n\r\nAnd maybe you could add icons for some other abilities like Vigilance, Defender, Reach, Shroud, indestructible, Protection",
+      "author": "[Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/)"
+    },
+    {
+      "date": "November 15, 2013 17:28:29",
+      "body": "Categorized as UI\n\n**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "November 15, 2013 17:29:58",
+      "body": "Issue 423 has been merged into this issue.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 04:11:30",
+      "body": "This has been addressed by shawnieboy I think.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 14, 2011 15:04:26_\n\nsome problems with current icons: same icon for different abilities, meaning of the icons are not obvious\r\n\r\nsome possible sources of free artwork: http://opengameart.org/content/700-rpg-icons http://opengameart.org/content/700-rpg-icons\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=53_",
+  "date": "2011-09-14T15:04:26",
+  "state": "closed",
+  "gid": 53,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=53",
+  "owner": "melvinzh...@gmail.com"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Build 834 implements Boros Charm. I just compiled Build 837, downloaded the new images and was looking for it - didn't find it, though.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Boros Charm not present in Build 837?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 15, 2014 17:30:07",
+      "body": "Shadowborn Apostle and Loxodon Gatkeeper are present in 837",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 15, 2014 17:39:27",
+      "body": "The Boros Charm script file was added in https://code.google.com/p/magarena/source/detail?r=cbdb2a7f056552d6ae2e54510c0439671a2acd15 but the file is empty. So I've removed it as it is non functional.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 16, 2014 08:28:55_\n\nBuild 834 implements Boros Charm. I just compiled Build 837, downloaded the new images and was looking for it - didn't find it, though.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=526_",
+  "date": "2014-03-16T08:28:55",
+  "state": "closed",
+  "gid": 526,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=526",
+  "owner": ""
+}

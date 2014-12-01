@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Start a Duel\r\n2. Click on the Generate Deck Button What is the expected output? What do you see instead? Expected: Generate a new unsaved deck like at the start of a duel.\r\nWhat you get: A random one of your saved decks. What version of the product are you using? On what operating system? Magarena 1.26  / Windows XP SP3 32-bit",
+  "author": "[Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/)",
+  "title": "Generate Deck Button loads a random saved deck",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 14, 2012 08:20:02",
+      "body": "This issue was closed by revision 4ab5f0bcea1e .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "June 14, 2012 08:21:37",
+      "body": "Thanks for reporting this bug.\r\n\r\nThis is related to issue 213 . In trying to resolve one bug I created the one you report here. Should now be really fixed ...\n\n**Owner:** BeHold...@gmail.com  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/) on June 14, 2012 22:14:06_\n\nWhat steps will reproduce the problem? 1. Start a Duel\r\n2. Click on the Generate Deck Button What is the expected output? What do you see instead? Expected: Generate a new unsaved deck like at the start of a duel.\r\nWhat you get: A random one of your saved decks. What version of the product are you using? On what operating system? Magarena 1.26  / Windows XP SP3 32-bit\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=221_",
+  "date": "2012-06-14T22:14:06",
+  "state": "closed",
+  "gid": 221,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=221",
+  "owner": "BeHold...@gmail.com"
+}

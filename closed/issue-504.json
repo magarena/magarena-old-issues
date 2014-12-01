@@ -1,0 +1,25 @@
+{
+  "status": "wontfix",
+  "body": "I'm trying to use Parallax Nexus as a guide for how to exile cards and still be able to use them later. So the nexus shows me how to exile cards and keep track of them in a list, but how to have them be castable 'as though' they're in your hand? Also, would it be best to do some custom graphics for this?\r\n\r\nAside, when we finish a script or some code and push it up to our local repo, do we submit a pull request for you to integrate it into the main branch, or do you just handle that yourself?",
+  "author": "[nicolai.tesela](https://code.google.com/u/nicolai.tesela/)",
+  "title": "Nightveil Specter",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "March 10, 2014 19:00:42",
+      "body": "Implementing \"You may play cards exiled with Nightveil Specter.\" will be tough there is no support for this, significant changes to the core engine is required. For example MagicPlayChoice is where the choice of which card/ability to activate is chosen, specially see addValidChoices method in that class.\r\n\r\nFor the first time, you'll need to notify us via a new issue, post on the forum, post on the mailing list. Subsequently I'll regularly merge from your repo.\n\n**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [nicolai.tesela](https://code.google.com/u/nicolai.tesela/) on March 11, 2014 05:28:41_\n\nI'm trying to use Parallax Nexus as a guide for how to exile cards and still be able to use them later. So the nexus shows me how to exile cards and keep track of them in a list, but how to have them be castable 'as though' they're in your hand? Also, would it be best to do some custom graphics for this?\r\n\r\nAside, when we finish a script or some code and push it up to our local repo, do we submit a pull request for you to integrate it into the main branch, or do you just handle that yourself?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=504_",
+  "date": "2014-03-11T05:28:41",
+  "state": "closed",
+  "gid": 504,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=504",
+  "owner": ""
+}

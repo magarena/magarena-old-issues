@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Program exits after images are downloaded and the user must manually restart the application. A better user experience could be obtained if the program could \"reload\" the images after the download is completed instead of requiring the user to start the application again.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "program must be restarted after images are downloaded",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "May 28, 2011 19:47:28",
+      "body": "main issue is with symbol icons, in 1.14 the symbol icons are automatically reloaded after images are downloaded.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 27, 2011 22:20:18_\n\nProgram exits after images are downloaded and the user must manually restart the application. A better user experience could be obtained if the program could \"reload\" the images after the download is completed instead of requiring the user to start the application again.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=17_",
+  "date": "2011-05-27T22:20:18",
+  "state": "closed",
+  "gid": 17,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=17",
+  "owner": "melvinzh...@gmail.com"
+}

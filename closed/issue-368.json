@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1.When Force of will is played, the player may lose 1 life and exile a card from his/her hand instead of paying 3UU\r\n2.Whenever a player chooses this option, the game tells to choose a card\r\n3.The player looses 1 life and a copy of the card is put in the exiled card list. What is the expected output? What do you see instead? It is expected a card from the player's hand to be discarded and exiled. Instead the player keeps the choosen card and a copy is put in the exiled card list, created from nowhere. What version of the product are you using? On what operating system? magarena 1.39 Windows 7 ultimate. If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). MAGARENA GAME LOG\r\nCREATED ON 2013/07/16 12:28:33\r\nMAGARENA VERSION 1.39, JRE 1.7.0_25, OS Windows 7_6.1 x86 Please provide any additional information below. There is no info in my files because I reinstalled, sorry.",
+  "author": "[hmarinma...@gmail.com](https://code.google.com/u/112091922902131374879/)",
+  "title": "casting Force of Will with alternative casting fails",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 17, 2013 00:07:02",
+      "body": "Thanks for the detailed and clear report. This bug was fixed in https://code.google.com/p/magarena/source/detail?r=105f95cb915a8bdccbb9c0b0e6d939f71ba88363\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [hmarinma...@gmail.com](https://code.google.com/u/112091922902131374879/) on July 16, 2013 18:45:56_\n\nWhat steps will reproduce the problem? 1.When Force of will is played, the player may lose 1 life and exile a card from his/her hand instead of paying 3UU\r\n2.Whenever a player chooses this option, the game tells to choose a card\r\n3.The player looses 1 life and a copy of the card is put in the exiled card list. What is the expected output? What do you see instead? It is expected a card from the player's hand to be discarded and exiled. Instead the player keeps the choosen card and a copy is put in the exiled card list, created from nowhere. What version of the product are you using? On what operating system? magarena 1.39 Windows 7 ultimate. If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). MAGARENA GAME LOG\r\nCREATED ON 2013/07/16 12:28:33\r\nMAGARENA VERSION 1.39, JRE 1.7.0_25, OS Windows 7_6.1 x86 Please provide any additional information below. There is no info in my files because I reinstalled, sorry.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=368_",
+  "date": "2013-07-16T18:45:56",
+  "state": "closed",
+  "gid": 368,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=368",
+  "owner": ""
+}

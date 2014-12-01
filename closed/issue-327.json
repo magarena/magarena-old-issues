@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Play a Sphinx of Lost Truths, both with and without paying the kicker. What is the expected output? What do you see instead? The comes-into-play effect should be \"draw three cards, then discard three cards\" if the kicker is not paid, and \"draw three cards\" if it is. Instead it's the other way around (though the descriptions match the way it ought to be). What version of the product are you using? On what operating system? 1.34, MacOS 10.8",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Sphinx of Lost Truths makes you discard if you didn't pay the kicker, not if you did",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 29, 2013 16:50:46",
+      "body": "...Wait, I phrased that backward in the title. It makes you discard if you *paid* the kicker, and not if you *didn't*.",
+      "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)"
+    },
+    {
+      "date": "January 30, 2013 05:13:57",
+      "body": "This issue was closed by revision 0c86546f808b .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 30, 2013 05:15:12",
+      "body": "Thanks for catching this. The effect was wrongly causing the player to discard if kicked, the check should be if NOT kicked.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 18, 2013 19:18:54",
+      "body": "Issue 330 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on January 30, 2013 08:45:16_\n\nWhat steps will reproduce the problem? 1. Play a Sphinx of Lost Truths, both with and without paying the kicker. What is the expected output? What do you see instead? The comes-into-play effect should be \"draw three cards, then discard three cards\" if the kicker is not paid, and \"draw three cards\" if it is. Instead it's the other way around (though the descriptions match the way it ought to be). What version of the product are you using? On what operating system? 1.34, MacOS 10.8\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=327_",
+  "date": "2013-01-30T08:45:16",
+  "state": "closed",
+  "gid": 327,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=327",
+  "owner": ""
+}

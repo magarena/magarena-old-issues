@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "node cache hit rate is close to zero, much lower than node caching was initially introduced.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "MCTS AI not able to reuse search tree from earlier invocation",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 24, 2014 20:17:59",
+      "body": "bug is due to getting node from cache before hidding hidden cards, while nodes added to the cache had hidden cards.\n\n**Summary:** MCTS AI not able to reuse search tree from earlier invocation  <span class=\"oldvalue\"> (was: MTCS AI not able to reuse search tree from earlier invocation) </span>  \n  **Status:** Started  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 15, 2014 23:34:24",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on March 19, 2014 17:07:33_\n\nnode cache hit rate is close to zero, much lower than node caching was initially introduced.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=530_",
+  "date": "2014-03-19T17:07:33",
+  "state": "closed",
+  "gid": 530,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=530",
+  "owner": "melvinzh...@gmail.com"
+}

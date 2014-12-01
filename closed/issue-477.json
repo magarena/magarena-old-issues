@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "This is a regression introduced by dfe82dc93ab9 (not actually caused by MulliganScreen). It also prevents -DtestGame=X from working. Need to be more selective in determining whether container JPanel is visible or not.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "GamePanel not shown if MulliganScreen option is disabled.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-High",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 05, 2014 12:05:18",
+      "body": "Fixed ( http://bitbucket.org/lodici/magarena/commits/f6b20c775e26097caa91f4dc456502f423c20321 ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on February 06, 2014 03:31:12_\n\nThis is a regression introduced by dfe82dc93ab9 (not actually caused by MulliganScreen). It also prevents -DtestGame=X from working. Need to be more selective in determining whether container JPanel is visible or not.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=477_",
+  "date": "2014-02-06T03:31:12",
+  "state": "closed",
+  "gid": 477,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=477",
+  "owner": "lodici123"
+}

@@ -1,0 +1,59 @@
+{
+  "status": "verified",
+  "body": "I can't see a way to mulligan a bad draw.",
+  "author": "[georgeru...@gmail.com](https://code.google.com/u/115988881252246409393/)",
+  "title": "No chance to Mulligan?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 31, 2012 09:32:30",
+      "body": "(deleted my first comment because it had an annoying typo that made it seem I was in favor of another option).\r\n\r\nTrue, mulligan is not implemented at the moment.\r\n\r\nAt first Magarena focused on playing with 40 card generated decks and uses a smart shuffle routine to try giving each player a decent opening hand. But since then the focus has shifted and the smart shuffle does not work for 60 card decks and a lot of the premade decks.\r\n\r\nSo now there are two options:\r\n1. we give the player the choice to mulligan\r\n2. we try to use a form of smart shuffle that works with all decks\r\n\r\nI'd love to see the second option myself but I don't know how much work that would be and if it's even possible to pull off.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 01, 2012 03:20:57",
+      "body": "Smart shuffle divides the library into blocks of 5 cards.\r\nFor the generated decks there are 8 such blocks.\r\nEach block contains 2 land and 3 non land cards.\r\nAlso the converted mana cost of the cards in the blocks is balanced a bit.\r\nSo for a 60 card deck it will only work fine when there are 24 lands and 36 other spells. \r\nTo have a more generic smart shuffle a different mechanism would be needed.",
+      "author": "[ubeefx](https://code.google.com/u/ubeefx/)"
+    },
+    {
+      "date": "February 02, 2012 02:10:15",
+      "body": "After thinking of all sorts of clever ways to come up with a perfect way of doing this, I just noticed it gets ever more complex to do so. A real good smart shuffle should take into account:\r\n- non-land mana producing cards\r\n- odd lands to spells ratios\r\n- card drawing/library manipulation cards\r\n\r\nThis gets complicated fast and in my opinion it's not worth it going that route. Instead I suggest we stick with the 2 to 3 ratio that the smart shuffle uses now since that will work for most decks and has the added benefit that it can be used for the 40 card generated decks with the same results we have now. I'm thinking of something like this:\r\n- block size stays 5\r\n- ratio of lands to spells stays at 2 to 3\r\n- add cards to bottom so it ends up with the first block at the top\r\n- if at some point in the loop either spells.size() or lands.size() == 0 then break\r\n- add possible remaining cards to the bottom of the deck\r\n\r\nThis does mean that if a deck deviates from the 2 to 3 ratio, it ends up with a bunch of either spells or lands on the bottom. I don't see that as a problem because the goal is not to perfectly and evenly distribute cards to start with but it could\r\nbe better to only smart shuffle like halve the deck and then 'normally' shuffle the rest and add it to the bottom.\r\n\r\nWhat do you think?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 04, 2012 23:11:56",
+      "body": "Sounds good, why don't we determine the ratio of land and other spells based on the actual ratio in the deck instead of using a fixed ratio? If the ratio is not exactly 2:3, we round up for the first few blocks and round down for the later blocks.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 25, 2012 07:41:33",
+      "body": "Revision f8d4a11c8ab7 added the option to take a mulligan. Please test and or improve.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 25, 2012 07:52:28",
+      "body": "A build with mulligan can be downloaded from http://magarena.googlecode.com/files/Magarena_3393.exe You'll need to override your existing Magarena.exe with this file.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 31, 2012 10:23:45",
+      "body": "Closed because this is now part of Magarena 1.24\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [georgeru...@gmail.com](https://code.google.com/u/115988881252246409393/) on January 21, 2012 12:36:09_\n\nI can't see a way to mulligan a bad draw.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=142_",
+  "date": "2012-01-21T12:36:09",
+  "state": "closed",
+  "gid": 142,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=142",
+  "owner": ""
+}

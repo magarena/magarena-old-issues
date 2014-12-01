@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "Reported by est...@gmail.com, Jan 28, 2011\r\nMake a better UI for the deck building option.\r\n\r\nIs really cool that magarena allows you to make your own deck, but is really boring to change 1 card at time.\r\n\r\nIt is possible to make something like check boxes to say \"I want to change all this cards\" and then choose the one you wanna add.\r\n\r\nIs also a pain to change the lands if you wanna to make a mono colored deck you have to make something like choose all the plains and change them one by one to swamps, can we add something like a text box or something to say \"Change 4 of this lands to....\"\r\n\r\nComment 1 by project member ubeefx, Jan 28, 2011\r\nDo you know you can use a text editor to create decks yourself.\r\nSee how to do it on customizing Magarena page.\r\n\r\nThe one card at the time is mainly there for small tweaks to generated decks.\r\n\r\nAdding a real deck builder is something that can be done, \r\nbut until then the text editor is the way to go.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Deck building interface",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "July 03, 2011 21:14:38",
+      "body": "Comment from David:\r\nTo build a deck using Magarena's UI is tedious. I think the biggest gripe I had was that I had to repeatedly filter cards because only one card can be selected from the filtered list. I gave up and ended up browsing cards and typing the names of those that I wanted on notepad.  I then opened an existing deck config (.dec file) using notepad (pure guess that .dec files are readable by text readers) to replace it with the cards I had chosen.\r\n\r\nAlso, if I remember correctly, the .dec format isn't automatically recognized by text readers. It was only through a guess that I realised text readers could open.dec files.  If a player didn't guess this, then he/she might find it a struggle to build a custom deck and be give up building one.\r\n\r\nImplementing a search function could make browsing cards more convenient.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 10, 2011 22:29:50",
+      "body": "Are you working on this Melvin? If not I want to improve the deck builder.",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "September 10, 2011 23:11:31",
+      "body": "No I'm not. From what I know, madmarcel was working on this, see http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=5127&sid=410cb56eb5666f3323e564e84a26f3f1 But I haven't seen any commits on this so I'm not sure what is the status besides what was posted on the thread.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 15, 2011 20:28:30",
+      "body": "Deck editor is done. Bugs should be reported using new issues.\n\n**Status:** Fixed  \n",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "August 29, 2014 04:25:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 20, 2011 13:54:56_\n\nReported by est...@gmail.com, Jan 28, 2011\r\nMake a better UI for the deck building option.\r\n\r\nIs really cool that magarena allows you to make your own deck, but is really boring to change 1 card at time.\r\n\r\nIt is possible to make something like check boxes to say \"I want to change all this cards\" and then choose the one you wanna add.\r\n\r\nIs also a pain to change the lands if you wanna to make a mono colored deck you have to make something like choose all the plains and change them one by one to swamps, can we add something like a text box or something to say \"Change 4 of this lands to....\"\r\n\r\nComment 1 by project member ubeefx, Jan 28, 2011\r\nDo you know you can use a text editor to create decks yourself.\r\nSee how to do it on customizing Magarena page.\r\n\r\nThe one card at the time is mainly there for small tweaks to generated decks.\r\n\r\nAdding a real deck builder is something that can be done, \r\nbut until then the text editor is the way to go.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=5_",
+  "date": "2011-05-20T13:54:56",
+  "state": "closed",
+  "gid": 5,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=5",
+  "owner": "melvinzh...@gmail.com"
+}

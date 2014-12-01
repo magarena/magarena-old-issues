@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "If, on starting Magarena, the missing images notification is displayed and you then download all missing playable card images the notification is not removed until after a restart. Need to refresh MainMenuScreen after download otherwise people might think they have to download unimplemented images as well (which they don't).",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Missing cards notification message not updated after download.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 05, 2014 09:42:00",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/6947dd9dafeb94fec3961a2ebd7d2c68d7aaf8c2 .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 05, 2014 20:42:13_\n\nIf, on starting Magarena, the missing images notification is displayed and you then download all missing playable card images the notification is not removed until after a restart. Need to refresh MainMenuScreen after download otherwise people might think they have to download unimplemented images as well (which they don't).\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=638_",
+  "date": "2014-08-05T20:42:13",
+  "state": "closed",
+  "gid": 638,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=638",
+  "owner": "lodici123"
+}

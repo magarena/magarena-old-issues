@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "Please add as an option \"are you sure\" when closing program.",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Add a confirmation window on exiting application",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "December 05, 2011 04:50:29",
+      "body": "Always good to have in my opinion.\r\n\r\nEven better would be when the confirmation window has a checkbox:\r\n[]always exit without prompt\r\n\r\n.. or something alike. Then we store that preference.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 06, 2011 01:19:49",
+      "body": "changed summary and labels\n\n**Summary:** Add a confirmation window on exiting application  \n  **Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 07, 2011 03:05:36",
+      "body": "This issue was closed by revision 6d3453f4ecbe .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on December 05, 2011 18:42:49_\n\nPlease add as an option \"are you sure\" when closing program.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=117_",
+  "date": "2011-12-05T18:42:49",
+  "state": "closed",
+  "gid": 117,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=117",
+  "owner": ""
+}

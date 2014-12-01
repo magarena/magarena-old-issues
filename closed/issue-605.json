@@ -1,0 +1,59 @@
+{
+  "status": "fixed",
+  "body": "What steps will reproduce the problem? I have installed all the necessary and available sources for Java on my Macbook Pro (OS 10.9.3), but when I start the program it still says that it requires Java higher than V.7\r\n\r\nI am using Magarena 1.49",
+  "author": "[stalfl...@gmail.com](https://code.google.com/u/106007478413880549387/)",
+  "title": "Magarena won't start",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "May 25, 2014 02:57:04",
+      "body": "Please open a command line (or Mac equivalent) then type \"java -version\" and post the output here. Note, a common cause of issues with java on the Mac is because only the JRE has been installed. Installing the JDK seems to help in a lot of cases.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "May 25, 2014 02:59:44",
+      "body": "java version \"1.8.0_05\"\r\nJava(TM) SE Runtime Environment (build 1.8.0_05-b13)\r\nJava HotSpot(TM) 64-Bit Server VM (build 25.5-b02, mixed mode)\r\n\r\nthis is what it says... I did install the JDK by the way",
+      "author": "[stalfl...@gmail.com](https://code.google.com/u/106007478413880549387/)"
+    },
+    {
+      "date": "May 25, 2014 04:10:15",
+      "body": "I thought it might be version 1.8 causing the problem but I was able to run Magarena without any problems using 1.8 in XP. If possible, can you try using java version 1.7 which might be better supported on the Mac (my understanding is that the Mac does not alway play nice with Java). Unfortunately, I have no access to a Mac OS machine so I am afraid that is about all I can suggest.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "May 25, 2014 08:01:41",
+      "body": "The funny thing is that obviously he's not letting me install an earlier version now... first I have to get rid of the 1.8jdk.... 0.O anyhow when I am done I'll let you know if it worked!",
+      "author": "[stalfl...@gmail.com](https://code.google.com/u/106007478413880549387/)"
+    },
+    {
+      "date": "July 02, 2014 04:58:40",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 27, 2014 21:51:16",
+      "body": "I can replicate the issue while running Java SE 8 JDK on an iMac with 10.9.5. I then downgraded to Java 1.7/ SE 7 JDK and the game will now, promisingly, show the splash screen, then say \"An unexpected error has occurred and Magarena will need to close\" and quit. \r\n\r\nI tried it under 1.8 again after removing the Java version check in MagarenaLauncher.sh script and get the same error as above (splash screen then quit). Pretty bummed because I haven't played since late 2011. I've submitted the crash report.",
+      "author": "[mike.s.s...@gmail.com](https://code.google.com/u/111445426330498883056/)"
+    },
+    {
+      "date": "September 27, 2014 22:26:51",
+      "body": "This issue was closed by revision 8458f27c1812 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 27, 2014 22:29:29",
+      "body": "Missing the Mac launcher when implementing the workaround for issue 622 . Updated Mac launcher. Look out for the fix in release 1.54 coming out over the weekend.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [stalfl...@gmail.com](https://code.google.com/u/106007478413880549387/) on May 25, 2014 17:45:39_\n\nWhat steps will reproduce the problem? I have installed all the necessary and available sources for Java on my Macbook Pro (OS 10.9.3), but when I start the program it still says that it requires Java higher than V.7\r\n\r\nI am using Magarena 1.49\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=605_",
+  "date": "2014-05-25T17:45:39",
+  "state": "closed",
+  "gid": 605,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=605",
+  "owner": ""
+}

@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "on magic.data.SoundEffects, u never close the clip, at some-vm, for exmaple, openjdk @ Freebsd or openjdk @ linux with oss, the clip.play but not close will keep(lock) an channel, when use want play other music will: /dev/dsp device busy !!\r\n\r\nhere is new SoundEffects, hope commit to project:",
+  "author": "[arliw...@gmail.com](https://code.google.com/u/107126573161021836446/)",
+  "title": "sound problem",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 22, 2011 01:39:09",
+      "body": "sorry, i forget file, patch here, work fine my system:\r\n\r\ndiff -r 1ea34b5489e2 src/magic/data/SoundEffects.java\r\n--- a/src/magic/data/SoundEffects.java\tWed Sep 21 09:32:15 2011 +0200\r\n+++ b/src/magic/data/SoundEffects.java\tThu Sep 22 16:37:02 2011 +0800\r\n@@ -6,12 +6,14 @@\r\n import javax.sound.sampled.AudioInputStream;\r\n import javax.sound.sampled.AudioSystem;\r\n import javax.sound.sampled.Clip;\r\n+import javax.sound.sampled.LineEvent;\r\n+import javax.sound.sampled.LineListener;\r\n import javax.sound.sampled.LineUnavailableException;\r\n import javax.sound.sampled.UnsupportedAudioFileException;\r\n import java.io.File;\r\n import java.io.IOException;\r\n \r\n-public class SoundEffects {\r\n+public class SoundEffects implements LineListener {\r\n \r\n \tpublic static final String WIN_SOUND=\"win.au\";\r\n \tpublic static final String LOSE_SOUND=\"lose.au\";\r\n@@ -32,6 +34,7 @@\r\n                 clip = AudioSystem.getClip();\r\n                 ins = AudioSystem.getAudioInputStream(new File(SOUNDS_PATH,name));\r\n                 clip.open(ins);\r\n+                clip.addLineListener(INSTANCE);\r\n \t\t        clip.start();\r\n \t\t    } catch (final LineUnavailableException ex) {\r\n                 System.err.println(\"WARNING. Unable to load clip \" + name);\r\n@@ -50,4 +53,11 @@\r\n \t\t\tplayClip(name);\r\n \t\t}\r\n \t}\r\n+\t\r\n+\t@Override\r\n+    public void update(final LineEvent event) {\r\n+        if (LineEvent.Type.STOP.equals(event.getType())) {\r\n+                event.getLine().close();\r\n+        }\r\n+\t}\r\n }",
+      "author": "[arliw...@gmail.com](https://code.google.com/u/107126573161021836446/)"
+    },
+    {
+      "date": "September 22, 2011 05:32:47",
+      "body": "Thanks, I'll pass it on to another developer as I don't know anything about the sound system.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 22, 2011 08:58:55",
+      "body": "This issue was closed by revision 4b0e4c35b726 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 22, 2011 08:59:47",
+      "body": "Thanks for the patch, I've added it to the project.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [arliw...@gmail.com](https://code.google.com/u/107126573161021836446/) on September 22, 2011 16:27:56_\n\non magic.data.SoundEffects, u never close the clip, at some-vm, for exmaple, openjdk @ Freebsd or openjdk @ linux with oss, the clip.play but not close will keep(lock) an channel, when use want play other music will: /dev/dsp device busy !!\r\n\r\nhere is new SoundEffects, hope commit to project:\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=57_",
+  "date": "2011-09-22T16:27:56",
+  "state": "closed",
+  "gid": 57,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=57",
+  "owner": ""
+}

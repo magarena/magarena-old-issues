@@ -1,0 +1,35 @@
+{
+  "status": "duplicate",
+  "body": "q1: see ai1.jpg, if that card go attack, i'm be lost the game.\r\nq2: see loop-or8.jpg, the equip its loop until mana-pool=0",
+  "author": "[arliw...@gmail.com](https://code.google.com/u/107126573161021836446/)",
+  "title": "ai suggest",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "September 22, 2011 00:26:34",
+      "body": "q1: give up, is lose already, card 3/2 is Neurok Invisimancer can't block ;-(",
+      "author": "[arliw...@gmail.com](https://code.google.com/u/107126573161021836446/)"
+    },
+    {
+      "date": "September 22, 2011 05:30:07",
+      "body": "q1: Yeah, the AI killed you there :)\r\n\r\nq2: Yes, that is a known problem. See issue 26",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 22, 2011 21:30:29",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 26  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [arliw...@gmail.com](https://code.google.com/u/107126573161021836446/) on September 22, 2011 15:20:42_\n\nq1: see ai1.jpg, if that card go attack, i'm be lost the game.\r\nq2: see loop-or8.jpg, the equip its loop until mana-pool=0\n\n**Attachment:** [ai1.jpg loop-or8.png](http://code.google.com/p/magarena/issues/detail?id=56)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=56_",
+  "date": "2011-09-22T15:20:42",
+  "state": "closed",
+  "gid": 56,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=56",
+  "owner": ""
+}

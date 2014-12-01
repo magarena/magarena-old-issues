@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. played Gossamer Phantom\r\n2. opponent casted Sheltering Word\r\n3. notification reads: [...] gains life equal to -1's toughness [...] What is the expected output? What do you see instead? What version of the product are you using? On what operating system? 1.48.890 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Sheltering Word: notification error",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 26, 2014 00:08:33",
+      "body": "Fixed in revision 0de88ba61bcd - Edited to closer match the card text, and also that it can only target creatures you control.\n\n**Status:** Fixed  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 26, 2014 13:51:35_\n\nWhat steps will reproduce the problem? 1. played Gossamer Phantom\r\n2. opponent casted Sheltering Word\r\n3. notification reads: [...] gains life equal to -1's toughness [...] What is the expected output? What do you see instead? What version of the product are you using? On what operating system? 1.48.890 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=554_",
+  "date": "2014-03-26T13:51:35",
+  "state": "closed",
+  "gid": 554,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=554",
+  "owner": "ShawnieBoyUK"
+}

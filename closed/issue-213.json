@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Start a New Duel\r\n2. Select \"Random Pre-made decks\" and validate.\r\n3. Update a deck with \"Generate Deck\" What is the expected output? What do you see instead? I was expecting Magarena to use the selection I had chosen during the New Duel setup. Instead, the newly generated decks seem to be completely random (\"Unsaved deck\" appears as the deck title).\r\nIt would be more logical if \"Generate Deck\" respected the user's choices of deck type (Pre-made, etc.) and cube. In fact, when the user selects, say, \"Blue deck\", then the generated decks are blue. I think that it would be less surprising if the same happened with \"Random Pre-made decks\" as well. What version of the product are you using? On what operating system? Magarena 1.25. Mac OS X 10.7.3. If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)",
+  "title": "\"Generate deck\": should use the current deck settings?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "May 08, 2012 06:28:34",
+      "body": "This issue was closed by revision ce93d0998b01 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "May 08, 2012 06:30:21",
+      "body": "Thanks for the report.\r\n\r\nThe intention was to do what you expected (pick another random pre-made deck) but there was an error in the code that prevented that.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "May 08, 2012 06:32:22",
+      "body": "Wow! that was fast! I am very grateful for all the efforts you guys put in Magarena. This is a truly great program (and I am quite a difficult person to please, in this department :).",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "June 14, 2012 08:22:13",
+      "body": "The 'fix' for this bug caused issue 221",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/) on May 08, 2012 21:03:52_\n\nWhat steps will reproduce the problem? 1. Start a New Duel\r\n2. Select \"Random Pre-made decks\" and validate.\r\n3. Update a deck with \"Generate Deck\" What is the expected output? What do you see instead? I was expecting Magarena to use the selection I had chosen during the New Duel setup. Instead, the newly generated decks seem to be completely random (\"Unsaved deck\" appears as the deck title).\r\nIt would be more logical if \"Generate Deck\" respected the user's choices of deck type (Pre-made, etc.) and cube. In fact, when the user selects, say, \"Blue deck\", then the generated decks are blue. I think that it would be less surprising if the same happened with \"Random Pre-made decks\" as well. What version of the product are you using? On what operating system? Magarena 1.25. Mac OS X 10.7.3. If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=213_",
+  "date": "2012-05-08T21:03:52",
+  "state": "closed",
+  "gid": 213,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=213",
+  "owner": ""
+}

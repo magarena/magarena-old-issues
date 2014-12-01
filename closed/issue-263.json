@@ -1,0 +1,25 @@
+{
+  "status": "invalid",
+  "body": "1. Enchant Siege-Gang Commander with Temporal Isolation\r\n2. Provoke AI to use the ability\r\n\r\nThe ability will still deal damage. However, the card text says:\r\n\r\n\"Prevent all damage that would be dealt by enchanted creature.\"\r\n\r\nAll damage is all damage, not combat damage. That the creature also gains shadow is irrelevant.\r\n\r\nMagarena 1.27, Debian Linux 64 bit (Wheezy)",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "Temporal Isolation doesn't prevent non-combat damage",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "July 27, 2012 15:55:38",
+      "body": "From the gamelog, it look like Siege-Gang Commander sacrificed itself to deal the damage. When it is sacrificed, the aura goes to the graveyard. When the damage is dealt, the aura is no longer on the creature, hence the damage is not prevented.\n\n**Status:** Invalid  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on July 24, 2012 15:01:22_\n\n1. Enchant Siege-Gang Commander with Temporal Isolation\r\n2. Provoke AI to use the ability\r\n\r\nThe ability will still deal damage. However, the card text says:\r\n\r\n\"Prevent all damage that would be dealt by enchanted creature.\"\r\n\r\nAll damage is all damage, not combat damage. That the creature also gains shadow is irrelevant.\r\n\r\nMagarena 1.27, Debian Linux 64 bit (Wheezy)\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=263)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=263_",
+  "date": "2012-07-24T15:01:22",
+  "state": "closed",
+  "gid": 263,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=263",
+  "owner": ""
+}

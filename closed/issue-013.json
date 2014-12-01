@@ -1,0 +1,45 @@
+{
+  "status": "invalid",
+  "body": "What steps will reproduce the problem? 1. Summon Fume Spitter.\r\n2. Click to sacrifice and add a -1/-1 counter to target creature. What is the expected output? What do you see instead? Expected: all creatures (players, inc.) are highlighted green as available targets.\r\nActual: Only AI creatures are valid targets for -1/-1 counter. What version of the product are you using? On what operating system? v1.1 on Windows 7-64bit.",
+  "author": "[theogre...@gmail.com](https://code.google.com/u/107114164438196306337/)",
+  "title": "Fume Spitter's ability can not target player's creatures.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "May 25, 2011 10:07:48",
+      "body": "That is due to the \"Filter legal targets when appropriate\" option that is enabled in preferences. This issue comes up quite frequently. Might need explanation in readme or somewhere else.",
+      "author": "[ubeefx](https://code.google.com/u/ubeefx/)"
+    },
+    {
+      "date": "May 25, 2011 16:38:38",
+      "body": "Cheers for clearing that up. I thought it could be something as simple as that. Is having that on default?",
+      "author": "[theogre...@gmail.com](https://code.google.com/u/107114164438196306337/)"
+    },
+    {
+      "date": "May 25, 2011 19:47:02",
+      "body": "Yes, \"Filter legal targets\" is on by default. I guess one way around this is to make that option off by default. Another way may be to make the preference menu more obvious by promoting it to a top level menu instead of as a submenu of Arena so that it is more discoverable.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 25, 2011 21:50:04",
+      "body": "**Status:** Invalid  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 25, 2011 21:55:46",
+      "body": "Started a new issue to handle the underlying problem, see https://code.google.com/p/magarena/issues/detail?id=14",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [theogre...@gmail.com](https://code.google.com/u/107114164438196306337/) on May 25, 2011 23:32:50_\n\nWhat steps will reproduce the problem? 1. Summon Fume Spitter.\r\n2. Click to sacrifice and add a -1/-1 counter to target creature. What is the expected output? What do you see instead? Expected: all creatures (players, inc.) are highlighted green as available targets.\r\nActual: Only AI creatures are valid targets for -1/-1 counter. What version of the product are you using? On what operating system? v1.1 on Windows 7-64bit.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=13_",
+  "date": "2011-05-25T23:32:50",
+  "state": "closed",
+  "gid": 13,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=13",
+  "owner": ""
+}

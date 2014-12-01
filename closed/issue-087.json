@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Reported twice on the forum.\r\nThe issue is not reliably reproducible but sometimes the game asks for white mana to be payed instead of green. When it does, the mana symbol on the card shows as {W}.\r\n\r\nA worrying bug IMO because the mana cost is parsed from cards.txt and therefor could affect other cards.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Giant Growth must be payed for with White mana",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 07, 2011 10:57:33",
+      "body": "Revision 9a2f747343 fixed the image for Righteousness. It wrongly had the image for Giant Growth.\r\n\r\nMaybe this was the cause for this bug?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 28, 2012 02:18:13",
+      "body": "It looks like this was indeed fixed by the above revision.\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on November 04, 2011 15:47:09_\n\nReported twice on the forum.\r\nThe issue is not reliably reproducible but sometimes the game asks for white mana to be payed instead of green. When it does, the mana symbol on the card shows as {W}.\r\n\r\nA worrying bug IMO because the mana cost is parsed from cards.txt and therefor could affect other cards.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=87_",
+  "date": "2011-11-04T15:47:09",
+  "state": "closed",
+  "gid": 87,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=87",
+  "owner": "BeHold...@gmail.com"
+}

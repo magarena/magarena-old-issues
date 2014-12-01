@@ -1,0 +1,25 @@
+{
+  "status": "invalid",
+  "body": "Since 27/02 page does not exist https://code.google.com/p/magarena/updates/list",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Site - Activity page",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "February 28, 2012 21:40:31",
+      "body": "Google removed it, see https://code.google.com/p/support/issues/detail?id=24324 for the discussion about this.\n\n**Status:** Invalid  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on February 29, 2012 13:24:51_\n\nSince 27/02 page does not exist https://code.google.com/p/magarena/updates/list\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=172_",
+  "date": "2012-02-29T13:24:51",
+  "state": "closed",
+  "gid": 172,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=172",
+  "owner": ""
+}

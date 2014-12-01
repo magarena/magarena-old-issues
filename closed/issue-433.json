@@ -1,0 +1,36 @@
+{
+  "status": "duplicate",
+  "body": "Currently the deck description is shown on the duel setup screen but not in the deck editor. Add deck description to deck editor and make it editable as this is the most obvious screen to address issue 341 .",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "deck editor: add editable deck description field.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "December 05, 2013 04:41:35",
+      "body": "That should be issue 314 .\r\n\r\n(very irritating that there seems no way to amend or delete an existing comment!)",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 05, 2013 04:42:44",
+      "body": "**Labels:** -Type-Review Type-Enhancement  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 00:18:42",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 631  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on December 05, 2013 20:36:23_\n\nCurrently the deck description is shown on the duel setup screen but not in the deck editor. Add deck description to deck editor and make it editable as this is the most obvious screen to address issue 341 .\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=433_",
+  "date": "2013-12-05T20:36:23",
+  "state": "closed",
+  "gid": 433,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=433",
+  "owner": "lodici123"
+}

@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "Enchant creature with Pacifism, it can still attack. See src/magic/test/TestPacifism.java for a test scenario.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Creature enchanted with Pacifism can still attack",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 24, 2011 23:20:42",
+      "body": "I haven't found the cause yet, but have some observations:\r\n\r\n- equipment does not have the bug (why the AI equipped a creature so that it can't attack or block is a different question).\r\n- aura that gives the defender ability shows the same bug.\r\n- it works correctly on your own enchanted creatures.\r\n- adding \"ability=can't attack or block\" to a card works correctly.\r\n- things like \"given_ability=indestructible\" work correctly.\n\n**Summary:** Creature enchanted with Pacifism can still attack  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 24, 2011 23:35:29",
+      "body": "This issue was closed by revision e4c244b164b9 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 24, 2011 23:38:41",
+      "body": "Finally crushed the bug. The reason was that the static effect wasn't affecting the permanent in the AI's instance of the game. This is due to a subtle bug in the copying of the game state which caused the same permanent in the regular game to get copied multiple times. This caused the enchantedCreature reference in the Aura to be different from the permanent reference obtained from the controller.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 24, 2011 23:54:39",
+      "body": "Thanks for the investigation, beholder. I'm surprised that equipment/giving indestructible doesn't have the same problem since they both use the same mechanism for applying their effect to the permanent they are attached to.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 25, 2011 00:00:04",
+      "body": "Yes, knowing the cause makes it seem weird indeed. The fact that equipment didn't show the bug was puzzling for real and I have no explanation for it.\r\nAt least I learned something in trying to find the cause :)",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 24, 2011 23:08:39_\n\nEnchant creature with Pacifism, it can still attack. See src/magic/test/TestPacifism.java for a test scenario.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=61_",
+  "date": "2011-09-24T23:08:39",
+  "state": "closed",
+  "gid": 61,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=61",
+  "owner": "melvinzh...@gmail.com"
+}

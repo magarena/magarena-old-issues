@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Reported by beholder on the forum:\r\n\r\nWhen you cast Lightning Helix , the Stack reads: Lightning Bolt deals 3 damage to target creature or player (xxxx xxxx) and you gain 3 life.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Wrong wording on effect of Lightning Helix",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 28, 2011 22:53:35",
+      "body": "This issue was closed by revision 21392b09fa6b .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 28, 2011 20:07:45_\n\nReported by beholder on the forum:\r\n\r\nWhen you cast Lightning Helix , the Stack reads: Lightning Bolt deals 3 damage to target creature or player (xxxx xxxx) and you gain 3 life.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=34_",
+  "date": "2011-07-28T20:07:45",
+  "state": "closed",
+  "gid": 34,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=34",
+  "owner": "melvinzh...@gmail.com"
+}

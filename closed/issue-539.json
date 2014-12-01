@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? as in the title. play Wall of Essence, next turn you may attack with it. You shouldn't, though... What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Wall of Essence can attack",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 22, 2014 04:52:01",
+      "body": "Same is true for Wall of Hope... both cards are missing the defender symbol, bot are able to attack\r\n\r\n(Creature type wall: walls cannot attack)",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 22, 2014 06:07:53",
+      "body": "Fixed in Revision 68cc1c7d9a01\n\n**Status:** Fixed  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 22, 2014 19:47:06_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? as in the title. play Wall of Essence, next turn you may attack with it. You shouldn't, though... What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=539_",
+  "date": "2014-03-22T19:47:06",
+  "state": "closed",
+  "gid": 539,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=539",
+  "owner": "ShawnieBoyUK"
+}

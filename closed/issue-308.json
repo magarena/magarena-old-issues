@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Attack with a creature\r\n2. Opponent blocks that creature with two or more creatures\r\n3. Proceed to combat damage step What is the expected output? What do you see instead? Attacking player decides to which blocking creature he or she assigns the damage from the attacking creature. Instead, he or she doesn't get to decide. What version of the product are you using? On what operating system? 1.32 on Windows XP If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. In this excerpt I wanted to assign the 2/2 Phyrexian Rager's damage to the 2/2 Siege-Gang Commander, but the game automatically killed a 1/1 goblin token instead:\r\n\r\nMAGARENA GAME LOG\r\nCREATED ON 2012/12/11 10:30:37\r\nMAGARENA VERSION 1.32, JRE 1.7.0_09, OS Windows XP_5.1 x86\r\n\r\nLOG (P): Core Xii attacks with Phyrexian Rager.\r\nMMAB index=1 life=16 phase=DeclareBlockers time=1000 workers=4 main=4\r\n  [3/340/1849 at 62] ( Phyrexian Rager=Goblin)\r\n  [3/23/1849 at 63] ( Phyrexian Rager=Goblin)\r\n  [2/47/1849 at 63] ( Phyrexian Rager=Goblin)\r\n  [1/170/1352 at 54] ( Phyrexian Rager=Goblin+1)\r\n  [0/139/1352 at 54] ( Phyrexian Rager=Goblin+1)\r\n* [3/314/2162 at 62] ( Phyrexian Rager=Goblin+1)\r\n  [2/243/2162 at 62] ( Phyrexian Rager=Goblin+1)\r\n  [1/0/1352 at 54] ( Phyrexian Rager=Goblin+1)\r\n  [0/202/2162 at 62] ( Phyrexian Rager=Goblin+1)\r\n  [1/228/2162 at 62] ( Phyrexian Rager=Goblin+1)\r\n  [3/6/2162 at 62] ( Phyrexian Rager=Goblin+1)\r\n  [0/6/2162 at 62] ( Phyrexian Rager=Goblin+1)\r\nLOG (C): Computer blocks with Goblin and Siege-Gang Commander.\r\nLOG (P): Phyrexian Rager is destroyed.\r\nLOG (C): Goblin is destroyed.",
+  "author": "[core...@gmail.com](https://code.google.com/u/103434827021553153452/)",
+  "title": "Couldn't assign damage when blocked by multiple creatures",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 11, 2012 21:26:18",
+      "body": "This is one of the changes made to the game rules to reduce the number of decisions the AI have to make, see https://code.google.com/p/magarena/wiki/GameRules\n\n**Status:** Done  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [core...@gmail.com](https://code.google.com/u/103434827021553153452/) on December 11, 2012 16:54:31_\n\nWhat steps will reproduce the problem? 1. Attack with a creature\r\n2. Opponent blocks that creature with two or more creatures\r\n3. Proceed to combat damage step What is the expected output? What do you see instead? Attacking player decides to which blocking creature he or she assigns the damage from the attacking creature. Instead, he or she doesn't get to decide. What version of the product are you using? On what operating system? 1.32 on Windows XP If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. In this excerpt I wanted to assign the 2/2 Phyrexian Rager's damage to the 2/2 Siege-Gang Commander, but the game automatically killed a 1/1 goblin token instead:\r\n\r\nMAGARENA GAME LOG\r\nCREATED ON 2012/12/11 10:30:37\r\nMAGARENA VERSION 1.32, JRE 1.7.0_09, OS Windows XP_5.1 x86\r\n\r\nLOG (P): Core Xii attacks with Phyrexian Rager.\r\nMMAB index=1 life=16 phase=DeclareBlockers time=1000 workers=4 main=4\r\n  [3/340/1849 at 62] ( Phyrexian Rager=Goblin)\r\n  [3/23/1849 at 63] ( Phyrexian Rager=Goblin)\r\n  [2/47/1849 at 63] ( Phyrexian Rager=Goblin)\r\n  [1/170/1352 at 54] ( Phyrexian Rager=Goblin+1)\r\n  [0/139/1352 at 54] ( Phyrexian Rager=Goblin+1)\r\n* [3/314/2162 at 62] ( Phyrexian Rager=Goblin+1)\r\n  [2/243/2162 at 62] ( Phyrexian Rager=Goblin+1)\r\n  [1/0/1352 at 54] ( Phyrexian Rager=Goblin+1)\r\n  [0/202/2162 at 62] ( Phyrexian Rager=Goblin+1)\r\n  [1/228/2162 at 62] ( Phyrexian Rager=Goblin+1)\r\n  [3/6/2162 at 62] ( Phyrexian Rager=Goblin+1)\r\n  [0/6/2162 at 62] ( Phyrexian Rager=Goblin+1)\r\nLOG (C): Computer blocks with Goblin and Siege-Gang Commander.\r\nLOG (P): Phyrexian Rager is destroyed.\r\nLOG (C): Goblin is destroyed.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=308_",
+  "date": "2012-12-11T16:54:31",
+  "state": "closed",
+  "gid": 308,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=308",
+  "owner": ""
+}

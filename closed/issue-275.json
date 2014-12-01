@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Play a duel with the \"WB_Spirit_Tokens_40\" deck\r\n2. Have the cards \"Seance\" and \"Twilight Drover\" in play\r\n3. Have a creature in graveyard to use the ability of \"Seance\" What is the expected output? What do you see instead? Expected: Token of a creature comes into play, leaves play, Twilight Drover gets a +1/+1-counter.\r\nWhat I got: Token comes into play, leaves play, no +1/+1-counter for Twilight Drover. :( What version of the product are you using? On what operating system? 1.28 on WinXP SP3\r\n\r\nI don't know which card is not working as intended. Either \"Twilight Drover\" does not recognize the exile-effect or \"Seance\" does make a copy of card and not a real token. By looking at the source files, the first seems more likely to me.\r\n\r\ngame.log there only the last game has this happening\r\ngame2.log is cut to only the game where it happend",
+  "author": "[Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/)",
+  "title": "\"Seance\" in combination with \"Twilight Drover\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 29, 2012 20:36:01",
+      "body": "issue is that Twilight Drover was not able to identify tokens created by copying cards. This is fixed in revision 3172c4c99f98\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/) on August 13, 2012 03:25:51_\n\nWhat steps will reproduce the problem? 1. Play a duel with the \"WB_Spirit_Tokens_40\" deck\r\n2. Have the cards \"Seance\" and \"Twilight Drover\" in play\r\n3. Have a creature in graveyard to use the ability of \"Seance\" What is the expected output? What do you see instead? Expected: Token of a creature comes into play, leaves play, Twilight Drover gets a +1/+1-counter.\r\nWhat I got: Token comes into play, leaves play, no +1/+1-counter for Twilight Drover. :( What version of the product are you using? On what operating system? 1.28 on WinXP SP3\r\n\r\nI don't know which card is not working as intended. Either \"Twilight Drover\" does not recognize the exile-effect or \"Seance\" does make a copy of card and not a real token. By looking at the source files, the first seems more likely to me.\r\n\r\ngame.log there only the last game has this happening\r\ngame2.log is cut to only the game where it happend\n\n**Attachment:** [game2.log game.log](http://code.google.com/p/magarena/issues/detail?id=275)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=275_",
+  "date": "2012-08-13T03:25:51",
+  "state": "closed",
+  "gid": 275,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=275",
+  "owner": ""
+}

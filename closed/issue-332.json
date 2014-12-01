@@ -1,0 +1,40 @@
+{
+  "status": "duplicate",
+  "body": "In v1.35 all AI actions took too long,even on low levels - sometimes for 15+ seconds.",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "AI thinks too long",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "March 04, 2013 23:28:19",
+      "body": "1.36 will have a hard limit on the thinking time of the minimax AI. You may want to try playing against the monte carlo AI, it always takes \"AI level\" seconds per decision.\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 04, 2013 23:29:21",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 4  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 06, 2013 04:22:16",
+      "body": "Even on Vegas 5 AI thinks longer than 5sec, especially when deciding value of \"X\" or choosing targets of abilities.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "March 06, 2013 04:36:19",
+      "body": "Your right, unlike the monte carlo AI, Vegas may take up to 30 seconds regardless of the AI level. In 1.36, the hard limit of Vegas will be tied to the AI level.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on March 02, 2013 18:50:38_\n\nIn v1.35 all AI actions took too long,even on low levels - sometimes for 15+ seconds.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=332_",
+  "date": "2013-03-02T18:50:38",
+  "state": "closed",
+  "gid": 332,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=332",
+  "owner": ""
+}

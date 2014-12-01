@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "add wiki page to show screen shot of each theme so user can preview the theme before downloading.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Show screen shot of each theme",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 24, 2011 10:38:44",
+      "body": "Done https://code.google.com/p/magarena/wiki/Screenshots\n\n**Status:** Fixed  \n",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 30, 2011 10:25:34_\n\nadd wiki page to show screen shot of each theme so user can preview the theme before downloading.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=24_",
+  "date": "2011-05-30T10:25:34",
+  "state": "closed",
+  "gid": 24,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=24",
+  "owner": "melvinzh...@gmail.com"
+}

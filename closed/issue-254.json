@@ -1,0 +1,39 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? AI played a spell, tapped its lands. and then the lands untapped. What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "AI lands untapped for no apparent reason",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 10, 2012 08:18:38",
+      "body": "What was the spell that the AI played when this happened?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 10, 2012 08:21:07",
+      "body": "Wait, think it was a Flash effect between turn.",
+      "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)"
+    },
+    {
+      "date": "July 10, 2012 22:19:42",
+      "body": "I believe it was a spell that had Flash, and so happened and then it was it's turn. It happened so fast, I didn't realize that was what happened. \nSo no issue really. thanks",
+      "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)"
+    },
+    {
+      "date": "July 10, 2012 22:33:55",
+      "body": "Thanks, sometimes things can get a little too fast. One possibility is to play with the option \"Skip single option choices when appropriate\" disabled, then there is a pause for every step for you to pass.\n\n**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on July 10, 2012 23:15:53_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? AI played a spell, tapped its lands. and then the lands untapped. What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=254)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=254_",
+  "date": "2012-07-10T23:15:53",
+  "state": "closed",
+  "gid": 254,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=254",
+  "owner": ""
+}

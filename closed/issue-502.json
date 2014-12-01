@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? when Nefarox is on the battlefield, it's missing the flying symbol\r\nwhen Nefarox is attacking, non-flying creatures can block it\r\nNefarox can not block flying creatures What version of the product are you using? On what operating system? Linux, Zorin 8, magarena 1.48.792 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Nefarox, Overlord of Grixis: card text says flying, but it does not fly",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 08, 2014 16:57:08",
+      "body": "This issue was closed by revision 1e7bbda51e93 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 08, 2014 16:57:32",
+      "body": "Thanks for the playing the daily build and reporting bugs!",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 09, 2014 00:35:04_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? when Nefarox is on the battlefield, it's missing the flying symbol\r\nwhen Nefarox is attacking, non-flying creatures can block it\r\nNefarox can not block flying creatures What version of the product are you using? On what operating system? Linux, Zorin 8, magarena 1.48.792 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=502_",
+  "date": "2014-03-09T00:35:04",
+  "state": "closed",
+  "gid": 502,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=502",
+  "owner": ""
+}

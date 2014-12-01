@@ -1,0 +1,84 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Owning a touchscreen computer capable of running the game (x86 etc)\r\n2. clicking on card (with touchscreen) plays it without showing popup summary 3. What is the expected output? What do you see instead? On my touchscreen netbook convertible it does not register mouse over events when using the touch screen. I would like to have a double click option, so that a single click will activate the card pop up so we can see the card, and play them with a double click. It can even be a system wide option (within the game), I am willing to have to double click on all buttons if necessary to get to play the game using the touchscreen. What version of the product are you using? On what operating system? newest release 1.21, on Ubuntu Linux 11.10 and 12.04 (x86) Please provide any additional information below. Ben Straton\r\n(206) 618-9236\r\nthefanum@gmail.com\r\n\r\nfeel free to call (any time) or email if clarification is needed",
+  "author": "[TheFA...@gmail.com](https://code.google.com/u/116301033104701629210/)",
+  "title": "Feature Request. Double click option for touchscreen computers",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "January 09, 2012 07:08:04",
+      "body": "Thanks for the feature request.\r\n\r\nSomething like this has come up before on the forum but about using Magarena on an iPhone with the Splashtop app: http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=5593&p=73149&hilit=touch&sid=d267d180a40e6b914d58207b4d7664c6#p73116 I'm all for putting the option in Magarena as more people will likely start using touchscreens. I had a quick look at the code and it doesn't seem very hard to add this. Biggest problem is that, since I don't have any touchscreen, I can not test the code. Luckily this would be a configurable setting so I could implement it and wait for user feedback when 1.22 get's released. Not ideal but it would eventually lead to a workable addition.\r\n\r\nI'll have a look at the details soon.\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 10, 2012 13:08:14",
+      "body": "Excellent! Thanks for looking into this, I think it will be a great feature. Such a great game, no need to limit it to traditional devices with keyboards and mice. \r\n\r\nI tried the version built with the double click option from that link, and it works great! If anyone else was looking into this, and not running windows, it apparently does not matter (assuming you have java installed). \r\n\r\nI am running Linux and I got the exe from that post, copied it over the 1.21 exe then launched it using the *.sh file. Worked great. The game is apparently dependent on the exe regardless of which OS you are running it on, and so you can switch them out :)\r\n\r\nWhen you do need a tester with a touch screen, I would be happy to help test it and look for bugs, so keep me posted! \r\n\r\nThanks again",
+      "author": "[TheFA...@gmail.com](https://code.google.com/u/116301033104701629210/)"
+    },
+    {
+      "date": "January 10, 2012 18:33:33",
+      "body": "Attached are patches containing the changes I made for the double click version that I posted on simplymagic a while back.  They are very basic changes as my Java knowledge is at a beginner level so this might not be the best way to implement this.  I had planned to try and expand this as a selectable option but I haven't had the time and am not sure when I will.  If anyone else wants to use this feel free.  It should apply to the current revision assuming I generated the patches correctly with eclipse (first time trying to generate a patch file).  If there are any issues I can just post my revised version of each file and an expert can take a look.\n\n**Attachment:** [ImageCardListViewer.patch ImagePermanentViewer.patch](http://code.google.com/p/magarena/issues/detail?id=139#hc3)",
+      "author": "[mikewpea...@gmail.com](https://code.google.com/u/118017494362655792385/)"
+    },
+    {
+      "date": "January 11, 2012 06:02:36",
+      "body": "Thanks Mike!\r\n\r\nDo you remember why you chose to add controller.hideInfo();? I ask because that method is (conditionally) called by the processClick method above it.\r\n\r\nAnother question: why did you comment out the part about MouseEvent.BUTTON3 (right click)? I don't see how that would interfere tbh.\n\n**Status:** Accepted  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 11, 2012 08:53:05",
+      "body": "I added the controller.hideInfo() because when I was playing on my iPhone after double clicking to play the card the mouse would remain where I double clicked so the card image of the next card would display.  I preferred it to not display anything until I clicked on another card (made it easier to see everything on the smaller screen) so I had it hide the image after a double click so no image would display until I clicked again somewhere else.\r\n\r\nI commented out the button3 advancing the game as I found I accidentally did this very often on the small screen (splashtop that I was using has the right click mapped to a tap and hold gesture) and I preferred to click the ok button instead anyway.\r\n\r\nBoth of these changes are largely dependent on the software I was using to play over my phone. There are other options out there that might map the buttons differently that would make some of my changes less ideal.  Also playing on a tablet vs a phone with the larger screen could make a difference too.  Both changes were just really a personal preference.",
+      "author": "[mikewpea...@gmail.com](https://code.google.com/u/118017494362655792385/)"
+    },
+    {
+      "date": "January 11, 2012 10:27:19",
+      "body": "Thanks for that explanation, it makes sense now.\r\n\r\nI do realize that in your case the software used plays a role but we can always tweak things when users feel that the upcoming feature isn't ideal and maybe add some settings. For now I'll stick to the changes you made and simply make it a preference setting.\r\n\r\nThanks again. I'll make the changes and push them tomorrow.\n\n**Status:** Started  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 12, 2012 02:24:46",
+      "body": "This issue was closed by revision 029cfa62c9dc .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 12, 2012 02:26:11",
+      "body": "Although this is now marked as fixed, feel free to post suggestions for improvement here.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 14, 2012 19:34:25",
+      "body": "Finally got a chance to compiled it and give it a try. It works as well as the one from the forum link above, but it is definitely not a double click that plays the cards. The mouse over (single click) works flawlessly. No issues there. However when attempting to play a card, it requires 3 to 4 consecutive clicks (occasional 2 will work, but it is rare). I have tried all different speeds of clicking, with both touchscreen and touchpad (with touchscreen option enabled) and double clicking almost never plays the card. \r\n\r\nReally close to working, and totally playable, but not perfect yet. \r\n\r\nLet me know if you have any ideas, or if you make any changes to the code, so I can re-compile and bug test again.",
+      "author": "[TheFA...@gmail.com](https://code.google.com/u/116301033104701629210/)"
+    },
+    {
+      "date": "January 15, 2012 02:45:39",
+      "body": "That's really odd as my changes are identical to the patches that Mike provided except that I made it a user preference. When I have the touchscreen option enabled, everything works as expected (using a mouse though). I just have no idea what could cause the difference in behavior. I guess you could try to get rid of my conditionals and see if that changes anything. So for example, change ImagePermanentViewer (deals with cards in hand) so that it reads:\r\n\r\nif (index>=0 && event.getClickCount() == 2) {\r\n\t\t\tviewer.getController().processClick(linkedInfos.get(index).permanent);\r\nviewer.getController().hideInfo();\r\n}\r\n\r\nAgain I don't see how that would solve the problem but it's worth a shot.\n\n**Status:** Accepted  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 16, 2012 11:55:19",
+      "body": "Yes it does work as well as the other version, but I am having the same issue with that one also. So it is working with a doublc click for you using a mouse? I was unable to get that to work. As I said it is still playable, but I will test it again tonight with a mouse to confirm the results I am seeing are related to my touchscreen. Thanks again.",
+      "author": "[TheFA...@gmail.com](https://code.google.com/u/116301033104701629210/)"
+    },
+    {
+      "date": "September 29, 2012 20:28:41",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [TheFA...@gmail.com](https://code.google.com/u/116301033104701629210/) on January 09, 2012 10:56:47_\n\nWhat steps will reproduce the problem? 1. Owning a touchscreen computer capable of running the game (x86 etc)\r\n2. clicking on card (with touchscreen) plays it without showing popup summary 3. What is the expected output? What do you see instead? On my touchscreen netbook convertible it does not register mouse over events when using the touch screen. I would like to have a double click option, so that a single click will activate the card pop up so we can see the card, and play them with a double click. It can even be a system wide option (within the game), I am willing to have to double click on all buttons if necessary to get to play the game using the touchscreen. What version of the product are you using? On what operating system? newest release 1.21, on Ubuntu Linux 11.10 and 12.04 (x86) Please provide any additional information below. Ben Straton\r\n(206) 618-9236\r\nthefanum@gmail.com\r\n\r\nfeel free to call (any time) or email if clarification is needed\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=139_",
+  "date": "2012-01-09T10:56:47",
+  "state": "closed",
+  "gid": 139,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=139",
+  "owner": ""
+}

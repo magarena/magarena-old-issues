@@ -1,0 +1,40 @@
+{
+  "status": "verified",
+  "body": "v 1.45\r\n\r\n1. Main menu -> Deck Editor. Cool buttons for load, save and clear deck.\r\n\r\n2. Main menu -> New duel -> Deck Editor. No buttons for save and clear. Pity!\r\n\r\nSo now it's not possible to tweak and save the deck between the duels, all changes will be lost.",
+  "author": "[ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/)",
+  "title": "Not possible to save deck while in duels (or inbetween)",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 09, 2014 16:23:32",
+      "body": "To see all options available for the current screen hit ESCape or click on the book icon in the top right corner of the screen. This should consistent wherever you are in Magarena. \r\n\r\nI call the bar along the bottom the \"action bar\" and the idea behind this is that it provides quick access to regularly used actions but because there is limited space it should only contain those actions that are most relevant to the current use case.\r\n\r\nSo when you run the deck editor from the Main menu it is because you want to load and edit an existing deck or start creating a new one. Hence the \"Load Deck\" and \"Save\" actions. Actually as i write this I don't think \"Clear\" should be on the action bar anyway because it is too destructive and there is no undo. By only making it accessible via the menu then it requires two clicks instead of one which is better I think.\r\n\r\nWhen you run the deck editor during the process of starting a new game then presumably it is because you want to edit/tweak the deck you have been given. I am not sure why I included \"Load Deck\" and not \"Save\" - if anything it should just be the \"Save\" action. So I probably need to update this. But please bear in mind that all Deck Editor options are still available via ESCape or the Book icon menu.\r\n\r\nWhen I gave the UI a facelift I tried to make sure that I did not remove any existing functionality and retained the same logic flows as before. What I have tried to do with the action bar is to emphasize those options which are most relevant to what the user is attempting to do - ie, i want to play a game or I want to edit a deck. \r\n\r\nThe options I have chosen for the action bar are what works for me so let me know if there actions missing which you think should be added.\n\n**Status:** Accepted  \n  **Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "January 09, 2014 23:27:37",
+      "body": "You are right, those options are available thru ESC menu. Thanks.\r\n\r\nHowever I suggest to put all three (Load, Save, Clear) to the action bar as well at all times while in Deck Editor. The reasons are as follows:\r\n1. There is still enough room for this at the action bar\r\n2. The action bar of Deck Editor will be consistent (the same all the time, no matter how you got to Deck Editor)\r\n3. It is not intuitive to search for Load/Save Deck in the ESC menu (my 25+ years experience with computing didn't help me, sorry :) )\r\n\r\nI agree that Clear Deck should be suppliend with simple Yes/No confirmation.\r\n\r\nBTW, I really love what you are doing with UI. It's a good work, I wish you won't stop with these improvements.",
+      "author": "[ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/)"
+    },
+    {
+      "date": "August 11, 2014 03:44:31",
+      "body": "fixed.\n\n**Status:** Done  \n  **Owner:** lodici123  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/) on January 10, 2014 04:08:37_\n\nv 1.45\r\n\r\n1. Main menu -> Deck Editor. Cool buttons for load, save and clear deck.\r\n\r\n2. Main menu -> New duel -> Deck Editor. No buttons for save and clear. Pity!\r\n\r\nSo now it's not possible to tweak and save the deck between the duels, all changes will be lost.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=465_",
+  "date": "2014-01-10T04:08:37",
+  "state": "closed",
+  "gid": 465,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=465",
+  "owner": "lodici123"
+}

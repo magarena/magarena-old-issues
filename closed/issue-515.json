@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? during your upkeep step, Dominus of Fealty prompts you to gain control of target \"creature\". Card text states: Gain control of target \"permanent\". magarena lets you choose target permanent, it's just a wrong notification. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Dominus of Fealty: notification error",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 13, 2014 11:36:47",
+      "body": "Another good find :) Fix submitted",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 13, 2014 18:39:53",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 13, 2014 23:31:58_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? during your upkeep step, Dominus of Fealty prompts you to gain control of target \"creature\". Card text states: Gain control of target \"permanent\". magarena lets you choose target permanent, it's just a wrong notification. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=515_",
+  "date": "2014-03-13T23:31:58",
+  "state": "closed",
+  "gid": 515,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=515",
+  "owner": ""
+}

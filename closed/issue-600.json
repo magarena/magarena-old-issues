@@ -1,0 +1,39 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. Get a Master of Etherium in your hand\r\n2. Attempt to cast it with only three lands in play What is the expected output? What do you see instead? The card is treated as unplayable. Upon playing a fourth land, it becomes playable again, but I only need to tap three of those lands to play it.\r\n\r\nI've got no clue what could be causing this, but empirically it seems to occur for any card I try that costs 2U, including:\r\n-Esper Battlemage\r\n-Master of Etherium\r\n-Aether Barrier\r\n\r\n...and not for any other card I've tried, including\r\n-Aether Adept (costing 1UU)\r\n-Advanced Hoverguard (costing 3U)\r\n-Advocate of the Beast (costing 2G)\r\n\r\nThis is in Magarena 1.49 under Mac OS 10.9.3.",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Some cards (seemingly those costing 2U) require extra lands in play in order to be cast.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "May 19, 2014 15:54:26",
+      "body": "That's very bizarre.\r\nI've tried the same, but unable to duplicate. This was a 40 card deck with 16 islands and a variety of 2U cards including Aether Barrier, Esper Battlemage etc.\r\n\r\nHowever I'm on Windows - If anyone else could give this a test and see if it's a Mac issue?",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "May 19, 2014 17:20:09",
+      "body": "Do you remember which three lands were in play, it could be an issue with the lands.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 19, 2014 19:29:19",
+      "body": "I don't remember specific lands in most cases, but I've seen it with all three of:\r\n\r\n-An artifact-land mana base\r\n-Straight islands\r\n-A 5-color mana base (City of Brass/Mana Confluence/Rupture Spire/Transguild Promenade/Vivids)\r\n\r\nHowever, now I can't reproduce it either (after some pretty extensive testing this afternoon where it seemed to be happening consistently). Cosmic rays, I guess?",
+      "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)"
+    },
+    {
+      "date": "May 19, 2014 19:36:32",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on May 20, 2014 03:48:14_\n\nWhat steps will reproduce the problem? 1. Get a Master of Etherium in your hand\r\n2. Attempt to cast it with only three lands in play What is the expected output? What do you see instead? The card is treated as unplayable. Upon playing a fourth land, it becomes playable again, but I only need to tap three of those lands to play it.\r\n\r\nI've got no clue what could be causing this, but empirically it seems to occur for any card I try that costs 2U, including:\r\n-Esper Battlemage\r\n-Master of Etherium\r\n-Aether Barrier\r\n\r\n...and not for any other card I've tried, including\r\n-Aether Adept (costing 1UU)\r\n-Advanced Hoverguard (costing 3U)\r\n-Advocate of the Beast (costing 2G)\r\n\r\nThis is in Magarena 1.49 under Mac OS 10.9.3.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=600_",
+  "date": "2014-05-20T03:48:14",
+  "state": "closed",
+  "gid": 600,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=600",
+  "owner": "manve.he...@gmail.com"
+}

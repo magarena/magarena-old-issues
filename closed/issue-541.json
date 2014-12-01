@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Card reads as follows:\r\n\r\nFlying\r\nAt the beginning of each combat, any opponent may sacrifice a creature. If a player does, tap Desecration Demon and put a +1/+1 counter on it.\r\n\r\nneither in my nor in his combat phase the opponent is promted, that he may sacrifice a creature. Actually it's my upkeep step, and only mine, when he is prompted. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Desecration Demon: timing incorrect",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 22, 2014 18:17:42",
+      "body": "This issue was closed by revision b9645fbfe838 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 22, 2014 23:24:47_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Card reads as follows:\r\n\r\nFlying\r\nAt the beginning of each combat, any opponent may sacrifice a creature. If a player does, tap Desecration Demon and put a +1/+1 counter on it.\r\n\r\nneither in my nor in his combat phase the opponent is promted, that he may sacrifice a creature. Actually it's my upkeep step, and only mine, when he is prompted. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=541_",
+  "date": "2014-03-22T23:24:47",
+  "state": "closed",
+  "gid": 541,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=541",
+  "owner": ""
+}

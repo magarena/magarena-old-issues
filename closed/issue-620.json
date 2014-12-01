@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "Just a minor thing.\r\n\r\nIn the Deck Editor, the Status filter isn't cleared when the Reset button is pressed.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Status filter not clearing with reset filters",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 15, 2014 00:00:52",
+      "body": "Thanks. Fixed in https://bitbucket.org/lodici/magarena/commits/8345b4b09d63 .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on July 15, 2014 04:14:41_\n\nJust a minor thing.\r\n\r\nIn the Deck Editor, the Status filter isn't cleared when the Reset button is pressed.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=620_",
+  "date": "2014-07-15T04:14:41",
+  "state": "closed",
+  "gid": 620,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=620",
+  "owner": "ShawnieBoyUK"
+}

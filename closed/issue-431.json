@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Open deck editor.\r\n2. Options menu -> Create new empty deck.\r\n3. Click Close What is the expected output? What do you see instead? After warning you that the deck is invalid you should have the choice of continuing editing the deck or closing the editor anyway without saving any changes made. Please use labels and text to provide additional information. I have made this a High priority since it is a significant useability issue which requires a cumbersome workaround to resolve - ie, you need to load or create a valid deck before you can close the Deck Editor.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Unable to close Deck Editor if deck is invalid.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-High",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 06, 2013 23:57:09",
+      "body": "**Status:** Started  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 10, 2013 03:02:49",
+      "body": "Fixed in build 1.44.615 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/615/ ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on December 04, 2013 23:35:17_\n\nWhat steps will reproduce the problem? 1. Open deck editor.\r\n2. Options menu -> Create new empty deck.\r\n3. Click Close What is the expected output? What do you see instead? After warning you that the deck is invalid you should have the choice of continuing editing the deck or closing the editor anyway without saving any changes made. Please use labels and text to provide additional information. I have made this a High priority since it is a significant useability issue which requires a cumbersome workaround to resolve - ie, you need to load or create a valid deck before you can close the Deck Editor.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=431_",
+  "date": "2013-12-04T23:35:17",
+  "state": "closed",
+  "gid": 431,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=431",
+  "owner": "lodici123"
+}

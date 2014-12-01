@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Smash to Smithereens fails to target an animated Inkmoth Nexus, but works on other artifacts.\r\nI found this out when trying to add Liquimetal Coating.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Permanent that becomes an artifact can't be targeted by spells that target artifacts",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "October 07, 2011 20:11:34",
+      "body": "This issue was closed by revision 86ffcd1d5b8b .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "October 07, 2011 22:31:18",
+      "body": "Thanks! Now I can try how the AI handles Liquimetal Coating.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on October 04, 2011 22:05:31_\n\nSmash to Smithereens fails to target an animated Inkmoth Nexus, but works on other artifacts.\r\nI found this out when trying to add Liquimetal Coating.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=69_",
+  "date": "2011-10-04T22:05:31",
+  "state": "closed",
+  "gid": 69,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=69",
+  "owner": "BeHold...@gmail.com"
+}

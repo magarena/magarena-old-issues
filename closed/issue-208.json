@@ -1,0 +1,34 @@
+{
+  "status": "cantreproduce",
+  "body": "Reported by muaddib @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&start=225#p87443 Forum post has two screenshots that illustrate the bug.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Morbid doesn't work for Tragic Slip",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "May 01, 2012 11:01:00",
+      "body": "I can not reproduce this bug and I think the confusion comes from the fact that the message always reads \"Target creature gets -1/-1 until end of turn.\" regardless of a creature died that turn or not. It's done this way because the Morbid ability is checked on resolve and then the message can't be changed anymore.\r\n\r\nI actually have toyed with ways to change the message on the stack but haven't found out how to do so.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 29, 2012 22:21:31",
+      "body": "**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 02, 2013 17:22:32",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on April 21, 2012 20:53:16_\n\nReported by muaddib @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&start=225#p87443 Forum post has two screenshots that illustrate the bug.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=208_",
+  "date": "2012-04-21T20:53:16",
+  "state": "closed",
+  "gid": 208,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=208",
+  "owner": "melvinzh...@gmail.com"
+}

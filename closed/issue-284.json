@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "In my experience, I'm just about as likely to want to use temporary shadow effects like Shadow Rift and Dauthi Embrace as a \"target creature can't block this turn\" effect on one of my opponent's creatures as I am to use them as a \"target creature is unblockable this turn\" effect on my own. It'd be nice if I didn't have to go into preferences every time I wanted to do this.\r\n\r\nI feel like most of the other times I need to hit that setting, it's because of some specific weird two-card interaction, whereas this is just the rules of shadow plus basic combat logic...",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Granting temporary shadow to opponent's creatures shouldn't count as an \"unusual target choice\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 29, 2012 20:58:43",
+      "body": "This issue was closed by revision 72c8a74169f8 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2012 21:01:12",
+      "body": "Agree, fixed Shadow Rift, Dauthi Embrace, and Dauthi Trapper.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on August 30, 2012 11:51:38_\n\nIn my experience, I'm just about as likely to want to use temporary shadow effects like Shadow Rift and Dauthi Embrace as a \"target creature can't block this turn\" effect on one of my opponent's creatures as I am to use them as a \"target creature is unblockable this turn\" effect on my own. It'd be nice if I didn't have to go into preferences every time I wanted to do this.\r\n\r\nI feel like most of the other times I need to hit that setting, it's because of some specific weird two-card interaction, whereas this is just the rules of shadow plus basic combat logic...\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=284_",
+  "date": "2012-08-30T11:51:38",
+  "state": "closed",
+  "gid": 284,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=284",
+  "owner": ""
+}

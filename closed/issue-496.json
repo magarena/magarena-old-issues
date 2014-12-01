@@ -1,0 +1,126 @@
+{
+  "status": "wontfix",
+  "body": "I should have grabbed a screenshot as well really to better show what's happening. But the AI chooses to not play a land and discards Ajani instead.\r\n\r\nMAGARENA GAME LOG\r\nCREATED ON 2014/03/03 12:41:41\r\nMAGARENA VERSION 1.48, JRE 1.7.0_51, OS Windows 7_6.1 x86\r\n\r\n\r\nLOG (P): ShawnieBoy may (no) take a mulligan.\r\nLOG (C): Computer may (no) take a mulligan.\r\nLOG (P): Play Plains.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=2 phase=FirstMain sims=7 time=6603\r\n  [60/3/?] (pass)\r\n* [67/4/?] (Plains)\r\nLOG (C): Play Plains.\r\nLOG (P): Play Plains.\r\nLOG (P): Tap Plains. Tap Plains. Pay {2}. Play Marble Diamond.\r\nLOG (P): Put Marble Diamond onto the battlefield. Marble Diamond enters the battlefield tapped.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=4 phase=FirstMain sims=5 time=7474\r\n* [61/4/?] (pass)\r\n  [13/1/?] (Plains)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=4 phase=SecondMain sims=8 time=6155\r\n* [31/4/?] (pass)\r\n  [48/4/?] (Plains)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=5 phase=Cleanup sims=5 time=6517\r\n* [91/1/?] (Ajani's Chosen)\r\n  [28/1/?] (Ajani's Chosen)\r\n  [11/1/?] (Farmstead)\r\n  [3/1/?] (Marble Diamond)\r\n  [80/1/?] (Marble Diamond)\r\nLOG (C): Computer discards a card (Ajani's Chosen).\r\nLOG (P): Play Plains.\r\nLOG (P): Tap Marble Diamond. Tap Plains. Tap Plains. Tap Plains. Pay {2}{W}{W}. Play Ajani's Chosen.\r\nLOG (P): Put Ajani's Chosen onto the battlefield.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=6 phase=FirstMain sims=11 time=6084\r\n* [10/7/?] (pass)\r\n  [4/4/?] (Plains)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=6 phase=SecondMain sims=17 time=6446\r\n  [5/8/?] (pass)\r\n* [7/9/?] (Plains)\r\nLOG (C): Play Plains.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=6 phase=SecondMain sims=9 time=6970\r\n  [13/3/?] (pass)\r\n* [20/6/?] (Marble Diamond)\r\nLOG (C): Pay {2}. Tap Plains. Tap Plains. Play Marble Diamond.\r\nLOG (C): Put Marble Diamond onto the battlefield. Marble Diamond enters the battlefield tapped.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "AI occasionally chooses to not play land and discard a card instead when hand is full",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "March 09, 2014 07:26:11",
+      "body": "Just noticed that the check for the second Plains uses the lower value instead of the highest.\r\n\r\n*[31/4/?] (pass)\r\n\r\ninstead of the\r\n\r\n[48/4/?] (Plains)\r\n\r\nThis could be what's happening with the suicide attacks!",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 10, 2014 20:19:20",
+      "body": "The logic of MTCS is to pick the node with the highest number of simulations (the second number). The strange thing here is the number of total simulations (sims) is extremely low, it is unlikely the AI can play reasonable with such a low number of simulations.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 29, 2014 11:58:36",
+      "body": "Been noticing more of this - but this log has got to be the most rediculous! lol\r\n\r\nMAGARENA GAME LOG\r\nCREATED ON 2014/04/29 19:45:05\r\nMAGARENA VERSION 1.50, JRE 1.7.0_51, OS Windows 7_6.1 amd64\r\n\r\n\r\nLOG (P): ShawnieBoy may (no) take a mulligan.\r\nLOG (C): Monty Carlo may (no) take a mulligan.\r\nLOG (P): Play Keldon Megaliths.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=2 phase=FirstMain sims=144 time=8294\r\n* [39/76/?] (pass)\r\n  [38/68/?] (Mountain)\r\nMCTS cached=76\r\nMCTS cheat=false index=1 life=20 turn=2 phase=SecondMain sims=185 time=8222\r\n* [39/141/?] (pass)\r\n  [38/119/?] (Mountain)\r\nMCTS cached=141\r\nMCTS cheat=false index=1 life=20 turn=2 phase=Cleanup sims=188 time=8239\r\n  [38/43/?] (Mountain)\r\n  [39/45/?] (Mountain)\r\n* [39/49/?] (Mountain)\r\n  [39/45/?] (Mountain)\r\n  [37/39/?] (Rage Nimbus)\r\n  [38/39/?] (Wall of Earth)\r\n  [36/31/?] (Wall of Earth)\r\n  [37/37/?] (Wall of Stone)\r\nLOG (C): Monty Carlo discards a card (Mountain).",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 29, 2014 15:16:30",
+      "body": "I am working on ways to animate the gameplay and watch quite alot of AI v AI games. I have also noticed a few times the AI deciding not to play a turn even when there are land cards in its hand. Of course, that might be a valid strategy - I am very much a beginner when it comes to the complexities of MTG.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 29, 2014 15:56:42",
+      "body": "Well, not playing a turn can be a valid strategy. As soon as you got some mana sources out there, that is. I could be mistaken, but I doubt that there is any specialist low mana deck that works with less than 3 mana sources.\r\n\r\nI think, the problem the AI has is that lands/mana sources have a set value tied to them. But the truth is, that at the beginning of the game lands/mana sources are much more valuable then later in the game while creatures, generally speaking, don't change their game play value through the course of the game... not much at least",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 29, 2014 22:41:16",
+      "body": "I can understand that playing a land each turn isn't always required, but during the very first turn, you'd expect the AI to at least play a land.\r\n\r\nHaving the value of lands inversely proportional to the amount that the AI already control would help.\r\n\r\nBut having the AI choose to not mulligan as it can identify lands in hand, then not playing one, and to add insult to injury, discard one kinda made me cry inside.\r\n\r\nThankfully it's not always a land being discarded, but still doesn't look good.\r\n\r\nLOG (P): ShawnieBoy may (no) take a mulligan.\r\nLOG (C): Monty Carlo may (no) take a mulligan.\r\nLOG (P): Play Badlands.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=2 phase=FirstMain sims=288 time=8097\r\n* [42/151/?] (pass)\r\n  [38/72/?] (Badlands)\r\n  [37/65/?] (Mountain)\r\nMCTS cached=151\r\nMCTS cheat=false index=1 life=20 turn=2 phase=SecondMain sims=498 time=8082\r\n* [53/517/?] (pass)\r\n  [41/109/?] (Badlands)\r\n  [30/22/?] (Mountain)\r\nMCTS cached=517\r\nMCTS cheat=false index=1 life=20 turn=2 phase=Cleanup sims=594 time=8071\r\n  [41/28/?] (Badlands)\r\n* [58/825/?] (Carnage Altar)\r\n  [40/24/?] (Fire Diamond)\r\n  [36/19/?] (Hammer of Bogardan)\r\n  [38/23/?] (Mountain)\r\n  [42/32/?] (Mountain)\r\n  [43/34/?] (Necrosavant)\r\n  [51/125/?] (Solemn Simulacrum)\r\nLOG (C): Monty Carlo discards a card (Carnage Altar).",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "June 15, 2014 05:07:50",
+      "body": "I think I may have broken the AI with these new cards - AI kept discarding without playing lands until turn 12 (AI's turn 6)\r\n\r\nMAGARENA GAME LOG\r\nCREATED ON 2014/06/15 12:50:13\r\nMAGARENA VERSION 1.51, JRE 1.7.0_55, OS Windows 7_6.1 amd64\r\n\r\n\r\nLOG (P): ShawnieBoy may (no) take a mulligan.\r\nLOG (C): Monty Carlo may (no) take a mulligan.\r\nLOG (P): Play Arcane Sanctum.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=2 phase=SecondMain sims=3177 time=8019\r\n* [69/3148/?] (pass)\r\n  [48/29/?] (Arcane Sanctum)\r\nMCTS cached=3148\r\nMCTS cheat=false index=1 life=20 turn=2 phase=Cleanup sims=4109 time=8020\r\n  [69/1072/?] (Arcane Sanctum)\r\n* [70/2331/?] (Arcane Sanctum)\r\n  [67/426/?] (Leveler)\r\n  [69/993/?] (Leveler)\r\n  [67/479/?] (Morningtide)\r\n  [61/109/?] (Nihil Spellbomb)\r\n  [69/1551/?] (Solemn Simulacrum)\r\n  [65/295/?] (Solemn Simulacrum)\r\nLOG (C): Monty Carlo discards a card (Arcane Sanctum).\r\nLOG (P): Play Arcane Sanctum.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=4 phase=SecondMain sims=4349 time=8008\r\n* [70/4245/?] (pass)\r\n  [60/104/?] (Arcane Sanctum)\r\nMCTS cached=4245\r\nMCTS cheat=false index=1 life=20 turn=4 phase=Cleanup sims=4166 time=8008\r\n  [66/371/?] (Arcane Sanctum)\r\n  [69/1165/?] (Arcane Sanctum)\r\n  [69/1884/?] (Leveler)\r\n* [69/1938/?] (Leveler)\r\n  [68/1019/?] (Morningtide)\r\n  [42/17/?] (Nihil Spellbomb)\r\n  [66/399/?] (Solemn Simulacrum)\r\n  [69/1617/?] (Solemn Simulacrum)\r\nLOG (C): Monty Carlo discards a card (Leveler).\r\nLOG (P): Play Arcane Sanctum.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=6 phase=FirstMain sims=3493 time=8022\r\n* [64/2444/?] (pass)\r\n  [62/1049/?] (Plains)\r\nMCTS cached=2444\r\nMCTS cheat=false index=1 life=20 turn=6 phase=SecondMain sims=3843 time=8010\r\n* [65/5047/?] (pass)\r\n  [63/1232/?] (Plains)\r\n  [18/7/?] (Arcane Sanctum)\r\nMCTS cached=5047\r\nMCTS cheat=false index=1 life=20 turn=6 phase=Cleanup sims=3742 time=8020\r\n  [57/111/?] (Arcane Sanctum)\r\n  [67/1988/?] (Arcane Sanctum)\r\n  [61/252/?] (Leveler)\r\n  [62/375/?] (Morningtide)\r\n  [64/932/?] (Nihil Spellbomb)\r\n* [66/3310/?] (Plains)\r\n  [63/533/?] (Solemn Simulacrum)\r\n  [65/1287/?] (Solemn Simulacrum)\r\nLOG (C): Monty Carlo discards a card (Plains).\r\nLOG (P): Play Island.\r\nLOG (P): Tap Arcane Sanctum. Tap Arcane Sanctum. Tap Arcane Sanctum. Tap Island. Pay {4}. Play Solemn Simulacrum.\r\nLOG (P): Put Solemn Simulacrum onto the battlefield.\r\nLOG (P): ShawnieBoy may (yes) search ShawnieBoy's library for a basic land card and put it onto the battlefield tapped. Then shuffle ShawnieBoy's library. Found (Plains).\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=8 phase=SecondMain sims=3183 time=8009\r\n* [60/2820/?] (pass)\r\n  [56/363/?] (Arcane Sanctum)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=8 phase=Cleanup sims=3343 time=8014\r\n  [60/357/?] (Angel of Finality)\r\n* [62/905/?] (Arcane Sanctum)\r\n  [61/421/?] (Arcane Sanctum)\r\n  [58/192/?] (Leveler)\r\n  [62/672/?] (Morningtide)\r\n  [54/88/?] (Nihil Spellbomb)\r\n  [52/67/?] (Solemn Simulacrum)\r\n  [62/641/?] (Solemn Simulacrum)\r\nLOG (C): Monty Carlo discards a card (Arcane Sanctum).\r\nLOG (P): Play Plains.\r\nLOG (P): Tap Plains. Tap Island. Pay {1}{W}. Play Morningtide.\r\nLOG (P): Exile all cards from all graveyards.\r\nLOG (P): ShawnieBoy attacks with Solemn Simulacrum.\r\nLOG (C): {c}Monty Carlo loses 2 life.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=18 turn=10 phase=FirstMain sims=2515 time=8025\r\n* [58/1925/?] (pass)\r\n  [56/590/?] (Island)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=18 turn=10 phase=SecondMain sims=2629 time=8019\r\n* [58/1370/?] (pass)\r\n  [57/878/?] (Island)\r\n  [55/381/?] (Arcane Sanctum)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=18 turn=10 phase=Cleanup sims=2593 time=8009\r\n* [60/762/?] (Angel of Finality)\r\n  [57/297/?] (Arcane Sanctum)\r\n  [59/482/?] (Island)\r\n  [53/104/?] (Leveler)\r\n  [57/233/?] (Morningtide)\r\n  [49/61/?] (Nihil Spellbomb)\r\n  [59/447/?] (Solemn Simulacrum)\r\n  [56/207/?] (Solemn Simulacrum)\r\nLOG (C): Monty Carlo discards a card (Angel of Finality).\r\nLOG (P): Play Bojuka Bog.\r\nLOG (P): Exile all cards from target player's (Monty Carlo) graveyard.\r\nLOG (P): ShawnieBoy attacks with Solemn Simulacrum.\r\nLOG (C): {c}Monty Carlo loses 2 life.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=16 turn=12 phase=FirstMain sims=2265 time=8010\r\n* [57/1799/?] (pass)\r\n  [54/466/?] (Island)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=16 turn=12 phase=SecondMain sims=2207 time=8007\r\n  [22/10/?] (pass)\r\n* [58/1541/?] (Island)\r\n  [56/656/?] (Arcane Sanctum)\r\nLOG (C): Play Island.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=16 turn=12 phase=SecondMain sims=2009 time=8005\r\n* [55/1999/?] (pass)\r\n  [21/10/?] (Nihil Spellbomb)\n\n**Cc:** melvinzh...@gmail.com  \n  **Labels:** Component-AI  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "June 15, 2014 05:17:59",
+      "body": "Is there a specific deck for which this is repeatable?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 15, 2014 05:25:34",
+      "body": "It looks like the above deck is doing it (It's not a 'real' deck really, just testing cards) - That Island was the only land played that game.\r\n\r\nI'll push the new cards added (may still need some editing) and see if you can perform the same with this deck:\r\n\r\n# 3 creatures\r\n4 Angel of Finality\r\n4 Leveler\r\n4 Solemn Simulacrum\r\n\r\n# 4 spells\r\n4 Morningtide\r\n4 Nihil Spellbomb\r\n4 Paradigm Shift\r\n4 Tormod's Crypt\r\n\r\n# 4 lands\r\n4 Arcane Sanctum\r\n4 Bojuka Bog\r\n4 Island\r\n4 Plains\r\n\r\n>",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "June 15, 2014 05:44:28",
+      "body": "Possibly the first 'new duel' played without changing the selected decks increases the chances? Not sure.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "June 15, 2014 06:11:49",
+      "body": "My current guess is that this test deck has a number of cards that make it easy to kill yourself, eg Leveller, Paradigm Shift.\r\n\r\nSo when making random moves you are more likely to kill yourself than win the game, thus many simulated plays end because a player killed himself, not due to the opponent's actions. This needs to be verified.\r\n\r\nIf true, plays that \"pass\" may being ranked higher as there isn't enough mana to kill yourself in the simulations.\r\n\r\nAfter all the goal of MTCS, is to find players where the AI wins more often.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 15, 2014 06:19:05",
+      "body": "Conjecture confirmed: in the first decision to pass, out of 3000 simulations, 11 is a regular loss, 2289 is lose due to drawing from an empty library.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 15, 2014 07:12:50",
+      "body": "That makes sense - But does look like the AI conceding :D\r\n\r\nHowever the previous examples didn't obviously contain self-killing cards though. Maybe through the simulations it was seeing another 'no-win' scenario.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "June 15, 2014 07:22:06",
+      "body": "It is an issue with using random moves in MTCS, sometimes there are moves you clearly will not make. During simulation all possible moves are treated equally. This works in most cases as the chance of instantly killing yourself with a single bad move is low.\r\n\r\nThe simulations also includes draws from a randomized library, so it would have drawn those cards if they exists in the deck.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 15, 2014 07:26:16",
+      "body": "I was referring to the first noticed instances.\r\n\r\nSo it looks like this pattern will appear in decks with little or no win condition, or with decks that can potentially kill yourself/make you lose.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "June 15, 2014 07:28:26",
+      "body": "Correct, I think the condition it that when making a random choice, is easier to randomly kill yourself than kill the opponent.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 15, 2014 07:37:32",
+      "body": "Confirmed by mirror-testing a pure wall deck - AI didn't like it.\r\n\r\nSo is this a bug? Maybe something to be aware of for randomly generated decks?",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "June 15, 2014 17:27:51",
+      "body": "What happened with a pure wall deck? \r\n\r\nI wouldn't consider this a bug, more of a limitation of the MTCS AI. The Minimax AI does fine for such decks right?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 16, 2014 03:39:38",
+      "body": "MCTS played it's first land then started discarding while other lands were in hand when playing a pure wall deck. Minimax plays as normal.\r\n\r\nWill test cards with Minimax from now on and only play 'real' decks with MCTS.\r\n\r\nI still love the fact that MCTS has a bit of a tantrum if it can't win :D\n\n**Status:** WontFix  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "June 16, 2014 03:45:22",
+      "body": "On the contrary, MTCS thinks it can win by passing, because it wrongly assumes that it is more likely that player will kill him/herself in subsequent turns.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 16, 2014 03:46:53",
+      "body": "Ahh I see, so more smug than childish ;)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on March 03, 2014 20:52:06_\n\nI should have grabbed a screenshot as well really to better show what's happening. But the AI chooses to not play a land and discards Ajani instead.\r\n\r\nMAGARENA GAME LOG\r\nCREATED ON 2014/03/03 12:41:41\r\nMAGARENA VERSION 1.48, JRE 1.7.0_51, OS Windows 7_6.1 x86\r\n\r\n\r\nLOG (P): ShawnieBoy may (no) take a mulligan.\r\nLOG (C): Computer may (no) take a mulligan.\r\nLOG (P): Play Plains.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=2 phase=FirstMain sims=7 time=6603\r\n  [60/3/?] (pass)\r\n* [67/4/?] (Plains)\r\nLOG (C): Play Plains.\r\nLOG (P): Play Plains.\r\nLOG (P): Tap Plains. Tap Plains. Pay {2}. Play Marble Diamond.\r\nLOG (P): Put Marble Diamond onto the battlefield. Marble Diamond enters the battlefield tapped.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=4 phase=FirstMain sims=5 time=7474\r\n* [61/4/?] (pass)\r\n  [13/1/?] (Plains)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=4 phase=SecondMain sims=8 time=6155\r\n* [31/4/?] (pass)\r\n  [48/4/?] (Plains)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=5 phase=Cleanup sims=5 time=6517\r\n* [91/1/?] (Ajani's Chosen)\r\n  [28/1/?] (Ajani's Chosen)\r\n  [11/1/?] (Farmstead)\r\n  [3/1/?] (Marble Diamond)\r\n  [80/1/?] (Marble Diamond)\r\nLOG (C): Computer discards a card (Ajani's Chosen).\r\nLOG (P): Play Plains.\r\nLOG (P): Tap Marble Diamond. Tap Plains. Tap Plains. Tap Plains. Pay {2}{W}{W}. Play Ajani's Chosen.\r\nLOG (P): Put Ajani's Chosen onto the battlefield.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=6 phase=FirstMain sims=11 time=6084\r\n* [10/7/?] (pass)\r\n  [4/4/?] (Plains)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=6 phase=SecondMain sims=17 time=6446\r\n  [5/8/?] (pass)\r\n* [7/9/?] (Plains)\r\nLOG (C): Play Plains.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 turn=6 phase=SecondMain sims=9 time=6970\r\n  [13/3/?] (pass)\r\n* [20/6/?] (Marble Diamond)\r\nLOG (C): Pay {2}. Tap Plains. Tap Plains. Play Marble Diamond.\r\nLOG (C): Put Marble Diamond onto the battlefield. Marble Diamond enters the battlefield tapped.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=496_",
+  "date": "2014-03-03T20:52:06",
+  "state": "closed",
+  "gid": 496,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=496",
+  "owner": ""
+}

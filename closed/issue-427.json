@@ -1,0 +1,54 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have two Eldrazi Spawn in play - one from previous turn, and one freshly manufactured by Awakening Zone, still with summoning sickness.\r\n2. Cast something (in my case, Crescendo of War) for which you would like to pay with Eldrazi Spawn What is the expected output? What do you see instead? Expected: both Eldrazi Spawn are highlighted, I may choose which to sacrifice. Would prefer to use the new one.\r\n\r\nActual: only one Eldrazi Spawn is highlighed, the one that came into play last turn. What version of the product are you using? On what operating system? Magarena 1.43 on Windows 7",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Game won't let choose which Eldrazi Spawn to sacrifice",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 11, 2014 10:45:34",
+      "body": "Determining unique permanents should also take into account canTap(), isEnchanted(), isEquipped(), isPaired() and hasCounters() [hasCounters() is possibly too vague, getCounters(MagicCounterType) is too specific - Kinda need to compare a getAllCounters(<MagicCounterType,int>)]",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "February 11, 2014 13:43:12",
+      "body": "isEnchanted and isEquipped could possibly be too vague for the same reason hasCounters is - it matters which enchantments/equipment is attached.\r\n\r\nOther possible features that may matter:\r\n- one or both are attacking/blocking;\r\n- one or both are targets of effects currently on the stack.\r\n- the two have sustained different amount of damage this turn (say, there's a \"deal X damage to all creatures\" on the stack - one of them will survive it and the other won't).\r\n- the two have different abilities (e.g. because of a previous effect along the lines of \"all creatures you control gain lifelink until end of turn\"; one got it, and the other came into play later and didn't get it).",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/104640281288211329710/)"
+    },
+    {
+      "date": "March 30, 2014 20:53:14",
+      "body": "Fixed in Revision bcbdb52efc3a Added mana_or_combat flag, the auto-fixing of this flag doesn't seem to be working properly.\r\n\r\nmana_or_combat sets each permanent with it as a unique mana source.\n\n**Status:** Fixed  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 30, 2014 21:01:41",
+      "body": "\"auto-fixing of this flag doesn't seem to be working properly\"\r\n\r\nWhat do you mean by \"auto-fixing\"? Could be a bug we need to look into?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 30, 2014 21:48:51",
+      "body": "The card property MANA_OR_COMBAT looks as though it should be automatically added to cards that are creatures and can produce mana (Magic.Model.MagicPermanent.java line 218) But I would assume it's not working, as there's a difference between having it on a script file, or it's not looking at tokens? - So yes, It's probably a bug.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 30, 2014 22:32:56",
+      "body": "Your right, the bug is that getManaId should call its own hasExcludeManaOrCombat() instead of cardDefinition.hasExcludeManaOrCombat(). Fixed in https://code.google.com/p/magarena/source/detail?r=09440d01dcbb3d97d2f6e28c9044fd0b8d7ccb0a",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on November 30, 2013 07:58:22_\n\nWhat steps will reproduce the problem? 1. Have two Eldrazi Spawn in play - one from previous turn, and one freshly manufactured by Awakening Zone, still with summoning sickness.\r\n2. Cast something (in my case, Crescendo of War) for which you would like to pay with Eldrazi Spawn What is the expected output? What do you see instead? Expected: both Eldrazi Spawn are highlighted, I may choose which to sacrifice. Would prefer to use the new one.\r\n\r\nActual: only one Eldrazi Spawn is highlighed, the one that came into play last turn. What version of the product are you using? On what operating system? Magarena 1.43 on Windows 7\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=427_",
+  "date": "2013-11-30T07:58:22",
+  "state": "closed",
+  "gid": 427,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=427",
+  "owner": "ShawnieBoyUK"
+}

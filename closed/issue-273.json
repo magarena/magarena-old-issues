@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "suggested by a. benedict balbuena via mailing list\r\n\r\nWhen [CARDNAME] e.t.b. put [NumberOfTokens] x/x [CREATURE] tokens with [ABILITY] into play\r\n\r\nWhen [CARDNAME] e.t.b. return target [PermanentType] you control to owner's hand",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "allow additional ETB abilities in card script",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "October 27, 2013 03:19:52",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on August 12, 2012 18:38:36_\n\nsuggested by a. benedict balbuena via mailing list\r\n\r\nWhen [CARDNAME] e.t.b. put [NumberOfTokens] x/x [CREATURE] tokens with [ABILITY] into play\r\n\r\nWhen [CARDNAME] e.t.b. return target [PermanentType] you control to owner's hand\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=273_",
+  "date": "2012-08-12T18:38:36",
+  "state": "closed",
+  "gid": 273,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=273",
+  "owner": "melvinzh...@gmail.com"
+}

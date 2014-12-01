@@ -1,0 +1,45 @@
+{
+  "status": "verified",
+  "body": "At the moment I can load, say \"Big_Golems.dec\", modify it and then save it which overwrites the original. I suggest that you cannot save dec files to the \"\\Magarena\\decks\" directory.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Prevent saving and overwriting preconstructed decks.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "December 11, 2013 11:54:06",
+      "body": "There is support for more folders in the decks folder - maybe having a \\decks\\preconstructed folder within it, keeping the default save folder in \\decks. Would help accidental overwriting.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "December 12, 2013 11:56:32",
+      "body": "**Status:** Started  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 13, 2013 04:58:49",
+      "body": "I have just published changes that recognize \"prebuilt\" directory in \"\\decks\" as reserved and will prevent user saving decks to this location. Also, it now asks for confirmation if user attempts to overwrite existing dec file.\r\n\r\nFor this to be effective the existing \"dec\" files will need to be moved into the \"\\decks\\prebuilt\" directory.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 15, 2013 08:08:28",
+      "body": "Fixed in build 1.45.SNAPSHOT-622 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/622/ ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on December 10, 2013 20:10:52_\n\nAt the moment I can load, say \"Big_Golems.dec\", modify it and then save it which overwrites the original. I suggest that you cannot save dec files to the \"\\Magarena\\decks\" directory.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=448_",
+  "date": "2013-12-10T20:10:52",
+  "state": "closed",
+  "gid": 448,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=448",
+  "owner": "lodici123"
+}

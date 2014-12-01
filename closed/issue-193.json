@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1.Cast Crimson Mage What is the expected output? What do you see instead? Crimson Mage's casting cost is R when the card is printed as 1R What version of the product are you using? On what operating system? 1.23 Please provide any additional information below.",
+  "author": "[djl...@gmail.com](https://code.google.com/u/106540123595614438785/)",
+  "title": "Crimson Mage's Casting Cost",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "March 25, 2012 02:15:09",
+      "body": "Thanks for reporting the bug. This was reported in issue 169 and fixed in revision f8eb582547e6 , which will be part of release 1.24 coming out later this month.\n\n**Status:** Duplicate  \n  **Mergedinto:** 169  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [djl...@gmail.com](https://code.google.com/u/106540123595614438785/) on March 25, 2012 03:38:02_\n\nWhat steps will reproduce the problem? 1.Cast Crimson Mage What is the expected output? What do you see instead? Crimson Mage's casting cost is R when the card is printed as 1R What version of the product are you using? On what operating system? 1.23 Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=193_",
+  "date": "2012-03-25T03:38:02",
+  "state": "closed",
+  "gid": 193,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=193",
+  "owner": ""
+}

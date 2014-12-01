@@ -1,0 +1,40 @@
+{
+  "status": "duplicate",
+  "body": "The gemstonemine is not spending tokens to produce mana",
+  "author": "[est...@gmail.com](https://code.google.com/u/112144615059920860021/)",
+  "title": "Gemstone mine bug",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "December 15, 2011 07:39:04",
+      "body": "This bug is already fixed. https://code.google.com/p/magarena/issues/detail?id=104#c0",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 15, 2011 07:41:21",
+      "body": "Ohhh sorry.... I only checked the open issues and didn't check the closed ones",
+      "author": "[est...@gmail.com](https://code.google.com/u/112144615059920860021/)"
+    },
+    {
+      "date": "December 15, 2011 08:37:05",
+      "body": "It's better to view Activity - https://code.google.com/p/magarena/updates/list",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 24, 2011 02:33:43",
+      "body": "No need to apologize est120. I appreciate any report even if it turns out to be duplicate or isn't a bug at all. It's the effort that counts :) \r\n\r\nDuplicate of issue 104\n\n**Status:** Duplicate  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [est...@gmail.com](https://code.google.com/u/112144615059920860021/) on December 15, 2011 02:03:58_\n\nThe gemstonemine is not spending tokens to produce mana\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=124_",
+  "date": "2011-12-15T02:03:58",
+  "state": "closed",
+  "gid": 124,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=124",
+  "owner": ""
+}

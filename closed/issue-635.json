@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "raised by PalladiaMors in the forum ( http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=157199#p157198 ).",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Import does not copy missing card images.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 06, 2014 04:36:57",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/5767d7341e9fcfd6ed56be500773db37caf27d4e .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 04, 2014 20:40:16_\n\nraised by PalladiaMors in the forum ( http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=157199#p157198 ).\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=635_",
+  "date": "2014-08-04T20:40:16",
+  "state": "closed",
+  "gid": 635,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=635",
+  "owner": "lodici123"
+}

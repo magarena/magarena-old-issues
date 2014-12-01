@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? General question: what is the timing of creatures going to graveyard during battle when dealing with multiple creatures on each side? Specifically, is all damage and spells resolved first, then everything dead hits graveyard, or do creatures go to graveyard in damage/effect order, thereby triggering effects on the remaining creatures?\r\n\r\nSpecific example:\r\nI attack with Phyrexian Crusader (bumped up to 3/3)\r\nAI blocks with Arcbound Slith with 2 counters and Arcbound Reclaimer with 3 counters. \r\n\r\nAS dies and goes to graveyard, triggering it's ability to put it's 2 counters onto AR, which then kills my PC. \r\n\r\nThus the timing question - is that allowable or should it have all happened first, then to graveyard?\r\n\r\nNext though, positive counters vs negative counters. AS had 2 positive counters, but was then hit by negative counters from PC. Is it like that (positive and negative) or do the negative cancel the positive immediately? If the former, it still had the positive counters to transfer elsewhere, but if the latter, then they would not be available. \r\n\r\nThanks What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "Timing question - going to graveyard",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 22, 2014 05:37:00",
+      "body": "first: all first strike damage is dealt, meaning the creatures get the damage marker, which, if it is higher than the creature's toughness, makes them die as a state-based effect.\r\n\r\nany triggered abilites resutling from creatures dying are put on the stack, but aren't resolved yet.\r\n\r\nsecond: normal damage is dealt. same as first strike damage.\r\n\r\ncombat damage step ends, end of combat step begins, stack resolves.\r\n\r\nsee: http://wiki.mtgsalvation.com/article/Combat_damage_step 510.5. If at least one attacking or blocking creature has first strike (see rule 702.7) or double strike (see rule 702.4) as the combat damage step begins, the only creatures that assign combat damage in that step are those with first strike or double strike. After that step, instead of proceeding to the end of combat step, the phase gets a second combat damage step. The only creatures that assign combat damage in that step are the remaining attackers and blockers that had neither first strike nor double strike as the first combat damage step began, as well as the remaining attackers and blockers that currently have double strike. After that step, the phase proceeds to the end of combat step. \r\n\r\n510.2. Second, all combat damage that's been assigned is dealt simultaneously. This turn-based action doesn't use the stack. No player has the chance to cast spells or activate abilities between the time combat damage is assigned and the time it's dealt.  \r\n\r\n510.3. Third, any abilities that triggered on damage being assigned or dealt go on the stack.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "June 14, 2014 16:54:39",
+      "body": "**Status:** Done  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on August 16, 2012 11:57:18_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? General question: what is the timing of creatures going to graveyard during battle when dealing with multiple creatures on each side? Specifically, is all damage and spells resolved first, then everything dead hits graveyard, or do creatures go to graveyard in damage/effect order, thereby triggering effects on the remaining creatures?\r\n\r\nSpecific example:\r\nI attack with Phyrexian Crusader (bumped up to 3/3)\r\nAI blocks with Arcbound Slith with 2 counters and Arcbound Reclaimer with 3 counters. \r\n\r\nAS dies and goes to graveyard, triggering it's ability to put it's 2 counters onto AR, which then kills my PC. \r\n\r\nThus the timing question - is that allowable or should it have all happened first, then to graveyard?\r\n\r\nNext though, positive counters vs negative counters. AS had 2 positive counters, but was then hit by negative counters from PC. Is it like that (positive and negative) or do the negative cancel the positive immediately? If the former, it still had the positive counters to transfer elsewhere, but if the latter, then they would not be available. \r\n\r\nThanks What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=277_",
+  "date": "2012-08-16T11:57:18",
+  "state": "closed",
+  "gid": 277,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=277",
+  "owner": ""
+}

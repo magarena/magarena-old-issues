@@ -1,0 +1,40 @@
+{
+  "status": "wontfix",
+  "body": "208 testDuel.setDifficulty(generalConfig.getStrengthDifficulty());      \r\n\r\n209 testDuel.setAIs(DEFAULT_AIS);\r\n\r\nline 209 is a little unnerving, like it could be using the default ai's even when a user specifies other ones. Just want to verify this isn't actually the case.\r\n\r\nI'd expect to see something like in the line above it, where it asks the generalConfig for the ai properties",
+  "author": "[nicolai.tesela](https://code.google.com/u/nicolai.tesela/)",
+  "title": "DeckStrCal.java",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "March 29, 2014 06:21:22",
+      "body": "I believe you were reading DeckStrengthViewer, that is always using MMABFast AI, this is for the in-game deck strength calculator.\r\n\r\nThe automated AI play testing (DeckStrCal) does\r\n  testDuel.setAIs(new MagicAI[]{ai1.getAI(), ai2.getAI()});\r\nwhere ai1 and ai2 are read in from --ai1 and --ai2 command line arguments.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 29, 2014 06:23:14",
+      "body": "We don't use the regular AIs for DeckStrengthViewer as that would take too long, in the regular AI each move takes up to level seconds to decide. For the deck strength viewer we use the \"fast\" version so that the search tree is limited in how many main phases it looks ahead.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 29, 2014 06:23:49",
+      "body": "**Status:** Invalid  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 29, 2014 06:24:23",
+      "body": "**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [nicolai.tesela](https://code.google.com/u/nicolai.tesela/) on March 29, 2014 21:14:52_\n\n208 testDuel.setDifficulty(generalConfig.getStrengthDifficulty());      \r\n\r\n209 testDuel.setAIs(DEFAULT_AIS);\r\n\r\nline 209 is a little unnerving, like it could be using the default ai's even when a user specifies other ones. Just want to verify this isn't actually the case.\r\n\r\nI'd expect to see something like in the line above it, where it asks the generalConfig for the ai properties\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=563_",
+  "date": "2014-03-29T21:14:52",
+  "state": "closed",
+  "gid": 563,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=563",
+  "owner": ""
+}

@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. play a round so the logbook has some messages\r\n2. go to menu Arena -> Reset game\r\n3. immediately move the cursor over the logbook icon (this might take some tries, but it helps (or rather not) that the icon is right under the reset menu item)\r\n\r\nResult:\r\nException from controller.runGame: Index: 2, Size: 0\r\njava.lang.IndexOutOfBoundsException: Index: 2, Size: 0\r\n\tat java.util.ArrayList.RangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat magic.ui.viewer.LogBookViewer.update(LogBookViewer.java:75)\r\n\tat magic.ui.GamePanel.showLogBook(GamePanel.java:266)\r\n\tat magic.ui.GamePanel$3.mouseEntered(GamePanel.java:139)",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Crash when game is reset and mouse is over logbook icon",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 05, 2011 00:32:41",
+      "body": "corrected summary\n\n**Summary:** Crash when game is reset and mouse is over logbook icon  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 05, 2011 03:28:54",
+      "body": "public void update() {\r\n\t\tfinal int maxWidth=getWidth()-175;\r\n\t\t\r\n\t\tmessagePanel.removeAll();\r\n\t\tint index=logBook.size()-1;\r\n\t\tboolean first=true;\r\n\t\tfor (int lines=MAX_LINES;lines>0&&index>=0;lines--,index--) {\r\n\t\t\t\r\n\t\t\tfinal MagicMessage message=logBook.get(index);\r\n\r\nlogBook.size() has the value from before the reset when index gets initialized. Then on the 2nd iteration in the above loop it returns zero and the crash occurs.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 08, 2011 06:06:01",
+      "body": "The problem is concurrent modifications in two separate places in the code. In revision 2c40ebbe1cfb I added some synchronization to resolve this issue.\r\n\r\nbeholder: can you check if the changes fixed the bug? I can't seem to cause the bug to occur at all.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 08, 2011 09:56:17",
+      "body": "I tried a lot of times but never had the crash again. I even got it to show me a log full of messages right after a reset (you have to be fast, hehe). I suppose that's where it would crash before your revision.\r\nThe log shows empty when the update method gets called again, no problem.\r\n\r\nThanks Melvin. Fixed.\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on September 05, 2011 15:31:46_\n\nWhat steps will reproduce the problem? 1. play a round so the logbook has some messages\r\n2. go to menu Arena -> Reset game\r\n3. immediately move the cursor over the logbook icon (this might take some tries, but it helps (or rather not) that the icon is right under the reset menu item)\r\n\r\nResult:\r\nException from controller.runGame: Index: 2, Size: 0\r\njava.lang.IndexOutOfBoundsException: Index: 2, Size: 0\r\n\tat java.util.ArrayList.RangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat magic.ui.viewer.LogBookViewer.update(LogBookViewer.java:75)\r\n\tat magic.ui.GamePanel.showLogBook(GamePanel.java:266)\r\n\tat magic.ui.GamePanel$3.mouseEntered(GamePanel.java:139)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=47_",
+  "date": "2011-09-05T15:31:46",
+  "state": "closed",
+  "gid": 47,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=47",
+  "owner": "BeHold...@gmail.com"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "wontfix",
+  "body": "What steps will reproduce the problem? 1. Have at least one creature on the battlefield under your control\r\n2. Play Fiend Hunter\r\n3. Try to target one of your own creatures with Fiend Hunter ability \"When Fiend Hunter enters the battlefield, you may exile another target creature.\"\r\n\r\nWhat is the expected output?\r\nFient Hunter should be able to target creatures under its owners control with its ablity, when it comes into play.\r\n\r\nWhat do you see instead?\r\nWhen the alility is activated, it doesn't allow the player to target one of his own creatures. What version of the product are you using? On what operating system? 1.41 on Windows 7",
+  "author": "[sagk...@gmail.com](https://code.google.com/u/113501647034314670939/)",
+  "title": "Fiend Hunter unable to target creatures under it's owners control",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "September 16, 2013 19:08:51",
+      "body": "This is due to the option \"Remove unusual target choices\". Try disabling that via the menu Arena -> Perferences\n\n**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [sagk...@gmail.com](https://code.google.com/u/113501647034314670939/) on September 16, 2013 23:20:19_\n\nWhat steps will reproduce the problem? 1. Have at least one creature on the battlefield under your control\r\n2. Play Fiend Hunter\r\n3. Try to target one of your own creatures with Fiend Hunter ability \"When Fiend Hunter enters the battlefield, you may exile another target creature.\"\r\n\r\nWhat is the expected output?\r\nFient Hunter should be able to target creatures under its owners control with its ablity, when it comes into play.\r\n\r\nWhat do you see instead?\r\nWhen the alility is activated, it doesn't allow the player to target one of his own creatures. What version of the product are you using? On what operating system? 1.41 on Windows 7\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=405_",
+  "date": "2013-09-16T23:20:19",
+  "state": "closed",
+  "gid": 405,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=405",
+  "owner": ""
+}

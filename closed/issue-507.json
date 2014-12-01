@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Cast Garruk, Caller of Beasts (4GG)\r\n2. use his +1 ability several turns\r\n3. use his -7 ability at 8 loyality counters (that's what I did)\r\n4. Cast a summon spell (paying the mana cost, not like Quicksilver Amulet or Elvish Piper)\r\n5. you'll not get the opportunity to search your library for a creature card What is the expected output? What do you see instead? I tried several summons, always the same outcome. The summons were:\r\nAgeless Entity, Ajani's Pridemate, Soul Warden What version of the product are you using? On what operating system? Linux Mint 16 (Petra), magarena 1.48.823 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). I'd like to, but google notes: Issue attachment storage quota exceeded. Please provide any additional information below. I uploaded the game.log to dropbox. It's the last game, way down to the eof. https://www.dropbox.com/s/lsz45xn7clkot64/game.log btw. Thanks alot for this magnificent piece of software.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Garruk, Caller of Beasts - Emblem does not trigger",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 13, 2014 05:07:35",
+      "body": "This issue was closed by revision 118bdb6b83c4 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 13, 2014 05:32:35",
+      "body": "Thanks for the bug report and the compliments. Bug fixed for next release.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 12, 2014 21:45:41_\n\nWhat steps will reproduce the problem? 1. Cast Garruk, Caller of Beasts (4GG)\r\n2. use his +1 ability several turns\r\n3. use his -7 ability at 8 loyality counters (that's what I did)\r\n4. Cast a summon spell (paying the mana cost, not like Quicksilver Amulet or Elvish Piper)\r\n5. you'll not get the opportunity to search your library for a creature card What is the expected output? What do you see instead? I tried several summons, always the same outcome. The summons were:\r\nAgeless Entity, Ajani's Pridemate, Soul Warden What version of the product are you using? On what operating system? Linux Mint 16 (Petra), magarena 1.48.823 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). I'd like to, but google notes: Issue attachment storage quota exceeded. Please provide any additional information below. I uploaded the game.log to dropbox. It's the last game, way down to the eof. https://www.dropbox.com/s/lsz45xn7clkot64/game.log btw. Thanks alot for this magnificent piece of software.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=507_",
+  "date": "2014-03-12T21:45:41",
+  "state": "closed",
+  "gid": 507,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=507",
+  "owner": ""
+}

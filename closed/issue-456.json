@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "I 'stole' a Helm of Kaldra and attached it to Memnarch. On the computer's next turn, he activated the equip and put it on one of his creatures.\r\n\r\nLog snippet\r\n\r\nLOG (P): Tap Island. Tap Swamp. Tap Swamp. Tap Swamp. Pay {3}{U}. Play activated ability of Memnarch.\r\nLOG (P): Gain control of target artifact (Helm of Kaldra).\r\nLOG (P): Tap Swamp. Tap Crumbling Necropolis. Pay {2}. Play activated ability of Helm of Kaldra.\r\nLOG (P): Attach Helm of Kaldra to target creature (Memnarch) you control.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1562 time=6004\r\n  [0/367/?] (pass)\r\n  [1/394/?] (Dragonskull Summit)\r\n* [1/403/?] (Dakmor Bat)\r\n  [1/398/?] (Helm of Kaldra)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1464 time=6001\r\n  [1/182/?] ()\r\n  [1/185/?] ()\r\n  [1/181/?] ()\r\n  [1/185/?] ()\r\n  [1/182/?] ()\r\n  [1/181/?] ()\r\n  [1/182/?] ()\r\n* [1/186/?] ()\r\nLOG (C): Pay {1}{B}. Tap Plains. Tap Swamp. Play Dakmor Bat.\r\nLOG (C): Put Dakmor Bat onto the battlefield.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1536 time=6002\r\n  [0/724/?] (pass)\r\n* [1/812/?] (Helm of Kaldra)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1532 time=6000\r\n  [1/215/?] ()\r\n  [1/222/?] ()\r\n  [1/218/?] ()\r\n* [1/225/?] ()\r\n  [1/217/?] ()\r\n  [1/217/?] ()\r\n  [1/218/?] ()\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1537 time=6002\r\n* [0/515/?] (Dakmor Bat)\r\n  [0/508/?] (Lowland Giant)\r\n  [0/514/?] (Returned Centaur)\r\nLOG (C): Pay {2}. Tap Akoum Refuge. Tap Swamp. Play activated ability of Helm of Kaldra.\r\nLOG (C): Attach Helm of Kaldra to target creature (Dakmor Bat) you control.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1621 time=6000\r\n  [0/782/?] (pass)\r\n* [0/839/?] (Helm of Kaldra)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1583 time=6002\r\n  [0/527/?] ()\r\n* [0/532/?] ()\r\n  [0/524/?] ()\r\nMCTS cached=0",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Memnarch gain control lasted until end of turn",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 02, 2014 03:54:00",
+      "body": "**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 02, 2014 17:13:50",
+      "body": "This issue was closed by revision ca68ec1f79f9 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on December 16, 2013 08:43:21_\n\nI 'stole' a Helm of Kaldra and attached it to Memnarch. On the computer's next turn, he activated the equip and put it on one of his creatures.\r\n\r\nLog snippet\r\n\r\nLOG (P): Tap Island. Tap Swamp. Tap Swamp. Tap Swamp. Pay {3}{U}. Play activated ability of Memnarch.\r\nLOG (P): Gain control of target artifact (Helm of Kaldra).\r\nLOG (P): Tap Swamp. Tap Crumbling Necropolis. Pay {2}. Play activated ability of Helm of Kaldra.\r\nLOG (P): Attach Helm of Kaldra to target creature (Memnarch) you control.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1562 time=6004\r\n  [0/367/?] (pass)\r\n  [1/394/?] (Dragonskull Summit)\r\n* [1/403/?] (Dakmor Bat)\r\n  [1/398/?] (Helm of Kaldra)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1464 time=6001\r\n  [1/182/?] ()\r\n  [1/185/?] ()\r\n  [1/181/?] ()\r\n  [1/185/?] ()\r\n  [1/182/?] ()\r\n  [1/181/?] ()\r\n  [1/182/?] ()\r\n* [1/186/?] ()\r\nLOG (C): Pay {1}{B}. Tap Plains. Tap Swamp. Play Dakmor Bat.\r\nLOG (C): Put Dakmor Bat onto the battlefield.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1536 time=6002\r\n  [0/724/?] (pass)\r\n* [1/812/?] (Helm of Kaldra)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1532 time=6000\r\n  [1/215/?] ()\r\n  [1/222/?] ()\r\n  [1/218/?] ()\r\n* [1/225/?] ()\r\n  [1/217/?] ()\r\n  [1/217/?] ()\r\n  [1/218/?] ()\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1537 time=6002\r\n* [0/515/?] (Dakmor Bat)\r\n  [0/508/?] (Lowland Giant)\r\n  [0/514/?] (Returned Centaur)\r\nLOG (C): Pay {2}. Tap Akoum Refuge. Tap Swamp. Play activated ability of Helm of Kaldra.\r\nLOG (C): Attach Helm of Kaldra to target creature (Dakmor Bat) you control.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1621 time=6000\r\n  [0/782/?] (pass)\r\n* [0/839/?] (Helm of Kaldra)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=1 turn=19 phase=FirstMain sims=1583 time=6002\r\n  [0/527/?] ()\r\n* [0/532/?] ()\r\n  [0/524/?] ()\r\nMCTS cached=0\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=456_",
+  "date": "2013-12-16T08:43:21",
+  "state": "closed",
+  "gid": 456,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=456",
+  "owner": ""
+}

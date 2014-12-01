@@ -1,0 +1,40 @@
+{
+  "status": "verified",
+  "body": "see src/magic/test/TestLifeUIBug.java for a test scenario",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "AI life reduced to -1287867 causes Next Duel button to disappear",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 01, 2014 17:31:01",
+      "body": "Player is unable to click the \"Next Duel\" button and proceed to the next game in the duel.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 01, 2014 22:51:46",
+      "body": "Thanks I will take a look.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 03, 2014 23:56:36",
+      "body": "fixed in https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/788/ .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on March 02, 2014 09:30:28_\n\nsee src/magic/test/TestLifeUIBug.java for a test scenario\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=494_",
+  "date": "2014-03-02T09:30:28",
+  "state": "closed",
+  "gid": 494,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=494",
+  "owner": "melvinzh...@gmail.com"
+}

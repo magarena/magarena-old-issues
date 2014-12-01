@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "If I have four lands out, that can produce multiple colors of mana, and play a 4 mana spell, the game makes me specify how I pay the first colored mana, then chooses the other 3 for me. It should be able to see that any ways of paying the mana result in all 4 lands being tapped.",
+  "author": "[georgeru...@gmail.com](https://code.google.com/u/115988881252246409393/)",
+  "title": "If there is only one way to pay mana, don't force user to choose",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 28, 2012 06:05:39",
+      "body": "Thank you for the report.\r\n\r\nI can reproduce this using the following setup:\r\n- have 2 x \"Rupture Spire\" (any color) and 1 x \"Arcane Sanctum\" (W/U/B)\r\n- cast \"Death Baron\" (1BB)\r\n* game makes you choose a land\r\n\r\nIt would be better if the code checks if mana cost equals mana available.\n\n**Status:** Accepted  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 29, 2012 03:32:40",
+      "body": "This issue was closed by revision 6e31eed92e07 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [georgeru...@gmail.com](https://code.google.com/u/115988881252246409393/) on January 21, 2012 12:41:57_\n\nIf I have four lands out, that can produce multiple colors of mana, and play a 4 mana spell, the game makes me specify how I pay the first colored mana, then chooses the other 3 for me. It should be able to see that any ways of paying the mana result in all 4 lands being tapped.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=143_",
+  "date": "2012-01-21T12:41:57",
+  "state": "closed",
+  "gid": 143,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=143",
+  "owner": ""
+}

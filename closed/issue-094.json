@@ -1,0 +1,74 @@
+{
+  "status": "verified",
+  "body": "When I play, I use left-arrow and key-arrow on my keyboard to move through different stages of the game. My options are set so that no step is skipped automatically.\r\nIf I open the Card Explorer, or the Preferences option, when I go back to the game the keys don't work anymore, and I have to use the mouse to click on the arrow. \r\nI am using version 1.19 on Linux Ubuntu 10.04. I play through Wine.\r\nNot a big issue, but worth notifying.\r\nThanks!",
+  "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)",
+  "title": "Preferences and Card Explorer disable arrow keyboard control",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 23, 2011 01:42:25",
+      "body": "Thanks for the report.\r\n\r\nI can not reproduce this issue on windows, so it could be linked to the use of Wine. I know you have to use Wine to be able to play the game (weird stuff), so maybe try using space and escape instead of the arrow keys?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "November 25, 2011 15:26:06",
+      "body": "I dont need Wine to play V1.19 on Ubuntu 11.10 but I had to convert the Magarena.sh to Unix format and it worked\r\n\r\nMaybe playing without Wine can solve the problem?",
+      "author": "[Suislide...@googlemail.com](https://code.google.com/u/109823435823693191845/)"
+    },
+    {
+      "date": "November 25, 2011 22:38:23",
+      "body": "Hi Suislide2k1, what do you mean by \"convert the Magarena.sh to Unix format\"? It should be able to work without any additional work on Unix, if not then it might be a omission in our build script. Do let us know what additional steps you had to take so that we can incorporate it into the build. Thanks!",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 25, 2011 23:52:09",
+      "body": "@Suislide2k1: on my pc (Ubuntu 10.04) Magarena 1.19 runs without wine, but it gets stuck after few moves. I opened a long ticket for that (#71), but there was no way to reproduce the problem and figure out what is wrong. That is why I'm using wine.",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "November 26, 2011 00:21:45",
+      "body": "Managed to reproduce the problem on my machine but for the Keywords menu instead. I tried with the Card Explorer and Preferences option but did not get the bug. Will start looking into it.\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 26, 2011 00:31:41",
+      "body": "Fixed with problem with keyboard shortcuts not working once you open the Keywords/Readme menu in rev f4c9250a8057. Not sure if this is the same bug as the one you are experiencing as you mentioned different menus (Card Explorer and Preferences) but do give it a try when 1.20b is posted.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 26, 2011 00:44:21",
+      "body": "Ok, I will give it a look, thanks!",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "December 02, 2011 06:08:07",
+      "body": "Magarena 1.20b seems to work perfectly on Linux! Without Wine, keyboards commands work smooth and no freeze so far. Good! :)",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "December 02, 2011 07:54:15",
+      "body": "@efrancese :\r\n\r\nThat's good to hear!\r\nI'll close this issue but does that mean we can close issue 71 too?\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 04, 2011 00:10:09",
+      "body": "Yes, everything seems to be working fine so far.",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [efranc...@gmail.com](https://code.google.com/u/103507307054111542324/) on November 14, 2011 22:16:58_\n\nWhen I play, I use left-arrow and key-arrow on my keyboard to move through different stages of the game. My options are set so that no step is skipped automatically.\r\nIf I open the Card Explorer, or the Preferences option, when I go back to the game the keys don't work anymore, and I have to use the mouse to click on the arrow. \r\nI am using version 1.19 on Linux Ubuntu 10.04. I play through Wine.\r\nNot a big issue, but worth notifying.\r\nThanks!\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=94_",
+  "date": "2011-11-14T22:16:58",
+  "state": "closed",
+  "gid": 94,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=94",
+  "owner": ""
+}

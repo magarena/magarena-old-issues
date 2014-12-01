@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "We have two types of abilities, 1) those that are represented in the ability flags of a permanent and 2) those are modify the card definition. \r\n\r\nOnly the first type can be modified by effects, the second type is fixed.\r\n\r\nMake it possible to alter the second type of abilities dynamically as well.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "allow all abilities to be used in \"given_ability\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 29, 2013 07:59:35",
+      "body": "implemented! now all abilities in card script can also be used in given_ability and in the lord ability.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on June 26, 2012 10:28:26_\n\nWe have two types of abilities, 1) those that are represented in the ability flags of a permanent and 2) those are modify the card definition. \r\n\r\nOnly the first type can be modified by effects, the second type is fixed.\r\n\r\nMake it possible to alter the second type of abilities dynamically as well.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=240_",
+  "date": "2012-06-26T10:28:26",
+  "state": "closed",
+  "gid": 240,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=240",
+  "owner": "melvinzh...@gmail.com"
+}

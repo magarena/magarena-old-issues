@@ -1,0 +1,54 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? I found none of the cards with \"search your library for...\" is implemented. eg. \"Primeval Titan\", \"Viridian Emissary\" What version of the product are you using? On what operating system? ver. 1.23",
+  "author": "[neoedmund](https://code.google.com/u/neoedmund/)",
+  "title": "\"search your library for...\" not implemented",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "March 16, 2012 23:59:42",
+      "body": "This is due to a limitation of the current AI as it cannot handle the large number of choices resulting from a \"search your library\" effect.\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 17, 2012 02:55:13",
+      "body": "Ok. At least those like \"search for a land\" is not so complicated I think.",
+      "author": "[neoedmund](https://code.google.com/u/neoedmund/)"
+    },
+    {
+      "date": "March 17, 2012 20:09:31",
+      "body": "Good point. We can probably implement searches that are limited to certain cards without affecting the AI.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 17, 2012 23:00:21",
+      "body": "This would also need some changes to the UI, as we have no way to choose cards from the library at the moment. Adding another icon below the graveyard/exile ones may be the easiest way.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "July 08, 2013 18:25:15",
+      "body": "this feature will boost green decks. \r\nas search for land is one of green's most potent power.",
+      "author": "[huanghon...@gmail.com](https://code.google.com/u/117260737072923055970/)"
+    },
+    {
+      "date": "August 26, 2013 02:32:47",
+      "body": "implemented and will be released as part of 1.41 (August release)\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [neoedmund](https://code.google.com/u/neoedmund/) on March 14, 2012 23:16:38_\n\nWhat steps will reproduce the problem? I found none of the cards with \"search your library for...\" is implemented. eg. \"Primeval Titan\", \"Viridian Emissary\" What version of the product are you using? On what operating system? ver. 1.23\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=185_",
+  "date": "2012-03-14T23:16:38",
+  "state": "closed",
+  "gid": 185,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=185",
+  "owner": ""
+}

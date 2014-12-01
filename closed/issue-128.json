@@ -1,0 +1,29 @@
+{
+  "status": "cantreproduce",
+  "body": "v1.21\r\n\r\ntafkad @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=78062#p78062",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Rancor cannot be cast",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 07, 2012 02:19:54",
+      "body": "I have no problem casting Rancor at all so I can not reproduce this issue.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 25, 2012 09:09:22",
+      "body": "Closing this as can not reproduce because nothing has been heard of the OP since.\n\n**Status:** CantReproduce  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on December 29, 2011 13:36:38_\n\nv1.21\r\n\r\ntafkad @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=78062#p78062\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=128_",
+  "date": "2011-12-29T13:36:38",
+  "state": "closed",
+  "gid": 128,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=128",
+  "owner": "melvinzh...@gmail.com"
+}

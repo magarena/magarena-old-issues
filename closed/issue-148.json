@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Hi,\r\n\r\nWhen I try to create a deck (new duel, create a deck, card explorer). I can't see the Add button, only the button Close is here.\r\n\r\nThank you very much for all your work!\r\n\r\nSimon",
+  "author": "[simon.fe...@gmail.com](https://code.google.com/u/101163342472104152966/)",
+  "title": "Impossible to create a deck with the GUI",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 28, 2012 05:38:19",
+      "body": "Thanks for the report.\r\n\r\nThe Card Explorer is only used to browse through all cards. After you have created a new duel, there's a \"Edit Deck\" button on the bottom right of the screen. That will lead to a screen where you can add and remove cards from the deck.\n\n**Status:** Done  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [simon.fe...@gmail.com](https://code.google.com/u/101163342472104152966/) on January 28, 2012 11:14:39_\n\nHi,\r\n\r\nWhen I try to create a deck (new duel, create a deck, card explorer). I can't see the Add button, only the button Close is here.\r\n\r\nThank you very much for all your work!\r\n\r\nSimon\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=148_",
+  "date": "2012-01-28T11:14:39",
+  "state": "closed",
+  "gid": 148,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=148",
+  "owner": ""
+}

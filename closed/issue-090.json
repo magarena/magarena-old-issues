@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Exception from controller.runGame: null\r\njava.lang.NullPointerException\r\n\tat magic.model.stack.MagicStack.hasActivationOnTop(MagicStack.java:101)\r\n\tat magic.model.condition.MagicSingleActivationCondition.accept(MagicSingleActivationCondition.java:17)\r\n\tat magic.model.event.MagicActivation.canPlay(MagicActivation.java:113)\r\n\tat magic.model.choice.MagicPlayChoice.addValidChoices(MagicPlayChoice.java:73)\r\n\tat magic.model.choice.MagicPlayChoice.getPlayerChoiceResults(MagicPlayChoice.java:120)\r\n\tat magic.ui.GameController.getPlayerNextEventChoiceResults(GameController.java:391)\r\n\tat magic.ui.GameController.executeNextEventWithChoices(GameController.java:402)\r\n\tat magic.ui.GameController.runGame(GameController.java:494)\r\n\tat magic.ui.GamePanel$9.run(GamePanel.java:241)\r\n\r\n\r\nThe same crash happens with Albino Troll after the choice to pay the echo cost is made. Seems related to having any trigger in combination with MagicRegenerationActivation.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Game crashes when Cadaverous Knight becomes blocked",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 05, 2011 02:27:39",
+      "body": "Forgot to add that when you regenerate Cadaverous Knight before it becomes blocked, the crash does not happen.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "November 05, 2011 06:04:25",
+      "body": "NPE was due to activation member variation of the item on the stack being null. This is possible since some items on the stack, such as triggers, do not have a corresponding MagicActivation. \r\n\r\nFixed in revision fb4426a487d0 by comparing the reference instead of getting the id as getting the id of the activation may fail if the activation is null.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on November 05, 2011 17:26:17_\n\nException from controller.runGame: null\r\njava.lang.NullPointerException\r\n\tat magic.model.stack.MagicStack.hasActivationOnTop(MagicStack.java:101)\r\n\tat magic.model.condition.MagicSingleActivationCondition.accept(MagicSingleActivationCondition.java:17)\r\n\tat magic.model.event.MagicActivation.canPlay(MagicActivation.java:113)\r\n\tat magic.model.choice.MagicPlayChoice.addValidChoices(MagicPlayChoice.java:73)\r\n\tat magic.model.choice.MagicPlayChoice.getPlayerChoiceResults(MagicPlayChoice.java:120)\r\n\tat magic.ui.GameController.getPlayerNextEventChoiceResults(GameController.java:391)\r\n\tat magic.ui.GameController.executeNextEventWithChoices(GameController.java:402)\r\n\tat magic.ui.GameController.runGame(GameController.java:494)\r\n\tat magic.ui.GamePanel$9.run(GamePanel.java:241)\r\n\r\n\r\nThe same crash happens with Albino Troll after the choice to pay the echo cost is made. Seems related to having any trigger in combination with MagicRegenerationActivation.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=90_",
+  "date": "2011-11-05T17:26:17",
+  "state": "closed",
+  "gid": 90,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=90",
+  "owner": "BeHold...@gmail.com"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "Magarena 1.26\r\nDebian Linux (Wheezy - testing)\r\nCPU - Core 2 Duo E6750\r\n\r\nI'm attacking with 2/1 flying Myr (Infect ability) and some 2 medium flyers. AI has 8 poison counters and only one flyer: the angel. I have no cards in hand. AI spends around 10 minutes running its \"randomized blocking algorithm\".\r\n\r\nA below average M:tG player would make the right blocking decision in seconds. Some kind of optimization would be greatly appreciated !",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "This blocking decision shouldn't take 10 minutes to figure out !",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 20, 2012 18:21:44",
+      "body": "Thanks for bringing this to our attention.\r\n\r\nOn default settings, the minimax AI looks 6 main phases ahead, that includes 3 combat phases. Therefore the AI has to simulate combat options for the current combat round and the next two combat rounds. Although the current combat round is simple, it has to simulate many different attacking and blocking options for the next two rounds, which may be very complicated, say in the case of a alpha strike, there are many blocking options to consider.\r\n\r\nOn the other hand, the AI should have been smarter and dynamically reduce the number of phases to look ahead. Ten minutes of waiting time is unacceptable. We will look into further optimizations.\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 21, 2012 03:38:17",
+      "body": "By the way, I'm using minimax AI on difficulty setting \"8\". I suspected it may be looking ahead, but it makes a bad impression in this case (from psychological standpoint).",
+      "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)"
+    },
+    {
+      "date": "June 21, 2012 22:17:20",
+      "body": "Btw, the monte carlo AI was specifically designed to avoid such problems. Do give it a try.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 31, 2013 23:54:08",
+      "body": "minimax has been fixed to use at most \"AI level\" seconds\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on June 21, 2012 03:39:51_\n\nMagarena 1.26\r\nDebian Linux (Wheezy - testing)\r\nCPU - Core 2 Duo E6750\r\n\r\nI'm attacking with 2/1 flying Myr (Infect ability) and some 2 medium flyers. AI has 8 poison counters and only one flyer: the angel. I have no cards in hand. AI spends around 10 minutes running its \"randomized blocking algorithm\".\r\n\r\nA below average M:tG player would make the right blocking decision in seconds. Some kind of optimization would be greatly appreciated !\n\n**Attachment:** [10minutes.jpg](http://code.google.com/p/magarena/issues/detail?id=233)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=233_",
+  "date": "2012-06-21T03:39:51",
+  "state": "closed",
+  "gid": 233,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=233",
+  "owner": ""
+}

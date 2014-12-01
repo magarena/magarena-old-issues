@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Create a new duel\r\n2. Load deck Fallen_Knights_60.dec\r\n\r\nWhat is the expected output?\r\nThe deck should be loaded or a warning should issued if the files is\r\ncorrupted.\r\n\r\nWhat do you see instead?\r\nMagarena crashes with java.lang.NumberFormatException What version of the product are you using? On what operating system? Magarena 1.25 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. The deck file is missing a the comment symbol (>) in the last line.",
+  "author": "[pablo.ca...@gmail.com](https://code.google.com/u/100883785716832971309/)",
+  "title": "Fallen_Knights_60.dec crash with NumberFormatException",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "May 16, 2012 19:53:41",
+      "body": "I forgot to mention. I am running Ubuntu 12.04 with OpenJDK 1.6.0 update 24",
+      "author": "[pablo.ca...@gmail.com](https://code.google.com/u/100883785716832971309/)"
+    },
+    {
+      "date": "May 16, 2012 23:13:11",
+      "body": "Thanks for reporting! The dec file was missing the '>' to indicate the start of a comment. I've just fixed that, going forward we will make the procedure for loading decks more robust.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [pablo.ca...@gmail.com](https://code.google.com/u/100883785716832971309/) on May 17, 2012 10:50:45_\n\nWhat steps will reproduce the problem? 1. Create a new duel\r\n2. Load deck Fallen_Knights_60.dec\r\n\r\nWhat is the expected output?\r\nThe deck should be loaded or a warning should issued if the files is\r\ncorrupted.\r\n\r\nWhat do you see instead?\r\nMagarena crashes with java.lang.NumberFormatException What version of the product are you using? On what operating system? Magarena 1.25 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. The deck file is missing a the comment symbol (>) in the last line.\n\n**Attachment:** [crash.log game.log](http://code.google.com/p/magarena/issues/detail?id=215)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=215_",
+  "date": "2012-05-17T10:50:45",
+  "state": "closed",
+  "gid": 215,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=215",
+  "owner": ""
+}

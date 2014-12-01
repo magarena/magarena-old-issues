@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "In description of its ability they can deal damage to player or creature instead of player only.\r\nAlso if marauders enchanted with Temporal Isolation their ability deals damage to player (dmg is not prevented).",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Keldon Marauders bug",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 03, 2011 05:16:59",
+      "body": "Thanks for spotting the bug.\r\n\r\nThe card correctly targets only a player but the description given by the game was wrong. I fixed that part.\r\n\r\nNow to the thing you describe with Temporal Isolation:\r\nI think this is correct behavior because the moment the \"when leaves play\" trigger triggers, the attachment is gone and so the damage is no longer prevented. I could be wrong though as timing in this game gets complicated. If you feel that the interaction between Keldon Marauders and Temporal Isolation is still wrong, please open a new issue for that part alone, so we can track one bug per issue.\r\n\r\nThank you.\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on December 02, 2011 20:42:27_\n\nIn description of its ability they can deal damage to player or creature instead of player only.\r\nAlso if marauders enchanted with Temporal Isolation their ability deals damage to player (dmg is not prevented).\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=109_",
+  "date": "2011-12-02T20:42:27",
+  "state": "closed",
+  "gid": 109,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=109",
+  "owner": ""
+}

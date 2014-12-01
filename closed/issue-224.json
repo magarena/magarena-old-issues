@@ -1,0 +1,29 @@
+{
+  "status": "cantreproduce",
+  "body": "Reported by jazevec:\r\n\r\nIf I try to equip an item to my creature, and an instant spell cast in response causes it to die, I will be stuck at \"select target creature to equip\" stage if I have no creatures left. Not completely stuck, but Undo is the only way, and it's basically cheating because I get my mana back.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Stuck at \"select target creature to equip\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 15, 2012 00:09:49",
+      "body": "An opponent should not get priority between paying the equipment cost, choosing the target and attaching the equipment. If an instant can be cast after the equipment cost is payed AND before the target for the equipment is chosen, that would be a bug. I can not get that to happen though.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "June 14, 2014 16:49:00",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on June 15, 2012 15:02:21_\n\nReported by jazevec:\r\n\r\nIf I try to equip an item to my creature, and an instant spell cast in response causes it to die, I will be stuck at \"select target creature to equip\" stage if I have no creatures left. Not completely stuck, but Undo is the only way, and it's basically cheating because I get my mana back.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=224_",
+  "date": "2012-06-15T15:02:21",
+  "state": "closed",
+  "gid": 224,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=224",
+  "owner": ""
+}

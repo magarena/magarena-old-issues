@@ -1,0 +1,64 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. download a database with all the cards. 2. 3. What is the expected output? What do you see instead? a larger set of cards to build decks that can be more complete. What version of the product are you using? On what operating system? Version 1.28, Windows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. even after the initial download of cards that the program asks some letters do not appear in my base cards as Borderland Ranger, Civic Wayfinder, Knight of theSkyward Eye, Sangrite Surge, Wild Swing, among outroas.\r\n\r\nemail contact b4mb4mbsb@gmail.com\r\nps: CONGRATULATIONS FOR THE PROGRAM! FANTASTIC",
+  "author": "[b4mb4m...@gmail.com](https://code.google.com/u/102408866163686074074/)",
+  "title": "Request for cards",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "July 31, 2012 14:24:09",
+      "body": "i forgot all this carts is from a Modern Format. i just found more 4 that does not have in the database.\r\nit is\r\n\r\nCurse of the Bloody Tome\r\nDampen Thought\r\nMemory Erosion\r\nDream Twist\r\n\r\nhugs guys",
+      "author": "[b4mb4m...@gmail.com](https://code.google.com/u/102408866163686074074/)"
+    },
+    {
+      "date": "August 02, 2012 17:41:11",
+      "body": "no answers??",
+      "author": "[b4mb4m...@gmail.com](https://code.google.com/u/102408866163686074074/)"
+    },
+    {
+      "date": "August 02, 2012 20:08:53",
+      "body": "Not a bug per se, these cards are not in the project. Each card has to be scripted and sometimes additional code has to be written to create the digital version of the card.\n\n**Summary:** Request for cards  \n  **Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 02, 2012 20:18:25",
+      "body": "because they were not in the program? is to create these letters and place? I could do this? the program and very good of you, but it really would be great if you could count on all of the magic cards, this would be perfect. everyone could test their decks, I'm loving it, but I miss these cards in order to let me complete deck. a hug to all of you.",
+      "author": "[b4mb4m...@gmail.com](https://code.google.com/u/102408866163686074074/)"
+    },
+    {
+      "date": "August 02, 2012 20:29:43",
+      "body": "Sure, we encourage users to script some of the simpler cards. See https://code.google.com/p/magarena/wiki/ImplementingCards You can find the current card scripts in Magarena/scripts folder\r\n\r\nMore complex cards have the \"requires_card_code\" in their script. This means they need Java code to implement their effect. See https://code.google.com/p/magarena/source/browse/#hg%2Fsrc%2Fmagic%2Fcard for examples.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 02, 2012 20:33:47",
+      "body": "I am not a programmer but I'll try to figure out how to make an idea until I had a card but did qnd tried to run the program it is not opened to remove. txt file with the text of the card he returned to work, I will try tomorrow to do some simple and as I notice you guys are going right.\r\n\r\nyou guys have another form of contact as a facebook or something.\r\n\r\nhugs!",
+      "author": "[b4mb4m...@gmail.com](https://code.google.com/u/102408866163686074074/)"
+    },
+    {
+      "date": "August 02, 2012 20:40:21",
+      "body": "If the program doesn't start with a new card, it usually means there is some error reading the new card script. In that case, you can check the Magarena/crash.log file to get some hint on what is the problem.\r\n\r\nFor card script problems, we recommend posting to our forum at http://www.slightlymagic.net/forum/viewforum.php?f=82&sid=a9a79c7a3ff97c17530cca3020302bcd There are a some discussion there about card scripting, for example http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=7206",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "October 27, 2013 03:22:42",
+      "body": "Please make card requests at http://www.firemind.ch/card_requests/new\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [b4mb4m...@gmail.com](https://code.google.com/u/102408866163686074074/) on August 01, 2012 01:11:34_\n\nWhat steps will reproduce the problem? 1. download a database with all the cards. 2. 3. What is the expected output? What do you see instead? a larger set of cards to build decks that can be more complete. What version of the product are you using? On what operating system? Version 1.28, Windows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. even after the initial download of cards that the program asks some letters do not appear in my base cards as Borderland Ranger, Civic Wayfinder, Knight of theSkyward Eye, Sangrite Surge, Wild Swing, among outroas.\r\n\r\nemail contact b4mb4mbsb@gmail.com\r\nps: CONGRATULATIONS FOR THE PROGRAM! FANTASTIC\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=269_",
+  "date": "2012-08-01T01:11:34",
+  "state": "closed",
+  "gid": 269,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=269",
+  "owner": ""
+}

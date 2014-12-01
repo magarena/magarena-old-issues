@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Joe on FB requested for the following cards:\r\nAncestral Recall\r\nArcane Denial\r\nFoil\r\nForce of will\r\nmana drain\r\nDaze\r\nIsochron Scepter",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Card request",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "February 02, 2012 08:34:48",
+      "body": "Ancestral Recall - added by revision 33d74096a0 Arcane Denial - we don't support 'at the beginning of the next turn's upkeep'\r\nFoil - we don't support discarding as an alternative cost\r\nForce of Will - we don't support life pay or exiling as an alternative cost\r\nMana Drain -  we don't have a mana pool\r\nDaze - we don't support returning a card as an alternative cost\r\nIsochron Scepter - we don't support the imprint mechanism\r\n\r\nOh how I wish we had support for alternative casting costs ...\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on December 29, 2011 13:23:34_\n\nJoe on FB requested for the following cards:\r\nAncestral Recall\r\nArcane Denial\r\nFoil\r\nForce of will\r\nmana drain\r\nDaze\r\nIsochron Scepter\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=126_",
+  "date": "2011-12-29T13:23:34",
+  "state": "closed",
+  "gid": 126,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=126",
+  "owner": "melvinzh...@gmail.com"
+}

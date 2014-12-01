@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "The following cubes are updated automatically (via the MakeFile I think) on each new release so should not be copied across from a previous version when importing...\r\nrelease/Magarena/mods/legacy_cube.txt \\\r\nrelease/Magarena/mods/extended_cube.txt \\\r\nrelease/Magarena/mods/standard_cube.txt \\\r\nrelease/Magarena/mods/modern_cube.txt",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Import incorrectly overwrites default cubes.",
+  "labels": [
+    "imported",
+    "Priority-High",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 10, 2014 23:46:26",
+      "body": "Also, I think it would be better if cubes were placed in a separate \"release/Magarena/cubes\" folder instead of lumping them in with the themes.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 10, 2014 23:53:28",
+      "body": "**Labels:** -Priority-Medium Priority-High  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 03:01:55",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/d2aa823bc1a5f1ebb2f5b231456390d7d4ab5896 .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 03:24:05",
+      "body": "\"Fixed\" status still appears as an Open issue. Try \"Done\".\n\n**Status:** Done  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 11, 2014 14:44:36_\n\nThe following cubes are updated automatically (via the MakeFile I think) on each new release so should not be copied across from a previous version when importing...\r\nrelease/Magarena/mods/legacy_cube.txt \\\r\nrelease/Magarena/mods/extended_cube.txt \\\r\nrelease/Magarena/mods/standard_cube.txt \\\r\nrelease/Magarena/mods/modern_cube.txt\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=647_",
+  "date": "2014-08-11T14:44:36",
+  "state": "closed",
+  "gid": 647,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=647",
+  "owner": "lodici123"
+}

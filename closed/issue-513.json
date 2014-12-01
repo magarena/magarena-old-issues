@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. cast Elvish Piper\r\n2. use Elvish Piper's ability, chose Clone or Progenitor Mimic\r\n3. Clone or Progenitor Mimic enter battlefield as 0/0 creature What is the expected output? What do you see instead? I would expect to get the choice to copy an existing creature, both ways if it's casted or put into play by Elvish Piper or Quicksilver Amulet. What version of the product are you using? On what operating system? Linux Mint 16, magarena 1.48.827 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Elvish Piper + Clone or Progenitor Mimic",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "March 16, 2014 23:44:48",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 525  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 13, 2014 21:33:29_\n\nWhat steps will reproduce the problem? 1. cast Elvish Piper\r\n2. use Elvish Piper's ability, chose Clone or Progenitor Mimic\r\n3. Clone or Progenitor Mimic enter battlefield as 0/0 creature What is the expected output? What do you see instead? I would expect to get the choice to copy an existing creature, both ways if it's casted or put into play by Elvish Piper or Quicksilver Amulet. What version of the product are you using? On what operating system? Linux Mint 16, magarena 1.48.827 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=513_",
+  "date": "2014-03-13T21:33:29",
+  "state": "closed",
+  "gid": 513,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=513",
+  "owner": ""
+}

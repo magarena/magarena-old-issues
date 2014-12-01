@@ -1,0 +1,24 @@
+{
+  "status": "fixed",
+  "body": "What steps will reproduce the problem? 1. Have Ivory Tower in play.\r\n2. Have less than 4 cards.\r\n3. Lose life.\r\n\r\nWhat is the expected output?\r\nNo effect (in accordance with [1]).\r\n\r\nWhat do you see instead?\r\nLosing life.\r\n\r\n[1] http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=382978",
+  "author": "[go.spam....@gmail.com](https://code.google.com/u/113385897513702662113/)",
+  "title": "Ivory Tower can damage owner",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 03, 2014 14:28:51",
+      "body": "Fixed in revision e44ba99cbea1\n\n**Status:** Fixed  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [go.spam....@gmail.com](https://code.google.com/u/113385897513702662113/) on September 03, 2014 10:54:22_\n\nWhat steps will reproduce the problem? 1. Have Ivory Tower in play.\r\n2. Have less than 4 cards.\r\n3. Lose life.\r\n\r\nWhat is the expected output?\r\nNo effect (in accordance with [1]).\r\n\r\nWhat do you see instead?\r\nLosing life.\r\n\r\n[1] http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=382978\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=677_",
+  "date": "2014-09-03T10:54:22",
+  "state": "closed",
+  "gid": 677,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=677",
+  "owner": "ShawnieBoyUK"
+}

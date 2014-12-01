@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "The card \"Kavu Predator\" is missing the trample ability. What version of the product are you using? On what operating system? 1.28 on WinXP SP3",
+  "author": "[Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/)",
+  "title": "Trample missing on \"Kavu Predator\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 16, 2012 08:52:14",
+      "body": "Because I don't want to open another issue, the card \"Benalish Lancer\" loses its first strike ability (if it got kicked) at the end of turn.",
+      "author": "[Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/)"
+    },
+    {
+      "date": "August 16, 2012 19:04:04",
+      "body": "This issue was closed by revision 36facb30d1aa .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 16, 2012 19:04:04",
+      "body": "This issue was closed by revision 84081cae01bf .",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 16, 2012 19:05:16",
+      "body": "Thanks for the reports, the bugs have been fixed. Please try to open new issue for each bug, it helps us to have a simple mapping between issue numbers and bugs.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/) on August 16, 2012 19:31:54_\n\nThe card \"Kavu Predator\" is missing the trample ability. What version of the product are you using? On what operating system? 1.28 on WinXP SP3\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=278_",
+  "date": "2012-08-16T19:31:54",
+  "state": "closed",
+  "gid": 278,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=278",
+  "owner": ""
+}

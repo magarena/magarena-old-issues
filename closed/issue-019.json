@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "see http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3700",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "work out a list of cards to add to the game",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "May 29, 2011 05:35:06",
+      "body": "also see http://www.findmagiccards.com/Top100/Cards.html http://magic.tcgplayer.com/strategy/hot_100_standard.asp",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 31, 2011 20:34:16",
+      "body": "look at cards commonly used in http://www.wizards.com/Magic/Magazine/Archive.aspx?tag=dailydeck&description=Daily%20Deck",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 01, 2011 02:07:04",
+      "body": "This issue was closed by revision fbc54d22b832 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 27, 2011 23:18:40_\n\nsee http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3700\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=19_",
+  "date": "2011-05-27T23:18:40",
+  "state": "closed",
+  "gid": 19,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=19",
+  "owner": "melvinzh...@gmail.com"
+}

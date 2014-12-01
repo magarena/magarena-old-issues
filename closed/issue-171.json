@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Without the additional null check, I got the following NPEs during self mode testing.\r\n\r\nTesting done with revision 38b1b29c21fdb692803bad50f85a469696011ec3 (before the addition of the null check in getPowerToughness).",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "NPEs from changes to MagicPermanent.getPowerToughness to handle last known information",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 01, 2012 07:13:35",
+      "body": "This issue was closed by revision b6caf18b4f64 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on February 28, 2012 10:06:33_\n\nWithout the additional null check, I got the following NPEs during self mode testing.\r\n\r\nTesting done with revision 38b1b29c21fdb692803bad50f85a469696011ec3 (before the addition of the null check in getPowerToughness).\n\n**Attachment:** [crash.log](http://code.google.com/p/magarena/issues/detail?id=171)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=171_",
+  "date": "2012-02-28T10:06:33",
+  "state": "closed",
+  "gid": 171,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=171",
+  "owner": "melvinzh...@gmail.com"
+}

@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "like \"Ajani Goldmane\", \"Jace, the Mind Sculptor\"\r\nthey are new types.\r\n\r\njava.lang.RuntimeException: No corresponding MagicType for Planeswalker\r\n\tat magic.model.MagicType.getType(MagicType.java:38)",
+  "author": "[neoedmund](https://code.google.com/u/neoedmund/)",
+  "title": "Planeswalker not implemented",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 16, 2012 23:35:53",
+      "body": "Added the \"Planeswalker\" card type in revision 616d2f6e619d , though we have no plans to add support for planeswalker as the current AI is not able to deal with the increase in attacking options brought about by the addition of planeswalkers.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [neoedmund](https://code.google.com/u/neoedmund/) on March 15, 2012 01:27:16_\n\nlike \"Ajani Goldmane\", \"Jace, the Mind Sculptor\"\r\nthey are new types.\r\n\r\njava.lang.RuntimeException: No corresponding MagicType for Planeswalker\r\n\tat magic.model.MagicType.getType(MagicType.java:38)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=188_",
+  "date": "2012-03-15T01:27:16",
+  "state": "closed",
+  "gid": 188,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=188",
+  "owner": ""
+}

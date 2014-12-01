@@ -1,0 +1,29 @@
+{
+  "status": "cantreproduce",
+  "body": "sponeta @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=84303#p84294 writes:\r\n\r\nLegacy's Allure got confused with Gatekeeper of Malakir. I had two counters on Legacy's Allure, yet I could not target Gatekeeper of Malakir. Maybe something to do with the kicker cost? However, the bug persisted even after adding more counters on Legacy's Allure.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Legacy's Allure unable to target Gatekeeper of Malakir",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 05, 2012 08:05:46",
+      "body": "I can't reproduce this.\r\nNo matter if the kicker cost was paid or not, I was able to target and gain control of Gatekeeper of Malakir.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 29, 2012 20:31:00",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on March 05, 2012 23:35:14_\n\nsponeta @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=84303#p84294 writes:\r\n\r\nLegacy's Allure got confused with Gatekeeper of Malakir. I had two counters on Legacy's Allure, yet I could not target Gatekeeper of Malakir. Maybe something to do with the kicker cost? However, the bug persisted even after adding more counters on Legacy's Allure.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=180_",
+  "date": "2012-03-05T23:35:14",
+  "state": "closed",
+  "gid": 180,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=180",
+  "owner": "melvinzh...@gmail.com"
+}

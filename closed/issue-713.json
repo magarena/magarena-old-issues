@@ -1,0 +1,44 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. I have four lands in play, all untapped: Daskslick Shores, Drowned Catacombs, Island, Swamp.\r\n2. I have Skinrender in hand. What is the expected output? What do you see instead? Expected: Skinrender should be highlighted, and I should be able to play it.\r\n\r\nActual: Skinrender is not highlighted, and I am unable to play it, even though there are enough lands to pay the cost.\r\n\r\nIn case it helps, I also have Venser, Shaper Savant in hand, and this one is highlighted and playable.\r\n\r\nIt's definitely my turn, as I've just played an Island. What version of the product are you using? On what operating system? Magarena 1.54 on Windows 7",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/104640281288211329710/)",
+  "title": "Can't play Skinrender even though have enough lands",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "October 26, 2014 09:45:45",
+      "body": "In another game (with the same deck), I have Nekrataal that is unplayable in the same way. Nekrataal and Skinrender have the same cost (which is probably a coincidence), and both require a target creature when they come into play. May there be some problem with calculating the eligibility of a card based on the available targets?\r\n\r\nIn both cases, there were in fact creatures in play that Skinrender and Nekrataal could target. And in any case, they should be playable even if there are no available targets. For them, having a target is not a precondition, but an effect of comping into play.",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/104640281288211329710/)"
+    },
+    {
+      "date": "October 26, 2014 09:56:03",
+      "body": "New development: Nekrataal became playable once I got the second Swamp in play. So the problem is with Daskslick Shores and Drowned Catacombs not considered for paying Black mana cost.",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/104640281288211329710/)"
+    },
+    {
+      "date": "October 29, 2014 08:09:14",
+      "body": "Thanks for the bug report!\r\n\r\nI've had a look at the cards involved and recreated the board state for the player, and not been able to duplicate this bug. The mana producing effect of the lands is the same for other multi-color mana producing permanents, so would show up with them also. (But doesn't). Very strange.\r\n\r\nHowever, I'm suspecting that it could be due to the \"allow only sensible choices\" option in Preferences -> Gameplay -> General. This is on by default I think, but uses the AI targeting restrictions on the player. It's possible this is causing the issue, but that wouldn't explain the Nekrataal becoming playable after playing another swamp...\r\n\r\nI'd recommend turning it off, to more closely follow a RL game of magic (able to destroy own permanents etc.) And look into getting it set off as default.\r\n\r\nAs a side note, Magarena has now moved to github and can be found at http://magarena.github.io/ With the issues page being here https://github.com/magarena/magarena/issues I'll open an issue there for better visibility.\r\n\r\nIf you discover this issue again, sending a game log there would be really helpful (Magarena/logs/game.log), in case there's other cards/game-states that could be causing the issue.\r\n\r\nThanks again for the feedback :)\n\n**Status:** CantReproduce  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "October 29, 2014 22:07:14",
+      "body": "I definitely had \"Allow only sensible choices\" option unchecked. I kind of make a point of unchecking it whenever I install a new version, ever since it was named \"Allow unusual choices\" (what fun would it be if I could only make usual choices?)",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/104640281288211329710/)"
+    },
+    {
+      "date": "October 30, 2014 05:51:22",
+      "body": "I never have it on either...\r\n\r\nIn that case, the only other option I can think of, is that you were in a phase where you didn't have priority, or the ability to cast a sorcery (Venser was able to be played, but not Skinrender - Venser has flash), something on the stack etc.\r\n\r\nWithout a game log, it's purely guesswork.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/104640281288211329710/) on October 26, 2014 23:59:39_\n\nWhat steps will reproduce the problem? 1. I have four lands in play, all untapped: Daskslick Shores, Drowned Catacombs, Island, Swamp.\r\n2. I have Skinrender in hand. What is the expected output? What do you see instead? Expected: Skinrender should be highlighted, and I should be able to play it.\r\n\r\nActual: Skinrender is not highlighted, and I am unable to play it, even though there are enough lands to pay the cost.\r\n\r\nIn case it helps, I also have Venser, Shaper Savant in hand, and this one is highlighted and playable.\r\n\r\nIt's definitely my turn, as I've just played an Island. What version of the product are you using? On what operating system? Magarena 1.54 on Windows 7\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=713_",
+  "date": "2014-10-26T23:59:39",
+  "state": "closed",
+  "gid": 713,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=713",
+  "owner": "ShawnieBoyUK"
+}

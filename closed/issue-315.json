@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "> - Regeneration takes WAY too long for the AI to use at times\r\n\r\nRegen using the same timing as Pump activated ability. Do you see the same issue with pump abilities?\r\n\r\nYes. And both abilities are activated at inappropriate as well as appropriate times. Sometimes the AI will not activate them when it would clearly make sense to, like not activating regen when it could and just letting a creature get killed. I tested a deck with Narstad Scrappers and the computer activated its pump just like it does with Odious Trow's regen. During its second main phase (when activating these abilities would be generally pointless), in response to unrelated spells on the stack, etc. And every time it takes forever to activate.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "regen and pump abilities takes very long for AI to use at times",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 29, 2013 17:00:09",
+      "body": "phyrexian prowler pumped itself during my blocking phase when it was not being used, wasting a counter -- Huggybaby @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=108647#p108647",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 02, 2013 23:04:50",
+      "body": "AI speed issues have been fixed.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on January 02, 2013 10:29:43_\n\n> - Regeneration takes WAY too long for the AI to use at times\r\n\r\nRegen using the same timing as Pump activated ability. Do you see the same issue with pump abilities?\r\n\r\nYes. And both abilities are activated at inappropriate as well as appropriate times. Sometimes the AI will not activate them when it would clearly make sense to, like not activating regen when it could and just letting a creature get killed. I tested a deck with Narstad Scrappers and the computer activated its pump just like it does with Odious Trow's regen. During its second main phase (when activating these abilities would be generally pointless), in response to unrelated spells on the stack, etc. And every time it takes forever to activate.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=315_",
+  "date": "2013-01-02T10:29:43",
+  "state": "closed",
+  "gid": 315,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=315",
+  "owner": "melvinzh...@gmail.com"
+}

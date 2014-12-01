@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "hong yie @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=10323&start=105#p131258 suggested\r\n\r\nhow to script \"discard a creature card:...\" as a cost of an ability?",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "allow discard a creature card as cost",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "June 14, 2014 17:11:57",
+      "body": "**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 15, 2013 17:37:36_\n\nhong yie @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=10323&start=105#p131258 suggested\r\n\r\nhow to script \"discard a creature card:...\" as a cost of an ability?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=404_",
+  "date": "2013-09-15T17:37:36",
+  "state": "closed",
+  "gid": 404,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=404",
+  "owner": "melvinzh...@gmail.com"
+}

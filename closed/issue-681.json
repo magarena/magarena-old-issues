@@ -1,0 +1,35 @@
+{
+  "status": "fixed",
+  "body": "Currently when a choice is displayed the associated card image is displayed in a popup only if the mouse cursor is over the space used by the actionButton component (top right area). It should be displayed when the mouse cursor is over any part of the choice panel so that you can easily refer to the card before making a choice.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Increase card popup hotspot area associated with a choice.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 06, 2014 03:01:48",
+      "body": "To test, run TestMorph and select Backslide.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 07, 2014 00:54:03",
+      "body": "fixed for PlayChoicePanel in https://bitbucket.org/lodici/magarena/commits/3a66b91a92b9ab9b922cae7c8a3f9762e24774e0 .\r\n\r\nStill need to test and possible apply similar fix to other choice panels (see https://groups.google.com/forum/#!topic/magarena/J8DkF7XzV1g ).\n\n**Status:** Started  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 07, 2014 09:58:12",
+      "body": "added update that should show associated card as popup for any variation of the choice panels, https://bitbucket.org/lodici/magarena/commits/d35e261e3dc98d72cb8c9a7d6d03932b80c8b090 .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 06, 2014 18:00:15_\n\nCurrently when a choice is displayed the associated card image is displayed in a popup only if the mouse cursor is over the space used by the actionButton component (top right area). It should be displayed when the mouse cursor is over any part of the choice panel so that you can easily refer to the card before making a choice.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=681_",
+  "date": "2014-09-06T18:00:15",
+  "state": "closed",
+  "gid": 681,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=681",
+  "owner": "lodici123"
+}

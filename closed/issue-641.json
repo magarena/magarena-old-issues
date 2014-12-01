@@ -1,0 +1,25 @@
+{
+  "status": "invalid",
+  "body": "This only really applies if the setting \"Popup card image using mouse wheel...\" is true in which case when the mouse cursor moves over a face down morph card",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Show morph card on mouse over.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "August 07, 2014 13:43:24",
+      "body": "**Status:** Invalid  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 08, 2014 04:32:44_\n\nThis only really applies if the setting \"Popup card image using mouse wheel...\" is true in which case when the mouse cursor moves over a face down morph card\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=641_",
+  "date": "2014-08-08T04:32:44",
+  "state": "closed",
+  "gid": 641,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=641",
+  "owner": "lodici123"
+}

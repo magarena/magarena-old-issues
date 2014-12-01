@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Currently the default behaviour in the card explorer/editor is that as the mouse cursor moves over an entry in the card pool it should immediately display the associated image. I cannot believe anyone finds this useful since the trigger is based on the card pool row height of about 18 pixels which means a slight nudge of the mouse and the image changes. It is also a great way to fill up the image cache without even trying. Personally, I think this behaviour should be removed but at the very least the \"Preview card on select only\" option should be on by default - the current default behaviour can actually be emulated by keeping the mouse button pressed and dragging the mouse.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Make \"Preview card on select only\" on by default.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 15, 2014 06:02:01",
+      "body": "I'd agree with switching the default setting, however I've not had an issue with the issue cache while having -Xms512M -Xmx1024M.\r\n\r\nIt could be that I've just got used to having it on mouse-over, even with 1920x1200 resolution (Which we know is nowhere near the highest resolution being used). However there have been times when I've found it to be annoying :)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 19, 2014 03:42:09",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/97f8b14b1a10005d5f602d9c941238f42bbde361 .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 15, 2014 16:04:24_\n\nCurrently the default behaviour in the card explorer/editor is that as the mouse cursor moves over an entry in the card pool it should immediately display the associated image. I cannot believe anyone finds this useful since the trigger is based on the card pool row height of about 18 pixels which means a slight nudge of the mouse and the image changes. It is also a great way to fill up the image cache without even trying. Personally, I think this behaviour should be removed but at the very least the \"Preview card on select only\" option should be on by default - the current default behaviour can actually be emulated by keeping the mouse button pressed and dragging the mouse.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=653_",
+  "date": "2014-08-15T16:04:24",
+  "state": "closed",
+  "gid": 653,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=653",
+  "owner": "lodici123"
+}

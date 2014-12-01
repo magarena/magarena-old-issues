@@ -1,0 +1,29 @@
+{
+  "status": "invalid",
+  "body": "There's something in the ChangeCountersAction or Meadowboon's groovy which makes 'when the target of spell or ability' trigger. Even though it's putting counters on all the creatures target player controls, each creature isn't being targeted.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Meadowboon targets players not creatures",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "April 21, 2014 16:40:26",
+      "body": "Ok, nope, my bad - My generic 'when the target of spell or ability' is doing it. Back to the drawing board.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 21, 2014 16:43:39",
+      "body": "**Status:** Invalid  \n  **Labels:** -Type-Defect  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on April 22, 2014 07:34:29_\n\nThere's something in the ChangeCountersAction or Meadowboon's groovy which makes 'when the target of spell or ability' trigger. Even though it's putting counters on all the creatures target player controls, each creature isn't being targeted.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=590_",
+  "date": "2014-04-22T07:34:29",
+  "state": "closed",
+  "gid": 590,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=590",
+  "owner": "ShawnieBoyUK"
+}

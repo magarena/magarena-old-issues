@@ -1,0 +1,35 @@
+{
+  "status": "wontfix",
+  "body": "What steps will reproduce the problem? 1. cast Kaalia of the Vast\r\n2. next turn attack with Kaalia of the Vast + 1\r\n3. when promted put Firemane Avenger onto battlefield tapped and attacking\r\n4. Battalion does not trigger What is the expected output? What do you see instead? Batalion reads: WHENEVER this creature and at least two other creatures attack...\r\n\r\nwell, there are three creatures, and they're attacking, and we're still in the declare attack step. Battalion does not read: whenever this creature and at least two other creatures declared attacker... so I would expect Battalion to trigger in that specific situation.\r\n\r\nI was searching a clarification for it, but turned up with nothing substantial. So my guess here is: Battalion is triggering once the conditions are met What version of the product are you using? On what operating system? linux Zorin 8, magarena 1.48.918",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Battalion: when exactly does it trigger?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "March 29, 2014 04:25:45",
+      "body": "\"The verb \"to attack\" means \"is declared as an attacker\"; these abilities can only trigger from the turn-based action of declaring attackers as the declare attackers step begins, and creatures that are put into play attacking never count.\" via http://www.mtgsalvation.com/forums/magic-fundamentals/magic-rulings/magic-rulings-archives/536967-battalion-and-brimaz-king-of-oreskos\n\n**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 29, 2014 04:49:35",
+      "body": "That explains it. Thanks. Didn't find it myself...",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 29, 2014 05:06:45",
+      "body": "I've should have looked here. Now I'm convinced entirely... http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=338444 The creature card is already tapped and attacking as it's put onto the battlefield. Any abilities that trigger when a creature becomes tapped or when a creature attacks won't trigger for that card.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 29, 2014 19:17:38_\n\nWhat steps will reproduce the problem? 1. cast Kaalia of the Vast\r\n2. next turn attack with Kaalia of the Vast + 1\r\n3. when promted put Firemane Avenger onto battlefield tapped and attacking\r\n4. Battalion does not trigger What is the expected output? What do you see instead? Batalion reads: WHENEVER this creature and at least two other creatures attack...\r\n\r\nwell, there are three creatures, and they're attacking, and we're still in the declare attack step. Battalion does not read: whenever this creature and at least two other creatures declared attacker... so I would expect Battalion to trigger in that specific situation.\r\n\r\nI was searching a clarification for it, but turned up with nothing substantial. So my guess here is: Battalion is triggering once the conditions are met What version of the product are you using? On what operating system? linux Zorin 8, magarena 1.48.918\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=561_",
+  "date": "2014-03-29T19:17:38",
+  "state": "closed",
+  "gid": 561,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=561",
+  "owner": ""
+}

@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "We have to use the com.apple.eawt.ApplicationListener interface to do this properly.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "application exit through CMD-Q or menu is not captured on Mac",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 15, 2012 05:06:02",
+      "body": "This issue was closed by revision ed13fed05dbd .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 15, 2012 05:07:08",
+      "body": "Untested since I can not get my hands on a Mac until February.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 13, 2012 06:26:57",
+      "body": "I had a chance to test this and unfortunately it results in a crash:\r\n\r\nCRASH REPORT FOR MAGARENA THREAD Thread[AWT-EventQueue-0,6,main]\r\nCREATED ON 2012/02/12 12:48:38\r\nMAGARENA VERSION 1.22, JRE 1.6.0_29, OS Mac OS X_10.6.8 x86_64\r\n\r\nException from controller.runGame: null\r\njava.lang.reflect.UndeclaredThrowableException\r\n    at $Proxy0.handleQuit(Unknown Source)\r\n    at com.apple.eawt._AppEventLegacyHandler$7.dispatchEvent(_AppEventLegacyHandler.java:146)\r\n    at com.apple.eawt._AppEventLegacyHandler.sendEventToEachListenerUntilHandled(_AppEventLegacyHandler.java:168)\r\n    at com.apple.eawt._AppEventLegacyHandler.handleQuitRequestWith(_AppEventLegacyHandler.java:144)\r\n    at com.apple.eawt._AppEventHandler$_QuitDispatcher.performUsing(_AppEventHandler.java:387)\r\n    at com.apple.eawt._AppEventHandler$_QuitDispatcher.performUsing(_AppEventHandler.java:380)\r\n    at com.apple.eawt._AppEventHandler$_AppEventDispatcher$1.run(_AppEventHandler.java:489)\r\n    at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:209)\r\n    at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:677)\r\n    at java.awt.EventQueue.access$000(EventQueue.java:85)\r\n    at java.awt.EventQueue$1.run(EventQueue.java:638)\r\n    at java.awt.EventQueue$1.run(EventQueue.java:636)\r\n    at java.security.AccessController.doPrivileged(Native Method)\r\n    at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)\r\n    at java.awt.EventQueue.dispatchEvent(EventQueue.java:647)\r\n    at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)\r\n    at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)\r\n    at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)\r\n    at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)\r\n    at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)\r\n    at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)\r\nCaused by: java.lang.IllegalAccessException: Class magic.data.OSXAdapter can not access a member of class magic.ui.MagicFrame with modifiers \"private\"\r\n    at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:65)\r\n    at java.lang.reflect.Method.invoke(Method.java:588)\r\n    at magic.data.OSXAdapter.callTarget(OSXAdapter.java:170)\r\n    at magic.data.OSXAdapter.invoke(OSXAdapter.java:181)\r\n    ... 21 more\n\n**Status:** Accepted  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "June 07, 2013 19:00:21",
+      "body": "This issue was closed by revision d5e7b1e8db53 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on December 30, 2011 23:13:31_\n\nWe have to use the com.apple.eawt.ApplicationListener interface to do this properly.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=133_",
+  "date": "2011-12-30T23:13:31",
+  "state": "closed",
+  "gid": 133,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=133",
+  "owner": "BeHold...@gmail.com"
+}

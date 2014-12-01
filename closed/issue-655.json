@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Cast Snapcaster Mage\r\n2. Select card drawing instant\r\n3. Multiple copies put on stack instead of one\r\n4. Interestingly, does not happen for direct damage instants What is the expected output? What do you see instead? When you flashback a spell, should only get one copy of that spell. Instead, Magarena had FOUR copies fire off. What version of the product are you using? On what operating system? 1.51 on Windows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). (C): Pay {1}{U}. Tap Steam Vents. Tap Steam Vents. Play Snapcaster Mage.\r\n(C): Put Snapcaster Mage onto the battlefield.\r\n(C): Mini Max may (yes) cast target instant or sorcery card (Reach Through Mists) from his or her graveyard, then exile it. Pay {U}. Tap Breeding Pool. Cast Reach Through Mists.\r\n(C): Mini Max draws a card.\r\n(C): Mini Max draws a card.\r\n(C): Mini Max draws a card.\r\n(C): Mini Max draws a card. Please provide any additional information below.",
+  "author": "[ARashe...@gmail.com](https://code.google.com/u/111666314264317243073/)",
+  "title": "FOUR copies of spell when flashed back",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 15, 2014 09:57:42",
+      "body": "Hi,\r\n\r\nI've not been able to replicate this by casting from the player or AI. It could be that there are existing permanents on the battlefield that trigger on either an instant being cast, or an Arcane spell. (Unfortunately not tested on version 1.51)\r\n\r\nIf not, then maybe an update to version 1.52 will fix this (Plus give you a bundle of new cards!)\r\n\r\nDo reply if this occurs again - it could be that some effects from the 'other games' the AI is playing to decide the best choice are sneaking in again. ;)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 15, 2014 21:54:03",
+      "body": "Thanks for the report. I took a closer look at Snapcaster Mage's groovy script is buggy. For example it calls \"game.doAction(new MagicPutItemOnStackAction(cardOnStack))\" instead of \"G.doAction\" and that can cause the above issue. \r\n\r\nI've fixed these bugs in https://code.google.com/p/magarena/source/detail?r=767a7907679cad3ac7735ab33dc5eed95bc437c8\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ARashe...@gmail.com](https://code.google.com/u/111666314264317243073/) on August 16, 2014 00:08:33_\n\nWhat steps will reproduce the problem? 1. Cast Snapcaster Mage\r\n2. Select card drawing instant\r\n3. Multiple copies put on stack instead of one\r\n4. Interestingly, does not happen for direct damage instants What is the expected output? What do you see instead? When you flashback a spell, should only get one copy of that spell. Instead, Magarena had FOUR copies fire off. What version of the product are you using? On what operating system? 1.51 on Windows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). (C): Pay {1}{U}. Tap Steam Vents. Tap Steam Vents. Play Snapcaster Mage.\r\n(C): Put Snapcaster Mage onto the battlefield.\r\n(C): Mini Max may (yes) cast target instant or sorcery card (Reach Through Mists) from his or her graveyard, then exile it. Pay {U}. Tap Breeding Pool. Cast Reach Through Mists.\r\n(C): Mini Max draws a card.\r\n(C): Mini Max draws a card.\r\n(C): Mini Max draws a card.\r\n(C): Mini Max draws a card. Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=655_",
+  "date": "2014-08-16T00:08:33",
+  "state": "closed",
+  "gid": 655,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=655",
+  "owner": ""
+}

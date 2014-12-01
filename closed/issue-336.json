@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Play Sun Titan What is the expected output? What do you see instead? The card text says: whenever Sun Titan enters the battlefield or attacks, you *may* return ... (emphasis mine). So I expect a \"proceed with may action: yes/no\" choice.\r\n\r\nInstead, the game forces me to perform the action, without giving a choice. What version of the product are you using? On what operating system? Magarena 1.35 on Windows 7",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Sun Titan doesn't allow skipping the \"may\" effect",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 18, 2013 23:11:15",
+      "body": "**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 06, 2014 15:18:02",
+      "body": "Currently prompts for yes/no choice 1.45",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "January 06, 2014 19:40:35",
+      "body": "Thanks for the update. Marking as fixed.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on March 19, 2013 12:23:01_\n\nWhat steps will reproduce the problem? 1. Play Sun Titan What is the expected output? What do you see instead? The card text says: whenever Sun Titan enters the battlefield or attacks, you *may* return ... (emphasis mine). So I expect a \"proceed with may action: yes/no\" choice.\r\n\r\nInstead, the game forces me to perform the action, without giving a choice. What version of the product are you using? On what operating system? Magarena 1.35 on Windows 7\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=336_",
+  "date": "2013-03-19T12:23:01",
+  "state": "closed",
+  "gid": 336,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=336",
+  "owner": ""
+}

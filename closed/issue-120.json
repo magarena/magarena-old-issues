@@ -1,0 +1,40 @@
+{
+  "status": "duplicate",
+  "body": "Is good to know that this feature is being worked on:)\r\n\r\nMy favorite place is a new window in main screen under the 'edit deck button'. At least the basic statistics could be here. If you gonna have lot of statistics, that i think that could be interesting, like the times of colour decks you've used, your best winning colour... Than you could open a more exaustive statistical window from the menu, but the basic ones could be in the main window so we could always have a fast lokk at it:)\r\n\r\nTHX, your team is doing an excelent work on Magarena, no doubt the best MTG game around!",
+  "author": "[Pedro.Sa...@gmail.com](https://code.google.com/u/101555911296432586333/)",
+  "title": "Thanks and opinion!",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "December 08, 2011 03:27:18",
+      "body": "I'll follow your suggestion and make the history panel show on the duel panel, for now.\r\n\r\nMy goal is to get the functionality in Magarena and have some basic statistics saved. Then I'll open a new issue that will track possible enhancements we can add to the history file. That could indeed mean that at some point the history view needs a different place or like you mentioned, keep the basic stats easily visible and have all statistics in a different window. we'll see.\r\n\r\nAs this issue clearly belongs to issue 100 , I asked Melvin to merge them.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 08, 2011 03:48:57",
+      "body": "Almost done but more testing has to be done. Should be committed later today.\n\n**Attachment:** [history_panel.png](http://code.google.com/p/magarena/issues/detail?id=120#hc2)",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 08, 2011 04:23:25",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 100  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 08, 2011 12:32:10",
+      "body": "Looks great!\r\n\r\nNice job:)",
+      "author": "[Pedro.Sa...@gmail.com](https://code.google.com/u/101555911296432586333/)"
+    }
+  ],
+  "content": "_From [Pedro.Sa...@gmail.com](https://code.google.com/u/101555911296432586333/) on December 08, 2011 03:24:16_\n\nIs good to know that this feature is being worked on:)\r\n\r\nMy favorite place is a new window in main screen under the 'edit deck button'. At least the basic statistics could be here. If you gonna have lot of statistics, that i think that could be interesting, like the times of colour decks you've used, your best winning colour... Than you could open a more exaustive statistical window from the menu, but the basic ones could be in the main window so we could always have a fast lokk at it:)\r\n\r\nTHX, your team is doing an excelent work on Magarena, no doubt the best MTG game around!\n\n**Attachment:** [Snap_2011.12.07_18h47m06s_001.png](http://code.google.com/p/magarena/issues/detail?id=120)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=120_",
+  "date": "2011-12-08T03:24:16",
+  "state": "closed",
+  "gid": 120,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=120",
+  "owner": ""
+}

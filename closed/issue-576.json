@@ -1,0 +1,50 @@
+{
+  "status": "verified",
+  "body": "See \\cards folder created by @shawnieboy. See also issue 486 .",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Add sets filter to card explorer.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "Type-Review"
+  ],
+  "comments": [
+    {
+      "date": "April 26, 2014 23:56:54",
+      "body": "Added Cube filter which addresses issue 486 . Next Sets...",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 28, 2014 03:18:12",
+      "body": "I have come up with a solution for the Sets filter but before I go any further I would like to confirm everyone is happy with the implementation.\r\n\r\nFirst, I have decided to place the set files in \"/resources/magic/data/sets\". This means that the set files are built into the JAR file and will be loaded on demand instead of all at once at startup (like with the cube files). I don't see any reason or need for these files to be visible to users or for all the set information to be preloaded when this information is only relevant in the Card Explorer and Deck Editor screens.\r\n\r\nAs it stands, the set files created use the three-character abbreviation code which is fine but it does mean that this is the only information that can be displayed in the filter. I would prefer to display something like, \r\n\r\n       2ED Unlimited Edition\r\n       3ED Revised Edition\r\n       10E 10th Edition\r\n\t   ...\r\n       ARN Arabian Nights\r\n       LEG Legends\r\n\t   ...\r\n\t   \r\nTo do this, I have created an enum ...\r\n\r\n   public static enum MagicSets {\r\n\r\n       _2ED (\"Unlimited Edition\"),\r\n       _3ED (\"Revised Edition\"),\r\n       _10E (\"10th Edition\"),\r\n        ARN (\"Arabian Nights\"),\r\n        LEG (\"Legends\"),\r\n        ZEN (\"\");\r\n\r\n\t\t...\r\n\r\n    }\r\n\t\r\nThis means that if you want to add new sets then you will need to update this enum as well as adding the set file to /resources/magic/data/sets. This approach also means if we want to add additional information (eg, release date, symbol, etc) then it is easy to do so by expanding the enum constructor.\r\n\r\nPlease let me know if you have any issues with this approach otherwise I will look to commit in the next 24 hours (it will take a while to add all the set names to the enum!).\n\n**Labels:** -Type-Enhancement Type-Review  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 28, 2014 07:42:47",
+      "body": "That all looks perfect to me :D Nice work :) !\r\n\r\nI know you have a cube filter, but the Format files also refer to the set files, (as do the block formats), So they could be implemented in the background like a multi filter of sets. So standard would simply be a multifilter of:\r\nRTR\r\nGTC\r\nDGM\r\nM14\r\nTHS\r\nBNG\r\nJOU\r\n\r\nInstead of having to maintain a separate cube of all implemented cards in that format.\r\n\r\n(Oh and to bear in mind that Conflux is listed as CFX as filenames called CON make Windows sad)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 28, 2014 08:33:49",
+      "body": "Well that did not take as long as I thought it would - I used the names from https://en.wikipedia.org/wiki/List_of_Magic:_The_Gathering_sets which all seemed to match up as expected (excepting the CFX fix because Windows can be strange sometimes). Commit details can be found at https://bitbucket.org/lodici/magarena which should make its way into the main repo eventually.\r\n\r\nThe Blocks look like prime candidates for EnumSet of MagicSets on first glance.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "July 02, 2014 05:00:03",
+      "body": "**Status:** Done  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on April 04, 2014 21:00:48_\n\nSee \\cards folder created by @shawnieboy. See also issue 486 .\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=576_",
+  "date": "2014-04-04T21:00:48",
+  "state": "closed",
+  "gid": 576,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=576",
+  "owner": "lodici123"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "invalid",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? If I tap AI artifact with Icy, should not be able to use ability in next phase (tapped in upkeep, used in Main) What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "Artifact being used while tapped?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "July 13, 2012 19:19:02",
+      "body": "Which artifact is being tapped?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 16, 2012 05:52:47",
+      "body": "I don't recall now, but I also don't recall that mattering. Any artifact tapped (with or without tap symbol) should not be usable, or has that rule changed as well? Or perhaps I remember it incorrectly.",
+      "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)"
+    },
+    {
+      "date": "July 16, 2012 06:21:33",
+      "body": "A tapped artifact cannot activate abilities that require it to tap as part of the cost, other abilities can still be activated. For example, a tapped equipment can still activate its equip ability and be equipped onto a different creature.\n\n**Status:** Invalid  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 16, 2012 06:29:06",
+      "body": "I wasn't aware of the earlier rules, from what I found out, from Alpha till before Sixth Edition, artifacts stop working when tapped as you mentioned. \r\n\r\nIn Sixth Edition, the rules changed to the current one. More details @ http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtgcom/daily/bb15",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 16, 2012 06:44:31",
+      "body": "Ah, I knew it had something to do with me being old :)\r\nYes, the old rules was what I was referring to and why I was confused. \r\nSo I guess I'm the only one recently who tried to use Icy to tap an opponent artifact to prevent death, ha. \r\nThanks for the note/link.",
+      "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on July 11, 2012 02:18:17_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? If I tap AI artifact with Icy, should not be able to use ability in next phase (tapped in upkeep, used in Main) What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=256_",
+  "date": "2012-07-11T02:18:17",
+  "state": "closed",
+  "gid": 256,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=256",
+  "owner": ""
+}

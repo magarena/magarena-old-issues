@@ -1,0 +1,30 @@
+{
+  "status": "duplicate",
+  "body": "Hard to constantly reproduce but I saw it often enough. Look at this log for Chimeric Mass for example:\r\nLOG: Player attacks with Armored Warhorse and Mantis Engine.\r\nMMAB index=1 life=15 time=1139 workers=2 main=5\r\n  [1/200/216 at 71] (pass)\r\n* [1/3072/488 at 66] (Chimeric Mass)\r\nMMAB index=1 life=15 time=1221 workers=2 main=5\r\n* [1/3072/488 at 65] ()\r\n  [1/400/214 at 78] ()\r\nLOG: Pay {1}. Tap Rupture Spire. Play activated ability of Chimeric Mass.\r\nLOG: Until end of turn, Chimeric Mass becomes a Construct artifact creature with \"This creature's power and toughness are each equal to the number of charge counters on it.\"\r\nMMAB index=1 life=15 time=780 workers=2 main=5\r\n  [1/200/221 at 71] (pass)\r\n* [1/2458/493 at 63] (Chimeric Mass)\r\nMMAB index=1 life=15 time=782 workers=2 main=5\r\n* [1/2458/493 at 62] ()\r\n  [1/200/219 at 75] ()\r\nLOG: Pay {1}. Tap Rupture Spire. Play activated ability of Chimeric Mass.\r\n\r\nA simple solution would be to add ABILITY_ONCE_CONDITION or a new condition that checks if the permanent is a creature already.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "AI re-uses \"becomes creature\" ability until all mana is spent",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "October 08, 2011 16:47:46",
+      "body": "I can confirm this. It was with Chimeric Mass too. The AI changed it to a creature and then ended its turn without attacking.",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "October 12, 2011 01:57:00",
+      "body": "The underlying cause is the same as reported in issue 70 which describes the bug in more detail.\r\nClosing this as duplicate.\n\n**Status:** Duplicate  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on October 04, 2011 16:55:02_\n\nHard to constantly reproduce but I saw it often enough. Look at this log for Chimeric Mass for example:\r\nLOG: Player attacks with Armored Warhorse and Mantis Engine.\r\nMMAB index=1 life=15 time=1139 workers=2 main=5\r\n  [1/200/216 at 71] (pass)\r\n* [1/3072/488 at 66] (Chimeric Mass)\r\nMMAB index=1 life=15 time=1221 workers=2 main=5\r\n* [1/3072/488 at 65] ()\r\n  [1/400/214 at 78] ()\r\nLOG: Pay {1}. Tap Rupture Spire. Play activated ability of Chimeric Mass.\r\nLOG: Until end of turn, Chimeric Mass becomes a Construct artifact creature with \"This creature's power and toughness are each equal to the number of charge counters on it.\"\r\nMMAB index=1 life=15 time=780 workers=2 main=5\r\n  [1/200/221 at 71] (pass)\r\n* [1/2458/493 at 63] (Chimeric Mass)\r\nMMAB index=1 life=15 time=782 workers=2 main=5\r\n* [1/2458/493 at 62] ()\r\n  [1/200/219 at 75] ()\r\nLOG: Pay {1}. Tap Rupture Spire. Play activated ability of Chimeric Mass.\r\n\r\nA simple solution would be to add ABILITY_ONCE_CONDITION or a new condition that checks if the permanent is a creature already.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=68_",
+  "date": "2011-10-04T16:55:02",
+  "state": "closed",
+  "gid": 68,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=68",
+  "owner": "BeHold...@gmail.com"
+}

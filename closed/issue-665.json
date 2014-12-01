@@ -1,0 +1,45 @@
+{
+  "status": "verified",
+  "body": "After double-clicking on a card to remove it from a deck, or using the 'Remove Card' button, the highlight bar then selects the top card of the deck.\r\n\r\nThis can be quite frustrating when removing many cards from a deck.\r\n\r\nThe selected card also changes when adding cards, though doesn't feel as much of an issue.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Card Selection with Deck Editor",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 26, 2014 21:18:18",
+      "body": "Thanks I will look into it.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 26, 2014 21:19:43",
+      "body": "**Owner:** lodici123  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 26, 2014 21:20:03",
+      "body": "**Status:** Accepted  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 00:58:10",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/7cb2a8b82a33c4763dd5418a288b5fa22480f94c .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on August 27, 2014 06:17:25_\n\nAfter double-clicking on a card to remove it from a deck, or using the 'Remove Card' button, the highlight bar then selects the top card of the deck.\r\n\r\nThis can be quite frustrating when removing many cards from a deck.\r\n\r\nThe selected card also changes when adding cards, though doesn't feel as much of an issue.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=665_",
+  "date": "2014-08-27T06:17:25",
+  "state": "closed",
+  "gid": 665,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=665",
+  "owner": "lodici123"
+}

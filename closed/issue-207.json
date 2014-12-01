@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. Run magarena on a relatively low resolution (below 1366x768 for example) What is the expected output? What do you see instead? The normal magarena screen with a scrollbar to allow access to non-visibly areas. What version of the product are you using? On what operating system? Magarena 1.24 / Ubuntu 11.10\r\n\r\nI found the problem trying to create a custom deck. The buttons for the task\r\nare not visible due to screen size issues. The attached screenshot will give you\r\na better idea of what i am talking about.",
+  "author": "[pablo.ca...@gmail.com](https://code.google.com/u/100883785716832971309/)",
+  "title": "Magarena screen is cut off on low resolution displays (netbooks, and old laptops)",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "April 21, 2012 05:40:13",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 205  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [pablo.ca...@gmail.com](https://code.google.com/u/100883785716832971309/) on April 21, 2012 11:28:26_\n\nWhat steps will reproduce the problem? 1. Run magarena on a relatively low resolution (below 1366x768 for example) What is the expected output? What do you see instead? The normal magarena screen with a scrollbar to allow access to non-visibly areas. What version of the product are you using? On what operating system? Magarena 1.24 / Ubuntu 11.10\r\n\r\nI found the problem trying to create a custom deck. The buttons for the task\r\nare not visible due to screen size issues. The attached screenshot will give you\r\na better idea of what i am talking about.\n\n**Attachment:** [screenshot.png](http://code.google.com/p/magarena/issues/detail?id=207)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=207_",
+  "date": "2012-04-21T11:28:26",
+  "state": "closed",
+  "gid": 207,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=207",
+  "owner": ""
+}

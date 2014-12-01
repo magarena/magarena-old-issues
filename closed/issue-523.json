@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. play Riku of Two Reflections\r\n2. play Gaea's Anthem\r\n3. play Miming Slime, copying it (resulting in a 3/3 token and a 4/4 token, both get +1/+1 from Gaea's Anthem, so, it's save to say: Miming Slime works well)\r\n4. cast Progenitor Mimic, choosing a Miming Slime Ooze token - which results in a 0/0 token (getting +1/+1 from Gaea's Anthem) What is the expected output? What do you see instead? http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=369001 \"If the chosen creature is a token, Progenitor Mimic copies the original characteristics of that token as stated by the effect that put it onto the battlefield. Copying a token doesn't make Progenitor Mimic become a token.\"\r\n\r\nSince the X/X does not come from any mana cost, X should be the power of the creature with the highest power. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Copying a Miming Slime token with Progenitor Mimic results in a 0/0 Copy",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 17, 2014 19:26:04",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 521  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 27, 2014 19:47:04",
+      "body": "**Status:** Accepted  \n  **Mergedinto:**   \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 27, 2014 22:42:14",
+      "body": "fixed in https://code.google.com/p/magarena/source/detail?r=2538b57fe1e8f5d3c579ed9d39ace97a3a9556bd\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 15, 2014 20:44:28_\n\nWhat steps will reproduce the problem? 1. play Riku of Two Reflections\r\n2. play Gaea's Anthem\r\n3. play Miming Slime, copying it (resulting in a 3/3 token and a 4/4 token, both get +1/+1 from Gaea's Anthem, so, it's save to say: Miming Slime works well)\r\n4. cast Progenitor Mimic, choosing a Miming Slime Ooze token - which results in a 0/0 token (getting +1/+1 from Gaea's Anthem) What is the expected output? What do you see instead? http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=369001 \"If the chosen creature is a token, Progenitor Mimic copies the original characteristics of that token as stated by the effect that put it onto the battlefield. Copying a token doesn't make Progenitor Mimic become a token.\"\r\n\r\nSince the X/X does not come from any mana cost, X should be the power of the creature with the highest power. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=523_",
+  "date": "2014-03-15T20:44:28",
+  "state": "closed",
+  "gid": 523,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=523",
+  "owner": ""
+}

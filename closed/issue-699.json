@@ -1,0 +1,29 @@
+{
+  "status": "cantreproduce",
+  "body": "If you cast Beckon Apparition during an opponent's turn, they gain control of the created counter.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Beckon Apparition and cast turn",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "October 10, 2014 18:33:02",
+      "body": "Unable to replicate. Please provide a test scenario.\n\n**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "October 10, 2014 22:06:57",
+      "body": "Hmm, I can't replicate in a test scenario, but it was happening - Will keep in mind for further testing.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on September 26, 2014 07:01:37_\n\nIf you cast Beckon Apparition during an opponent's turn, they gain control of the created counter.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=699_",
+  "date": "2014-09-26T07:01:37",
+  "state": "closed",
+  "gid": 699,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=699",
+  "owner": ""
+}

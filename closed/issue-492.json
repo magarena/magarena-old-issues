@@ -1,0 +1,50 @@
+{
+  "status": "wontfix",
+  "body": "Experiencing these errors within the first few moves of each game.\r\n\r\n \r\n\r\nException from controller.runGame: magic.model.event.MagicMatchedCostEvent.getEvent(Lmagic/model/MagicPer\r\n 653 java.lang.NoSuchMethodError: magic.model.event.MagicMatchedCostEvent.getEvent(Lmagic/model/MagicPermanent\r\n 654     at magic.model.event.MagicPermanentActivation$2.getCostEvent(MagicPermanentActivation.java:161)\r\n 655     at magic.model.event.MagicPermanentActivation$2.getCostEvent(MagicPermanentActivation.java:156)",
+  "author": "[nicolai.tesela](https://code.google.com/u/nicolai.tesela/)",
+  "title": "NoSuchMethodError: magic.model.event.MagicMatchedCostEvent",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "February 28, 2014 00:09:04",
+      "body": "Try doing a clean build, eg\r\n  ant clean build",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 28, 2014 00:18:41",
+      "body": "**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 28, 2014 00:28:48",
+      "body": "Still crashing.. Anything else to try?",
+      "author": "[nicolai.tesela](https://code.google.com/u/nicolai.tesela/)"
+    },
+    {
+      "date": "February 28, 2014 00:32:43",
+      "body": "try removing the entire \"build\" folder, that's what ant clean should have done. Perhaps try doing that manually.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 28, 2014 07:34:34",
+      "body": "Thanks for your quick replies. \r\n\r\nmake clean; make \r\n\r\nis what ended up doing it for me. which boggles me a bit, cause I looked at the 'clean:' job of the 'Makefile' and found pretty much what you first suggested of an 'ant clean build'\r\n\r\n173 clean:                                                                          \r\n174     -ant clean                                                                  \r\n175     -rm -f $(BUILD)/javac.last                                                  \r\n176     -rm -f $(MAG) \r\n\r\nI know it's common sense, but it might be helpful to put in the developer installation instructions to do a 'make clean; make' for compiles.\r\n\r\ncheers",
+      "author": "[nicolai.tesela](https://code.google.com/u/nicolai.tesela/)"
+    },
+    {
+      "date": "March 01, 2014 01:58:44",
+      "body": "Glad you were able to resolve the issue, it is indeed strange that 'ant clean build' didn't do it. The only difference I could see is that 'make clean' removes the jar but ant clean doesn't.\r\n\r\nNice to see a fellow Linux developer, wasn't sure if I should mention 'make' as it only works on Linux. I've added a page to document these issues, https://code.google.com/p/magarena/wiki/CommonIssues",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [nicolai.tesela](https://code.google.com/u/nicolai.tesela/) on February 28, 2014 16:03:31_\n\nExperiencing these errors within the first few moves of each game.\r\n\r\n \r\n\r\nException from controller.runGame: magic.model.event.MagicMatchedCostEvent.getEvent(Lmagic/model/MagicPer\r\n 653 java.lang.NoSuchMethodError: magic.model.event.MagicMatchedCostEvent.getEvent(Lmagic/model/MagicPermanent\r\n 654     at magic.model.event.MagicPermanentActivation$2.getCostEvent(MagicPermanentActivation.java:161)\r\n 655     at magic.model.event.MagicPermanentActivation$2.getCostEvent(MagicPermanentActivation.java:156)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=492_",
+  "date": "2014-02-28T16:03:31",
+  "state": "closed",
+  "gid": 492,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=492",
+  "owner": ""
+}

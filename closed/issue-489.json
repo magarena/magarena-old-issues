@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "After upgrading to 1.47, I downloaded new images except it refuses to download 5 images. In the UI it appears to have worked and no error is thrown but behind the scenes it generates a java.io.FileNotFoundException.\r\n\r\nSee also http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=147128#p147126 .\r\n\r\nThe strange thing is I installed on two PCs - on one it worked and on the other I keep getting the 5 files. We had a similar problem previously which was down to the naming of files in Windows and invalid characters, but this is different - it appears to be because the image URL in certain script files is now invalid. This url is of the form - \" http://forums.mtgsalvation.com/attachment.php?attachmentid=19993&amp;d=1143672364 \".\r\n\r\nThe following files all use this URL and I tried two or three of the urls in my browser and all generated a \"not found\" page.\r\n\r\n\\scripts\\0_1_blue_Plant_Wall_creature_token_with_defender_named_Kelp.txt\r\n\\scripts\\0_1_colorless_Pest_artifact_creature_token.txt\r\n\\scripts\\1_1_black_Zombie_Goblin_creature_token_named_Festering_Goblin.txt\r\n\\scripts\\1_1_blue_Faerie_creature_token_with_flying.txt\r\n\\scripts\\1_1_green_Spike_creature_token.txt\r\n\\scripts\\1_1_red_Goblin_Scout_creature_token_with_mountainwalk.txt\r\n\\scripts\\1_1_white_Citizen_creature_token.txt\r\n\\scripts\\2_1_black_Cat_creature_token.txt\r\n\\scripts\\2_1_red_Goblin_creature_token_with_haste.txt\r\n\\scripts\\2_2_colorless_Pincher_creature_token.txt\r\n\\scripts\\2_2_colorless_Spawn_artifact_creature_token.txt\r\n\\scripts\\2_2_colorless_Assembly_Worker_artifact_creature_token.txt\r\n\\scripts\\2_2_white_Knight_creature_token_with_first_strike.txt\r\n\\scripts\\3_1_red_Elemental_creature_token_with_haste.txt\r\n\\scripts\\3_3_black_Kavu_creature_token.txt\r\n\\scripts\\3_3_green_Boar_creature_token.txt\r\n\\scripts\\3_3_green_Centaur_creature_token_with_protection_from_black.txt\r\n\\scripts\\3_3_green_Ape_creature_token.txt\r\n\\scripts\\3_3_white_Spirit_creature_token_with_flying.txt\r\n\\scripts\\4_4_black_Horror_creature_token.txt\r\n\\scripts\\6_1_green_Insect_creature_token_with_shroud.txt\r\n\\scripts\\6_6_black_Wurm_creature_token_with_trample.txt\r\n\r\nThe reason why it works on one of my PCs and not the other is because the one that works has at some point previously successfully downloaded the image file (although it is low res). Perhaps recently, mtgsalvation.com have made some changes. Either way, these script urls will need to be updated.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "1.47: refuses to download 5 image files.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 24, 2014 03:28:29",
+      "body": "**Owner:** ---  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "February 24, 2014 03:33:40",
+      "body": "**Status:** New  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "February 24, 2014 04:07:31",
+      "body": "**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 24, 2014 04:47:32",
+      "body": "fixed in https://code.google.com/p/magarena/source/detail?r=b07447f36956223e20ae47855e437d451111c3a5 and https://code.google.com/p/magarena/source/detail?r=4eae129c6ed5d9b132eab39b47978c8115f426f4\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on February 24, 2014 19:21:44_\n\nAfter upgrading to 1.47, I downloaded new images except it refuses to download 5 images. In the UI it appears to have worked and no error is thrown but behind the scenes it generates a java.io.FileNotFoundException.\r\n\r\nSee also http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=147128#p147126 .\r\n\r\nThe strange thing is I installed on two PCs - on one it worked and on the other I keep getting the 5 files. We had a similar problem previously which was down to the naming of files in Windows and invalid characters, but this is different - it appears to be because the image URL in certain script files is now invalid. This url is of the form - \" http://forums.mtgsalvation.com/attachment.php?attachmentid=19993&amp;d=1143672364 \".\r\n\r\nThe following files all use this URL and I tried two or three of the urls in my browser and all generated a \"not found\" page.\r\n\r\n\\scripts\\0_1_blue_Plant_Wall_creature_token_with_defender_named_Kelp.txt\r\n\\scripts\\0_1_colorless_Pest_artifact_creature_token.txt\r\n\\scripts\\1_1_black_Zombie_Goblin_creature_token_named_Festering_Goblin.txt\r\n\\scripts\\1_1_blue_Faerie_creature_token_with_flying.txt\r\n\\scripts\\1_1_green_Spike_creature_token.txt\r\n\\scripts\\1_1_red_Goblin_Scout_creature_token_with_mountainwalk.txt\r\n\\scripts\\1_1_white_Citizen_creature_token.txt\r\n\\scripts\\2_1_black_Cat_creature_token.txt\r\n\\scripts\\2_1_red_Goblin_creature_token_with_haste.txt\r\n\\scripts\\2_2_colorless_Pincher_creature_token.txt\r\n\\scripts\\2_2_colorless_Spawn_artifact_creature_token.txt\r\n\\scripts\\2_2_colorless_Assembly_Worker_artifact_creature_token.txt\r\n\\scripts\\2_2_white_Knight_creature_token_with_first_strike.txt\r\n\\scripts\\3_1_red_Elemental_creature_token_with_haste.txt\r\n\\scripts\\3_3_black_Kavu_creature_token.txt\r\n\\scripts\\3_3_green_Boar_creature_token.txt\r\n\\scripts\\3_3_green_Centaur_creature_token_with_protection_from_black.txt\r\n\\scripts\\3_3_green_Ape_creature_token.txt\r\n\\scripts\\3_3_white_Spirit_creature_token_with_flying.txt\r\n\\scripts\\4_4_black_Horror_creature_token.txt\r\n\\scripts\\6_1_green_Insect_creature_token_with_shroud.txt\r\n\\scripts\\6_6_black_Wurm_creature_token_with_trample.txt\r\n\r\nThe reason why it works on one of my PCs and not the other is because the one that works has at some point previously successfully downloaded the image file (although it is low res). Perhaps recently, mtgsalvation.com have made some changes. Either way, these script urls will need to be updated.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=489_",
+  "date": "2014-02-24T19:21:44",
+  "state": "closed",
+  "gid": 489,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=489",
+  "owner": ""
+}

@@ -1,0 +1,30 @@
+{
+  "status": "duplicate",
+  "body": "It should be implemented as a two-sided card, see [1].\r\n\r\nCurrently, in can be cast for free, while it should only be castable when transforming Soul Seizer.\r\n\r\n[1] http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=242498",
+  "author": "[go.spam....@gmail.com](https://code.google.com/u/113385897513702662113/)",
+  "title": "Ghastly Haunting implemented incorrectly",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "September 03, 2014 15:09:59",
+      "body": "Is implemented as a double-sided card. Random deck generator needs editing to prevent 'hidden' cards from being added. Discovered in issue 627 .\n\n**Status:** Duplicate  \n  **Mergedinto:** 672  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 03, 2014 15:12:02",
+      "body": "issue 672 not 627 - fat fingers...",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [go.spam....@gmail.com](https://code.google.com/u/113385897513702662113/) on September 03, 2014 11:03:10_\n\nIt should be implemented as a two-sided card, see [1].\r\n\r\nCurrently, in can be cast for free, while it should only be castable when transforming Soul Seizer.\r\n\r\n[1] http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=242498\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=678_",
+  "date": "2014-09-03T11:03:10",
+  "state": "closed",
+  "gid": 678,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=678",
+  "owner": ""
+}

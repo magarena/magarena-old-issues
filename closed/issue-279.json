@@ -1,0 +1,25 @@
+{
+  "status": "wontfix",
+  "body": "What steps will reproduce the problem? 1. Player plays Tel-Jilad Exile.\r\n2. AI plays Flametongue Kavu, that deals 4 damage to player's Tel-Jilad Exile.\r\n3. Player regenerates Tel-Jilad Exile (does not require tapping), Tel-Jilad Exile survives but appears tapped. What is the expected output? What do you see instead? The same but Tel-Jilad Exile untapped. What version of the product are you using? On what operating system? 1.28 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[massimo....@gmail.com](https://code.google.com/u/106320920592650001003/)",
+  "title": "Bug: Tel-Jilad Exile gets tapped after regeneration",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "August 18, 2012 08:24:49",
+      "body": "\"Regenerate [permanent]\" means \"The next time [permanent] would be destroyed this turn, instead remove all damage marked on it and tap it. If it's an attacking or blocking creature, remove it from combat.\" -- http://yawgatog.com/resources/magic-rules/#R6148 The tapping happens as part of the replacement effect of regenerate.\n\n**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [massimo....@gmail.com](https://code.google.com/u/106320920592650001003/) on August 18, 2012 17:08:53_\n\nWhat steps will reproduce the problem? 1. Player plays Tel-Jilad Exile.\r\n2. AI plays Flametongue Kavu, that deals 4 damage to player's Tel-Jilad Exile.\r\n3. Player regenerates Tel-Jilad Exile (does not require tapping), Tel-Jilad Exile survives but appears tapped. What is the expected output? What do you see instead? The same but Tel-Jilad Exile untapped. What version of the product are you using? On what operating system? 1.28 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=279)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=279_",
+  "date": "2012-08-18T17:08:53",
+  "state": "closed",
+  "gid": 279,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=279",
+  "owner": ""
+}

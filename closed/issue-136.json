@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "whenever the computer has Rise of the Hobgoblins on the table and a red creature, it enters in an annoying loop activating the card ability several times, as if it was cumulative, and as a result it taps all possible lands.\r\n\r\nRunning Magarena 1.21 on a Mac",
+  "author": "[arroubap...@gmail.com](https://code.google.com/u/103625280116932830711/)",
+  "title": "Rise of the Hobgoblins",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 02, 2012 17:48:46",
+      "body": "the same happens with Captive Flame even with tapped creatures",
+      "author": "[arroubap...@gmail.com](https://code.google.com/u/103625280116932830711/)"
+    },
+    {
+      "date": "January 07, 2012 06:35:51",
+      "body": "This issue was closed by revision c2341002723d .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 07, 2012 06:42:14",
+      "body": "Thanks for the report arroubapedroivo.\r\n\r\nWe use hints to help out the AI in some situations, so I added a hint to only use Rise of the Hobgoblins' ability once per turn.\r\n\r\nCaptive Flame is a different issue because the effect is cumulative and can target multiple creatures. I did try a test game using Captive Flame and there the AI did not spend all mana.\r\nI guess what you saw was the AI making weird decisions from time to time. That's an issue that seems impossible to prevent but something we do try to improve.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [arroubap...@gmail.com](https://code.google.com/u/103625280116932830711/) on January 02, 2012 08:50:36_\n\nwhenever the computer has Rise of the Hobgoblins on the table and a red creature, it enters in an annoying loop activating the card ability several times, as if it was cumulative, and as a result it taps all possible lands.\r\n\r\nRunning Magarena 1.21 on a Mac\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=136_",
+  "date": "2012-01-02T08:50:36",
+  "state": "closed",
+  "gid": 136,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=136",
+  "owner": ""
+}

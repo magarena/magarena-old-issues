@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "here my new patch, add new power cell to deck editor, and sort support completed. ;-)",
+  "author": "[arliw...@gmail.com](https://code.google.com/u/107126573161021836446/)",
+  "title": "enhance: deck editor have power support",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 22, 2011 07:43:01",
+      "body": "sorrt, forget patch again, post here.\n\n**Attachment:** [editor-power-support.patch](http://code.google.com/p/magarena/issues/detail?id=58#hc1)",
+      "author": "[arliw...@gmail.com](https://code.google.com/u/107126573161021836446/)"
+    },
+    {
+      "date": "September 22, 2011 09:13:37",
+      "body": "Thanks for the code. It's been added with a few minor changes.\n\n**Status:** Fixed  \n",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [arliw...@gmail.com](https://code.google.com/u/107126573161021836446/) on September 22, 2011 22:42:28_\n\nhere my new patch, add new power cell to deck editor, and sort support completed. ;-)\n\n**Attachment:** [power.png](http://code.google.com/p/magarena/issues/detail?id=58)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=58_",
+  "date": "2011-09-22T22:42:28",
+  "state": "closed",
+  "gid": 58,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=58",
+  "owner": ""
+}

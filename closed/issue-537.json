@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. cast Consign to Dream\r\n2. target non-red non-green card\r\n3. look at the numbers top left: handsize stays the same, library increases by one\r\n4. cast Consign to Dream\r\n5. target a red and/or green card\r\n6. look at the numbers top left: handsize increases by one, library stays by one What is the expected output? What do you see instead? I suspect I should expect it exactly the other way round What version of the product are you using? On what operating system? magarena 1.48.862 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Consign to Dream: reversed abilities",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 21, 2014 18:57:00",
+      "body": "step 6: library stays the same, of course",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 21, 2014 20:04:55",
+      "body": "Yes, the abilities were the wrong way round - Fixed in Revision 04547425d2c5\n\n**Status:** Fixed  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 22, 2014 08:27:36_\n\nWhat steps will reproduce the problem? 1. cast Consign to Dream\r\n2. target non-red non-green card\r\n3. look at the numbers top left: handsize stays the same, library increases by one\r\n4. cast Consign to Dream\r\n5. target a red and/or green card\r\n6. look at the numbers top left: handsize increases by one, library stays by one What is the expected output? What do you see instead? I suspect I should expect it exactly the other way round What version of the product are you using? On what operating system? magarena 1.48.862 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=537_",
+  "date": "2014-03-22T08:27:36",
+  "state": "closed",
+  "gid": 537,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=537",
+  "owner": "ShawnieBoyUK"
+}

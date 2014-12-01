@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "I have found just a few bugs in version 20b:\r\n\r\n-Albino Troll seems to ask for only one mana (G) instead of (1)(G) for both Echo and Regeneration abilities\r\n-Unlike for previous version, Recurring Nightmare could not be activated at all.\r\n-Gemstone Mine does not seem to loose counters when tapped for mana\r\n-I confirm the already mentined bug with Joraga Warcaller\r\n\r\nPS: Given the fact how few bugs there are in Magarena, I need to express my respect to the development team. Great job guys!!\r\n\r\nArten",
+  "author": "[jakub.mi...@gmail.com](https://code.google.com/u/110312501485361632225/)",
+  "title": "Defect",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 03, 2011 07:52:04",
+      "body": "Thanks for the report.\r\n\r\n- The bug with echo costs has been fixed. See issue 106 for details.\r\n- I can't reproduce the regeneration bug you describe. Maybe it's caused by some interaction with other cards/effects. Please file a new report with any details about which cards were in play etc., when you ever see the bug happening again.\r\n- I had no problem using Recurring Nightmare's ability. It does require you to have another creature in play and can only be played as a sorcery, so maybe the problem lies there?\r\n- The bug with Gemstone Mine was fixed a few days ago. See issue 104 .\r\n- The bug with Joraga Warcaller (and other cards) has been fixed too. See issue 105 .\r\n\r\nFeel free to open a new report for any bug you think is not resolved and please make a separate issue for each bug you find, it's much cleaner that way.\r\n\r\nThanks for the kind words too :D\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [jakub.mi...@gmail.com](https://code.google.com/u/110312501485361632225/) on December 03, 2011 08:58:49_\n\nI have found just a few bugs in version 20b:\r\n\r\n-Albino Troll seems to ask for only one mana (G) instead of (1)(G) for both Echo and Regeneration abilities\r\n-Unlike for previous version, Recurring Nightmare could not be activated at all.\r\n-Gemstone Mine does not seem to loose counters when tapped for mana\r\n-I confirm the already mentined bug with Joraga Warcaller\r\n\r\nPS: Given the fact how few bugs there are in Magarena, I need to express my respect to the development team. Great job guys!!\r\n\r\nArten\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=111_",
+  "date": "2011-12-03T08:58:49",
+  "state": "closed",
+  "gid": 111,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=111",
+  "owner": ""
+}

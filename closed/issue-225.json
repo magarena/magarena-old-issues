@@ -1,0 +1,30 @@
+{
+  "status": "invalid",
+  "body": "Reported by jazevec:\r\n\r\nOnce in a while Creeping Tar pit will automatically \"pay for itself\", which causes it to become a tapped creature until end of turn. Sometimes it behaves this way all the time, other times it works exactly as expected.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Creeping Tar Pit can pay for itself",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "July 16, 2012 06:22:48",
+      "body": "Please take note that I'm the original person who reported it.\r\n\r\nI think I know what happened, and this issue should be closed. My mouse (Razer Krait, no longer sold piece of garbage) is falling apart and sometimes it double clicks instead of a single click.",
+      "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)"
+    },
+    {
+      "date": "July 16, 2012 06:25:12",
+      "body": "Thanks for the update.\n\n**Status:** Invalid  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on June 15, 2012 15:03:43_\n\nReported by jazevec:\r\n\r\nOnce in a while Creeping Tar pit will automatically \"pay for itself\", which causes it to become a tapped creature until end of turn. Sometimes it behaves this way all the time, other times it works exactly as expected.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=225_",
+  "date": "2012-06-15T15:03:43",
+  "state": "closed",
+  "gid": 225,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=225",
+  "owner": ""
+}

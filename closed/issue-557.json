@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. cast Sadistic Glee on a creature you control\r\n2. wait for one of opponent's creatures to die of combat damage\r\n3. do not get a +1/+1 counter on enchanted creature",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Sadistic Glee triggers only when a creature you control dies, opponent's creatures are disregarded",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 27, 2014 08:36:09",
+      "body": "Nice find\r\n\r\nFixed in Revision b9b18a3265d5\n\n**Status:** Fixed  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 27, 2014 21:30:30_\n\nWhat steps will reproduce the problem? 1. cast Sadistic Glee on a creature you control\r\n2. wait for one of opponent's creatures to die of combat damage\r\n3. do not get a +1/+1 counter on enchanted creature\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=557_",
+  "date": "2014-03-27T21:30:30",
+  "state": "closed",
+  "gid": 557,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=557",
+  "owner": "ShawnieBoyUK"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. Attack with Qasali Pridemage and Defiant Elf What is the expected output? What do you see instead? Expected: no +1/+1 bump from Exalted, since two creatures are attacking\r\nActual: Defiant Elf gets +1/+1 from Qasali Pridemage What version of the product are you using? On what operating system? Magarena 1.24 on WinXP",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Qasali Pridemage grants +1/+1 when attacking together with another creature",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "April 28, 2012 06:02:36",
+      "body": "Thanks for reporting. This was fixed in revision 7f7a85aa7b9d .\n\n**Status:** Duplicate  \n  **Mergedinto:** 203  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on April 28, 2012 12:07:16_\n\nWhat steps will reproduce the problem? 1. Attack with Qasali Pridemage and Defiant Elf What is the expected output? What do you see instead? Expected: no +1/+1 bump from Exalted, since two creatures are attacking\r\nActual: Defiant Elf gets +1/+1 from Qasali Pridemage What version of the product are you using? On what operating system? Magarena 1.24 on WinXP\n\n**Attachment:** [qasali-pridemage.PNG game.log](http://code.google.com/p/magarena/issues/detail?id=210)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=210_",
+  "date": "2012-04-28T12:07:16",
+  "state": "closed",
+  "gid": 210,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=210",
+  "owner": ""
+}

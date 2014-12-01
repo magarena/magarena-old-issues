@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "When copying card images from data folder of previous version of the game, the ignore property is not checked.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Ignore property in card script not checked when getting images from previous version",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 10, 2012 01:11:28",
+      "body": "This has been fixed by revision 9266debfda28 , right?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "June 10, 2012 01:14:35",
+      "body": "Right. Forgot to close the issue, thanks for the reminder.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on April 01, 2012 22:36:18_\n\nWhen copying card images from data folder of previous version of the game, the ignore property is not checked.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=200_",
+  "date": "2012-04-01T22:36:18",
+  "state": "closed",
+  "gid": 200,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=200",
+  "owner": "melvinzh...@gmail.com"
+}

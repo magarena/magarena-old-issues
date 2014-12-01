@@ -1,0 +1,30 @@
+{
+  "status": "wontfix",
+  "body": "What steps will reproduce the problem? 1. opponent plays Temple of Abandon\r\n2. opponent gets prompted \r\n3. notification does not tell whether he did or not (not that it matters, though)",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Temple of Abandon: scry 1 - notification does not inform of result of choice",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "March 30, 2014 04:02:31",
+      "body": "ah, stupid me... it does. \r\n\r\nif opponent chooses to keep the cards it's displayed as \"scry 1\"\r\nif opponent chooses to pull that card under, it's displayed as: \"scry 1. Monty Carlo moves a card from top of his or her libraray to the bottom.\"\r\n\r\nso, nevermind then.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 01, 2014 12:14:45",
+      "body": "**Status:** WontFix  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 30, 2014 18:58:33_\n\nWhat steps will reproduce the problem? 1. opponent plays Temple of Abandon\r\n2. opponent gets prompted \r\n3. notification does not tell whether he did or not (not that it matters, though)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=566_",
+  "date": "2014-03-30T18:58:33",
+  "state": "closed",
+  "gid": 566,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=566",
+  "owner": "ShawnieBoyUK"
+}

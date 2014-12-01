@@ -1,0 +1,35 @@
+{
+  "status": "invalid",
+  "body": "What steps will reproduce the problem? 1. Equip lifelink critter with Fireshrieker\r\n2. Attack unblocked\r\n3. Only recieved life for first strike portion What is the expected output? What do you see instead? Expected 6 life, only gor 3 (3/3 with fireshrieker) What version of the product are you using? On what operating system? 1.18 Please provide any additional information below. Magarena is awesome! :)",
+  "author": "[zarob...@gmail.com](https://code.google.com/u/110807682538348407793/)",
+  "title": "Double strike and lifelink only gives first strike life",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "October 10, 2011 03:50:44",
+      "body": "Thanks for your report.\r\n\r\nI tested this in a number of ways:\r\n- Rhox War Monk (lifelink) equipped with Fireshrieker\r\n- Mirran Crusader (double strike) enchanted with Lifelink\r\n- with True Conviction in play (creatures you control have double strike and lifelink)\r\n\r\nThe result was correct for all.\r\n\r\nSo I can not reproduce the bug. I'm guessing some other effect was in play although I can't think of what would cause you to only gain life for the first damage dealt. Prevent damage effect maybe?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 14, 2011 01:31:47",
+      "body": "Have not experienced this again. Will keep an eye out.",
+      "author": "[zarob...@gmail.com](https://code.google.com/u/110807682538348407793/)"
+    },
+    {
+      "date": "October 28, 2011 06:33:33",
+      "body": "I'll close this since nobody was able to reproduce this bug.\r\n\r\nReporter: feel free to open a new issue when you can reproduce this bug using the latest version of Magarena.\n\n**Status:** Invalid  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [zarob...@gmail.com](https://code.google.com/u/110807682538348407793/) on October 10, 2011 14:49:00_\n\nWhat steps will reproduce the problem? 1. Equip lifelink critter with Fireshrieker\r\n2. Attack unblocked\r\n3. Only recieved life for first strike portion What is the expected output? What do you see instead? Expected 6 life, only gor 3 (3/3 with fireshrieker) What version of the product are you using? On what operating system? 1.18 Please provide any additional information below. Magarena is awesome! :)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=73_",
+  "date": "2011-10-10T14:49:00",
+  "state": "closed",
+  "gid": 73,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=73",
+  "owner": ""
+}

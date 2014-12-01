@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. Have two Celestial Colonnades in play\r\n2. Have enough other lands to be able to activate \"becomes creature\" effect on both What is the expected output? What do you see instead? Expected: both Colonnades are highlighted; the ability of each one can be activated.\r\n\r\nActual: only one Colonnade is highlighted. Even after it's activated and becomes a creature, the other is never highlighted and its ability cannot be activated. What version of the product are you using? On what operating system? Magarena 1.40 on Windows 7.",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Only one Celestial Colonnade can become a creature",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "August 07, 2013 06:05:40",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 379  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on August 04, 2013 10:35:14_\n\nWhat steps will reproduce the problem? 1. Have two Celestial Colonnades in play\r\n2. Have enough other lands to be able to activate \"becomes creature\" effect on both What is the expected output? What do you see instead? Expected: both Colonnades are highlighted; the ability of each one can be activated.\r\n\r\nActual: only one Colonnade is highlighted. Even after it's activated and becomes a creature, the other is never highlighted and its ability cannot be activated. What version of the product are you using? On what operating system? Magarena 1.40 on Windows 7.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=384_",
+  "date": "2013-08-04T10:35:14",
+  "state": "closed",
+  "gid": 384,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=384",
+  "owner": ""
+}

@@ -1,0 +1,40 @@
+{
+  "status": "wontfix",
+  "body": "Been working on the f'ing card for 2 days now. Could use a hand\r\n\r\njava.lang.ClassCastException: magic.model.event.MagicEvent$MagicInteger cannot be cast to magic.model.MagicPermanent\r\n\r\ngetting the error on line 20..\r\n\r\n 12         @Override                                                               \r\n 13         public void executeEvent(final MagicGame game, final MagicEvent event) {\r\n 14             MagicTargetChoice target_choice = MagicTargetChoice.SACRIFICE_CREATURE;\r\n 15             MagicEvent sacrifice_event =                                        \r\n 16                  new MagicSacrificePermanentEvent(                              \r\n 17                      event.getSource(),                                         \r\n 18                      target_choice                                              \r\n 19                  );                                                             \r\n 20             MagicPermanent sac_permanent = sacrifice_event.getRefPermanent();   \r\n 21                                                                                 \r\n 22             final int toughness = sac_permanent.getToughness();                 \r\n 23             //final int toughness = sac_permanent.getCard.getToughness();       \r\n 24                                                                                 \r\n 25             game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));\r\n 26             game.addEvent(sacrifice_event);                                     \r\n 27         }",
+  "author": "[nicolai.tesela](https://code.google.com/u/nicolai.tesela/)",
+  "title": "Devour Flesh -- MagicPermanent to MagicInt cast error",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "March 02, 2014 17:28:38",
+      "body": "MagicSacrificePermanent does not store a ref permanent in the event, hence the error. It only does one action as part of its resolution which is to sacrifice the permanent. In this case, there are two actions: sacrifice the permanent and gain life. \r\n\r\nYou'll need to create your own event object to perform the two actions. See groovy script of Warren Weirding for an example.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 04, 2014 18:39:49",
+      "body": "Saw the card on project firemind. Glad to see that you've solved this.\n\n**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 04, 2014 18:40:52",
+      "body": "For questions on card script, recommended place is to post on our form @ http://www.slightlymagic.net/forum/viewforum.php?f=82",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 04, 2014 23:59:23",
+      "body": "Thanks, your warren weirding tip is what helped me solve it!",
+      "author": "[nicolai.tesela](https://code.google.com/u/nicolai.tesela/)"
+    }
+  ],
+  "content": "_From [nicolai.tesela](https://code.google.com/u/nicolai.tesela/) on March 02, 2014 22:10:08_\n\nBeen working on the f'ing card for 2 days now. Could use a hand\r\n\r\njava.lang.ClassCastException: magic.model.event.MagicEvent$MagicInteger cannot be cast to magic.model.MagicPermanent\r\n\r\ngetting the error on line 20..\r\n\r\n 12         @Override                                                               \r\n 13         public void executeEvent(final MagicGame game, final MagicEvent event) {\r\n 14             MagicTargetChoice target_choice = MagicTargetChoice.SACRIFICE_CREATURE;\r\n 15             MagicEvent sacrifice_event =                                        \r\n 16                  new MagicSacrificePermanentEvent(                              \r\n 17                      event.getSource(),                                         \r\n 18                      target_choice                                              \r\n 19                  );                                                             \r\n 20             MagicPermanent sac_permanent = sacrifice_event.getRefPermanent();   \r\n 21                                                                                 \r\n 22             final int toughness = sac_permanent.getToughness();                 \r\n 23             //final int toughness = sac_permanent.getCard.getToughness();       \r\n 24                                                                                 \r\n 25             game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));\r\n 26             game.addEvent(sacrifice_event);                                     \r\n 27         }\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=495_",
+  "date": "2014-03-02T22:10:08",
+  "state": "closed",
+  "gid": 495,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=495",
+  "owner": ""
+}

@@ -1,0 +1,45 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. create a new empty deck.\r\n2. add some cards.\r\n3. save deck, \"test1.dec\".\r\n4. add some more cards.\r\n5. save deck, \"test1.dec\".\r\n6. refresh by loading another deck.\r\n7. load \"test1.dec\". What is the expected output? What do you see instead? the card list should be as saved in [5]. It is as saved in [3]. Please use labels and text to provide additional information.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "deck editor: can only save changes to a deck once.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 05, 2013 04:28:41",
+      "body": "If at [5] you save to a new file, say \"test2.dec\", then the changes are saved.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 12, 2013 11:56:49",
+      "body": "**Status:** Started  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 13, 2013 04:31:45",
+      "body": "More specifics. If I load a deck file, add/remove cards from that deck then attempt to save back to the same deck then everything appears to have worked since no error is displayed. When I reload the deck I find that the changes I made were not saved. In fact, behind the scenes, when I saved the deck an error was generated but (for some reason) ignored. The error was...\r\n\r\njava.io.FileNotFoundException: D:\\...\\Magarena\\decks\\_test1.dec (The requested operation cannot be performed on a file with a user-mapped section open)\r\n\tat java.io.FileOutputStream.open(Native Method)\r\n\tat java.io.FileOutputStream.<init>(FileOutputStream.java:212)\r\n\tat java.io.FileOutputStream.<init>(FileOutputStream.java:104)\r\n\tat java.io.FileWriter.<init>(FileWriter.java:63)\r\n\tat magic.data.DeckUtils.saveDeck(DeckUtils.java:87)\r\n\t\r\nResearch seems to suggest that this is peculiar to Windows and the way in which it peforms garbage collection. Considering it prevents me from updating and saving changes to a deck I am suprised that there seem to have been no complaints about this before - either this is specific to my (Windows 7 64-bit) setup or the deck editor save function is not used much in Magarena or because no warning was given users are unaware that changes are not being saved.\r\n\r\nI could not find an obvious solution except to add a bit of a hacky call to \"system.gc()\" which consistently solved the problem for me - I am not sure how the \"system.gc()\" workaround will affect other OS environments if at all. \r\n\r\nAlso, instead of ignoring the error as before I have added a warning prompt should this problem occur in future releases.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 14, 2013 06:44:32",
+      "body": "Fixed applied to build 1.44.621 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/621/ ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on December 05, 2013 20:25:09_\n\nWhat steps will reproduce the problem? 1. create a new empty deck.\r\n2. add some cards.\r\n3. save deck, \"test1.dec\".\r\n4. add some more cards.\r\n5. save deck, \"test1.dec\".\r\n6. refresh by loading another deck.\r\n7. load \"test1.dec\". What is the expected output? What do you see instead? the card list should be as saved in [5]. It is as saved in [3]. Please use labels and text to provide additional information.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=432_",
+  "date": "2013-12-05T20:25:09",
+  "state": "closed",
+  "gid": 432,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=432",
+  "owner": "lodici123"
+}

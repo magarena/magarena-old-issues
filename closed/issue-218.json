@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Cast multiple Geists of Saint Traft. What is the expected output? What do you see instead? Both should die when the second one is cast. They don't. What version of the product are you using? On what operating system? Magarena 1.26, Mac OS 10.6.8 Please provide any additional information below.",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Geist of St Traft doesn't obey the legend rule",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 02, 2012 02:41:07",
+      "body": "This issue was closed by revision 3bd75557c4f6 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 02, 2012 02:42:19",
+      "body": "Thanks for reporting! We missed out the type Legendary on the card properties so the game was not treating it as a Legendary creature.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 03, 2012 15:13:44",
+      "body": "Same with Edric, Spymaster of Trest.",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)"
+    },
+    {
+      "date": "June 06, 2012 04:32:19",
+      "body": "Thanks for spotting this. Fixed in revision 15c580b5f208 .",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on June 02, 2012 08:55:13_\n\nWhat steps will reproduce the problem? 1. Cast multiple Geists of Saint Traft. What is the expected output? What do you see instead? Both should die when the second one is cast. They don't. What version of the product are you using? On what operating system? Magarena 1.26, Mac OS 10.6.8 Please provide any additional information below.\n\n\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=218_",
+  "date": "2012-06-02T08:55:13",
+  "state": "closed",
+  "gid": 218,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=218",
+  "owner": ""
+}

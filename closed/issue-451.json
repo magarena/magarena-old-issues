@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1.Playing dark depths\r\n2.playing a vampire hexmage and saccing it to remove ice counters 3. What is the expected output? What do you see instead? The lands sacrafices itself and produces the 20/20 token. What version of the product are you using? On what operating system? 1.44, windows 8 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[bbala...@gmail.com](https://code.google.com/u/111228912230457395327/)",
+  "title": "Dark depths trigger won't activate",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 11, 2013 18:12:35",
+      "body": "Looking at the groovy, it seems that dark depths will only trigger when the last token is removed via payment (It looks like it only checks how many tokens are on it when one is removed vis payment)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "January 06, 2014 16:10:02",
+      "body": "Requires MagicWhenCounterRemovedTrigger or similar to be created",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 07, 2014 06:07:24",
+      "body": "This issue was closed by revision ea1302fa9f57 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [bbala...@gmail.com](https://code.google.com/u/111228912230457395327/) on December 12, 2013 05:48:36_\n\nWhat steps will reproduce the problem? 1.Playing dark depths\r\n2.playing a vampire hexmage and saccing it to remove ice counters 3. What is the expected output? What do you see instead? The lands sacrafices itself and produces the 20/20 token. What version of the product are you using? On what operating system? 1.44, windows 8 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=451_",
+  "date": "2013-12-12T05:48:36",
+  "state": "closed",
+  "gid": 451,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=451",
+  "owner": ""
+}

@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "hide CardTable header on Decks Screen as it duplicates information already displayed above it which looks messy.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Hide cardtable header on Decks screen.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 12, 2014 02:21:01",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/d154f7a98d3c58a6b6881aed71be5e603ce4327f .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 12, 2014 15:15:57_\n\nhide CardTable header on Decks Screen as it duplicates information already displayed above it which looks messy.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=650_",
+  "date": "2014-08-12T15:15:57",
+  "state": "closed",
+  "gid": 650,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=650",
+  "owner": "lodici123"
+}

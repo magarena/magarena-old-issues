@@ -1,0 +1,29 @@
+{
+  "status": "fixed",
+  "body": "What steps will reproduce the problem? 1. Computer player has Tolarian Sentinel in play \r\n2. Activates ability, does not pay with discard 3. What is the expected output? What do you see instead? Tolarian Sentinel needs to require a card is discarded, empty hand check should be made. What version of the product are you using? On what operating system? 1.54 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[zer...@gmail.com](https://code.google.com/u/113033908417053535498/)",
+  "title": "Tolarian Sentinel ability skipping cost of discarding a card",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "October 10, 2014 18:27:52",
+      "body": "This issue was closed by revision 01d882e0cd47 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "October 10, 2014 18:29:37",
+      "body": "Thanks for the report. The ability was missing the discard cost, added it back.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [zer...@gmail.com](https://code.google.com/u/113033908417053535498/) on October 11, 2014 04:15:11_\n\nWhat steps will reproduce the problem? 1. Computer player has Tolarian Sentinel in play \r\n2. Activates ability, does not pay with discard 3. What is the expected output? What do you see instead? Tolarian Sentinel needs to require a card is discarded, empty hand check should be made. What version of the product are you using? On what operating system? 1.54 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=709_",
+  "date": "2014-10-11T04:15:11",
+  "state": "closed",
+  "gid": 709,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=709",
+  "owner": ""
+}

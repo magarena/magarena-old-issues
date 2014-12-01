@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. target a creature with Doom Blade\r\n2. target the same creature with Rootborn Defenses 3. What is the expected output? What do you see instead? No effect, but instead the target is put in the graveyard What version of the product are you using? On what operating system? magarena 1.41, win 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). LOG (C): Pay {1}{B}. Tap Dimir Guildgate. Tap Plains. Play Doom Blade.\r\nLOG (P): Tap Sunpetal Grove. Tap Forest. Tap Plains. Pay {2}{W}. Play Rootborn Defenses.\r\nMMAB cheat=false index=1 life=6 phase=FirstMain slice=2000 time=2016\r\n* [772/99/3208 at 9] (pass)\r\n  [773/572/2017 at 9] (Syncopate)\r\n  [774/445/1862 at 9] (Mana Leak)\r\n  [775/412/2289 at 9] (Flood)\r\nLOG (P): Populate. Creatures you control are indestructible this turn. Put a token onto the battlefield that's a copy of a creature token you control.\r\nLOG (P): Nearheath Pilgrim is destroyed. Call to Serve is put into its owner's graveyard.\r\nLOG (C): Destroy target nonblack creature. (Nearheath Pilgrim) Please provide any additional information below.",
+  "author": "[Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/)",
+  "title": "\"Rootborn Defenses\" does not prevent the destroy effect of \"Doom Blade\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 27, 2013 18:29:24",
+      "body": "**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 27, 2013 18:52:25",
+      "body": "This issue was closed by revision f71a3e5e6c86 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/) on September 27, 2013 20:20:20_\n\nWhat steps will reproduce the problem? 1. target a creature with Doom Blade\r\n2. target the same creature with Rootborn Defenses 3. What is the expected output? What do you see instead? No effect, but instead the target is put in the graveyard What version of the product are you using? On what operating system? magarena 1.41, win 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). LOG (C): Pay {1}{B}. Tap Dimir Guildgate. Tap Plains. Play Doom Blade.\r\nLOG (P): Tap Sunpetal Grove. Tap Forest. Tap Plains. Pay {2}{W}. Play Rootborn Defenses.\r\nMMAB cheat=false index=1 life=6 phase=FirstMain slice=2000 time=2016\r\n* [772/99/3208 at 9] (pass)\r\n  [773/572/2017 at 9] (Syncopate)\r\n  [774/445/1862 at 9] (Mana Leak)\r\n  [775/412/2289 at 9] (Flood)\r\nLOG (P): Populate. Creatures you control are indestructible this turn. Put a token onto the battlefield that's a copy of a creature token you control.\r\nLOG (P): Nearheath Pilgrim is destroyed. Call to Serve is put into its owner's graveyard.\r\nLOG (C): Destroy target nonblack creature. (Nearheath Pilgrim) Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=407_",
+  "date": "2013-09-27T20:20:20",
+  "state": "closed",
+  "gid": 407,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=407",
+  "owner": ""
+}

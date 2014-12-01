@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "Bat, Voja, Goblin1, Goblin2, Griffin",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "some tokens have low res images",
+  "labels": [
+    "imported",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "May 28, 2011 23:05:19",
+      "body": "better images for:\r\nBat - http://www.mtgnews.com/showthread.php?t=199502 Voja, Goblin1 - http://www.mtgnews.com/showthread.php?t=199379",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2011 12:17:55",
+      "body": "This seems solved by now. All current token images look fine to me.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 30, 2011 08:37:44",
+      "body": "This issue was closed by revision d77be7fad5af .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 29, 2011 14:04:14_\n\nBat, Voja, Goblin1, Goblin2, Griffin\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=20_",
+  "date": "2011-05-29T14:04:14",
+  "state": "closed",
+  "gid": 20,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=20",
+  "owner": "melvinzh...@gmail.com"
+}

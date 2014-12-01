@@ -1,0 +1,59 @@
+{
+  "status": "verified",
+  "body": "Unable to create/use permanents with a single red mana as activation cost, as it is then returned to hand instead.\r\n\r\nSuggest {Rt}, {RT} or similar as a replacement",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "{R} as return permanent conflicts with {R} single red mana as activation cost",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 05, 2013 16:29:29",
+      "body": "Oh no! Thanks for catching this.\n\n**Status:** Started  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 05, 2013 16:30:28",
+      "body": "Whew, luckily it is not in the released version.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 05, 2013 16:32:19",
+      "body": "Hmm, now that you brought this up, {S} for Sacrifice this permanent also conflicts with snow mana. Think I'll do it as \"Sacrifice this\" and \"Return this\"",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 05, 2013 16:45:10",
+      "body": "Since we already have a effect for returning this permanent to hand, probably easiest to reuse that template to reduce confusion. So final version is \"Return SN to its owner's hand\"",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 05, 2013 16:46:13",
+      "body": "This issue was closed by revision 5c57d45cf6fe .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 06, 2013 13:24:12",
+      "body": "Glad to be of help :)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "December 06, 2013 13:48:44",
+      "body": "Do let me know what you'll decide with the {S} Sacrifice payment - I can help out with finding/fixing scripts - I'm thinking there'll be a lot of them.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on December 06, 2013 03:13:27_\n\nUnable to create/use permanents with a single red mana as activation cost, as it is then returned to hand instead.\r\n\r\nSuggest {Rt}, {RT} or similar as a replacement\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=435_",
+  "date": "2013-12-06T03:13:27",
+  "state": "closed",
+  "gid": 435,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=435",
+  "owner": ""
+}

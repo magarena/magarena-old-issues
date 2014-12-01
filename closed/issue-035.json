@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "reported by beholder from forum:\r\n\r\nit should be possible to interrupt the card loading process but that doesn't work. Clicking 'Cancel' only gives the impression that downloading has stopped but in the background it continues to download them all.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Cancel card image download continues in background",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 06, 2011 05:02:34",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 29, 2011 22:29:47_\n\nreported by beholder from forum:\r\n\r\nit should be possible to interrupt the card loading process but that doesn't work. Clicking 'Cancel' only gives the impression that downloading has stopped but in the background it continues to download them all.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=35_",
+  "date": "2011-07-29T22:29:47",
+  "state": "closed",
+  "gid": 35,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=35",
+  "owner": "melvinzh...@gmail.com"
+}

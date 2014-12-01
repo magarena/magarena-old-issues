@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? Nephalia Drownyard can tap itself for mana while using its ability What is the expected output? What do you see instead? The ability should cost 1UB but in fact cost UB What version of the product are you using? On what operating system? 1.22 on win xp Please provide any additional information below.",
+  "author": "[pelagott...@gmail.com](https://code.google.com/u/111376151429937618802/)",
+  "title": "Nephalia Drownyard can tap itself for mana while using its ability",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 31, 2012 02:44:56",
+      "body": "Thanks for the report.\r\n\r\nI can confirm this happens but only when the AI uses the second ability. The code correctly has the cost as {1UB}, as well as the CAN_TAP_CONDITION for both abilities. What I assume is happening is this:\r\n\r\n- AI checks 2nd ability's CAN_TAP_CONDITION and that returns true\r\n- AI checks 2nd ability's mana cost and builds a list of valid sources\r\n- 1st ability seems a valid mana source because its CAN_TAP_CONDITION returns true\r\n\r\nThis is not restricted to just this card. There are a few more cards that will have this same bug. I'll have to investigate this to see if I can come up with a solution.\n\n**Status:** Accepted  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 24, 2012 11:14:59",
+      "body": "This issue was closed by revision f57a22ffdb82 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [pelagott...@gmail.com](https://code.google.com/u/111376151429937618802/) on January 31, 2012 02:17:05_\n\nWhat steps will reproduce the problem? Nephalia Drownyard can tap itself for mana while using its ability What is the expected output? What do you see instead? The ability should cost 1UB but in fact cost UB What version of the product are you using? On what operating system? 1.22 on win xp Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=150_",
+  "date": "2012-01-31T02:17:05",
+  "state": "closed",
+  "gid": 150,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=150",
+  "owner": ""
+}

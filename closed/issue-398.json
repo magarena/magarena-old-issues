@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Open 'Edit deck'\r\n2. Click on table header to order by thoughness\r\n3. Enjoy ordering by power instead :) What version of the product are you using? On what operating system? 1.40 on Win7",
+  "author": "[ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/)",
+  "title": "Sort by thoughness actually sorts by power in deck builder",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:51:42",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 05, 2013 02:51:30",
+      "body": "Fixed in build 1.44.608 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/608/ ).\n\n**Status:** Fixed  \n  **Owner:** lodici123  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/) on August 25, 2013 18:06:22_\n\nWhat steps will reproduce the problem? 1. Open 'Edit deck'\r\n2. Click on table header to order by thoughness\r\n3. Enjoy ordering by power instead :) What version of the product are you using? On what operating system? 1.40 on Win7\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=398_",
+  "date": "2013-08-25T18:06:22",
+  "state": "closed",
+  "gid": 398,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=398",
+  "owner": "lodici123"
+}

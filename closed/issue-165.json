@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Get to exactly 1 life.\r\n2. Play a Sacred Foundry or other land from that cycle. What is the expected output? What do you see instead? The land should automatically come into play tapped, since it's not possible to pay 2 life. Instead, it automatically comes into play *untapped*. What version of the product are you using? On what operating system? 1.22",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "When at exactly 1 life, shocklands come into play untapped",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 20, 2012 00:07:41",
+      "body": "This issue was closed by revision 86e5b2f88419 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 20, 2012 00:10:37",
+      "body": "Thanks for noticing this.\r\n\r\nFor some reason the whole tap event was ignored when a player wasn't able to pay the 2 life. My change now also allows to pay the 2 life even if you are at a life total of 2 life (rule 118.4). No idea why anyone would want to do so, but it's the rules :)",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on February 20, 2012 11:12:57_\n\nWhat steps will reproduce the problem? 1. Get to exactly 1 life.\r\n2. Play a Sacred Foundry or other land from that cycle. What is the expected output? What do you see instead? The land should automatically come into play tapped, since it's not possible to pay 2 life. Instead, it automatically comes into play *untapped*. What version of the product are you using? On what operating system? 1.22\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=165_",
+  "date": "2012-02-20T11:12:57",
+  "state": "closed",
+  "gid": 165,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=165",
+  "owner": ""
+}

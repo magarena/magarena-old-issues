@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. play Mirrodin's Core and two other mana sources\r\n2. play Chromatic Lantern\r\n3. tap Mirrodin's Core to generate a charge counter\r\n4. play any spell, tap Mirrodin's Core for colorless mana. The charge counter is not being used.\r\n5. play any spell, tap Mirrodin's Core for colored mana. The charge counter still is being used. What is the expected output? What do you see instead? When Chromatic Lantern enters battlefield, Mirrodin's Core gets a new ability, like: {T} Add one mana of any color to your mana pool. \r\nWhen tapping it for colorless mana it uses its own ablity to generate colorless mana, which does not uses any charge counters. When tapping for mana of any color, and a charge counter is present, it uses its own ability to generate mana of any color, which uses a charge counter. If no charge counter is on the land, it uses the given ability to generate mana of any color, which does not use any charge counters.\r\n\r\nOne should get to chose the ability. Or it should use the given ability itself, which makes more sense. What version of the product are you using? On what operating system? Linux, Zorin 8, magarena 1.48.792 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Chromatic Lantern + Mirrodin's Core: still uses charge counters",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "March 08, 2014 16:59:50",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 500  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 08, 2014 23:50:39_\n\nWhat steps will reproduce the problem? 1. play Mirrodin's Core and two other mana sources\r\n2. play Chromatic Lantern\r\n3. tap Mirrodin's Core to generate a charge counter\r\n4. play any spell, tap Mirrodin's Core for colorless mana. The charge counter is not being used.\r\n5. play any spell, tap Mirrodin's Core for colored mana. The charge counter still is being used. What is the expected output? What do you see instead? When Chromatic Lantern enters battlefield, Mirrodin's Core gets a new ability, like: {T} Add one mana of any color to your mana pool. \r\nWhen tapping it for colorless mana it uses its own ablity to generate colorless mana, which does not uses any charge counters. When tapping for mana of any color, and a charge counter is present, it uses its own ability to generate mana of any color, which uses a charge counter. If no charge counter is on the land, it uses the given ability to generate mana of any color, which does not use any charge counters.\r\n\r\nOne should get to chose the ability. Or it should use the given ability itself, which makes more sense. What version of the product are you using? On what operating system? Linux, Zorin 8, magarena 1.48.792 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=501_",
+  "date": "2014-03-08T23:50:39",
+  "state": "closed",
+  "gid": 501,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=501",
+  "owner": ""
+}

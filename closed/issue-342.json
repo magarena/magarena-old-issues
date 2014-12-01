@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Player having a creature with \"Evolve\" on the battlefield under their control.\r\n2. The opponent playing a creature that should not trigger \"Evolve\" on the Players creature, but does.\r\n3. \"Evolve\" triggers from opponents creatures. What is the expected output? What do you see instead? \"Evolve\" should only trigger when a creature comes into play on the Players side. What version of the product are you using? On what operating system? 1.35 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Mmerrywe...@gmail.com](https://code.google.com/u/118141947219368053798/)",
+  "title": "\"Evolve\" triggers when opponents cast a creature with a greater toughness/power.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 14, 2013 20:22:43",
+      "body": "This issue was closed by revision a8a5d90a0ea3 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 14, 2013 20:23:34",
+      "body": "Thanks for catching this.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Mmerrywe...@gmail.com](https://code.google.com/u/118141947219368053798/) on April 14, 2013 23:25:40_\n\nWhat steps will reproduce the problem? 1. Player having a creature with \"Evolve\" on the battlefield under their control.\r\n2. The opponent playing a creature that should not trigger \"Evolve\" on the Players creature, but does.\r\n3. \"Evolve\" triggers from opponents creatures. What is the expected output? What do you see instead? \"Evolve\" should only trigger when a creature comes into play on the Players side. What version of the product are you using? On what operating system? 1.35 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=342_",
+  "date": "2013-04-14T23:25:40",
+  "state": "closed",
+  "gid": 342,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=342",
+  "owner": ""
+}

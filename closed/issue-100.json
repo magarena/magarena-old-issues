@@ -1,0 +1,59 @@
+{
+  "status": "verified",
+  "body": "I suggest that you introduce a way to keep track of all played game/games won/games lost/ games draw.\r\n\r\nI think it won't be hard.\r\n\r\nIn the 1st versions of Magarena there were the number of cards each cube has in front of each cube type.\r\n\r\nI even don't know now how many cards Magarena support.\r\n\r\nCan you put the number of cards each cube support in front of each cube?\r\n\r\nTHX. Nice job you're doing...",
+  "author": "[Pedro.Sa...@gmail.com](https://code.google.com/u/101555911296432586333/)",
+  "title": "Keep track of all won/lost games",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 26, 2011 07:17:23",
+      "body": "**Summary:** Keep track of all won/lost games  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 26, 2011 07:19:24",
+      "body": "Split off issue 101 for \"show number of cards in each cube\"",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 03, 2011 03:23:28",
+      "body": "changed to enhancement\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 07, 2011 09:45:18",
+      "body": "I started working on this.\r\n\r\nFor now I'll focus on storing :\r\ngames played\r\ngames won\r\ngames lost\r\nduels completed\r\nduels won\r\nduels lost\r\n\r\nand if that works then maybe add more data. This will be stored in a new folder, each player name in a separate file, e.g.\r\nMagarena/history/beholder.hist\r\nMagarena/history/pedro.hist\r\netc.\r\n\r\nThe easiest way of showing this information, in my opinion, will be a new window, opened from the menu bar.\n\n**Status:** Started  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 08, 2011 04:23:25",
+      "body": "Issue 120 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 08, 2011 07:03:24",
+      "body": "This issue was closed by revision c96844bd5eaa .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 08, 2011 07:04:39",
+      "body": "Future enhancements will be tracked in issue 2",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Pedro.Sa...@gmail.com](https://code.google.com/u/101555911296432586333/) on November 26, 2011 21:36:11_\n\nI suggest that you introduce a way to keep track of all played game/games won/games lost/ games draw.\r\n\r\nI think it won't be hard.\r\n\r\nIn the 1st versions of Magarena there were the number of cards each cube has in front of each cube type.\r\n\r\nI even don't know now how many cards Magarena support.\r\n\r\nCan you put the number of cards each cube support in front of each cube?\r\n\r\nTHX. Nice job you're doing...\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=100_",
+  "date": "2011-11-26T21:36:11",
+  "state": "closed",
+  "gid": 100,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=100",
+  "owner": ""
+}

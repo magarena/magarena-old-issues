@@ -1,0 +1,30 @@
+{
+  "status": "invalid",
+  "body": "What steps will reproduce the problem? 1. Boggart Mob is in play\r\n2. Tap Goblin Fireslinger to deal 1 damage to opponent\r\n3. Boggart Mob's ability does not trigger What is the expected output? What do you see instead? I expect a token 1/1 creature to be created by the Boggart Mob, but the ability is not triggered. What version of the product are you using? On what operating system? 1.21 on 32bit Arch Linux 3.1.1 Please provide any additional information below.",
+  "author": "[vwood....@gmail.com](https://code.google.com/u/106604248542971295546/)",
+  "title": "Direct damage from creature ability fails to activate a triggered 'Whenever creature deals damage to player\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "January 01, 2012 08:04:35",
+      "body": "This beahvior is OK - ability activates only if creature deals COMBAT damage.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "January 01, 2012 21:57:59",
+      "body": "Thanks for the report but as OLEGtheKamrad wrote this is not actually a bug. Look harder! :)\n\n**Status:** Invalid  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [vwood....@gmail.com](https://code.google.com/u/106604248542971295546/) on January 01, 2012 11:56:50_\n\nWhat steps will reproduce the problem? 1. Boggart Mob is in play\r\n2. Tap Goblin Fireslinger to deal 1 damage to opponent\r\n3. Boggart Mob's ability does not trigger What is the expected output? What do you see instead? I expect a token 1/1 creature to be created by the Boggart Mob, but the ability is not triggered. What version of the product are you using? On what operating system? 1.21 on 32bit Arch Linux 3.1.1 Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=134_",
+  "date": "2012-01-01T11:56:50",
+  "state": "closed",
+  "gid": 134,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=134",
+  "owner": ""
+}

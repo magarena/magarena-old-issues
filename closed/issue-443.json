@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "SN isn't a valid Target (unknown target filter)",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "effect: <chosen> gets <pt change> and gains <ability> until end of turn, doesn't work with SN",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 01, 2014 04:27:10",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on December 07, 2013 10:32:14_\n\nSN isn't a valid Target (unknown target filter)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=443_",
+  "date": "2013-12-07T10:32:14",
+  "state": "closed",
+  "gid": 443,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=443",
+  "owner": ""
+}

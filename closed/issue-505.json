@@ -1,0 +1,45 @@
+{
+  "status": "verified",
+  "body": "AI used is read from newduel.cfg regardless of which AI profile is selected.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "selecting the AI profile doesn't change the actual AI used",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-High",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 10, 2014 23:17:14",
+      "body": "Thanks, you are right - it is using the \"ai\" property instead of the \"AiPlayer\" profile. I will get right on it.\n\n**Labels:** -Priority-Medium Priority-High Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 11, 2014 01:23:12",
+      "body": "I have published the fix ( http://bitbucket.org/lodici/magarena/commits/e64cc2e0f30271afd135c0baff4132f7238c8b8b ). \r\n\r\nThis also fixes the fact that AI extra life and difficulty was not being picked up either since it was still using the GeneralConfig properties which are now surplus to requirements.\n\n**Status:** Started  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 15, 2014 01:20:58",
+      "body": "**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 15, 2014 01:23:06",
+      "body": "fixed in build 1.48.824.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on March 11, 2014 13:05:58_\n\nAI used is read from newduel.cfg regardless of which AI profile is selected.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=505_",
+  "date": "2014-03-11T13:05:58",
+  "state": "closed",
+  "gid": 505,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=505",
+  "owner": "lodici123"
+}

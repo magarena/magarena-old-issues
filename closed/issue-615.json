@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "Just realised that I'm unable to set the starting life during a duel to 20.\r\n\r\nThe guide lines below the life selection restrict to 1,6,11,16,21,26 and 30",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Unable to set starting life to 20",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 21, 2014 21:44:44",
+      "body": "Yeah, this was bugging me too although I think it only applies when running in dev mode. I will take a look.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 22, 2014 03:39:42",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/8d5b4b9af680ab7e72ad075d8a84c046973569f6\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on June 22, 2014 00:49:26_\n\nJust realised that I'm unable to set the starting life during a duel to 20.\r\n\r\nThe guide lines below the life selection restrict to 1,6,11,16,21,26 and 30\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=615_",
+  "date": "2014-06-22T00:49:26",
+  "state": "closed",
+  "gid": 615,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=615",
+  "owner": "ShawnieBoyUK"
+}

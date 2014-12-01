@@ -1,0 +1,28 @@
+{
+  "status": "verified",
+  "body": "Update card count",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Patch for /AboutMagarena.wiki",
+  "labels": [
+    "imported",
+    "Type-Patch"
+  ],
+  "comments": [
+    {
+      "date": "January 04, 2014 16:48:06",
+      "body": "Thanks! Applied as https://code.google.com/p/magarena/source/detail?r=e6ae37bd08b8eec67d49503a1f7009bf0f78456b&repo=wiki\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on January 04, 2014 23:42:29_\n\nUpdate card count\n\n**Attachment:** [AboutMagarena.wiki.patch](http://code.google.com/p/magarena/issues/detail?id=463)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=463_",
+  "date": "2014-01-04T23:42:29",
+  "state": "closed",
+  "gid": 463,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=463",
+  "owner": ""
+}

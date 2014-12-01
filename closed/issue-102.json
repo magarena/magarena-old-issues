@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "version 1.20\r\n\r\nTwo small bugs (were in v1.19-1.20)\r\n1. Scion of Oona & Ruhan of the Fomori - shown as a coloroless in card explorer (not tested in duels)\r\n2. Volcanic Hammer (Sorcery) can be played as an instant.\r\n\r\nThank you for a great game !",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Bug report",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 27, 2011 03:07:27",
+      "body": "Pulse of the Fields is an instant, but is a Sorcery in game.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "November 27, 2011 05:41:50",
+      "body": "This issue was closed by revision 691680ad087d .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 27, 2011 05:43:11",
+      "body": "Thanks for the bug report! First bug report since the release of 1.20b :) Keep them coming.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on November 27, 2011 18:38:47_\n\nversion 1.20\r\n\r\nTwo small bugs (were in v1.19-1.20)\r\n1. Scion of Oona & Ruhan of the Fomori - shown as a coloroless in card explorer (not tested in duels)\r\n2. Volcanic Hammer (Sorcery) can be played as an instant.\r\n\r\nThank you for a great game !\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=102_",
+  "date": "2011-11-27T18:38:47",
+  "state": "closed",
+  "gid": 102,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=102",
+  "owner": ""
+}

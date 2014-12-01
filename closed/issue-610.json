@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "From hong yie on forum - http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=153689#p153689.. .\r\nWhen Ai is playing a spell that i also hold in my hand, the card animation will start from my hand, not from the AI's hand. doesn't really important, just for perfectionist. :)",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "AI appears to play a card from your hand!",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 07, 2014 10:03:00",
+      "body": "fix applied: http://bitbucket.org/lodici/magarena/commits/46ba2279325c35e4153756e8ae6f7c5e11844dde\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on June 06, 2014 13:38:41_\n\nFrom hong yie on forum - http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=153689#p153689.. .\r\nWhen Ai is playing a spell that i also hold in my hand, the card animation will start from my hand, not from the AI's hand. doesn't really important, just for perfectionist. :)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=610_",
+  "date": "2014-06-06T13:38:41",
+  "state": "closed",
+  "gid": 610,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=610",
+  "owner": "lodici123"
+}

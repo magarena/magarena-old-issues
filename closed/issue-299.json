@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Cast Lightning Helix on a creature.\r\n2. Before it resolves, kill the creature in some other way. What is the expected output? What do you see instead? Since Lightning Helix no longer has any targets, it should be countered on resolution. Instead, it resolves and you gain 3 life. What version of the product are you using? On what operating system? 1.30, OS X Please provide any additional information below. This seems to be a card-specific problem; so far as I've noticed, similar cards like Smash to Smithereens work correctly...",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Lightning Helix doesn't fizzle when its target is removed",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "October 04, 2012 18:40:05",
+      "body": "Thanks for reporting, fixed in revision 503697348da6\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on October 05, 2012 01:49:49_\n\nWhat steps will reproduce the problem? 1. Cast Lightning Helix on a creature.\r\n2. Before it resolves, kill the creature in some other way. What is the expected output? What do you see instead? Since Lightning Helix no longer has any targets, it should be countered on resolution. Instead, it resolves and you gain 3 life. What version of the product are you using? On what operating system? 1.30, OS X Please provide any additional information below. This seems to be a card-specific problem; so far as I've noticed, similar cards like Smash to Smithereens work correctly...\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=299_",
+  "date": "2012-10-05T01:49:49",
+  "state": "closed",
+  "gid": 299,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=299",
+  "owner": ""
+}

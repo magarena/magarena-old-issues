@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "Game screen not appearing after closing MulliganScreen - instead just an empty background. I think this is actually an intermittent paint/refresh issue - I sometimes get this on my low spec Acer Aspire One netbook and it usually occurs on the very first game after starting Magarena, but then works fine on subsequent games. Resizing the window (by using F11 for example) and the game screen will appear.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Game screen not appearing after closing MulliganScreen",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 05, 2014 00:52:04",
+      "body": "Fixed in https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/705/ .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on February 04, 2014 02:07:46_\n\nGame screen not appearing after closing MulliganScreen - instead just an empty background. I think this is actually an intermittent paint/refresh issue - I sometimes get this on my low spec Acer Aspire One netbook and it usually occurs on the very first game after starting Magarena, but then works fine on subsequent games. Resizing the window (by using F11 for example) and the game screen will appear.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=472_",
+  "date": "2014-02-04T02:07:46",
+  "state": "closed",
+  "gid": 472,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=472",
+  "owner": "lodici123"
+}

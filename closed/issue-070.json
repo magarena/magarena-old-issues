@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "Casting Doom Blade on the AI's Mantis Engine, AI activates it's flying ability twice although Mantis Engine sets the maximum number of activations per turn to 1.\r\n\r\nMantis Engine:\r\nnew MagicActivationHints(MagicTiming.Pump,true,1)\r\n\r\nLog:\r\nMMAB index=1 life=10 time=562 workers=2 main=6\r\n  [1/1/-100001614 at 53] (pass)\r\n* [1/2719/-9715 at 75] (Mantis Engine)\r\n  [0/1/-100001617 at 57] (Mantis Engine)\r\nLOG: Pay {2}. Tap Rupture Spire. Tap Rupture Spire. Play activated ability of Mantis Engine.\r\nLOG: Mantis Engine gains flying until end of turn.\r\nMMAB index=1 life=10 time=538 workers=2 main=6\r\n  [1/1/-100001604 at 53] (pass)\r\n* [1/2632/-9705 at 73] (Mantis Engine)\r\n  [0/1/-100001607 at 57] (Mantis Engine)\r\nLOG: Pay {2}. Tap Rupture Spire. Tap Rupture Spire. Play activated ability of Mantis Engine.\r\nLOG: Mantis Engine gains flying until end of turn.\r\n\r\nI also tried adding MagicCondition.ABILITY_ONCE_CONDITION and AI still uses the ability more than once per turn.\r\nMaybe related to the checkState changes?",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "MagicActivationHints.maximum and MagicCondition.ABILITY_ONCE_CONDITION are ignored",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "October 05, 2011 00:20:59",
+      "body": "For some reason incrementAbilityPlayedThisTurn() is never called. That's why the check for MagicActivationHints.isMaximum in MagicActivation.canPlay returns false and the ability may be played more than once.\r\nABILITY_ONCE_CONDITION uses getAbilityPlayedThisTurn so has the same problem.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 12, 2011 01:59:38",
+      "body": "This is actually an oversight in some of the card classes. They forget to call MagicPlayAbilityEvent and therefor abilityPlayedThisTurn never gets incremented.\r\n\r\nI'm working on this.\n\n**Status:** Started  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 12, 2011 02:37:39",
+      "body": "This issue was closed by revision dc8195d5d52d .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on October 05, 2011 00:19:19_\n\nCasting Doom Blade on the AI's Mantis Engine, AI activates it's flying ability twice although Mantis Engine sets the maximum number of activations per turn to 1.\r\n\r\nMantis Engine:\r\nnew MagicActivationHints(MagicTiming.Pump,true,1)\r\n\r\nLog:\r\nMMAB index=1 life=10 time=562 workers=2 main=6\r\n  [1/1/-100001614 at 53] (pass)\r\n* [1/2719/-9715 at 75] (Mantis Engine)\r\n  [0/1/-100001617 at 57] (Mantis Engine)\r\nLOG: Pay {2}. Tap Rupture Spire. Tap Rupture Spire. Play activated ability of Mantis Engine.\r\nLOG: Mantis Engine gains flying until end of turn.\r\nMMAB index=1 life=10 time=538 workers=2 main=6\r\n  [1/1/-100001604 at 53] (pass)\r\n* [1/2632/-9705 at 73] (Mantis Engine)\r\n  [0/1/-100001607 at 57] (Mantis Engine)\r\nLOG: Pay {2}. Tap Rupture Spire. Tap Rupture Spire. Play activated ability of Mantis Engine.\r\nLOG: Mantis Engine gains flying until end of turn.\r\n\r\nI also tried adding MagicCondition.ABILITY_ONCE_CONDITION and AI still uses the ability more than once per turn.\r\nMaybe related to the checkState changes?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=70_",
+  "date": "2011-10-05T00:19:19",
+  "state": "closed",
+  "gid": 70,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=70",
+  "owner": "BeHold...@gmail.com"
+}

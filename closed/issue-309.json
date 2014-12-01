@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. The opponent attacks with White Knight\r\n2. I have Legacy's Allure with two counters\r\n3. Sacrifice Legacy's Allure, take control of the knight. What is the expected output? What do you see instead? Expected: White Knight is in play under my control.\r\nActual: White Knight disappeared completely. It's not on the board, not in any graveyard, and not in exile. What version of the product are you using? On what operating system? Magarena 1.32 on WinXP If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). I can't - I see \"Issue attachment storage quota exceeded\" where an Attach link normally is. I'll quote the last few lines from game.log which appear relevant:\r\n\r\nMMAB index=1 life=10 phase=FirstMain time=3329 workers=2 main=4\r\n* [1/3823/-3360 at 62] (pass)\r\n  [1/9/-3681 at 80] (Knight Exemplar)\r\n  [0/9/-3419 at 74] (Whispersilk Cloak)\r\n  [0/5/-3417 at 71] (Hero of Bladehold)\r\nMMAB index=1 life=10 phase=DeclareAttackers time=1250 workers=2 main=3\r\n* [1/1527/-3087 at 50] ([White Knight])\r\n  [1/5/-3407 at 53] ([])\r\nLOG (C): Computer attacks with White Knight.\r\nLOG (P): Sacrifice Legacy's Allure. Play activated ability of Legacy's Allure.\r\nLOG (P): Gain control of target creature (White Knight) with power less than or equal to the number of treasure counters on Legacy's Allure.",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Creature taken over by Legacy's Allure disappeared",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 16, 2012 11:17:06",
+      "body": "Hmm. The White Knight did show up under my control at the end of Combat phase (or at the beginning of Second Main phase, hard to tell which). But there definitely was a period of time where it didn't show up anywhere (I checked in text mode, too, so it's not simply a rendering issue).",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)"
+    },
+    {
+      "date": "December 17, 2012 04:46:08",
+      "body": "Thanks for the clear description, I am able to replicate the issue.\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 17, 2012 06:15:16",
+      "body": "This issue was closed by revision 41c5fa6dfaac .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on December 17, 2012 03:11:09_\n\nWhat steps will reproduce the problem? 1. The opponent attacks with White Knight\r\n2. I have Legacy's Allure with two counters\r\n3. Sacrifice Legacy's Allure, take control of the knight. What is the expected output? What do you see instead? Expected: White Knight is in play under my control.\r\nActual: White Knight disappeared completely. It's not on the board, not in any graveyard, and not in exile. What version of the product are you using? On what operating system? Magarena 1.32 on WinXP If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). I can't - I see \"Issue attachment storage quota exceeded\" where an Attach link normally is. I'll quote the last few lines from game.log which appear relevant:\r\n\r\nMMAB index=1 life=10 phase=FirstMain time=3329 workers=2 main=4\r\n* [1/3823/-3360 at 62] (pass)\r\n  [1/9/-3681 at 80] (Knight Exemplar)\r\n  [0/9/-3419 at 74] (Whispersilk Cloak)\r\n  [0/5/-3417 at 71] (Hero of Bladehold)\r\nMMAB index=1 life=10 phase=DeclareAttackers time=1250 workers=2 main=3\r\n* [1/1527/-3087 at 50] ([White Knight])\r\n  [1/5/-3407 at 53] ([])\r\nLOG (C): Computer attacks with White Knight.\r\nLOG (P): Sacrifice Legacy's Allure. Play activated ability of Legacy's Allure.\r\nLOG (P): Gain control of target creature (White Knight) with power less than or equal to the number of treasure counters on Legacy's Allure.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=309_",
+  "date": "2012-12-17T03:11:09",
+  "state": "closed",
+  "gid": 309,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=309",
+  "owner": ""
+}

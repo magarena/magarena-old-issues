@@ -1,0 +1,40 @@
+{
+  "status": "wontfix",
+  "body": "Temporal Isolation don't work when enchanted creature has \"leaves battlefield and deals damage\" ability - damage is dealt and is not prevented, because enchantment is not on creature, in that case game must use \"last known information\".",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Temporal isolation",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "December 06, 2011 01:47:45",
+      "body": "I've searched on rulings regarding this situation but I'm still unsure what's supposed to be the correct behavior. If anyone can point to the rules that handle this situation or maybe a thread on a trusted site or ..well has any information that may clear this up, please do so.\r\n\r\nWe should have a judge :)",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 06, 2011 05:01:16",
+      "body": "Hmm... Maybe the current behavior is right because ability triggers when creature is put into grave so it can't have any attached qequip or enchant. But we need someone's competent explanation.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 08, 2011 05:10:46",
+      "body": "After discussion on forum with judges and palyer i found arule for that kind of triggers:\r\n\r\n\r\n603.6  Trigger events that involve objects changing zones are called \"zone-change triggers.\" Many abilities with zone-change triggers attempt to do something to that object after it changes zones. During resolution, these abilities look for the object in the zone that it moved to. If the object is unable to be found in the zone it went to, the part of the ability attempting to do something to the object will fail to do anything. The ability could be unable to find the object because the object never entered the specified zone, because it left the zone before the ability resolved, or because it is in a zone that is hidden from a player, such as a library or an opponent’s hand. (This rule applies even if the object leaves the zone and returns again before the ability resolves.) The most common zone-change triggers are enters-the-battlefield triggers and leaves-the-battlefield triggers. \r\n\r\nThe main word are: \"During resolution, these abilities look for the object in the zone that it moved to.\" So the current behavior is ok.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 08, 2011 07:14:44",
+      "body": "That explanation makes sense to me and I'm glad that the current behavior is correct because it looks like it would have been hard to make use of the \"last known information\" to be honest.\r\n\r\nIt's good to have discussions like this as I'm sure some cards do NOT follow the correct rules, so do not hesitate to make a new issue when you feel you find such a card.\r\n\r\nThanks.\n\n**Status:** WontFix  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on December 03, 2011 21:20:46_\n\nTemporal Isolation don't work when enchanted creature has \"leaves battlefield and deals damage\" ability - damage is dealt and is not prevented, because enchantment is not on creature, in that case game must use \"last known information\".\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=113_",
+  "date": "2011-12-03T21:20:46",
+  "state": "closed",
+  "gid": 113,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=113",
+  "owner": ""
+}

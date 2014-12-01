@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Aunukia@yahoo.com via email suggested:\r\n\r\nWhat I meant was MagArena puts about a 1 pixel wide white border around all cards. It's not really noticable with old white-border cards, but looks jarring with black-border cards (which the majority are). I think that border should be done away with entirely, if possible.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "remove 1 pixel white border around cards",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "February 02, 2013 18:36:54",
+      "body": "This issue was closed by revision 7b4862451b30 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on January 06, 2013 14:07:50_\n\nAunukia@yahoo.com via email suggested:\r\n\r\nWhat I meant was MagArena puts about a 1 pixel wide white border around all cards. It's not really noticable with old white-border cards, but looks jarring with black-border cards (which the majority are). I think that border should be done away with entirely, if possible.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=319_",
+  "date": "2013-01-06T14:07:50",
+  "state": "closed",
+  "gid": 319,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=319",
+  "owner": "melvinzh...@gmail.com"
+}

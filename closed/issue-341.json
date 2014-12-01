@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Start a New Duel\r\n2. Start determining the winning percentage between the two decks 3. What is the expected output? What do you see instead? Some version before 1.36, playing two decks against each other was *much* faster. I don't mind having the possibility of calculating more realistic winning changes by spending more time, but it would be convenient to also have a much faster evaluation, like before. What version of the product are you using? On what operating system? 1.36, Mac OS X 10.7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. A related note: it would be nice if multiple winning percentage evaluation games were done in parallel. This would boost the calculation time by a significant factor!",
+  "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)",
+  "title": "Deck strength calculation now very slow",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 14, 2013 01:33:16",
+      "body": "PS: the winning percentage evaluation is now much slower *even at the lowest AI level*.",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "April 20, 2013 07:47:26",
+      "body": "This issue was closed by revision dabeed39d671 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 20, 2013 07:48:31",
+      "body": "Thanks for reporting. This is a consequence of using time limited instead of depth limited minimax search for deck strength calculation. I've just pushed a change that will use depth limited search for deck strength calculation while using time limited search for interactive play.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/) on April 14, 2013 16:32:34_\n\nWhat steps will reproduce the problem? 1. Start a New Duel\r\n2. Start determining the winning percentage between the two decks 3. What is the expected output? What do you see instead? Some version before 1.36, playing two decks against each other was *much* faster. I don't mind having the possibility of calculating more realistic winning changes by spending more time, but it would be convenient to also have a much faster evaluation, like before. What version of the product are you using? On what operating system? 1.36, Mac OS X 10.7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. A related note: it would be nice if multiple winning percentage evaluation games were done in parallel. This would boost the calculation time by a significant factor!\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=341_",
+  "date": "2013-04-14T16:32:34",
+  "state": "closed",
+  "gid": 341,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=341",
+  "owner": ""
+}

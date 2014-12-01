@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Grundomu @ http://www.slightlymagic.net/forum/posting.php?mode=quote&f=82&p=75614#pr75614 Folks, it appears that Magarena is not removing a counter from Gemstone Mine when it is tapped for mana.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Gemstone Mine's counter is not removed when activating ability",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 28, 2011 06:03:23",
+      "body": "This issue was closed by revision d2ebd1656cff .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on November 28, 2011 21:56:24_\n\nGrundomu @ http://www.slightlymagic.net/forum/posting.php?mode=quote&f=82&p=75614#pr75614 Folks, it appears that Magarena is not removing a counter from Gemstone Mine when it is tapped for mana.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=104_",
+  "date": "2011-11-28T21:56:24",
+  "state": "closed",
+  "gid": 104,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=104",
+  "owner": "melvinzh...@gmail.com"
+}

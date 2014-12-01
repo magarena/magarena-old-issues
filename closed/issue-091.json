@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "The following creatures have their subtype wrong\r\n- Alley Grifters in Magarena is Human, Mercenary in the card just says Mercenary \r\n- Angelfire Crusader in Magarena is  Human, Knight, Soldier in the card just says Soldier\r\n\r\nFrom now on... M (Magarena) C (Card)\r\n\r\n- Ardent Militia M: Human, Soldier C: Soldier\r\n- Ardent Soldier M: Human, Soldier C: Soldier\r\n- Balduvian War-Makers M: Barbarian, Human C: Barbarian\r\n- Benalish Lancer M: Human, Knight C: Knight\r\n- Border Patrol M: Human, Nomad C: Nomad\r\n- Burning Shield Askari M: Human, Knight C: Knight\r\n- Corrupt Official M: Human, Minion C: Minion\r\n- Covert Operative M: Human, Wizard C: Wizard\r\n- Defender en-Vec M: Cleric, Human C: Cleric\r\n- Duskwalker M: Human, Minion C: Minion\r\n- Fallen Askari M: Human, Knight C: Knight\r\n- Femeref Knight M: Human, Knight C: Knight\r\n- Gustcloak Runner M: Human, Soldier C: Soldier\r\n- Gustcloak Sentinel M: Human, Soldier C: Soldier\r\n- Halberdier M: Barbarian, Human C: Barbarian\r\n- Longbow Archer M: Archer, Human, Soldier C: Soldier\r\n- Mtenda Herder M: Human, Scout C: Scout\r\n- Sacred Knight M: Human, Knight C: Old card with no subtype\r\n- Sidar Jabari M: Human, Knight C: Old card with no subtype\r\n- Silver Knight M: Human, Knight C: Knight\r\n- Standing Troops M: Human, Soldier C: Soldier\r\n- Telim'Tor M: Human, Knight C: Old card with no subtype\r\n- Woodland Druid M: Druid, Human C: Druid\r\n- Zhalfirin Knight M: Human, Knight C: Knight",
+  "author": "[est...@gmail.com](https://code.google.com/u/112144615059920860021/)",
+  "title": "Wrong subtypes",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 10, 2011 00:20:27",
+      "body": "WOTC added subtypes to these cards (and many more) after they were printed. I use http://gatherer.wizards.com/ and they list the official subtypes of all the cards there.\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "November 10, 2011 05:06:33",
+      "body": "Thanks for the very detailed and clear report!\r\n\r\nSorry about the confusion between the subtypes printed on the card and used in the game. The game implements the cards as described in the latest Oracle text and these sometimes differ from the printed cards.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 10, 2011 05:09:21",
+      "body": "Thanks a lot for your answer, that explains a lot... I'll check the official site next time before submitting this kind of errors.",
+      "author": "[est...@gmail.com](https://code.google.com/u/112144615059920860021/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [est...@gmail.com](https://code.google.com/u/112144615059920860021/) on November 10, 2011 02:26:57_\n\nThe following creatures have their subtype wrong\r\n- Alley Grifters in Magarena is Human, Mercenary in the card just says Mercenary \r\n- Angelfire Crusader in Magarena is  Human, Knight, Soldier in the card just says Soldier\r\n\r\nFrom now on... M (Magarena) C (Card)\r\n\r\n- Ardent Militia M: Human, Soldier C: Soldier\r\n- Ardent Soldier M: Human, Soldier C: Soldier\r\n- Balduvian War-Makers M: Barbarian, Human C: Barbarian\r\n- Benalish Lancer M: Human, Knight C: Knight\r\n- Border Patrol M: Human, Nomad C: Nomad\r\n- Burning Shield Askari M: Human, Knight C: Knight\r\n- Corrupt Official M: Human, Minion C: Minion\r\n- Covert Operative M: Human, Wizard C: Wizard\r\n- Defender en-Vec M: Cleric, Human C: Cleric\r\n- Duskwalker M: Human, Minion C: Minion\r\n- Fallen Askari M: Human, Knight C: Knight\r\n- Femeref Knight M: Human, Knight C: Knight\r\n- Gustcloak Runner M: Human, Soldier C: Soldier\r\n- Gustcloak Sentinel M: Human, Soldier C: Soldier\r\n- Halberdier M: Barbarian, Human C: Barbarian\r\n- Longbow Archer M: Archer, Human, Soldier C: Soldier\r\n- Mtenda Herder M: Human, Scout C: Scout\r\n- Sacred Knight M: Human, Knight C: Old card with no subtype\r\n- Sidar Jabari M: Human, Knight C: Old card with no subtype\r\n- Silver Knight M: Human, Knight C: Knight\r\n- Standing Troops M: Human, Soldier C: Soldier\r\n- Telim'Tor M: Human, Knight C: Old card with no subtype\r\n- Woodland Druid M: Druid, Human C: Druid\r\n- Zhalfirin Knight M: Human, Knight C: Knight\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=91_",
+  "date": "2011-11-10T02:26:57",
+  "state": "closed",
+  "gid": 91,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=91",
+  "owner": ""
+}

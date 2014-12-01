@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Open Card Explorer window\r\n2. Mouse over Air Bladder (a new card) What version of the product are you using? On what operating system? Magarena 1.29 on Debian Linux (Testing) 64 bit.",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "1.29 crashes in Card Explorer",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 28, 2012 18:43:17",
+      "body": "This issue was closed by revision 1b9d29b0f6ae .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 28, 2012 18:46:15",
+      "body": "Thanks, the url for the image was wrong. You can fix it in your copy by downloading the corrected card scripts from the following links and putting it in your Magarena/scripts folder. https://magarena.googlecode.com/hg-history/1b9d29b0f6ae0b35a41d3e3a983b60275a13aef9/release/Magarena/scripts/Air_Bladder.txt https://magarena.googlecode.com/hg-history/1b9d29b0f6ae0b35a41d3e3a983b60275a13aef9/release/Magarena/scripts/Horn_of_Ramos.txt https://magarena.googlecode.com/hg-history/1b9d29b0f6ae0b35a41d3e3a983b60275a13aef9/release/Magarena/scripts/Mox_Jet.txt",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 09, 2012 21:01:04",
+      "body": "Issue 294 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on August 28, 2012 19:17:54_\n\nWhat steps will reproduce the problem? 1. Open Card Explorer window\r\n2. Mouse over Air Bladder (a new card) What version of the product are you using? On what operating system? Magarena 1.29 on Debian Linux (Testing) 64 bit.\n\n**Attachment:** [crash.log game.log](http://code.google.com/p/magarena/issues/detail?id=283)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=283_",
+  "date": "2012-08-28T19:17:54",
+  "state": "closed",
+  "gid": 283,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=283",
+  "owner": ""
+}

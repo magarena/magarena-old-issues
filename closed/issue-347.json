@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. detain an opponent's creature\r\n2. pass the turn 3. What is the expected output? What do you see instead? the creature targeted should not be able to attack or use activated abilities, but it can. What version of the product are you using? On what operating system? MAGARENA VERSION 1.37, JRE 1.7.0_21, OS Windows 7_6.1 x86 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). LOG (P): Tap Tundra. Tap Plains. Pay {1}{U}. Play Inaction Injunction.\r\nLOG (P): Detain target creature (Knight of Infamy) an opponent controls. Draw a card.\r\nLOG (P): Jericho attacks with Umara Raptor.\r\nLOG (C): {c}Computer loses 2 life.\r\nVEGAS cheat=false index=1 life=7 phase=FirstMain slice=3000 time=6017\r\n  [3500/168] (pass)\r\n  [1180451/170] (Knight of Infamy)\r\n* [1670036/180] (Doom Blade)\r\n  [3998/165] (Vampire Nighthawk)\r\n  [-360358/276] (Oblivion Ring)\r\nVEGAS cheat=false index=1 life=7 phase=FirstMain slice=6000 time=6013\r\n* [1411857/568] ()\r\n  [716674/561] ()\r\nLOG (C): Pay {1}{B}. Tap Godless Shrine. Tap Isolated Chapel. Play Doom Blade.\r\nLOG (P): Umara Raptor is destroyed.\r\nLOG (C): Destroy target nonblack creature. (Umara Raptor)\r\nVEGAS cheat=false index=1 life=7 phase=FirstMain slice=6000 time=6009\r\n  [2611/657] (pass)\r\n* [676786/594] (Knight of Infamy)\r\nLOG (C): Pay {1}{B}. Tap Isolated Chapel. Tap Plains. Play Knight of Infamy.\r\nLOG (C): Put Knight of Infamy onto the battlefield.\r\nVEGAS cheat=false index=1 life=7 phase=DeclareAttackers slice=6000 time=6008\r\n* [6531676/490] ([Knight of Infamy])\r\n  [909/546] ([])\r\nLOG (C): Computer attacks with Knight of Infamy.\r\nLOG (C): Knight of Infamy gets +1/+1 until end of turn.\r\nLOG (C): Knight of Infamy gets +1/+1 until end of turn. Please provide any additional information below. the effect seems to end with your current turn, while it should end with your next turn",
+  "author": "[Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/)",
+  "title": "Detain does not work correctly",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "May 02, 2013 22:07:00",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 345  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/) on May 03, 2013 01:26:15_\n\nWhat steps will reproduce the problem? 1. detain an opponent's creature\r\n2. pass the turn 3. What is the expected output? What do you see instead? the creature targeted should not be able to attack or use activated abilities, but it can. What version of the product are you using? On what operating system? MAGARENA VERSION 1.37, JRE 1.7.0_21, OS Windows 7_6.1 x86 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). LOG (P): Tap Tundra. Tap Plains. Pay {1}{U}. Play Inaction Injunction.\r\nLOG (P): Detain target creature (Knight of Infamy) an opponent controls. Draw a card.\r\nLOG (P): Jericho attacks with Umara Raptor.\r\nLOG (C): {c}Computer loses 2 life.\r\nVEGAS cheat=false index=1 life=7 phase=FirstMain slice=3000 time=6017\r\n  [3500/168] (pass)\r\n  [1180451/170] (Knight of Infamy)\r\n* [1670036/180] (Doom Blade)\r\n  [3998/165] (Vampire Nighthawk)\r\n  [-360358/276] (Oblivion Ring)\r\nVEGAS cheat=false index=1 life=7 phase=FirstMain slice=6000 time=6013\r\n* [1411857/568] ()\r\n  [716674/561] ()\r\nLOG (C): Pay {1}{B}. Tap Godless Shrine. Tap Isolated Chapel. Play Doom Blade.\r\nLOG (P): Umara Raptor is destroyed.\r\nLOG (C): Destroy target nonblack creature. (Umara Raptor)\r\nVEGAS cheat=false index=1 life=7 phase=FirstMain slice=6000 time=6009\r\n  [2611/657] (pass)\r\n* [676786/594] (Knight of Infamy)\r\nLOG (C): Pay {1}{B}. Tap Isolated Chapel. Tap Plains. Play Knight of Infamy.\r\nLOG (C): Put Knight of Infamy onto the battlefield.\r\nVEGAS cheat=false index=1 life=7 phase=DeclareAttackers slice=6000 time=6008\r\n* [6531676/490] ([Knight of Infamy])\r\n  [909/546] ([])\r\nLOG (C): Computer attacks with Knight of Infamy.\r\nLOG (C): Knight of Infamy gets +1/+1 until end of turn.\r\nLOG (C): Knight of Infamy gets +1/+1 until end of turn. Please provide any additional information below. the effect seems to end with your current turn, while it should end with your next turn\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=347_",
+  "date": "2013-05-03T01:26:15",
+  "state": "closed",
+  "gid": 347,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=347",
+  "owner": ""
+}

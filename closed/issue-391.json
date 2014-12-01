@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. Have a lot of mountains and forests in play\r\n2. Cast Flinthoof Boar\r\n3. Next turn cast another Flithoof Boar\r\n\r\nWhat is the expected output? - player can pay a Mountain for a new Flinthoof Boar to get haste\r\n\r\nWhat do you see instead? - only the first (old) Flinthoof Boar can get haste, not the new one\r\n\r\n\r\nWhat version of the product are you using? 1.40\r\nOn what operating system? Win7",
+  "author": "[ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/)",
+  "title": "Activated abilities of creatures in play cannot be activated for second creature with the same name",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "August 22, 2013 19:27:06",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 379  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/) on August 22, 2013 20:52:29_\n\nWhat steps will reproduce the problem? 1. Have a lot of mountains and forests in play\r\n2. Cast Flinthoof Boar\r\n3. Next turn cast another Flithoof Boar\r\n\r\nWhat is the expected output? - player can pay a Mountain for a new Flinthoof Boar to get haste\r\n\r\nWhat do you see instead? - only the first (old) Flinthoof Boar can get haste, not the new one\r\n\r\n\r\nWhat version of the product are you using? 1.40\r\nOn what operating system? Win7\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=391_",
+  "date": "2013-08-22T20:52:29",
+  "state": "closed",
+  "gid": 391,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=391",
+  "owner": ""
+}

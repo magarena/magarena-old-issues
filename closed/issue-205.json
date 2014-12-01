@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Run magarena on a relatively resolution (below 1366x768 for example) What is the expected output? What do you see instead? The normal magarena screen with a scrollbar to allow access to non-visibly areas. What version of the product are you using? On what operating system? Magarena 1.24 / Ubuntu 11.10\r\n\r\nI fount the problem trying to create a custom deck. The buttons for the task\r\nare not visible due to screen size issues. The attached screenshow will give you\r\na better idea of what i am talking about.",
+  "author": "[pablo.ca...@gmail.com](https://code.google.com/u/100883785716832971309/)",
+  "title": "Magarena screen is cut off on low resolution displays (netbooks, and old laptops)",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 21, 2012 05:39:58",
+      "body": "Issue 206 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 21, 2012 05:40:13",
+      "body": "Issue 207 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 21, 2012 05:41:09",
+      "body": "Sorry about the resolution problem, the same bug was reported on the forum earlier and we did a quick patch by adding a scroll bar. You can replace your current Magarena.exe with https://magarena.ci.cloudbees.com/job/Magarena-Daily/31/artifact/release/Magarena.exe\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 11, 2013 06:33:31",
+      "body": "This should be closed. As of 1.44 scrollbars enable access to all areas as requested.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "November 11, 2013 17:49:51",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [pablo.ca...@gmail.com](https://code.google.com/u/100883785716832971309/) on April 21, 2012 11:27:13_\n\nWhat steps will reproduce the problem? 1. Run magarena on a relatively resolution (below 1366x768 for example) What is the expected output? What do you see instead? The normal magarena screen with a scrollbar to allow access to non-visibly areas. What version of the product are you using? On what operating system? Magarena 1.24 / Ubuntu 11.10\r\n\r\nI fount the problem trying to create a custom deck. The buttons for the task\r\nare not visible due to screen size issues. The attached screenshow will give you\r\na better idea of what i am talking about.\n\n**Attachment:** [screenshot.png](http://code.google.com/p/magarena/issues/detail?id=205)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=205_",
+  "date": "2012-04-21T11:27:13",
+  "state": "closed",
+  "gid": 205,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=205",
+  "owner": ""
+}

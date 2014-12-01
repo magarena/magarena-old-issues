@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Should add a new cost type {p*} to MagicCostManaType.\r\nSuch card is like \"Act of Aggression\", it let player cost with either mana or  2 life.",
+  "author": "[neoedmund](https://code.google.com/u/neoedmund/)",
+  "title": "Implement a new cost type {p*}",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "March 16, 2012 23:20:27",
+      "body": "Thanks for the suggestion, we would definitely love to support Phyrexian mana, the hardest part for us is making sure the AI is able to handle this additional type of mana. Frankly, I'm not completely familiar with the mana paying logic so I'm not sure how hard it will be to do this. You are most welcome to submit patches.\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 08, 2014 18:39:30",
+      "body": "Supported now using alt cost in ability, eg \"alt cost {3}{R}, Pay 2 life named Pay 2 life\"\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [neoedmund](https://code.google.com/u/neoedmund/) on March 15, 2012 00:50:44_\n\nShould add a new cost type {p*} to MagicCostManaType.\r\nSuch card is like \"Act of Aggression\", it let player cost with either mana or  2 life.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=186_",
+  "date": "2012-03-15T00:50:44",
+  "state": "closed",
+  "gid": 186,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=186",
+  "owner": ""
+}

@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? Run the deck strength calculator with for instance 100 games. What is the expected output? What do you see instead? This should have no influence on the player history.\r\nHowever games played and won/lost also count the 100 simulated games. What version of the product are you using? On what operating system? 1.22",
+  "author": "[ubeefx](https://code.google.com/u/ubeefx/)",
+  "title": "Deck strength calculator changes player history",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 30, 2012 00:17:59",
+      "body": "This issue was closed by revision 4748ada80885 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 30, 2012 00:21:02",
+      "body": "Thanks for spotting that bug.\r\n\r\nI never thought of the deck strength calculator messing up history even though the panel is right above it :/",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ubeefx](https://code.google.com/u/ubeefx/) on January 30, 2012 03:19:51_\n\nWhat steps will reproduce the problem? Run the deck strength calculator with for instance 100 games. What is the expected output? What do you see instead? This should have no influence on the player history.\r\nHowever games played and won/lost also count the 100 simulated games. What version of the product are you using? On what operating system? 1.22\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=149_",
+  "date": "2012-01-30T03:19:51",
+  "state": "closed",
+  "gid": 149,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=149",
+  "owner": ""
+}

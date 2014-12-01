@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "The necropede has Myr as subtype instead of Insect (At least in the filter screen, haven't test it on play with cards like Myr Galvanizer)",
+  "author": "[est...@gmail.com](https://code.google.com/u/112144615059920860021/)",
+  "title": "Necropede bad sub-type",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 04, 2011 18:52:10",
+      "body": "This issue was closed by revision 3fce68441c41 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 04, 2011 18:53:03",
+      "body": "Thanks! Fixed.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [est...@gmail.com](https://code.google.com/u/112144615059920860021/) on November 05, 2011 04:45:46_\n\nThe necropede has Myr as subtype instead of Insect (At least in the filter screen, haven't test it on play with cards like Myr Galvanizer)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=89_",
+  "date": "2011-11-05T04:45:46",
+  "state": "closed",
+  "gid": 89,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=89",
+  "owner": ""
+}

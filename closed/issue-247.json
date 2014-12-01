@@ -1,0 +1,25 @@
+{
+  "status": "invalid",
+  "body": "What steps will reproduce the problem? 1. Attack with Mikaeus\r\n2. Tap to add +1/+1\r\n3. Still do damage to creature What is the expected output? What do you see instead? Maybe rules have changed or I recall incorrectly, but I thought that when a creature was doing damage, if it had to tap to activate any ability, it no longer dealt damage. \r\nPerhaps I either recall incorrectly or this is a difference in rules specific to Magarena What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "Mikaeus the Lunarch - tap to add while in combat",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "October 27, 2013 06:08:36",
+      "body": "tapping does not affect dealing of damage\n\n**Status:** Invalid  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on July 07, 2012 08:13:31_\n\nWhat steps will reproduce the problem? 1. Attack with Mikaeus\r\n2. Tap to add +1/+1\r\n3. Still do damage to creature What is the expected output? What do you see instead? Maybe rules have changed or I recall incorrectly, but I thought that when a creature was doing damage, if it had to tap to activate any ability, it no longer dealt damage. \r\nPerhaps I either recall incorrectly or this is a difference in rules specific to Magarena What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=247_",
+  "date": "2012-07-07T08:13:31",
+  "state": "closed",
+  "gid": 247,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=247",
+  "owner": ""
+}

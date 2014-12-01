@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Load custom deck\r\n2. Play Noble Hierarch\r\n3. next turn it doesn't highlight in mana context What is the expected output? What do you see instead? Noble Hierarch should be available to give mana What version of the product are you using? On what operating system? this problem i noticed since 1.17, i am using 1.17b on winxp Please provide any additional information below.",
+  "author": "[Mil...@gmail.com](https://code.google.com/u/115186255383615958730/)",
+  "title": "Noble Hierarch - can't tap for mana",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 31, 2011 07:21:55",
+      "body": "This issue was closed by revision c3ebcab2d839 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 31, 2011 07:24:03",
+      "body": "Thanks for the report. The issue has been fixed, the problem was a typo (misspelled Noble as Nobel) that caused the code implementing the card abilities not to be loaded.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Mil...@gmail.com](https://code.google.com/u/115186255383615958730/) on August 31, 2011 20:19:58_\n\nWhat steps will reproduce the problem? 1. Load custom deck\r\n2. Play Noble Hierarch\r\n3. next turn it doesn't highlight in mana context What is the expected output? What do you see instead? Noble Hierarch should be available to give mana What version of the product are you using? On what operating system? this problem i noticed since 1.17, i am using 1.17b on winxp Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=46_",
+  "date": "2011-08-31T20:19:58",
+  "state": "closed",
+  "gid": 46,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=46",
+  "owner": ""
+}

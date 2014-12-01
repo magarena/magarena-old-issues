@@ -1,0 +1,24 @@
+{
+  "status": "fixed",
+  "body": "Thought I was doing something wrong with the 'named' filters, but it looks as though all search to hand via scripts no longer function.\r\n\r\nCan make a selection, but the chosen card leaves the library and never appears in the hand.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Search to hand not working",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 04, 2014 17:58:59",
+      "body": "This issue was closed by revision ae7bad66f8f4 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on September 05, 2014 07:59:51_\n\nThought I was doing something wrong with the 'named' filters, but it looks as though all search to hand via scripts no longer function.\r\n\r\nCan make a selection, but the chosen card leaves the library and never appears in the hand.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=680_",
+  "date": "2014-09-05T07:59:51",
+  "state": "closed",
+  "gid": 680,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=680",
+  "owner": ""
+}

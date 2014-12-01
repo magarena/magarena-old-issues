@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have a Platinum Angel in play.\r\n2. Have zero or less life.\r\n3. Reduce the computer to zero or less life. What is the expected output? What do you see instead? I should win as soon as the computer is reduced to 0 life. Instead, it seems I need to reduce the computer's life total to below mine (that is, it needs to be a negative number of larger magnitude). What version of the product are you using? On what operating system? 1.22",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "When Platinum Angel is in play, reducing opponent to 0 life isn't always sufficient to win the game",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 13, 2012 06:21:19",
+      "body": "You are right, I can easily reproduce this.\r\n\r\nAt the moment the game only checks if the player with the lowest amount of life loses the game. This fails in the situation you describe because you are the one with the lowest amount but can't lose due to Platinum Angel's effect. I guess it was done this way because we don't support the game to end in a draw. It's easy to fix this bug by checking each player's life total but I need to find out how that can possibly interfere with the 'no draws' rule or if we perhaps should start supporting draws.\r\n\r\nThanks for the report, I'll get back on this.\n\n**Status:** Accepted  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 13, 2012 06:25:02",
+      "body": "simple fix would be:\r\n\r\n// Check if a player has lost\r\nfor (final MagicPlayer player : players) {\r\n  if (player.getLife() <= 0) {\r\n    stateBasedActions.add(new MagicLoseGameAction(player,MagicLoseGameAction.LIFE_REASON));\r\n  }\r\n  if (player.getPoison() >= LOSING_POISON) {\r\n    stateBasedActions.add(new MagicLoseGameAction(player,MagicLoseGameAction.POISON_REASON));\r\n  }\r\n}",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 16, 2012 07:22:36",
+      "body": "This issue was closed by revision 4d83fb6bffd0 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 16, 2012 07:24:23",
+      "body": "The game now checks each player for a possible losing condition. This reversed what player loses when life or poison counters are equal. Before the change the AI would lose, now the user loses.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 16, 2012 07:32:06",
+      "body": "revision 4d83fb6bffd0 accidentally deleted some code. corrected in revision 0a8d5314eaad",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on February 12, 2012 02:21:02_\n\nWhat steps will reproduce the problem? 1. Have a Platinum Angel in play.\r\n2. Have zero or less life.\r\n3. Reduce the computer to zero or less life. What is the expected output? What do you see instead? I should win as soon as the computer is reduced to 0 life. Instead, it seems I need to reduce the computer's life total to below mine (that is, it needs to be a negative number of larger magnitude). What version of the product are you using? On what operating system? 1.22\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=158_",
+  "date": "2012-02-12T02:21:02",
+  "state": "closed",
+  "gid": 158,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=158",
+  "owner": ""
+}

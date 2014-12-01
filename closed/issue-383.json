@@ -1,0 +1,30 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. Have multiple instances of a card in hand or battlefield 2. 3. What is the expected output? What do you see instead? If you have multiple instances of a card, you should be able to activate abilities or place any of them on battlefield (obviously if rules allow you to do so). Instead, you can only activate the abilities of the first (leftmost) card. Same thing with putting them on the battlefield. What version of the product are you using? On what operating system? 1.40 (deck was made in 1.38) WinXP SP3 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). - Please provide any additional information below. Sample picture: http://farm6.staticflickr.com/5479/9421505403_c77d770653_o.jpg In this particular case I have enough mana to activate the second Inkmoth nexus, however the border doesn't show up and it's not clickable. Also,from the two Black moon cards I can only place the left on the battlefield, not that I prefer the other one, but I'm guessing these two \"issues\" are connected somehow.\r\n\r\nThanks for listening & keep up the great work!\r\nCheers,\r\nTyr",
+  "author": "[texan...@gmail.com](https://code.google.com/u/115421075386950174577/)",
+  "title": "Multiple card problem",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "August 02, 2013 10:17:49",
+      "body": "*I meant Bad moon, sry.",
+      "author": "[texan...@gmail.com](https://code.google.com/u/115421075386950174577/)"
+    },
+    {
+      "date": "August 07, 2013 06:05:23",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 379  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [texan...@gmail.com](https://code.google.com/u/115421075386950174577/) on August 03, 2013 01:16:10_\n\nWhat steps will reproduce the problem? 1. Have multiple instances of a card in hand or battlefield 2. 3. What is the expected output? What do you see instead? If you have multiple instances of a card, you should be able to activate abilities or place any of them on battlefield (obviously if rules allow you to do so). Instead, you can only activate the abilities of the first (leftmost) card. Same thing with putting them on the battlefield. What version of the product are you using? On what operating system? 1.40 (deck was made in 1.38) WinXP SP3 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). - Please provide any additional information below. Sample picture: http://farm6.staticflickr.com/5479/9421505403_c77d770653_o.jpg In this particular case I have enough mana to activate the second Inkmoth nexus, however the border doesn't show up and it's not clickable. Also,from the two Black moon cards I can only place the left on the battlefield, not that I prefer the other one, but I'm guessing these two \"issues\" are connected somehow.\r\n\r\nThanks for listening & keep up the great work!\r\nCheers,\r\nTyr\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=383_",
+  "date": "2013-08-03T01:16:10",
+  "state": "closed",
+  "gid": 383,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=383",
+  "owner": ""
+}

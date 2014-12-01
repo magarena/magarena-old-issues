@@ -1,0 +1,54 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? it's just a feeling. I just upgraded from 873 to 890 and with exactly the same preferencies 890 needs a lot more \"thinking time\" than it does in 873. It feels as twice as much... What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "890 way slower than 873",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 25, 2014 07:15:30",
+      "body": "Which AI are you playing against?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 25, 2014 08:47:03",
+      "body": "Mini Max all the time...",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 25, 2014 08:53:39",
+      "body": "experienced on my PC:\r\n\r\nAMD Phenom II X2 560\r\n3300 MHz\r\nLinux Mint 16\r\nKernel: 3.11.0-12-generic (#19-Ubuntu SMP Wed Oct 9 16:20:46 UTC 2013)\r\n16 GB DDR3 RAM\r\n\r\nmagarena 1.48.890\r\nMini Max AI at level 6/8",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 25, 2014 09:39:00",
+      "body": "I cross-checked it with a stopwatch in the taskbar:\r\n\r\n873: paradise mantle: average thinking time for casting, equipping and moving it from one creature to another - about 3-4 seconds in early turns, in later turns 8 seconds and more\r\n\r\nsame deck in 890: paradise mantle: average thinking time in early rounds: 6-7 seconds, later 14-16 seconds, growing",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 25, 2014 09:42:09",
+      "body": "to be clear: \r\n\r\nboth computer and I were using the same decks with paradise mantle in it, and the time stopped was at computer's turn, when it moved the paradise mantle around (you know, it's a fancy piece of cloth, every creature needs to wear it at least once)",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 31, 2014 01:13:08",
+      "body": "I think this might be obsolete by now. It was either minimax of 873 not using the full time or 890 being somewhat laggy. Nevermind, as of now (.925), everything seems to be okay again. (of course it could have been my PC, though I doubt it)\r\n\r\nFor the moment I'm done with minimax, it does a lot of stupid moves. Gonna give MTCSAI a try.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 31, 2014 01:49:17",
+      "body": "Glad to hear that things are ok again. Will close this.\n\n**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 25, 2014 21:36:14_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? it's just a feeling. I just upgraded from 873 to 890 and with exactly the same preferencies 890 needs a lot more \"thinking time\" than it does in 873. It feels as twice as much... What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=553_",
+  "date": "2014-03-25T21:36:14",
+  "state": "closed",
+  "gid": 553,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=553",
+  "owner": ""
+}

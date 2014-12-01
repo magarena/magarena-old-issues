@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "Treetop Village - when animated, it \"saves\" changes even after end of turn - i.e. damage dealt to, buffs (Giant Growth) - so when animated next time it will be not 3/3 but 6/6 with damge marked on it (if dealt)",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Bug report - Treetop Village",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 27, 2011 09:20:55",
+      "body": "It seems other animated lands do the same, all effects (+x/x, evasion abilities, etc.) that were on creature-land sticks to it.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 03, 2011 03:17:22",
+      "body": "This issue was closed by revision 496725c4dad9 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 03, 2011 03:22:06",
+      "body": "Thanks for the report.\r\n\r\nThe problem was that at the end of turn the land stopped being a creature so the code that should remove temporary effects from creatures never did.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on November 27, 2011 23:25:34_\n\nTreetop Village - when animated, it \"saves\" changes even after end of turn - i.e. damage dealt to, buffs (Giant Growth) - so when animated next time it will be not 3/3 but 6/6 with damge marked on it (if dealt)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=103_",
+  "date": "2011-11-27T23:25:34",
+  "state": "closed",
+  "gid": 103,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=103",
+  "owner": ""
+}

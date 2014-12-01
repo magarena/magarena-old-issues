@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1.  Having a counterspell or counterspell-like card in hand\r\n2. Opponent plays a creature with keyword flash\r\n3.  Having enough mana to pay the cost of the counterspell What is the expected output? What do you see instead? Flash does not protect a card from a counterspell.  However, the game will not allow me to counter the spell even though I meet all prerequisites. What version of the product are you using? On what operating system? 1.28 on operating system Windows XP If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). File is attached, but unsure if it has the incident logged. Please provide any additional information below.",
+  "author": "[True.Str...@gmail.com](https://code.google.com/u/113611120031645723895/)",
+  "title": "Flash Keyword Uncounterable",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 09, 2012 21:02:35",
+      "body": "Thanks for the report, we have confirmed the bug and are looking into the fix.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 23, 2012 01:05:39",
+      "body": "This issue was closed by revision 5cba6f516e00 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 23, 2012 01:09:29",
+      "body": "The bug is due to the game skipping over phases it thinks there is nothing for you to do. Unfortunately, one of the heuristics is too relaxed, it automatically skips the declare attackers phase if nobody is attacking. \r\n\r\nHowever, the opponent may cast a spell during the declare attackers phase! The logic now includes checking if the stack is empty.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [True.Str...@gmail.com](https://code.google.com/u/113611120031645723895/) on August 31, 2012 21:06:07_\n\nWhat steps will reproduce the problem? 1.  Having a counterspell or counterspell-like card in hand\r\n2. Opponent plays a creature with keyword flash\r\n3.  Having enough mana to pay the cost of the counterspell What is the expected output? What do you see instead? Flash does not protect a card from a counterspell.  However, the game will not allow me to counter the spell even though I meet all prerequisites. What version of the product are you using? On what operating system? 1.28 on operating system Windows XP If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). File is attached, but unsure if it has the incident logged. Please provide any additional information below.\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=285)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=285_",
+  "date": "2012-08-31T21:06:07",
+  "state": "closed",
+  "gid": 285,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=285",
+  "owner": ""
+}

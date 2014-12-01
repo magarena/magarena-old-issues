@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have a bunch of knights in play, including exactly one Knight Exemplar\r\n2. Cast a spell that has a \"destroy all creatures\" effect. What is the expected output? What do you see instead? Only the Knight Exemplar should be destroyed. Instead, some (but not all) of the other knights are also destroyed. So far as I can tell, individual cards seem to behave consistently (Knights of Meadowgrain are always destroyed; Angelfire Crusaders and Accorder Paladins always survive.) What version of the product are you using? On what operating system? 1.23, OS X",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Wrath effects interact incorrectly with Knight Exemplar",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 29, 2012 23:35:20",
+      "body": "Thanks for the report. I can reproduce this.\r\n\r\nA card like 'Day of Judgment' makes a list of all the creatures then destroys 1 at a time. Once Knight Exemplar is destroyed, the other knights on that list have lost their indestructible ability and will also be destroyed. Since the list is sorted alphabetically, Angelfire Crusader lives and White Knight dies.\r\n\r\nOne way to solve this is to pass a list to MagicDestroyAction, let it build a list of creatures that will be destroyed and lastly, remove those from play.\n\n**Status:** Accepted  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "March 01, 2012 09:12:32",
+      "body": "This issue was closed by revision 8b185c62a812 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "March 01, 2012 09:33:31",
+      "body": "You must be the 'bug reporter' record holder by now, with about a dozen reported bugs that all have clear descriptions and easy to reproduce steps.\r\n\r\nI just want to say thanks again for your efforts, it's really appreciated!",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on March 01, 2012 09:09:58_\n\nWhat steps will reproduce the problem? 1. Have a bunch of knights in play, including exactly one Knight Exemplar\r\n2. Cast a spell that has a \"destroy all creatures\" effect. What is the expected output? What do you see instead? Only the Knight Exemplar should be destroyed. Instead, some (but not all) of the other knights are also destroyed. So far as I can tell, individual cards seem to behave consistently (Knights of Meadowgrain are always destroyed; Angelfire Crusaders and Accorder Paladins always survive.) What version of the product are you using? On what operating system? 1.23, OS X\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=173_",
+  "date": "2012-03-01T09:09:58",
+  "state": "closed",
+  "gid": 173,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=173",
+  "owner": ""
+}

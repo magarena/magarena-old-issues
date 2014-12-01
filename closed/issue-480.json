@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "Set player Hand to 6 or 8 during duel setup and the MulliganScreen does not show.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Set Hand to 6 or 8 and the MulliganScreen does not show.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-High",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 14, 2014 22:23:43",
+      "body": "fixed in https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/717/ .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on February 09, 2014 16:45:17_\n\nSet player Hand to 6 or 8 during duel setup and the MulliganScreen does not show.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=480_",
+  "date": "2014-02-09T16:45:17",
+  "state": "closed",
+  "gid": 480,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=480",
+  "owner": "lodici123"
+}

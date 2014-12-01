@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "I'm running Funtoo, a fork of Gentoo. I downloaded the game, and I'd like to write an ebuild for it. However, the game doesn't have features which support system-wide installation. For example, the game requires downloading images in-game, and they are written to a data directory which is most likely only going to be writable by root - not a user. I think the best solution would be to have a separate data archive that can be downloaded and upgraded apart from the game binary instead of downloading in-game. The alternative would be to keep game data such as card images in the user's home directory - maybe ~/.Magarena - but the downside to that is having multiple copies of all that data on systems where there is more than one user who uses the game. Likewise for the log and configuration files. These need to be in a writable location such as ~/.Magarena. As it is, symlinks could easily circumvent the issue with config files and logs, but not the issue with data like card images. Are there any plans to add such features to support system-wide installation? It would make it easier to package up in .deb, .rpm, etc. and get this game out in the open.",
+  "author": "[doctorwh...@gmail.com](https://code.google.com/u/116804557652414477140/)",
+  "title": "Add support for system-wide install",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "April 04, 2012 07:16:55",
+      "body": "I'd love to see Magarena available in native package formats. Storing data that have to be downloaded in a ~/.Magarena folder would be the way to go. There is also some benefit to our current portable folder style install. One way which will work for both types of installation is to have the program check for card images and text from either the Magarena subfolder where the program is installed or the ~/.Magarena folder.\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 04, 2012 07:17:11",
+      "body": "**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 30, 2013 05:06:52",
+      "body": "Magarena now checks for magarena.dir parameter passed to the java runtime with the -D flag and read resources from that directory. See https://aur.archlinux.org/packages/magarena/ for a sample package for Arch\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [doctorwh...@gmail.com](https://code.google.com/u/116804557652414477140/) on April 04, 2012 12:21:25_\n\nI'm running Funtoo, a fork of Gentoo. I downloaded the game, and I'd like to write an ebuild for it. However, the game doesn't have features which support system-wide installation. For example, the game requires downloading images in-game, and they are written to a data directory which is most likely only going to be writable by root - not a user. I think the best solution would be to have a separate data archive that can be downloaded and upgraded apart from the game binary instead of downloading in-game. The alternative would be to keep game data such as card images in the user's home directory - maybe ~/.Magarena - but the downside to that is having multiple copies of all that data on systems where there is more than one user who uses the game. Likewise for the log and configuration files. These need to be in a writable location such as ~/.Magarena. As it is, symlinks could easily circumvent the issue with config files and logs, but not the issue with data like card images. Are there any plans to add such features to support system-wide installation? It would make it easier to package up in .deb, .rpm, etc. and get this game out in the open.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=201_",
+  "date": "2012-04-04T12:21:25",
+  "state": "closed",
+  "gid": 201,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=201",
+  "owner": ""
+}

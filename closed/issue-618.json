@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Select \"zachsoulsister\" deck in DeckChooserScreen.\r\n2. Click on Deck View action.\r\n3. Click on \"Other Spells\" action.\r\n\r\nThis deck has no cards in the \"Other Spells\" category.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Deck generates NPE in deck view.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 14, 2014 04:08:56",
+      "body": "fixed in http://bitbucket.org/lodici/magarena/commits/54bbed6a5cce27a06ec5e318f2e9845841c8b813 .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on July 08, 2014 14:53:16_\n\nWhat steps will reproduce the problem? 1. Select \"zachsoulsister\" deck in DeckChooserScreen.\r\n2. Click on Deck View action.\r\n3. Click on \"Other Spells\" action.\r\n\r\nThis deck has no cards in the \"Other Spells\" category.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=618_",
+  "date": "2014-07-08T14:53:16",
+  "state": "closed",
+  "gid": 618,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=618",
+  "owner": "lodici123"
+}

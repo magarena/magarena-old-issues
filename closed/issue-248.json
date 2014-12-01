@@ -1,0 +1,29 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? AI attacked with Hero of Bladehold\r\nI blocked with Wolf created from WRP\r\nHero took 2 damage from Wolf (saw it noted in red)\r\nHero did not die\r\nBut Wolf is supposed to have Deathtouch and Hero should have died. What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "Wren's Run Packmaster - Wolf deathtouch not working",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 06, 2014 15:07:16",
+      "body": "The wolves themselves do not have deathtouch, the packmaster gives all wolves deathtouch. If it has left play, wolves will do normal damage.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "January 07, 2014 19:16:34",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on July 07, 2012 10:42:50_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? AI attacked with Hero of Bladehold\r\nI blocked with Wolf created from WRP\r\nHero took 2 damage from Wolf (saw it noted in red)\r\nHero did not die\r\nBut Wolf is supposed to have Deathtouch and Hero should have died. What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=248)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=248_",
+  "date": "2012-07-07T10:42:50",
+  "state": "closed",
+  "gid": 248,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=248",
+  "owner": ""
+}

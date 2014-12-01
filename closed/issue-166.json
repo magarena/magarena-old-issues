@@ -1,0 +1,39 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. the card attacked and tapped my non-Human creature at the same time 2. 3. What is the expected output? What do you see instead? I thought you could only use your tap once per turn, either to attack or to use the associated ability, not both at the same time. What version of the product are you using? On what operating system? 1.22 Windows XP SP3 Please provide any additional information below.",
+  "author": "[Comix...@gmail.com](https://code.google.com/u/100880791201746159829/)",
+  "title": "Avacynian Priest Uses its tap ability and taps to attack at the same time.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 22, 2012 23:35:23",
+      "body": "Thanks for the report.\r\n\r\nIf Avacynian Priest attacks then it becomes tapped and it shouldn't be able to use its ability after. I played quite a few test games but could not reproduce the bug you describe. Maybe you can remember some details about the game this happened in? Anything that might give us a chance to thoroughly test this will be helpful, because if this is indeed a bug it seems something is fundamentally wrong within the code.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 23, 2012 11:24:15",
+      "body": "I'll try to reproduce it and keep better track of whats going on.  I wasn't really paying attention to the details I just thought that was unusual and didn't know I could report it until later on.",
+      "author": "[Comix...@gmail.com](https://code.google.com/u/100880791201746159829/)"
+    },
+    {
+      "date": "February 24, 2012 11:17:42",
+      "body": "I tried to recreate it but couldn't. There must have been two of them on the board, one was attacking and the other one was tapping my defender. That's the only possibility I can think of. Next time I run into something unusual I will gather more detail before I post. Thanks",
+      "author": "[Comix...@gmail.com](https://code.google.com/u/100880791201746159829/)"
+    },
+    {
+      "date": "February 24, 2012 11:26:06",
+      "body": "I'll close this as can not reproduce then.\r\n\r\nWe should have some sort of game log soon, that hopefully makes it easier to get the details clear. Do not hesitate to post possible issues though as I rather have a few bug reports that turn out to be false than no reports at all.\r\n\r\nThanks for the effort.\n\n**Status:** CantReproduce  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [Comix...@gmail.com](https://code.google.com/u/100880791201746159829/) on February 23, 2012 04:54:12_\n\nWhat steps will reproduce the problem? 1. the card attacked and tapped my non-Human creature at the same time 2. 3. What is the expected output? What do you see instead? I thought you could only use your tap once per turn, either to attack or to use the associated ability, not both at the same time. What version of the product are you using? On what operating system? 1.22 Windows XP SP3 Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=166_",
+  "date": "2012-02-23T04:54:12",
+  "state": "closed",
+  "gid": 166,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=166",
+  "owner": ""
+}

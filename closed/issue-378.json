@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "neo via direct mail reported:\r\n\r\ntried to install a couple of Magarena and cannot open the application, it says: \"Magarena-1.39\" is damaged and can't be opened. You should move it to the Trash\r\n\r\nI`m running OSX Mountain Lion on an Macbook Air.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "mac package broken",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 03, 2013 08:04:36",
+      "body": "By default, Mountain Lion doesn't like you downloading things from the internet. You can probably get Magarena to work by changing some system preferences.\r\n\r\nTry following the instructions in part A1 here: http://www.minecraftforum.net/topic/649868-mac-support-101/",
+      "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)"
+    },
+    {
+      "date": "August 12, 2013 23:17:22",
+      "body": "removed apple signature from JavaApplicationStub now the message is: \"Magarena-1.41\" can't be opened because it is from an unidentified developer.\r\n\r\nSolution is to right click on the app and select the \"Open\" command and then allow the app to run",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 12, 2013 23:18:21",
+      "body": "Should be control-click instead of right click",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 12, 2013 23:47:24",
+      "body": "update front page to point users to support article showing how to solve this problem\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 29, 2013 11:04:54_\n\nneo via direct mail reported:\r\n\r\ntried to install a couple of Magarena and cannot open the application, it says: \"Magarena-1.39\" is damaged and can't be opened. You should move it to the Trash\r\n\r\nI`m running OSX Mountain Lion on an Macbook Air.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=378_",
+  "date": "2013-07-29T11:04:54",
+  "state": "closed",
+  "gid": 378,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=378",
+  "owner": "melvinzh...@gmail.com"
+}

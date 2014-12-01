@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "In the Duel screen, I know an error suppression was used so that a deck with an unimplemented card wouldn't cause a crash to desktop.\r\n\r\nI think this would be handy for the new Deck Selection screen as it parses each deck, and if they have cards which aren't implemented, it then crashes.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Deck Selection Screen Crash",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 07, 2014 12:31:56",
+      "body": "Good point - I will look into it.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "July 21, 2014 02:10:33",
+      "body": "fixed in https://code.google.com/p/magarena/source/detail?r=816df4224efe5d1654ee1309d726860e44326785\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on July 08, 2014 01:45:36_\n\nIn the Duel screen, I know an error suppression was used so that a deck with an unimplemented card wouldn't cause a crash to desktop.\r\n\r\nI think this would be handy for the new Deck Selection screen as it parses each deck, and if they have cards which aren't implemented, it then crashes.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=617_",
+  "date": "2014-07-08T01:45:36",
+  "state": "closed",
+  "gid": 617,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=617",
+  "owner": "ShawnieBoyUK"
+}

@@ -1,0 +1,60 @@
+{
+  "status": "verified",
+  "body": "Add an option to refresh card images. This is necessary because of the import option which does not refresh images so, for example, my JOU set of card images which were downloaded in an earlier version are all low res and are imported each time I update to a new version. But the images have since been updated to high-res on mtgimages.com but there is no way to get these without removing the existing images first, which triggers the download mechanism.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Add option to refresh card images.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-High",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 02, 2014 11:39:02",
+      "body": "Just published a batch of commits that revamp the downloads dialog. I have added a new option to download images for unimplemented cards which can run in parallel with the playable download. You will need just over 1.5GB free disk space for all the images. The proxy settings have been moved to the preferences dialog and thus can now be saved.\n\n**Status:** Started  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 04, 2014 17:30:41",
+      "body": "Just a suggestion - Maybe only show the download images hint if there's implemented cards with images missing. Save harassing people who don't want to download all of them :)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 04, 2014 22:10:40",
+      "body": "It already does that. Missing images for unimplemented cards should not trigger the notification.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 04, 2014 22:15:43",
+      "body": "Also, I have published an update that displays images for unimplemented cards in greyscale to better reflect their status.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 03:47:21",
+      "body": "Issue 438 has been merged into this issue.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 05:26:01",
+      "body": "**Labels:** -Priority-Medium Priority-High  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 16, 2014 05:57:17",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/505162b84b02f92b8ce7f0e1ec3c46cab72073ea .\n\n**Status:** Done  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on July 28, 2014 01:45:13_\n\nAdd an option to refresh card images. This is necessary because of the import option which does not refresh images so, for example, my JOU set of card images which were downloaded in an earlier version are all low res and are imported each time I update to a new version. But the images have since been updated to high-res on mtgimages.com but there is no way to get these without removing the existing images first, which triggers the download mechanism.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=626_",
+  "date": "2014-07-28T01:45:13",
+  "state": "closed",
+  "gid": 626,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=626",
+  "owner": "lodici123"
+}

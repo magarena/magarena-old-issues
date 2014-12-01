@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have \"Kessig Wolf Run\" in play\r\n2. Use the ability of \"Kessig Wolf Run\"\r\n3. You can choose \"Kessig Wolf Run\" to pay the mana cost for the ability What is the expected output? What do you see instead? The card should not be able to pay for its own ability. What version of the product are you using? On what operating system? 1.33 on Windows 7 Professional 64-bit SP1",
+  "author": "[Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/)",
+  "title": "Ability of \"Kessig Wolf Run\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 02, 2013 18:03:49",
+      "body": "This issue was closed by revision 1c91789efb13 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 02, 2013 18:04:34",
+      "body": "Thanks for the report. Fixed by ensuring the player taps Kessign Wolf Run first before paying the mana cost.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/) on January 21, 2013 23:06:45_\n\nWhat steps will reproduce the problem? 1. Have \"Kessig Wolf Run\" in play\r\n2. Use the ability of \"Kessig Wolf Run\"\r\n3. You can choose \"Kessig Wolf Run\" to pay the mana cost for the ability What is the expected output? What do you see instead? The card should not be able to pay for its own ability. What version of the product are you using? On what operating system? 1.33 on Windows 7 Professional 64-bit SP1\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=322_",
+  "date": "2013-01-21T23:06:45",
+  "state": "closed",
+  "gid": 322,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=322",
+  "owner": ""
+}

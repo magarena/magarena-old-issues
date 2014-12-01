@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Block attacking creature with Endless Cockroaches\r\n2. Endless Cockroaches gets killed What is the expected output? What do you see instead? Expected: Endless Cockroaches is returned to my hand.\r\n\r\nActual: \"Return Endless Cockroaches to its owner's hand\" effect is placed on the stack, but when it's resolved, Endless Cockroaches ends up in the graveyard anyway. What version of the product are you using? On what operating system? Magarena 1.43 on Windows 7\r\n\r\nRelevant parts from game.log\r\n----\r\nLOG (C): Computer attacks with Phyrexian Crusader.\r\nLOG (P): Igor blocks with Devouring Swarm and Endless Cockroaches.\r\nLOG (P): {c}Igor gets 2 poison counters.\r\nLOG (P): Endless Cockroaches is put into its owner's graveyard. Endless Cockroaches is put into its owner's graveyard.\r\nLOG (P): Return Endless Cockroaches to its owner's hand.\r\nLOG (P): Return Endless Cockroaches to its owner's hand.\r\nLOG (C): Phyrexian Crusader is destroyed.\r\n----\r\n\r\nNote again that, though the log says \"Return Endless Cockroaches to its owner's hand\", the card actually ends up in the graveyard.",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Endless Cockroaches doesn't return to hand when dying.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 03, 2013 21:17:52",
+      "body": "Confirmed, fixed for next release.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on November 04, 2013 12:45:23_\n\nWhat steps will reproduce the problem? 1. Block attacking creature with Endless Cockroaches\r\n2. Endless Cockroaches gets killed What is the expected output? What do you see instead? Expected: Endless Cockroaches is returned to my hand.\r\n\r\nActual: \"Return Endless Cockroaches to its owner's hand\" effect is placed on the stack, but when it's resolved, Endless Cockroaches ends up in the graveyard anyway. What version of the product are you using? On what operating system? Magarena 1.43 on Windows 7\r\n\r\nRelevant parts from game.log\r\n----\r\nLOG (C): Computer attacks with Phyrexian Crusader.\r\nLOG (P): Igor blocks with Devouring Swarm and Endless Cockroaches.\r\nLOG (P): {c}Igor gets 2 poison counters.\r\nLOG (P): Endless Cockroaches is put into its owner's graveyard. Endless Cockroaches is put into its owner's graveyard.\r\nLOG (P): Return Endless Cockroaches to its owner's hand.\r\nLOG (P): Return Endless Cockroaches to its owner's hand.\r\nLOG (C): Phyrexian Crusader is destroyed.\r\n----\r\n\r\nNote again that, though the log says \"Return Endless Cockroaches to its owner's hand\", the card actually ends up in the graveyard.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=417_",
+  "date": "2013-11-04T12:45:23",
+  "state": "closed",
+  "gid": 417,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=417",
+  "owner": ""
+}

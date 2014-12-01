@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Requested by Huggybaby.\r\n\r\nFor instance for shuffle, draw, tap, go to graveyard, combat damage.\r\nAlso provide means to turn on or off in preferences.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Add sound effects to game",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 10, 2011 10:56:21",
+      "body": "I think this can be resolved as fixed unless more sounds should be added. When more sounds are added, an option can be to let the user pick which sounds\r\nshould be on or off. Maybe use a sound tab in the preference panel.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 10, 2011 19:03:28",
+      "body": "Agree, we also need better default sound files.. but sound effects have been added so this issue is settled.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:25:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 20, 2011 13:58:22_\n\nRequested by Huggybaby.\r\n\r\nFor instance for shuffle, draw, tap, go to graveyard, combat damage.\r\nAlso provide means to turn on or off in preferences.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=10_",
+  "date": "2011-05-20T13:58:22",
+  "state": "closed",
+  "gid": 10,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=10",
+  "owner": "melvinzh...@gmail.com"
+}

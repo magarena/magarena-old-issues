@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "reported by beholder from forum:\r\n\r\nadd triggers for discarding and card drawing, so cards like Liliana's Caress and Underworld Dreams are possible",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Triggers for discarding and card drawing",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 12, 2011 02:00:04",
+      "body": "these were added by revision 68e00236237e and revision c33c66e752e9\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 29, 2011 22:36:28_\n\nreported by beholder from forum:\r\n\r\nadd triggers for discarding and card drawing, so cards like Liliana's Caress and Underworld Dreams are possible\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=36_",
+  "date": "2011-07-29T22:36:28",
+  "state": "closed",
+  "gid": 36,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=36",
+  "owner": "melvinzh...@gmail.com"
+}

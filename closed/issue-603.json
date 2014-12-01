@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "A permanent with a 'When SN becomes the target of a spell or ability' trigger doesn't trigger if it becomes the target of a triggered ability.\r\n\r\nAn example with two new cards:\r\n\r\nTethered Skite blocks a Karplusan Wolverine. The triggered ability of Karplusan Wolverine targets the Tethered Skite. Tethered Skite's triggered ability doesn't trigger.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Targeted triggered abilities not triggering 'when target of spell or ability'",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "May 21, 2014 07:52:39",
+      "body": "It's Skirge, not Skite - and only for purely scripted cards",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "May 22, 2014 01:25:49",
+      "body": "This issue was closed by revision e54551b9f4b3 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 22, 2014 01:36:22",
+      "body": "Thanks for catching this. My bad, copy and paste but forgot to modify.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on May 21, 2014 22:17:21_\n\nA permanent with a 'When SN becomes the target of a spell or ability' trigger doesn't trigger if it becomes the target of a triggered ability.\r\n\r\nAn example with two new cards:\r\n\r\nTethered Skite blocks a Karplusan Wolverine. The triggered ability of Karplusan Wolverine targets the Tethered Skite. Tethered Skite's triggered ability doesn't trigger.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=603_",
+  "date": "2014-05-21T22:17:21",
+  "state": "closed",
+  "gid": 603,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=603",
+  "owner": "ShawnieBoyUK"
+}

@@ -1,0 +1,100 @@
+{
+  "status": "verified",
+  "body": "First of all, congratulations on Magarena: it's nice to have a nice interface, a good AI, pre-constructed decks, automated deck comparisons through simulated games, etc.\r\n\r\nWould it be possible for Magarena to have a *non-cheating* Monte-Carlo Tree Search?  I tend to avoid the cheating AI, because I prefer fair games, so an MCTS that does not cheat would be great!",
+  "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)",
+  "title": "Feature suggestion: Monte-Carlo Tree Search without cheating",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 13, 2011 06:31:20",
+      "body": "Thanks for the compliments! We already have an implementation of MCTS that is non cheating in the game, but it is currently disabled because it plays rather poorly. The reason is that MCTS determines the strength of a particular move by running simulations using random moves till the end of the game. \r\n\r\nThe cheating AI uses the actual hand and library to do these simulations, the non-cheating version replaces the opponent's hand and cards in library with a special unknown card that is a 1/1 creature with casting cost 8. The results of simulations performed by the non-cheating AI is not very informative and this leads to poor moves. \r\n\r\nOne improvement I can think of is to use a random permutation of the unknown cards to perform simulations, but this leads to other problems. Making a strong MCTS AI in a game with partial information is a challenging problem.\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 13, 2011 07:06:46",
+      "body": "Thank you for the explanation.\r\n\r\nI'd like to discuss your last idea.\r\n\r\nThe MCTS could indeed start each simulation with a random permutation of the unknown cards; it would be logical to take a different random permutation each time.\r\n\r\nI'm not sure how Magarena does it now, but moves from simulations could be selected by using some simple and fast heuristic (like playing all possible cards each turn, starting from the most expensive one)–in computer Go, the move selection heuristic can be unrealistic, so the same might work for Magic.  In a way, the speed at which simulations are done can compensate for the fact that the selected simulated moves are not always the best moves.\r\n\r\nI would be interested in pursuing the subject further (maybe you could give some details on the problems encountered with the \"random permutation\" MCTS approach?).",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "November 14, 2011 06:19:26",
+      "body": "Simulations with a random permutation of the opponent's hand and library cards is alright. The problem comes when building up the game tree. \r\n\r\nMCTS performs simulations to build a game tree, one node at a time. The moves available to the opponent depends on the cards in the opponent's hand, similarly the moves available to the player depends on the card drawn. By introducing random permutations in each simulation, I do not see a way to construct the game tree.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 15, 2011 00:40:47",
+      "body": "Here is an idea about how to generalize the usual MCTS approach: at each node, instead of a having a fixed list of possible moves, you have a variable list of possible moves (like casting a given card from the hand, etc.). When going down the tree, MCTS can be applied on the restricted list available moves given the moves performed so far (for instance, a card drawn from the randomly shuffled deck will probably not be available in simulations based on a different shuffling). Intuitively, the algorithm would explore many possible decks permutations, and choose a move which is robust against all these permutations.\r\n\r\nI'm not sure whether this is a good idea or not, and I may be missing certain details, but we can keep discussing. :)",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "November 21, 2011 18:16:46",
+      "body": "The trouble is that this creates an extremely wide search tree, since there can be many possible moves in an opponent node as the opponent's hand is essentially random. Currently the implementation tries to explore all moves from a node, as node selection is only used for nodes with all of its children in the tree. \r\n\r\nThe algorithm for moving down the tree is as follows:\r\n1. if current node has all its children in the tree, use selection to pick the child node to move down to\r\n2. otherwise pick one of the explored children and run a simulation and add it to the tree\r\n\r\nUsing the current algorithm and variable moves, MCTS would only build a tree of two levels. This may still give a reasonable AI, but it would essentially only have a one step look ahead.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 02, 2011 09:30:29",
+      "body": "Thank you for continuing the discussion.\r\n\r\nI would like to make a few remarks about the \"extremely wide search tree\" and the \"random opponent's hand\". A first point is that one could, as a first step, allow the AI to know the deck of the opponent. Players know the AI's deck, so it's quite fair. The second point is that if the opponent's deck is known, then the number of possible nodes in not that big: for one thing, the current amount of mana constrains what can be played; also, the number of possible cards that can be played does not actually seem that big, compared to a game like Go, where the MCTS algorithm has been used very successfully (the goban has 361 intersections…).\r\n\r\nWhat do you think?",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "January 25, 2012 06:40:20",
+      "body": "**Labels:** Component-AI  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 06, 2012 08:00:53",
+      "body": "Actually I have taken into account that the AI knows the composition of the oppnent's deck and the mana constrains. But your right, MCTS was designed for wide search trees, so it may still work well. Hard to say for sure without actually implementing it.\r\n\r\nUnfortunately programming time for me has decreased drastically and there are higher priority items I'd like to work on such as fixing the bugs that led to ocassional bad plays during combat.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 04, 2013 20:31:55",
+      "body": "Haven't tried out the variable list of moves idea yet but MCTS as currently implemented explores each children of node at least once before expanding the tree further so having nodes with a lot of children will slow things down.\r\n\r\nHowever, I did try randomizing the hand and library during simulations instead of hiding all the cards. This small tweak makes the result of simulations much more realistic and helps the AI makes better decisions. 1.37 will have the non cheating version of MCTS available as an AI to play against.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 05, 2013 04:03:20",
+      "body": "Thank you! I can't wait to play against the new, non-cheating, more \"realistic\" MCTS. :)\r\n\r\nGood job with the randomization idea!\r\n\r\nI would be curious to know how much better the cheating AI is, though.",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "April 06, 2013 21:02:17",
+      "body": "I'm currently doing some comparison studies, so I've tried each AI against MMAB-H-1 (minimax, honest (no cheating), 1s per move). MCTS-H-6 wins 67.6% of the time, compared to MCTS-C-6's 75%.\r\n\r\nSome other data points (still in the midst of the experiments as each game can take a while to compete):\r\nAgainst MMAB-H-1, MCTS-H-1 wins 49%\r\nAgainst MMAB-H-6, MCTS-H-6 wins 58.7% of the time.\r\nAgainst MMAB-H-8, MCTS-H-8 wins 60% of the time.\r\n\r\nThis suggests that MCTS-H is competitive with MMAB-H at 1s, but MCTS-H is make more effective use of the additional time. Or that the time bounded MMAB has lots of room for improved, most of the time it takes much less time than what was allocated.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 06, 2013 22:49:40",
+      "body": "Interesting, thank you!\r\n\r\nOut of curiosity: do you think that it is normal that MMAB takes less time than allocated? I am no MCTS expert, but I would have expected that MCTS to take all the allocated time, because there is a lot to explore… Are nodes explored many times, for many different permutations of the remaining cards (in this case there is a lot to explore)?",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "April 07, 2013 06:04:30",
+      "body": "The way time bounded MMAB is implemented now is that each subtree is allocated an equal portion of the time. My intuition is that due to alpha-beta pruning and transposition table, the later subtrees usually finish before the allocated time.\r\n\r\nOn the other hand MCTS is an anytime algorithm, it doesn't need to know the time allocation. As long as there is time, it adds one node to the tree and does a random playout. The randomization of opponent's hand and both libraries is only in the random playout part of MCTS, it does not affect the search tree.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 07, 2013 06:51:39",
+      "body": "Thanks, Melvin, I see: I had mistaken MMAB for MCTS-H… Everything is clear, now. :)\r\n\r\nI'm eager to have the next, non-cheating MCTS version. :)",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "April 07, 2013 07:02:29",
+      "body": "No wonder, your question sounded a little odd. Anyway after thinking about this some more, I think it makes sense that increasing the time from 1s to 6s would have little effect on MMAB. Typically increasing the search depth by one ply requires at least 2-4x time. So the increase from 1s to 6s only increases the depth by 1-2 levels and doesn't have significant impact in the performance.\r\n\r\nNext official release will still be a while. If you don't mind being on the bleeding edge, you can try our hourly build at https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/) on November 13, 2011 04:56:31_\n\nFirst of all, congratulations on Magarena: it's nice to have a nice interface, a good AI, pre-constructed decks, automated deck comparisons through simulated games, etc.\r\n\r\nWould it be possible for Magarena to have a *non-cheating* Monte-Carlo Tree Search?  I tend to avoid the cheating AI, because I prefer fair games, so an MCTS that does not cheat would be great!\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=92_",
+  "date": "2011-11-13T04:56:31",
+  "state": "closed",
+  "gid": 92,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=92",
+  "owner": ""
+}

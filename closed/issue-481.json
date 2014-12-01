@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "Hitting spacebar to pass is not recognized unless I first go to the Options/Settings menu by clicking on the Black and White book icon. Once I close the pop-up window, the spacebar is recognized. (Windows 8.1)\r\n\r\n- http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=145476&sid=4041bc605c8dd8ed57a6ac5bec594199#p145476",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Hitting spacebar to pass does not work",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 20, 2014 22:53:13",
+      "body": "Fixed in build https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/748/ .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on February 10, 2014 20:09:47_\n\nHitting spacebar to pass is not recognized unless I first go to the Options/Settings menu by clicking on the Black and White book icon. Once I close the pop-up window, the spacebar is recognized. (Windows 8.1)\r\n\r\n- http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=145476&sid=4041bc605c8dd8ed57a6ac5bec594199#p145476\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=481_",
+  "date": "2014-02-10T20:09:47",
+  "state": "closed",
+  "gid": 481,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=481",
+  "owner": "lodici123"
+}

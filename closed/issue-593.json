@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Grizzled Wolverine has an ability that can only be activated \"when a creature is assigned to block Grizzled Wolverine\". AI controls Grizzled Wolverine and attacks with two other creatures. I block one of these creatures. The gamelog displays \"Mini Max may (no) pay red mana. If Mini Max does, Grizzled Wolverine <effect of ability>\".\r\nI would expect that Grizzled Wolverine's ability cannot be used in this situation because it was not blocked.\r\n\r\nDetected with version 1.48",
+  "author": "[pfeif...@googlemail.com](https://code.google.com/u/110570234444309201741/)",
+  "title": "Grizzled Wolverine",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 24, 2014 00:52:19",
+      "body": "This issue was closed by revision 497bb2ef7cc4 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 24, 2014 00:53:20",
+      "body": "Thanks for the report, it was triggering when anything became blocked instead of only when itself is blocked.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [pfeif...@googlemail.com](https://code.google.com/u/110570234444309201741/) on April 24, 2014 15:47:39_\n\nGrizzled Wolverine has an ability that can only be activated \"when a creature is assigned to block Grizzled Wolverine\". AI controls Grizzled Wolverine and attacks with two other creatures. I block one of these creatures. The gamelog displays \"Mini Max may (no) pay red mana. If Mini Max does, Grizzled Wolverine <effect of ability>\".\r\nI would expect that Grizzled Wolverine's ability cannot be used in this situation because it was not blocked.\r\n\r\nDetected with version 1.48\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=593_",
+  "date": "2014-04-24T15:47:39",
+  "state": "closed",
+  "gid": 593,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=593",
+  "owner": ""
+}

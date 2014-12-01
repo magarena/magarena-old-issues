@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Sometimes card images need to be replaced with newer ones, the current method requires users to manually delete the outdated images. \r\n\r\nThis is because the program checks whether an image exists by looking for an image file with a particular name. This does not allow the program to distinguish between an outdated/wrong image with a correct one.\r\n\r\nThe new method is to include a list of images to be ignored when determining the list of images to be download. For example\r\n\r\n>Raging Kavu\r\nimage= http://magiccards.info/scans/en/in/262.jpg ignore=59949,12345\r\n...\r\n\r\nwhere 59949 is the file size in bytes of the Latin version of the card that was accidentally used as the card image in an earlier version of the program.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "added an ignore list of card images to cards.txt",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 25, 2011 21:25:46",
+      "body": "implemented in revision ca1df77cf57e\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on August 26, 2011 12:00:16_\n\nSometimes card images need to be replaced with newer ones, the current method requires users to manually delete the outdated images. \r\n\r\nThis is because the program checks whether an image exists by looking for an image file with a particular name. This does not allow the program to distinguish between an outdated/wrong image with a correct one.\r\n\r\nThe new method is to include a list of images to be ignored when determining the list of images to be download. For example\r\n\r\n>Raging Kavu\r\nimage= http://magiccards.info/scans/en/in/262.jpg ignore=59949,12345\r\n...\r\n\r\nwhere 59949 is the file size in bytes of the Latin version of the card that was accidentally used as the card image in an earlier version of the program.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=45_",
+  "date": "2011-08-26T12:00:16",
+  "state": "closed",
+  "gid": 45,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=45",
+  "owner": "melvinzh...@gmail.com"
+}

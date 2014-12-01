@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "@Huggybaby - In the Deck Editor or Deck Settings, clicking the Options book picture in the top right of the screen: first time opens options, second time closes option, third and subsequent times nothing happens. Escape still works.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Options overlay is not preventing (mouse) access to underlying screen.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 05, 2014 12:06:49",
+      "body": "Fixed in build https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/710/\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on February 05, 2014 14:16:06_\n\n@Huggybaby - In the Deck Editor or Deck Settings, clicking the Options book picture in the top right of the screen: first time opens options, second time closes option, third and subsequent times nothing happens. Escape still works.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=473_",
+  "date": "2014-02-05T14:16:06",
+  "state": "closed",
+  "gid": 473,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=473",
+  "owner": "lodici123"
+}

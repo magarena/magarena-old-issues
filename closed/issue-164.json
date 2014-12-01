@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. The *AI* loses\r\n2. If one looks at the Messages, one reads \"*You* lose the game\" 3. What is the expected output? What do you see instead? … I would expect to see \"*Computer* loses the game\", in the same way as the Messages contain \"Computer loses 7 life\". What version of the product are you using? On what operating system? 1.22, Mac OS X. Please provide any additional information below.",
+  "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)",
+  "title": "\"You lose the game\" message when the user actually *wins* the game.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 19, 2012 07:37:30",
+      "body": "Thanks for the report.\r\n\r\nAt first the game used \"you\" everywhere and you had to look at the picture to the left of a message to determine what \"you\" was referring to. We decided this wasn't the most obvious and changed a lot of messages to use the player name instead. The losing game message is one of the things that was forgotten (I never look at the message log when the game already tells me who has lost in the panel on the bottom left).\r\n\r\nI'll fix it right away :)",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 19, 2012 07:41:43",
+      "body": "This issue was closed by revision 44887ec8cb54 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 19, 2012 15:13:16",
+      "body": "Many thanks for your reactivity!",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/) on February 19, 2012 22:45:17_\n\nWhat steps will reproduce the problem? 1. The *AI* loses\r\n2. If one looks at the Messages, one reads \"*You* lose the game\" 3. What is the expected output? What do you see instead? … I would expect to see \"*Computer* loses the game\", in the same way as the Messages contain \"Computer loses 7 life\". What version of the product are you using? On what operating system? 1.22, Mac OS X. Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=164_",
+  "date": "2012-02-19T22:45:17",
+  "state": "closed",
+  "gid": 164,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=164",
+  "owner": ""
+}

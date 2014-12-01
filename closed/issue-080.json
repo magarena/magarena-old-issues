@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "similar to crash.log, possibly a game.log",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "store game logs in a text file to simplify reporting of non-crash bugs",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "February 22, 2012 23:44:31",
+      "body": "We could for the time being enable the debug output on default and write it to a file, overwriting it on every application run. That will at least give the user some information to send us and might make it easier to reproduce bugs. Maybe we can disable all the output from parsing the \\scripts\\*.txt files because it produces well over 4000 lines.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 22, 2012 23:51:13",
+      "body": "The current debug output does not have sufficient data to reconstruct a particular game state. Minimally we need to include the cards in both the decks and the random seed.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 23, 2012 00:07:23",
+      "body": "But I agree that having just the trimmed down debug output will do for now. We will also need to modify the default issue template to ask reporters to attach the game log.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 25, 2012 07:48:03",
+      "body": "Revision fec3ffe66625 added a basic game log.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 29, 2012 20:24:09",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on October 29, 2011 22:47:21_\n\nsimilar to crash.log, possibly a game.log\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=80_",
+  "date": "2011-10-29T22:47:21",
+  "state": "closed",
+  "gid": 80,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=80",
+  "owner": "melvinzh...@gmail.com"
+}

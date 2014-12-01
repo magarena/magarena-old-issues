@@ -1,0 +1,40 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. computer playes bladed pinions artifact\r\n2. computer has 2 or more creatures \r\n3. it is the computers turn What is the expected output? What do you see instead? Expect the computer will attach bladed pinions and attack. Compute cycles through all creatures attaching bladed pinions until it runs out of mana. Will equip tapped creatures as well as creatures it has already attached it to. What version of the product are you using? On what operating system? 1.18 Please provide any additional information below. Great work!",
+  "author": "[TANGENT1...@gmail.com](https://code.google.com/u/112628616019840408658/)",
+  "title": "Bladed pinions loop",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "October 17, 2011 05:22:31",
+      "body": "*computer cycles...",
+      "author": "[TANGENT1...@gmail.com](https://code.google.com/u/112628616019840408658/)"
+    },
+    {
+      "date": "October 17, 2011 05:25:56",
+      "body": "oh yeah, computer has 0 cards in hand.",
+      "author": "[TANGENT1...@gmail.com](https://code.google.com/u/112628616019840408658/)"
+    },
+    {
+      "date": "October 17, 2011 06:46:05",
+      "body": "Thanks for the report.\r\n\r\nThe issue you describe is a known issue and has been fixed. See issue 26 for the original report. The fix will be in version 1.19.\n\n**Status:** Duplicate  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 17, 2011 08:15:16",
+      "body": "nevermind then.",
+      "author": "[TANGENT1...@gmail.com](https://code.google.com/u/112628616019840408658/)"
+    }
+  ],
+  "content": "_From [TANGENT1...@gmail.com](https://code.google.com/u/112628616019840408658/) on October 17, 2011 20:20:37_\n\nWhat steps will reproduce the problem? 1. computer playes bladed pinions artifact\r\n2. computer has 2 or more creatures \r\n3. it is the computers turn What is the expected output? What do you see instead? Expect the computer will attach bladed pinions and attack. Compute cycles through all creatures attaching bladed pinions until it runs out of mana. Will equip tapped creatures as well as creatures it has already attached it to. What version of the product are you using? On what operating system? 1.18 Please provide any additional information below. Great work!\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=77_",
+  "date": "2011-10-17T20:20:37",
+  "state": "closed",
+  "gid": 77,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=77",
+  "owner": ""
+}

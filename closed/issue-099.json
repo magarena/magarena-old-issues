@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Using long limits the number of abilities to a maximum of 64.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "refactor MagicAbility to use EnumSet instead of manual bit flags in long",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "March 10, 2012 00:03:59",
+      "body": "related to issue 184",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 19, 2013 17:13:56",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on November 26, 2011 15:41:31_\n\nUsing long limits the number of abilities to a maximum of 64.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=99_",
+  "date": "2011-11-26T15:41:31",
+  "state": "closed",
+  "gid": 99,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=99",
+  "owner": "melvinzh...@gmail.com"
+}

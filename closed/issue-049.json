@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Currently all static effects such as +1/+1 to all your creatures is implemented in MagicStaticLocalVariables, this does not scale well when there are many cards with such effects.\r\n\r\nOne way is to have a list of global variables that is kept as part of \r\nMagicGame, each card looks up the global static effects from there. \r\nWhen a card with a static effect enters the battlefield, it adds its \r\nstatic effect with MagicGame, when it leaves the battlefield the \r\nstatic effect is removed it from MagicGame. MagicGame will have to \r\nsort these static effects according to the rules for the layers \r\nsystem.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "factor code in MagicStaticLocalVariables into separate static local variable objects",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 13, 2011 19:03:12",
+      "body": "Triggers are already stored globally in MagicGame and are added and removed correctly as cards enter/leave the battlefield. Something similar to triggers could be used to implement modular static abilities.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 15, 2011 21:08:02",
+      "body": "MagicStaticLocalVariables has been completely removed and replaced by MagicStatic and related classes\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 11, 2011 14:24:32_\n\nCurrently all static effects such as +1/+1 to all your creatures is implemented in MagicStaticLocalVariables, this does not scale well when there are many cards with such effects.\r\n\r\nOne way is to have a list of global variables that is kept as part of \r\nMagicGame, each card looks up the global static effects from there. \r\nWhen a card with a static effect enters the battlefield, it adds its \r\nstatic effect with MagicGame, when it leaves the battlefield the \r\nstatic effect is removed it from MagicGame. MagicGame will have to \r\nsort these static effects according to the rules for the layers \r\nsystem.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=49_",
+  "date": "2011-09-11T14:24:32",
+  "state": "closed",
+  "gid": 49,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=49",
+  "owner": "melvinzh...@gmail.com"
+}

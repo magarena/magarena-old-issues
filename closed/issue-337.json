@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "Unless you uncheck \"Remove unusual target choices\", Aether Vial ticks up automatically. In contrast, Legacy's Allure asks for confirmation regardless of preference settings.\r\n\r\nThis seems backwards. Ticking up Legacy's Allure is a strict upgrade, while ticking up Aether Vial is most definitely not.",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "\"Unusualness\" of certain effects is off.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 23, 2013 01:37:16",
+      "body": "**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 11, 2014 04:39:11",
+      "body": "Updated script, now 'PN may charge at upkeep' for Aether Vial",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "January 11, 2014 18:36:56",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on March 20, 2013 22:24:40_\n\nUnless you uncheck \"Remove unusual target choices\", Aether Vial ticks up automatically. In contrast, Legacy's Allure asks for confirmation regardless of preference settings.\r\n\r\nThis seems backwards. Ticking up Legacy's Allure is a strict upgrade, while ticking up Aether Vial is most definitely not.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=337_",
+  "date": "2013-03-20T22:24:40",
+  "state": "closed",
+  "gid": 337,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=337",
+  "owner": ""
+}

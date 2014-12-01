@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=71153&sid=f3ff7516eb1e2f599a1c3d16c9c61921#p71153 Aswan jaguar submitted the following crash report on the forum.\r\n\r\nException from controller.runGame: com.sun.java.swing.plaf.nimbus.DerivedColor$UIResource cannot be cast to java.awt.Font\r\njava.lang.ClassCastException: com.sun.java.swing.plaf.nimbus.DerivedColor$UIResource cannot be cast to java.awt.Font\r\nat com.sun.java.swing.plaf.nimbus.NimbusStyle.getFontForState(Unknown Source)\r\nat javax.swing.plaf.synth.SynthStyle.installDefaults(Unknown Source)\r\nat com.sun.java.swing.plaf.nimbus.NimbusStyle.installDefaults(Unknown Source)\r\nat javax.swing.plaf.synth.SynthStyle.installDefaults(Unknown Source)\r\nat javax.swing.plaf.synth.SynthLookAndFeel.updateStyle(Unknown Source)\r\nat javax.swing.plaf.synth.SynthPanelUI.updateStyle(Unknown Source)\r\nat javax.swing.plaf.synth.SynthPanelUI.installDefaults(Unknown Source)\r\nat javax.swing.plaf.basic.BasicPanelUI.installUI(Unknown Source)\r\nat javax.swing.plaf.synth.SynthPanelUI.installUI(Unknown Source)\r\nat javax.swing.JComponent.setUI(Unknown Source)\r\nat javax.swing.JPanel.setUI(Unknown Source)\r\nat javax.swing.JPanel.updateUI(Unknown Source)\r\nat javax.swing.JPanel.<init>(Unknown Source)\r\nat javax.swing.JPanel.<init>(Unknown Source)\r\nat magic.ui.choice.MayChoicePanel.<init>(MayChoicePanel.java:38)\r\nat magic.model.choice.MagicSimpleMayChoice.getPlayerChoiceResults(MagicSimpleMayChoice.java:68)\r\nat magic.ui.GameController.getPlayerNextEventChoiceResults(GameController.java:385)\r\nat magic.ui.GameController.executeNextEventWithChoices(GameController.java:396)\r\nat magic.ui.GameController.runGame(GameController.java:488)\r\nat magic.ui.GamePanel$9.run(GamePanel.java:241)",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "UI crashes when constructing MayChoicePanel",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 25, 2011 06:12:57",
+      "body": "Likely due to the creation of UI components in non event dispatching thread (EDT). A quick search shows that a similar technique is used in MagicPlayChoice, MagicKickerChoice, etc. where the showComponent method of GameController is used to pass an already constructed JComponent to the GameController. The construction of the component needs to happen on the EDT as well.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 25, 2011 19:54:46",
+      "body": "revision 17f939cae9ea ensured that JPanels passed to the game controller via the showComponent method are created on Swing's event dispatching thread.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "October 16, 2011 11:14:33",
+      "body": "Got a similar crash. This occurs right after I download the card images while in an active game screen (i.e., looking at the board). The downloader tries to update the game screen so cards on the table are refreshed with the new images.\r\n\r\nException from controller.runGame: com.sun.java.swing.plaf.nimbus.DerivedColor$UIResource cannot be cast to java.awt.Font\r\njava.lang.ClassCastException: com.sun.java.swing.plaf.nimbus.DerivedColor$UIResource cannot be cast to java.awt.Font\r\n\tat com.sun.java.swing.plaf.nimbus.NimbusStyle.getFontForState(NimbusStyle.java:693)\r\n\tat javax.swing.plaf.synth.SynthStyle.installDefaults(SynthStyle.java:916)\r\n\tat com.sun.java.swing.plaf.nimbus.NimbusStyle.installDefaults(NimbusStyle.java:214)\r\n\tat javax.swing.plaf.synth.SynthStyle.installDefaults(SynthStyle.java:899)\r\n\tat javax.swing.plaf.synth.SynthLookAndFeel.updateStyle(SynthLookAndFeel.java:275)\r\n\tat javax.swing.plaf.synth.SynthPanelUI.updateStyle(SynthPanelUI.java:70)\r\n\tat javax.swing.plaf.synth.SynthPanelUI.installDefaults(SynthPanelUI.java:57)\r\n\tat javax.swing.plaf.basic.BasicPanelUI.installUI(BasicPanelUI.java:39)\r\n\tat javax.swing.plaf.synth.SynthPanelUI.installUI(SynthPanelUI.java:37)\r\n\tat javax.swing.JComponent.setUI(JComponent.java:662)\r\n\tat javax.swing.JPanel.setUI(JPanel.java:136)\r\n\tat javax.swing.JPanel.updateUI(JPanel.java:109)\r\n\tat javax.swing.JPanel.<init>(JPanel.java:69)\r\n\tat javax.swing.JPanel.<init>(JPanel.java:92)\r\n\tat javax.swing.JPanel.<init>(JPanel.java:100)\r\n\tat magic.ui.viewer.PermanentButton.<init>(PermanentButton.java:39)\r\n\tat magic.ui.viewer.PermanentPanel.<init>(PermanentPanel.java:31)\r\n\tat magic.ui.viewer.PermanentsViewer.update(PermanentsViewer.java:79)\r\n\tat magic.ui.GamePanel.update(GamePanel.java:313)\r\n\tat magic.ui.GamePanel.updateView(GamePanel.java:354)\r\n\tat magic.ui.MagicFrame.updateGameView(MagicFrame.java:537)\r\n\tat magic.ui.DownloadImagesDialog.run(DownloadImagesDialog.java:182)\r\n\tat java.lang.Thread.run(Thread.java:662)\n\n**Status:** New  \n",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "October 16, 2011 18:22:43",
+      "body": "This issue was closed by revision c1a42c2fc6c3 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 25, 2011 21:10:35_\n\nhttp://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=71153&sid=f3ff7516eb1e2f599a1c3d16c9c61921#p71153 Aswan jaguar submitted the following crash report on the forum.\r\n\r\nException from controller.runGame: com.sun.java.swing.plaf.nimbus.DerivedColor$UIResource cannot be cast to java.awt.Font\r\njava.lang.ClassCastException: com.sun.java.swing.plaf.nimbus.DerivedColor$UIResource cannot be cast to java.awt.Font\r\nat com.sun.java.swing.plaf.nimbus.NimbusStyle.getFontForState(Unknown Source)\r\nat javax.swing.plaf.synth.SynthStyle.installDefaults(Unknown Source)\r\nat com.sun.java.swing.plaf.nimbus.NimbusStyle.installDefaults(Unknown Source)\r\nat javax.swing.plaf.synth.SynthStyle.installDefaults(Unknown Source)\r\nat javax.swing.plaf.synth.SynthLookAndFeel.updateStyle(Unknown Source)\r\nat javax.swing.plaf.synth.SynthPanelUI.updateStyle(Unknown Source)\r\nat javax.swing.plaf.synth.SynthPanelUI.installDefaults(Unknown Source)\r\nat javax.swing.plaf.basic.BasicPanelUI.installUI(Unknown Source)\r\nat javax.swing.plaf.synth.SynthPanelUI.installUI(Unknown Source)\r\nat javax.swing.JComponent.setUI(Unknown Source)\r\nat javax.swing.JPanel.setUI(Unknown Source)\r\nat javax.swing.JPanel.updateUI(Unknown Source)\r\nat javax.swing.JPanel.<init>(Unknown Source)\r\nat javax.swing.JPanel.<init>(Unknown Source)\r\nat magic.ui.choice.MayChoicePanel.<init>(MayChoicePanel.java:38)\r\nat magic.model.choice.MagicSimpleMayChoice.getPlayerChoiceResults(MagicSimpleMayChoice.java:68)\r\nat magic.ui.GameController.getPlayerNextEventChoiceResults(GameController.java:385)\r\nat magic.ui.GameController.executeNextEventWithChoices(GameController.java:396)\r\nat magic.ui.GameController.runGame(GameController.java:488)\r\nat magic.ui.GamePanel$9.run(GamePanel.java:241)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=62_",
+  "date": "2011-09-25T21:10:35",
+  "state": "closed",
+  "gid": 62,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=62",
+  "owner": "melvinzh...@gmail.com"
+}

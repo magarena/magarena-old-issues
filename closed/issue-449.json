@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "from http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=12809&p=139990#p139990 -\r\n\r\nIt would be great to have the possibility to hide/show new log with button click. Most of the time I don't need this log, but sometimes during the game it is necessary to view latest actions.\r\n\r\nCould you please do this?",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "hide/disable game log",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "December 12, 2013 04:29:50",
+      "body": "Fixed in build 1.44.618 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/618/ ).\r\n\r\nI have added a new preferences setting (\"show game log messages\") that lets you turn the game log on/off by default. During a game you can switch the log on/off by clicking the log caption/titlebar.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 12, 2013 04:43:08",
+      "body": "Superb, thanks a lot.",
+      "author": "[ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on December 10, 2013 23:18:29_\n\nfrom http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=12809&p=139990#p139990 -\r\n\r\nIt would be great to have the possibility to hide/show new log with button click. Most of the time I don't need this log, but sometimes during the game it is necessary to view latest actions.\r\n\r\nCould you please do this?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=449_",
+  "date": "2013-12-10T23:18:29",
+  "state": "closed",
+  "gid": 449,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=449",
+  "owner": "lodici123"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "After a crash, the option to open the logs folder, launches another... As the Summary says :)",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "'Open logs folder' option launches another instance of Magarena (1.45)",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 15, 2013 08:03:10",
+      "body": "I have used this fix to tidy up a number of issues with the exception handling. \r\n\r\nFirst, the reason I think this is occurring is because instead of opening the \"Magarena\" folder it sees \"Magarene.exe\" and assumes that it is what you actually want to open. This is possibly a Windows related issue only since it usually does not differentiate between <program> and <program>.exe - you can type either and it will assume <program>.exe.\r\n\r\nTo fix this I have moved the location of the log files to \"<install folder>\\Magarena\\logs\" which is a more logical place I think anyway.\r\n\r\nI have also updated the exception handling code. Before it was running in a loop so you could open the logs folder and then open the issue tracker if you wanted. I think this was trying to be too clever. Now I have removed the loop and simplified the prompt. Now you can open the logs directory (and quit) or ignore the error (and quit).\r\n\r\nI have added a README.txt file to the logs directory which explains how to submit a crash report in more detail than you can really do with a just a prompt. Feel free to update the wording if you feel it can be clearer or I have missed something.\r\n\r\nI also think it would be useful at some point to rename the \"<install>\\Magarena\" directory to \"<install>\\data\" which better reflects its nature.\n\n**Status:** Started  \n  **Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 16, 2013 05:06:30",
+      "body": "Fixed in build 1.45.SNAPSHOT-623 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/623/ ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on December 15, 2013 20:58:01_\n\nAfter a crash, the option to open the logs folder, launches another... As the Summary says :)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=454_",
+  "date": "2013-12-15T20:58:01",
+  "state": "closed",
+  "gid": 454,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=454",
+  "owner": ""
+}

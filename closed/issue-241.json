@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "requested by jmartus on forum: http://www.slightlymagic.net/forum/memberlist.php?mode=viewprofile&u=8005 Requires reveal card action.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "implement Living Destiny",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "June 08, 2013 00:51:43",
+      "body": "added to cards/unimplementable.tsv\n\n**Status:** Duplicate  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on June 27, 2012 10:18:45_\n\nrequested by jmartus on forum: http://www.slightlymagic.net/forum/memberlist.php?mode=viewprofile&u=8005 Requires reveal card action.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=241_",
+  "date": "2012-06-27T10:18:45",
+  "state": "closed",
+  "gid": 241,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=241",
+  "owner": "melvinzh...@gmail.com"
+}

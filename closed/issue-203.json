@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "\"Exalted\" ability of a \"Rhox Charger\" triggers even if another creature attacks with him (in my case - Giant Solifuge)",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Exalted triggers even if there are more than one attacker",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 12, 2012 06:51:48",
+      "body": "Thanks for reporting. Exalted is broken in 1.24 due to a change in the way the number of attackers is computed, see revision a513bb210a9f .\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 12, 2012 06:52:18",
+      "body": "**Summary:** Exalted triggers even if there are more than one attacker  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 12, 2012 07:51:01",
+      "body": "This issue was closed by revision 7f7a85aa7b9d .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 28, 2012 06:02:36",
+      "body": "Issue 210 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on April 12, 2012 21:40:52_\n\n\"Exalted\" ability of a \"Rhox Charger\" triggers even if another creature attacks with him (in my case - Giant Solifuge)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=203_",
+  "date": "2012-04-12T21:40:52",
+  "state": "closed",
+  "gid": 203,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=203",
+  "owner": ""
+}

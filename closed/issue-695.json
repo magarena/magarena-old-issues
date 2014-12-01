@@ -1,0 +1,40 @@
+{
+  "status": "fixed",
+  "body": "reported by jerichopumpkin http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&start=780#p161863 Gaining first strike after first strike damage has been dealt, shouldn't prevent a creature from dealing damage.\r\n\r\nLosing first strike after first strike damage has been dealt, shouldn't allow a creature to deal combat damage again, unless it has Double strike.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Gaining/Losing First strike during combat",
+  "labels": [
+    "imported",
+    "Component-Logic",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 20, 2014 16:07:45",
+      "body": "Pushed a fix - not as pretty as I'd like as permanent.getStateId() doesn't allow booleans, but should get around the problem.\r\n\r\nInstead of checking for the first strike ability, it now checks for combat damage activity during the first combat damage step (even if it has power 0).\r\n\r\nFurther testing appreciated.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 20, 2014 16:24:44",
+      "body": "**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 20, 2014 18:36:47",
+      "body": "Direct manipulation of state is discouraged, as it does not play well with undo. For example, undo after first strike combat damage round, but permanent still marked as having dealt first strike. Changed to MagicPermanentState where changes are performed using Set/Clear action https://code.google.com/p/magarena/source/detail?r=07ccdfcb0409da5b6aa964edcdb523b13a70750c",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 20, 2014 18:57:47",
+      "body": "Of course!\r\n\r\nThanks for tidying that up - I knew something wasn't quite right.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on September 19, 2014 18:59:10_\n\nreported by jerichopumpkin http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&start=780#p161863 Gaining first strike after first strike damage has been dealt, shouldn't prevent a creature from dealing damage.\r\n\r\nLosing first strike after first strike damage has been dealt, shouldn't allow a creature to deal combat damage again, unless it has Double strike.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=695_",
+  "date": "2014-09-19T18:59:10",
+  "state": "closed",
+  "gid": 695,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=695",
+  "owner": "ShawnieBoyUK"
+}

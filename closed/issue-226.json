@@ -1,0 +1,24 @@
+{
+  "status": "cantreproduce",
+  "body": "Reported by jazevec:\r\n\r\nRebuke didn't work at all. I paid for the cost, the card was gone, the creature remained there. Maaybe it was an earlier regeneration or indestructible effect, but I don't remember anything like that. (In best case it's an interface issue - Shandalar-like visible Graveyard would make it much easier to see what spell has just been cast). It was cast on golem - maybe from the green splicer.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Rebuke doesn't work at all",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 14, 2014 16:49:33",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on June 15, 2012 15:04:47_\n\nReported by jazevec:\r\n\r\nRebuke didn't work at all. I paid for the cost, the card was gone, the creature remained there. Maaybe it was an earlier regeneration or indestructible effect, but I don't remember anything like that. (In best case it's an interface issue - Shandalar-like visible Graveyard would make it much easier to see what spell has just been cast). It was cast on golem - maybe from the green splicer.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=226_",
+  "date": "2012-06-15T15:04:47",
+  "state": "closed",
+  "gid": 226,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=226",
+  "owner": ""
+}

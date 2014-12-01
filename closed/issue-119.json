@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Why it is impossible to save current deck between matches ?\r\nSometimes when playing Tribal Mono i see a really interesting decks but after first match i can't save it for further playing.",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Enhancement",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "December 05, 2011 08:11:50",
+      "body": "You can still save the deck when the duel is over (after 3/5/7/9 or 11 games), but that's not a very elegant solution as it could mean choosing 'concede game' a lot of times only to be able to save a cool deck.\r\nI don't know why the 'save deck' menu option is disabled to be honest. The code simply disables the top four menu items in the duel menu while a duel is ongoing.\r\n\r\nI agree it should be possible to save decks between matches so I'll enable the menu option.\r\n\r\nThanks for the suggestion.\n\n**Status:** Accepted  \n  **Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 05, 2011 08:12:23",
+      "body": "This issue was closed by revision 56b2c4359430 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on December 05, 2011 23:44:50_\n\nWhy it is impossible to save current deck between matches ?\r\nSometimes when playing Tribal Mono i see a really interesting decks but after first match i can't save it for further playing.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=119_",
+  "date": "2011-12-05T23:44:50",
+  "state": "closed",
+  "gid": 119,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=119",
+  "owner": ""
+}

@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. The user casts Sparkmage Apprentice, to which the AI responds with Withstand (prevent the next 3 damage).\r\n2. Sparkmage is put onto the battlefield, and deals 1 damage to the AI, which is prevented thanks to Withstand.\r\n3. The user attacks with Earth Elemental and Mudbrawler Raiders; the computer blocks Earth Elemental with Valiant Guard+Spirit Mantle.\r\n\r\nSo, Mudbrawler Raiders (3/3) is not blocked; its first 2 damage should be prevented thanks to Withstand, but not the 3rd damage.  Instead, Mudbrawler deals no damage at all to the AI (instead of 1 damage).\r\n\r\n(Magarena 1.19 on Mac OS X, default AI.)",
+  "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)",
+  "title": "Damage not fully assigned",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 21, 2011 13:22:00",
+      "body": "This problem might actually be the same as the one described in Issue 95 : in step 2 above, Sparkmage probably does not deal 1 damage (even though it should).  This would explain that Mudbrawler Raiders has its 3 damages prevented.",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "November 21, 2011 18:40:25",
+      "body": "This issue was closed by revision 5019defd4b89 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 21, 2011 18:42:55",
+      "body": "Good reasoning. Indeed, the bug is with Sparkmage Apprentice's enter the battlefield ability.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/) on November 17, 2011 06:54:57_\n\nWhat steps will reproduce the problem? 1. The user casts Sparkmage Apprentice, to which the AI responds with Withstand (prevent the next 3 damage).\r\n2. Sparkmage is put onto the battlefield, and deals 1 damage to the AI, which is prevented thanks to Withstand.\r\n3. The user attacks with Earth Elemental and Mudbrawler Raiders; the computer blocks Earth Elemental with Valiant Guard+Spirit Mantle.\r\n\r\nSo, Mudbrawler Raiders (3/3) is not blocked; its first 2 damage should be prevented thanks to Withstand, but not the 3rd damage.  Instead, Mudbrawler deals no damage at all to the AI (instead of 1 damage).\r\n\r\n(Magarena 1.19 on Mac OS X, default AI.)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=96_",
+  "date": "2011-11-17T06:54:57",
+  "state": "closed",
+  "gid": 96,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=96",
+  "owner": ""
+}

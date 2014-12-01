@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "If someone downloads all the cards, when new cards are submitted, they will not appear on the 'New' filter, as the filter works on when images were last downloaded.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Downloading all card images makes future use of the 'New' filter unusable",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 05, 2014 11:39:41",
+      "body": "Will need to find an alternative approach. Probably as part of the import - compare list of scripts in previous version against current and create a diff file which represents the new.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 05, 2014 11:46:15",
+      "body": "There's already a 'new cards this release' list created by the makefile - Maybe borrowing this list as a 'New' filter",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 10, 2014 00:54:33",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/368270b0db562ea40b56fc0f56b54d180fecb97e .\r\n\r\nNo response from melvin re: makefile update so assuming that was not feasible. This was a bit of a pain to implement but I think I have covered all possible use cases. It is actually a bit more advanced than the previous mechanism - now it takes into account older versions such that if someone who is using 1.51 upgrades directly to 1.53 via import the new cards filter option will display all new cards added in 1.52 and 1.53. As before if you run a nightly build or sync your local copy of the repository the new cards list will be updated to only reflect any new cards added. Now though, you can always reset the new list by importing a previous release (eg. 1.52).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 10, 2014 02:14:56",
+      "body": "Adding a new.txt to resource during build is feasible.\r\n\r\nThis seems a lot of extra complexity for a small feature. Why does the import dialog tries to load all the cards by calling prop2carddef?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 10, 2014 02:16:08",
+      "body": "I thought import is only for card/token images but not for card/token scripts? Without updating the jar/exe, the new scripts most likely will not work.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on August 06, 2014 02:11:59_\n\nIf someone downloads all the cards, when new cards are submitted, they will not appear on the 'New' filter, as the filter works on when images were last downloaded.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=640_",
+  "date": "2014-08-06T02:11:59",
+  "state": "closed",
+  "gid": 640,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=640",
+  "owner": "ShawnieBoyUK"
+}

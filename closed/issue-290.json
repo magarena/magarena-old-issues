@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Bazaar of Baghdad: tap draw discard 2/3\r\nMerfolk Looter: tap draw discard 1/1\r\nCareful Study: draw discard 2/2\r\nCatalog: draw discard 2/1",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "scriptable ability: \"draw discard X/Y\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "October 27, 2013 06:04:32",
+      "body": "will be available in 1.44\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 04, 2012 20:49:41_\n\nBazaar of Baghdad: tap draw discard 2/3\r\nMerfolk Looter: tap draw discard 1/1\r\nCareful Study: draw discard 2/2\r\nCatalog: draw discard 2/1\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=290_",
+  "date": "2012-09-04T20:49:41",
+  "state": "closed",
+  "gid": 290,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=290",
+  "owner": "melvinzh...@gmail.com"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Cast a creature with vanishing.\r\n2. Cast Rite of Replication on it. What is the expected output? What do you see instead? Since vanishing creatures have a citp ability that adds time counters to them, the replicated creature should also enter the battlefield with time counters. Instead it has none, so it sticks around forever. What version of the product are you using? On what operating system? 1.23, OS X Please provide any additional information below. In the specific case where I noticed this, the creature was an unkicked Ravaging Riftwurm.",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Copying a card with kicker cost and a comes into play effect skips the citp effect",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 06, 2012 23:34:53",
+      "body": "Thanks for the report.\r\n\r\nThis bug affects every creature with kicker cost and a 'comes into play' (citp) ability. It's because the kicker implementation also handles the citp effect and since the copy isn't cast, the whole kicker code is skipped.\r\n\r\nThe ComeIntoPlayTrigger must always be there but the amount should be changed by the MagicSpellCardEvent somehow.\n\n**Status:** Accepted  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "March 06, 2012 23:38:18",
+      "body": "changed summary\n\n**Summary:** Copying a card with kicker cost and a comes into play effect skips the citp effect  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "March 07, 2012 00:13:21",
+      "body": "This issue was closed by revision 51931e28f070 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "March 07, 2012 00:16:00",
+      "body": "This was less of a problem than I thought.\r\n\r\nThere was a system in place to deal with situations like these so I adapted Ravaging Riftwurm to use it. It was the only card affected.\r\n\r\nThanks again.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on March 07, 2012 06:49:34_\n\nWhat steps will reproduce the problem? 1. Cast a creature with vanishing.\r\n2. Cast Rite of Replication on it. What is the expected output? What do you see instead? Since vanishing creatures have a citp ability that adds time counters to them, the replicated creature should also enter the battlefield with time counters. Instead it has none, so it sticks around forever. What version of the product are you using? On what operating system? 1.23, OS X Please provide any additional information below. In the specific case where I noticed this, the creature was an unkicked Ravaging Riftwurm.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=183_",
+  "date": "2012-03-07T06:49:34",
+  "state": "closed",
+  "gid": 183,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=183",
+  "owner": ""
+}

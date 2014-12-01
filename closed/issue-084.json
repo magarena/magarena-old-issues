@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "The small buttons on the widget that switch between \"Duel Progress\" and \"Difficulty Settings\" are easy to overlook. This should be replaced with something less obscure.\r\n\r\nAn option can be to make the widget bigger and put all info in one panel. There's enough room for that.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Make difficulty settings easier to find",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 01, 2011 08:45:56",
+      "body": "I did not even notice that there was a difficulty switch. I'll take care of it when I have time.\n\n**Owner:** wait...@gmail.com  \n",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "November 05, 2011 13:46:26",
+      "body": "fixed rev 472a01d5e48e\n\n**Status:** Fixed  \n",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on November 01, 2011 16:50:19_\n\nThe small buttons on the widget that switch between \"Duel Progress\" and \"Difficulty Settings\" are easy to overlook. This should be replaced with something less obscure.\r\n\r\nAn option can be to make the widget bigger and put all info in one panel. There's enough room for that.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=84_",
+  "date": "2011-11-01T16:50:19",
+  "state": "closed",
+  "gid": 84,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=84",
+  "owner": "wait...@gmail.com"
+}

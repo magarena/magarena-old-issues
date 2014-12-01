@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Occurs for any \"you may pay ...If you do <effect>\" where the effect part has no choice.\r\n\r\nDue to passing of MagicChoice.NONE into MagicMayChoice",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Mentor of the Meek trigger crashes",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 28, 2014 06:14:15",
+      "body": "This issue was closed by revision 0a96b78af69b .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on April 28, 2014 21:05:03_\n\nOccurs for any \"you may pay ...If you do <effect>\" where the effect part has no choice.\r\n\r\nDue to passing of MagicChoice.NONE into MagicMayChoice\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=597_",
+  "date": "2014-04-28T21:05:03",
+  "state": "closed",
+  "gid": 597,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=597",
+  "owner": "melvinzh...@gmail.com"
+}

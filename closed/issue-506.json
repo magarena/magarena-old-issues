@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "I am planning on renaming the class magic.model.MagicPlayerProfile to magic.model.MagicDeckGenerator.\r\n\r\nThis is one confusingly named class which unfortunately is referenced all over the place and makes understanding the code that bit more difficult. I can only assume it is a legacy class which has not evolved with the code base because I can see no reason why it is named as it is.\r\n\r\nIf there is a reason why it should remain as MagicPlayerProfile please can you let me know. Obviously, it will mean quite a bit of refactoring - an initial changeset for the rename and then the subsequent renaming of methods/variables to better match the class function which I suggest can be done as required instead of all at once.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Rename MagicPlayerProfile class",
+  "labels": [
+    "imported",
+    "Priority-High",
+    "Type-Review"
+  ],
+  "comments": [
+    {
+      "date": "March 11, 2014 18:44:20",
+      "body": "How about MagicDeckProfile instead of MagicDeckGenerator? MagicDeckGenerator might be confused as being related to DefaultDeckGenerator and its subclasses. This class doesn't actually generating deck, far as I can tell it stores some config settings about what kind of deck a player wants the program to choose/generate.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 11, 2014 22:45:54",
+      "body": "Even better. MagicDeckProfile it is. Thanks.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 15, 2014 01:20:33",
+      "body": "updated applied in build 1.48.831 ( http://buildhive.cloudbees.com/job/melvinzhang/job/magarena/831/ )\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on March 12, 2014 00:53:59_\n\nI am planning on renaming the class magic.model.MagicPlayerProfile to magic.model.MagicDeckGenerator.\r\n\r\nThis is one confusingly named class which unfortunately is referenced all over the place and makes understanding the code that bit more difficult. I can only assume it is a legacy class which has not evolved with the code base because I can see no reason why it is named as it is.\r\n\r\nIf there is a reason why it should remain as MagicPlayerProfile please can you let me know. Obviously, it will mean quite a bit of refactoring - an initial changeset for the rename and then the subsequent renaming of methods/variables to better match the class function which I suggest can be done as required instead of all at once.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=506_",
+  "date": "2014-03-12T00:53:59",
+  "state": "closed",
+  "gid": 506,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=506",
+  "owner": "lodici123"
+}

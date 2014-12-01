@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Draw trigger activates at the beginning of upkeep instead of draw step.",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Rites of Flourishing",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 18, 2013 06:33:21",
+      "body": "This issue was closed by revision b86f6afbc759 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 18, 2013 06:35:09",
+      "body": "Thanks for the report. It was a rather silly mistake. I created the \"at draw\" trigger in the last release, but forgot to change the class of \"each player draw\" to use the new \"at draw\" trigger.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on July 17, 2013 16:36:17_\n\nDraw trigger activates at the beginning of upkeep instead of draw step.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=370_",
+  "date": "2013-07-17T16:36:17",
+  "state": "closed",
+  "gid": 370,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=370",
+  "owner": ""
+}

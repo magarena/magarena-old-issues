@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? same as issue 511 , just with Clone. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Progenitor Mimic + Clone: triggered ability not copied",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "March 17, 2014 06:23:10",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 511  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 13, 2014 21:29:51_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? same as issue 511 , just with Clone. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=512_",
+  "date": "2014-03-13T21:29:51",
+  "state": "closed",
+  "gid": 512,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=512",
+  "owner": ""
+}

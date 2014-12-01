@@ -1,0 +1,40 @@
+{
+  "status": "verified",
+  "body": "reported by hong yie @ http://www.slightlymagic.net/forum/viewtopic.php?t=3735&p=124668#p124668 AI playing \"fog\", \"Clinging mist\" and some other similar spells at it's own turn preventing its own creatures from dealing damage. i think \"fog\" spells are suits better positioned at defensive spell, played at \"declare defender\" turn.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "AI doesn't have initiative to cast \"fog\" spells to protect itself when attacked, especially when overwhelmed by attackers in number",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "June 14, 2014 17:01:55",
+      "body": "Fog effects now use the Block timing\n\n**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "June 15, 2014 21:59:39",
+      "body": "this timing will solve this AI issue?\r\nor there might be something else prepared to handle this too?",
+      "author": "[huanghon...@gmail.com](https://code.google.com/u/117260737072923055970/)"
+    },
+    {
+      "date": "June 16, 2014 02:57:31",
+      "body": "Timings limit when the AI can cast certain spells, or activate abilities. The timings for fog-like effects were changed in February this year from 'pump' to 'block'\r\n\r\nPump timing would only activate during the AI's declare attackers phase (or the main phase) before getting to the block phase.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 09, 2013 10:23:24_\n\nreported by hong yie @ http://www.slightlymagic.net/forum/viewtopic.php?t=3735&p=124668#p124668 AI playing \"fog\", \"Clinging mist\" and some other similar spells at it's own turn preventing its own creatures from dealing damage. i think \"fog\" spells are suits better positioned at defensive spell, played at \"declare defender\" turn.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=365_",
+  "date": "2013-07-09T10:23:24",
+  "state": "closed",
+  "gid": 365,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=365",
+  "owner": "melvinzh...@gmail.com"
+}

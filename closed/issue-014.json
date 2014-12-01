@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Filter legal targets can be confusing to some users as it prevents them from making certain legal actions such as putting -1/-1 tokens on their own creatures.\r\n\r\nOptions:\r\n1. make \"Filter legal targets\" off be default\r\n2. keep it on by default, but make the preference menu more obvious so that users cnd tweak it themselves (promote it to top level, i.e. Arena Preferences Help)",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Filter legal targets option is on by default and it is confusing some players",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "May 28, 2011 19:47:50",
+      "body": "made filter legal targets off by default\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:25:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 26, 2011 12:53:37_\n\nFilter legal targets can be confusing to some users as it prevents them from making certain legal actions such as putting -1/-1 tokens on their own creatures.\r\n\r\nOptions:\r\n1. make \"Filter legal targets\" off be default\r\n2. keep it on by default, but make the preference menu more obvious so that users cnd tweak it themselves (promote it to top level, i.e. Arena Preferences Help)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=14_",
+  "date": "2011-05-26T12:53:37",
+  "state": "closed",
+  "gid": 14,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=14",
+  "owner": "melvinzh...@gmail.com"
+}

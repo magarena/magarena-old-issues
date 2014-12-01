@@ -1,0 +1,25 @@
+{
+  "status": "fixed",
+  "body": "Firemind now offers a public json feed ( http://www.firemind.ch/decks/top.json ) which contains the top decks.\r\n\r\nPossible ways to integrate with Magarena...\r\n- add an import option.\r\n- add a Firemind Top Decks group to the decks screen.\r\n- - display decks by querying feed on demand.\r\n- - download json file behind the scenes when Magarena is started and use this local version from the decks screen.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Integrate top decks json feed from Firemind.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "October 10, 2014 04:13:25",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/8e70154dca861d71ebdea7e46515d7286cdf5c46 .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 08, 2014 16:36:56_\n\nFiremind now offers a public json feed ( http://www.firemind.ch/decks/top.json ) which contains the top decks.\r\n\r\nPossible ways to integrate with Magarena...\r\n- add an import option.\r\n- add a Firemind Top Decks group to the decks screen.\r\n- - display decks by querying feed on demand.\r\n- - download json file behind the scenes when Magarena is started and use this local version from the decks screen.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=643_",
+  "date": "2014-08-08T16:36:56",
+  "state": "closed",
+  "gid": 643,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=643",
+  "owner": "lodici123"
+}

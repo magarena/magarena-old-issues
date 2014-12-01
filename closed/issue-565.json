@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "what is the common goal here? sometimes notifications show a number (like some spells with X) sometimes they don't.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Nylea's Disciple: notification does not show how much life is gained",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 29, 2014 16:34:55",
+      "body": "I always try and place an indicator for X, however sometimes X may change from when a spell is cast, to when it resolves. There's currently no way to replace something that goes onto the stack/log",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 29, 2014 16:39:40",
+      "body": "Nylea's Disciple is devotion based, but you could always cast a green flash creature flash creature, so devotion would change between time of casting and the moment it resolves.\r\n\r\nso, if that is currently not possible, then okay, I won't mention these again.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 01, 2014 05:13:28",
+      "body": "Just realised that Search cards use game.logAppend to add the card that's found. Will see if this acts as expected if there's other items on the stack. (ie. Only appends the card's own entry, not another spell/effect by the same player)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 01, 2014 05:37:24",
+      "body": "game.logAppendMessage(<player>,<message>); works.\r\n\r\nNylea's Disciple been amended. (Haven't used an 'X=', as there's no X definition on the card, just an amount - but will still aid with log info).\n\n**Status:** Fixed  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 30, 2014 07:21:22_\n\nwhat is the common goal here? sometimes notifications show a number (like some spells with X) sometimes they don't.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=565_",
+  "date": "2014-03-30T07:21:22",
+  "state": "closed",
+  "gid": 565,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=565",
+  "owner": "ShawnieBoyUK"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "my Mana Cost filter contains 0 to 12. If I sort the table by CC descending the top card is Emrakul, the Aeons Torn which has a cost of 15.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "deck editor/card explorer: mana cost filter does not show all possible costs",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 09, 2013 08:41:38",
+      "body": "**Status:** Started  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 10, 2013 03:00:07",
+      "body": "Fixed in build 1.44.615 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/615/ ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on December 06, 2013 22:37:03_\n\nmy Mana Cost filter contains 0 to 12. If I sort the table by CC descending the top card is Emrakul, the Aeons Torn which has a cost of 15.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=440_",
+  "date": "2013-12-06T22:37:03",
+  "state": "closed",
+  "gid": 440,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=440",
+  "owner": "lodici123"
+}

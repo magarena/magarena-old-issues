@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Use ability of \"Niblis of the Breath\" What is the expected output? What do you see instead? Expected to tap a blue mana to use ability, but it wants a white one. What version of the product are you using? On what operating system? 1.27 on WinXP SP3",
+  "author": "[Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/)",
+  "title": "wrong implementation of the abilty of the card \"Niblis of the Breath\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 13, 2012 19:18:12",
+      "body": "This issue was closed by revision 71e4f0dd8f80 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 13, 2012 19:18:28",
+      "body": "Thanks for reporting. This has been fixed.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/) on July 13, 2012 20:30:59_\n\nWhat steps will reproduce the problem? 1. Use ability of \"Niblis of the Breath\" What is the expected output? What do you see instead? Expected to tap a blue mana to use ability, but it wants a white one. What version of the product are you using? On what operating system? 1.27 on WinXP SP3\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=258)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=258_",
+  "date": "2012-07-13T20:30:59",
+  "state": "closed",
+  "gid": 258,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=258",
+  "owner": ""
+}

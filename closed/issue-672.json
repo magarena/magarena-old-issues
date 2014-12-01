@@ -1,0 +1,49 @@
+{
+  "status": "fixed",
+  "body": "Currently it is not possible to select such a \"card\" (eg. Markov's Servant) if using Magarena's deck editor to construct the deck. However, it is still possible to add it outside of Magarena by updating the \"dec\" file directly. When parsing the \"dec\" file need to check for this and flag the deck as invalid if found.\r\n\r\nInitially raised by Aswan jaguar in forum at http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=159485&sid=9076b997f03fadc85c5fec41d38f2279#p159476 .",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "A deck is invalid if it contains the reverse side of a double-faced or flip card.",
+  "labels": [
+    "imported",
+    "Priority-High",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 31, 2014 09:33:59",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/d17f614fbfe818f484eab78fae438b5ed3622c8b .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 31, 2014 12:17:25",
+      "body": "Original issue was actually caused by the random deck generator. The above fix should prevent the random deck from being played but need to update random deck generation to ignore hidden MagicCardDefinitions.\n\n**Status:** Accepted  \n  **Labels:** -Priority-Medium Priority-High  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 03, 2014 15:10:00",
+      "body": "Issue 678 has been merged into this issue.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 03, 2014 15:12:02",
+      "body": "Issue 678 has been merged into this issue.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 09, 2014 12:09:30",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/b06e61deab373ea1031e620ac87cf4f21b1bb7c6 .\r\n\r\nIt should not now be possible for the random deck generator to create a deck that contains hidden cards.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 20, 2014 16:22:28",
+      "body": "Issue 693 has been merged into this issue.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 01, 2014 00:30:24_\n\nCurrently it is not possible to select such a \"card\" (eg. Markov's Servant) if using Magarena's deck editor to construct the deck. However, it is still possible to add it outside of Magarena by updating the \"dec\" file directly. When parsing the \"dec\" file need to check for this and flag the deck as invalid if found.\r\n\r\nInitially raised by Aswan jaguar in forum at http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=159485&sid=9076b997f03fadc85c5fec41d38f2279#p159476 .\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=672_",
+  "date": "2014-09-01T00:30:24",
+  "state": "closed",
+  "gid": 672,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=672",
+  "owner": "lodici123"
+}

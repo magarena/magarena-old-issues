@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "elias @ http://www.slightlymagic.net/forum/posting.php?mode=quote&f=82&p=126673#pr126673 This is not really a bug, but I wonder if the loading icon could be improved (the blue spinning balls), because right now it's not transparent. Therefore, if you change the background of these tables to something dark you will have blue spinning balls with a white messy aura.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "loading icon not transparent",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 27, 2013 18:11:38",
+      "body": "Though given my paltry gfx skills, it may take a while. The image in question is https://magarena.googlecode.com/hg/resources/magic/data/icons/busy.gif appreciate any help with patching it.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "October 27, 2013 03:19:31",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 28, 2013 09:06:28_\n\nelias @ http://www.slightlymagic.net/forum/posting.php?mode=quote&f=82&p=126673#pr126673 This is not really a bug, but I wonder if the loading icon could be improved (the blue spinning balls), because right now it's not transparent. Therefore, if you change the background of these tables to something dark you will have blue spinning balls with a white messy aura.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=374_",
+  "date": "2013-07-28T09:06:28",
+  "state": "closed",
+  "gid": 374,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=374",
+  "owner": "melvinzh...@gmail.com"
+}

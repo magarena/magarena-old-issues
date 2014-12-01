@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "Proposed in this post http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=12320 Patch available from https://code.google.com/r/viewcp32-personal-clone/source/detail?r=d7c6472be9456849a72ddf74e68ebd712f961ba7",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "evaluate patch to add card popup on side of battlescreen",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "January 03, 2014 18:48:32",
+      "body": "Lodici: Please help to look at this. Thanks!\n\n**Owner:** lodici123  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 05, 2014 17:46:39",
+      "body": "I am not sure how to go about checking this patch using Mercurial. Assuming my clone is up to date, how do I temporarily apply this patch and then rollback afterwards?",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "January 08, 2014 00:58:05",
+      "body": "The simplest is to make another local copy of your server side clone and then pull the change from viewcp32's clone into this new local copy.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 09, 2014 16:24:43",
+      "body": "ok, thanks - I will try to review before the next release.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "January 19, 2014 20:06:54",
+      "body": "I was unable to test since alot of UI changes have been applied since this patch was created and consequently there are numerous and multiple merge conflicts. The author should reapply and resubmit the changes against the latest build. \r\n\r\nRegarding the actual feature, I made comment in the original forum thread but since it is optional via a new setting, \"Display pointing card\", then I don't see any reason why it should be not be accepted.\n\n**Status:** Done  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on January 04, 2014 10:22:46_\n\nProposed in this post http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=12320 Patch available from https://code.google.com/r/viewcp32-personal-clone/source/detail?r=d7c6472be9456849a72ddf74e68ebd712f961ba7\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=462_",
+  "date": "2014-01-04T10:22:46",
+  "state": "closed",
+  "gid": 462,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=462",
+  "owner": "lodici123"
+}

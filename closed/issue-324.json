@@ -1,0 +1,24 @@
+{
+  "status": "cantreproduce",
+  "body": "Reported by muaddib on the forum\r\n\r\nScreenshots @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&start=255#p107274 On second screenshot card on my hand (cost: 1 black black) - destroy target creature (I can't remember card name), I try destroy Living Wall because I see no opponent land to regenerate.\r\nOn first screenshot we see opponent regenerate Living wall.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Living wall may regenerate without mana",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 08, 2014 18:33:14",
+      "body": "Likely Living Wall was regenerated earlier and still had the regeneration effect on it.\n\n**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on January 30, 2013 08:37:50_\n\nReported by muaddib on the forum\r\n\r\nScreenshots @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&start=255#p107274 On second screenshot card on my hand (cost: 1 black black) - destroy target creature (I can't remember card name), I try destroy Living Wall because I see no opponent land to regenerate.\r\nOn first screenshot we see opponent regenerate Living wall.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=324_",
+  "date": "2013-01-30T08:37:50",
+  "state": "closed",
+  "gid": 324,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=324",
+  "owner": "melvinzh...@gmail.com"
+}

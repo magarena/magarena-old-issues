@@ -1,0 +1,31 @@
+{
+  "status": "wontfix",
+  "body": "Samuel Lawson reported on the mailing list:\r\n\r\nOn first load before downloading images, I couldn't select menu items with mouse when first starting the game right after downloading. I had to hold down a mouse button over \"Arena\" and then use arrow keys to select an item whilst keeping the mouse button depressed. After the images downloaded, the top menu worked fine.\r\n\r\nUbutntu 12.10, AMD64 \r\n\r\njava version \"1.7.0_09\"\r\nOpenJDK Runtime Environment (IcedTea7 2.3.4) (7u9-2.3.4-0ubuntu1.12.10.1)\r\nOpenJDK 64-Bit Server VM (build 23.2-b09, mixed mode)",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "could not select menu items with mouse before downloading images",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:48:05",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 04:01:39",
+      "body": "The UI has change considerably such that I don't think this is relevant anymore.\n\n**Status:** WontFix  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on January 24, 2013 13:49:32_\n\nSamuel Lawson reported on the mailing list:\r\n\r\nOn first load before downloading images, I couldn't select menu items with mouse when first starting the game right after downloading. I had to hold down a mouse button over \"Arena\" and then use arrow keys to select an item whilst keeping the mouse button depressed. After the images downloaded, the top menu worked fine.\r\n\r\nUbutntu 12.10, AMD64 \r\n\r\njava version \"1.7.0_09\"\r\nOpenJDK Runtime Environment (IcedTea7 2.3.4) (7u9-2.3.4-0ubuntu1.12.10.1)\r\nOpenJDK 64-Bit Server VM (build 23.2-b09, mixed mode)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=323_",
+  "date": "2013-01-24T13:49:32",
+  "state": "closed",
+  "gid": 323,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=323",
+  "owner": "melvinzh...@gmail.com"
+}

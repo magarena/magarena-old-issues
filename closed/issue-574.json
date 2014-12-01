@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "magarena 1.49.956",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Jagged-Scar Archers, activated ability: Notification does not show Target Choice",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 02, 2014 22:10:26",
+      "body": "This issue was closed by revision c7584775ea50 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on April 03, 2014 07:52:23_\n\nmagarena 1.49.956\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=574_",
+  "date": "2014-04-03T07:52:23",
+  "state": "closed",
+  "gid": 574,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=574",
+  "owner": ""
+}

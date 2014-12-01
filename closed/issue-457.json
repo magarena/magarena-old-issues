@@ -1,0 +1,28 @@
+{
+  "status": "verified",
+  "body": "Skyshroud Poacher, not Skyshroud Elf",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Patch for /release/Magarena/scripts/Skyshroud_Poacher.groovy",
+  "labels": [
+    "imported",
+    "Type-Patch"
+  ],
+  "comments": [
+    {
+      "date": "December 17, 2013 07:17:49",
+      "body": "Thanks! applied as https://code.google.com/p/magarena/source/detail?r=b34fa9d2059b9f7a497189c4521829ea4ac8a539\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on December 17, 2013 20:59:43_\n\nSkyshroud Poacher, not Skyshroud Elf\n\n**Attachment:** [Skyshroud_Poacher.groovy.patch](http://code.google.com/p/magarena/issues/detail?id=457)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=457_",
+  "date": "2013-12-17T20:59:43",
+  "state": "closed",
+  "gid": 457,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=457",
+  "owner": ""
+}

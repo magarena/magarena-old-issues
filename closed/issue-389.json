@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Load a deck with lots of mountains and Mizzium Mortars\r\n2. Fill the table with at least 6 mountains\r\n3. Play Mizzium Mortars\r\n\r\nWhat is the expected output? Magarena should ask if a player want to use overload or not.\r\n\r\nWhat do you see instead? Magarena asks for sourses to pay for six mana, overload is always used.\r\n\r\n\r\nWhat version of the product are you using? 1.40\r\nOn what operating system? Win7\r\n\r\n\r\nExcerpt from game.log file:\r\n\r\nMAGARENA GAME LOG\r\nCREATED ON 2013/08/19 11:54:38\r\nMAGARENA VERSION 1.40, JRE 1.7.0_25, OS Windows 7_6.1 x86\r\n\r\n...\r\n\r\nLOG (P): Tap Mountain. Tap Mountain. Tap Rootbound Crag. Tap Rootbound Crag. Tap Stomping Ground. Tap Temple Garden. Pay {3}{R}{R}{R}. Play Mizzium Mortars.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=9 time=8003 sims=844\r\n* [6/467/?] (pass)\r\n  [6/377/?] (Falkenrath Aristocrat)\r\nLOG (P): Mizzium Mortars deals 4 damage to each creature you don't control.\r\nLOG (C): Falkenrath Aristocrat is destroyed.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=9 time=8012 sims=714\r\n  [32/37/?] (pass)\r\n* [46/663/?] (Tuktuk the Explorer)\r\n  [22/14/?] (Knight of Infamy)",
+  "author": "[ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/)",
+  "title": "When there is enough mana, overload is always used",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 19, 2013 02:06:04",
+      "body": "Suspect this is due to overload ignoring timing restrictions. Fixed for all overload cards. Thanks for reporting!\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 19, 2013 02:08:29",
+      "body": "This issue was closed by revision 87a6825358f7 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/) on August 19, 2013 16:34:14_\n\nWhat steps will reproduce the problem? 1. Load a deck with lots of mountains and Mizzium Mortars\r\n2. Fill the table with at least 6 mountains\r\n3. Play Mizzium Mortars\r\n\r\nWhat is the expected output? Magarena should ask if a player want to use overload or not.\r\n\r\nWhat do you see instead? Magarena asks for sourses to pay for six mana, overload is always used.\r\n\r\n\r\nWhat version of the product are you using? 1.40\r\nOn what operating system? Win7\r\n\r\n\r\nExcerpt from game.log file:\r\n\r\nMAGARENA GAME LOG\r\nCREATED ON 2013/08/19 11:54:38\r\nMAGARENA VERSION 1.40, JRE 1.7.0_25, OS Windows 7_6.1 x86\r\n\r\n...\r\n\r\nLOG (P): Tap Mountain. Tap Mountain. Tap Rootbound Crag. Tap Rootbound Crag. Tap Stomping Ground. Tap Temple Garden. Pay {3}{R}{R}{R}. Play Mizzium Mortars.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=9 time=8003 sims=844\r\n* [6/467/?] (pass)\r\n  [6/377/?] (Falkenrath Aristocrat)\r\nLOG (P): Mizzium Mortars deals 4 damage to each creature you don't control.\r\nLOG (C): Falkenrath Aristocrat is destroyed.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=9 time=8012 sims=714\r\n  [32/37/?] (pass)\r\n* [46/663/?] (Tuktuk the Explorer)\r\n  [22/14/?] (Knight of Infamy)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=389_",
+  "date": "2013-08-19T16:34:14",
+  "state": "closed",
+  "gid": 389,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=389",
+  "owner": ""
+}

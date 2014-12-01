@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Download the images\r\n2. Attempt to start the game What is the expected output? What do you see instead? The game works fine if I don't download the images, but once I've downloaded them I get the following error:\r\n\r\nException in thread \"AWT-EventQueue-0\" java.lang.NullPointerException\r\n        at magic.GraphicsUtilities.scale(GraphicsUtilities.java:54)\r\n        at magic.data.HighQualityCardImagesProvider.getImage(HighQualityCardImag\r\nesProvider.java:60)\r\n        at magic.ui.viewer.CardViewer.setCard(CardViewer.java:73)\r\n        at magic.ui.VersionPanel.<init>(VersionPanel.java:61)\r\n        at magic.ui.MagicFrame.setInitialContent(MagicFrame.java:149)\r\n        at magic.ui.MagicFrame.<init>(MagicFrame.java:115)\r\n        at magic.MagicMain$1.run(MagicMain.java:34)\r\n        at java.awt.event.InvocationEvent.dispatch(Unknown Source)\r\n        at java.awt.EventQueue.dispatchEventImpl(Unknown Source)\r\n        at java.awt.EventQueue.access$000(Unknown Source)\r\n        at java.awt.EventQueue$1.run(Unknown Source)\r\n        at java.awt.EventQueue$1.run(Unknown Source)\r\n        at java.security.AccessController.doPrivileged(Native Method)\r\n        at java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown\r\nSource)\r\n        at java.awt.EventQueue.dispatchEvent(Unknown Source)\r\n        at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)\r\n        at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)\r\n        at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)\r\n        at java.awt.EventDispatchThread.pumpEvents(Unknown Source)\r\n        at java.awt.EventDispatchThread.pumpEvents(Unknown Source)\r\n        at java.awt.EventDispatchThread.run(Unknown Source)\r\n\r\nwhen I try to start the game What version of the product are you using? On what operating system? 1.17b Please provide any additional information below.",
+  "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)",
+  "title": "Can't start game",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 07, 2011 08:17:47",
+      "body": "So it seems that every jpg file in the cards directory is 0 KB. I tried it from different computers and networks and the downloaded files are all size 0. I think the source is corrupted.",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "September 07, 2011 08:36:40",
+      "body": "I just tried to let the game download a picture and that worked fine, so I don't think the problem is with the source it gets downloaded from.\r\n\r\nIs it possible you're firewall is blocking the attempt to download the images? Mine really wants to and then I end up with those empty files.\r\nYou'd have to delete the empty ones first before the game can download them again.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 07, 2011 09:00:13",
+      "body": "That was the problem. Thanks.",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "September 07, 2011 09:05:47",
+      "body": "Good to hear, have fun playing :)\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [wait...@gmail.com](https://code.google.com/u/118194332611503434213/) on September 07, 2011 08:43:20_\n\nWhat steps will reproduce the problem? 1. Download the images\r\n2. Attempt to start the game What is the expected output? What do you see instead? The game works fine if I don't download the images, but once I've downloaded them I get the following error:\r\n\r\nException in thread \"AWT-EventQueue-0\" java.lang.NullPointerException\r\n        at magic.GraphicsUtilities.scale(GraphicsUtilities.java:54)\r\n        at magic.data.HighQualityCardImagesProvider.getImage(HighQualityCardImag\r\nesProvider.java:60)\r\n        at magic.ui.viewer.CardViewer.setCard(CardViewer.java:73)\r\n        at magic.ui.VersionPanel.<init>(VersionPanel.java:61)\r\n        at magic.ui.MagicFrame.setInitialContent(MagicFrame.java:149)\r\n        at magic.ui.MagicFrame.<init>(MagicFrame.java:115)\r\n        at magic.MagicMain$1.run(MagicMain.java:34)\r\n        at java.awt.event.InvocationEvent.dispatch(Unknown Source)\r\n        at java.awt.EventQueue.dispatchEventImpl(Unknown Source)\r\n        at java.awt.EventQueue.access$000(Unknown Source)\r\n        at java.awt.EventQueue$1.run(Unknown Source)\r\n        at java.awt.EventQueue$1.run(Unknown Source)\r\n        at java.security.AccessController.doPrivileged(Native Method)\r\n        at java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown\r\nSource)\r\n        at java.awt.EventQueue.dispatchEvent(Unknown Source)\r\n        at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)\r\n        at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)\r\n        at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)\r\n        at java.awt.EventDispatchThread.pumpEvents(Unknown Source)\r\n        at java.awt.EventDispatchThread.pumpEvents(Unknown Source)\r\n        at java.awt.EventDispatchThread.run(Unknown Source)\r\n\r\nwhen I try to start the game What version of the product are you using? On what operating system? 1.17b Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=48_",
+  "date": "2011-09-07T08:43:20",
+  "state": "closed",
+  "gid": 48,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=48",
+  "owner": ""
+}

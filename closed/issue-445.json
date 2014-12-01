@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "I have been looking at how to resolve issue 260 (Load custom deck in \"New duel\" dialog) which has led me to thinking how to improve the deck selection UI in general. \r\n\r\nI have created a mock up screen which can seen at https://picasaweb.google.com/109347504690287833463/Magarena?authkey=Gv1sRgCJWrgsDX3fXF4wE#5955212054911401730 I see this one screen replacing both the current deck file selection dialog and the deck selection combo in the duel setup. Possible features (not obvious from the mock up) would be options for \"Most recently used decks\" and \"Bookmarked/Favourite\" decks for quick selection.\r\n\r\nNot sure how feasible it would be, but I would like to include the ability to filter the \"dec\" files based on their content so you could, for example, only show files containing specific cards or keywords in the description.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "idea for a new deck selection screen",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "February 18, 2014 17:43:35",
+      "body": "Filtering decks by card name would be easily do-able - the .dec files are simply .txt files containing lists of card names and quantities. Searching for keywords etc, would need the Magarena\\Texts\\CARDNAME.txt file for each card in that .dec file. That's where the oracle text is kept. Would be more fiddly.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 11, 2014 00:14:27",
+      "body": "This is more a concept than a specific concrete requirement. The new Decks screen more or less closes this issue although there is more stuff to do these should be raised as separate issues to improve visibility.\n\n**Status:** Done  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on December 09, 2013 10:51:00_\n\nI have been looking at how to resolve issue 260 (Load custom deck in \"New duel\" dialog) which has led me to thinking how to improve the deck selection UI in general. \r\n\r\nI have created a mock up screen which can seen at https://picasaweb.google.com/109347504690287833463/Magarena?authkey=Gv1sRgCJWrgsDX3fXF4wE#5955212054911401730 I see this one screen replacing both the current deck file selection dialog and the deck selection combo in the duel setup. Possible features (not obvious from the mock up) would be options for \"Most recently used decks\" and \"Bookmarked/Favourite\" decks for quick selection.\r\n\r\nNot sure how feasible it would be, but I would like to include the ability to filter the \"dec\" files based on their content so you could, for example, only show files containing specific cards or keywords in the description.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=445_",
+  "date": "2013-12-09T10:51:00",
+  "state": "closed",
+  "gid": 445,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=445",
+  "owner": "lodici123"
+}

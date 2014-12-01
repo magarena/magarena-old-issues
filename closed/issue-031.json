@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "During declare blockers step and after some blockers are declared, if player undo and then re-enter the declare blockers phase, the blockers declared previously is used.\r\n\r\nThe correct behavior is that the blockers should not be blocking, i.e. as if this is the first time entering the declare blockers step",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "undo does not clear blockers",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 24, 2011 19:41:14",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 22, 2011 20:49:33_\n\nDuring declare blockers step and after some blockers are declared, if player undo and then re-enter the declare blockers phase, the blockers declared previously is used.\r\n\r\nThe correct behavior is that the blockers should not be blocking, i.e. as if this is the first time entering the declare blockers step\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=31_",
+  "date": "2011-07-22T20:49:33",
+  "state": "closed",
+  "gid": 31,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=31",
+  "owner": "melvinzh...@gmail.com"
+}

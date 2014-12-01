@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "a short gameplay video would be even better",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Show screenshots of Magarena (in text mode) so that users can see what the program looks like",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 24, 2011 10:39:01",
+      "body": "Done https://code.google.com/p/magarena/wiki/Screenshots\n\n**Status:** Fixed  \n",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 30, 2011 10:26:40_\n\na short gameplay video would be even better\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=25_",
+  "date": "2011-05-30T10:26:40",
+  "state": "closed",
+  "gid": 25,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=25",
+  "owner": "melvinzh...@gmail.com"
+}

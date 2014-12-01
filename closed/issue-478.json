@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "I could be misreading it, but after the AI was repeatedly choosing to tap my most recent creatures entering the battlefield (1/1's) over the creatures source (5/5) when attacking into them, I looked at the MagicTapTargetPicker, and it looks like it is only counting the power of creatures if they are already tapped.\r\n\r\nfinal boolean isTapped = permanent.isTapped();\r\n        if (isTapped == toTap) {\r\n            return 0;\r\n        }\r\nfinal boolean isController = permanent.isController(player);\r\n        return (isController == isTapped) ?\r\n            1 + permanent.getPower()+permanent.getActivations().size() :\r\n            0;\r\n\r\nEither way, it's somehow scoring a 1/1 higher than a 5/5",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "MagicTapTargetPicker getTargetScore correct?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 06, 2014 20:13:11",
+      "body": "I rechecked this, looks right but I' rewrite this to be clearer to avoid confusion in the future.\r\n\r\nDetails:\r\nthe first check is for the case where\r\n1) we want to tap, perm is tap\r\n2) we want to untp, perm is untapp\r\nso we give the lowest possible score of 0\r\n\r\nbeyond this point we know that isTapped and toTap is different.\r\n\r\nisController == isTapped means use 1 + power + num activations if \r\n1) player is controller of perm and perm is tapped and we want to untap the perm\r\n2) player is opponent of perm and perm is untapped and we want to tap the perm\r\notherwise, \r\n3) player is controller of perm and perm is untapped and we want to tap, i.e. tap our own, so score is 0\r\n4) player is opponent of perm and perm is tapped and we want to untap, i.e. untap our opponent's, so score is 0",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 07, 2014 18:27:52",
+      "body": "This issue was closed by revision 2bfff4315df9 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on February 06, 2014 09:55:01_\n\nI could be misreading it, but after the AI was repeatedly choosing to tap my most recent creatures entering the battlefield (1/1's) over the creatures source (5/5) when attacking into them, I looked at the MagicTapTargetPicker, and it looks like it is only counting the power of creatures if they are already tapped.\r\n\r\nfinal boolean isTapped = permanent.isTapped();\r\n        if (isTapped == toTap) {\r\n            return 0;\r\n        }\r\nfinal boolean isController = permanent.isController(player);\r\n        return (isController == isTapped) ?\r\n            1 + permanent.getPower()+permanent.getActivations().size() :\r\n            0;\r\n\r\nEither way, it's somehow scoring a 1/1 higher than a 5/5\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=478_",
+  "date": "2014-02-06T09:55:01",
+  "state": "closed",
+  "gid": 478,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=478",
+  "owner": ""
+}

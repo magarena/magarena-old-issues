@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "make it easier to view the README.txt without launching a separate program by adding it to the help menu",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "added a third panel to help that shows the README.txt",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "June 09, 2011 05:24:16",
+      "body": "**Status:** Started  \n  **Cc:** bloodyan...@gmail.com  \n",
+      "author": "[bloodyan...@gmail.com](https://code.google.com/u/110950394367560922445/)"
+    },
+    {
+      "date": "June 14, 2011 17:38:11",
+      "body": "**Status:** Fixed  \n",
+      "author": "[bloodyan...@gmail.com](https://code.google.com/u/110950394367560922445/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 30, 2011 10:15:31_\n\nmake it easier to view the README.txt without launching a separate program by adding it to the help menu\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=23_",
+  "date": "2011-05-30T10:15:31",
+  "state": "closed",
+  "gid": 23,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=23",
+  "owner": "melvinzh...@gmail.com"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "wontfix",
+  "body": "The Magarena 1.44 zip file seems to be infected. Is it legit?",
+  "author": "[jakub.mi...@gmail.com](https://code.google.com/u/110312501485361632225/)",
+  "title": "Virus",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "December 22, 2013 08:26:44",
+      "body": "The .jar files included can sometimes trigger an alert in some antivirus software as malware or trojans.\r\n\r\nThe link shows an analysis of the file https://www.virustotal.com/uk/file/20f42e7be5e7cd23f4cf59c9b4465847eda62dc6b671e781ec9108ebc71201e1/analysis/1387728833/",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "February 20, 2014 19:03:00",
+      "body": "False positive.\n\n**Status:** WontFix  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [jakub.mi...@gmail.com](https://code.google.com/u/110312501485361632225/) on December 22, 2013 05:44:15_\n\nThe Magarena 1.44 zip file seems to be infected. Is it legit?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=458_",
+  "date": "2013-12-22T05:44:15",
+  "state": "closed",
+  "gid": 458,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=458",
+  "owner": ""
+}

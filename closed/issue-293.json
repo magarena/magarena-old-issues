@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "- What steps will reproduce the problem?\r\n1. MCTS-C (6) or MMAB (8) with Haunted_Humans Deck vs. me with 2012gwAggro Deck (although I've changed my lists slightly, i.e. exchanged Noble Hierarch for Avacyn's Pilgrim for example)\r\n2. I have a Blade Splicer + Golem Token, attack with Golem\r\n3. AI has Champion of the Parish with p/t 3/3, a Doomed Traveler and a Nearheath Pilgrim.\r\n4. AI double-blocks my Golem with Champion+Doomed Traveler, auto-assigns 1 Damage to Doomed Traveler, which is then killed, and 2 Damage to the 3/3 Champion, which survives. My Golem Token dies.\r\n\r\n- What is the expected output? What do you see instead?\r\nWhen double-blocked like this, I'd assign 3 first strike damage on the Champion, so that my Golem should kill the Champion and survive with 1 Damage taken from the Traveler in total.\r\n\r\n- What version of the product are you using? On what operating system?\r\nMAGARENA VERSION 1.29, JRE 1.6.0_33, OS Windows 7_6.1 x86",
+  "author": "[firat.al...@googlemail.com](https://code.google.com/u/112109140426664196609/)",
+  "title": "Double-Blocks: Damage Auto-Assign is unfavorable",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 07, 2012 06:25:01",
+      "body": "Later, the computer suicided his Nearheath-Pilgrim into my 4/4 Geist Honored Monk, for no apparent reason (i.e. life-gain was irrelevant at that moment). Could be due to MCTS randomization though...\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=293#hc1)",
+      "author": "[firat.al...@googlemail.com](https://code.google.com/u/112109140426664196609/)"
+    },
+    {
+      "date": "December 11, 2012 21:28:48",
+      "body": "Assignment of damage is based on how the defender orders the blockers, see https://code.google.com/p/magarena/wiki/GameRules\n\n**Status:** Done  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [firat.al...@googlemail.com](https://code.google.com/u/112109140426664196609/) on September 07, 2012 21:19:35_\n\n- What steps will reproduce the problem?\r\n1. MCTS-C (6) or MMAB (8) with Haunted_Humans Deck vs. me with 2012gwAggro Deck (although I've changed my lists slightly, i.e. exchanged Noble Hierarch for Avacyn's Pilgrim for example)\r\n2. I have a Blade Splicer + Golem Token, attack with Golem\r\n3. AI has Champion of the Parish with p/t 3/3, a Doomed Traveler and a Nearheath Pilgrim.\r\n4. AI double-blocks my Golem with Champion+Doomed Traveler, auto-assigns 1 Damage to Doomed Traveler, which is then killed, and 2 Damage to the 3/3 Champion, which survives. My Golem Token dies.\r\n\r\n- What is the expected output? What do you see instead?\r\nWhen double-blocked like this, I'd assign 3 first strike damage on the Champion, so that my Golem should kill the Champion and survive with 1 Damage taken from the Traveler in total.\r\n\r\n- What version of the product are you using? On what operating system?\r\nMAGARENA VERSION 1.29, JRE 1.6.0_33, OS Windows 7_6.1 x86\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=293)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=293_",
+  "date": "2012-09-07T21:19:35",
+  "state": "closed",
+  "gid": 293,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=293",
+  "owner": ""
+}

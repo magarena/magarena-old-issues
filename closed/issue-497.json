@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. play Reliquary Tower\r\n2. let opponent draw some cards, like two ancestral recalls\r\n3. at end of opponent's turn his hand stays at 8, 9, 10, 11... cards What is the expected output? What do you see instead? Reliquary Tower should remove owners maximum hand size only What version of the product are you using? On what operating system? Linux, Zorin 8, magarena 1.48 hourly build 792 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Reliquary Tower removes opponents maximum hand size as well",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 08, 2014 17:10:14",
+      "body": "This issue was closed by revision 844e3eca2a2f .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 08, 2014 00:36:54_\n\nWhat steps will reproduce the problem? 1. play Reliquary Tower\r\n2. let opponent draw some cards, like two ancestral recalls\r\n3. at end of opponent's turn his hand stays at 8, 9, 10, 11... cards What is the expected output? What do you see instead? Reliquary Tower should remove owners maximum hand size only What version of the product are you using? On what operating system? Linux, Zorin 8, magarena 1.48 hourly build 792 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=497_",
+  "date": "2014-03-08T00:36:54",
+  "state": "closed",
+  "gid": 497,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=497",
+  "owner": ""
+}

@@ -1,0 +1,29 @@
+{
+  "status": "cantreproduce",
+  "body": "Reported by jazevec:\r\n\r\nChimeric Mass - I was unable to block it. Unless I'm blind the card text doesn't mention flying or anything.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Chimeric Mass can't be blocked",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 15, 2012 00:08:41",
+      "body": "I can not reproduce this. I was able to block Chimeric Mass without any problems in the few test games I did.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 30, 2012 23:55:01",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on June 15, 2012 15:00:55_\n\nReported by jazevec:\r\n\r\nChimeric Mass - I was unable to block it. Unless I'm blind the card text doesn't mention flying or anything.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=223_",
+  "date": "2012-06-15T15:00:55",
+  "state": "closed",
+  "gid": 223,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=223",
+  "owner": ""
+}

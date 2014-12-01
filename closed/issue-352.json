@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have Gideon's Avenger and Blind Obedience in play\r\n2. Opponent casts a creature What is the expected output? What do you see instead? Expected: Gideon's Avenger does not get +1/+1 counter.\r\nActual: Gideon's Avenger does in fact get +1/+1 counter.\r\n\r\nThe effect of Blind Obedience is \"artifacts and creatures your opponent controls enter the battlefield tapped\". The ability on Gideon's Avenger is \"put +1/+1 counter whenever creature an opponent controls *becomes* tapped\" - meaning, it transitions from untapped to tapped. There's even a ruling saying \"If an opponent's creature enters the battlefield tapped, Gideon's Avenger's ability doesn't trigger.\" What version of the product are you using? On what operating system? Magarena 1.37 on Windows 7\r\n\r\n\r\nIf you are reporting a game play bug, please attach your game.log file.\r\n\r\nRelevant parts of game.log\r\n\r\nLOG (C): Pay {G}. Tap Copperline Gorge. Play Noble Hierarch.\r\nLOG (C): Put Noble Hierarch onto the battlefield.\r\nLOG (P): Put a +1/+1 counter on Gideon's Avenger.",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Gideon's Avenger gets +1/+1 for creatuer entering the battlefield tapped",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 07, 2013 18:51:51",
+      "body": "This issue was closed by revision dd53dd1a092f .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on May 19, 2013 21:49:55_\n\nWhat steps will reproduce the problem? 1. Have Gideon's Avenger and Blind Obedience in play\r\n2. Opponent casts a creature What is the expected output? What do you see instead? Expected: Gideon's Avenger does not get +1/+1 counter.\r\nActual: Gideon's Avenger does in fact get +1/+1 counter.\r\n\r\nThe effect of Blind Obedience is \"artifacts and creatures your opponent controls enter the battlefield tapped\". The ability on Gideon's Avenger is \"put +1/+1 counter whenever creature an opponent controls *becomes* tapped\" - meaning, it transitions from untapped to tapped. There's even a ruling saying \"If an opponent's creature enters the battlefield tapped, Gideon's Avenger's ability doesn't trigger.\" What version of the product are you using? On what operating system? Magarena 1.37 on Windows 7\r\n\r\n\r\nIf you are reporting a game play bug, please attach your game.log file.\r\n\r\nRelevant parts of game.log\r\n\r\nLOG (C): Pay {G}. Tap Copperline Gorge. Play Noble Hierarch.\r\nLOG (C): Put Noble Hierarch onto the battlefield.\r\nLOG (P): Put a +1/+1 counter on Gideon's Avenger.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=352_",
+  "date": "2013-05-19T21:49:55",
+  "state": "closed",
+  "gid": 352,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=352",
+  "owner": ""
+}

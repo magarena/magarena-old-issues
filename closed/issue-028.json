@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "during AI-2-AI simulation, determining the choices in the declare blockers step a minute to compute.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "computing the possible choices for declare blockers may take a long time",
+  "labels": [
+    "imported",
+    "Priority-Critical",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 03, 2011 21:19:18",
+      "body": "During AI only games, blocking computation may take up to hour in some cases. Need some way to limit the maximum amount of time used to compute possible blocking choices",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 03, 2011 21:19:39",
+      "body": "**Labels:** -Priority-Medium Priority-Critical  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 24, 2011 19:43:07",
+      "body": "Fixed by using a sampling based blocking choice generator when the number of possible choices is too large to enumerate\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on June 06, 2011 16:08:35_\n\nduring AI-2-AI simulation, determining the choices in the declare blockers step a minute to compute.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=28_",
+  "date": "2011-06-06T16:08:35",
+  "state": "closed",
+  "gid": 28,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=28",
+  "owner": "melvinzh...@gmail.com"
+}

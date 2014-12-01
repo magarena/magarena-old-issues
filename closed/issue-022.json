@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Preferences are usually fixed once and not changed, in the case of the AI it would be nice to try different AIs in each duel.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "move choosing of AI to new duel dialog instead of preferences",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "June 09, 2011 01:10:45",
+      "body": "choice of AI is not decided when starting a new duel\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 29, 2011 21:40:21_\n\nPreferences are usually fixed once and not changed, in the case of the AI it would be nice to try different AIs in each duel.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=22_",
+  "date": "2011-05-29T21:40:21",
+  "state": "closed",
+  "gid": 22,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=22",
+  "owner": "melvinzh...@gmail.com"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "cantreproduce",
+  "body": "Been trying to download new images (newly added tokens) and use the update for HQ Images.\r\n\r\nIf Magarena is checking for HQ versions of images, any downloading won't occur, even though the loading bar shows progress.\r\n\r\nIt took several attempts after the check for a successful download of new images. And the HQ replacement download doesn't seem to want to download at all. Maybe some text to show 'No HQ images found' as it's tricky to work out if it has failed to find, or just failing",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Card Image Download Problem",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 22, 2014 09:31:40",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 22, 2014 10:55:14",
+      "body": "Tried running HQ updater and playable download at the same time without any problems but I will check the code.\r\n\r\nThe HQ updater will only download HQ images if there are any available. When you first open the download dialog the text displays the number of LQ images currently residing on your hard-drive (NOT the number of HQ images found). If you run the updater it will check to see whether each LQ image has been updated to HQ (via the image URL) and the progress bar shows the progress of that (not whether the image has been updated). If a HQ image is found it is downloaded and the LQ count is decreased. I would be very suprised if the LQ count ever reaches zero.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 24, 2014 02:10:26",
+      "body": "I have decided that maybe the HQ updater is going to cause confusion and should be removed from the downloads dialog except if running in DEV mode (for convenience).\r\n\r\nOtherwise for normal usage I think it would be better if it is added as an option to run automatically as part of the Import process which for most users would be once a month when a new release is published. The way it is at the moment people might get a bit obsessive running it, say every day, just to check that they have the latest HQ images when in fact the HQ image updates are going to be very infrequent and mostly dependent on mgtimages.com.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 25, 2014 14:41:30",
+      "body": "Was unable to reproduce shawnie's problem. It's possible it is concurrency related which would explain the difficulty to reproduce but I have taken a close look at the code and I am confident I have taken all necessary precautions. Since as part of issue 664 I have now removed the low quality image updater from the downloads dialog (unless -DdevMode=true) I think this issue 663 becomes redundant, certainly for normal users and usage. Obviously, if it crops up again raise a new issue and I will escalate the priority.\n\n**Status:** CantReproduce  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on August 23, 2014 00:31:28_\n\nBeen trying to download new images (newly added tokens) and use the update for HQ Images.\r\n\r\nIf Magarena is checking for HQ versions of images, any downloading won't occur, even though the loading bar shows progress.\r\n\r\nIt took several attempts after the check for a successful download of new images. And the HQ replacement download doesn't seem to want to download at all. Maybe some text to show 'No HQ images found' as it's tricky to work out if it has failed to find, or just failing\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=663_",
+  "date": "2014-08-23T00:31:28",
+  "state": "closed",
+  "gid": 663,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=663",
+  "owner": ""
+}

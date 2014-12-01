@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. opponent cast spell targeting his creature (put on stack)\r\n2. player respond by casting vines of vastwood on opponent's creature What is the expected output? What do you see instead? opponent spells is countered as its target is no longer a valid target, however opponent's spell still resolves successfully",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Vines of vastwood on opponents creatures does not prevent them from targeting it",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "May 29, 2011 21:51:09",
+      "body": "previously Vines of Vastwood gives the hexproof ability to the creature, this is incorrect as \"opponent\" in hexproof is resolved at the point of targeting and is decided based on the controller of the creature. This works fine if Vines of Vastwood is only used to target your own creatures. The correct way is to fix \"opponent\" to be the \"opponent of controller of the spell\" at the point the ability is applied.\r\n\r\nSee http://forums.mtgsalvation.com/showthread.php?t=324750 for more discussions of using Vines of Vastwood to prevent your opponent from targeting their own creature.\r\n\r\nFixed for 1.15\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 29, 2011 19:16:20_\n\nWhat steps will reproduce the problem? 1. opponent cast spell targeting his creature (put on stack)\r\n2. player respond by casting vines of vastwood on opponent's creature What is the expected output? What do you see instead? opponent spells is countered as its target is no longer a valid target, however opponent's spell still resolves successfully\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=21_",
+  "date": "2011-05-29T19:16:20",
+  "state": "closed",
+  "gid": 21,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=21",
+  "owner": "melvinzh...@gmail.com"
+}

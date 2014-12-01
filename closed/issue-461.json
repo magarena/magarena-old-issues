@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "the icon \"exile:player\" showing the wrong content of cards. right now its showing opponent's graveyard. some accident / mistype maybe?\r\n\r\nposted by hong yie on forum - http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=141268#p141268",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "the icon \"exile:player\" showing the wrong content of cards.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 02, 2014 02:44:01",
+      "body": "The order of the icons was changed but unfortunately I missed ordering the associated tabs as well so that the functionality remains as before - \r\n\r\nplayer hand\r\nplayer graveyard\r\ncomputer graveyard\r\nplayer exile\r\ncomputer exile\r\ncomputer hand\r\n\r\nI have published a fix which assigns the correct view to the new icon order and which should be included in the next daily snapshot build.\n\n**Status:** Started  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "January 03, 2014 05:02:52",
+      "body": "Fixed in build 1.46.SNAPSHOT-643 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/643/ ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on January 01, 2014 23:55:16_\n\nthe icon \"exile:player\" showing the wrong content of cards. right now its showing opponent's graveyard. some accident / mistype maybe?\r\n\r\nposted by hong yie on forum - http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=141268#p141268\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=461_",
+  "date": "2014-01-01T23:55:16",
+  "state": "closed",
+  "gid": 461,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=461",
+  "owner": "lodici123"
+}

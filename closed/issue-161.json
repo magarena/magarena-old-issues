@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "Originally reported by eng60340 in issue 159 :\r\n\r\nAdd comments to deck ? (i.e. personal deck rating, etc)",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Make it possible to add comments to a deck",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "February 17, 2012 02:41:13",
+      "body": "That's a great suggestion.\r\n\r\nIt would also allow for people who submit decks to give players an idea on how the deck should be played.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 17, 2012 11:26:20",
+      "body": "Storing comments in the .dec file seems easy enough but we have to decide on where to show this information. An option I can think of is to put a text area in the deck statistics panel. Although a comment does not really belong there, I rather don't want to add a whole new panel.\r\n\r\nAnother thing worth looking at is a way to customize JFileChooser. It would be great to show the comments when browsing decks.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 18, 2012 09:26:10",
+      "body": "This issue was closed by revision f6013cc40fa2 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 18, 2012 09:28:54",
+      "body": "Thanks again for your suggestion.\r\n\r\nThere's now a way to save a description to a deck. It's shown on the 'Deck View' screen ( https://code.google.com/p/magarena/wiki/UIDeckView ), above the statistics.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 18, 2012 09:35:05",
+      "body": "Revision d8d5652c579c added a custom JFileChooser that shows the description when browsing decks.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on February 17, 2012 18:40:27_\n\nOriginally reported by eng60340 in issue 159 :\r\n\r\nAdd comments to deck ? (i.e. personal deck rating, etc)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=161_",
+  "date": "2012-02-17T18:40:27",
+  "state": "closed",
+  "gid": 161,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=161",
+  "owner": "BeHold...@gmail.com"
+}

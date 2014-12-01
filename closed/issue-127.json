@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "v1.21\r\n\r\ntafkad @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=78062#p78062",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "AEther Vial won't let me put creatures into play",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "December 29, 2011 05:52:05",
+      "body": "Duplicate of issue 112\n\n**Status:** Duplicate  \n  **Mergedinto:** 112  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on December 29, 2011 13:36:11_\n\nv1.21\r\n\r\ntafkad @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=78062#p78062\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=127_",
+  "date": "2011-12-29T13:36:11",
+  "state": "closed",
+  "gid": 127,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=127",
+  "owner": "melvinzh...@gmail.com"
+}

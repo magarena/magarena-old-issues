@@ -1,0 +1,45 @@
+{
+  "status": "verified",
+  "body": "Computer had a creature of its own, but chose to make one of mine the target of a Galvanic Arc enchantment.",
+  "author": "[georgeru...@gmail.com](https://code.google.com/u/115988881252246409393/)",
+  "title": "Computer enchanted one of my creatures with Galvanic Arc",
+  "labels": [
+    "imported",
+    "Component-AI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "January 24, 2012 17:47:34",
+      "body": "Thanks for the report, it would be very helpful if you could post a screenshot or describe the cards on the board when this occurs so that we can replicate the bad play. \r\n\r\nThe computer has no specific knowledge of how to play Galvanic Arc or any card for that matter, what it does is to go through all possible plays and evaluate which ones have better outcomes. Thus, we need to know the exact situation in order to replicate what you've described.\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 25, 2012 06:37:36",
+      "body": "**Labels:** Component-AI  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 11, 2014 04:21:52",
+      "body": "Updated Script - now 'enchant=first strike, pos creature'",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "January 11, 2014 04:35:44",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [georgeru...@gmail.com](https://code.google.com/u/115988881252246409393/) on January 21, 2012 12:44:09_\n\nComputer had a creature of its own, but chose to make one of mine the target of a Galvanic Arc enchantment.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=145_",
+  "date": "2012-01-21T12:44:09",
+  "state": "closed",
+  "gid": 145,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=145",
+  "owner": ""
+}

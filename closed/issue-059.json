@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "as http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3736&start=120#p70921 do it myself, patch here",
+  "author": "[arliw...@gmail.com](https://code.google.com/u/107126573161021836446/)",
+  "title": "patch: deck editor remove focus restore",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 22, 2011 09:26:24",
+      "body": "I'm not sure this feature is necessary. If you have more than one copy of a card and you remove it, it still selects the copy you have left. If you remove all copies, it doesn't select anything, because it can't predict what card you want to change next.\r\n\r\nThis feature seems to select the spot where the last removed card was, which is only useful if you happen to have 2 cards in a row that you need to remove.\r\n\r\nI'm going to enable multiple card selection instead, as that would address the problem (of removing multiple cards quickly) more directly.\n\n**Status:** Accepted  \n",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "September 22, 2011 09:26:56",
+      "body": "**Owner:** wait...@gmail.com  \n",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "September 22, 2011 09:36:13",
+      "body": "I agree, multi selection is a more proper solution and also suggested by the OP.\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 22, 2011 17:08:54",
+      "body": "multi row selection added.\n\n**Status:** Fixed  \n",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [arliw...@gmail.com](https://code.google.com/u/107126573161021836446/) on September 22, 2011 23:34:28_\n\nas http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3736&start=120#p70921 do it myself, patch here\n\n**Attachment:** [editor-remove-focus.patch](http://code.google.com/p/magarena/issues/detail?id=59)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=59_",
+  "date": "2011-09-22T23:34:28",
+  "state": "closed",
+  "gid": 59,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=59",
+  "owner": "wait...@gmail.com"
+}

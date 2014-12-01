@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "Just downloaded this, and looking for documentation on how to do basic things like attack the other player.  Adding a how-to use the interface slideshow would be useful. It would also give the player something to do while the pictures download.",
+  "author": "[Ryan.Ha...@gmail.com](https://code.google.com/u/106170273044483861393/)",
+  "title": "Document How to Use Interface",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 12, 2011 23:12:08",
+      "body": "Good to see a new user!\r\n\r\nThere is a wiki page that explains some of the settings and basic use. You can find it here: https://code.google.com/p/magarena/wiki/UserDocumentation Please let us know if that page tells you enough about the game or maybe you have some suggestions on how to improve it or its visibility.\r\n\r\nI hope you'll have fun playing Magarena.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 13, 2011 01:23:03",
+      "body": "I'll look at that page tomorrow with a fresh set of eyes (my current eyes are tired and have memorized what does what in the interface...)\r\n\r\nShould it be good (and it should be better than nothing), it'd be nice to add that to the game's help menu itself. The less a user has to search online for documentation on getting started, the better the program is.",
+      "author": "[Ryan.Ha...@gmail.com](https://code.google.com/u/106170273044483861393/)"
+    },
+    {
+      "date": "December 13, 2011 08:10:41",
+      "body": "I agree that the easier some documentation can be find the better, so Revision d65d2c2015 added a 'Online Documentation' item to the Help menu.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 24, 2011 02:35:56",
+      "body": "Closing as fixed because there is now an easy to discover way to get to the online documentation.\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Ryan.Ha...@gmail.com](https://code.google.com/u/106170273044483861393/) on December 13, 2011 14:32:46_\n\nJust downloaded this, and looking for documentation on how to do basic things like attack the other player.  Adding a how-to use the interface slideshow would be useful. It would also give the player something to do while the pictures download.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=123_",
+  "date": "2011-12-13T14:32:46",
+  "state": "closed",
+  "gid": 123,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=123",
+  "owner": ""
+}

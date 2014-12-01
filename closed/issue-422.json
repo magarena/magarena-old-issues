@@ -1,0 +1,26 @@
+{
+  "status": "duplicate",
+  "body": "Just tried out 1.43. That phase list is really useful! If I might make a suggestion, would it be possible to make it so that clicking on a phase would advance to that phase without pausing in between (unless the opponent performs an action that you can react to with an instant or ability)?\r\n\r\nOriginal request - http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3736&p=137772&sid=50ac95324f9ed76d5c1c477a2110ff22#p136455",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Phase list auto advance",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:31:59",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 9  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on November 16, 2013 06:45:05_\n\nJust tried out 1.43. That phase list is really useful! If I might make a suggestion, would it be possible to make it so that clicking on a phase would advance to that phase without pausing in between (unless the opponent performs an action that you can react to with an instant or ability)?\r\n\r\nOriginal request - http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3736&p=137772&sid=50ac95324f9ed76d5c1c477a2110ff22#p136455\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=422_",
+  "date": "2013-11-16T06:45:05",
+  "state": "closed",
+  "gid": 422,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=422",
+  "owner": ""
+}

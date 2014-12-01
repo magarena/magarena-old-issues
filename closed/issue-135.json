@@ -1,0 +1,30 @@
+{
+  "status": "invalid",
+  "body": "What steps will reproduce the problem? 1. Play Devout Lightcaster while there's a black creature in play. What is the expected output? What do you see instead? Black permanents should be offered as targets for \"exile target black permanent\" effect. Instead, \"no legal targets\" message is shown. What version of the product are you using? On what operating system? Magarena 1.21 on Windows XP",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Devout Lightcaster doesn't see a legal target",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "January 01, 2012 22:20:11",
+      "body": "Thanks for the report. I just checked the card implementation and it looks correct. I believe the situation is due to the presence of Asceticism. It prevents the Wall of Bone from being targeted by Devout Lightcaster, hence there is no legal target for the exile effect.\n\n**Status:** Invalid  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 01, 2012 22:21:27",
+      "body": "Btw, the attached screenshot was really helpful.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on January 02, 2012 01:06:23_\n\nWhat steps will reproduce the problem? 1. Play Devout Lightcaster while there's a black creature in play. What is the expected output? What do you see instead? Black permanents should be offered as targets for \"exile target black permanent\" effect. Instead, \"no legal targets\" message is shown. What version of the product are you using? On what operating system? Magarena 1.21 on Windows XP\n\n**Attachment:** [Devout-Lightcaster.PNG](http://code.google.com/p/magarena/issues/detail?id=135)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=135_",
+  "date": "2012-01-02T01:06:23",
+  "state": "closed",
+  "gid": 135,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=135",
+  "owner": ""
+}

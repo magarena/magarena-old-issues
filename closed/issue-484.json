@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Play Llanowar Sentinel\r\n2. Say no when Magarena ask if you want to pay 1G for the ability (or doesn't even ask if you don't have the required mana) What is the expected output? What do you see instead? If I say no or can't pay the cost, I shouldn't search for other card with the same name but it does. What version of the product are you using? On what operating system? Magarena 1.46 on Windows 7",
+  "author": "[sebaslla...@gmail.com](https://code.google.com/u/100416862235890594156/)",
+  "title": "Llanowar Sentinel : Automaticaly search for each other cards",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 18, 2014 17:37:02",
+      "body": "Just issued a fix - Thanks for the find!",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "February 18, 2014 17:41:22",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [sebaslla...@gmail.com](https://code.google.com/u/100416862235890594156/) on February 18, 2014 23:40:23_\n\nWhat steps will reproduce the problem? 1. Play Llanowar Sentinel\r\n2. Say no when Magarena ask if you want to pay 1G for the ability (or doesn't even ask if you don't have the required mana) What is the expected output? What do you see instead? If I say no or can't pay the cost, I shouldn't search for other card with the same name but it does. What version of the product are you using? On what operating system? Magarena 1.46 on Windows 7\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=484_",
+  "date": "2014-02-18T23:40:23",
+  "state": "closed",
+  "gid": 484,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=484",
+  "owner": ""
+}

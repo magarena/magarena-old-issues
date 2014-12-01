@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "The AI managed to play Crimson Mage (cost: 1 red 1 colorless) while having only one Mountain in play. What version of the product are you using? On what operating system? Magarena 1.23 on WinXP",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Crimson Mage is played with just one red mana",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 26, 2012 21:34:39",
+      "body": "This issue was closed by revision f8eb582547e6 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 26, 2012 21:36:06",
+      "body": "Thanks, the casting cost was wrongly set as {R} instead of {1}{R}",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 25, 2012 02:15:09",
+      "body": "Issue 193 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on February 27, 2012 08:16:05_\n\nThe AI managed to play Crimson Mage (cost: 1 red 1 colorless) while having only one Mountain in play. What version of the product are you using? On what operating system? Magarena 1.23 on WinXP\n\n**Attachment:** [crimson-mage.PNG crimson-mage-history.PNG](http://code.google.com/p/magarena/issues/detail?id=169)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=169_",
+  "date": "2012-02-27T08:16:05",
+  "state": "closed",
+  "gid": 169,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=169",
+  "owner": ""
+}

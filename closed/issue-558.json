@@ -1,0 +1,29 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. cast spell\r\n2. opponent counters by casting daze\r\n3. notification reads:\r\n\"Return an Island you control (Jwar Isle Refuge) to its owner hand. Play Daze. What is the expected output? What do you see instead? Jwar Isle Refuge is not an island. well, opponent didn't seem to care. What version of the product are you using? On what operating system? magarena 1.48.909",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Daze: alternative cost isn't restricted to islands only",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 09, 2014 08:26:24",
+      "body": "as of version 990 or 991 I wasn't able to replicate the issue. might be considered fixed then, I guess.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 10, 2014 06:46:02",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 28, 2014 05:48:50_\n\nWhat steps will reproduce the problem? 1. cast spell\r\n2. opponent counters by casting daze\r\n3. notification reads:\r\n\"Return an Island you control (Jwar Isle Refuge) to its owner hand. Play Daze. What is the expected output? What do you see instead? Jwar Isle Refuge is not an island. well, opponent didn't seem to care. What version of the product are you using? On what operating system? magarena 1.48.909\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=558_",
+  "date": "2014-03-28T05:48:50",
+  "state": "closed",
+  "gid": 558,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=558",
+  "owner": ""
+}

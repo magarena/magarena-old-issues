@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "The activated ability of a card like Nantuko Shade is only used once per phase even in situations where using it more often would result in:\r\n- winning the round\r\n- prevent losing the round\r\n- prevent Nantuko Shade from being destroyed\r\n\r\nTested with current version and a version before the refactoring of cards into separate classes.\r\n\r\nI'll push a TestNantukoShade class that demonstrates the bug.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Ai uses abilities that don't require a tap, only once per phase",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 26, 2011 00:39:55",
+      "body": "This issue was closed by revision 1c6c1379066a .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on August 15, 2011 16:40:20_\n\nThe activated ability of a card like Nantuko Shade is only used once per phase even in situations where using it more often would result in:\r\n- winning the round\r\n- prevent losing the round\r\n- prevent Nantuko Shade from being destroyed\r\n\r\nTested with current version and a version before the refactoring of cards into separate classes.\r\n\r\nI'll push a TestNantukoShade class that demonstrates the bug.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=43_",
+  "date": "2011-08-15T16:40:20",
+  "state": "closed",
+  "gid": 43,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=43",
+  "owner": "BeHold...@gmail.com"
+}

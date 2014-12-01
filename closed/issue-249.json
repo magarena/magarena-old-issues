@@ -1,0 +1,30 @@
+{
+  "status": "wontfix",
+  "body": "What steps will reproduce the problem? 1. AI had played IV earlier\r\n2. Then AI played Hero of Bladehold\r\n3. The AI attacked with HoB and 2 token soldiers appeared and attacked. They received their +1/+1 bonus from IV and their +1/+0 bonus from HoB to make them 3/2, but they tapped when attacking. What is the expected output? What do you see instead? I thought with vigilance the tokens should not have tapped to attack What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "Intangible Virtue - vigilance part not working",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "January 06, 2014 12:15:51",
+      "body": "The tokens come onto the battlefield tapped and already attacking. They don't become tapped from attacking.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "January 07, 2014 19:17:49",
+      "body": "Thanks for the clear explanation.\n\n**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on July 08, 2012 01:27:01_\n\nWhat steps will reproduce the problem? 1. AI had played IV earlier\r\n2. Then AI played Hero of Bladehold\r\n3. The AI attacked with HoB and 2 token soldiers appeared and attacked. They received their +1/+1 bonus from IV and their +1/+0 bonus from HoB to make them 3/2, but they tapped when attacking. What is the expected output? What do you see instead? I thought with vigilance the tokens should not have tapped to attack What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=249)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=249_",
+  "date": "2012-07-08T01:27:01",
+  "state": "closed",
+  "gid": 249,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=249",
+  "owner": ""
+}

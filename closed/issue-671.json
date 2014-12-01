@@ -1,0 +1,34 @@
+{
+  "status": "fixed",
+  "body": "It seems as though triggers with a condition and a may effect are not including the may option.\r\n\r\n\"At the beginning of each end step, <condition>, you may draw a card\"\r\n\r\nThe may option is defaulting to 'yes' - It could be a preferences thing (double checking) But even if so, it's not displaying the result of the choice:\r\n\r\n\"Player may Player draw a card\"\r\n\r\nI've looked at the parsing for intervening_if but can't see anything obviously wrong",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Triggers with condition and 'may' effect",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 30, 2014 16:44:55",
+      "body": "Thought it may have been the new cards I have coming, but confirmed the bug with Bloodhall Ooze - not giving option.\r\n\r\n\"Player may Player puts a +1/+1 counter on Bloodhall Ooze.\"\n\n**Cc:** melvinzh...@gmail.com  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 31, 2014 19:18:59",
+      "body": "Looking into it.\n\n**Owner:** melvinzh...@gmail.com  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 31, 2014 20:20:22",
+      "body": "This issue was closed by revision b3f5322d3d20 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on August 31, 2014 07:36:46_\n\nIt seems as though triggers with a condition and a may effect are not including the may option.\r\n\r\n\"At the beginning of each end step, <condition>, you may draw a card\"\r\n\r\nThe may option is defaulting to 'yes' - It could be a preferences thing (double checking) But even if so, it's not displaying the result of the choice:\r\n\r\n\"Player may Player draw a card\"\r\n\r\nI've looked at the parsing for intervening_if but can't see anything obviously wrong\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=671_",
+  "date": "2014-08-31T07:36:46",
+  "state": "closed",
+  "gid": 671,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=671",
+  "owner": "melvinzh...@gmail.com"
+}

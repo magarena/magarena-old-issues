@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have a creature die.\r\n2. Summon Ulvenwald Bear. What is the expected output? What do you see instead? Ulvenwald Bear's ability will trigger but the counters go directly onto the bear instead of being able to select a target. What version of the product are you using? On what operating system? Magarena 1.27. Windows 7\r\n\r\nRelevant portion of game log attached.",
+  "author": "[Vampiric...@gmail.com](https://code.google.com/u/100888787182735301774/)",
+  "title": "Ulvenwald Beard Ability - Can't Choose Target",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 08, 2012 10:52:35",
+      "body": "I confirm this also happens on Debian Linux (Wheezy).",
+      "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)"
+    },
+    {
+      "date": "July 08, 2012 20:17:22",
+      "body": "This issue was closed by revision 727d0a3b192e .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 08, 2012 20:18:16",
+      "body": "Thanks for reporting. Ulvenwald Bear was wrongly using Festerhide Boar's ability, this has been fixed.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Vampiric...@gmail.com](https://code.google.com/u/100888787182735301774/) on July 08, 2012 05:46:02_\n\nWhat steps will reproduce the problem? 1. Have a creature die.\r\n2. Summon Ulvenwald Bear. What is the expected output? What do you see instead? Ulvenwald Bear's ability will trigger but the counters go directly onto the bear instead of being able to select a target. What version of the product are you using? On what operating system? Magarena 1.27. Windows 7\r\n\r\nRelevant portion of game log attached.\n\n**Attachment:** [ulvenwald.txt](http://code.google.com/p/magarena/issues/detail?id=251)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=251_",
+  "date": "2012-07-08T05:46:02",
+  "state": "closed",
+  "gid": 251,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=251",
+  "owner": ""
+}

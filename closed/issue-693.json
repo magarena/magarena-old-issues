@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. play a game against \"Ability Mono\" What is the expected output? What do you see instead? AI should eg. play \"Bloodline Keeper\" for 2BB mana, then transform if the criteria is met. Instead it plays the second side of the card (\"Lord of Lineage\") directly for 0 mana. What version of the product are you using? On what operating system? Magarena 1.53 on Windows Vista",
+  "author": "[mechsika...@gmail.com](https://code.google.com/u/109554645654543468034/)",
+  "title": "AI plays second side of double-faced cards without transforming and for 0 mana",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "September 20, 2014 16:22:27",
+      "body": "Randomly generated decks should no longer include the 'wrong' side of a card.\r\n\r\n(The AI isn't really 'cheating', it's just got a one-sided card with the transformed card info on it, so able to cast for nothing as it has no casting cost - which is also wrong, non-land cards with no casting cost can't be cast at all [see Evermind], but the game engine doesn't allow that either.) Issue 672 - Included the latest build 1.54 pending release.\n\n**Status:** Duplicate  \n  **Mergedinto:** 672  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [mechsika...@gmail.com](https://code.google.com/u/109554645654543468034/) on September 15, 2014 20:38:51_\n\nWhat steps will reproduce the problem? 1. play a game against \"Ability Mono\" What is the expected output? What do you see instead? AI should eg. play \"Bloodline Keeper\" for 2BB mana, then transform if the criteria is met. Instead it plays the second side of the card (\"Lord of Lineage\") directly for 0 mana. What version of the product are you using? On what operating system? Magarena 1.53 on Windows Vista\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=693_",
+  "date": "2014-09-15T20:38:51",
+  "state": "closed",
+  "gid": 693,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=693",
+  "owner": ""
+}

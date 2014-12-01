@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Cast Annex LAnd onto target land\r\n2. hit \"back\" twice\r\n3. Annex Land is back in your hand, the land is back on opponent's side but an Annex Land card is still attached What is the expected output? What do you see instead? What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). magarena 1.48.827 Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Annex Land: casting + hitting the back button twice won't remove the enchantment ",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 16, 2014 03:22:32",
+      "body": "Conquer {3RR} does the same. \r\n\r\nCast Conquer on opponent's land\r\nHit back twice\r\nThe land is returned but a Conquer card is still attached.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 16, 2014 06:10:45",
+      "body": "Strangely enough, Yavimaya Enchantress does not count these fake cards. Seems to me, that only the image stays attached to opponents land, not an untriggered copy of the card itself.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 16, 2014 22:34:34",
+      "body": "**Status:** Started  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 16, 2014 22:55:37",
+      "body": "This issue was closed by revision ed268166317f .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 13, 2014 23:37:35_\n\nWhat steps will reproduce the problem? 1. Cast Annex LAnd onto target land\r\n2. hit \"back\" twice\r\n3. Annex Land is back in your hand, the land is back on opponent's side but an Annex Land card is still attached What is the expected output? What do you see instead? What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). magarena 1.48.827 Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=516_",
+  "date": "2014-03-13T23:37:35",
+  "state": "closed",
+  "gid": 516,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=516",
+  "owner": ""
+}

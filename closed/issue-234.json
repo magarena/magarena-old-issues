@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "See the attached picture. The overlay says \"2G\", and that's how much I have to pay. But the card image only has \"1G\" ! I checked on various M:tG sites to be sure, and they confirm the bug. As far as I know, M:tG cards are never patched(which is typical for board games), they can be banned at most.",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "Jade Mage has wrong mana cost",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 21, 2012 05:29:07",
+      "body": "Our bad, there is a typo in the card script. Should be {1}{G} and not {2}{G}, thanks for spotting this.\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 21, 2012 05:29:30",
+      "body": "This issue was closed by revision 90f988af8679 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on June 21, 2012 20:10:19_\n\nSee the attached picture. The overlay says \"2G\", and that's how much I have to pay. But the card image only has \"1G\" ! I checked on various M:tG sites to be sure, and they confirm the bug. As far as I know, M:tG cards are never patched(which is typical for board games), they can be banned at most.\n\n**Attachment:** [inconsistent.jpg](http://code.google.com/p/magarena/issues/detail?id=234)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=234_",
+  "date": "2012-06-21T20:10:19",
+  "state": "closed",
+  "gid": 234,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=234",
+  "owner": ""
+}

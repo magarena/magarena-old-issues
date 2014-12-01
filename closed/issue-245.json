@@ -1,0 +1,24 @@
+{
+  "status": "cantreproduce",
+  "body": "I didn't realize this bug tracker was here before and I didn't write stuff down. So, I don't recall the name of the card but it was a red or green creature (small like a 1/1 or 1/2) and it had some ability like \"when creature deals combat damage do X\" where X was something like gain 1 life or draw 1 card or something. \r\nThe game performed fine and when the AI attacked with that creature, it did X. \r\nHowever, it was the timing that was off as it did the X part before damage was actually dealt - right after attackers declared. \r\nSo I still had a chance to Holy Day or Swords to Plowshares it and it would not have done combat damage. \r\nI didn't and it didn't affect my game, but I wanted to bring this up in case it was an issue for others. \r\nPerhaps the game saw my cards and knew I couldn't prevent the dame so it went ahead and did X anyway? But even if that was true, if it was \"draw 1 card\" that would be a timing advantage potentially. What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "Attack Damage Timing",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 09, 2012 05:30:47",
+      "body": "There is an option in the preferences named \"Skip single option choices when appropriate\". It is enabled by default. When it is enabled, the game automatically passed priority for you if passing is the only option. I'm guessing that this is what happened: after you manually passed the declare attackers step, the only option is to pass which the game did for you.\r\n\r\nIf you prefer to play by manually passing priority, just disable that option. \r\n\r\nI'll close this issue. If you noticed any strange timing bugs, do create a new issue.\n\n**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on July 04, 2012 11:56:50_\n\nI didn't realize this bug tracker was here before and I didn't write stuff down. So, I don't recall the name of the card but it was a red or green creature (small like a 1/1 or 1/2) and it had some ability like \"when creature deals combat damage do X\" where X was something like gain 1 life or draw 1 card or something. \r\nThe game performed fine and when the AI attacked with that creature, it did X. \r\nHowever, it was the timing that was off as it did the X part before damage was actually dealt - right after attackers declared. \r\nSo I still had a chance to Holy Day or Swords to Plowshares it and it would not have done combat damage. \r\nI didn't and it didn't affect my game, but I wanted to bring this up in case it was an issue for others. \r\nPerhaps the game saw my cards and knew I couldn't prevent the dame so it went ahead and did X anyway? But even if that was true, if it was \"draw 1 card\" that would be a timing advantage potentially. What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=245_",
+  "date": "2012-07-04T11:56:50",
+  "state": "closed",
+  "gid": 245,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=245",
+  "owner": ""
+}

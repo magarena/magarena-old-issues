@@ -1,0 +1,26 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. Unzip new install on Ubuntu Linux\r\n\"Linux trogdor 3.2.0-58-generic #88-Ubuntu SMP Tue Dec 3 17:40:43 UTC 2013 i686 i686 i386 GNU/Linux\"\r\n2. Launch game, start a duel\r\n3. Mulligan screen choice of \"Close\" or \"Keep Hand\" often results in nothing happening with splash screen sitting.  No notable cpu or memory consumption increase.  Just hangs and nothing logs. What is the expected output? What do you see instead? I would expect the duel to commence.  The work around is to turn off the Mulligan Screen in the Experimental tab as it was turned on by default. What version of the product are you using? On what operating system? 1.46\r\n\r\nuname -a returns\r\n\"Linux trogdor 3.2.0-58-generic #88-Ubuntu SMP Tue Dec 3 17:40:43 UTC 2013 i686 i686 i386 GNU/Linux\" If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). No crash log produced.  I force the hung game to quit with Ctrl+C Please provide any additional information below.",
+  "author": "[Cody.Hol...@gmail.com](https://code.google.com/u/114645274846501324365/)",
+  "title": "Mulligan Screen choices lead to hung game (Ubuntu Linux) - Magarena v1.46",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "February 05, 2014 11:37:22",
+      "body": "It has not actually hung - it is a repaint/refresh issue. For more info and a workaround with build 146, please see http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=144981#p144760 . See also issue 472 .\n\n**Status:** Duplicate  \n  **Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [Cody.Hol...@gmail.com](https://code.google.com/u/114645274846501324365/) on February 06, 2014 03:01:59_\n\nWhat steps will reproduce the problem? 1. Unzip new install on Ubuntu Linux\r\n\"Linux trogdor 3.2.0-58-generic #88-Ubuntu SMP Tue Dec 3 17:40:43 UTC 2013 i686 i686 i386 GNU/Linux\"\r\n2. Launch game, start a duel\r\n3. Mulligan screen choice of \"Close\" or \"Keep Hand\" often results in nothing happening with splash screen sitting.  No notable cpu or memory consumption increase.  Just hangs and nothing logs. What is the expected output? What do you see instead? I would expect the duel to commence.  The work around is to turn off the Mulligan Screen in the Experimental tab as it was turned on by default. What version of the product are you using? On what operating system? 1.46\r\n\r\nuname -a returns\r\n\"Linux trogdor 3.2.0-58-generic #88-Ubuntu SMP Tue Dec 3 17:40:43 UTC 2013 i686 i686 i386 GNU/Linux\" If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). No crash log produced.  I force the hung game to quit with Ctrl+C Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=476_",
+  "date": "2014-02-06T03:01:59",
+  "state": "closed",
+  "gid": 476,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=476",
+  "owner": ""
+}

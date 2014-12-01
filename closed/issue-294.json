@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. Dual --> new deck\r\n2. Click on edit deck\r\n3. Type \"mox\" in search\r\n4. hover over any of the card results What is the expected output? What do you see instead? Expected to see card preview, but the game crashes. What version of the product are you using? On what operating system? Version 1.29 Please provide any additional information below. CRASH REPORT FOR MAGARENA THREAD Thread[AWT-EventQueue-0,6,main]\r\nCREATED ON 2012/09/07 23:49:30\r\nMAGARENA VERSION 1.29, JRE 1.6.0_33, OS Mac OS X_10.7.4 x86_64\r\n\r\nException from controller.runGame: null\r\njava.lang.NullPointerException\r\n\tat magic.GraphicsUtilities.scale(GraphicsUtilities.java:58)\r\n\tat magic.data.HighQualityCardImagesProvider.getImage(HighQualityCardImagesProvider.java:59)\r\n\tat magic.ui.viewer.CardViewer.setCard(CardViewer.java:72)\r\n\tat magic.ui.CardTable$RowMouseOverListener.mouseMoved(CardTable.java:198)",
+  "author": "[Kevin.Ro...@gmail.com](https://code.google.com/u/110836722264835547840/)",
+  "title": "Game crash in deck edit mode",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "September 09, 2012 21:01:03",
+      "body": "Thanks for reporting. This is due to an error in the URL for the images. This has been fixed. See issue 283 for a workaround for 1.29. https://code.google.com/p/magarena/issues/detail?id=283\n\n**Status:** Duplicate  \n  **Mergedinto:** 283  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Kevin.Ro...@gmail.com](https://code.google.com/u/110836722264835547840/) on September 08, 2012 12:54:19_\n\nWhat steps will reproduce the problem? 1. Dual --> new deck\r\n2. Click on edit deck\r\n3. Type \"mox\" in search\r\n4. hover over any of the card results What is the expected output? What do you see instead? Expected to see card preview, but the game crashes. What version of the product are you using? On what operating system? Version 1.29 Please provide any additional information below. CRASH REPORT FOR MAGARENA THREAD Thread[AWT-EventQueue-0,6,main]\r\nCREATED ON 2012/09/07 23:49:30\r\nMAGARENA VERSION 1.29, JRE 1.6.0_33, OS Mac OS X_10.7.4 x86_64\r\n\r\nException from controller.runGame: null\r\njava.lang.NullPointerException\r\n\tat magic.GraphicsUtilities.scale(GraphicsUtilities.java:58)\r\n\tat magic.data.HighQualityCardImagesProvider.getImage(HighQualityCardImagesProvider.java:59)\r\n\tat magic.ui.viewer.CardViewer.setCard(CardViewer.java:72)\r\n\tat magic.ui.CardTable$RowMouseOverListener.mouseMoved(CardTable.java:198)\n\n**Attachment:** [crash.log](http://code.google.com/p/magarena/issues/detail?id=294)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=294_",
+  "date": "2012-09-08T12:54:19",
+  "state": "closed",
+  "gid": 294,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=294",
+  "owner": ""
+}

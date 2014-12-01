@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "Playing the Finkel deck, never given the option to use Legacy's Allure - sac it to control target creature.",
+  "author": "[georgeru...@gmail.com](https://code.google.com/u/115988881252246409393/)",
+  "title": "No option to sacrifice Legacy's Allure",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "January 21, 2012 06:31:41",
+      "body": "Thank you for the report.\r\n\r\nThe cause of this is the same as an existing issue ( issue 112 ). I'll change the name of that issue so that it's clear it does affect Legacy's Allure as well.\r\nClosing as duplicate.\n\n**Status:** Duplicate  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [georgeru...@gmail.com](https://code.google.com/u/115988881252246409393/) on January 21, 2012 12:45:19_\n\nPlaying the Finkel deck, never given the option to use Legacy's Allure - sac it to control target creature.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=146_",
+  "date": "2012-01-21T12:45:19",
+  "state": "closed",
+  "gid": 146,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=146",
+  "owner": ""
+}

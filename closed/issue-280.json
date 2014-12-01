@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "comment by BeHolder1 on revision revision r31e184eecd0f391d89922a32731ca6f3eeb83943 :\r\n\r\nReplicate ability (AI doesn't pay the cost):\r\nGigadrowse, Leap of Flame, Pyromatics, Shattering Spree, Thunderheads, Train of Thought, Vacuumelt.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "AI does not pay replicate cost",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 29, 2012 20:37:31",
+      "body": "fixed in revision 940feca81ac5",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 29, 2012 20:37:39",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on August 19, 2012 13:59:20_\n\ncomment by BeHolder1 on revision revision r31e184eecd0f391d89922a32731ca6f3eeb83943 :\r\n\r\nReplicate ability (AI doesn't pay the cost):\r\nGigadrowse, Leap of Flame, Pyromatics, Shattering Spree, Thunderheads, Train of Thought, Vacuumelt.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=280_",
+  "date": "2012-08-19T13:59:20",
+  "state": "closed",
+  "gid": 280,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=280",
+  "owner": "melvinzh...@gmail.com"
+}

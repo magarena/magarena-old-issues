@@ -1,0 +1,139 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Normal playing and reaching the end of a turn 2. 3. What is the expected output? What do you see instead? - When clicking on Next arrow, after End of Turn, the game starts loading the next turn but never succeeds\r\n- When the computer finished his turn, no Next arrow appears, so it is impossible to go on What version of the product are you using? On what operating system? Magarena 1.18 on Linux Ubuntu 10.04. The problem did not occur with Magarena 1.17b on the same system. Please provide any additional information below. No useful terminal messages are displayed.",
+  "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)",
+  "title": "Game gets stuck: neverending EndOfTurn, or no Next button",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "October 07, 2011 22:40:03",
+      "body": "Thanks for the report.\r\nThis looks like a serious bug but I can not reproduce it. Do you get this bug every game you play or was it a one time thing?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 08, 2011 02:55:04",
+      "body": "Sadly yes, it happens every game. Usually within the first 1-3 turns. I cannot replicate it to understand if it depends on the cards played, or actions performed, or other causes.",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "October 08, 2011 04:39:54",
+      "body": "I'm sorry to hear the game is basically unplayable for you now.\r\nWhat could be a big help is if you start Magarena with the \"-Ddebug=true\" parameter. That will make it output most steps the game takes and hopefully gives some insight into this bug.\r\n\r\nOh, and what version of java do you use?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 08, 2011 04:53:17",
+      "body": "In the meanwhile I play with v1.17b, which is ok - except some audio problems most probably related to my pc.\r\n\r\nI have JRE v.6 if that's what you're asking.\r\n\r\nI will try the debug mode, and let you know asap.\r\n\r\nThanks",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "October 08, 2011 05:22:35",
+      "body": "hmm, I don't understand the Debug mode. Should I run this command in the terminal:\r\n\r\n./Magarena.sh -Debug=true\r\n\r\n?\r\nThe output doesn't provide informations, the last lines are:\r\n\r\nCube all : 1258 cards\r\nCube legacy : 1257 cards\r\nCube ubeefx : 617 cards\r\nCube standard : 471 cards\r\nCube modern : 1146 cards\r\nCube extended : 777 cards\r\nSaved tournament config\r\nFound 0 user images.\r\nStarting game...\r\n\r\nNote that when the game gets stuck (no arrow shown) it is also impossible to Reset game, Concede game, etc. I have to close and restart.",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "October 08, 2011 05:59:21",
+      "body": "Seems like the debug output works. When you start playing it will log the steps taken after the line \"Starting game...\". I assume you can switch to the console when the game gets stuck. If not, you can redirect the output to a file. I use windows so the following might differ a bit:\r\n\r\njava -jar -Ddebug=true Magarena.jar 2> log.txt",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 08, 2011 06:43:30",
+      "body": "No, I was not clear. This is *all* the output I get. Nothing gets printed after \"Starting game...\". The terminal is indipendent from the game, so I can switch from one to the other, but no other messages are printed.\r\n\r\nYour command doesn't sound helpful to me, because on Linux I don't run that line. I just launch the game running the Magarena.sh script. Maybe there is another way to launch the program? I don't have any Magarena.jar file anyway in the zip I downloaded :-|",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "October 08, 2011 07:20:49",
+      "body": "Ahh, I see.\r\nI'll ping Melvin, who is a another dev that does use some form of unix. He will probably know how to get the debug output.\r\n\r\nThanks for the effort.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 08, 2011 07:51:24",
+      "body": "replace Magarena.jar with Magarena.exe i.e. start the game with the following command:\r\n  java -jar -Ddebug=true Magarena.exe 2> log.txt\r\n\r\nYou can then terminate the program with Ctrl-C when it \"hangs\" and attach the log.txt to a comment on this issue. Thanks!",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "October 08, 2011 08:15:11",
+      "body": "Ok, got it. I attach 3 logs.\r\n1) log-stuck.txt is the log of a game in which the game got stuck tryin to load the next move (the gif keeps on spinning)\r\n2) log-noarrow 1 and 2 are logs of games stuck because of the next-move arrow did not appear. \r\nIn the last games, I noticed that it is impossible to concede or reset game, but it is possible to start a new game.\r\nAlso, the problem rises during the computer's turn, not player's.\r\nAll the 3 games were termined by typing ctrl-c in the terminal.\r\n\r\nI hope my reports can help, thanks for taking care about this program, it is really nice!\n\n**Attachment:** [log-stuck.txt log-noarrow.txt log-noarrow2.txt](http://code.google.com/p/magarena/issues/detail?id=71#hc11)",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "October 08, 2011 22:48:23",
+      "body": "Looks like this is going to be difficult to track down... I can't reproduce the bug either. Can you try the current daily build at http://magarena.googlecode.com/files/Magarena_2623.exe (just download and override your current Magarena.exe) and see if the bug is still there?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "October 09, 2011 01:42:54",
+      "body": "Can't because I'm running Linux and I need the .sh file (Magarena.sh), can you provide that?",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "October 09, 2011 02:19:26",
+      "body": "No need to because it is the same one, the Magarena.sh file is a simple script that calls the Java runtime to start Magarena.exe, which is also a legal jar file. So you only have to replace your current Magarena.exe with the daily build (must be renamed to Magarena.exe).",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "October 09, 2011 02:37:40",
+      "body": "Alas, yes.\r\nI replaced the file as you said, but the problem persists.",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "October 28, 2011 06:38:30",
+      "body": "A new version of Magarena has been released, maybe that will solve this issue.\r\n\r\nIt's a shame we cannot find the cause of this problem as it seems it only affects your system and nobody else can reproduce it. So it's not that we don't care, just that these type of isolated problems are really difficult to solve.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 28, 2011 06:42:20",
+      "body": "Don't worry, I totally get it, you do the best already. I will try the new version, or I'll stick to the 1.17b which still works fine. Maybe the problem was in some specific card, who knows, it's pretty hard to track down.\r\nThanks for all the effort you put into this program!",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "October 31, 2011 01:41:19",
+      "body": "Just to check, I downloaded 1.19, and the same problem occurs.\r\nIt works fine on Wine, though.\r\nSo I assume it's something about the java package of my system, which is different from the one used by Wine.\r\n\r\nJust to sum up my machine:\r\nLinux Ubuntu 10.04 32bit\r\nJava package: Sun-java6-jre version: 6.26lucid1-1\r\n\r\nI don't know where else to look.\r\nDon't lose sleep on it, though, and thanks for all. I'll keep playing launching the exe on wine from now on. Cheers!",
+      "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)"
+    },
+    {
+      "date": "October 31, 2011 02:18:53",
+      "body": "I'm glad that you at least found a way to play the latest versions again.\r\n\r\nHave fun!",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 31, 2011 05:08:42",
+      "body": "I can't imagine why the issue would go away when you use wine... perhaps you could try with openjdk.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 04, 2011 01:54:04",
+      "body": "Miraculously solved by something outside of our understanding in 1.20. See comments by efrancese on issue 94 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "June 14, 2012 12:43:42",
+      "body": "I think this issue was not fixed, or at least it just returned.\r\nI'm running Magarena-1.26 and I run into this exact same issue.\r\nI can't get past the 2nd turn.",
+      "author": "[greaz...@gmail.com](https://code.google.com/u/100137911424310652373/)"
+    },
+    {
+      "date": "June 14, 2012 20:42:29",
+      "body": "It seems this is not the same issue. I've disabled the sounds and it runs fine now.",
+      "author": "[greaz...@gmail.com](https://code.google.com/u/100137911424310652373/)"
+    },
+    {
+      "date": "June 14, 2012 22:54:11",
+      "body": "Hi greazalv,\r\n\r\nYour issue may not be the same but looks like a possible bug none the less.\r\nIf running Magarena with sounds enabled always leads to the issue you reported then please open a new issue. Thanks.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [efranc...@gmail.com](https://code.google.com/u/103507307054111542324/) on October 07, 2011 20:04:00_\n\nWhat steps will reproduce the problem? 1. Normal playing and reaching the end of a turn 2. 3. What is the expected output? What do you see instead? - When clicking on Next arrow, after End of Turn, the game starts loading the next turn but never succeeds\r\n- When the computer finished his turn, no Next arrow appears, so it is impossible to go on What version of the product are you using? On what operating system? Magarena 1.18 on Linux Ubuntu 10.04. The problem did not occur with Magarena 1.17b on the same system. Please provide any additional information below. No useful terminal messages are displayed.\n\n**Attachment:** [Schermata.png](http://code.google.com/p/magarena/issues/detail?id=71)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=71_",
+  "date": "2011-10-07T20:04:00",
+  "state": "closed",
+  "gid": 71,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=71",
+  "owner": ""
+}

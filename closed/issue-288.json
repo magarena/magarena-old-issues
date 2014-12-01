@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1.  Have spells on the field that affect or are affected by tokens in some way (Intangible Virtue, Twilight Drover)\r\n2.  Have Chronozoa on the battlefield for 3 turns.  It's ability will trigger when the last time counter is removed, causing it to sacrifice itself and put two tokens that are copies of it in its place on the battlefield.\r\n3. OPTIONAL: Have at least one of these copies die by any means (if testing with Twilight Drover) What is the expected output? What do you see instead? Chronozoa's ability specifically states to put two tokens that are copies of it on the battlefield.  The game does not see these copies as tokens, and as such do not gain the benefit of global enchantments such as Intangible Virtue (+1/+1 and vigilance to tokens), nor do they trigger abilities such as Twilight Drover's (who gets a +1/+1 counter on it whenever a token leaves the battlefield).\r\n\r\nExtra Note:  I'm not sure, but I think the issue may also exist with the Followed Footsteps enchantment. What version of the product are you using? On what operating system? Magarena 1.29 on Windows XP If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[True.Str...@gmail.com](https://code.google.com/u/113611120031645723895/)",
+  "title": "Chronozoa Tokens aren't tokens (they should be)",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 01, 2012 06:46:45",
+      "body": "Thanks for reporting this. There was a bug in the way Intangible Virtue and Twilight Drover was checking whether a permanent is a token. This has been fixed.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [True.Str...@gmail.com](https://code.google.com/u/113611120031645723895/) on September 01, 2012 09:12:56_\n\nWhat steps will reproduce the problem? 1.  Have spells on the field that affect or are affected by tokens in some way (Intangible Virtue, Twilight Drover)\r\n2.  Have Chronozoa on the battlefield for 3 turns.  It's ability will trigger when the last time counter is removed, causing it to sacrifice itself and put two tokens that are copies of it in its place on the battlefield.\r\n3. OPTIONAL: Have at least one of these copies die by any means (if testing with Twilight Drover) What is the expected output? What do you see instead? Chronozoa's ability specifically states to put two tokens that are copies of it on the battlefield.  The game does not see these copies as tokens, and as such do not gain the benefit of global enchantments such as Intangible Virtue (+1/+1 and vigilance to tokens), nor do they trigger abilities such as Twilight Drover's (who gets a +1/+1 counter on it whenever a token leaves the battlefield).\r\n\r\nExtra Note:  I'm not sure, but I think the issue may also exist with the Followed Footsteps enchantment. What version of the product are you using? On what operating system? Magarena 1.29 on Windows XP If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=288)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=288_",
+  "date": "2012-09-01T09:12:56",
+  "state": "closed",
+  "gid": 288,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=288",
+  "owner": ""
+}

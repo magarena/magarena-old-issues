@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Attack with both Fumiko the Lowblood and Hero of Bladehold\r\n2. Hero of Bladehold generates two attacking soldiers\r\n3. Have Fumiko the Lowblood blocked by a defending creature What is the expected output? What do you see instead? Fumiko the Lowblood should get +1/+1 for each attacking creature, including the two  soldiers created on step 2. Instead, it gets two fewer then expected. It seems that the two new soldiers don't count.\r\n\r\nHowever, these same two soldiers certainly count as \"attacking creatures\" for the purpose of Hero of Bladehold's effect (\"each other attacking creature gets +1/+0\") What version of the product are you using? On what operating system? Mararena 1.23 on WinXP",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Fumiko the Lowblood doesn't get bushido credit from Hero of Bladehold's new soldiers",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 28, 2012 05:27:53",
+      "body": "Thanks for the report, this is easily reproducible.\r\n\r\nThe problem comes from MagicPlayer.getNrOfAttackers returning an int that's set in MagicDeclareAttackersAction but doesn't take into account that MagicPermanentState.Attacking can be set through other means. I suggest we don't store the number of attackers but count them when needed, e.g.\r\n\r\npublic int getNrOfAttackers() {\r\n  int count=0;\r\n  for (final MagicPermanent permanent : permanents) {\r\n    if (permanent.hasState(MagicPermanentState.Attacking)) {\r\n      count++;\r\n    }\r\n  }\r\n  return count;\r\n}\n\n**Status:** Accepted  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "March 28, 2012 05:36:04",
+      "body": "Agree, we can get rid of setNrOfAttackers and compute number of attackers as needed.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 28, 2012 05:58:31",
+      "body": "revision a513bb210a9f computes number of attackers and blockers dynamically. Left testing.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 30, 2012 01:34:06",
+      "body": "Tested with the scenario from this report and on exalted ability (because of this rule: Some effects put creatures onto the battlefield attacking. Since those creatures were never declared as attackers, they're ignored by exalted abilities.)\r\nWorked fine in both cases.\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on March 27, 2012 21:27:27_\n\nWhat steps will reproduce the problem? 1. Attack with both Fumiko the Lowblood and Hero of Bladehold\r\n2. Hero of Bladehold generates two attacking soldiers\r\n3. Have Fumiko the Lowblood blocked by a defending creature What is the expected output? What do you see instead? Fumiko the Lowblood should get +1/+1 for each attacking creature, including the two  soldiers created on step 2. Instead, it gets two fewer then expected. It seems that the two new soldiers don't count.\r\n\r\nHowever, these same two soldiers certainly count as \"attacking creatures\" for the purpose of Hero of Bladehold's effect (\"each other attacking creature gets +1/+0\") What version of the product are you using? On what operating system? Mararena 1.23 on WinXP\n\n**Attachment:** [fumiko-lowblood.PNG](http://code.google.com/p/magarena/issues/detail?id=196)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=196_",
+  "date": "2012-03-27T21:27:27",
+  "state": "closed",
+  "gid": 196,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=196",
+  "owner": ""
+}

@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "please consider image download fallow are:\r\ndownload the image as an temp name, for example: temp.jpg\r\nand change back the name when completed.\r\n\r\nbecause for now, bad image if i click the cancel button or redial the ADSL.",
+  "author": "[arliw...@gmail.com](https://code.google.com/u/107126573161021836446/)",
+  "title": "about image download - download to temp file first.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "June 19, 2014 18:15:47",
+      "body": "First time installing, crashes every single time I attempt to download images.",
+      "author": "[eric.eva...@gmail.com](https://code.google.com/u/109405776955275119864/)"
+    },
+    {
+      "date": "June 19, 2014 18:22:19",
+      "body": "Hi - Sorry to hear you're having problems. Do you have a crash log? - It should be in the logs folder.\r\n\r\nThe operating system you are using would also be really helpful.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 20, 2014 23:27:35",
+      "body": "Extend the mechanism used by the high quality image updater to all image downloading in which the image is downloaded first to a temporary file (the image filename prefixed with a \"~\") and then renamed to the actual name (by removing prefix).\n\n**Summary:** about image download - download to temp file first.  <span class=\"oldvalue\"> (was: about image download) </span>  \n  **Status:** Accepted  \n  **Owner:** lodici123  \n  **Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 28, 2014 09:31:18",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/67784634d584e4037727c230b2b621d8df75e654 .\r\n\r\nAll images are first downloaded to their image filename with a \"~\" prefix. Once the download is complete the temp file is renamed by removing the prefix. So now, if during image download the internet connection goes down, it will not affect the actual card image.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [arliw...@gmail.com](https://code.google.com/u/107126573161021836446/) on February 18, 2014 16:31:29_\n\nplease consider image download fallow are:\r\ndownload the image as an temp name, for example: temp.jpg\r\nand change back the name when completed.\r\n\r\nbecause for now, bad image if i click the cancel button or redial the ADSL.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=483_",
+  "date": "2014-02-18T16:31:29",
+  "state": "closed",
+  "gid": 483,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=483",
+  "owner": "lodici123"
+}

@@ -1,0 +1,74 @@
+{
+  "status": "verified",
+  "body": "AI with two creatures an equipment and lot of mana tends to keep on moving the equipment between the creatures it controls",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "AI tends to move equipment back and forth",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 22, 2011 06:04:43",
+      "body": "This is not confined to the MCTS AI. MiniMax does it too.\r\nIt might be something about the TargetPicker because some equipment never seems to have this problem. Strider Harness is an example of an equipment that does show this bug.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 22, 2011 06:08:57",
+      "body": "Wait, my bad, it's auras that use targetPickers.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 22, 2011 08:49:29",
+      "body": "equipment uses the MagicEquipTargetPicker. Do you have a specific scenario where this is behavior repeatable?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 22, 2011 21:30:29",
+      "body": "Issue 56 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 22, 2011 23:02:27",
+      "body": "See revision e7ce1e971af1 for a test case that demonstrates the problem.\r\n\r\nA different issue is that MCTS won't even use the equipment. Comments are in the class.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 23, 2011 04:27:16",
+      "body": "Thanks, the test case will be extremely useful in helping to test different ideas.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 26, 2011 23:28:54",
+      "body": "The minimax AI just found a new way to avoid losing, keep moving Lightning Greaves back and forth so the player never gets a chance to kill it. It figured that once it passes, the player will kill it next turn, so it just kept moving the equipment back and forth forever.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 27, 2011 00:09:13",
+      "body": "I think you give the AI too much credit here. If you change the equip cost of Strider Harness to zero it will do the same thing, i.e. moving it back and forth forever. When one of the creatures gets a higher score it won't do that though but instead it firsts equips the lower score creature then the higher score one and then passes. Sort of makes sense apart from the order of course.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 27, 2011 00:12:10",
+      "body": "I mean, it makes sense that it passes, but it's strange that it doesn't pick the higher score creature immediately.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 02, 2011 00:10:11",
+      "body": "With the latest revision, the AI can only switch equipment from one creature to another twice in a turn. I think this is a satisfactory solution to the issue of unnecessary equips. Removing the problem entirely would require adding more tweaks to the AI's score function and MagicEquipTargetPicker.getTargetScore function both of which are already fairly complex.\n\n**Summary:** AI tends to move equipment back and forth  \n  **Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on June 05, 2011 12:05:17_\n\nAI with two creatures an equipment and lot of mana tends to keep on moving the equipment between the creatures it controls\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=26_",
+  "date": "2011-06-05T12:05:17",
+  "state": "closed",
+  "gid": 26,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=26",
+  "owner": "melvinzh...@gmail.com"
+}

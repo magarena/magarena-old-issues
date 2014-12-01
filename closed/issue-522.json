@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. cast Riku of Two Reflections\r\n2. cast Experiment One\r\n3. cast, say Scavenging Ouce, copy it What is the expected output? What do you see instead? http://wiki.mtgsalvation.com/article/Evolve Experiment One is an 1/1 creature, Scavenging Ooze is a 2/2 creature. When Scavenging Ooze enters battlefield and Experiment One still is an 1/1 creature, evolve should trigger, making Experiment One a 2/2 creature. If then another Scavenging Ooze enters Battlefield, evolve should not trigger again.\r\n\r\nNow, using Riku of Two Reflections, 2 Scavenging Oozes enter the battlefield \tsimultaneously, so evolve triggers twice, both instances are put on the stack.\r\nThis way Experiment One does get 2 +1/+1 counters, however one of them illegally.\r\n\r\nWhat is missing is a second check as evolve resolves - like: trigger evolve, if new creature has more power or toughness than evolving creature. Award the +1/+1 counter if new creature has more power or toughness than the evolving one. What version of the product are you using? On what operating system? magarena 1.48.831 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "general problem with evoling",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 15, 2014 05:09:20",
+      "body": "one more thought:\r\n\r\nevolve triggers when the new creature with higher power and/or toughness enters battlefield, there's no way to cast a strengthening instant spell to make it trigger, when it otherwise would not. But, as evolve resolves, especially on multiple instances, you should be able to cast a giant growth or two.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 15, 2014 11:26:01",
+      "body": "Great find - Added a new check during resolution for evolve. And yes, you can now pump a creature that triggers evolve to allow evolve to see the new p/t change (If you can find the right creature that triggers the evolve when multiple come into play).\n\n**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 15, 2014 12:11:13",
+      "body": "Rite of Replication, kicked... and twincasted maybe? All you need is a creature, anywhere on the battlefield, which is stronger than the evolving creature. And if the evolving creature grows to strong in the process (for evolve to resolve positively, that is), you always could cast a Hydrosurge on the evolving creature...",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 15, 2014 12:14:55",
+      "body": "but then again, you could always cast a Hydrosurge on evolving creatures to make evolve trigger on later occasions...",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 15, 2014 20:03:31_\n\nWhat steps will reproduce the problem? 1. cast Riku of Two Reflections\r\n2. cast Experiment One\r\n3. cast, say Scavenging Ouce, copy it What is the expected output? What do you see instead? http://wiki.mtgsalvation.com/article/Evolve Experiment One is an 1/1 creature, Scavenging Ooze is a 2/2 creature. When Scavenging Ooze enters battlefield and Experiment One still is an 1/1 creature, evolve should trigger, making Experiment One a 2/2 creature. If then another Scavenging Ooze enters Battlefield, evolve should not trigger again.\r\n\r\nNow, using Riku of Two Reflections, 2 Scavenging Oozes enter the battlefield \tsimultaneously, so evolve triggers twice, both instances are put on the stack.\r\nThis way Experiment One does get 2 +1/+1 counters, however one of them illegally.\r\n\r\nWhat is missing is a second check as evolve resolves - like: trigger evolve, if new creature has more power or toughness than evolving creature. Award the +1/+1 counter if new creature has more power or toughness than the evolving one. What version of the product are you using? On what operating system? magarena 1.48.831 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=522_",
+  "date": "2014-03-15T20:03:31",
+  "state": "closed",
+  "gid": 522,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=522",
+  "owner": ""
+}

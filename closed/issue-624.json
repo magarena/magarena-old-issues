@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "A 'creature' that is cast for it's bestow cost triggers evoke.\r\n\r\nreported by jerichopumpkin http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=156378#p156368",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Casting with Bestow triggers Evolve",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 24, 2014 17:12:06",
+      "body": "I think the root of the problem could be .isCreature()\r\n\r\nIt gets a bit complicated tracing where the types are set and referenced.\r\n\r\nEvoke checks for .isCreature() which goes: MagicObjectImpl -> MagicObject\r\nBestow gives a static that sets the .getTypeFlags() to ignore Creature.\r\n\r\n.getTypeFlags() goes: MagicDummyModifier -> MagicModifier\r\n\r\nMagicPermanent derives from MagicObject but I can't see where it interfaces with MagicModifier.\r\n\r\nThat's all I can work out really\n\n**Owner:** ---  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "July 25, 2014 00:32:55",
+      "body": "The bug is in the MagicBestowActivation, there is one action to put the card in play and another action to give it MagicStatic.Bestowed. So the card comes into play as a creature, triggers comes into player triggers, then the type Creature is removed. \r\n\r\nThis gap should be closed with something like MagicPlayMod, so the static is given before coming into play triggers are triggered.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 25, 2014 00:57:15",
+      "body": "MagicPermanent interacts with MagicStatic (subclass of MagicModifier) in MagicPermanent.updateProperties method",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 25, 2014 04:47:54",
+      "body": "Ahh, I see now - Thanks for that.\r\nLooks like the MagicPlayCardFromStackAction would need MagicPlayMod included. I'm not sure if duplicating the MagicPlayCardAction createPermanent() method that gets the playMods would be best. Could it be pushed higher into PutIntoPlayAction?\r\nI'm expecting that MagicPlayCardFromStackAction implementing MagicPlayCardAction would cause problems.\r\nOr combine them together into MagicPlayCardAction and just do a check where the card's coming from?",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "July 27, 2014 19:02:27",
+      "body": "This issue was closed by revision 2d8fecf83781 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on July 25, 2014 07:56:19_\n\nA 'creature' that is cast for it's bestow cost triggers evoke.\r\n\r\nreported by jerichopumpkin http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=156378#p156368\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=624_",
+  "date": "2014-07-25T07:56:19",
+  "state": "closed",
+  "gid": 624,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=624",
+  "owner": ""
+}

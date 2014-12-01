@@ -1,0 +1,50 @@
+{
+  "status": "verified",
+  "body": "In Windows (not tested in other OSes), if you attempt to edit a script or groovy file via the card explorer you cannot save any changes since it says the file is locked by another process.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Opening script file from card explorer locks file",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 08, 2014 00:31:10",
+      "body": "I think this is also related to issue 432 .",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 08, 2014 00:50:56",
+      "body": "fix (hack) applied: https://bitbucket.org/lodici/magarena/commits/8ae7bed6e17ebe3799b0a0d6f3bc71004e2ddade Still need to look at replacing \"FileIO.toStr(final FileInputStream stream)\". It is causing the lock (for more info, see http://stackoverflow.com/questions/2972986/how-to-unmap-a-file-from-memory-mapped-using-filechannel-in-java ). It seems an overly complicated way of reading a file.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 08, 2014 02:18:54",
+      "body": "Thanks for debugging this, looking into using readAllLines for this. \r\n\r\nReference: http://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html#readAllLines%28java.nio.file.Path,%20java.nio.charset.Charset%29",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 08, 2014 02:47:21",
+      "body": "Agree (KISS principle is my motto!), although from the javadoc it does state that \"It is not intended for reading in large files.\" Depending on how you define \"large\" the only file I can think of currently that may be classed as large (or has the potential to) is the README.txt file. Should probably use a BufferedReader in that case.\r\n\r\nFrom your post I am assuming you are looking into this. If not I am happy to as I am already in the area.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 08, 2014 02:49:14",
+      "body": "Changes applied in https://code.google.com/p/magarena/source/detail?r=3b375aba59fbe4696a7752643429143f90e7968d\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on June 08, 2014 15:27:35_\n\nIn Windows (not tested in other OSes), if you attempt to edit a script or groovy file via the card explorer you cannot save any changes since it says the file is locked by another process.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=611_",
+  "date": "2014-06-08T15:27:35",
+  "state": "closed",
+  "gid": 611,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=611",
+  "owner": "lodici123"
+}

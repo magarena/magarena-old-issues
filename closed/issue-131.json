@@ -1,0 +1,39 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. Play Benalish Lancer, pay the kicker What is the expected output? What do you see instead? Benalish Lancer should get two +1/+1 counters, and first strike. It does get the counters, but lacks first strike. What version of the product are you using? On what operating system? Magarena 1.21 on Windows XP",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Benalish Lancer doesn't get first strike when kicked",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 07, 2012 03:54:13",
+      "body": "Thank you for the report.\r\n\r\nI tried a test game and Benalish Lancer did get the counters AND first strike. The code also looks fine to me. I can't think of any effect that would prevent Benalish Lancer to get the first strike ability but maybe what you saw was because of some interaction with another card?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 25, 2012 09:11:06",
+      "body": "Please download version 1.23 and see if you can still reproduce this issue. If so, then please open a new issue or post a comment here.\r\n\r\nThank you.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 25, 2012 09:11:33",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "April 01, 2012 11:56:07",
+      "body": "I encountered this case again (this time with 1.24). Right after I played it, Benalish Lancer had first strike. But the moment I hit the blue arrow, first strike disappeared. Screenshots #1 and #2 are taken before and after. Screenshots #3 and #4 are taken as soon as I got a chance to switch to text view and open history window.\n\n**Attachment:** [benalish-lancer-1.PNG benalish-lancer-2.PNG benalish-lancer-3.PNG benalish-lancer-4.PNG](http://code.google.com/p/magarena/issues/detail?id=131#hc4)",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on December 30, 2011 06:20:44_\n\nWhat steps will reproduce the problem? 1. Play Benalish Lancer, pay the kicker What is the expected output? What do you see instead? Benalish Lancer should get two +1/+1 counters, and first strike. It does get the counters, but lacks first strike. What version of the product are you using? On what operating system? Magarena 1.21 on Windows XP\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=131_",
+  "date": "2011-12-30T06:20:44",
+  "state": "closed",
+  "gid": 131,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=131",
+  "owner": ""
+}

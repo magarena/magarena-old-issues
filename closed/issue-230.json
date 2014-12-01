@@ -1,0 +1,34 @@
+{
+  "status": "cantreproduce",
+  "body": "Magarena 1.26, Debian Linux (Wheezy)\r\n\r\nIn my game I cast Vampire Outcasts with kicker, so it got +2/+2. I was greatly disappointed to find they could neither attack or block. I don't know why. They had Lifelink and could save me from the defeat.",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "Vampire Outcasts couldn't attack or block",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 18, 2012 02:01:33",
+      "body": "Vampire Outcasts doesn't have kicker. Are you referring to the bloodthirst ability on Vampire Outcasts or a different card altogether?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 18, 2012 02:10:05",
+      "body": "Oops. Yes, no kicker but they have Bloodthirst 2. I'm 100% sure it was this card, the ones with Lifelink.\r\n\r\nIt occured in several turns. First, I was unable to  block with them. Then in next turn, I wasn't able to select them for attackers. And then unable to block. I couldn't see any enchantment and I went through graveyards as well.",
+      "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)"
+    },
+    {
+      "date": "June 14, 2014 16:52:01",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on June 18, 2012 16:57:07_\n\nMagarena 1.26, Debian Linux (Wheezy)\r\n\r\nIn my game I cast Vampire Outcasts with kicker, so it got +2/+2. I was greatly disappointed to find they could neither attack or block. I don't know why. They had Lifelink and could save me from the defeat.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=230_",
+  "date": "2012-06-18T16:57:07",
+  "state": "closed",
+  "gid": 230,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=230",
+  "owner": ""
+}

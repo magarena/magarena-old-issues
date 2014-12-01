@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "Reported on forum by Aswan jaguar.\r\n\r\nPossible bug AI attacks with Guardian of the Guildpack which has protection from monocolored so why can't I block with Raging Ravine which is a red and green creature so multicolored?",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Raging Ravine is not treated as a multicolored permanent",
+  "labels": [
+    "imported",
+    "Priority-High",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "May 25, 2011 21:03:07",
+      "body": "This issue was closed by revision a391edb2c85c .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 25, 2011 21:49:10",
+      "body": "Raging ravine is defined as colorless hence it failed the protection check from monocolored. This means no matter that is the color of the creature it becomes it should always be able to block Guardian of the Guildpack. Fixed it so that protection from monocolored checks the actual color flags of the permanent.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:25:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 20, 2011 13:53:29_\n\nReported on forum by Aswan jaguar.\r\n\r\nPossible bug AI attacks with Guardian of the Guildpack which has protection from monocolored so why can't I block with Raging Ravine which is a red and green creature so multicolored?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=3_",
+  "date": "2011-05-20T13:53:29",
+  "state": "closed",
+  "gid": 3,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=3",
+  "owner": "melvinzh...@gmail.com"
+}

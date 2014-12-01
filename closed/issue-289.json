@@ -1,0 +1,65 @@
+{
+  "status": "verified",
+  "body": "sponeta @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3736&p=96979#p96979 For us deck-builders, it would be nice to be able to sort the card list by date added to Magarena. Or even just show only cards added in the current version.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Allow card explorer to sort by version added",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 05, 2012 06:38:05",
+      "body": "use the # field in the card pool to show the version number the card was added. Clicking on the column header would then sort by version number.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 15, 2013 17:44:26",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 06, 2014 09:50:47",
+      "body": "I think this would be a very useful function to easily view new cards which have been recently added. I knocked up some test code that uses the \"date created\" attribute of the script file which only works to a limited degree because the created date is not very reliable. But the actual sorting via # column works fine. \r\n\r\nIf, as mentioned, we could use the version the card was added then it will be a simple case of updating the code from \"date created\" to \"version\". How to associate a card script file with a version is the hard part - the only way I can think of is pre-processing the script files during the CI build process which would add the current build version as a new property to the script file if it is missing. This can then be read as normal into MagicCardDefinition during startup.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 06, 2014 10:37:24",
+      "body": "I guess you could also add a \"download\" property that could be set after downloading an image which would probably be easier but less consistent. This could be a date or the version of Magarena doing the downloading.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 06, 2014 15:14:17",
+      "body": "A list of all cards added per version is in the ReadMe - Could just run through those cards instead of using a date/time",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 15, 2014 01:25:07",
+      "body": "**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 03, 2014 12:29:49",
+      "body": "Is the New option in the explorer Status filter good enough to close this issue?",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "July 02, 2014 04:57:49",
+      "body": "I will assume that the New status filter will suffice. For players who only update using the monthly release it will show all the cards added in that month which is what the OP was after.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 04, 2012 20:34:24_\n\nsponeta @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3736&p=96979#p96979 For us deck-builders, it would be nice to be able to sort the card list by date added to Magarena. Or even just show only cards added in the current version.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=289_",
+  "date": "2012-09-04T20:34:24",
+  "state": "closed",
+  "gid": 289,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=289",
+  "owner": "melvinzh...@gmail.com"
+}

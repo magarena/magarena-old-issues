@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "Originally reported by eng60340 in issue 159 :\r\n\r\nWill be good to swap decks with AI if i find current deck too powerful.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Allow swapping decks with AI when a duel is in progress",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "February 17, 2012 02:39:06",
+      "body": "Swapping decks while a duel is ongoing isn't allowed because it would make winning or losing the duel baseless. Now that I think about it, we shouldn't allow editing the deck at those times for the same reason.\r\n\r\nMaybe we can provide an easy way to reset the duel while keeping the same decks. \r\nThe fact that resetting will generate new decks isn't the most logical IMHO and it certainly wasn't what I expected at first. An option could be that resetting means that only the number of games played gets set back to zero and if people want to generate new decks they use the existing 'New Duel' option instead.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 17, 2012 03:29:33",
+      "body": "would like to swap deck and restart the game.\r\nbecause i would like to re-match the comp with swapped decks",
+      "author": "[eng60...@gmail.com](https://code.google.com/u/110165659478391424989/)"
+    },
+    {
+      "date": "February 20, 2012 09:29:48",
+      "body": "Revision 5d45dc8e46 added some options that make it easy to restart a duel while keeping the same decks.\r\n\r\nSince it's not permitted to change decks during a duel, there's now a \"restart duel\" button that only sets the games played back to zero. So now you can click on that and swap decks or load decks, any thing you like to customize the duel.\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on February 17, 2012 18:37:36_\n\nOriginally reported by eng60340 in issue 159 :\r\n\r\nWill be good to swap decks with AI if i find current deck too powerful.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=160_",
+  "date": "2012-02-17T18:37:36",
+  "state": "closed",
+  "gid": 160,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=160",
+  "owner": "BeHold...@gmail.com"
+}

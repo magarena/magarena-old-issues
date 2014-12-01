@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Try Creeping Tar Pit for example. All static effects work apart from color changing.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Static effects that change or add colors don't work",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 28, 2011 20:16:17",
+      "body": "This issue was closed by revision 5ee277d73ebe .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on September 28, 2011 17:10:24_\n\nTry Creeping Tar Pit for example. All static effects work apart from color changing.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=63_",
+  "date": "2011-09-28T17:10:24",
+  "state": "closed",
+  "gid": 63,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=63",
+  "owner": "BeHold...@gmail.com"
+}

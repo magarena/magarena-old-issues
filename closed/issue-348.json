@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Start Magarena What is the expected output? What do you see instead? The loading screen show, but it closes down after a few seconds and the game does not run What version of the product are you using? On what operating system? MAGARENA VERSION 1.37, JRE 1.7.0_21, OS Windows 7_6.1 x86 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). CRASH REPORT FOR MAGARENA THREAD Thread[main,5,main]\r\nCREATED ON 2013/05/03 09:06:30\r\nMAGARENA VERSION 1.37, JRE 1.7.0_21, OS Windows 7_6.1 x86\r\n\r\nException from controller.runGame: unable to create new native thread\r\njava.lang.OutOfMemoryError: unable to create new native thread\r\n\tat java.lang.Thread.start0(Native Method)\r\n\tat java.lang.Thread.start(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor.addWorker(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)\r\n\tat magic.data.CardDefinitions.loadCardText(CardDefinitions.java:208)\r\n\tat magic.data.CardDefinitions.loadCardTexts(CardDefinitions.java:202)\r\n\tat magic.data.CardDefinitions.loadCardDefinitions(CardDefinitions.java:180)\r\n\tat magic.MagicMain.initializeEngine(MagicMain.java:87)\r\n\tat magic.MagicMain.initialize(MagicMain.java:106)\r\n\tat magic.MagicMain.main(MagicMain.java:59) Please provide any additional information below.",
+  "author": "[Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/)",
+  "title": "Crash report",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "May 03, 2013 02:47:21",
+      "body": "Thanks, was previously creating one thread to per card to load card text, which is not a good way. For the next release, it will be change to a single thread to load all the card text.\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 03, 2013 06:26:48",
+      "body": "This issue was closed by revision ac3d3821c7e1 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/) on May 03, 2013 15:08:35_\n\nWhat steps will reproduce the problem? 1. Start Magarena What is the expected output? What do you see instead? The loading screen show, but it closes down after a few seconds and the game does not run What version of the product are you using? On what operating system? MAGARENA VERSION 1.37, JRE 1.7.0_21, OS Windows 7_6.1 x86 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). CRASH REPORT FOR MAGARENA THREAD Thread[main,5,main]\r\nCREATED ON 2013/05/03 09:06:30\r\nMAGARENA VERSION 1.37, JRE 1.7.0_21, OS Windows 7_6.1 x86\r\n\r\nException from controller.runGame: unable to create new native thread\r\njava.lang.OutOfMemoryError: unable to create new native thread\r\n\tat java.lang.Thread.start0(Native Method)\r\n\tat java.lang.Thread.start(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor.addWorker(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)\r\n\tat magic.data.CardDefinitions.loadCardText(CardDefinitions.java:208)\r\n\tat magic.data.CardDefinitions.loadCardTexts(CardDefinitions.java:202)\r\n\tat magic.data.CardDefinitions.loadCardDefinitions(CardDefinitions.java:180)\r\n\tat magic.MagicMain.initializeEngine(MagicMain.java:87)\r\n\tat magic.MagicMain.initialize(MagicMain.java:106)\r\n\tat magic.MagicMain.main(MagicMain.java:59) Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=348_",
+  "date": "2013-05-03T15:08:35",
+  "state": "closed",
+  "gid": 348,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=348",
+  "owner": ""
+}

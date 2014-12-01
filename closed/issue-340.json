@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Cast Esperzoa. What is the expected output? What do you see instead? Esperzoa should have flying but, doesn't and can be blocked by creatures without flying/reach. What version of the product are you using? On what operating system? Magarena 1.36\r\nWindows 7 64-bit",
+  "author": "[Vampiric...@gmail.com](https://code.google.com/u/100888787182735301774/)",
+  "title": "Esperzoa doesn't have flying.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 13, 2013 20:39:29",
+      "body": "Thanks for reporting this bug. The flying ability was missing in Esperzoa's script, fixed in https://code.google.com/p/magarena/source/detail?r=c6f2f9e7a4abac580a7e54c6d187bcbab425e807\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Vampiric...@gmail.com](https://code.google.com/u/100888787182735301774/) on April 14, 2013 04:35:55_\n\nWhat steps will reproduce the problem? 1. Cast Esperzoa. What is the expected output? What do you see instead? Esperzoa should have flying but, doesn't and can be blocked by creatures without flying/reach. What version of the product are you using? On what operating system? Magarena 1.36\r\nWindows 7 64-bit\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=340_",
+  "date": "2013-04-14T04:35:55",
+  "state": "closed",
+  "gid": 340,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=340",
+  "owner": ""
+}

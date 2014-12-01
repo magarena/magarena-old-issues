@@ -1,0 +1,29 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. Have Deathbringer Liege in play\r\n2. Cast a white spell What is the expected output? What do you see instead? The text on the card says \"you *may* tap target creature\". So I expect to be prompted whether or not I want to. Instead, I'm only prompted to choose a target - there is no way to avoid tapping. What version of the product are you using? On what operating system? Magarena 1.23 on WinXP",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Deathbringer Liege forces player to tap a creature",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 18, 2012 07:05:56",
+      "body": "Ah, never mind. I am in fact prompted whether I want to tap - after I select a target. A bit confusing, but I suppose that's what the rules say should happen.",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)"
+    },
+    {
+      "date": "March 19, 2012 01:47:41",
+      "body": "Deathbringer Liege's effect will in fact prompt if you want to tap a creature before choosing a target. What you see in the screenshot is the prompt to select a target for Spirit Link.\n\n**Status:** CantReproduce  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on March 18, 2012 22:03:11_\n\nWhat steps will reproduce the problem? 1. Have Deathbringer Liege in play\r\n2. Cast a white spell What is the expected output? What do you see instead? The text on the card says \"you *may* tap target creature\". So I expect to be prompted whether or not I want to. Instead, I'm only prompted to choose a target - there is no way to avoid tapping. What version of the product are you using? On what operating system? Magarena 1.23 on WinXP\n\n**Attachment:** [deathbringer-liege.PNG](http://code.google.com/p/magarena/issues/detail?id=191)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=191_",
+  "date": "2012-03-18T22:03:11",
+  "state": "closed",
+  "gid": 191,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=191",
+  "owner": ""
+}

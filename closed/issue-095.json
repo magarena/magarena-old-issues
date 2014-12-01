@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Sparkmage is played by the user\r\n2. The AI has no creature, and Magarena automatically chooses target = computer\r\n\r\nThe AI should normally lose one life because of Sparkmage entering the battlefied.  Instead, no life is lost.\r\n\r\nMagarena 1.19, Mac OS X.",
+  "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)",
+  "title": "Sparkmage Apprentice: no damage dealt to the AI when it doesn't have any creature",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 21, 2011 18:40:25",
+      "body": "This issue was closed by revision 5019defd4b89 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 21, 2011 18:41:40",
+      "body": "Thanks for the report! There was a bug in the implementation of Sparkmage Apprentice, it was only able to deal damage to creatures.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/) on November 16, 2011 06:06:41_\n\nWhat steps will reproduce the problem? 1. Sparkmage is played by the user\r\n2. The AI has no creature, and Magarena automatically chooses target = computer\r\n\r\nThe AI should normally lose one life because of Sparkmage entering the battlefied.  Instead, no life is lost.\r\n\r\nMagarena 1.19, Mac OS X.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=95_",
+  "date": "2011-11-16T06:06:41",
+  "state": "closed",
+  "gid": 95,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=95",
+  "owner": ""
+}

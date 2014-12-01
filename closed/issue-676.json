@@ -1,0 +1,39 @@
+{
+  "status": "fixed",
+  "body": "Cards with accents or non-ascii characters are not being displayed in filter lists.\r\n\r\nOriginally reported by PalladiaMors http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=159615#p159604",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Cards missing from Set Filters",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 01, 2014 08:15:40",
+      "body": "In progress",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 01, 2014 08:28:02",
+      "body": "Just affected Alliances, other files converted too.\n\n**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 01, 2014 08:56:15",
+      "body": "Split cards still pending\n\n**Status:** Started  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 01, 2014 11:48:04",
+      "body": "**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on September 01, 2014 23:15:29_\n\nCards with accents or non-ascii characters are not being displayed in filter lists.\r\n\r\nOriginally reported by PalladiaMors http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=159615#p159604\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=676_",
+  "date": "2014-09-01T23:15:29",
+  "state": "closed",
+  "gid": 676,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=676",
+  "owner": "ShawnieBoyUK"
+}

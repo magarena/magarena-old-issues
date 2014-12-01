@@ -1,0 +1,59 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Mutavault in play but without boosting Faeries yet it still gains +1/+1 and is unblockable?\r\nI'm not familiar with this card, so maybe it really is supposed to be this all powerful? What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "Mutavault - can't block and it gains power?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 13, 2012 19:26:54",
+      "body": "Mutavalt gains all creature types when activated so it is affected by effects like \"Other Faerie creatures you control get +1/+1\"\n\n**Status:** Invalid  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 16, 2012 05:51:22",
+      "body": "Yes, I understand the faerie part, not the unblockable part. \r\nAre you saying it is all creatures EVER in existence at the same time, or only those on the board?\r\nThere was nothing on the board that was unblockable. \r\nBut if everything then it's protection from all colors, regenerates, flying, trample, vigilance, etc?",
+      "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)"
+    },
+    {
+      "date": "July 16, 2012 05:55:45",
+      "body": "It is not all creatures, it gains all creature types. So it is considered a bear, an angel, an ape, a giant, etc. I'll look into why it was unblockable.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 16, 2012 06:16:34",
+      "body": "As far as I can tell, Mutavault shouldn't be unblockable. A similar land that does become unblockable when animated is Creeping Tar Pit. \r\n\r\nWas Mutavault always unblockable? \r\n\r\nI noticed there was a point the AI attacked with two Mutavaults, was it unblockable at that point?\r\n\r\nLater on the AI attacked with a single Mutavault, was it unblockable then?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 16, 2012 06:42:26",
+      "body": "Memory only here, but I think so far I have never been able to block a Mutavault in any situation and I have played against that a few times. But my apologies as this is only memory.\r\n\r\nBtw, love the game and thanks for your quick attention to these things. I submit notes, not to complain, but to help in debug.",
+      "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)"
+    },
+    {
+      "date": "July 16, 2012 07:05:29",
+      "body": "I'll double check on whether Mutavault can be blocked.\r\n\r\nThanks for the support! Any report is greatly appreciated as it is a good chance for us to get feedback from the community.\n\n**Status:** New  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 16, 2012 19:23:29",
+      "body": "I'm playing against it right now and I can block mutavault, so now I can't determine what situation was the problem. Thanks for checking though.",
+      "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)"
+    },
+    {
+      "date": "July 17, 2012 00:14:27",
+      "body": "I'll close this issue for now, do create a new one if the unblockable Mutavault appears again. If possible, do try to post a screen shot of the game as it happens.\n\n**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on July 10, 2012 23:26:22_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Mutavault in play but without boosting Faeries yet it still gains +1/+1 and is unblockable?\r\nI'm not familiar with this card, so maybe it really is supposed to be this all powerful? What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=255)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=255_",
+  "date": "2012-07-10T23:26:22",
+  "state": "closed",
+  "gid": 255,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=255",
+  "owner": ""
+}

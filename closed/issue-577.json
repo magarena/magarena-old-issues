@@ -1,0 +1,50 @@
+{
+  "status": "wontfix",
+  "body": "What steps will reproduce the problem? 1. opponent's deck has Sword of Kaldra and Septic Rats\r\n2. play Dryad Arbor and bestow Nylea's Emissary on it\r\n3. wait for opponent to attach Sword of Kaldra to Septic Rats\r\n4. have opponent attack you with Septic Rat/Sword of Kaldra\r\n5. Block with Dryad Arbor/Nylea's Emissary\r\n6. Dryad Arbor dies and is put into your graveyard, Nylea's Emissary becomes creature\r\n7. Notification reads: exile Dryad Arbor\r\n8. pass priority\r\n9. Dryad Arbor is still in graveyard, no exiling happened",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Sword of Kaldra on Septic Rats vs. Dryad Arbor bestowed with Nylea's Emissary: no exiling happened",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "April 04, 2014 12:13:59",
+      "body": "magarena 1.49.963",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 04, 2014 14:28:01",
+      "body": "That's strange.\r\n\r\nI may be getting this completely wrong, but it looks like .isCreature() only applies to MagicCardDefinition not MagicPermanent. If that's the case, it would explain what's happening.\r\nShould be easy enough to add to MagicPermanent, but I'll let Melvin have a look in case the reference is called another way.\n\n**Status:** Accepted  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 04, 2014 22:05:59",
+      "body": "isCreature is inherited from MagicObjectImpl, MagicPermanent has its own one.\r\n\r\nI think the current behavior is correct, the effect is to exile the creature. However, the creature is no longer around (it died), so there is nothing to exile.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 05, 2014 02:57:30",
+      "body": "Thanks for clearing that up Melvin - was wondering why that wasn't making any sense to me.\r\n\r\nAnd yes, a creature still needs to be on the battlefield to be exiled, but it's good to see that infect is still triggering damage triggers :)\n\n**Status:** WontFix  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 05, 2014 03:57:49",
+      "body": "I'm trying to understand that:\r\n\r\nSeptic Rats deal enough damage for that matter to destroy the Dryad Arbor, which is put into graveyard as a state-based effect before the exiling resolves?",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 05, 2014 04:17:59",
+      "body": "Right. The exile goes on the stack but the Dryad Arbor is removed as a result of state-based action. When the exile trigger resolves, it cannot find the Dryad Arbor creature.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on April 05, 2014 03:13:08_\n\nWhat steps will reproduce the problem? 1. opponent's deck has Sword of Kaldra and Septic Rats\r\n2. play Dryad Arbor and bestow Nylea's Emissary on it\r\n3. wait for opponent to attach Sword of Kaldra to Septic Rats\r\n4. have opponent attack you with Septic Rat/Sword of Kaldra\r\n5. Block with Dryad Arbor/Nylea's Emissary\r\n6. Dryad Arbor dies and is put into your graveyard, Nylea's Emissary becomes creature\r\n7. Notification reads: exile Dryad Arbor\r\n8. pass priority\r\n9. Dryad Arbor is still in graveyard, no exiling happened\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=577_",
+  "date": "2014-04-05T03:13:08",
+  "state": "closed",
+  "gid": 577,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=577",
+  "owner": "ShawnieBoyUK"
+}

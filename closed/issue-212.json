@@ -1,0 +1,29 @@
+{
+  "status": "cantreproduce",
+  "body": "images downloaded are zero bytes.\r\n\r\nreported by throwingmuse @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=6975",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "downloading card images does not work on Java 7",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 15, 2014 13:58:21",
+      "body": "I'm not sure if this is an issue anymore - I only have Java 7 installed, and have no issues downloading images.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 15, 2014 18:23:59",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 01, 2012 15:33:03_\n\nimages downloaded are zero bytes.\r\n\r\nreported by throwingmuse @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=6975\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=212_",
+  "date": "2012-05-01T15:33:03",
+  "state": "closed",
+  "gid": 212,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=212",
+  "owner": "melvinzh...@gmail.com"
+}

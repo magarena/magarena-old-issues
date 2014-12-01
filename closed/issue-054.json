@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "If the user loads a deck with a card that does not exist in the game, the program crashes. Previously, the program silently ignores such cards.\r\n\r\nA better solution is to load the card but indicate in the deck list that the card is not supported. Possibly by extending MagicPlayer to include a deck of unknown cards and displaying that in the deck list in red or strikethrough.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "add handling of cards not supported by the game",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 18, 2011 20:11:56",
+      "body": "fixed in revision f0a75e16ffd7\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 18, 2011 10:29:42_\n\nIf the user loads a deck with a card that does not exist in the game, the program crashes. Previously, the program silently ignores such cards.\r\n\r\nA better solution is to load the card but indicate in the deck list that the card is not supported. Possibly by extending MagicPlayer to include a deck of unknown cards and displaying that in the deck list in red or strikethrough.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=54_",
+  "date": "2011-09-18T10:29:42",
+  "state": "closed",
+  "gid": 54,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=54",
+  "owner": "melvinzh...@gmail.com"
+}

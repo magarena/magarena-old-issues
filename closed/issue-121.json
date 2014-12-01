@@ -1,0 +1,75 @@
+{
+  "status": "duplicate",
+  "body": "When creature with enchantment or equipment (that gets +x/) sacrificed as cost of Brion Stoutarm's ability - damage dealt is not that creature's power on BF but it's printed power.\r\n\r\nRules explanation\r\nFling\r\nThe sacrificed creature's last known existence on the battlefield is checked to determine its power. http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=241858",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Brion Stoutarm",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "December 08, 2011 03:42:26",
+      "body": "The link you posted doesn't refer to auras or equipment, so I'm not sure it's the correct one.\r\nBut assuming it is, I found several decks based on equipping creatures and then using Fling to sacrifice it and deal damage. I don't see any reason why the sacrificed creature's last known existence on the battlefield should not take auras or equipment into account. It clearly says \"on the battlefield\" so at that point attachments are still on it.\r\n\r\nBrion Stoutarm is basically Fling on a stick XD",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 08, 2011 05:14:41",
+      "body": "In cases of Fling, Brion Stoutarm and similar game checks \"The sacrificed creature's last known existence on the battlefield\"",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 08, 2011 07:19:15",
+      "body": "I understand, but it seems to me that the key word here is \"last known existence on the BATTLEFIELD\". Seems to me that at the time that check is done, attachments are still on it because they only come off when the creature is in the graveyard.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 08, 2011 07:47:07",
+      "body": "Right, \"Battlefield\" ! I think it's not hard to change timings for such mechanics.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 08, 2011 23:32:26",
+      "body": "Why change timings?\r\nThe way the card is implemented now works as I would expect i.e.\r\ntemporary buffs and buffs from auras/equipments on the sacrificed creature all count towards the damage that Brion Stoutarm deals.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 09, 2011 10:23:11",
+      "body": "Is this changes cover ability of for example, Laccolith Grunt's with aura/eqp buff if his ability is already on stack and next it destoyed ?",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 09, 2011 10:49:58",
+      "body": "That's a question that doesn't really belong to this issue I think, but I did some tests:\r\n\r\nLOG: Enchant target creature (Laccolith Grunt) with Unholy Strength. (it's now 4/3)\r\nLOG: Player attacks with Laccolith Grunt.\r\nLOG: Computer blocks with Diregraf Ghoul (2/2 + Giant Growth = 5/5)\r\nLOG: Player may (yes) have Laccolith Grunt deal damage equal to its power to target creature (Diregraf Ghoul).\r\nLOG: Lightning Bolt deals 3 damage to target creature or player (Laccolith Grunt). Laccolith Grunt is destroyed. Unholy Strength is put into its owner's graveyard. (resolves before Laccolith Grunt's ability)\r\n\r\nresult: Laccolith Grunt's ability deals 2 damage to Diregraf Ghoul\r\n\r\nLooks to me like it works as it should.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 10, 2011 00:59:33",
+      "body": "Depending on rules:\r\n112.7a Once activated or triggered, an ability exists on the stack independently of its source. Destruction or removal of the source after that time won‘t affect the ability. Note that some abilities cause a source to do something (for example, ―Prodigal Pyromancer deals 1 damage to target creature or player) rather than the ability doing anything directly. In these cases, any activated or triggered ability that references information about the source because the effect needs to be divided checks that information when the ability is put onto the stack. Otherwise, it will check that information when it resolves. In both instances, if the source is no longer in the zone it‘s expected to be in at that time, its last known information is used. The source can still perform the action even though it no longer exists.\r\n - and - \r\n608.2b If the spell or ability specifies targets, it checks whether the targets are still legal. A target that‘s no longer in the zone it was in when it was targeted is illegal. Other changes to the game state may cause a target to no longer be legal; for example, its characteristics may have changed or an effect may have changed the text of the spell. If the source of an ability has left the zone it was in, its last known information is used during this process. The spell or ability is countered if all its targets, for every instance of the word ―target,‖ are now illegal. If the spell or ability is not countered, it will resolve normally. However, if any of its targets are illegal, the part of the spell or ability‘s effect for which it is an illegal target can‘t perform any actions on that target or make that target perform any actions. The effect may still determine information about illegal targets, though, and other parts of the effect for which those targets are not illegal may still affect them.\r\n\r\nresolving ability asks about a source that's no longer on BF and must use it's last known information (aura or enchantment unattaches after object leaves BF (as Statebsed effect), so last information is 4/3)",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 10, 2011 02:32:20",
+      "body": "about SBA\r\n704.3. Whenever a player would get priority (see rule 116, ―Timing and Priority‖), the game checks for any of the listed conditions for state-based actions, then performs all applicable state-based actions simultaneously as a single event. If any state-based actions are performed as a result of a check, the check is repeated; otherwise all triggered abilities that are waiting to be put on the stack are put on\r\nthe stack, then the check is repeated. Once no more state-based actions have been performed as the result of a check and no triggered abilities are waiting to be put on the stack, the appropriate player gets priority. This process also occurs during the cleanup step (see rule 514), except that if no statebased actions are performed as the result of the step‘s first check and no triggered abilities are waiting to be put on the stack, then no player gets priority and the step ends.\r\n\r\n303.4c If an Aura is enchanting an illegal object or player, the object it was attached to no longer exists, or the player it was attached to has left the game, the Aura is put into its owner‘s graveyard. (This is a state-based action. See rule 704.)",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 10, 2011 02:51:50",
+      "body": "I see.\r\nI agree that rule 112.7a applies to the above situation with Laccolith Grunt and the current behavior when the source is destroyed/removed is wrong.\r\n\r\nNow I have to find a way to fix the code ....",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 10, 2011 05:07:08",
+      "body": "I opened issue 122 to keep track of the bug related to rule 112.7a because I don't want to further this issue with different bugs.\n\n**Status:** Duplicate  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on December 08, 2011 14:01:09_\n\nWhen creature with enchantment or equipment (that gets +x/) sacrificed as cost of Brion Stoutarm's ability - damage dealt is not that creature's power on BF but it's printed power.\r\n\r\nRules explanation\r\nFling\r\nThe sacrificed creature's last known existence on the battlefield is checked to determine its power. http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=241858\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=121_",
+  "date": "2011-12-08T14:01:09",
+  "state": "closed",
+  "gid": 121,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=121",
+  "owner": ""
+}

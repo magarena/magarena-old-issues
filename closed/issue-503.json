@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Ray of command isn't tapping the creature after control has ended (Not sure how to code this either)",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Ray of Command not tapping after control",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 10, 2014 04:47:22",
+      "body": "This issue was closed by revision dfbe6cc32a85 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on March 10, 2014 02:19:44_\n\nRay of command isn't tapping the creature after control has ended (Not sure how to code this either)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=503_",
+  "date": "2014-03-10T02:19:44",
+  "state": "closed",
+  "gid": 503,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=503",
+  "owner": ""
+}

@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have Boomerang in hand, and sufficient lands to cast it\r\n2. Computer has Blighted Agent in play\r\n3. During its Draw phase, Computer plays Vines of Vastwood on Blighted Agent What is the expected output? What do you see instead? Expected: after Vines of Vastwood's effect goes on the stack and before it resolves, I should be given a chance to play Boomerang.\r\n\r\nActual: Vines of Vastwood goes on the stack momentarily, then immediately resolves. I'm never given a chance to play my instant.\r\n\r\nBoomerang is highlighted both before (in Upkeep phase) and after (in First Main phase), so it's not an issue of being unable to play it at all. But I can't play it when it matters most. What version of the product are you using? On what operating system? Magarena 1.40 on Windows 7\r\n\r\nRelevant parts of game.log:\r\n\r\nMMAB cheat=false index=1 life=19 phase=Draw slice=8000 time=7960\r\n* [442/53214/4948 at 10] (Inkmoth Nexus=M)\r\n  [443/59519/3288 at 13] (Inkmoth Nexus=C)\r\nMMAB cheat=false index=1 life=19 phase=Draw slice=8000 time=7905\r\n  [445/49013/4680 at 12] (pass)\r\n  [446/40295/2411 at 10] (Repulse)\r\n* [447/63793/4948 at 9] (Vines of Vastwood)\r\nMMAB cheat=false index=1 life=19 phase=Draw slice=8000 time=7879\r\n* [448/88434/4954 at 9] (yes,)\r\n  [449/63268/3342 at 9] (no,null)\r\nLOG (C): Pay {G}. Tap Breeding Pool. Computer may (yes) pay {G}. Tap Hinterland Harbor. Play Vines of Vastwood.\r\nLOG (C): Target creature (Blighted Agent) can't be the target of spells or abilities your opponent controls this turn. If Vines of Vastwood was kicked, that creature gets +4/+4 until end of turn.\r\nLOG (C): Computer draws a card.",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "No chance to play an instant before Computer's spell resolves during its draw phase",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 11, 2013 08:48:43",
+      "body": "I think I know what happened. I have \"Always pass during draw and begin of combat step\" preference checked. Now, it might perhaps be better to interpret this setting to mean that only \"top level\" casting opportunities should be skipped, but still allow the player to respond to the opponent's moves. Anyway, mystery solved.",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)"
+    },
+    {
+      "date": "August 11, 2013 18:50:50",
+      "body": "Good point, even with the option on you should be allowed to respond to the opponent's action.\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 05, 2013 00:57:02",
+      "body": "This issue was closed by revision 5668a5f14624 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on August 11, 2013 23:39:09_\n\nWhat steps will reproduce the problem? 1. Have Boomerang in hand, and sufficient lands to cast it\r\n2. Computer has Blighted Agent in play\r\n3. During its Draw phase, Computer plays Vines of Vastwood on Blighted Agent What is the expected output? What do you see instead? Expected: after Vines of Vastwood's effect goes on the stack and before it resolves, I should be given a chance to play Boomerang.\r\n\r\nActual: Vines of Vastwood goes on the stack momentarily, then immediately resolves. I'm never given a chance to play my instant.\r\n\r\nBoomerang is highlighted both before (in Upkeep phase) and after (in First Main phase), so it's not an issue of being unable to play it at all. But I can't play it when it matters most. What version of the product are you using? On what operating system? Magarena 1.40 on Windows 7\r\n\r\nRelevant parts of game.log:\r\n\r\nMMAB cheat=false index=1 life=19 phase=Draw slice=8000 time=7960\r\n* [442/53214/4948 at 10] (Inkmoth Nexus=M)\r\n  [443/59519/3288 at 13] (Inkmoth Nexus=C)\r\nMMAB cheat=false index=1 life=19 phase=Draw slice=8000 time=7905\r\n  [445/49013/4680 at 12] (pass)\r\n  [446/40295/2411 at 10] (Repulse)\r\n* [447/63793/4948 at 9] (Vines of Vastwood)\r\nMMAB cheat=false index=1 life=19 phase=Draw slice=8000 time=7879\r\n* [448/88434/4954 at 9] (yes,)\r\n  [449/63268/3342 at 9] (no,null)\r\nLOG (C): Pay {G}. Tap Breeding Pool. Computer may (yes) pay {G}. Tap Hinterland Harbor. Play Vines of Vastwood.\r\nLOG (C): Target creature (Blighted Agent) can't be the target of spells or abilities your opponent controls this turn. If Vines of Vastwood was kicked, that creature gets +4/+4 until end of turn.\r\nLOG (C): Computer draws a card.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=385_",
+  "date": "2013-08-11T23:39:09",
+  "state": "closed",
+  "gid": 385,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=385",
+  "owner": ""
+}

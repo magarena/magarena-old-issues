@@ -1,0 +1,40 @@
+{
+  "status": "verified",
+  "body": "This is not a bug, but a suggestion.\r\nAdd a filter for collection or collections block on the edit screen decks and card explorer.",
+  "author": "[rodrigor...@gmail.com](https://code.google.com/u/100244050055793217787/)",
+  "title": "Add filter for collection/block",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "May 30, 2013 20:05:01",
+      "body": "**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 15, 2013 17:49:03",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 14, 2014 17:00:32",
+      "body": "**Status:** Fixed  \n  **Owner:** lodici123  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [rodrigor...@gmail.com](https://code.google.com/u/100244050055793217787/) on May 31, 2013 00:52:47_\n\nThis is not a bug, but a suggestion.\r\nAdd a filter for collection or collections block on the edit screen decks and card explorer.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=354_",
+  "date": "2013-05-31T00:52:47",
+  "state": "closed",
+  "gid": 354,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=354",
+  "owner": "lodici123"
+}

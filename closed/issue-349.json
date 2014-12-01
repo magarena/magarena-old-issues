@@ -1,0 +1,25 @@
+{
+  "status": "invalid",
+  "body": "reported by blade22031 @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=117081#p117060 So when I start a game, I can never see my opening hand until after the computers first turn. It is at the draw step that the hand is revealed on my second turn. after that everything works fine. I have tried uninstalling and reinstalling yet the problem persists.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "opening hand missing",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "May 04, 2013 08:05:28",
+      "body": "**Status:** Invalid  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 04, 2013 18:48:16_\n\nreported by blade22031 @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=117081#p117060 So when I start a game, I can never see my opening hand until after the computers first turn. It is at the draw step that the hand is revealed on my second turn. after that everything works fine. I have tried uninstalling and reinstalling yet the problem persists.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=349_",
+  "date": "2013-05-04T18:48:16",
+  "state": "closed",
+  "gid": 349,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=349",
+  "owner": "melvinzh...@gmail.com"
+}

@@ -1,0 +1,64 @@
+{
+  "status": "verified",
+  "body": "As a way of improving the functionality of the Card Explorer how about if you could also view unimplemented cards. Thus, \r\n\r\n- it will become a definitive knowledgebase of cards which is useful in its own right. \r\n- can be used as central visual TODO list of implemented/unimplemented cards. Highlight unimplemented in red, for example. Do away with unimplemented.tsv.\r\n- it will help gauge how well Magarena can cope with 10K+ card definitions sooner rather than later - memory usage, optimizations, download timings, etc.\r\n- simple to implement. A boolean in MagicCardDefinition can be used to flag a card as playable or not.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Improving the Card Explorer.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "April 27, 2014 02:44:14",
+      "body": "That sounds a great idea!\r\n\r\nThe unimplimentable.tsv is only listing cards which we're definitely unable to implement at the current time due to the engine or AI. It doesn't include cards which can be created, but not added/contributed yet.\r\n\r\nHaving cards that aren't in the scripts folder, and not on the unimplementable.tsv as red, and the cards on unimplementable.tsv in a faded-out grey or something would be better.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 27, 2014 03:25:36",
+      "body": "I should be clearer. If I understand correctly, to add a new card to Magarena you create a txt file in the \"scripts\" and \"texts\" folders. So why not add similar txt files even if the card is not (yet) playable. To mark the card as unplayable you could either add a new property (eg, \"unplayable=true\") or Magarena could mark the card automatically if it is unable to parse the card either because of an invalid property value or it is missing mandatory properties (eg. the Value property). Either way it would still create a MagicCardDefinition object so that the card can be displayed in the Explorer since it does not need any AI related stuff to do that.\r\n\r\nFor example Absort.txt is\r\nname=Absorb\r\nurl= http://magiccards.info/query?q=%21absorb image= http://mtgimage.com/card/absorb.jpg value=4.110\r\nrarity=R\r\ntype=Instant\r\ncost={W}{U}{U}\r\ntiming=counter\r\nrequires_groovy_code\r\n\r\nbut if it was not actually playable you could still create the txt file with the following contents\r\nname=Absorb\r\nurl= http://magiccards.info/query?q=%21absorb image= http://mtgimage.com/card/absorb.jpg rarity=R\r\ntype=Instant\r\ncost={W}{U}{U}\r\n\r\nso that it will still work in the Card Explorer/filter even though you can not use it or add it to a deck. \r\n\r\nI am thinking out loud to a degree so perhaps there is something I have not considered but from what I have seen of the code so far I think it is technically possible without too much effort and more importantly, you guys creating the cards do not have to do anything differently.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 27, 2014 04:00:25",
+      "body": "It's already possible to do what you're suggesting with the 'dummy' cards.\r\nHowever for those of us that use the -Debug=true it would crash as when it parses the cards, they require a timing. Even with a timing included the deck builder would have to be able to not allow those cards to be added.\r\nI would expect that all the automated deckbuilders and AI random gen deck builders would also need to be edited to not allow these 'dummy' cards to be added into decks.\r\n\r\nI'd certainly find it quite confusing. But in a strange way, kinda makes sense.\r\n\r\nAnother option would be for the cards to have MagicCardDefinition objects created from the url info that can get pulled. Similar to what I've been working on with converting my card scripter to java. And not having script files at all (If that's possible)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 27, 2014 04:40:12",
+      "body": "Actually, maybe now would be a good time to get my head around JSON as mtgjson.com will be able to make life so much easier all round",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 28, 2014 12:42:12",
+      "body": "http://groovy.codehaus.org/gapi/groovy/json/JsonSlurper.html",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 29, 2014 04:43:40",
+      "body": "Also, you might want to take a look at http://www.slightlymagic.net/forum/viewtopic.php?f=27&t=1347 .",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 29, 2014 05:24:36",
+      "body": ">> It's already possible to do what you're suggesting with the 'dummy' cards.\r\n??? I am not familiar with 'dummy' cards, could you elaborate?\r\n\r\n>> However for those of us that use the -Debug=true it would crash as when it parses the cards, they require >> a timing. Even with a timing included the deck builder would have to be able to not allow those cards to >> be added.\r\nWhat I have been looking at is making the parser more accomodating. Currently if the timing or color is missing it will raise an exception and bomb out. What it could do instead (and what I have been looking at) is to flag the card as invalid, perhaps record the reason why and basically load what information it can into an instance of MagicCardDefinition.\r\n\r\nIn fact, if you look at the MafigCardDefinition class you will notice there is an isValid() property which always returns true so at some point in the past someone was perhaps thinking along similar lines.\r\n\r\nBy using the invalid flag, it is then pretty simple to keep separate lists of invalid and valid cards. The valid list is the same as that which is used now so would not require any changes to existing code and all the automation and AI stuff will be unaffected since it will never see or deal with the invalid list. But we now have the ability to display invalid card information in the Explorer as well.\r\n\r\nCurrently, I have got the explorer to highlight cards (red background in the # column) which are unplayable and display in tooltips the reasons why they are invalid. Here are some examples that I can now get to view in Explorer (including images where applicable) -\r\n\r\n======================================\r\nAvarax (from incomplete folder, \r\nI have used # to comment out properties\r\n======================================\r\nname=Avarax\r\nurl= http://magiccards.info/query?q=%21avarax image= http://mtgimage.com/card/avarax.jpg # value=3.1\r\nrarity=U\r\ntype=Creature\r\nsubtype=Beast\r\ncost={3}{R}{R}\r\npt=3/3\r\n#ability=haste;\\\r\n#        pay {1}{R}: SN gets +1/+0 until end of turn.\r\n#timing=main\r\n#requires_groovy_code\r\n\r\n======================================\r\nBloodghast (missing properties)\r\n======================================\r\nname=Bloodghast\r\nurl= http://magiccards.info/zen/en/83.html image= http://magiccards.info/scans/en/zen/83.jpg rarity=R\r\ntype=Creature\r\nsubtype=Vampire,Spirit\r\ncost={B}{B}\r\npt=2/1\r\n\r\n======================================\r\nDark Confidant (completely empty text file)\r\nA bit extreme but it still creates a entry in explorer (it displays the filename).\r\nIn practice the name property should probably be provided at least.\r\n======================================\r\n\r\nI have managed to get hold of a list of all MTG card names (via the link in my previous post) so in theory we could have an option in the Explorer to display the name (at the very least) of every single card published.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 03, 2014 12:22:32",
+      "body": "**Status:** Done  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on April 27, 2014 16:07:06_\n\nAs a way of improving the functionality of the Card Explorer how about if you could also view unimplemented cards. Thus, \r\n\r\n- it will become a definitive knowledgebase of cards which is useful in its own right. \r\n- can be used as central visual TODO list of implemented/unimplemented cards. Highlight unimplemented in red, for example. Do away with unimplemented.tsv.\r\n- it will help gauge how well Magarena can cope with 10K+ card definitions sooner rather than later - memory usage, optimizations, download timings, etc.\r\n- simple to implement. A boolean in MagicCardDefinition can be used to flag a card as playable or not.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=596_",
+  "date": "2014-04-27T16:07:06",
+  "state": "closed",
+  "gid": 596,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=596",
+  "owner": "lodici123"
+}

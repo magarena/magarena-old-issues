@@ -1,0 +1,65 @@
+{
+  "status": "verified",
+  "body": "When prompted to select a card from your library or graveyard, the hand view will automatically switch to the appropriate view.\r\n\r\nAfter selecting a card from your library or graveyard, the hand view doesn't re-appear automatically.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Hand, Library Graveyard switching",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "April 01, 2014 15:32:49",
+      "body": "**Status:** Accepted  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 04, 2014 03:50:24",
+      "body": "Could you provide some specifics. I have tried using TestClone and TestSearch scenarios and in each case after selecting card it does switch back to the Hand.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 04, 2014 04:08:18",
+      "body": "Sylvan Tutor springs to mind, there was a whole bunch when I was updating from groovy code to script.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 04, 2014 04:41:49",
+      "body": "Here's some others:\r\nSylvan Ranger, Crop Rotation, Eternal Witness, Treefolk Harbinger, Restore",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 04, 2014 04:50:53",
+      "body": "Thanks, I can replicate it now with Sylvan Tutor.\n\n**Status:** Started  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 20, 2014 09:11:29",
+      "body": "I might have fixed that, too. Check my clone, if it's really the solution.\r\n\r\ncommit: c29f898f9c0d",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 20, 2014 21:15:48",
+      "body": "I made some additional changes in https://code.google.com/p/magarena/source/detail?r=34786219e25174facdee1050de190b687b19cfb5 and https://code.google.com/p/magarena/source/detail?r=5b51d3c38d6c841c072aec2124e80e4d1d4aaff1 to simplify the code. The principle is that each choice does the focus update for itself in getPlayerChoiceResults, no need to restore focus on exit to keep the code simpler.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 26, 2014 19:45:35",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on April 02, 2014 01:37:21_\n\nWhen prompted to select a card from your library or graveyard, the hand view will automatically switch to the appropriate view.\r\n\r\nAfter selecting a card from your library or graveyard, the hand view doesn't re-appear automatically.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=570_",
+  "date": "2014-04-02T01:37:21",
+  "state": "closed",
+  "gid": 570,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=570",
+  "owner": ""
+}

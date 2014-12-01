@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Cast an equipment with living weapon, e.g. Flayer Husk What is the expected output? What do you see instead? The germ token lives with the equipment attached to it (e.g. a 0/0 germ token getting +1/+1 from Flayer Husk, thus 1/1). Instead, the germ token is put into your graveyard after the equipment is attached to it. What version of the product are you using? On what operating system? 1.32 on Windows XP If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. MAGARENA GAME LOG\r\nCREATED ON 2012/12/10 19:15:51\r\nMAGARENA VERSION 1.32, JRE 1.7.0_09, OS Windows XP_5.1 x86\r\n\r\nLOG (P): Core Xii may (yes) take a mulligan. Core Xii may (no) take a mulligan.\r\nLOG (C): Computer may (no) take a mulligan.\r\nMMAB index=1 life=20 phase=FirstMain time=16 workers=3 main=6\r\n* [2/31/1405 at 37] (pass)\r\n  [2/7/1400 at 33] (Plains)\r\n  [1/7/1400 at 33] (Swamp)\r\nMMAB index=1 life=20 phase=SecondMain time=15 workers=4 main=6\r\n  [3/12/4 at 27] (pass)\r\n  [3/6/1100 at 32] (Plains)\r\n  [2/6/1100 at 32] (Swamp)\r\n* [1/7/1105 at 33] (Vivid Grove)\r\nLOG (C): Play Vivid Grove. Vivid Grove enters the battlefield with 2 charge counters on it. Vivid Grove enters the battlefield tapped.\r\nLOG (P): Play Darkslick Shores.\r\nLOG (P): Tap Darkslick Shores. Pay {1}. Play Flayer Husk.\r\nLOG (P): Put Flayer Husk onto the battlefield.\r\nLOG (P): Core Xii puts a 0/0 black Germ creature token onto the battlefield, then attaches Flayer Husk to it. Germ is put into its owner's graveyard.",
+  "author": "[core...@gmail.com](https://code.google.com/u/103434827021553153452/)",
+  "title": "Living weapon germ tokens die immediately",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 11, 2012 21:48:52",
+      "body": "Thanks for the report. We are working on fixing this.\n\n**Status:** Started  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 11, 2012 22:13:08",
+      "body": "This issue was closed by revision b7cde1c6aa4d .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [core...@gmail.com](https://code.google.com/u/103434827021553153452/) on December 11, 2012 02:03:04_\n\nWhat steps will reproduce the problem? 1. Cast an equipment with living weapon, e.g. Flayer Husk What is the expected output? What do you see instead? The germ token lives with the equipment attached to it (e.g. a 0/0 germ token getting +1/+1 from Flayer Husk, thus 1/1). Instead, the germ token is put into your graveyard after the equipment is attached to it. What version of the product are you using? On what operating system? 1.32 on Windows XP If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. MAGARENA GAME LOG\r\nCREATED ON 2012/12/10 19:15:51\r\nMAGARENA VERSION 1.32, JRE 1.7.0_09, OS Windows XP_5.1 x86\r\n\r\nLOG (P): Core Xii may (yes) take a mulligan. Core Xii may (no) take a mulligan.\r\nLOG (C): Computer may (no) take a mulligan.\r\nMMAB index=1 life=20 phase=FirstMain time=16 workers=3 main=6\r\n* [2/31/1405 at 37] (pass)\r\n  [2/7/1400 at 33] (Plains)\r\n  [1/7/1400 at 33] (Swamp)\r\nMMAB index=1 life=20 phase=SecondMain time=15 workers=4 main=6\r\n  [3/12/4 at 27] (pass)\r\n  [3/6/1100 at 32] (Plains)\r\n  [2/6/1100 at 32] (Swamp)\r\n* [1/7/1105 at 33] (Vivid Grove)\r\nLOG (C): Play Vivid Grove. Vivid Grove enters the battlefield with 2 charge counters on it. Vivid Grove enters the battlefield tapped.\r\nLOG (P): Play Darkslick Shores.\r\nLOG (P): Tap Darkslick Shores. Pay {1}. Play Flayer Husk.\r\nLOG (P): Put Flayer Husk onto the battlefield.\r\nLOG (P): Core Xii puts a 0/0 black Germ creature token onto the battlefield, then attaches Flayer Husk to it. Germ is put into its owner's graveyard.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=307_",
+  "date": "2012-12-11T02:03:04",
+  "state": "closed",
+  "gid": 307,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=307",
+  "owner": ""
+}

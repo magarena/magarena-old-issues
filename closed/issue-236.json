@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "Magarena 1.26 (Debian Linux Wheezy)\r\n\r\n1. Summon Deadwood Treefolk\r\n2. Pass some turns and sacrifice it via 'vanishing' ability\r\n3. Select a creature to return from graveyard. In particular, select the Deadwood Treefolk.\r\n\r\nCard text:\r\n\"When Deadwood Treefolk enters the battlefield or leaves the battlefield, return *another* target creature from your graveyard to your hand.\"\r\n\r\nEmphasis mine.",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "Deadwood Treefolk can return itself from graveyard, but shouldn't.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 02, 2013 23:20:47",
+      "body": "**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 02, 2013 23:23:25",
+      "body": "This issue was closed by revision 18eabdcf11e7 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 02, 2013 23:24:28",
+      "body": "Thanks for the report. Fixed for next release.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on June 23, 2012 02:15:59_\n\nMagarena 1.26 (Debian Linux Wheezy)\r\n\r\n1. Summon Deadwood Treefolk\r\n2. Pass some turns and sacrifice it via 'vanishing' ability\r\n3. Select a creature to return from graveyard. In particular, select the Deadwood Treefolk.\r\n\r\nCard text:\r\n\"When Deadwood Treefolk enters the battlefield or leaves the battlefield, return *another* target creature from your graveyard to your hand.\"\r\n\r\nEmphasis mine.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=236_",
+  "date": "2012-06-23T02:15:59",
+  "state": "closed",
+  "gid": 236,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=236",
+  "owner": ""
+}

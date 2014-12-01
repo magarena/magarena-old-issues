@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "take a closer look at this picture: https://www.dropbox.com/s/cwx2h4vaib7xqup/School_of_Piranha_screenshot.png is it intentional?\r\n\r\nmagarena 1.49.943",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "School of Piranha - upkeep notification Debug Message?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 01, 2014 15:28:51",
+      "body": "Also, I am no grammar expert but \"If Monty Carlo don't, sacrifice School of Piranha\" does not sound right. Perhaps something like \"If Monty Carlo doesn't...\" or \"If Monty Carlo does not pay,...\" or even \"If not,...\" would be better.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 02, 2014 01:34:52",
+      "body": "The weird numbers after the mana cost is unintentional, thanks for pointing it out, we've fixed it.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 03, 2014 13:43:55",
+      "body": "Fixed the dodgy grammar too. \"you don't\" will now get converted to \"PN doesn't\"\n\n**Status:** Fixed  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on April 02, 2014 05:25:30_\n\ntake a closer look at this picture: https://www.dropbox.com/s/cwx2h4vaib7xqup/School_of_Piranha_screenshot.png is it intentional?\r\n\r\nmagarena 1.49.943\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=573_",
+  "date": "2014-04-02T05:25:30",
+  "state": "closed",
+  "gid": 573,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=573",
+  "owner": "ShawnieBoyUK"
+}

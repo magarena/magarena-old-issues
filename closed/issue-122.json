@@ -1,0 +1,94 @@
+{
+  "status": "verified",
+  "body": "Originally reported by OLEGtheKamrad in issue 121 :\r\n\r\n\"Is this changes cover ability of for example, Laccolith Grunt's with aura/eqp buff if his ability is already on stack and next it destroyed ?\"\r\n\r\nMy reply with example that actually shows how we fail to obey proper rule:\r\n\r\nLOG: Enchant target creature (Laccolith Grunt) with Unholy Strength. (it's now 4/3)\r\nLOG: Player attacks with Laccolith Grunt.\r\nLOG: Computer blocks with Diregraf Ghoul (2/2 + Giant Growth = 5/5)\r\nLOG: Player may (yes) have Laccolith Grunt deal damage equal to its power to target creature (Diregraf Ghoul).\r\nLOG: Lightning Bolt deals 3 damage to target creature or player (Laccolith Grunt). Laccolith Grunt is destroyed. Unholy Strength is put into its owner's graveyard. (resolves before Laccolith Grunt's ability)\r\n\r\nresult: Laccolith Grunt's ability deals 2 damage to Diregraf Ghoul\r\n\r\nThe rule we fail to obey:\r\n112.7a Once activated or triggered, an ability exists on the stack independently of its source. Destruction or removal of the source after that time won‘t affect the ability. Note that some abilities cause a source to do something (for example, ―Prodigal Pyromancer deals 1 damage to target creature or player) rather than the ability doing anything directly. In these cases, any activated or triggered ability that references information about the source because the effect needs to be divided checks that information when the ability is put onto the stack. Otherwise, it will check that information when it resolves. In both instances, if the source is no longer in the zone it‘s expected to be in at that time, its last known information is used. The source can still perform the action even though it no longer exists.\r\n\r\nAccording to the above the outcome of my earlier example should be that Laccolith Grunt deals 4 damage instead of 2 because last time it was on the battlefield it was at pt=4/3.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Obey rule 112.7a",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 10, 2011 05:15:13",
+      "body": "Revision 4d239ea869 has a fix for Laccolith Grunt.\r\n\r\nI think I rather store lastKnownPowerToughness in MagicRemoveFromPlayAction directly instead of adding a MagicWhenLeavesPlayTrigger for every card that needs this fix.\n\n**Status:** Started  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 10, 2011 09:44:36",
+      "body": "This fix also needs for all Laccolith's (Titan, Warrior, Whelp), Dwarven Vigilantes, Hateflayer, Mage Slayer (it's an equipment - how it will work in such situation ?), Meglonoth.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 10, 2011 09:51:49",
+      "body": "Also if something (ability, equipment) gives creature a Lifelink or Deathtouch - game also had to \"look back in time\".\r\nExample: Mogg Fanatic - when Alabaster Mage gives him Lifelink he deals 1 damage and player gets 1 life, BUT when Mogg Fanatic equiped for example Bsilisk Collar - he deals only damage and player gets no life.\r\n\r\n\r\nRules:\r\n702.2e  If an object changes zones before an effect causes it to deal damage, its last known information is used to determine whether it had deathtouch.\r\n702.14c  If a permanent leaves the battlefield before an effect causes it to deal damage, its last known information is used to determine whether it had lifelink.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 10, 2011 10:03:54",
+      "body": "Yes, I'm aware that more cards need fixing so they follow the correct rulings. I'm just thinking a bit about the cleanest way to implement this and then will apply it to all other cards I can find that need it.\r\n\r\nI guess one way to find such cards would be to search on \"equal to\". That gives a list of about 70 cards that I have to look through which is doable.\r\n\r\nAnyway, thanks for spotting this error and if you find any more of such bugs (I'm sure there are more because the rules are complex) do file an issue for it but please stick to one bug per issue :)",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 10, 2011 17:43:40",
+      "body": "IMHO handling of last known information should be done at the engine level, rather than at the card level. i.e. before the engine performs the action that changes the zone of an object, it make a clone of the object first.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 10, 2011 21:00:48",
+      "body": "I fully agree Melvin. I'm just not sure if I can accomplish such a thing, so suggestions are welcome, hehe.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 11, 2011 01:50:37",
+      "body": "One way of doing this would be to set the last known info in MagicRemoveFromPlayAction  and pass an argument to MagicDealDamageAction or MagicDamage and let MagicDealDamageAction handle the checking.\r\nThat still requires a change to the card code but I don't see how else the engine would know whether the damage is a fixed amount or based on power.\r\n\r\nEvery card I could find that needs a change uses the power of the permanent so do we really need to clone the whole object?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 11, 2011 07:44:47",
+      "body": "Something like:\r\n\r\n- Laccolith_Grunt:\r\nMagicDamage damage = new MagicDamage(permanent,creature,permanent.getPower(game),false,true);\r\ngame.doAction(new MagicDealDamageAction(damage));\r\n\r\n- MagicRemoveFromPlayAction:\r\npermanent.setLastKnownPowerToughness(game);\r\n\r\n- MagicDamage:\r\nMagicDamage(source,target,amount,combat,power)\r\nboolean isPower() {return power;}\r\n\r\n- MagicDealDamageAction:\r\nif (damage.isPower() && source.isPermanent()) {\r\n   final MagicPermanent permanent = (MagicPermanent)source;\r\n      if (!permanent.isOnBattlefield(game)) {\r\n         damage.setAmount(permanent.getLastKnownPowerToughness().power());\r\n      }\r\n}",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 04, 2012 23:09:32",
+      "body": "Instead of modifying MagicDamage and MagicDealDamageAction, I think we can make the getLastKnownPowerToughtness method of the permanent object smarter by returning the current p/t if on battlefield and the last known p/t if removed form battlefield. Perhaps there is no need for getLastKnownPT, we can just make getPower and getToughness take care of \"last known information\". I think the last known information business should not \"leak\" to the damage system, rather it should be handled by the MagicPermanent itself.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 22, 2012 02:38:56",
+      "body": "Revision d27a0680eb08 added storing of last known info when permanent leaves play.\r\n\r\nWhat needs to be done is storing this info on any zone change and also a check in each relevant method for this zone change. The changes in this revision only check if the permanent is on the battlefield and only in the getPowerToughness method.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 22, 2012 02:55:28",
+      "body": "Don't forget about:\r\n\r\nDeathtouch\r\n702.2e If an object changes zones before an effect causes it to deal damage, its last known information is used to determine whether it had deathtouch.\r\nLifelink\r\n702.14c If a permanent leaves the battlefield before an effect causes it to deal damage, its last known information is used to determine whether it had lifelink.\r\nWither\r\n702.78b If a permanent leaves the battlefield before an effect causes it to deal damage, its last known information is used to determine whether it had wither.\r\nInfect\r\n702.88d If a permanent leaves the battlefield before an effect causes it to deal damage, its last known information is used to determine whether it had infect.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "February 22, 2012 03:02:09",
+      "body": "I haven't forgotten those. My change stores p/t, abilities, types, subtypes and colors, but only p/t is handled for now. I'll want some others to check my code first and go from there. This to avoid having to rewrite a lot of code later on.\r\n\r\nAt least we now have the most commonly use of last known info covered.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "March 02, 2012 03:44:35",
+      "body": "Revision abd6aee3cb3c added using last known ability info.\r\n\r\nNow things work according to the rules posted by OLEGtheKamrad in comment 11.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 29, 2012 20:26:57",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on December 10, 2011 21:03:38_\n\nOriginally reported by OLEGtheKamrad in issue 121 :\r\n\r\n\"Is this changes cover ability of for example, Laccolith Grunt's with aura/eqp buff if his ability is already on stack and next it destroyed ?\"\r\n\r\nMy reply with example that actually shows how we fail to obey proper rule:\r\n\r\nLOG: Enchant target creature (Laccolith Grunt) with Unholy Strength. (it's now 4/3)\r\nLOG: Player attacks with Laccolith Grunt.\r\nLOG: Computer blocks with Diregraf Ghoul (2/2 + Giant Growth = 5/5)\r\nLOG: Player may (yes) have Laccolith Grunt deal damage equal to its power to target creature (Diregraf Ghoul).\r\nLOG: Lightning Bolt deals 3 damage to target creature or player (Laccolith Grunt). Laccolith Grunt is destroyed. Unholy Strength is put into its owner's graveyard. (resolves before Laccolith Grunt's ability)\r\n\r\nresult: Laccolith Grunt's ability deals 2 damage to Diregraf Ghoul\r\n\r\nThe rule we fail to obey:\r\n112.7a Once activated or triggered, an ability exists on the stack independently of its source. Destruction or removal of the source after that time won‘t affect the ability. Note that some abilities cause a source to do something (for example, ―Prodigal Pyromancer deals 1 damage to target creature or player) rather than the ability doing anything directly. In these cases, any activated or triggered ability that references information about the source because the effect needs to be divided checks that information when the ability is put onto the stack. Otherwise, it will check that information when it resolves. In both instances, if the source is no longer in the zone it‘s expected to be in at that time, its last known information is used. The source can still perform the action even though it no longer exists.\r\n\r\nAccording to the above the outcome of my earlier example should be that Laccolith Grunt deals 4 damage instead of 2 because last time it was on the battlefield it was at pt=4/3.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=122_",
+  "date": "2011-12-10T21:03:38",
+  "state": "closed",
+  "gid": 122,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=122",
+  "owner": "BeHold...@gmail.com"
+}

@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Hi guys!\r\nA minor problem: the card \"Victim of night\" shows the picture \"Doom Blade\" instead. I deleted the pictures of both cards and downloaded them again, but it's still wrong.\r\nI am using version 1.19",
+  "author": "[efranc...@gmail.com](https://code.google.com/u/103507307054111542324/)",
+  "title": "Victim of night: wrong picture",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 14, 2011 06:20:30",
+      "body": "Thanks for the report! Fixed in revision 37c2e434b619\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [efranc...@gmail.com](https://code.google.com/u/103507307054111542324/) on November 14, 2011 22:14:07_\n\nHi guys!\r\nA minor problem: the card \"Victim of night\" shows the picture \"Doom Blade\" instead. I deleted the pictures of both cards and downloaded them again, but it's still wrong.\r\nI am using version 1.19\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=93_",
+  "date": "2011-11-14T22:14:07",
+  "state": "closed",
+  "gid": 93,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=93",
+  "owner": ""
+}

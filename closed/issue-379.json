@@ -1,0 +1,54 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. play a Merfolk Looter\r\n2. play another Merfolk Looter\r\n3. let summoning sickness expire What is the expected output? What do you see instead? you should be able to tap both merfolk looter to draw a card, then discard, but instead, only one of them is avaible. However, both can attack as expected. What version of the product are you using? On what operating system? magarena 1.40, win 7 home If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. I've avoided attaching the log, because nothing useful is here (I've checked it). Also, I noticed the same bug happens with regenerate (tried out with Odious Tow), so I suppose it's a system bug.",
+  "author": "[Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/)",
+  "title": "Cannot activate abilities of a creature if it's the second copy you control",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 07, 2013 06:05:24",
+      "body": "Issue 383 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 07, 2013 06:05:40",
+      "body": "Issue 384 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 07, 2013 06:06:49",
+      "body": "**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 07, 2013 06:27:19",
+      "body": "This issue was closed by revision 145b78f5fabd .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 07, 2013 06:29:09",
+      "body": "Thanks for catching this bug, it got introduced when the system for activated abilities was modified to allow for continuous effects that grant activated abilities to permanents.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 22, 2013 19:27:06",
+      "body": "Issue 391 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/) on July 30, 2013 04:12:09_\n\nWhat steps will reproduce the problem? 1. play a Merfolk Looter\r\n2. play another Merfolk Looter\r\n3. let summoning sickness expire What is the expected output? What do you see instead? you should be able to tap both merfolk looter to draw a card, then discard, but instead, only one of them is avaible. However, both can attack as expected. What version of the product are you using? On what operating system? magarena 1.40, win 7 home If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. I've avoided attaching the log, because nothing useful is here (I've checked it). Also, I noticed the same bug happens with regenerate (tried out with Odious Tow), so I suppose it's a system bug.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=379_",
+  "date": "2013-07-30T04:12:09",
+  "state": "closed",
+  "gid": 379,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=379",
+  "owner": ""
+}

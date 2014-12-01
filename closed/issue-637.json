@@ -1,0 +1,60 @@
+{
+  "status": "verified",
+  "body": "The recent update ( https://code.google.com/p/magarena/source/detail?r=7e1b8d81e70665f87e711c6ce952428cfc805069 ) to use the most common card dimensions of 480x680 effects the layout of the explorer, editor and duel decks screens when running Magarena on smaller screens such that the card view takes up a disproportionate amount of space - on the explorer and editor it pushes the right most filter buttons and scrollbars out of reach, on the duel decks screen it actually re-arranges itself as best it can but it looks very cramped.\r\n\r\nOn larger screens showing the cards at their native resolution produces the best quality image and so I think the above update should remain. Instead, for smaller screens the card viewer should automatically rescale the image to fit the space allocated to it.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "CardViewer should have scale-to-fit option",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-High",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 05, 2014 01:01:32",
+      "body": "Have published an update that fixes the layout of the explorer and editor screens. It does not resize the image yet but ensures the RHS (filter, card pool) is fully accessible and adds scrollbars to the image so it can be viewed in full after a fashion.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 05, 2014 05:45:23",
+      "body": "Published similar update for the duel decks screen. All screens should now at least be useable again at 1024 x 600.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 05, 2014 09:42:57",
+      "body": "**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 00:00:15",
+      "body": "Unfortunately cannot use the scrollbar fix for the popup when playing a game so when running at 1024 x 600 the popup tends to be half-on and half-off the screen and actually still obscures a large portion of the battlefield - the popup will need to be reduced in size in this case.\n\n**Labels:** -Priority-Medium Priority-High  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 00:00:32",
+      "body": "**Labels:** -Type-Enhancement Type-Defect  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 27, 2014 00:29:05",
+      "body": "New update: The \"Popup card images to original size\" setting now applies to the CardViewer component in general. ( https://bitbucket.org/lodici/magarena/commits/9a8489b254ab5cc09d66f1ffe78c9a96ed51e08c ).\r\n\r\nThis now uses the \"Popup card images to original size\" setting to determine whether to show card images in the CardViewer at the new 480 x 680 size or the previous 312 x 444. To reflect its more general use I have renamed the the setting to \"Large card images\" and moved it to the \"Look & Feel\" tab. This update also fixes the problem described in comment #4 above.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 28, 2014 09:42:28",
+      "body": "I am closing this since it solves the original problem even though it does not implement a scale-to-fit option. In this case I think it is not required since the current UI would not make use of it. If in future for example, there was a need to be able to adjust the size of the left-hand area of the explorer/deck editor screens then you would probably want the image to auto-scale in that case.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 05, 2014 15:44:52_\n\nThe recent update ( https://code.google.com/p/magarena/source/detail?r=7e1b8d81e70665f87e711c6ce952428cfc805069 ) to use the most common card dimensions of 480x680 effects the layout of the explorer, editor and duel decks screens when running Magarena on smaller screens such that the card view takes up a disproportionate amount of space - on the explorer and editor it pushes the right most filter buttons and scrollbars out of reach, on the duel decks screen it actually re-arranges itself as best it can but it looks very cramped.\r\n\r\nOn larger screens showing the cards at their native resolution produces the best quality image and so I think the above update should remain. Instead, for smaller screens the card viewer should automatically rescale the image to fit the space allocated to it.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=637_",
+  "date": "2014-08-05T15:44:52",
+  "state": "closed",
+  "gid": 637,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=637",
+  "owner": "lodici123"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Put a Death Baron card into play, while the opponent has a Zombie in play What is the expected output? What do you see instead? Only my Zombie creatures, other than the Baron itself, should get +1/+1. Instead, it seems all Zombies get pumped - mine, opponent's, and the Baron itself. What version of the product are you using? On what operating system? Magarena 1.21 on Windows XP",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Death Baron seems to pump up opponent's Zombies, as well as itself.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 07, 2012 03:43:14",
+      "body": "This issue was closed by revision e566f4dbb34b .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 07, 2012 03:43:47",
+      "body": "Thanks for the report! fix will be in 1.22",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on December 30, 2011 05:57:00_\n\nWhat steps will reproduce the problem? 1. Put a Death Baron card into play, while the opponent has a Zombie in play What is the expected output? What do you see instead? Only my Zombie creatures, other than the Baron itself, should get +1/+1. Instead, it seems all Zombies get pumped - mine, opponent's, and the Baron itself. What version of the product are you using? On what operating system? Magarena 1.21 on Windows XP\n\n**Attachment:** [Death-Baron.PNG](http://code.google.com/p/magarena/issues/detail?id=130)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=130_",
+  "date": "2011-12-30T05:57:00",
+  "state": "closed",
+  "gid": 130,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=130",
+  "owner": ""
+}

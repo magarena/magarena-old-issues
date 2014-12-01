@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "Please consider relocating the \"Incomplete\" directory out of the data (\"Magarena\") directory since it not actually distributed with each new release.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Relocate \"Incomplete\" directory.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "Type-Review"
+  ],
+  "comments": [
+    {
+      "date": "August 15, 2014 06:06:55",
+      "body": "I think it's there just for ease of moving files to a nearby folder - With the inclusion of the scripts_missing folder, this won't be getting as much use as it used to.\r\n\r\nMost of the cards here are the MagicCardList-type cards: Scry 2+, 'Looking at' cards, 'Up to' cards, and also multi-target.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 15, 2014 07:11:22",
+      "body": "I'll have a trawl through the incomplete folder, may be able to pull some out",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 16, 2014 23:20:31",
+      "body": "I am not saying you should delete it, just move it to a more appropriate directory. I just think it would be clearer and cleaner if the \"Magarena\" directory in source mirrored the same directory in a released version as much as possible.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 17, 2014 05:17:30",
+      "body": "I agree, just as it's not been used for a while, I thought it could do with a bit of a tidy-up.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 17, 2014 09:47:10",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/8d29726d734480546ad337413ae11094757636ba .\r\n\r\nI have relocated \"Incomplete\" to the source root directory (where you can find other hard to classify directories, like \"cards\", \"exp\" and \"grammar\").\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 15, 2014 16:14:11_\n\nPlease consider relocating the \"Incomplete\" directory out of the data (\"Magarena\") directory since it not actually distributed with each new release.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=654_",
+  "date": "2014-08-15T16:14:11",
+  "state": "closed",
+  "gid": 654,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=654",
+  "owner": "lodici123"
+}

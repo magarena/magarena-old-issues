@@ -1,0 +1,59 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. double click the exe and open the game (for the first time) What is the expected output? What do you see instead? The game doesnt open. There is a crash file instead. What version of the product are you using? On what operating system? using version 1.28 on windows 7 home premium If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[ceme...@gmail.com](https://code.google.com/u/102605620470174038534/)",
+  "title": "Version 1.28 doesnt work on Windows 7 home premium",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 21, 2012 23:00:09",
+      "body": "Did 1.27 work on your machine? You can download 1.27 from https://code.google.com/p/magarena/downloads/detail?name=Magarena-1.27.zip&can=1&q=",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 22, 2012 03:40:36",
+      "body": "No it didn't work. I got the same crash.log.",
+      "author": "[ceme...@gmail.com](https://code.google.com/u/102605620470174038534/)"
+    },
+    {
+      "date": "August 23, 2012 01:35:07",
+      "body": "I added some additional debugging to the logs, can replace the exe with the one from https://magarena.ci.cloudbees.com/job/Magarena-Daily/lastSuccessfulBuild/artifact/release/Magarena.exe This is our daily build that will become 1.29.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 23, 2012 01:35:46",
+      "body": "Then post the crash.log that you got from running the update exe.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 23, 2012 04:34:25",
+      "body": "I replaced the Magarena.exe with the one you gave me and ran it. Here is the crash.log after running it.\n\n**Attachment:** [crash.log](http://code.google.com/p/magarena/issues/detail?id=281#hc5)",
+      "author": "[ceme...@gmail.com](https://code.google.com/u/102605620470174038534/)"
+    },
+    {
+      "date": "August 25, 2012 17:48:26",
+      "body": "It seems there are some problem with your card scripts. Can you attach the file Magarena-1.28\\Magarena\\scripts\\Abbey_Griffin.txt here?\r\n\r\nTry installing 1.29 and see if it fixes the problem. If not, paste the crash.log here again. Thanks for your help in debugging this.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 25, 2012 18:53:02",
+      "body": "1.29 also didn't work. I will attach its (1.29's) crash.log and 1.28's Abbey_Griffin.txt.\r\n\r\nYou are welcome :)\n\n**Attachment:** [Abbey_Griffin.txt crash.log](http://code.google.com/p/magarena/issues/detail?id=281#hc7)",
+      "author": "[ceme...@gmail.com](https://code.google.com/u/102605620470174038534/)"
+    },
+    {
+      "date": "March 31, 2013 23:56:13",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [ceme...@gmail.com](https://code.google.com/u/102605620470174038534/) on August 22, 2012 10:54:51_\n\nWhat steps will reproduce the problem? 1. double click the exe and open the game (for the first time) What is the expected output? What do you see instead? The game doesnt open. There is a crash file instead. What version of the product are you using? On what operating system? using version 1.28 on windows 7 home premium If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n**Attachment:** [crash.log game.log](http://code.google.com/p/magarena/issues/detail?id=281)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=281_",
+  "date": "2012-08-22T10:54:51",
+  "state": "closed",
+  "gid": 281,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=281",
+  "owner": ""
+}

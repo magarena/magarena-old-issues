@@ -1,0 +1,40 @@
+{
+  "status": "fixed",
+  "body": "In the card explorer/deck editor if a double sided card is displayed there is currently no way to easily identify what the reverse side is. And even if you know what the transformed side is you still need to go searching in the card pool to find it.\r\n\r\nAdd an option so that if a double-sided card is selected there is way to automatically select the other side in the card pool which will also update the image in the Card Viewer.\r\n\r\nThe same applies to flip cards to a lesser degree because both states are displayed on the same side.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Add option to transform card in card explorer.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 17, 2014 13:43:49",
+      "body": "Published https://bitbucket.org/lodici/magarena/commits/0377ecd3c54691e2ceba74d7d15985f6afecff03 .\r\n\r\nClicking on a double-faced card in CardViewer will show reverse side. This simply displays the other side's image - which might be enough. It does not sync the card-pool which is made trickier because you might have a filtered card pool in which one side of the card is not included. However, even being able to switch the image is an improvement.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 17, 2014 13:57:52",
+      "body": "Same function now applies to flip cards as well.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 10, 2014 00:55:20",
+      "body": "reducing priority because clicking on a transformable card does display the other aspect so the main objective is met but will leave open since should probably show some sort of indicator (even if it is just the mouse cursor changing while over a transformable card).\n\n**Labels:** -Priority-High Priority-Medium  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 10, 2014 02:23:01",
+      "body": "Can close with this commit - https://bitbucket.org/lodici/magarena/commits/1601a8b477588bec7ae2ae2502b1ea32f87b4833 .\r\n\r\nThe mouse cursor changes to a hand pointer when over a flip or transformable card to indicate something will happen if you click the image. Also, when the cursor moves off of the CardViewer and the alternative image is displayed it automatically switches back the correct image for the selected card aspect.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 17, 2014 13:54:58_\n\nIn the card explorer/deck editor if a double sided card is displayed there is currently no way to easily identify what the reverse side is. And even if you know what the transformed side is you still need to go searching in the card pool to find it.\r\n\r\nAdd an option so that if a double-sided card is selected there is way to automatically select the other side in the card pool which will also update the image in the Card Viewer.\r\n\r\nThe same applies to flip cards to a lesser degree because both states are displayed on the same side.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=657_",
+  "date": "2014-08-17T13:54:58",
+  "state": "closed",
+  "gid": 657,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=657",
+  "owner": "lodici123"
+}

@@ -1,0 +1,39 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. clicking \"new\" in main screen\r\n2. Arena -> New Duel What is the expected output? What do you see instead? The game crashes immediately. What version of the product are you using? On what operating system? 1.19 Please provide any additional information below.",
+  "author": "[dioni...@gmail.com](https://code.google.com/u/111601779859237870204/)",
+  "title": "Can't play any games",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "October 31, 2011 11:18:19",
+      "body": "Thanks for the report and crash.log.\r\n\r\nA similar crash was reported by a user on the forum. (for reference : <a href=\" http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=73902&sid=0f85e1a5a74b0e1497a9ba118dd3b256#p73889\">link</a> He or she mentioned it had something to do with the theme used. I asked about specifics and hope to get an answer on that soon.\r\nYou could try using a different theme and see if that solves the issue.\r\n\r\nOne thing that surprises me is that I don't see the version of Magarena and other system information at the top of the crash.log file. Can you please provide us with the java version and operating system you use?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 31, 2011 11:35:55",
+      "body": "Tried all 4 themes, didn't help.\r\n\r\nIt's the newest version of Java and Windows XP SP2.",
+      "author": "[dioni...@gmail.com](https://code.google.com/u/111601779859237870204/)"
+    },
+    {
+      "date": "October 31, 2011 18:16:03",
+      "body": "Can you attach your general.cfg and duel.cfg file? This will help in our debugging. You can find them in the Magarena folder.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 28, 2012 02:16:33",
+      "body": "Three new versions have been released since this was reported. Please try the latest and open a new issue when you can still reproduce the above.\n\n**Status:** CantReproduce  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [dioni...@gmail.com](https://code.google.com/u/111601779859237870204/) on November 01, 2011 01:50:23_\n\nWhat steps will reproduce the problem? 1. clicking \"new\" in main screen\r\n2. Arena -> New Duel What is the expected output? What do you see instead? The game crashes immediately. What version of the product are you using? On what operating system? 1.19 Please provide any additional information below.\n\n**Attachment:** [crash.log](http://code.google.com/p/magarena/issues/detail?id=83)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=83_",
+  "date": "2011-11-01T01:50:23",
+  "state": "closed",
+  "gid": 83,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=83",
+  "owner": ""
+}

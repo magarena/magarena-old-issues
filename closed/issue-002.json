@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "Requested by Boom2010 on forum.\r\n\r\nIt would be really neat to have some sort of historical win/loss record.\r\n\r\nMain parameters recorded might be :\r\n- Date\r\n- Win or loss\r\n- Difficulty level\r\n\r\nAfter that :\r\n- color deck user (one, two or three)\r\n- color deck AI (one, two or three)\r\n- cube\r\n- initial life\r\n- etc\r\n\r\nThere could also be statistics :\r\n- number of played games and duels\r\n- number and percentage of wins \r\n- average number of game turns\r\n- average remaining life when winning\r\n- average AI life when losing\r\n- etc",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Add more historical data overview to game",
+  "labels": [
+    "imported",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "December 08, 2011 07:06:06",
+      "body": "Revision c96844bd5e added a history panel with basic statistics.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 09, 2011 07:50:20",
+      "body": "Revision c8a45ceeac added average turns played, remaining life for player and remaining life for AI. Revision a047ac9f6a added most used color.\r\n\r\nI'm reluctant about storing the date as that would lead to an ever growing file and I don't really see the benefit.\n\n**Summary:** Add more historical data overview to game  \n  **Labels:** -Priority-Medium Priority-Low  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "November 09, 2013 05:51:12",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:25:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 20, 2011 13:52:38_\n\nRequested by Boom2010 on forum.\r\n\r\nIt would be really neat to have some sort of historical win/loss record.\r\n\r\nMain parameters recorded might be :\r\n- Date\r\n- Win or loss\r\n- Difficulty level\r\n\r\nAfter that :\r\n- color deck user (one, two or three)\r\n- color deck AI (one, two or three)\r\n- cube\r\n- initial life\r\n- etc\r\n\r\nThere could also be statistics :\r\n- number of played games and duels\r\n- number and percentage of wins \r\n- average number of game turns\r\n- average remaining life when winning\r\n- average AI life when losing\r\n- etc\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=2_",
+  "date": "2011-05-20T13:52:38",
+  "state": "closed",
+  "gid": 2,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=2",
+  "owner": "melvinzh...@gmail.com"
+}

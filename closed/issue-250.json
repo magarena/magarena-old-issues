@@ -1,0 +1,24 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Going to have to look through the game log. \r\nBut I blocked AIs 3/4 creature with a 2/3 and a 3/3 and both mine died. No first or double strike in play that I was aware of. \r\nThe only thing I can think of is he had Blade Splicer which gives Golems first strike but his attacker was Hero of Blade and human, but maybe it saw it wrong? What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "Someone got first strike and they shouldn't have?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 14, 2014 16:53:54",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on July 08, 2012 03:27:00_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Going to have to look through the game log. \r\nBut I blocked AIs 3/4 creature with a 2/3 and a 3/3 and both mine died. No first or double strike in play that I was aware of. \r\nThe only thing I can think of is he had Blade Splicer which gives Golems first strike but his attacker was Hero of Blade and human, but maybe it saw it wrong? What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=250)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=250_",
+  "date": "2012-07-08T03:27:00",
+  "state": "closed",
+  "gid": 250,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=250",
+  "owner": ""
+}

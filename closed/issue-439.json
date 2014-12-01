@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "card explorer: table titlebar displaying total cards is missing (cf. deck editor).",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "card explorer: table titlebar displaying total cards is missing.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 09, 2013 08:34:52",
+      "body": "**Status:** Started  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 10, 2013 03:01:08",
+      "body": "Fixed in build 1.44.615 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/615/ ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on December 06, 2013 22:32:35_\n\ncard explorer: table titlebar displaying total cards is missing (cf. deck editor).\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=439_",
+  "date": "2013-12-06T22:32:35",
+  "state": "closed",
+  "gid": 439,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=439",
+  "owner": "lodici123"
+}

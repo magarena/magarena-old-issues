@@ -1,0 +1,74 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Play with either of the Monte-Carlo AIs (either non-cheating or cheating) 2. 3. What is the expected output? What do you see instead? I was expecting full parallel search. In fact, the wiki reads:\r\n\r\n\"Parallelization\r\nRoot parallelization is a simple and easy way to utilize multiple core. The idea is create several instances of the MCTS algorithm and each one builds up its own game tree independently. At the end, we combine the data gathering for the children of the root and select the best move.\"\r\n\r\nInstead:\r\n- For the cheating Monte-Carlo AI, 2 cores are used (instead of 4 thanks to hyperthreading). While this may be normal, this is quite unusual.\r\n- For the non-cheating Monte-Carlo AI, only 1 core is used. What version of the product are you using? On what operating system? Magarena 1.37, Mac OS X 10.7.5. If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)",
+  "title": "Monte-Carlo AI not fully parallel",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "April 28, 2013 06:52:40",
+      "body": "PS: In other words, the cheating Monte-Carlo AI uses about 50 % of the maximum power, while the non-cheating one only uses about 25 %.",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "April 28, 2013 18:53:17",
+      "body": "The extensions are still in the experimental stage, they are not in the release. Apologies for the confusion on the wiki page, I've made it clearer now.\r\n\r\nHowever, your observation is interesting, as both versions should only be running on 1 thread. I'll look into this further.\r\n\r\nBtw, how did you find the non cheating MCTS AI?\n\n**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 28, 2013 19:22:55",
+      "body": "Thank you!\r\n\r\nI had a closer look at the cheating Monte-Carlo AI and checked which processes where using CPU time: Magarena does use a single core on my machine (I'm not sure why I saw more activity before; this time I saw this happen only once or twice, and not directly because of Magarena: indexing programs started working and stopped at about the same time as Magarena [QuickSilver and mdworker]).",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "March 12, 2014 06:16:32",
+      "body": "I'm happy to report that the experimental MCTSAI in magic.ai.next https://code.google.com/p/magarena/source/browse/src/magic/ai/next/MCTSAI.java is able to use all cores on a machine. The trick is to farm out the random play part of the algorithm to a separate core, so the main algorithm can continue to grow another part of the tree.\r\n\r\nOn a quad core machine, it able to achieve a 3x increase in number of simulations compare to the current single core one. More AI comparisons is needed to figure out if the new version wins more often than the current one.\n\n**Status:** Started  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 12, 2014 08:00:39",
+      "body": "Wow, congratulations! :D\r\n\r\nI'm crossing my fingers, for the AI level. :)",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "March 12, 2014 23:39:21",
+      "body": "Are you planning to make this available from the UI? It would be interesting to see how it runs on my 4-core (8 threads) Intel Core i7 860.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 13, 2014 00:47:13",
+      "body": "If all goes well, the parallel version will replace the current version for the March release.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 14, 2014 00:10:05",
+      "body": "Thanks. I look forward to pitting my wits against an even more intelligent Monty! Great work on the AI, BTW - it is why I play Magarena.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 30, 2014 07:41:34",
+      "body": "1.48 is released with parallel monte carlo tree search. See links on homepage.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 30, 2014 08:29:16",
+      "body": "I would be very curious to see the Zermelo score of the new, parallel Monte-Carlo AI!",
+      "author": "[eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [eolebi...@gmail.com](https://code.google.com/u/111792144621865451883/) on April 28, 2013 21:50:39_\n\nWhat steps will reproduce the problem? 1. Play with either of the Monte-Carlo AIs (either non-cheating or cheating) 2. 3. What is the expected output? What do you see instead? I was expecting full parallel search. In fact, the wiki reads:\r\n\r\n\"Parallelization\r\nRoot parallelization is a simple and easy way to utilize multiple core. The idea is create several instances of the MCTS algorithm and each one builds up its own game tree independently. At the end, we combine the data gathering for the children of the root and select the best move.\"\r\n\r\nInstead:\r\n- For the cheating Monte-Carlo AI, 2 cores are used (instead of 4 thanks to hyperthreading). While this may be normal, this is quite unusual.\r\n- For the non-cheating Monte-Carlo AI, only 1 core is used. What version of the product are you using? On what operating system? Magarena 1.37, Mac OS X 10.7.5. If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=344_",
+  "date": "2013-04-28T21:50:39",
+  "state": "closed",
+  "gid": 344,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=344",
+  "owner": ""
+}

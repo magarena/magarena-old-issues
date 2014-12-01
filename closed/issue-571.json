@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1.Attack player in control of Master of Diversion\r\n2.Defending player will be able to tap as many creatures as were declared attacking as though they were each a Master of Diversion themselves. 3. What is the expected output? What do you see instead? Master of Diversion should only trigger when the creature Master of Diversion is declared attacking.  While the intended effect does trigger when MoD declares an attack, there is the added/unintented benefit of triggering anytime opponent creatures attack. What version of the product are you using? On what operating system? 1.48, Ubuntu If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Attachment storage is full. Please provide any additional information below.",
+  "author": "[zer...@gmail.com](https://code.google.com/u/113033908417053535498/)",
+  "title": "Master of Diversion triggers on opponent's attack",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 01, 2014 12:13:35",
+      "body": "Fixed in revision 79c71fe6222d\n\n**Status:** Fixed  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [zer...@gmail.com](https://code.google.com/u/113033908417053535498/) on April 02, 2014 02:52:13_\n\nWhat steps will reproduce the problem? 1.Attack player in control of Master of Diversion\r\n2.Defending player will be able to tap as many creatures as were declared attacking as though they were each a Master of Diversion themselves. 3. What is the expected output? What do you see instead? Master of Diversion should only trigger when the creature Master of Diversion is declared attacking.  While the intended effect does trigger when MoD declares an attack, there is the added/unintented benefit of triggering anytime opponent creatures attack. What version of the product are you using? On what operating system? 1.48, Ubuntu If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Attachment storage is full. Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=571_",
+  "date": "2014-04-02T02:52:13",
+  "state": "closed",
+  "gid": 571,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=571",
+  "owner": "ShawnieBoyUK"
+}

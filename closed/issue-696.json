@@ -1,0 +1,71 @@
+{
+  "status": "cantreproduce",
+  "body": "Was searching for cards and found that the search string \"equipped\" returns a lot of auras, none of which have 'equipped' in their text. I've a feeling it's somehow matching \"enchanted\" as well for some reason?\r\n\r\nNo other filters.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Searching for the string \"Equipped\" lists Auras too",
+  "labels": [
+    "imported",
+    "Component-Logic",
+    "Component-UI",
+    "Priority-Low",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 26, 2014 23:43:38",
+      "body": "Strange. I get 133 cards, all of which appear on first glance to have \"equipped\" somewhere in the oracle text. No aura's in the sub-type, the majority are Equipment.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 27, 2014 03:36:47",
+      "body": "Nope, I get 526 cards.\r\n\r\nCard Explorer, and the word 'equipped' with no punctuation or spaces.\r\n\r\nFirst card in list is Aboshan's Desire",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 27, 2014 03:42:12",
+      "body": "Searching for 'enchanted' lists 952 cards, Accorder's Shield appearing in the list.\r\n\r\nReally don't know what's going on here... >.<",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 27, 2014 03:58:34",
+      "body": "Running the latest build, the explorer shows \r\nCards = 14,260\r\nPlayable = 8,500\r\nUnimplemented = 5,760\r\n\r\nSearch filter = \"equipped\"\r\nCards = 198\r\nPlayable = 133\r\nUnimplemented = 65\r\n\r\nSearch filter = \"enchanted\"\r\nCards = 848\r\nPlayable = 500\r\nUnimplemented = 348\r\n\r\nCan you confirm you have the same matching non-filtered totals. Also, which version of the JRE is being used when Magarena is running - 1.7 or 1.8? Also, which OS and locale?",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 27, 2014 04:09:13",
+      "body": "OK, Latest build from me:\r\n\r\nCards = 14,260\r\nPlayable = 8,500\r\nUnimplemented = 5,760\r\n\r\nSearch filter = \"equipped\"\r\nCards = 526\r\nPlayable = 461\r\nUnimplemented = 65\r\n\r\nSearch filter = \"enchanted\"\r\nCards = 952\r\nPlayable = 604\r\nUnimplemented = 348\r\n\r\nUsing 1.8 JRE (Will give 1.7 a go in a sec. Win 7)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 27, 2014 05:13:52",
+      "body": "Was hoping the java would be the culprit, but get the same running in 1.7\r\nAlthough not knowing too much about java, even though it's running in 1.7 as java home, the 'System' java in the java config only displays 1.8 (although ran with it unchecked)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 27, 2014 05:37:00",
+      "body": "I've downloaded and installed the latest build as a new user, and the problem isn't there. (Running in 1.8)\r\n\r\nI know I've had some strange things working with Eclipse before, but this is just bizarre! It's always a clean build, and for something so specific to be wrong, just... lost for words.\r\n\r\nI'm happy if you want to close this. I'll just bear in mind it's one of the foibles of my builds...",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 27, 2014 05:40:46",
+      "body": "I recently installed JDK 8 which also installed JRE 8. No matter what I did in the Java config it always ended up running JRE 8 even though I had unchecked it and set 1.7 as default. The only way to fix it was to uninstall JRE 8. Can you confirm that when Magarena is running the JRE 1.7 **process** (not just the config setting) and not 1.8 is running. I use Process Explorer but task manager will also show it by clicking on the Processes tab, finding \"java.exe\", right clicking and selecting properties. The location should include the version (eg. on mine it is C:\\Program Files\\Java\\jdk1.7.0_60\\jre\\bin).\r\n\r\nAlso, not sure how you get Magarena 1.54 to run with 1.8. I tried \r\n\"C:\\Program Files\\Java\\jdk1.8.0_20\\bin\\java.exe\" -splash:wizard.png -jar Magarena.exe\r\n\r\nbut it falls over straightway with what looks like a groovy error -\r\n\r\nCRASH REPORT FOR MAGARENA THREAD Thread[main,5,main]\r\nCREATED ON 2014/09/27 13:38:29\r\nMAGARENA VERSION 1.54, JRE 1.8.0_20, OS Windows 7_6.1 amd64\r\n================================\r\nUsed Memory: 7M\r\nFree Memory: 115M\r\nTotal Memory: 123M\r\nMax Memory: 1819M\r\n================================\r\n\r\n\r\nException from controller.runGame: Bad <init> method call from inside of a branch\r\nException Details:\r\n  Location:\r\n    org/codehaus/groovy/control/customizers/ASTTransformationCustomizer.<init>(Ljava/lang/Class;)V @155: invokespecial\r\n  Reason:\r\n    Error exists in the bytecode",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 27, 2014 05:48:01",
+      "body": "my .bat for 1.8:\r\n\r\njava -Ddebug=true -DshowStats=true -Xms512M -Xmx1024M -noverify -jar Magarena.jar\r\n\r\nCould be the issue.\r\n\r\n1.7 process was running (Was using VisualVM but just confirmed now in processes)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 30, 2014 04:32:22",
+      "body": "seemingly related to eclipse configuration.\n\n**Status:** CantReproduce  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on September 24, 2014 04:16:52_\n\nWas searching for cards and found that the search string \"equipped\" returns a lot of auras, none of which have 'equipped' in their text. I've a feeling it's somehow matching \"enchanted\" as well for some reason?\r\n\r\nNo other filters.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=696_",
+  "date": "2014-09-24T04:16:52",
+  "state": "closed",
+  "gid": 696,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=696",
+  "owner": ""
+}

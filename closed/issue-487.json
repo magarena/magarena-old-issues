@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "Currently, when I start Magarena it says it is loading 5906 cards but the card explorer shows 5778. Why and which one is correct?",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Discrepancy between card count in splash and card explorer/deck editor.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 20, 2014 19:55:02",
+      "body": "Posted this on Google Groups by accident - The lower number is the correct card count. The higher number is counting the .groovy files as well as the .txt files.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "February 20, 2014 19:57:12",
+      "body": "5906 includes tokens, 5778 excludes tokens.\n\n**Labels:** -Type-Defect Type-  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 20, 2014 22:01:38",
+      "body": "Thanks for the explanation - just to confirm it loads all \".txt\" (no \".groovy\") files from the \"scripts\" directory but was not excluding token files. I have updated the calculation for the splash message to filter out tokens assuming that a token file has \"token\" in the filename. Interestingly, it still seems to be out by one or two which might be down to an incorrectly named token file.\n\n**Status:** Fixed  \n  **Labels:** -Type- Type-Defect  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "February 20, 2014 22:19:11",
+      "body": "There was one last token yet to be converted to the new naming convention, Germ. I've fixed this in https://code.google.com/p/magarena/source/detail?r=391ec29392b813692b19b6407be710f2b36ee71d The two number match now.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on February 21, 2014 10:45:11_\n\nCurrently, when I start Magarena it says it is loading 5906 cards but the card explorer shows 5778. Why and which one is correct?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=487_",
+  "date": "2014-02-21T10:45:11",
+  "state": "closed",
+  "gid": 487,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=487",
+  "owner": "lodici123"
+}

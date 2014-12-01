@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Cards and spells that allow a card to be put onto the battlefield from the hand, should only have the chosen card chosen on resolution of the spell or ability, not when it is activated.\r\n\r\nThis non-targeted option is already defined with SearchOntoBattlefield and SearchIntoHand effects, but not from the hand.\r\n\r\nA simple example would be activating Elvish Piper, opponent bounces a creature in response. When elvish piper resolves, should have the choice to play the bounced creature.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "\"a card from your hand onto the battlefield\" effects",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 18, 2014 18:50:56",
+      "body": "Implemented in Revision de3e88887719\n\n**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on March 19, 2014 07:32:32_\n\nCards and spells that allow a card to be put onto the battlefield from the hand, should only have the chosen card chosen on resolution of the spell or ability, not when it is activated.\r\n\r\nThis non-targeted option is already defined with SearchOntoBattlefield and SearchIntoHand effects, but not from the hand.\r\n\r\nA simple example would be activating Elvish Piper, opponent bounces a creature in response. When elvish piper resolves, should have the choice to play the bounced creature.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=529_",
+  "date": "2014-03-19T07:32:32",
+  "state": "closed",
+  "gid": 529,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=529",
+  "owner": "ShawnieBoyUK"
+}

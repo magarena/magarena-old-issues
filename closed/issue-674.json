@@ -1,0 +1,29 @@
+{
+  "status": "fixed",
+  "body": "Fling will accept a sacrifice as an additional cost, then does nothing.\r\n\r\nInitially reported by Aswan Jaguar http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=159515#p159513",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Fling not dealing damage",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 31, 2014 15:47:58",
+      "body": "fixed in Revision: dc5216e8cba4\n\n**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 31, 2014 18:12:40",
+      "body": "bug is in MagicSacrificePermanentsEvent, should use addFirstEvent not addEvent for chained events. Fixed in https://code.google.com/p/magarena/source/detail?r=a43ec67c8f815a8451557432aa00d7cd2522e2dd If the card scripting is buggy, it is better to fix the card scripting than convert individual cards back to groovy code.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on September 01, 2014 05:07:10_\n\nFling will accept a sacrifice as an additional cost, then does nothing.\r\n\r\nInitially reported by Aswan Jaguar http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=159515#p159513\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=674_",
+  "date": "2014-09-01T05:07:10",
+  "state": "closed",
+  "gid": 674,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=674",
+  "owner": "ShawnieBoyUK"
+}

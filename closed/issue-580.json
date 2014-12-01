@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "I don't know why firemind isn't properly forwarding my submissions - but nevermind.\r\n\r\n.txt\r\n\r\nname=Psychic Drain\r\nurl= http://magiccards.info/query?q=%21psychic%20drain image= http://mtgimage.com/card/psychic%20drain.jpg value=3.470\r\nrarity=R\r\ntype=Sorcery\r\ncost={X}{U}{B}\r\ntiming=main\r\nrequires_groovy_code\r\n\r\n.groovy\r\n\r\n[\r\n    new MagicSpellCardEvent() {\r\n        @Override\r\n        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {\r\n            final int amount=payedCost.getX();\r\n            return new MagicEvent(\r\n                cardOnStack,\r\n                MagicTargetChoice.NEG_TARGET_PLAYER,  \r\n                amount,\r\n                this,\r\n                \"Target player puts the top \"+amount+\" cards of his or her library into his or her graveyard and PN gains \"+amount+\" life.\"\r\n            );\r\n        }\r\n        @Override\r\n        public void executeEvent(final MagicGame game, final MagicEvent event) {\r\n            event.processTargetPlayer(game, {\r\n                final MagicPlayer player ->\r\n                game.doAction(new MagicMillLibraryAction(player,event.getRefInt()));\r\n            });\r\n            game.doAction(new MagicChangeLifeAction(event.getPlayer(), event.getRefInt()));\r\n        }\r\n    }\r\n]",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "fix Psychic Drain missing .txt",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 07, 2014 00:43:24",
+      "body": "Thanks for including the files. I've reported the missing file bug to mike who maintains firemind.ch\r\n\r\nUsually the file will appear later together with another submission.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 07, 2014 01:15:22",
+      "body": "This issue was closed by revision 6969029f70a5 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 07, 2014 01:16:09",
+      "body": "Note that amount can be replaced by RN and the ChangeLifeAction should be part of processTargetPlayer so that if the target player becomes an illegal target upon resolution neither action takes place.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 07, 2014 01:25:01",
+      "body": "understood. I'll keep that in mind",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on April 07, 2014 15:40:05_\n\nI don't know why firemind isn't properly forwarding my submissions - but nevermind.\r\n\r\n.txt\r\n\r\nname=Psychic Drain\r\nurl= http://magiccards.info/query?q=%21psychic%20drain image= http://mtgimage.com/card/psychic%20drain.jpg value=3.470\r\nrarity=R\r\ntype=Sorcery\r\ncost={X}{U}{B}\r\ntiming=main\r\nrequires_groovy_code\r\n\r\n.groovy\r\n\r\n[\r\n    new MagicSpellCardEvent() {\r\n        @Override\r\n        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {\r\n            final int amount=payedCost.getX();\r\n            return new MagicEvent(\r\n                cardOnStack,\r\n                MagicTargetChoice.NEG_TARGET_PLAYER,  \r\n                amount,\r\n                this,\r\n                \"Target player puts the top \"+amount+\" cards of his or her library into his or her graveyard and PN gains \"+amount+\" life.\"\r\n            );\r\n        }\r\n        @Override\r\n        public void executeEvent(final MagicGame game, final MagicEvent event) {\r\n            event.processTargetPlayer(game, {\r\n                final MagicPlayer player ->\r\n                game.doAction(new MagicMillLibraryAction(player,event.getRefInt()));\r\n            });\r\n            game.doAction(new MagicChangeLifeAction(event.getPlayer(), event.getRefInt()));\r\n        }\r\n    }\r\n]\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=580_",
+  "date": "2014-04-07T15:40:05",
+  "state": "closed",
+  "gid": 580,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=580",
+  "owner": ""
+}

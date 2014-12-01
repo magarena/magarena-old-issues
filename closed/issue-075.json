@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. AI has more than one creature and lands untapped in 2nd main phase and an equipment\r\n2. AI keeps moving equipment between creatures until they are run out of mana 3. What is the expected output? What do you see instead? AI would select most appropriate creature and equip it there and end turn. What version of the product are you using? On what operating system? MagArena 1.18 and Windows XP SP3 Please provide any additional information below.",
+  "author": "[zarob...@gmail.com](https://code.google.com/u/110807682538348407793/)",
+  "title": "Consistently moving equipment",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "October 14, 2011 01:50:23",
+      "body": "Thanks again for reporting an issue.\r\n\r\nThe moving of equipment between creatures by the AI is a known issue ( issue 26 ) and one we were finally able to solve not too long ago. That fix could be improved upon but it substantially improves how the AI handles equipment. Fix will be in 1.19.\r\n\r\nClosing as Duplicate.\n\n**Status:** Duplicate  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [zarob...@gmail.com](https://code.google.com/u/110807682538348407793/) on October 14, 2011 16:33:55_\n\nWhat steps will reproduce the problem? 1. AI has more than one creature and lands untapped in 2nd main phase and an equipment\r\n2. AI keeps moving equipment between creatures until they are run out of mana 3. What is the expected output? What do you see instead? AI would select most appropriate creature and equip it there and end turn. What version of the product are you using? On what operating system? MagArena 1.18 and Windows XP SP3 Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=75_",
+  "date": "2011-10-14T16:33:55",
+  "state": "closed",
+  "gid": 75,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=75",
+  "owner": ""
+}

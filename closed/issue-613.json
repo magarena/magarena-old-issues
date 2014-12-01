@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "Would it be possible to return the 'New' card filter to the Deck Editor?\r\n\r\nI personally find it handy for testing new scripts in decks instead of building a Test.java",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "New card filter",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "June 15, 2014 12:05:24",
+      "body": "Sure, I will look into it.\n\n**Status:** Accepted  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "July 02, 2014 04:39:54",
+      "body": "Fixed. I have restored the Status filter to the deck editor screen. ( https://bitbucket.org/lodici/magarena/commits/892e254545ac3e01c6c2b8a2f74e8af03cbbaba4 ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on June 15, 2014 19:57:10_\n\nWould it be possible to return the 'New' card filter to the Deck Editor?\r\n\r\nI personally find it handy for testing new scripts in decks instead of building a Test.java\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=613_",
+  "date": "2014-06-15T19:57:10",
+  "state": "closed",
+  "gid": 613,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=613",
+  "owner": ""
+}

@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "When importing from a previous version the background is not updated until after a restart.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Not refreshing background after import",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 07, 2014 01:42:03",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/8b928f4d4ce78bdc51e851953f5bb8ed89539a35 .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on July 28, 2014 19:02:21_\n\nWhen importing from a previous version the background is not updated until after a restart.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=628_",
+  "date": "2014-07-28T19:02:21",
+  "state": "closed",
+  "gid": 628,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=628",
+  "owner": "lodici123"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "fixed",
+  "body": "When prompted to 'choose a target' which includes a player, or solely a player, the green highlight on a player's icon isn't removed until your next turn.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Choose Target Player Highlight",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 28, 2014 05:52:06",
+      "body": "It would be *really* helpful if you could provide a card name, deck or test I could use so I don't have to go hunting in order to replicate. Thanks.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 28, 2014 06:03:57",
+      "body": "Well, a card search for 'target' and 'player' would do the trick. ;)\r\n\r\nHere's a test deck, just make sure sensible choices are turned off.\r\n\r\n# 3 creatures\r\n4 Acolyte of Xathrid\r\n4 Bile Urchin\r\n4 Boggart Forager\r\n\r\n# 3 spells\r\n4 Barrage of Expendables\r\n4 Blaze\r\n4 Burst Lightning\r\n\r\n# 2 lands\r\n8 Mountain\r\n8 Swamp",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "September 30, 2014 04:30:41",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/52b9d1d67be2f3733673d26f8a01f8e9e452085a\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on September 28, 2014 20:42:04_\n\nWhen prompted to 'choose a target' which includes a player, or solely a player, the green highlight on a player's icon isn't removed until your next turn.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=704_",
+  "date": "2014-09-28T20:42:04",
+  "state": "closed",
+  "gid": 704,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=704",
+  "owner": ""
+}

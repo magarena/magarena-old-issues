@@ -1,0 +1,59 @@
+{
+  "status": "verified",
+  "body": "Requested on forum by LSK. Carried over from arena-card-game",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Improve display of game turn structure and current phase",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "May 19, 2011 22:52:51",
+      "body": "**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 28, 2011 22:27:32",
+      "body": "Etherion Goh on FB commented: i kinda wish the turn phase indication was a little clearer, accidentally skipped my turn in first play thinking it was one of opponents phase =S",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 15, 2011 20:50:00",
+      "body": "It's easy to get confused because actions happen faster than you can possibly notice. I was attacking and then all of a sudden my attacking creature is dead and I had to look in the log to see what happened. When I ended my turn, it's suddenly my turn again and it took me awhile to notice that one of my cards was bounced back to my hand.\r\n\r\nPretty much all of this confusion and constantly looking at the log can be fixed if the game always paused when the computer performed an action (regardless of whether you have a card to respond with).",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "June 14, 2012 11:10:35",
+      "body": "I strongly agree with this. I frequently skip a turn or miss a card being played. I learned to keep my eyes in the lower left corner of the screen at all times, but it's just not fun. This means I have to keep my eyes away from the playing board.\r\n\r\nAn indicator like in Shandalar would be very welcome: http://www.ninesages.org/RPGMXP/MagicShandalar_Partie.jpg Forge uses the same system, because it works well: http://3.bp.blogspot.com/-YCBsMRvKDQk/T1JrA2inI1I/AAAAAAAABuc/ImEmiFFk43k/s1600/forge%2Bscreenshot.png Overall I consider Shandalar to be clearer and more user-friendly. The two things Shandalar lacks are undo and more convenient paying of spell costs. Shandalar uses cropped card pictures with names, and it's readable even in low resolution. Magarena has high resolution (1680x1050 here) and I can neither see pictures nor card titles clearly. I think describing Magarena as user-friendly is a misunderstanding. That's not to say it's not a fun game and I'm not impressed with AI.",
+      "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)"
+    },
+    {
+      "date": "May 14, 2013 01:47:01",
+      "body": "miloir@gmail.com via mailing list commented: I feel very frustrated because I have to pay close attention when AI is making action. If I look away at the wrong second I come back to game and find it strange that I am missing a creature for instance. I have to track back through history to find out what happened. I can only suggest that all actions are shown front and center like in microprose version, where it waits for your approval for every action. It is annoying to have to say \"ok\" every time, but it is worse to have things happen that you don't know about when you look away from game. On a related note, it is not a good design (imo) for the game messages to be on the left side -- they are important questions and confirmations that belong in the center of the user's attention (again microprose reference). I feel almost queasy & disoriented having to focus 90% of my attention on a small area of the side of my screen.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 28, 2013 17:59:22",
+      "body": "inspired from Magic the Gathering Planeswalkers series games, putting a delay progress bar seemed helps a lot. player can enjoy their game without have to press \"next\" as often, since most of them ran by the auto skip phase feature.",
+      "author": "[huanghon...@gmail.com](https://code.google.com/u/117260737072923055970/)"
+    },
+    {
+      "date": "November 09, 2013 05:40:34",
+      "body": "Fixed in 1.44 with change in UI that always shows the log using the space above the stack.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:24:22",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 20, 2011 13:51:23_\n\nRequested on forum by LSK. Carried over from arena-card-game\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=1_",
+  "date": "2011-05-20T13:51:23",
+  "state": "closed",
+  "gid": 1,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=1",
+  "owner": "melvinzh...@gmail.com"
+}

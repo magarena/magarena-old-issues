@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "Monte Carlo AI keeps re-equipping equipments on the same creature.",
+  "author": "[BlueTemp...@gmail.com](https://code.google.com/u/106469047315539476308/)",
+  "title": "AI wasting mana on equipment",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "February 06, 2012 09:08:46",
+      "body": "Thank you for the report.\r\n\r\nThis might be related to an issue we hope is resolved ( issue 26 ). Now, I'm having a hard time trying to reproduce this. I played multiple test games and in those the MCTS AI doesn't do what you describe. That doesn't mean I think it can't be, but it means I'll need more details of what the game looked like when you saw this happening. Things like the card it kept re-equipping, what equipment was it, remaining life, anything that can help us reproduce this issue will get us closer to a possible solution.\r\n\r\nThanks.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 08, 2012 16:36:14",
+      "body": "It had a generated elf deck, I don't really remember anything else, IIRC it was 2 equipments : one that makes you draw cards when the creature deals damage to the opponent, and one that gives infect.",
+      "author": "[BlueTemp...@gmail.com](https://code.google.com/u/106469047315539476308/)"
+    },
+    {
+      "date": "September 29, 2012 22:20:32",
+      "body": "**Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "June 07, 2013 19:01:06",
+      "body": "Equipment now cannot be equipped on same permanent\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BlueTemp...@gmail.com](https://code.google.com/u/106469047315539476308/) on February 05, 2012 07:45:45_\n\nMonte Carlo AI keeps re-equipping equipments on the same creature.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=154_",
+  "date": "2012-02-05T07:45:45",
+  "state": "closed",
+  "gid": 154,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=154",
+  "owner": ""
+}

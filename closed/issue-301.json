@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have a Blade Splicer in play\r\n2. Cast a Restoration Angel\r\n3. Target the Blade Splicer's golem token with the Angel's comes-into-play ability What is the expected output? What do you see instead? The golem should vanish as soon as it's exiled. Instead, it returns to play, as if it was a card. What version of the product are you using? On what operating system? 1.30, OS X",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Restoration Angel returns tokens to the battlefield after blinking",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 21, 2012 04:39:26",
+      "body": "This issue was closed by revision 0649137ddd8b .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 21, 2012 04:40:14",
+      "body": "Thanks for the report. The bug is fixed. Problem was that Restoration Angel wasn't checking whether card has been removed from exile.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on October 05, 2012 02:02:24_\n\nWhat steps will reproduce the problem? 1. Have a Blade Splicer in play\r\n2. Cast a Restoration Angel\r\n3. Target the Blade Splicer's golem token with the Angel's comes-into-play ability What is the expected output? What do you see instead? The golem should vanish as soon as it's exiled. Instead, it returns to play, as if it was a card. What version of the product are you using? On what operating system? 1.30, OS X\n\n\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=301_",
+  "date": "2012-10-05T02:02:24",
+  "state": "closed",
+  "gid": 301,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=301",
+  "owner": ""
+}

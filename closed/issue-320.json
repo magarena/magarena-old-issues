@@ -1,0 +1,45 @@
+{
+  "status": "fixed",
+  "body": "muaddib @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=106533#p106533 reports\r\n\r\nAfter a lot of games numbers of attack/defence disappers.\r\nNumbers appear only after restart game.\r\n\r\nscreenshot: http://www.slightlymagic.net/forum/download/file.php?id=8779&mode=view",
+  "author": "[mel...@hoiio.com](https://code.google.com/u/108102599290198443803/)",
+  "title": "pt numbers does not appear correctly in UI",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:47:19",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "February 02, 2014 12:38:47",
+      "body": "I think I may have accidentally found a fix for this - I noticed that the line thickness for the pt box and numbers is modified when a card in hand preceding it is highlighted as playable. (You can see the thickness change, it's only slight, but noticeable) - I would assume that after a lot of games this may be corrupting it?",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 09:18:00",
+      "body": "**Status:** CantReproduce  \n  **Owner:** lodici123  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 01, 2014 03:32:45",
+      "body": "Reproduced shawnie's issue (not the original). It seems to be related specifically to the \"border\" highlight since it does not happen with the \"overlay\" or \"none\".\n\n**Status:** Accepted  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 01, 2014 04:56:16",
+      "body": "fixed the p/t border issue at https://bitbucket.org/lodici/magarena/commits/6352aa529474b75f84c884c52639a4323c96407c .\r\n\r\nI don't this is related to the orignal problem which looks more like a resources-limit-exceeded type error. The amount of memory allocated to the VM has since been increased and it has not be reproduced to my knowledge so I think it is safe to close this issue.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [mel...@hoiio.com](https://code.google.com/u/108102599290198443803/) on January 08, 2013 15:19:20_\n\nmuaddib @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=106533#p106533 reports\r\n\r\nAfter a lot of games numbers of attack/defence disappers.\r\nNumbers appear only after restart game.\r\n\r\nscreenshot: http://www.slightlymagic.net/forum/download/file.php?id=8779&mode=view\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=320_",
+  "date": "2013-01-08T15:19:20",
+  "state": "closed",
+  "gid": 320,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=320",
+  "owner": "lodici123"
+}

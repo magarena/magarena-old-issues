@@ -1,0 +1,54 @@
+{
+  "status": "verified",
+  "body": "Ghitu Slinger's echo cost is 3GG instead of its cost 2R",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Echo cost bug",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 02, 2011 08:00:20",
+      "body": "I looked at the script (and code behind that), played a test game and I can't reproduce this bug. The game correctly asks if I want to pay 2R for the echo cost.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 02, 2011 08:56:36",
+      "body": "I'll try to do it again.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 02, 2011 10:18:52",
+      "body": "Thanks, yeah please do because there is a weird bug reported where the wrong type of mana is being asked ( issue 87 ). This may be another occurrence of that bug, but I'm guessing here as I have never been able to reproduce that one either.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 02, 2011 11:09:39",
+      "body": "It's weird - now the echo cost is 4RR\n\n**Attachment:** [ghitu bug 1.JPG](http://code.google.com/p/magarena/issues/detail?id=106#hc4)",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 03, 2011 07:31:10",
+      "body": "This issue was closed by revision 9a1b08ab7f2b .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 03, 2011 07:33:05",
+      "body": "This was caused by echo costs from multiple cards interfering with each other.\r\nThanks for noticing the issue.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on December 01, 2011 20:47:15_\n\nGhitu Slinger's echo cost is 3GG instead of its cost 2R\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=106_",
+  "date": "2011-12-01T20:47:15",
+  "state": "closed",
+  "gid": 106,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=106",
+  "owner": ""
+}

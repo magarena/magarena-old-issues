@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have Parallax Nexus in play\r\n2. Click it to activate its ability. What is the expected output? What do you see instead? Expected: computer exiles a card from its hand. The card should appear in Exhiled list, and the number of cards in hand should decrease.\r\n\r\nActual: when Parallax Nexus is clicked, two things happen. First, the message \"Computer exiles a card from his or her hand\" is placed on the stack. Second, the game prompts \"Choose a card from your hand\" and waits for me to choose a card. When I do choose a card at this point, a fade counter is removed from Parallax Nexus, but nothing else appears to happen: all the cards remain in my hand, the computer still has the same number of cards it had before, and no cards appear in either Exiled list.\r\n\r\nNothing interesting in game.log:\r\n\r\nLOG (P): Put Parallax Nexus onto the battlefield. Parallax Nexus enters the battlefield with 5 fade counters on it.\r\nLOG (P): Remove a charge counter from Parallax Nexus. Play activated ability of Parallax Nexus.\r\nLOG (C): Computer exiles a card from his or her hand. What version of the product are you using? On what operating system? Magarena 1.37 on Windows 7",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Parallax Nexus ability doesn't seem to work",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "May 11, 2013 07:12:31",
+      "body": "This issue was closed by revision ef432d535f08 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 11, 2013 07:12:42",
+      "body": "Thanks for the bug report, fixed for the next release.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on May 11, 2013 21:01:16_\n\nWhat steps will reproduce the problem? 1. Have Parallax Nexus in play\r\n2. Click it to activate its ability. What is the expected output? What do you see instead? Expected: computer exiles a card from its hand. The card should appear in Exhiled list, and the number of cards in hand should decrease.\r\n\r\nActual: when Parallax Nexus is clicked, two things happen. First, the message \"Computer exiles a card from his or her hand\" is placed on the stack. Second, the game prompts \"Choose a card from your hand\" and waits for me to choose a card. When I do choose a card at this point, a fade counter is removed from Parallax Nexus, but nothing else appears to happen: all the cards remain in my hand, the computer still has the same number of cards it had before, and no cards appear in either Exiled list.\r\n\r\nNothing interesting in game.log:\r\n\r\nLOG (P): Put Parallax Nexus onto the battlefield. Parallax Nexus enters the battlefield with 5 fade counters on it.\r\nLOG (P): Remove a charge counter from Parallax Nexus. Play activated ability of Parallax Nexus.\r\nLOG (C): Computer exiles a card from his or her hand. What version of the product are you using? On what operating system? Magarena 1.37 on Windows 7\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=351_",
+  "date": "2013-05-11T21:01:16",
+  "state": "closed",
+  "gid": 351,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=351",
+  "owner": ""
+}

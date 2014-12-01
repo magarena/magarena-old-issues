@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "From http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&start=570#p150312 Displaying which player is going first on the mulligan screen to better assist mulligan decision. Mulligan occurs after deciding who goes first.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Display Player which is going first on Mulligan Screen",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "April 16, 2014 11:50:09",
+      "body": "**Status:** Started  \n  **Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "April 17, 2014 12:59:49",
+      "body": "implemented in build 1.49.1049 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/1049/ ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on April 16, 2014 04:53:51_\n\nFrom http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&start=570#p150312 Displaying which player is going first on the mulligan screen to better assist mulligan decision. Mulligan occurs after deciding who goes first.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=587_",
+  "date": "2014-04-16T04:53:51",
+  "state": "closed",
+  "gid": 587,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=587",
+  "owner": ""
+}

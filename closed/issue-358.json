@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Tapping \"Gelectrode\" to deal damage to target creature or player. 2. 3. What is the expected output? What do you see instead? You should be able to target any creature or player that is a legal target. However, you cannot target your own creatures or yourself. What version of the product are you using? On what operating system? 1.38 on Windows XP If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Mmerrywe...@gmail.com](https://code.google.com/u/118141947219368053798/)",
+  "title": "Gelectrode Targetting",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 02, 2013 03:06:29",
+      "body": "Try disabling \"Remove unusual target choices\" from the \"Preferences\" menu. The game defaults to enabling this option to speed up the gameplay.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Mmerrywe...@gmail.com](https://code.google.com/u/118141947219368053798/) on June 30, 2013 07:43:18_\n\nWhat steps will reproduce the problem? 1. Tapping \"Gelectrode\" to deal damage to target creature or player. 2. 3. What is the expected output? What do you see instead? You should be able to target any creature or player that is a legal target. However, you cannot target your own creatures or yourself. What version of the product are you using? On what operating system? 1.38 on Windows XP If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=358_",
+  "date": "2013-06-30T07:43:18",
+  "state": "closed",
+  "gid": 358,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=358",
+  "owner": ""
+}

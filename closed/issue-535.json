@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? didn't test that, just saw it on opponent's side. Opponent plays Freyalise's Charm. I cast a black spell. Notification reads something like: \"Freyalise's Charm: you may pay {1} to draw a card.\" Card text, though, reads: {G}{G} [...] draw a card.\r\n\r\nThis might be wrong twice:\r\n1.) it's an activated ability, not a may prompt\r\n2.) the cost is {G}{G} not {1}. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Freyalise's Charm: wrong notification?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 21, 2014 13:06:25",
+      "body": "It's wrong, but thankfully wrong once :)\r\nUnder the current Orcale, the charm is now a triggered may prompt whenever a black spell is cast by an opponent.\r\n\r\nThanks for catching that.\r\n\r\nFixed in Revision e9c2f0e493a0\n\n**Status:** Fixed  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 22, 2014 03:31:31_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? didn't test that, just saw it on opponent's side. Opponent plays Freyalise's Charm. I cast a black spell. Notification reads something like: \"Freyalise's Charm: you may pay {1} to draw a card.\" Card text, though, reads: {G}{G} [...] draw a card.\r\n\r\nThis might be wrong twice:\r\n1.) it's an activated ability, not a may prompt\r\n2.) the cost is {G}{G} not {1}. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=535_",
+  "date": "2014-03-22T03:31:31",
+  "state": "closed",
+  "gid": 535,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=535",
+  "owner": "ShawnieBoyUK"
+}

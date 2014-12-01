@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "When the program is downloading new card images, the main window cannot be accessed. Downloading the images/rules text may take a long time, the user should be able to continue using the main program",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "download dialog disables the main window",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 25, 2011 07:29:18",
+      "body": "This issue was closed by revision 3fb1f3f7468c .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on October 28, 2011 11:06:37_\n\nWhen the program is downloading new card images, the main window cannot be accessed. Downloading the images/rules text may take a long time, the user should be able to continue using the main program\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=79_",
+  "date": "2011-10-28T11:06:37",
+  "state": "closed",
+  "gid": 79,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=79",
+  "owner": "melvinzh...@gmail.com"
+}

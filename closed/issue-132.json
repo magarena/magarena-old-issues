@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "The current arena.icns contains icons up to 32x32 and therefor looks pixelated in many views. We should update this to 256x256. The source image is 256x256 so we can't properly support a 512x512 icon. \r\n\r\nI managed to make an icns file but didn't see a way to delete the automatically generated 512x512 icon and had to resort to pasting the 256x256 icon in it's place. There must be a better way to do this. Still it's an improvement over the old icns file and at 123 KB it's quite small. \r\n\r\nI can upgrade the icns file once I get home in a few days.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "Improve resolution of Mac icon",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "January 07, 2012 02:16:27",
+      "body": "This issue was closed by revision eb0770a8617c .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on December 30, 2011 22:50:07_\n\nThe current arena.icns contains icons up to 32x32 and therefor looks pixelated in many views. We should update this to 256x256. The source image is 256x256 so we can't properly support a 512x512 icon. \r\n\r\nI managed to make an icns file but didn't see a way to delete the automatically generated 512x512 icon and had to resort to pasting the 256x256 icon in it's place. There must be a better way to do this. Still it's an improvement over the old icns file and at 123 KB it's quite small. \r\n\r\nI can upgrade the icns file once I get home in a few days.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=132_",
+  "date": "2011-12-30T22:50:07",
+  "state": "closed",
+  "gid": 132,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=132",
+  "owner": "BeHold...@gmail.com"
+}

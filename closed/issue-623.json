@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Have Moat or Magus of the Moat on the battlefield.\r\n\r\nAnimate a Blinkmoth/Inkmoth nexus, or give a non-flying creature flying.\r\n\r\nExpect the flying creature to be able to attack, however still can't. http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&start=660#p156167 Reported by Muppet on forums",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Moat abilities and gaining Flying",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 21, 2014 19:40:54",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on July 22, 2014 07:50:46_\n\nHave Moat or Magus of the Moat on the battlefield.\r\n\r\nAnimate a Blinkmoth/Inkmoth nexus, or give a non-flying creature flying.\r\n\r\nExpect the flying creature to be able to attack, however still can't. http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&start=660#p156167 Reported by Muppet on forums\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=623_",
+  "date": "2014-07-22T07:50:46",
+  "state": "closed",
+  "gid": 623,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=623",
+  "owner": "ShawnieBoyUK"
+}

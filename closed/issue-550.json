@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "reads:\r\n\r\nWhen Llanowar Sentinel enters the battlefield, you may pay {1}{G}. If you do, search your library for a card named Llanowar Sentineland put that card [...]\r\n\r\nmissing space after \"Llanowar Sentinel\" and in front of \"and\"",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Llanowar Sentinel: missing space in notification",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 23, 2014 19:11:23",
+      "body": "Fixed in Revision d448bb1c003b\n\n**Status:** Fixed  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 24, 2014 04:52:29_\n\nreads:\r\n\r\nWhen Llanowar Sentinel enters the battlefield, you may pay {1}{G}. If you do, search your library for a card named Llanowar Sentineland put that card [...]\r\n\r\nmissing space after \"Llanowar Sentinel\" and in front of \"and\"\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=550_",
+  "date": "2014-03-24T04:52:29",
+  "state": "closed",
+  "gid": 550,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=550",
+  "owner": "ShawnieBoyUK"
+}

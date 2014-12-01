@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "Activate Scrib Nibblers' ability when library is empty causes the program to crash with java.lang.ArrayIndexOutOfBoundsException as calling removeCardAtTop crashes if library is empty.\r\n\r\nremoveCardAtTop should be modified to deal with an empty library, perhaps by returning MagcCard.NONE.\r\n\r\nThe implementation of Scrib Nibblers' tap ability also does not actually exile the card.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Scrib Nibblers tap ability causes problem to crash if library is empty",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "October 08, 2011 08:03:16",
+      "body": "**Summary:** Scrib Nibblers tap ability causes problem to crash if library is empty  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "October 08, 2011 08:54:49",
+      "body": "This issue was closed by revision d3478e07e8d8 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 08, 2011 08:59:06",
+      "body": "I made getCardAtTop() public and made it return MagicCard.NONE when the list is empty. The card class still needs to check for MagicCard.NONE or else MagicRemoveCardAction.undoAction causes a crash.\r\nEvery method calling removeCardAtTop() already does a check for an empty list.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 08, 2011 09:02:07",
+      "body": "Forgot to add that the card, if any, now gets properly exiled by using MagicRemoveCardAction and MagicMoveCardAction.\r\n\r\nThanks for spotting my sloppy job XD",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on October 08, 2011 23:02:56_\n\nActivate Scrib Nibblers' ability when library is empty causes the program to crash with java.lang.ArrayIndexOutOfBoundsException as calling removeCardAtTop crashes if library is empty.\r\n\r\nremoveCardAtTop should be modified to deal with an empty library, perhaps by returning MagcCard.NONE.\r\n\r\nThe implementation of Scrib Nibblers' tap ability also does not actually exile the card.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=72_",
+  "date": "2011-10-08T23:02:56",
+  "state": "closed",
+  "gid": 72,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=72",
+  "owner": "melvinzh...@gmail.com"
+}

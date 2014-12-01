@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "@Huggybaby - You can't escape from Main Menu/Help/About Magarena. You should be able to for consistency.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Escape key should close About dialog.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 06, 2014 22:14:58",
+      "body": "Fixed in build 711 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/711/ )\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on February 05, 2014 14:44:28_\n\n@Huggybaby - You can't escape from Main Menu/Help/About Magarena. You should be able to for consistency.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=475_",
+  "date": "2014-02-05T14:44:28",
+  "state": "closed",
+  "gid": 475,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=475",
+  "owner": "lodici123"
+}

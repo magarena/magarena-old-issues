@@ -1,0 +1,30 @@
+{
+  "status": "wontfix",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? SO AI had Glint Hawk Idol and Inkmoth Nexus and MtL. \r\nAI used counter power for all creatures and these 2 plus others got the counter. \r\nOk, but then afterwards they revert back to land and artifact and are no longer creatures. \r\nBut the next turn they changed into creatures again and had the counter still on them. \r\nThis should not be? What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "Mikaues the Lunarch - counters still on land/artifacts that go in and out of creature status",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "July 12, 2012 20:02:26",
+      "body": "Thanks for reporting, but this is how it should behave according to the rules. \r\nSee http://blogs.magicjudges.org/rulestips/2011/12/animated-lands-keep-counters-even-when-they-dont-matter/\n\n**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 16, 2012 05:57:40",
+      "body": "thanks for the note/link. Wow, that is amazing. It should be fun to see how I can use that to my advantage then.",
+      "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on July 12, 2012 23:29:33_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? SO AI had Glint Hawk Idol and Inkmoth Nexus and MtL. \r\nAI used counter power for all creatures and these 2 plus others got the counter. \r\nOk, but then afterwards they revert back to land and artifact and are no longer creatures. \r\nBut the next turn they changed into creatures again and had the counter still on them. \r\nThis should not be? What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=257_",
+  "date": "2012-07-12T23:29:33",
+  "state": "closed",
+  "gid": 257,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=257",
+  "owner": ""
+}

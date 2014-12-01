@@ -1,0 +1,39 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. Play a card; use Lotus Petal to pay part of its cost What is the expected output? What do you see instead? Expected: Lotus Petal contributes 1 to the mana cost.\r\n\r\nActual: Lotus Petal seems to contribute 2 to the mana cost. What version of the product are you using? On what operating system? Magarena 1.46 on Windows 7\r\n\r\nFrom game.log:\r\n\r\nLOG (P): Play Lotus Petal.\r\nLOG (P): Put Lotus Petal onto the battlefield.\r\nLOG (P): Tap Lotus Petal. Sacrifice Lotus Petal. Tap Seat of the Synod. Pay {3}. Play Etched Champion.\r\nLOG (P): Put Etched Champion onto the battlefield.",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/104640281288211329710/)",
+  "title": "Lotus Petal seems to produce 2 mana",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 02, 2014 15:49:23",
+      "body": "Unable to replicate this - I really wish we could make a permanent that can add multiple mana. Could this be a window? :) - Do you have a full log?",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "February 02, 2014 15:58:34",
+      "body": "There's not much more in the log. Here it is from the beginning of that game:\r\n\r\nLOG (P): Igor may (yes) take a mulligan. Igor may (no) take a mulligan.\r\nLOG (C): Computer may (no) take a mulligan.\r\nMCTS cached=0\r\nMCTS cheat=true index=1 life=20 turn=1 phase=FirstMain sims=188 time=8007\r\n  [67/44/?] (pass)\r\n  [75/58/?] (Mountain)\r\n* [71/86/?] (Forest)\r\nLOG (C): Play Forest.\r\nLOG (P): Play Seat of the Synod.\r\nLOG (P): Play Mox Opal.\r\nLOG (P): Put Mox Opal onto the battlefield.\r\nLOG (P): Play Lotus Petal.\r\nLOG (P): Put Lotus Petal onto the battlefield.\r\nLOG (P): Tap Lotus Petal. Sacrifice Lotus Petal. Tap Seat of the Synod. Pay {3}. Play Etched Champion.\r\nLOG (P): Put Etched Champion onto the battlefield.\r\nLOG (P): Tap Mox Opal. Pay {1}. Play Arcbound Worker.\r\nLOG (P): Put Arcbound Worker onto the battlefield. Arcbound Worker enters the battlefield with a +1/+1 counter on it.",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/104640281288211329710/)"
+    },
+    {
+      "date": "February 04, 2014 09:28:19",
+      "body": "Really strange - I can only guess that the text parsing is giving the petal both the 'tap add mana' and 'sac add mana' abilities. Still unable to replicate on Win 7",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "April 11, 2014 11:57:58",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/104640281288211329710/) on February 03, 2014 03:16:59_\n\nWhat steps will reproduce the problem? 1. Play a card; use Lotus Petal to pay part of its cost What is the expected output? What do you see instead? Expected: Lotus Petal contributes 1 to the mana cost.\r\n\r\nActual: Lotus Petal seems to contribute 2 to the mana cost. What version of the product are you using? On what operating system? Magarena 1.46 on Windows 7\r\n\r\nFrom game.log:\r\n\r\nLOG (P): Play Lotus Petal.\r\nLOG (P): Put Lotus Petal onto the battlefield.\r\nLOG (P): Tap Lotus Petal. Sacrifice Lotus Petal. Tap Seat of the Synod. Pay {3}. Play Etched Champion.\r\nLOG (P): Put Etched Champion onto the battlefield.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=471_",
+  "date": "2014-02-03T03:16:59",
+  "state": "closed",
+  "gid": 471,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=471",
+  "owner": ""
+}

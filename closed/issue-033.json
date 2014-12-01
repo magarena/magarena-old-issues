@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Reported by beholder on the forum:\r\n\r\nBeacon of Destruction always goes to the top of my library instead of being shuffled into it. I saw this in 3 different games and at one time I drew it 4 times in a row.\r\nI can't repro this with some test decks I made, but it reproduces for me with the following deck:\r\n\r\n# 9 creatures\r\n2 Bloodmark Mentor\r\n4 Boros Recruit\r\n2 Ember Hauler\r\n4 Goblin Chieftain\r\n1 Goblin Piledriver\r\n1 Goblin Wardriver\r\n2 Siege-Gang Commander\r\n1 Spitemare\r\n2 Tuktuk the Explorer\r\n\r\n# 9 spells\r\n1 Beacon of Destruction\r\n2 Blaze\r\n2 Dragon Fodder\r\n3 Glorious Anthem\r\n4 Lightning Bolt\r\n4 Lightning Helix\r\n2 Pacifism\r\n2 Rise of the Hobgoblins\r\n1 Smash to Smithereens\r\n\r\n# 3 lands\r\n12 Mountain\r\n4 Plains\r\n4 Sacred Foundry",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Beacon of destruction goes to top of lib instead of being shuffled into it",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 29, 2011 07:37:20",
+      "body": "fixed by using the game time as the random seed instead of the deck size\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 28, 2011 20:07:06_\n\nReported by beholder on the forum:\r\n\r\nBeacon of Destruction always goes to the top of my library instead of being shuffled into it. I saw this in 3 different games and at one time I drew it 4 times in a row.\r\nI can't repro this with some test decks I made, but it reproduces for me with the following deck:\r\n\r\n# 9 creatures\r\n2 Bloodmark Mentor\r\n4 Boros Recruit\r\n2 Ember Hauler\r\n4 Goblin Chieftain\r\n1 Goblin Piledriver\r\n1 Goblin Wardriver\r\n2 Siege-Gang Commander\r\n1 Spitemare\r\n2 Tuktuk the Explorer\r\n\r\n# 9 spells\r\n1 Beacon of Destruction\r\n2 Blaze\r\n2 Dragon Fodder\r\n3 Glorious Anthem\r\n4 Lightning Bolt\r\n4 Lightning Helix\r\n2 Pacifism\r\n2 Rise of the Hobgoblins\r\n1 Smash to Smithereens\r\n\r\n# 3 lands\r\n12 Mountain\r\n4 Plains\r\n4 Sacred Foundry\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=33_",
+  "date": "2011-07-28T20:07:06",
+  "state": "closed",
+  "gid": 33,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=33",
+  "owner": "melvinzh...@gmail.com"
+}

@@ -1,0 +1,64 @@
+{
+  "status": "verified",
+  "body": "...Ooze.\r\nLOG (P): Put Bloodhall Ooze onto the battlefield.\r\nLOG (P): Tap Mox Emerald. Tap Rootbound Crag. Tap Mox Emerald. Pay {2}{G}. Play Miming Slime.\r\nLOG (P): Put an X/X green Ooze creature tokens onto the battlefield. Where X is the greatest power among creatures you control.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Experiment One + Miming Slime: Experiment One does not get a +1/+1 counter",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 15, 2014 04:34:00",
+      "body": "btw. the very same thing happens if I would play Slime Molding with X greater than Experiment One's power or toughness. Evolve did not trigger.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 15, 2014 11:43:50",
+      "body": "The mechanics of Slime Molding and Miming Slime involve creating a 0/0 token on the battlefield and then assigning it's power and toughness before state-based effects can destroy it. That's why it's not triggering evolve.\r\n\r\nI don't think it's currently possible to set the p/t of a card/token 'on the stack'. But will look into it.\n\n**Status:** Accepted  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 15, 2014 12:40:35",
+      "body": "what's about creatures which enter battlefield with +1/+1 counters on it? Let's say a Kavu Titan, kicked, enters battlefield with 3 +1/+1 counter on it, making it a 5/5 creature, which should trigger evolve an a 4/4 creature... \r\n\r\nI have yet to test that, but I suppose the mechanic here is different, too, isn't it? Kavu Titan enters battlefield as a 2/2 creature and is assigned its 3 +1/+1 counters afterwards, so evolve wouldn't trigger?",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 15, 2014 13:02:47",
+      "body": "Yes, the +1/+1 counters (and other p/t adjusting counters) should be included in calculating the power and toughness of evolve triggers if the enter the battlefield with them. Currently it doesn't. Similar problem, different fix for it.\n\n**Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 15, 2014 13:12:09",
+      "body": "I understand. No need to test it then.\r\n\r\nThanks for the information. You all are doing a great job, thanks for that, too.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 17, 2014 19:26:04",
+      "body": "Issue 523 has been merged into this issue.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 27, 2014 19:47:15",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 27, 2014 20:04:54",
+      "body": "fixed in https://code.google.com/p/magarena/source/detail?r=7e47e91d68bb600327be05f6ed601551e7a77fd3",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 15, 2014 19:18:45_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Well, that's what happened:\r\nI had Bloodhall Ooze in play for a couple of turns, with Experiment One present. Bloodhall Ooze got its +1/+1 counter every turn (because of the green perm in play). When it was 5/5 (at this time Experiment One evolved once yet, making it a 2/2 creature) it played Miming Slime. A 5/5 green Ooze token enteres battlefield, but Experiment One did not get to evolve again. What version of the product are you using? On what operating system? Linux Mint 16, magarena 1.48.831 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. Excerpt of my game.log\r\n\r\nLOG (P): frank may (no) take a mulligan.\r\nLOG (C): Mini Max may (no) take a mulligan.\r\nMMAB cheat=false index=1 life=20 turn=1 phase=FirstMain slice=1000 time=169\r\n* [662/149/3006 at 7] (pass)\r\n  [662/51/2601 at 6] (Forest)\r\n  [662/16/2601 at 7] (Overgrown Tomb)\r\nMMAB cheat=false index=1 life=20 turn=1 phase=SecondMain slice=1000 time=159\r\n  [662/130/1512 at 7] (pass)\r\n* [662/51/3006 at 6] (Forest)\r\n  [662/31/3006 at 6] (Overgrown Tomb)\r\nLOG (C): Play Forest.\r\nLOG (P): Play Taiga.\r\nLOG (P): Tap Taiga. Pay {G}. Play Experiment One.\r\nLOG (P): Put Experiment One onto the battlefield.\r\nMMAB cheat=false index=1 life=20 turn=3 phase=FirstMain slice=1000 time=644\r\n  [662/341/3519 at 9] (pass)\r\n  [662/111/3114 at 9] (Forest)\r\n* [662/63/3519 at 8] (Overgrown Tomb)\r\n  [662/16/3519 at 8] (Essence Warden)\r\nMMAB cheat=false index=1 life=20 turn=3 phase=FirstMain slice=2000 time=670\r\n  [662/224/2810 at 7] (yes)\r\n* [662/316/3525 at 8] (no)\r\nLOG (C): Play Overgrown Tomb. Mini Max may (no) pay 2 life. If you don't, Overgrown Tomb enters the battlefield tapped.\r\nMMAB cheat=false index=1 life=20 turn=3 phase=FirstMain slice=2000 time=456\r\n  [662/188/4315 at 8] (pass)\r\n* [662/146/4315 at 7] (Essence Warden)\r\nLOG (C): Pay {G}. Tap Forest. Play Essence Warden.\r\nLOG (C): Put Essence Warden onto the battlefield.\r\nLOG (P): Play Mox Emerald.\r\nLOG (P): Put Mox Emerald onto the battlefield.\r\nLOG (P): Play Hinterland Harbor.\r\nLOG (P): Tap Taiga. Pay {R}. Play Bloodhall Ooze.\r\nLOG (P): Put Bloodhall Ooze onto the battlefield.\r\nLOG (C): Mini Max gains 1 life.\r\nLOG (P): frank attacks with Experiment One.\r\nMMAB cheat=false index=1 life=21 turn=4 phase=DeclareBlockers slice=2000 time=1024\r\n  [662/342/5146 at 9] ( Experiment One=Essence Warden)\r\n* [662/339/5263 at 10] ()\r\nLOG (C): {c}Mini Max loses 1 life.\r\nMMAB cheat=false index=1 life=20 turn=5 phase=FirstMain slice=2000 time=1374\r\n  [662/221/3860 at 9] (pass)\r\n* [662/356/5459 at 9] (Forest)\r\nLOG (C): Play Forest.\r\nMMAB cheat=false index=1 life=20 turn=5 phase=FirstMain slice=2000 time=1120\r\n  [662/302/5057 at 9] (pass)\r\n* [662/214/5155 at 9] (Skulking Knight)\r\nLOG (C): Pay {2}{B}. Tap Forest. Tap Forest. Tap Overgrown Tomb. Play Skulking Knight.\r\nLOG (C): Put Skulking Knight onto the battlefield.\r\nLOG (C): Mini Max gains 1 life.\r\nMMAB cheat=false index=1 life=21 turn=5 phase=DeclareAttackers slice=2000 time=1184\r\n* [662/373/3583 at 8] ([Essence Warden])\r\n  [662/338/718 at 10] ([])\r\nLOG (C): Mini Max attacks with Essence Warden.\r\nLOG (P): {c}frank loses 1 life.\r\nLOG (P): frank may (yes) put a +1/+1 counter on Bloodhall Ooze.\r\nLOG (P): Play Rootbound Crag.\r\nLOG (P): Tap Mox Emerald. Tap Taiga. Tap Rootbound Crag. Pay {2}{G}. Play Gluttonous Slime.\r\nLOG (P): Put Gluttonous Slime onto the battlefield. You may (no) sacrifice a creature to Gluttonous Slime.\r\nLOG (C): Mini Max gains 1 life.\r\nLOG (P): frank put a +1/+1 counter on Experiment One.\r\nMMAB cheat=false index=1 life=22 turn=7 phase=DeclareAttackers slice=1000 time=1064\r\n  [662/212/2469 at 8] ([Essence Warden, Skulking Knight])\r\n  [662/73/-2787 at 5] ([Essence Warden])\r\n* [662/196/3269 at 8] ([Skulking Knight])\r\n  [662/4/-1693 at 6] ([])\r\nLOG (C): Mini Max attacks with Skulking Knight.\r\nLOG (P): frank blocks with Experiment One and Gluttonous Slime.\r\nLOG (C): Blocking creatures get -1/-1 until end of turn.\r\nLOG (P): Experiment One is destroyed. Gluttonous Slime is destroyed.\r\nMMAB cheat=false index=1 life=22 turn=7 phase=SecondMain slice=2000 time=1019\r\n* [662/402/2480 at 10] (pass)\r\n  [662/347/2306 at 9] (Vivid Creek)\r\nLOG (P): {c}frank loses 3 life.\r\nMMAB cheat=false index=1 life=22 turn=7 phase=SecondMain slice=2000 time=1040\r\n* [662/171/-3840 at 7] (pass)\r\n  [662/258/-5595 at 7] (Vivid Creek)\r\nLOG (P): frank may (yes) put a +1/+1 counter on Bloodhall Ooze.\r\nLOG (P): Play Mox Emerald.\r\nLOG (P): Put Mox Emerald onto the battlefield.\r\nLOG (P): Tap Taiga. Tap Mox Emerald. Tap Mox Emerald. Pay {2}{R}. Play Earthen Goo.\r\nLOG (P): Put Earthen Goo onto the battlefield.\r\nLOG (C): Mini Max gains 1 life.\r\nMMAB cheat=false index=1 life=23 turn=9 phase=FirstMain slice=2000 time=959\r\n* [662/253/1911 at 7] (pass)\r\n  [662/270/1455 at 7] (Swamp)\r\nMMAB cheat=false index=1 life=23 turn=9 phase=DeclareAttackers slice=1000 time=1130\r\n  [662/222/1755 at 6] ([Essence Warden, Skulking Knight])\r\n  [662/379/-2773 at 5] ([Essence Warden])\r\n* [662/174/1984 at 8] ([Skulking Knight])\r\n  [662/42/1208 at 7] ([])\r\nLOG (C): Mini Max attacks with Skulking Knight.\r\nLOG (P): frank blocks with Bloodhall Ooze, Earthen Goo and Gluttonous Slime.\r\nLOG (C): Blocking creatures get -1/-1 until end of turn.\r\nLOG (P): Earthen Goo is destroyed. Gluttonous Slime is destroyed.\r\nLOG (C): Skulking Knight is destroyed.\r\nMMAB cheat=false index=1 life=23 turn=9 phase=SecondMain slice=1000 time=467\r\n  [662/38/-2310 at 6] (pass)\r\n* [662/159/1279 at 5] (Vivid Creek)\r\n  [662/80/226 at 6] (Swamp)\r\nLOG (C): Play Vivid Creek. Vivid Creek enters the battlefield with 2 charge counters on it.\r\nLOG (P): frank may (yes) put a +1/+1 counter on Bloodhall Ooze.\r\nLOG (P): frank attacks with Bloodhall Ooze and Experiment One.\r\nMMAB cheat=false index=1 life=23 turn=10 phase=DeclareBlockers slice=1000 time=1168\r\n  [662/233/2815 at 8] ( Bloodhall Ooze=Essence Warden)\r\n* [662/215/2933 at 7] ( Experiment One=Essence Warden)\r\n  [662/235/2827 at 8] ()\r\nLOG (C): Mini Max blocks with Essence Warden.\r\nLOG (C): {c}Mini Max loses 4 life.\r\nLOG (C): Essence Warden is destroyed.\r\nMMAB cheat=false index=1 life=19 turn=11 phase=FirstMain slice=2000 time=1649\r\n  [662/480/3638 at 7] (pass)\r\n* [662/645/5226 at 9] (Swamp)\r\nLOG (C): Play Swamp.\r\nMMAB cheat=false index=1 life=19 turn=11 phase=FirstMain slice=1000 time=1146\r\n  [662/329/3750 at 7] (pass)\r\n  [662/124/830 at 5] (Putrefaction)\r\n  [662/2/3299 at 4] (Avatar of Discord)\r\n* [662/290/5216 at 6] (Yew Spirit)\r\nLOG (C): Pay {4}{G}. Tap Forest. Tap Forest. Tap Overgrown Tomb. Tap Swamp. Tap Vivid Creek. Play Yew Spirit.\r\nLOG (C): Put Yew Spirit onto the battlefield.\r\nLOG (P): frank may (yes) put a +1/+1 counter on Bloodhall Ooze.\r\nLOG (P): Tap Taiga. Pay {R}. Play Bloodhall ...\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=521_",
+  "date": "2014-03-15T19:18:45",
+  "state": "closed",
+  "gid": 521,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=521",
+  "owner": "ShawnieBoyUK"
+}

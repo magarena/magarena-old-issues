@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "What is the expected output? What do you see instead? opponent played Emberwilde Augur and used its ability in M2 step. What version of the product are you using? On what operating system? magarena 1.48.903",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Emberwilde Augur used its ability outside its controlers upkeep step",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 27, 2014 07:53:51",
+      "body": "Same is true for Llanowar Augur as well. Tested it, you can use its ability always, not just during your upkeep step.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 27, 2014 07:56:54",
+      "body": "I stand corrected: you can use its ability whenever you can cast a sorcery, that is.",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "March 27, 2014 08:51:44",
+      "body": "That's really strange, I can't find anything obviously wrong with the code. But definitely not working properly.\r\n\r\nMelvin might be able to find something.\n\n**Status:** Accepted  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 27, 2014 08:59:38",
+      "body": "This applies to all 'activate this only during your upkeep' cards. All the augurs and some others. {YourUpkeep} costs.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 27, 2014 19:10:52",
+      "body": "This issue was closed by revision 697cd860702e .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 27, 2014 02:33:08_\n\nWhat is the expected output? What do you see instead? opponent played Emberwilde Augur and used its ability in M2 step. What version of the product are you using? On what operating system? magarena 1.48.903\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=556_",
+  "date": "2014-03-27T02:33:08",
+  "state": "closed",
+  "gid": 556,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=556",
+  "owner": ""
+}

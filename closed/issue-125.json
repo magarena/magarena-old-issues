@@ -1,0 +1,30 @@
+{
+  "status": "wontfix",
+  "body": "it is missing from both the folder\r\n\r\nthis file cannot be found\r\n\r\nMagarena/cards/Rite of Replication.jpg\r\n\r\nand within the app",
+  "author": "[okcho...@hoiio.com](https://code.google.com/u/117821913395823954285/)",
+  "title": "rites of replication is missing",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "January 07, 2012 04:04:21",
+      "body": "Thanks for the report.\r\n\r\nRite of Replication is working fine for me so I suspect something went wrong with your version of Magarena. The easiest way to fix this might be to re-download the game and then import the data from the corrupt version so you don't have to download all the data again.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 25, 2012 09:06:43",
+      "body": "Two new versions of Magarena have been released since this issue was reported, please try the latest one. If you still have problems with that version then please open a new issue.\n\n**Status:** WontFix  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [okcho...@hoiio.com](https://code.google.com/u/117821913395823954285/) on December 27, 2011 17:57:36_\n\nit is missing from both the folder\r\n\r\nthis file cannot be found\r\n\r\nMagarena/cards/Rite of Replication.jpg\r\n\r\nand within the app\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=125_",
+  "date": "2011-12-27T17:57:36",
+  "state": "closed",
+  "gid": 125,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=125",
+  "owner": ""
+}

@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "from http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3736&p=146837#p146837.. .\r\n\r\nI don't know if someone has already suggested this, but It would be very nice if we could browse only cards of a specific cube in card explorer or deck editor screens. Why not a new filter option on the filter bar?\r\n\r\nI suggest this because I like to play with cards of a specific set. It would be very interesting to be able to browse cards only from Gatecrash, for example.\r\n\r\nI know it's possible to make cubes for specific sets (As a matter of fact, I have just created some with a help from Excel and some basic search functions), but I would like to browse the card images in game.\r\n\r\nIs that possible in any way?",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Add cube filter to card explorer/deck editor.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "February 24, 2014 03:35:40",
+      "body": "Issue 488 has been merged into this issue.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 03, 2014 12:32:29",
+      "body": "**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on February 21, 2014 09:31:36_\n\nfrom http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3736&p=146837#p146837.. .\r\n\r\nI don't know if someone has already suggested this, but It would be very nice if we could browse only cards of a specific cube in card explorer or deck editor screens. Why not a new filter option on the filter bar?\r\n\r\nI suggest this because I like to play with cards of a specific set. It would be very interesting to be able to browse cards only from Gatecrash, for example.\r\n\r\nI know it's possible to make cubes for specific sets (As a matter of fact, I have just created some with a help from Excel and some basic search functions), but I would like to browse the card images in game.\r\n\r\nIs that possible in any way?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=486_",
+  "date": "2014-02-21T09:31:36",
+  "state": "closed",
+  "gid": 486,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=486",
+  "owner": "lodici123"
+}

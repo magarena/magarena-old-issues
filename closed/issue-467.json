@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "The devotion calculation still seems to be throwing the wrong number.\r\n\r\nAbhorrent Overlord - Devotion = CMC of all black permanents.\r\nPurphoros, God of the Forge - Always a creature, regardless of Devotion.\r\n\r\nUsing build #679 of 1.46 on Win7",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Devotion calculation",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 25, 2014 17:30:45",
+      "body": "Thanks for catching this before it goes out, was including the colorless cost in computing devotion. Fixed in https://code.google.com/p/magarena/source/detail?r=27c4c25c06c361c21225f622f40035ad04cef037\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on January 26, 2014 05:30:52_\n\nThe devotion calculation still seems to be throwing the wrong number.\r\n\r\nAbhorrent Overlord - Devotion = CMC of all black permanents.\r\nPurphoros, God of the Forge - Always a creature, regardless of Devotion.\r\n\r\nUsing build #679 of 1.46 on Win7\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=467_",
+  "date": "2014-01-26T05:30:52",
+  "state": "closed",
+  "gid": 467,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=467",
+  "owner": ""
+}

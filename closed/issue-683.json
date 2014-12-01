@@ -1,0 +1,25 @@
+{
+  "status": "fixed",
+  "body": "see forum post, http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=159913&sid=b7041a36f14754bcb52c061351822bb6#p159909 .",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Decks list not sorted correctly when running in linux.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "September 13, 2014 03:31:28",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/82c308e1d69cbc5ff80584e567c5bd3f7d29f69b .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on September 07, 2014 02:49:34_\n\nsee forum post, http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=159913&sid=b7041a36f14754bcb52c061351822bb6#p159909 .\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=683_",
+  "date": "2014-09-07T02:49:34",
+  "state": "closed",
+  "gid": 683,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=683",
+  "owner": "lodici123"
+}

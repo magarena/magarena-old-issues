@@ -1,0 +1,40 @@
+{
+  "status": "duplicate",
+  "body": "mecheng @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3700&p=93195#p92427 Perhaps we’re asking the question the wrong way around. Instead of trying to be so clever as to see what might be possible (and highlighting what card could be used and starting with card selection), why not go the other way – start with mana tapping. \r\nSo on 1st main, no cards in hand are highlighted until you start tapping mana (or other sources) and supply = demand. \r\nSo here you may simplify things. You tap, you add mana to pool, then you use card if supply=demand, else you take burn.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "adding mana pool",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "July 14, 2012 20:28:19",
+      "body": "It's an interesting idea, doing it this way would indeed allow various mana abilities. The only drawback, I can see is that the number of possible ways to tap mana is very high and only a small fraction of these ways correspond to cards in your hand. I think this can be fixed by only tapping mana if it helps you to cast one of the cards/abilities you control.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 06, 2013 02:22:13",
+      "body": "Implementing something along the lines of \"MTG Tactics\" seems good to you? For those who does not know the game, it is slightly different from the card version (the mana pool is automatically filled with colored mana only each round with increasing mana at determinated steps, and it adds initiative and movement for your creatures and youself), but the mechanic to pay the spell is simple, it forces you to choose which mana to use only for the colorless mana, and only if you have different mana from which  you can choose from. Prioritizing colorless mana as automatic choiche to pay for colorless mana shoul really accelerate the payment step, and you could make the casting and abilities avaible only when there is the right amount of mana in the mana pool (with the same mechanic now implemented with mana sources). The only drawback for players would be the necessity to skip each time, which may be a major issue in the flow of the game, and I can't figure out how this could impact on the AI...",
+      "author": "[Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/)"
+    },
+    {
+      "date": "April 26, 2014 09:06:22",
+      "body": "Why not have something that works like a \"pool\"? I'm not sure what is available in Java, but I know in Visual Basic that you can use an \"array\" to hold values. These are set up in the coding and essentially work like a column or row in an Excel spreadsheet, with the cell contents being defined later in the code. This idea would require that mana be tapped first. For example, if I had an array, or \"row\", with 100 cells, I would have a maximum of 100 mana in my mana pool. So, if I tapped a swamp and an island the program would send a {B} and an {U} to 2 separate cells ({A1,B1}) in the array. This becomes my mana pool and the cards in my hand check for the availability of mana, as they do now, but reference the array. For example, if I tapped a swamp, my pool would contain {B} ({A1}), then the Dark Ritual (and other cards) in my hand check the array when values are added or subtracted, I play the Dark Ritual and the A1 cell is cleared and the three {B} are added, giving me a black mana in cells A1, B1, C1.  There could be a graphic somewhere on the UI that shows a counter for each type of mana and maybe could even let you select what to use for colorless mana from there.",
+      "author": "[Mmerrywe...@gmail.com](https://code.google.com/u/118141947219368053798/)"
+    },
+    {
+      "date": "April 26, 2014 13:57:01",
+      "body": "Thanks for your ideas.\r\nMultidimensional Arrays are available in Java. However it's not so much the ability to implement a mana pool, (there's many different ways if doing that),\r\nit's implementing it in a way that the AI can use and understand (We're all about allowing the AI do be as good as it can). Using mana tokens is a good step so far, as it has minimal impact on how the AI currently understands mana and mana sources.\r\n\r\nRedirecting further mana-pool thoughts to Issue 518\n\n**Status:** Duplicate  \n  **Mergedinto:** 518  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 15, 2012 11:28:03_\n\nmecheng @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3700&p=93195#p92427 Perhaps we’re asking the question the wrong way around. Instead of trying to be so clever as to see what might be possible (and highlighting what card could be used and starting with card selection), why not go the other way – start with mana tapping. \r\nSo on 1st main, no cards in hand are highlighted until you start tapping mana (or other sources) and supply = demand. \r\nSo here you may simplify things. You tap, you add mana to pool, then you use card if supply=demand, else you take burn.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=259_",
+  "date": "2012-07-15T11:28:03",
+  "state": "closed",
+  "gid": 259,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=259",
+  "owner": "melvinzh...@gmail.com"
+}

@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have Wall of Diffusion\r\n2. Enemy attacks with say, Soltari Foot Soldier\r\n3. Cannot block with Wall of Diffusion What is the expected output? What do you see instead? I should be able to block creatures with shadow with the wall. What version of the product are you using? On what operating system? 1.21 on 32bit linux Please provide any additional information below. MagicPermanent.java:736 should probably check to see if the player controls a permanent with CanBlockShadow as well a permanents with Shadow. I happened to have no creatures with shadow, so I believe this meant the canBlock for the shadow creatures returned false.",
+  "author": "[vwood....@gmail.com](https://code.google.com/u/106604248542971295546/)",
+  "title": "Wall of Diffusion cannot block creatures with shadow",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 03, 2012 02:01:21",
+      "body": "Nice additional info! Yeah, I think you're right about line 736, it does not take care of CanBlockShadow. \r\n\r\nI think that whole chunk dealing with Shadow in canBeBlocked should be removed as shadow and can block shadow should be handled like flying and reach and it is already taken care of in the canBlock method. \r\n\r\nWill remove the block and test it out to make sure.\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 08, 2012 05:01:49",
+      "body": "This issue was closed by revision 66040a30e659 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 08, 2012 05:05:15",
+      "body": "I forgot to add the part about CanBlockShadow when I added that ability. The code in the CanBeBlocked method should have read :\r\nif (MagicAbility.Shadow.hasAbility(flags) &&\t\t(!player.controlsPermanentWithAbility(MagicAbility.Shadow,game)\t\t\t!player.controlsPermanentWithAbility(MagicAbility.CanBlockShadow,game))) {\r\n\treturn false;\r\n\t}\r\n\r\nBut I agree that it doesn't need to be there in the first place so I removed that part.\r\n\r\nThanks for spotting this bug!",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [vwood....@gmail.com](https://code.google.com/u/106604248542971295546/) on January 03, 2012 16:30:25_\n\nWhat steps will reproduce the problem? 1. Have Wall of Diffusion\r\n2. Enemy attacks with say, Soltari Foot Soldier\r\n3. Cannot block with Wall of Diffusion What is the expected output? What do you see instead? I should be able to block creatures with shadow with the wall. What version of the product are you using? On what operating system? 1.21 on 32bit linux Please provide any additional information below. MagicPermanent.java:736 should probably check to see if the player controls a permanent with CanBlockShadow as well a permanents with Shadow. I happened to have no creatures with shadow, so I believe this meant the canBlock for the shadow creatures returned false.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=137_",
+  "date": "2012-01-03T16:30:25",
+  "state": "closed",
+  "gid": 137,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=137",
+  "owner": ""
+}

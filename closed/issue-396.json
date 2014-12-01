@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "It seems that AI play cards like Holy Day for no reason. It happens all the time with this card, probably others too.\r\n\r\ngame.log:\r\n\r\nLOG (P): Ember may (no) take a mulligan.\r\nLOG (C): Computer may (yes) take a mulligan. Computer may (no) take a mulligan.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8004 sims=311\r\n  [21/23/?] (pass)\r\n  [31/95/?] (Temple Garden)\r\n* [36/193/?] (Plains)\r\nLOG (C): Play Plains.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8003 sims=301\r\n  [42/112/?] (pass)\r\n  [32/27/?] (Hada Freeblade)\r\n* [46/162/?] (Holy Day)\r\nLOG (C): Pay {W}. Tap Plains. Play Holy Day.\r\nLOG (C): Prevent all combat damage that would be dealt this turn.\r\n\r\n\r\nAnother game.log:\r\n\r\nMAGARENA GAME LOG\r\nCREATED ON 2013/08/23 09:49:49\r\nMAGARENA VERSION 1.40, JRE 1.7.0_25, OS Windows 7_6.1 x86\r\n\r\n\r\nLOG (P): Ember may (yes) take a mulligan. Ember may (no) take a mulligan.\r\nLOG (C): Computer may (yes) take a mulligan. Computer may (no) take a mulligan.\r\nLOG (P): Play Mountain.\r\nLOG (P): Play Temple Garden. Ember may (no) pay 2 life. If you don't, Temple Garden enters the battlefield tapped.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8044 sims=326\r\n  [14/56/?] (pass)\r\n  [19/109/?] (Forest)\r\n  [11/35/?] (Gavony Township)\r\n* [19/126/?] (Sunpetal Grove)\r\nLOG (C): Play Sunpetal Grove. Sunpetal Grove enters the battlefield tapped.\r\nLOG (P): Play Rootbound Crag.\r\nLOG (P): Tap Rootbound Crag. Pay {R}. Play Stromkirk Noble.\r\nLOG (P): Put Stromkirk Noble onto the battlefield.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8024 sims=407\r\n  [9/83/?] (pass)\r\n* [11/107/?] (Forest)\r\n  [7/61/?] (Silver-Inlaid Dagger)\r\n  [8/63/?] (Holy Day)\r\n  [6/52/?] (Gavony Township)\r\n  [5/41/?] (Fog)\r\nLOG (C): Play Forest.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8003 sims=433\r\n  [7/99/?] (pass)\r\n  [5/62/?] (Silver-Inlaid Dagger)\r\n  [6/76/?] (Mikaeus, the Lunarch)\r\n* [7/105/?] (Holy Day)\r\n  [7/91/?] (Fog)\r\nLOG (C): Pay {W}. Tap Sunpetal Grove. Play Holy Day.\r\nLOG (C): Prevent all combat damage that would be dealt this turn.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8011 sims=460\r\n* [6/237/?] (pass)\r\n  [6/223/?] (Fog)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8003 sims=427\r\n* [8/292/?] (pass)\r\n  [5/135/?] (Silver-Inlaid Dagger)",
+  "author": "[ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/)",
+  "title": "Odd AI: prevent combat damage when no combat is happening",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 09, 2014 07:33:29",
+      "body": "This has been fixed - Fog-type effects now have a Block timing hint",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 09, 2014 18:38:56",
+      "body": "Thanks!\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ember.ha...@gmail.com](https://code.google.com/u/118257407105291107710/) on August 23, 2013 15:44:01_\n\nIt seems that AI play cards like Holy Day for no reason. It happens all the time with this card, probably others too.\r\n\r\ngame.log:\r\n\r\nLOG (P): Ember may (no) take a mulligan.\r\nLOG (C): Computer may (yes) take a mulligan. Computer may (no) take a mulligan.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8004 sims=311\r\n  [21/23/?] (pass)\r\n  [31/95/?] (Temple Garden)\r\n* [36/193/?] (Plains)\r\nLOG (C): Play Plains.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8003 sims=301\r\n  [42/112/?] (pass)\r\n  [32/27/?] (Hada Freeblade)\r\n* [46/162/?] (Holy Day)\r\nLOG (C): Pay {W}. Tap Plains. Play Holy Day.\r\nLOG (C): Prevent all combat damage that would be dealt this turn.\r\n\r\n\r\nAnother game.log:\r\n\r\nMAGARENA GAME LOG\r\nCREATED ON 2013/08/23 09:49:49\r\nMAGARENA VERSION 1.40, JRE 1.7.0_25, OS Windows 7_6.1 x86\r\n\r\n\r\nLOG (P): Ember may (yes) take a mulligan. Ember may (no) take a mulligan.\r\nLOG (C): Computer may (yes) take a mulligan. Computer may (no) take a mulligan.\r\nLOG (P): Play Mountain.\r\nLOG (P): Play Temple Garden. Ember may (no) pay 2 life. If you don't, Temple Garden enters the battlefield tapped.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8044 sims=326\r\n  [14/56/?] (pass)\r\n  [19/109/?] (Forest)\r\n  [11/35/?] (Gavony Township)\r\n* [19/126/?] (Sunpetal Grove)\r\nLOG (C): Play Sunpetal Grove. Sunpetal Grove enters the battlefield tapped.\r\nLOG (P): Play Rootbound Crag.\r\nLOG (P): Tap Rootbound Crag. Pay {R}. Play Stromkirk Noble.\r\nLOG (P): Put Stromkirk Noble onto the battlefield.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8024 sims=407\r\n  [9/83/?] (pass)\r\n* [11/107/?] (Forest)\r\n  [7/61/?] (Silver-Inlaid Dagger)\r\n  [8/63/?] (Holy Day)\r\n  [6/52/?] (Gavony Township)\r\n  [5/41/?] (Fog)\r\nLOG (C): Play Forest.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8003 sims=433\r\n  [7/99/?] (pass)\r\n  [5/62/?] (Silver-Inlaid Dagger)\r\n  [6/76/?] (Mikaeus, the Lunarch)\r\n* [7/105/?] (Holy Day)\r\n  [7/91/?] (Fog)\r\nLOG (C): Pay {W}. Tap Sunpetal Grove. Play Holy Day.\r\nLOG (C): Prevent all combat damage that would be dealt this turn.\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8011 sims=460\r\n* [6/237/?] (pass)\r\n  [6/223/?] (Fog)\r\nMCTS cached=0\r\nMCTS cheat=false index=1 life=20 time=8003 sims=427\r\n* [8/292/?] (pass)\r\n  [5/135/?] (Silver-Inlaid Dagger)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=396_",
+  "date": "2013-08-23T15:44:01",
+  "state": "closed",
+  "gid": 396,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=396",
+  "owner": ""
+}

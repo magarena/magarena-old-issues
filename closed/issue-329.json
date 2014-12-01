@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Equip an Infiltration Lens to a creature (in my test, a Sphinx of Lost Truths)\r\n2. Attack into a blocker (in my test, an Angelic Wall) What is the expected output? What do you see instead? The Lens should trigger once; instead it happens twice (drawing a total of four cards). What version of the product are you using? On what operating system? 1.34, MacOS 10.8",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Infiltration Lens triggers twice upon blocking",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 30, 2013 06:42:16",
+      "body": "Thanks for the report. The trigger was happening 1 + number of blockers times and it was not all triggering together but one after another. I simplified it and it works as expected now.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on January 30, 2013 09:03:55_\n\nWhat steps will reproduce the problem? 1. Equip an Infiltration Lens to a creature (in my test, a Sphinx of Lost Truths)\r\n2. Attack into a blocker (in my test, an Angelic Wall) What is the expected output? What do you see instead? The Lens should trigger once; instead it happens twice (drawing a total of four cards). What version of the product are you using? On what operating system? 1.34, MacOS 10.8\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=329_",
+  "date": "2013-01-30T09:03:55",
+  "state": "closed",
+  "gid": 329,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=329",
+  "owner": ""
+}

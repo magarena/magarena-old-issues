@@ -1,0 +1,25 @@
+{
+  "status": "done",
+  "body": "Double sided and flip card images can be transformed by clicking on the CardViewer but should add some sort of visual indicator.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Add transformable indicator to CardViewer",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "September 10, 2014 04:17:14",
+      "body": "see Issue 657 .\n\n**Status:** Done  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 21, 2014 14:34:25_\n\nDouble sided and flip card images can be transformed by clicking on the CardViewer but should add some sort of visual indicator.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=659_",
+  "date": "2014-08-21T14:34:25",
+  "state": "closed",
+  "gid": 659,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=659",
+  "owner": "lodici123"
+}

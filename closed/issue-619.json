@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "I've noticed things like the following a few times, and wondering if it can be tidied up at all - AI casting Snuff Out by using the alt casting cost and targeting the Rootwalla. However it shows in the log as being destroyed before the effect is displayed:\r\n\r\n(P): ShawnieBoy may (no) take a mulligan.\r\n(C): Monty Carlo may (no) take a mulligan.\r\n(P): Play Bayou.\r\n(C): Play Bayou.\r\n(P): Play Bazaar of Baghdad.\r\n(P): Tap Bazaar of Baghdad. Play activated ability of Bazaar of Baghdad.\r\n(P): ShawnieBoy draws two cards, then discards three cards. ShawnieBoy discards 3 cards (Basking Rootwalla, Bazaar of Baghdad, Death Cloud).\r\n(P): ShawnieBoy may (yes) cast Basking Rootwalla for its madness cost instead of putting it into his or her graveyard.\r\n(P): Put Basking Rootwalla onto the battlefield.\r\n(C): Pay 4 life. Play Snuff Out.\r\n(P): Basking Rootwalla is destroyed.\r\n(C): Destroy target nonblack creature. It can't be regenerated. (Basking Rootwalla)\r\n(C): Play Bayou.\r\n(C): Pay {1}{G}. Tap Bayou. Tap Bayou. Play Wild Mongrel.\r\n(C): Put Wild Mongrel onto the battlefield.\r\n\r\nI would expect the order to be:\r\n(C): Pay 4 life. Play Snuff Out.\r\n(C): Destroy target nonblack creature. It can't be regenerated. (Basking Rootwalla)\r\n(P): Basking Rootwalla is destroyed.\r\n\r\nI can't remember off the top of my head where I've seen similar happen before, and wondering if there's something in the groovy scripts (probably not in this example) which can help eliminate it. Will keep an eye out for others (I vaguely drawn to draw/discard, and discard/draw)",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Writing to log and Effect/Action timings",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 14, 2014 12:20:14",
+      "body": "This only occurs if the AI casts, the order is correct for Player casting",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "July 14, 2014 20:23:36",
+      "body": "Looks like a bug in MagicLogMessageBuilder.logMessages it always displays the message for the player first than the AI due to line 22 \"for (final MagicPlayer player : game.getPlayers())\"",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 14, 2014 20:29:31",
+      "body": "Working on a fix now.\n\n**Status:** Started  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 14, 2014 20:32:37",
+      "body": "This issue was closed by revision 0d784da61fab .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on July 15, 2014 03:15:14_\n\nI've noticed things like the following a few times, and wondering if it can be tidied up at all - AI casting Snuff Out by using the alt casting cost and targeting the Rootwalla. However it shows in the log as being destroyed before the effect is displayed:\r\n\r\n(P): ShawnieBoy may (no) take a mulligan.\r\n(C): Monty Carlo may (no) take a mulligan.\r\n(P): Play Bayou.\r\n(C): Play Bayou.\r\n(P): Play Bazaar of Baghdad.\r\n(P): Tap Bazaar of Baghdad. Play activated ability of Bazaar of Baghdad.\r\n(P): ShawnieBoy draws two cards, then discards three cards. ShawnieBoy discards 3 cards (Basking Rootwalla, Bazaar of Baghdad, Death Cloud).\r\n(P): ShawnieBoy may (yes) cast Basking Rootwalla for its madness cost instead of putting it into his or her graveyard.\r\n(P): Put Basking Rootwalla onto the battlefield.\r\n(C): Pay 4 life. Play Snuff Out.\r\n(P): Basking Rootwalla is destroyed.\r\n(C): Destroy target nonblack creature. It can't be regenerated. (Basking Rootwalla)\r\n(C): Play Bayou.\r\n(C): Pay {1}{G}. Tap Bayou. Tap Bayou. Play Wild Mongrel.\r\n(C): Put Wild Mongrel onto the battlefield.\r\n\r\nI would expect the order to be:\r\n(C): Pay 4 life. Play Snuff Out.\r\n(C): Destroy target nonblack creature. It can't be regenerated. (Basking Rootwalla)\r\n(P): Basking Rootwalla is destroyed.\r\n\r\nI can't remember off the top of my head where I've seen similar happen before, and wondering if there's something in the groovy scripts (probably not in this example) which can help eliminate it. Will keep an eye out for others (I vaguely drawn to draw/discard, and discard/draw)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=619_",
+  "date": "2014-07-15T03:15:14",
+  "state": "closed",
+  "gid": 619,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=619",
+  "owner": "ShawnieBoyUK"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "verified",
+  "body": "See https://groups.google.com/forum/#!topic/magarena/VaaiflMViu8 .\r\n\r\nIn essence for the \"Parse FAIL\" to be a proper indicator it would require the loading of abilities which currently takes far too long.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Only have a single Unimplemented Status filter.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 17, 2014 03:27:30",
+      "body": "Possible due to change in effect property parsing. Previously it was happening when a card definition is loaded, now it occurs during loadAbility so as it match loading of ability property and groovy code.\r\n\r\nSuggest removal of parse fail status. Cards that successfully parse are regularly added to the card pool.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 17, 2014 05:15:51",
+      "body": "The parse fail only 'fails' a card if there's something structurally wrong. No image url, an incorrect Rarity (ie. 'S').\r\n\r\nIt doesn't mean that the card will work - just that everything is in the right place.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 17, 2014 10:15:09",
+      "body": "shawnie & melvin you are both correct. The \"Unimplemented (parse FAIL)\" filter has always been an incomplete parse based on whether CardDefinitions.prop2carddef() works or not. But it does not load abilities so that aspect of a card is not tested. Ultimately, the real test comes when you move a card to the \"scripts\" folder so I think it would be clearer to have a single \"Unimplemented\" filter that displays all unimplemented cards regardless of their parse status.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 19, 2014 10:56:03",
+      "body": "fixed as https://bitbucket.org/lodici/magarena/commits/acc08590d4530b4e62f150d919a197b16067cbde\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 17, 2014 13:37:22_\n\nSee https://groups.google.com/forum/#!topic/magarena/VaaiflMViu8 .\r\n\r\nIn essence for the \"Parse FAIL\" to be a proper indicator it would require the loading of abilities which currently takes far too long.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=656_",
+  "date": "2014-08-17T13:37:22",
+  "state": "closed",
+  "gid": 656,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=656",
+  "owner": "lodici123"
+}

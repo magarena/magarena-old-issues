@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Attack with Woebearer What is the expected output? What do you see instead? Expected: Woebearer has Fear, and so should not be blockable except by artifact and black creatures.\r\n\r\nActual: computer blocks with Goblin Ruinblaster, which is red and not an artifact. What version of the product are you using? On what operating system? Magarena 1.44 on Windows 7\r\n\r\n\r\nRelevant part of game.log:\r\n\r\nLOG (P): Igor attacks with Diregraf Captain, Mikaeus, the Unhallowed and Woebearer.\r\nMMAB cheat=false index=1 life=11 turn=28 phase=DeclareAttackers slice=8000 time=910\r\n* [157/1489/99900000 at 4] (pass)\r\n  [157/1496/99900000 at 4] (Treetop Village)\r\nMMAB cheat=false index=1 life=11 turn=28 phase=DeclareBlockers slice=8000 time=904\r\n* [157/1468/99900000 at 4] ( Woebearer=Goblin Ruinblaster)\r\n  [157/1456/99900000 at 4] ( Diregraf Captain=Goblin Ruinblaster)\r\n  [157/1/-99900000 at 0] ()\r\nLOG (C): Computer blocks with Goblin Ruinblaster.",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Woebearer doesn't seem to have Fear",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 01, 2014 05:54:45",
+      "body": "This issue was closed by revision e8b7d0ddb2c2 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 01, 2014 05:55:21",
+      "body": "Thanks for catching this. Missing fear added back.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on January 01, 2014 05:20:10_\n\nWhat steps will reproduce the problem? 1. Attack with Woebearer What is the expected output? What do you see instead? Expected: Woebearer has Fear, and so should not be blockable except by artifact and black creatures.\r\n\r\nActual: computer blocks with Goblin Ruinblaster, which is red and not an artifact. What version of the product are you using? On what operating system? Magarena 1.44 on Windows 7\r\n\r\n\r\nRelevant part of game.log:\r\n\r\nLOG (P): Igor attacks with Diregraf Captain, Mikaeus, the Unhallowed and Woebearer.\r\nMMAB cheat=false index=1 life=11 turn=28 phase=DeclareAttackers slice=8000 time=910\r\n* [157/1489/99900000 at 4] (pass)\r\n  [157/1496/99900000 at 4] (Treetop Village)\r\nMMAB cheat=false index=1 life=11 turn=28 phase=DeclareBlockers slice=8000 time=904\r\n* [157/1468/99900000 at 4] ( Woebearer=Goblin Ruinblaster)\r\n  [157/1456/99900000 at 4] ( Diregraf Captain=Goblin Ruinblaster)\r\n  [157/1/-99900000 at 0] ()\r\nLOG (C): Computer blocks with Goblin Ruinblaster.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=460_",
+  "date": "2014-01-01T05:20:10",
+  "state": "closed",
+  "gid": 460,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=460",
+  "owner": ""
+}

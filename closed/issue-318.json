@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "Suggested by Aunukia@yahoo.com via email\r\n\r\nI think we need to be able to edit decks mid-duel. Also, decks don't save if you end a duel by starting a new duel or the game crashes mid-duel or you close the program mid-duel sometimes (other times they seem to for some reason). Decks should save immediately and not be tied to the duel system. To be honest, the duel system being the hub for the entire game is frustrating - you should be able to build a deck entirely independant of dueling. Right now you have to start a duel, then load a deck or make a new deck (which has the same name and notes attached to it as the deck the game loaded) or edit that one, then save your deck - and hope that if you end the duel the deck will remain how you saved it, or you have to actually go into the text file and change it manually.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Deck editing should be independent of duels",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "December 05, 2013 02:57:49",
+      "body": "**Status:** Started  \n  **Owner:** lodici123  \n  **Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 06, 2013 03:42:54",
+      "body": "The deck editor is now available without having to first start a duel via a new option in the main menu. Fixed in build 1.44.609 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/609/ ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on January 02, 2013 12:05:55_\n\nSuggested by Aunukia@yahoo.com via email\r\n\r\nI think we need to be able to edit decks mid-duel. Also, decks don't save if you end a duel by starting a new duel or the game crashes mid-duel or you close the program mid-duel sometimes (other times they seem to for some reason). Decks should save immediately and not be tied to the duel system. To be honest, the duel system being the hub for the entire game is frustrating - you should be able to build a deck entirely independant of dueling. Right now you have to start a duel, then load a deck or make a new deck (which has the same name and notes attached to it as the deck the game loaded) or edit that one, then save your deck - and hope that if you end the duel the deck will remain how you saved it, or you have to actually go into the text file and change it manually.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=318_",
+  "date": "2013-01-02T12:05:55",
+  "state": "closed",
+  "gid": 318,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=318",
+  "owner": "lodici123"
+}

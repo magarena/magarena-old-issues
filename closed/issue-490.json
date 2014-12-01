@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? Happened when I switched to text mode. Not sure what triggered it.\r\n\r\nFrom crash.log:\r\n\r\nException from controller.runGame: No corresponding icon for {++}\r\njava.lang.RuntimeException: No corresponding icon for {++}\r\n\tat magic.data.TextImages.getIcon(TextImages.java:69)\r\n\tat magic.ui.widget.TextLabel.buildComponent(TextLabel.java:81)\r\n\tat magic.ui.widget.TextLabel.buildComponents(TextLabel.java:110)\r\n\tat magic.ui.widget.TextLabel.<init>(TextLabel.java:57)\r\n\tat magic.ui.viewer.PermanentButton.<init>(PermanentButton.java:56)\r\n\tat magic.ui.viewer.PermanentPanel.<init>(PermanentPanel.java:35)\r\n\tat magic.ui.viewer.PermanentsViewer.update(PermanentsViewer.java:79)\r\n\tat magic.ui.GamePanel.update(GamePanel.java:268)\r\n\tat magic.ui.GameController$7.run(GameController.java:364)\r\n\tat java.awt.event.InvocationEvent.dispatch(Unknown Source)\r\n\tat java.awt.EventQueue.dispatchEventImpl(Unknown Source)\r\n\tat java.awt.EventQueue.access$200(Unknown Source)\r\n\tat java.awt.EventQueue$3.run(Unknown Source)\r\n\tat java.awt.EventQueue$3.run(Unknown Source)\r\n\tat java.security.AccessController.doPrivileged(Native Method)\r\n\tat java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)\r\n\tat java.awt.EventQueue.dispatchEvent(Unknown Source)\r\n\tat java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)\r\n\tat java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)\r\n\tat java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)\r\n\tat java.awt.EventDispatchThread.pumpEvents(Unknown Source)\r\n\tat java.awt.EventDispatchThread.pumpEvents(Unknown Source)\r\n\tat java.awt.EventDispatchThread.run(Unknown Source)",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/104640281288211329710/)",
+  "title": "Crash: No corresponding icon for {++}",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 02, 2014 05:46:17",
+      "body": "Fixed for next release, problem was due to counters update. \r\n\r\nWe're deciding whether to remove text mode for the future. Could you tell us more about why you use text mode instead of image mode?\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 02, 2014 06:14:38",
+      "body": "I do use image mode most of the time, but I switch to text mode (and then back) on rare occasions. There are two reasons:\r\n\r\n1) In text mode, it's easy to see all effects that apply to a permanent. Some of them are also shown as icons in image mode, but not all (e.g. more exotic forms of protection, like protection from all colors or protection from creatures; or \"has been regenerated this turn\"). Sometimes there are many enchantments and such in play, with effects applied under complex conditions (e.g. metalcraft); rather than trying to calculate the net result in my head, I switch to text mode to see it.\r\n\r\n2) Text mode shows a \"target\" icon on a permanent that's targeted by an effect currently on the stack. When you have several identical creatures, that's the only way to figure out which of them is targeted, e.g. so you could try and save it.\r\n\r\nIt would help if mousing over the effect on the stack would somehow highlight permanents targeted by this effect (if any). The target icon in text mode is not always helpful: it's possible (though, in my experience, very rare) to have two effects targeting two identical permanents, and then there is no way to tell which targets which.\r\n\r\nI suppose it would also help to somehow see a summary of all effects applied to a given permanent while in image mode. Not sure how it would work though; mouse-over is already taken by \"show full size card image\".",
+      "author": "[i...@tandetnik.org](https://code.google.com/u/104640281288211329710/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/104640281288211329710/) on February 26, 2014 13:47:22_\n\nWhat steps will reproduce the problem? Happened when I switched to text mode. Not sure what triggered it.\r\n\r\nFrom crash.log:\r\n\r\nException from controller.runGame: No corresponding icon for {++}\r\njava.lang.RuntimeException: No corresponding icon for {++}\r\n\tat magic.data.TextImages.getIcon(TextImages.java:69)\r\n\tat magic.ui.widget.TextLabel.buildComponent(TextLabel.java:81)\r\n\tat magic.ui.widget.TextLabel.buildComponents(TextLabel.java:110)\r\n\tat magic.ui.widget.TextLabel.<init>(TextLabel.java:57)\r\n\tat magic.ui.viewer.PermanentButton.<init>(PermanentButton.java:56)\r\n\tat magic.ui.viewer.PermanentPanel.<init>(PermanentPanel.java:35)\r\n\tat magic.ui.viewer.PermanentsViewer.update(PermanentsViewer.java:79)\r\n\tat magic.ui.GamePanel.update(GamePanel.java:268)\r\n\tat magic.ui.GameController$7.run(GameController.java:364)\r\n\tat java.awt.event.InvocationEvent.dispatch(Unknown Source)\r\n\tat java.awt.EventQueue.dispatchEventImpl(Unknown Source)\r\n\tat java.awt.EventQueue.access$200(Unknown Source)\r\n\tat java.awt.EventQueue$3.run(Unknown Source)\r\n\tat java.awt.EventQueue$3.run(Unknown Source)\r\n\tat java.security.AccessController.doPrivileged(Native Method)\r\n\tat java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)\r\n\tat java.awt.EventQueue.dispatchEvent(Unknown Source)\r\n\tat java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)\r\n\tat java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)\r\n\tat java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)\r\n\tat java.awt.EventDispatchThread.pumpEvents(Unknown Source)\r\n\tat java.awt.EventDispatchThread.pumpEvents(Unknown Source)\r\n\tat java.awt.EventDispatchThread.run(Unknown Source)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=490_",
+  "date": "2014-02-26T13:47:22",
+  "state": "closed",
+  "gid": 490,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=490",
+  "owner": ""
+}

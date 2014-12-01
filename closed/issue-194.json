@@ -1,0 +1,30 @@
+{
+  "status": "wontfix",
+  "body": "What steps will reproduce the problem? 1.Cast Cunning Sparkmage and Deep Slumber Titan.\r\n2.Tap Cunning Sparkmage to deal 1 damage to target creature.\r\n3.Deep Slumber Titan is not available to select as a target although opponents creatures are. What is the expected output? What do you see instead? Deep Slumber Titan should be available as a legal target.  Not being able to target Deep Slumber Titan with Cunning Sparkmage reduces the usefulness of the Titan. What version of the product are you using? On what operating system? 1.23 on Windows 7 64-bit Please provide any additional information below. I also was not able to target the Titan with Lightning Crafter who shares a similar pinging ability with Cunning Sparkmage.  I'm not sure if the problem is with the pingers or with the Titan.",
+  "author": "[djl...@gmail.com](https://code.google.com/u/106540123595614438785/)",
+  "title": "Cunning Sparkmage/Deep Slumber Titan",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "March 24, 2012 22:29:02",
+      "body": "You can allow damage effects to target your own creatures by selecting \"remove unusual target choices\" in the Preferences window.",
+      "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)"
+    },
+    {
+      "date": "March 25, 2012 02:09:12",
+      "body": "Thanks for the comment! Indeed, the game defaults to \"remove usual target choices\" enabled which allows the game to move faster at the expense of removing usual choices such as selecting your own creatures for damage. You can disable this option.\n\n**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [djl...@gmail.com](https://code.google.com/u/106540123595614438785/) on March 25, 2012 03:50:29_\n\nWhat steps will reproduce the problem? 1.Cast Cunning Sparkmage and Deep Slumber Titan.\r\n2.Tap Cunning Sparkmage to deal 1 damage to target creature.\r\n3.Deep Slumber Titan is not available to select as a target although opponents creatures are. What is the expected output? What do you see instead? Deep Slumber Titan should be available as a legal target.  Not being able to target Deep Slumber Titan with Cunning Sparkmage reduces the usefulness of the Titan. What version of the product are you using? On what operating system? 1.23 on Windows 7 64-bit Please provide any additional information below. I also was not able to target the Titan with Lightning Crafter who shares a similar pinging ability with Cunning Sparkmage.  I'm not sure if the problem is with the pingers or with the Titan.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=194_",
+  "date": "2012-03-25T03:50:29",
+  "state": "closed",
+  "gid": 194,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=194",
+  "owner": ""
+}

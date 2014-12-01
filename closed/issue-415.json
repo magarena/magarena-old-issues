@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. cast any damaging instant or sorcery that does not require groovy code and does not have x in its casting cost 2. 3. What is the expected output? What do you see instead? After resolution, the spell is put into the graveyard. Instead, it cannot be found in any of the zones What version of the product are you using? On what operating system? 1.43, win 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/)",
+  "title": "Damaging instants and sorceries vanish from the game after being cast",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "October 29, 2013 07:09:50",
+      "body": "Thanks for catching this bug, the change to card script based effects broke some code that check whether an event is a casting of a spell.\n\n**Status:** Started  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "October 29, 2013 07:37:20",
+      "body": "This issue was closed by revision a367dda222e0 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Jericho....@gmail.com](https://code.google.com/u/103491237475970207715/) on October 29, 2013 21:39:36_\n\nWhat steps will reproduce the problem? 1. cast any damaging instant or sorcery that does not require groovy code and does not have x in its casting cost 2. 3. What is the expected output? What do you see instead? After resolution, the spell is put into the graveyard. Instead, it cannot be found in any of the zones What version of the product are you using? On what operating system? 1.43, win 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=415_",
+  "date": "2013-10-29T21:39:36",
+  "state": "closed",
+  "gid": 415,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=415",
+  "owner": ""
+}

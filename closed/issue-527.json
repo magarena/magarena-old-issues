@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? The may-prompt reads: Pay {1}? If you don't, sacrifice SN?\r\nI suppose SN stands for spellname, a placeholder of sorts. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Transguild Promenade//Rupture Spire prompt: ...sacrifice SN?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 16, 2014 11:07:10",
+      "body": "The 'May' prompt is preventing the conversion of SN into the cardname/spellname - In scripting SN is converted, in other code it's SN$ (SN\\$)\r\n\r\nWill get on it. Thanks for your bug-finding! Keep them coming (Well, it's better if they're not there, but you know what I mean)\n\n**Status:** Accepted  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 16, 2014 13:02:37",
+      "body": "Fix submitted revision 2db8fee93c0c\n\n**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 17, 2014 00:48:12_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? The may-prompt reads: Pay {1}? If you don't, sacrifice SN?\r\nI suppose SN stands for spellname, a placeholder of sorts. What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=527_",
+  "date": "2014-03-17T00:48:12",
+  "state": "closed",
+  "gid": 527,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=527",
+  "owner": "ShawnieBoyUK"
+}

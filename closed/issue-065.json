@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "Manor Gargoyle is indestructible as long as it has defender.\r\n\r\nThe obvious implementation is:\r\n\r\npublic static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {\r\n  @Override\r\n  public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {    \r\n  return permanent.hasAbility(game,MagicAbility.Defender) ?\r\n    flags | MagicAbility.Indestructible.getMask() :\r\n    flags;\r\n  }\r\n};\r\n\r\nBut it has an infinite loop due to the call to hasAbility. The problem is the \"as long as\" condition makes it impossible to apply effects one by one as we are doing now because the \"as long as\" condition needs to be continuously checked. So when Manor Gargoyle loses defender due to its activated ability, the \"as long as\" part kicks in and it loses the Indestructible ability.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "implementing \"as long as\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "October 22, 2011 09:11:21",
+      "body": "I suggest changing it to addAbility and removeAbility methods. Then in the removeAbility method you can have onRemoveAbilityTrigger.",
+      "author": "[wait...@gmail.com](https://code.google.com/u/118194332611503434213/)"
+    },
+    {
+      "date": "October 26, 2011 19:08:32",
+      "body": "Good idea! At the moment, the changes required doesn't seem worth it for just this card.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 29, 2012 20:26:08",
+      "body": "indestructible should be in MagicLayer.Game, it be implemented now as hasAbility just checks the currently ability instead of running through the layer system.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on October 02, 2011 14:14:41_\n\nManor Gargoyle is indestructible as long as it has defender.\r\n\r\nThe obvious implementation is:\r\n\r\npublic static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {\r\n  @Override\r\n  public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {    \r\n  return permanent.hasAbility(game,MagicAbility.Defender) ?\r\n    flags | MagicAbility.Indestructible.getMask() :\r\n    flags;\r\n  }\r\n};\r\n\r\nBut it has an infinite loop due to the call to hasAbility. The problem is the \"as long as\" condition makes it impossible to apply effects one by one as we are doing now because the \"as long as\" condition needs to be continuously checked. So when Manor Gargoyle loses defender due to its activated ability, the \"as long as\" part kicks in and it loses the Indestructible ability.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=65_",
+  "date": "2011-10-02T14:14:41",
+  "state": "closed",
+  "gid": 65,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=65",
+  "owner": "melvinzh...@gmail.com"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "invalid",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Other Knight creatures get +1/+1 and are Indestructible\r\n\r\nSo I had the Knight Exemplar out and a Phyrexian Crusader at 3/3 attacking and was blocked by a Plague Stinger at 4/4 (had enchantments). The Crusader took 4 damage and was killed and put in graveyard. My understanding was that the lethal protection should have been granted by the Exemplar. Perhaps I misunderstood though. What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "Knight Exemplar - Indestructible part not working",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "July 04, 2012 18:38:11",
+      "body": "Plague Stinger has infect, which puts -1/-1 counters on creatures that it hits. The crusader would have had 4 -1/-1 counters which would make it -1/-1. When that happens it is put into the graveyard due to its toughness being reduced to -1 and not due to lethal damage. \r\n\r\nSee http://mtg.wikia.com/wiki/Indestructible for more info about what can kill an indestructible creature.\n\n**Status:** Invalid  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on July 05, 2012 03:18:30_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Other Knight creatures get +1/+1 and are Indestructible\r\n\r\nSo I had the Knight Exemplar out and a Phyrexian Crusader at 3/3 attacking and was blocked by a Plague Stinger at 4/4 (had enchantments). The Crusader took 4 damage and was killed and put in graveyard. My understanding was that the lethal protection should have been granted by the Exemplar. Perhaps I misunderstood though. What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=246)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=246_",
+  "date": "2012-07-05T03:18:30",
+  "state": "closed",
+  "gid": 246,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=246",
+  "owner": ""
+}

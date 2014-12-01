@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Load a saved deck which has a description.\r\n2. Load a saved deck which does not have a description. What is the expected output? What do you see instead? Description field should be cleared. Previous non-blank description remains in description field. What version of the product are you using? On what operating system? 1.44. Windows 7",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Deck description is not cleared correctly.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 11, 2013 05:40:24",
+      "body": "fixed.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "November 11, 2013 19:35:57",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on November 11, 2013 21:36:43_\n\nWhat steps will reproduce the problem? 1. Load a saved deck which has a description.\r\n2. Load a saved deck which does not have a description. What is the expected output? What do you see instead? Description field should be cleared. Previous non-blank description remains in description field. What version of the product are you using? On what operating system? 1.44. Windows 7\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=420_",
+  "date": "2013-11-11T21:36:43",
+  "state": "closed",
+  "gid": 420,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=420",
+  "owner": ""
+}

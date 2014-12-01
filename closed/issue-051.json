@@ -1,0 +1,25 @@
+{
+  "status": "duplicate",
+  "body": "What steps will reproduce the problem? 1. Summon Nobel Hierarch \r\n2. Play a spell which requires {G} or {W} or {U} What is the expected output? What do you see instead? Noble Hierarch is not highlighted green and does not count towards the mana cost of any spell/ability. What version of the product are you using? On what operating system? Magarena 1.17b on Mac",
+  "author": "[liang.le...@gmail.com](https://code.google.com/u/102368348789681036710/)",
+  "title": "Noble Hierarch card does not have \"{T}: Add {G}, {W}, or {U} to your mana pool.\"",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "September 11, 2011 03:38:29",
+      "body": "Thanks for your report.\r\n\r\nThis bug was reported earlier in issue 46 and has been fixed. It will be part of Magarena 1.18.\n\n**Status:** Duplicate  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [liang.le...@gmail.com](https://code.google.com/u/102368348789681036710/) on September 11, 2011 17:31:07_\n\nWhat steps will reproduce the problem? 1. Summon Nobel Hierarch \r\n2. Play a spell which requires {G} or {W} or {U} What is the expected output? What do you see instead? Noble Hierarch is not highlighted green and does not count towards the mana cost of any spell/ability. What version of the product are you using? On what operating system? Magarena 1.17b on Mac\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=51_",
+  "date": "2011-09-11T17:31:07",
+  "state": "closed",
+  "gid": 51,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=51",
+  "owner": ""
+}

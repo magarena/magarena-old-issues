@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Looking forward, I can see see some upcoming problems involving the many different counter types (not including +1/+1 or -1/-1), and the single way counters-as-payment is being used.\r\n\r\nCounters of different types can be placed onto a permanent, however, if they are placed onto a card that has an activation cost involving them, they 'transform' into the ones needed for payment. Most cards are assuming that only 'their' version of a counter type is going to be placed on them.\r\n\r\nAs it stands, Sporoloth Ancient allows levelled up creatures to remove level counters (which the game just sees as charge counters) to create saprolings. Fungal Bloom will be able to replace fade counters as they get removed per turn. And Coretapper will allow Baku Altar to make spirit tokens.\r\n\r\nI understand that it would involve changing the {C},{C3} etc. costs into a more text-like \"Remove <n> <counter-type> counters from SN\" version of payments, but I think it will save a lot of hassle later on.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Counter Types",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 01, 2014 17:16:15",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on December 15, 2013 00:18:57_\n\nLooking forward, I can see see some upcoming problems involving the many different counter types (not including +1/+1 or -1/-1), and the single way counters-as-payment is being used.\r\n\r\nCounters of different types can be placed onto a permanent, however, if they are placed onto a card that has an activation cost involving them, they 'transform' into the ones needed for payment. Most cards are assuming that only 'their' version of a counter type is going to be placed on them.\r\n\r\nAs it stands, Sporoloth Ancient allows levelled up creatures to remove level counters (which the game just sees as charge counters) to create saprolings. Fungal Bloom will be able to replace fade counters as they get removed per turn. And Coretapper will allow Baku Altar to make spirit tokens.\r\n\r\nI understand that it would involve changing the {C},{C3} etc. costs into a more text-like \"Remove <n> <counter-type> counters from SN\" version of payments, but I think it will save a lot of hassle later on.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=453_",
+  "date": "2013-12-15T00:18:57",
+  "state": "closed",
+  "gid": 453,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=453",
+  "owner": ""
+}

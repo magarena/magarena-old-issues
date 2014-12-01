@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "The deck editor remembers the last loaded deck and attempts to restore it the next time you open the deck editor. If for some reason the deck becomes invalid (eg. the dec file is edited (incorrectly) outside of Magarena) then it will prevent the deck editor from loading.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Invalid deck prevents the deck editor from opening.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-High",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 27, 2014 00:20:07",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/aa02b0c6baca9f5b4829f2b951d68d3afbd437c9 .\r\n\r\nIf deck is invalid then just ignores it and loads deck editor with empty deck. The deck will be flagged as invalid in the Decks screen and cannot be selected.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on July 27, 2014 15:10:12_\n\nThe deck editor remembers the last loaded deck and attempts to restore it the next time you open the deck editor. If for some reason the deck becomes invalid (eg. the dec file is edited (incorrectly) outside of Magarena) then it will prevent the deck editor from loading.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=625_",
+  "date": "2014-07-27T15:10:12",
+  "state": "closed",
+  "gid": 625,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=625",
+  "owner": "lodici123"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "wontfix",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? The Computer is attacking with Border Patrol 1/6, Changeling Sentinel 3/2, and Steadfast Guard 2/2.  I am blocking Changeling Sentinel 3/2 and Steadfast Guard 2/2 with (first strike) Battle Hurda 3/3 and (first strike) Nightguard Patrol 2/1.\r\n\r\nI am expecting both Changeling Sentinel and Steadfast Guard to be removed at the end of combat. Instead, both my cards are removed and the computers cards return to play\r\n\r\nI can't see any reason for this, my first strikes should have won the combat\r\n\r\nI am sending three pics before the block, during the block, and after combat What version of the product are you using? On what operating system? Windows XP SP2 Magarena 1.23 Please provide any additional information below.",
+  "author": "[Comix...@gmail.com](https://code.google.com/u/100880791201746159829/)",
+  "title": "First trike Duel",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "March 24, 2012 15:19:12",
+      "body": "figured it out sorry.  The computer played Safe Passage before attacking.  I didn't see it until i looked at the message log.",
+      "author": "[Comix...@gmail.com](https://code.google.com/u/100880791201746159829/)"
+    },
+    {
+      "date": "March 25, 2012 02:02:48",
+      "body": "Thanks for the report. Although this is not an actual bug, it does point out a usability problem. It is easy to miss steps the computer took. We are aware of this problem and are looking into ways to make it easier to track what is happening.\n\n**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Comix...@gmail.com](https://code.google.com/u/100880791201746159829/) on March 25, 2012 06:12:01_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? The Computer is attacking with Border Patrol 1/6, Changeling Sentinel 3/2, and Steadfast Guard 2/2.  I am blocking Changeling Sentinel 3/2 and Steadfast Guard 2/2 with (first strike) Battle Hurda 3/3 and (first strike) Nightguard Patrol 2/1.\r\n\r\nI am expecting both Changeling Sentinel and Steadfast Guard to be removed at the end of combat. Instead, both my cards are removed and the computers cards return to play\r\n\r\nI can't see any reason for this, my first strikes should have won the combat\r\n\r\nI am sending three pics before the block, during the block, and after combat What version of the product are you using? On what operating system? Windows XP SP2 Magarena 1.23 Please provide any additional information below.\n\n**Attachment:** [First Strike Error Magarena.JPG First Strike Error Magarena2.JPG First Strike Error Magarena3.JPG](http://code.google.com/p/magarena/issues/detail?id=195)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=195_",
+  "date": "2012-03-25T06:12:01",
+  "state": "closed",
+  "gid": 195,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=195",
+  "owner": ""
+}

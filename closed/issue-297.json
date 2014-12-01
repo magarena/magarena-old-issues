@@ -1,0 +1,31 @@
+{
+  "status": "wontfix",
+  "body": "Disenchant @ http://www.slightlymagic.net/forum/viewtopic.php?t=3736&p=98918#p98918 writes\r\n\r\nHi developers. Maybe near \"generate deck\" and \"edit deck\" create button \"load deck\"? Will be useful. (:",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "load deck button on duel setup screen",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:45:05",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 04, 2013 06:28:11",
+      "body": "Load and save deck are now accessed via the Deck Editor screen. I intend to move the Generate deck as well at some point. The idea is keep things simple - if you want to edit, update or manipulate a deck then the Deck Editor seems the most logical place to do this. The fact you can only do this via the duel screen at the moment is a problem which I hope to address in future.\n\n**Status:** WontFix  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on September 28, 2012 10:17:27_\n\nDisenchant @ http://www.slightlymagic.net/forum/viewtopic.php?t=3736&p=98918#p98918 writes\r\n\r\nHi developers. Maybe near \"generate deck\" and \"edit deck\" create button \"load deck\"? Will be useful. (:\n\n**Attachment:** [button.JPG](http://code.google.com/p/magarena/issues/detail?id=297)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=297_",
+  "date": "2012-09-28T10:17:27",
+  "state": "closed",
+  "gid": 297,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=297",
+  "owner": "melvinzh...@gmail.com"
+}

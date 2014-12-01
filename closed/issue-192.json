@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. An opponent has Wall of Denial in play (it has shroud).\r\n2. Cast Faceless Butcher, which as an effect of \"when comes to play, exile target creature\" What is the expected output? What do you see instead? Wall of Denial, having shroud, should not be offered as a target for the effect. It is, and when chosen, is in fact removed from the game. What version of the product are you using? On what operating system? Magarena 1.23 on WinXP",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "A creature with shroud is offered as target for Faceless Butcher's effect.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 19, 2012 01:41:21",
+      "body": "This issue was closed by revision 2118f7d61b9a .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "March 19, 2012 01:42:05",
+      "body": "Thanks for the report.\r\nI made this and a few other cards to be a targeted effect.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on March 19, 2012 10:47:20_\n\nWhat steps will reproduce the problem? 1. An opponent has Wall of Denial in play (it has shroud).\r\n2. Cast Faceless Butcher, which as an effect of \"when comes to play, exile target creature\" What is the expected output? What do you see instead? Wall of Denial, having shroud, should not be offered as a target for the effect. It is, and when chosen, is in fact removed from the game. What version of the product are you using? On what operating system? Magarena 1.23 on WinXP\n\n**Attachment:** [faceless-butcher.PNG](http://code.google.com/p/magarena/issues/detail?id=192)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=192_",
+  "date": "2012-03-19T10:47:20",
+  "state": "closed",
+  "gid": 192,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=192",
+  "owner": ""
+}

@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. I use the rapacious one to attack the enemy\r\n2. I do X amount of damage\r\n3. I get X amount of Eldrazi Spawn tokens but I can't sacrifice them in the second phase What is the expected output? What do you see instead? Sacrifice skill doesn't have summon sickness (Unless it requires to turn around the card) so I was waiting to use the Eldrazi spawns as soon I get them and not wait a full turn for that. What version of the product are you using? On what operating system? 1.21 Please provide any additional information below.",
+  "author": "[est...@gmail.com](https://code.google.com/u/112144615059920860021/)",
+  "title": "Rapacious one bug",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 07, 2012 06:04:58",
+      "body": "Thanks for the report est120.\r\n\r\nThe fix for issue 129 should have fixed this bug too. After I applied that fix I was able to sacrifice an Eldrazi Spawn in the same turn it came into play.\r\nWill be in 1.22\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [est...@gmail.com](https://code.google.com/u/112144615059920860021/) on January 06, 2012 02:18:19_\n\nWhat steps will reproduce the problem? 1. I use the rapacious one to attack the enemy\r\n2. I do X amount of damage\r\n3. I get X amount of Eldrazi Spawn tokens but I can't sacrifice them in the second phase What is the expected output? What do you see instead? Sacrifice skill doesn't have summon sickness (Unless it requires to turn around the card) so I was waiting to use the Eldrazi spawns as soon I get them and not wait a full turn for that. What version of the product are you using? On what operating system? 1.21 Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=138_",
+  "date": "2012-01-06T02:18:19",
+  "state": "closed",
+  "gid": 138,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=138",
+  "owner": ""
+}

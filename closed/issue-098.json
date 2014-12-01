@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What is the problem?\r\n1. 4/4 Dragon Token (created by Broodmate Dragon), Flameblast Dragon and Balefire Dragon cannot block flying creatures\r\n2. Skithiryx cannot attack (no matter if haste ability is paid or not) What version of the product are you using? On what operating system? 1.20",
+  "author": "[Suislide...@googlemail.com](https://code.google.com/u/109823435823693191845/)",
+  "title": "Different Dragons cannot attack/block",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "November 26, 2011 00:08:00",
+      "body": "Thanks for the report! 1.20 has a critical bug with the handling of abilities. After fixing the bug, the above problems no longer occur. Look out for 1.20b in a couple of hours.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Suislide...@googlemail.com](https://code.google.com/u/109823435823693191845/) on November 26, 2011 07:22:34_\n\nWhat is the problem?\r\n1. 4/4 Dragon Token (created by Broodmate Dragon), Flameblast Dragon and Balefire Dragon cannot block flying creatures\r\n2. Skithiryx cannot attack (no matter if haste ability is paid or not) What version of the product are you using? On what operating system? 1.20\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=98_",
+  "date": "2011-11-26T07:22:34",
+  "state": "closed",
+  "gid": 98,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=98",
+  "owner": ""
+}

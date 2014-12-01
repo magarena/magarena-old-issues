@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "I've seen odd things happen with Joraga Warcaller (it hada +1/+1 effect on other elves despite not having been kicked nor having any counters on it...)\r\n\r\nLooking at the code, it seems rather obvious: The custom static effect in Joraga_Warcaller.java has a private variable `amount' that is set to zero in the context of the final static field `S'. my understanding of Java memory semantics is that that value will be shared globally in the card definition, and because the `condition' method doesn't set it to zero in the absence of counter, we get the effect I noticed.\r\n\r\nA quick dirty fix would be to set to zero in `condition'. However that issue might have crept in other card definitions. Perhaps it would be best to ensure Card definitions have no mutable global state.",
+  "author": "[prunedt...@gmail.com](https://code.google.com/u/113366656710992177543/)",
+  "title": "Broken card - Joraga Warcaller (possibly others)",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 03, 2011 05:31:57",
+      "body": "Thanks for the report.\r\n\r\nYes, this was an oversight in the implementation of static effects like these. Solved by Melvin in revision 6d998c955134 (and a few later revisions).\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [prunedt...@gmail.com](https://code.google.com/u/113366656710992177543/) on November 28, 2011 23:48:35_\n\nI've seen odd things happen with Joraga Warcaller (it hada +1/+1 effect on other elves despite not having been kicked nor having any counters on it...)\r\n\r\nLooking at the code, it seems rather obvious: The custom static effect in Joraga_Warcaller.java has a private variable `amount' that is set to zero in the context of the final static field `S'. my understanding of Java memory semantics is that that value will be shared globally in the card definition, and because the `condition' method doesn't set it to zero in the absence of counter, we get the effect I noticed.\r\n\r\nA quick dirty fix would be to set to zero in `condition'. However that issue might have crept in other card definitions. Perhaps it would be best to ensure Card definitions have no mutable global state.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=105_",
+  "date": "2011-11-28T23:48:35",
+  "state": "closed",
+  "gid": 105,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=105",
+  "owner": ""
+}

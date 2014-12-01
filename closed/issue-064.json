@@ -1,0 +1,30 @@
+{
+  "status": "invalid",
+  "body": "What steps will reproduce the problem? 1. Summon a Belltower Sphinx\r\n2. The Belltower Sphinx blocks or gets blocked\r\n3. The Belltower Sphinx take combat damage\r\n4. It doesn't happen anything What is the expected output? What do you see instead? That the opponent has to send cards from his deck to the discard pile What version of the product are you using? On what operating system? 1.18 on Windows Vista Please provide any additional information below.",
+  "author": "[est...@gmail.com](https://code.google.com/u/112144615059920860021/)",
+  "title": "Belltower Sphinx not working on combat damage",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "September 29, 2011 22:45:02",
+      "body": "Thanks for the report.\r\n\r\nI tried to reproduce the bug but in my tests Belltower Sphinx\r\nworks as expected. There is no message that tells the controller puts cards in the graveyard but you can look at the graveyard and see it happened.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "October 28, 2011 06:32:52",
+      "body": "I'll close this since nobody was able to reproduce this bug.\r\n\r\nReporter: feel free to open a new issue when you can reproduce this bug using the latest version of Magarena.\n\n**Status:** Invalid  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [est...@gmail.com](https://code.google.com/u/112144615059920860021/) on September 30, 2011 02:42:01_\n\nWhat steps will reproduce the problem? 1. Summon a Belltower Sphinx\r\n2. The Belltower Sphinx blocks or gets blocked\r\n3. The Belltower Sphinx take combat damage\r\n4. It doesn't happen anything What is the expected output? What do you see instead? That the opponent has to send cards from his deck to the discard pile What version of the product are you using? On what operating system? 1.18 on Windows Vista Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=64_",
+  "date": "2011-09-30T02:42:01",
+  "state": "closed",
+  "gid": 64,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=64",
+  "owner": ""
+}

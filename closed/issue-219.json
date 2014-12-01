@@ -1,0 +1,25 @@
+{
+  "status": "wontfix",
+  "body": "What steps will reproduce the problem? First game in a duel, I was dealt a hand with no lands, and offered to take a mulligan, which I did. Even though I did get a land this time, I was offered a mulligan again. I took this one, too, out of curiosity - and was offered a third one in a row (which I declined this time).\r\n\r\nAfter that, I was offered a mulligan on every single subsequent game, even though I always had lands in the dealt hand. What is the expected output? What do you see instead? Expected: no mulligan unless a hand is dealt with no lands. Actual: if you are offered a mulligan once, you are offered one in every game. What version of the product are you using? On what operating system? Magarena 1.26 on WinXP",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Mulligan offered on every game",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "June 06, 2012 08:20:16",
+      "body": "You are thinking of older rulings. \r\n\r\nThe current rules are different:\r\n103.4\r\nA player who is dissatisfied with his or her initial hand may take a mulligan.\n\n**Status:** WontFix  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on June 04, 2012 07:21:42_\n\nWhat steps will reproduce the problem? First game in a duel, I was dealt a hand with no lands, and offered to take a mulligan, which I did. Even though I did get a land this time, I was offered a mulligan again. I took this one, too, out of curiosity - and was offered a third one in a row (which I declined this time).\r\n\r\nAfter that, I was offered a mulligan on every single subsequent game, even though I always had lands in the dealt hand. What is the expected output? What do you see instead? Expected: no mulligan unless a hand is dealt with no lands. Actual: if you are offered a mulligan once, you are offered one in every game. What version of the product are you using? On what operating system? Magarena 1.26 on WinXP\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=219)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=219_",
+  "date": "2012-06-04T07:21:42",
+  "state": "closed",
+  "gid": 219,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=219",
+  "owner": ""
+}

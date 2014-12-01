@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? The emblem reads: \"Whenever you cast a creature spell, you \"may\" search your library for a creature card... \" What version of the product are you using? On what operating system? magarena 1.48.829 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. .. but thanks so far. I appreciate your effort.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Garruk, Caller of Beasts, Emblem triggers now, but without \"may\" option",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 09, 2014 07:51:33",
+      "body": "fixed:\r\n\r\n[\r\n    new MagicPlaneswalkerActivation(1) {\r\n        @Override\r\n        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {\r\n            return new MagicEvent(\r\n                source,\r\n                this,\r\n                \"Reveal the top five cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order.\"\r\n            );\r\n        }\r\n        @Override\r\n        public void executeEvent(final MagicGame game, final MagicEvent event) {\r\n            final MagicCardList library = event.getPlayer().getLibrary();\r\n            for (int i = 0; i < 5 && library.isEmpty() == false; i++) {\r\n                final MagicCard top = library.getCardAtTop();\r\n                game.doAction(new MagicRemoveCardAction(\r\n                    top,\r\n                    MagicLocationType.OwnersLibrary\r\n                ));\r\n                game.doAction(new MagicMoveCardAction(\r\n                    top,\r\n                    MagicLocationType.OwnersLibrary,\r\n                    top.hasType(MagicType.Creature) ?\r\n                      MagicLocationType.OwnersHand :\r\n                      MagicLocationType.BottomOfOwnersLibrary\r\n                ));\r\n            }\r\n        }\r\n    },\r\n    new MagicPlaneswalkerActivation(-3) {\r\n        @Override\r\n        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {\r\n             return new MagicEvent(\r\n                source,\r\n                this,\r\n                \"PN may put a green creature card from his or her hand onto the battlefield.\"\r\n            );\r\n       }\r\n        @Override\r\n        public void executeEvent(final MagicGame game, final MagicEvent event) {\r\n            game.addEvent(new MagicPutOntoBattlefieldEvent(\r\n                event,\r\n                new MagicMayChoice(\r\n                    \"Put a green creature card onto the battlefield?\",\r\n                    MagicTargetChoice.A_GREEN_CREATURE_CARD_FROM_HAND\r\n                )\r\n            ));\r\n        }\r\n    },\r\n    new MagicPlaneswalkerActivation(-7) {\r\n        @Override\r\n        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {\r\n            return new MagicEvent(\r\n                source,\r\n                this,\r\n                \"PN gets an emblem with \\\"Whenever you cast a creature spell, you may search your library for a creature card, put it onto the battlefield, then shuffle your library.\\\"\"\r\n            );\r\n        }\r\n        @Override\r\n        public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {\r\n            final MagicPlayer you = outerEvent.getPlayer();\r\n            outerGame.doAction(new MagicAddTriggerAction(\r\n                new MagicWhenOtherSpellIsCastTrigger() {\r\n                    @Override\r\n                    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {\r\n                        return (cardOnStack.getController().getId() == you.getId() && cardOnStack.hasType(MagicType.Creature)) ?\r\n                            new MagicEvent(\r\n                                cardOnStack,\r\n                                new MagicMayChoice(),\r\n                                this,\r\n                                \"PN may search his or her library for creature card and put that card onto the battlefield. Then shuffle PN's library.\"\r\n                            ):\r\n                            MagicEvent.NONE;\r\n                    }\r\n                    @Override\r\n                    public void executeEvent(final MagicGame game, final MagicEvent event) {\r\n                        if(event.isYes()) {\r\n                            game.addEvent(new MagicSearchOntoBattlefieldEvent(\r\n                                event,\r\n                                MagicTargetChoice.CREATURE_CARD_FROM_LIBRARY\r\n                            ));\r\n                        }\r\n                    }\r\n                }\r\n            ));\r\n        }\r\n    }\r\n]",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 09, 2014 19:10:46",
+      "body": "Thanks for making the changes. Copy and pasting code is rather error prone, are you familar with mercurial? If so, it will be easier if you could craete a clone via https://code.google.com/p/magarena/source/clones and make a commit for this change and push it to your clone.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 10, 2014 01:50:12",
+      "body": "as far a command line goes - pull push update clone, can do that. I'm configuring my own clone right now...",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 10, 2014 02:27:38",
+      "body": "well, clone is created, commit was made... https://code.google.com/r/landhotelwesterwald-magarena/source/list",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 10, 2014 19:43:54",
+      "body": "Merged the fix. Thanks!\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 14, 2014 00:26:26_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? The emblem reads: \"Whenever you cast a creature spell, you \"may\" search your library for a creature card... \" What version of the product are you using? On what operating system? magarena 1.48.829 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. .. but thanks so far. I appreciate your effort.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=517_",
+  "date": "2014-03-14T00:26:26",
+  "state": "closed",
+  "gid": 517,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=517",
+  "owner": ""
+}

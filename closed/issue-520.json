@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Dakkon Blackblade does not use it's creature card image.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Dakkon Blackblade card image",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 15, 2014 10:14:41",
+      "body": "Ahh, yes - that's a bit of problem for mtgimage.com - card and avatar with same name. Edited the image url to go via the set, not just the name.\r\n\r\nThanks for that!\n\n**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 15, 2014 16:24:21_\n\nDakkon Blackblade does not use it's creature card image.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=520_",
+  "date": "2014-03-15T16:24:21",
+  "state": "closed",
+  "gid": 520,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=520",
+  "owner": ""
+}

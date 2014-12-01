@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "Instead of having a specific option in the downloads dialog the low quality image updater should run as part of the import process where it is most relevant - ie. its job is to refresh the existing collection of downloaded images by replacing any low quality images with higher resolution images if available. See also issue 663 .",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Integrate low quality image updater into import process",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 25, 2014 14:29:01",
+      "body": "fix in https://bitbucket.org/lodici/magarena/commits/e7a0ec58ef8fa39b9341f5b968a6f4bbf730c748 .\r\n\r\nThe low quality image updater has been added as an option to the import dialog. It is on by default since most times it will only be run once a month when a new version is installed so there is a good chance there might be new high quality cards available. If you run the import process more regularly then you can skip the updater by unticking the option.\r\n\r\nThe updater is still available from the downloads dialog if -DdevMode=true.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 25, 2014 14:29:13",
+      "body": "**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 26, 2014 05:23:11_\n\nInstead of having a specific option in the downloads dialog the low quality image updater should run as part of the import process where it is most relevant - ie. its job is to refresh the existing collection of downloaded images by replacing any low quality images with higher resolution images if available. See also issue 663 .\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=664_",
+  "date": "2014-08-26T05:23:11",
+  "state": "closed",
+  "gid": 664,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=664",
+  "owner": "lodici123"
+}

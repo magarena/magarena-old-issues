@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. open duel decks screen.\r\n2. open deck editor\r\n3. load a new deck with a description\r\n4. select \"use this deck\" What is the expected output? What do you see instead? deck description should be updated but it is not.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Deck description in duel setup not updated when loading new deck from deck editor",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 11, 2013 05:40:34",
+      "body": "Fixed in build 1.44.617 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/617/ ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on December 11, 2013 16:35:56_\n\nWhat steps will reproduce the problem? 1. open duel decks screen.\r\n2. open deck editor\r\n3. load a new deck with a description\r\n4. select \"use this deck\" What is the expected output? What do you see instead? deck description should be updated but it is not.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=450_",
+  "date": "2013-12-11T16:35:56",
+  "state": "closed",
+  "gid": 450,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=450",
+  "owner": "lodici123"
+}

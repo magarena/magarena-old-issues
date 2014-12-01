@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "Raised by PalladiaMors in forum ( http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3736&p=159225#p159225 ).",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Sound effects should be on by default.",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 28, 2014 22:13:16",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/2d493f3328b5751187afa1f40584ef7d0e0b84ad .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 28, 2014 16:34:56_\n\nRaised by PalladiaMors in forum ( http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3736&p=159225#p159225 ).\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=667_",
+  "date": "2014-08-28T16:34:56",
+  "state": "closed",
+  "gid": 667,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=667",
+  "owner": "lodici123"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "wontfix",
+  "body": "If you have some dual lands (or just lands that offer more than 1 type of mana) and you cast a spell, you are asked to choose which land will provide which mana. However, you are asked even in situations where the choice is ultimately meaningless.\r\n\r\nIf you have some dual lands and cast a spell which costs EXACTLY as much as the mana you have, you still get the prompt.\r\n\r\nSee attached image.",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "Pointless land selection when cost == available",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "March 23, 2014 02:48:51",
+      "body": "Which source to pay for which mana cost is a decision the player needs to make, as there might be a trade offs in the different mana ability (to generate a particular color, you may need to pay life etc).\n\n**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on June 19, 2012 17:05:18_\n\nIf you have some dual lands (or just lands that offer more than 1 type of mana) and you cast a spell, you are asked to choose which land will provide which mana. However, you are asked even in situations where the choice is ultimately meaningless.\r\n\r\nIf you have some dual lands and cast a spell which costs EXACTLY as much as the mana you have, you still get the prompt.\r\n\r\nSee attached image.\n\n**Attachment:** [pointlessmana.png](http://code.google.com/p/magarena/issues/detail?id=232)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=232_",
+  "date": "2012-06-19T17:05:18",
+  "state": "closed",
+  "gid": 232,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=232",
+  "owner": ""
+}

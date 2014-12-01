@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Get metalcraft.\r\n2. Play an Indomitable Archangel.\r\n3. Attempt to cast a Glint Hawk. What is the expected output? What do you see instead? Since the Glint Hawk's ability merely chooses an artifact on resolution, the Indomitable Archangel's shroud-providing shouldn't affect it. It does, and as a result the Glint Hawk is automatically sacrificed without providing any opportunity to return an artifact to your hand. What version of the product are you using? On what operating system? 1.23, OS X",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Glint Hawk's return ability targets",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 17, 2012 02:02:13",
+      "body": "This issue was closed by revision a62ba73d6985 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "March 17, 2012 02:03:34",
+      "body": "Thanks for noticing.\r\n\r\nThis was probably a copy/paste error.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on March 15, 2012 23:23:09_\n\nWhat steps will reproduce the problem? 1. Get metalcraft.\r\n2. Play an Indomitable Archangel.\r\n3. Attempt to cast a Glint Hawk. What is the expected output? What do you see instead? Since the Glint Hawk's ability merely chooses an artifact on resolution, the Indomitable Archangel's shroud-providing shouldn't affect it. It does, and as a result the Glint Hawk is automatically sacrificed without providing any opportunity to return an artifact to your hand. What version of the product are you using? On what operating system? 1.23, OS X\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=190_",
+  "date": "2012-03-15T23:23:09",
+  "state": "closed",
+  "gid": 190,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=190",
+  "owner": ""
+}

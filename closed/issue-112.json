@@ -1,0 +1,69 @@
+{
+  "status": "verified",
+  "body": "krober23 @ http://www.slightlymagic.net/forum/viewtopic.php?t=3735&p=76250#p76250 In 1.20b, can no longer use the card aether vial. It offers no option to use the ability any more.\r\n\r\nScreenshot @ http://www.slightlymagic.net/forum/download/file.php?id=4450&mode=view",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "aether vial's and Legacy's Allure abilities missing",
+  "labels": [
+    "imported",
+    "Priority-High",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 04, 2011 01:50:37",
+      "body": "This is related to the targetfilter that is used.\r\nAether Vial uses MagicCMCTargetFilter and for some reason fails to find a valid target, so the ability can't be used. The same is true for Legacy's Allure that uses MagicPowerTargetFilter.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 29, 2011 05:52:05",
+      "body": "Issue 127 has been merged into this issue.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 29, 2011 17:41:04",
+      "body": "**Labels:** -Priority-Medium Priority-High  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "January 21, 2012 06:32:49",
+      "body": "changed summary to reflect that this also affects Legacy's Allure\n\n**Summary:** aether vial's and Legacy's Allure abilities missing  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 08, 2012 01:17:06",
+      "body": "I've been debugging this but don't see a solution. What happens is:\r\n- permanent activation get's added to AEther Vial\r\n- MagicCMCTargetFilter is called and at that point is has zero counters so cmc==0\r\n- when conditions are met MagicCMCTargetFilter's accept method is called but cmc will still be zero\r\n\r\nThe affected cards used to work in 1.19, so 1.20 broke something and I'm trying to figure out what changes are responsible. The only possible revisions I can find are revision 65f74d84bf22 and revision fce381bcf2a0 .\r\n\r\nStill doesn't make sense to me",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 23, 2012 06:45:52",
+      "body": "This issue was closed by revision 24f2ef9c3af3 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 23, 2012 17:59:21",
+      "body": "@beholder The situation is indeed as you've described. The previous limitation is that getTargetChoice (which is used to find the set of legal targets of an effect) is called once when the activation is linked to the card, hence it cannot depend on the source of the activation. I'm not sure how it would have worked in 1.19...\r\n\r\nI've change it so that getTargetChoice is called each time the game checks for legal targets and it now takes in a parameter that represents the source of the activation.\r\n\r\nBtw, there is no need to check for existence of legal targets as a activation condition, this is handled by the game engine, see MagicActivation.canPlay method. For example, the MagicCondition.HAS_CREATURE_WITH_CMC_CONDITION for AEther Vial is redundant.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "March 01, 2012 20:25:17",
+      "body": "Thanks for fixing this.\r\nI can go back to using my relentless rat deck :)\r\n\r\n# 3 creatures\r\n1 Cairn Wanderer\r\n1 Mortivore\r\n20 Relentless Rats\r\n\r\n# 8 spells\r\n4 AEther Vial\r\n2 Accorder's Shield\r\n1 Angelheart Vial\r\n1 Assassinate\r\n1 Bad Moon\r\n2 Cruel Edict\r\n2 Dead Weight\r\n3 Sign in Blood\r\n\r\n# 3 lands\r\n2 Mutavault\r\n16 Swamp\r\n4 Swarmyard",
+      "author": "[Kevin.Ro...@gmail.com](https://code.google.com/u/110836722264835547840/)"
+    },
+    {
+      "date": "March 01, 2012 23:07:48",
+      "body": "Your welcome :) Just curious, is the AI able to play your relentless rats deck well?",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on December 03, 2011 13:05:08_\n\nkrober23 @ http://www.slightlymagic.net/forum/viewtopic.php?t=3735&p=76250#p76250 In 1.20b, can no longer use the card aether vial. It offers no option to use the ability any more.\r\n\r\nScreenshot @ http://www.slightlymagic.net/forum/download/file.php?id=4450&mode=view\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=112_",
+  "date": "2011-12-03T13:05:08",
+  "state": "closed",
+  "gid": 112,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=112",
+  "owner": "melvinzh...@gmail.com"
+}

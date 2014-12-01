@@ -1,0 +1,55 @@
+{
+  "status": "duplicate",
+  "body": "It seems if a creature with a +1/+1 counter (for example Joraga Warcaller) is put into a graveyard and then returned to battlefield (for example with Griomoire of the Dead 2nd ability) it will still have those counters on itself.",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Counters on creatures",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "December 03, 2011 04:08:50",
+      "body": "I tried this with the cards you have as an example and with various other cards but can not reproduce this bug.\r\nMaybe what you noticed was caused by the bug that Joraga Warcaller has ( issue 105 )?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 03, 2011 05:28:16",
+      "body": "I noticed that when a used secon ability of Grimoire and none of the creatures had buff abilities except of Joragas (it where 2 or 4 of them)",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 03, 2011 05:29:32",
+      "body": "It seems in issue 105 described same bug.",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 03, 2011 05:40:11",
+      "body": "Seems we agree that another issue ( issue 105 ) was causing this and since issue 105 has been fixed, I'm closing this report.\r\n\r\nI'm afraid you'd have to compile your own application from source to test if this issue really isn't a different bug. Or wait for 1.21 and reopen this issue if you can then still reproduce the bug.\r\n\r\nThank you.\n\n**Status:** Duplicate  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 03, 2011 05:59:41",
+      "body": "I found how Joraga's ability, if it was kicked 2 times (+2/+2 to all other Elfs) than i.e. sacrificed and then returned to bf from grave, he will not have counters on itself but still giving +2/+2",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 03, 2011 06:05:02",
+      "body": "Screens\n\n**Attachment:** [Joraga bug 1.JPG Joraga bug 2.JPG](http://code.google.com/p/magarena/issues/detail?id=107#hc6)",
+      "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)"
+    },
+    {
+      "date": "December 03, 2011 06:57:25",
+      "body": "Yes, that was one of the problems I found when testing issue 105 and that's why I felt your issue is describing the same bug.\r\nMelvin's fix solved all the bugs I could find that were related to Joraga Warcaller (and similar cards).\r\n\r\nThanks again for all the reports.\r\nWe really need people playing and looking out for bugs because we don't have enough developers or time to test every possible action ourselves. So every report is appreciated :)",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on December 01, 2011 21:39:37_\n\nIt seems if a creature with a +1/+1 counter (for example Joraga Warcaller) is put into a graveyard and then returned to battlefield (for example with Griomoire of the Dead 2nd ability) it will still have those counters on itself.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=107_",
+  "date": "2011-12-01T21:39:37",
+  "state": "closed",
+  "gid": 107,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=107",
+  "owner": ""
+}

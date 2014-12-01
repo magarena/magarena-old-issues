@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "\"Teleportal\" has picture of \"Vandalblast\" What version of the product are you using? On what operating system? 1.35",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Pictures error",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 27, 2013 17:48:38",
+      "body": "This issue was closed by revision 655f81ceb821 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 27, 2013 17:48:46",
+      "body": "Thanks. Fixed for next release.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on February 28, 2013 00:57:51_\n\n\"Teleportal\" has picture of \"Vandalblast\" What version of the product are you using? On what operating system? 1.35\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=331_",
+  "date": "2013-02-28T00:57:51",
+  "state": "closed",
+  "gid": 331,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=331",
+  "owner": ""
+}

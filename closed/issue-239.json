@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Not all abilities allows in \"ability\" property works when used in \"given_ability\"",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "document which abilities can be used in given_ability",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "June 26, 2012 03:01:21",
+      "body": "Fixed by revision d99977a952d7 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on June 26, 2012 10:20:34_\n\nNot all abilities allows in \"ability\" property works when used in \"given_ability\"\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=239_",
+  "date": "2012-06-26T10:20:34",
+  "state": "closed",
+  "gid": 239,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=239",
+  "owner": "melvinzh...@gmail.com"
+}

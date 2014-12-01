@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Computer plays Stitch Together\r\n2. I play Twincast, copying that Stitch Together spell\r\n3. I select a creature card in my graveyard (which has 11 cards at that moment) What is the expected output? What do you see instead? Expected: the creature I select is put into play\r\nActual: the creature remains in graveyard - it goes neither into play nor into my hand. Twincast itself is also placed into graveyard. What version of the product are you using? On what operating system? Magarena 1.37 on Windows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Here are relevant (I think) lines from game.log:\r\n\r\nMMAB cheat=false index=1 life=20 phase=FirstMain slice=8000 time=6954\r\n  [648/12269/4904 at 10] (pass)\r\n  [649/13358/7301 at 9] (Swamp)\r\n  [650/10768/6732 at 11] (Sword of Feast and Famine)\r\n* [651/17674/10314 at 13] (Stitch Together)\r\n  [652/5405/7245 at 11] (Sword of Body and Mind)\r\nLOG (C): Pay {B}{B}. Tap Swamp. Tap Swamp. Play Stitch Together.\r\nLOG (P): Tap Sulfur Falls. Tap Sulfur Falls. Pay {U}{U}. Play Twincast.\r\nLOG (P): Copy target instant or sorcery spell (Stitch Together). You may choose new targets for the copy.\r\nLOG (C): Return target creature card (Chandra's Spitfire) from your graveyard to your hand. Return that card from your graveyard to the battlefield instead if seven or more cards are in your graveyard.\r\nLOG (C): Return target creature card (Memnite) from your graveyard to your hand. Return that card from your graveyard to the battlefield instead if seven or more cards are in your graveyard.\r\nMMAB cheat=false index=1 life=20 phase=FirstMain slice=8000 time=6597\r\n  [654/13107/5599 at 11] (pass)\r\n  [655/13560/6599 at 10] (Memnite)\r\n  [656/13752/10284 at 12] (Swamp)\r\n* [657/19354/10284 at 11] (Sword of Body and Mind)",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Twincast doesn't copy Stitch Together",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "May 26, 2013 19:46:00",
+      "body": "Thanks for the report and relevant log lines. I'm able to replicate the issue.\n\n**Status:** Accepted  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 26, 2013 23:14:46",
+      "body": "This issue was closed by revision 42ec0fb4deeb .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "May 26, 2013 23:16:16",
+      "body": "Problem was that the copy of the spell has the same player as the original so it was trying to move a card from the original player's graveyard to his/her hand, instead of from your graveyard.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:14",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on May 25, 2013 11:27:13_\n\nWhat steps will reproduce the problem? 1. Computer plays Stitch Together\r\n2. I play Twincast, copying that Stitch Together spell\r\n3. I select a creature card in my graveyard (which has 11 cards at that moment) What is the expected output? What do you see instead? Expected: the creature I select is put into play\r\nActual: the creature remains in graveyard - it goes neither into play nor into my hand. Twincast itself is also placed into graveyard. What version of the product are you using? On what operating system? Magarena 1.37 on Windows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Here are relevant (I think) lines from game.log:\r\n\r\nMMAB cheat=false index=1 life=20 phase=FirstMain slice=8000 time=6954\r\n  [648/12269/4904 at 10] (pass)\r\n  [649/13358/7301 at 9] (Swamp)\r\n  [650/10768/6732 at 11] (Sword of Feast and Famine)\r\n* [651/17674/10314 at 13] (Stitch Together)\r\n  [652/5405/7245 at 11] (Sword of Body and Mind)\r\nLOG (C): Pay {B}{B}. Tap Swamp. Tap Swamp. Play Stitch Together.\r\nLOG (P): Tap Sulfur Falls. Tap Sulfur Falls. Pay {U}{U}. Play Twincast.\r\nLOG (P): Copy target instant or sorcery spell (Stitch Together). You may choose new targets for the copy.\r\nLOG (C): Return target creature card (Chandra's Spitfire) from your graveyard to your hand. Return that card from your graveyard to the battlefield instead if seven or more cards are in your graveyard.\r\nLOG (C): Return target creature card (Memnite) from your graveyard to your hand. Return that card from your graveyard to the battlefield instead if seven or more cards are in your graveyard.\r\nMMAB cheat=false index=1 life=20 phase=FirstMain slice=8000 time=6597\r\n  [654/13107/5599 at 11] (pass)\r\n  [655/13560/6599 at 10] (Memnite)\r\n  [656/13752/10284 at 12] (Swamp)\r\n* [657/19354/10284 at 11] (Sword of Body and Mind)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=353_",
+  "date": "2013-05-25T11:27:13",
+  "state": "closed",
+  "gid": 353,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=353",
+  "owner": ""
+}

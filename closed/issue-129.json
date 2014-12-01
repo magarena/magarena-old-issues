@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have an Eldrazi spawn token and Skullclamp \r\n2. Also 2 other creatures \r\n3. Lands are all Tapped What is the expected output? What do you see instead? Should see spawn token as a mana source to activate Skullclamp - does not appear as a choice What version of the product are you using? On what operating system? V. 1.21  - OSX 10.6 Please provide any additional information below. picture shows mogg as able to sac but not token",
+  "author": "[taf...@gmail.com](https://code.google.com/u/114851566410942628096/)",
+  "title": "Can not Sac Spawn Token to activate Skullclamp",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 07, 2012 03:00:36",
+      "body": "This issue was closed by revision e4e7c938a8e5 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 07, 2012 03:03:01",
+      "body": "Thanks for the report.\r\n\r\nThe Eldrazi Spawn token mistakenly needed to tap to sacrifice and since the code said it couldn't, it didn't work.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [taf...@gmail.com](https://code.google.com/u/114851566410942628096/) on December 30, 2011 03:31:40_\n\nWhat steps will reproduce the problem? 1. Have an Eldrazi spawn token and Skullclamp \r\n2. Also 2 other creatures \r\n3. Lands are all Tapped What is the expected output? What do you see instead? Should see spawn token as a mana source to activate Skullclamp - does not appear as a choice What version of the product are you using? On what operating system? V. 1.21  - OSX 10.6 Please provide any additional information below. picture shows mogg as able to sac but not token\n\n**Attachment:** [can't sac spawn token to activate clamp.tiff](http://code.google.com/p/magarena/issues/detail?id=129)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=129_",
+  "date": "2011-12-30T03:31:40",
+  "state": "closed",
+  "gid": 129,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=129",
+  "owner": ""
+}

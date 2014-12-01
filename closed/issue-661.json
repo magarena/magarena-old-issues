@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "body": "Disable card animation if running in Text-Mode. Also Mulligan screen if it is not already.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Card animation plays in Text-Mode!",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 29, 2014 04:22:40",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/772291a7a5dd1a34971331370bfbd06e5ed658ea .\r\n\r\nMulligan screen is now also skipped if running in text mode.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 21, 2014 14:38:21_\n\nDisable card animation if running in Text-Mode. Also Mulligan screen if it is not already.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=661_",
+  "date": "2014-08-21T14:38:21",
+  "state": "closed",
+  "gid": 661,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=661",
+  "owner": "lodici123"
+}

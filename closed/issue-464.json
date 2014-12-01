@@ -1,0 +1,34 @@
+{
+  "status": "cantreproduce",
+  "body": "reported by sponeta at http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=141616#p141616 .\r\n\r\nMagarena seems to become more sluggish the longer a game lasts. Not the AI, but the interface. After 10-20 turns, buttons are slow to respond, and after any action it takes a second for targetable cards to be highlighted. I've never had slowdown issues with Magarena before, as I have a decent computer (the AI feasts on processing power, but that's a given).\r\n\r\nI noticed there have been some major interface changes since I last played, so I went back a version to check. And it looks like the slowdown was there even in version 1.44, which is when the game log was made to be always visible. Maybe that's related?",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Log possibly causing slow down",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 29, 2014 10:44:43",
+      "body": "I am not convinced that your problem is a UI issue or even specifically related to the log viewer. How can you be so sure it not the AI? Or your PC/Java config? I would have expected more complaints if recent code changes had adversely affected the UI responsiveness. From personal experience, the AI does seem to take longer to play as a game progresses which might be perceived as an increasing sluggishness in the UI.\r\n\r\nOne possible cause for a slowdown is that of a lack of memory such that the Java memory manager is constantly having to garbage collect which will manifest in drastically reduced performance.\r\n\r\nAs a further test, in build 688 ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/688/ ), you can now add \"disableLogViewer\" as a command line parameter which will completely disable the UI log viewer so this will identify if the log viewer is affecting performance once and for all. Please can you try this parameter and see whether this makes any difference.\r\n\r\nOn my PC the results are not conclusive.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "February 06, 2014 22:02:45",
+      "body": "I have added memory utilization stats to the About dialog ( https://buildhive.cloudbees.com/job/melvinzhang/job/magarena/712/ ). When Magarena starts becoming sluggish please can you open the the About dialog by clicking on the wizard icon in any options menu screen and post the figures displayed either here on in the forum.\n\n**Status:** Accepted  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 11, 2014 00:21:07",
+      "body": "No further complaints so assume the VM memory increase has resolved it.\n\n**Status:** CantReproduce  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on January 06, 2014 21:49:23_\n\nreported by sponeta at http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=141616#p141616 .\r\n\r\nMagarena seems to become more sluggish the longer a game lasts. Not the AI, but the interface. After 10-20 turns, buttons are slow to respond, and after any action it takes a second for targetable cards to be highlighted. I've never had slowdown issues with Magarena before, as I have a decent computer (the AI feasts on processing power, but that's a given).\r\n\r\nI noticed there have been some major interface changes since I last played, so I went back a version to check. And it looks like the slowdown was there even in version 1.44, which is when the game log was made to be always visible. Maybe that's related?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=464_",
+  "date": "2014-01-06T21:49:23",
+  "state": "closed",
+  "gid": 464,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=464",
+  "owner": "lodici123"
+}

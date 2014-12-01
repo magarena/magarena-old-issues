@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Cast a white creature spell\r\n2. Cast Ring of Thune and equip it to the white creature. It'll get vigilance\r\n3. next owner's upkeep phase it will not get a +1/+1 counter What is the expected output? What do you see instead? What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Ring of Thune does not award the +1/+1 counter. Same goes for Kalonia and Evos Isle.",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 08, 2014 17:17:07",
+      "body": "This issue was closed by revision ddbf36ed6ec8 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:56",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 08, 2014 00:58:27_\n\nWhat steps will reproduce the problem? 1. Cast a white creature spell\r\n2. Cast Ring of Thune and equip it to the white creature. It'll get vigilance\r\n3. next owner's upkeep phase it will not get a +1/+1 counter What is the expected output? What do you see instead? What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=498_",
+  "date": "2014-03-08T00:58:27",
+  "state": "closed",
+  "gid": 498,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=498",
+  "owner": ""
+}

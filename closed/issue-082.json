@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "write a script to automatically correct rarities using card data",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "correct rarities in cards.txt so that it reflects rarities on the actual card",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 03, 2011 22:31:16",
+      "body": "This issue was closed by revision 103ea9f426c2 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on October 31, 2011 11:49:14_\n\nwrite a script to automatically correct rarities using card data\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=82_",
+  "date": "2011-10-31T11:49:14",
+  "state": "closed",
+  "gid": 82,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=82",
+  "owner": "melvinzh...@gmail.com"
+}

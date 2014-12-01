@@ -1,0 +1,29 @@
+{
+  "status": "cantreproduce",
+  "body": "Reported by jazevec:\r\n\r\nWelkin Tern (1U 2/1 flyer with \"can only block creatures with flying\") actually *can* block creatures without flying. I was attacked by Ardent Recruit early in the game and could block it. I tried doing that and they actually dealt damage to each other. I learned to never, ever, under no circumstances to move my eyes away from lower left corner of the screen and I'm pretty sure no spells or effects were involved.",
+  "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)",
+  "title": "creatures with \"can only block creatures with flying\" *can* block creatures without flying",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 15, 2012 00:07:16",
+      "body": "I tried some test games and there the \"can only block creatures with flying\" worked as expected.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 29, 2012 20:31:30",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/) on June 15, 2012 14:59:44_\n\nReported by jazevec:\r\n\r\nWelkin Tern (1U 2/1 flyer with \"can only block creatures with flying\") actually *can* block creatures without flying. I was attacked by Ardent Recruit early in the game and could block it. I tried doing that and they actually dealt damage to each other. I learned to never, ever, under no circumstances to move my eyes away from lower left corner of the screen and I'm pretty sure no spells or effects were involved.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=222_",
+  "date": "2012-06-15T14:59:44",
+  "state": "closed",
+  "gid": 222,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=222",
+  "owner": ""
+}

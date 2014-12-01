@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Opponent played Triumph of Cruelty while I had an Echo Mage with 4 Level Counters (2/4)) in play. He had an unkicked Ardent Soldier (1/2 Vigilance), 2 Human Soldier Tokens (1/1) and a Woodland Changeling (2/2) present.\r\nEnd of turn.\r\nMy turn - passing, doing nothing.\r\nHis upkeep: Ability was put on stack\r\n\"player discards a  card if Mini Max controls the creature with the greatest power or tied for the greatest power\"\r\nQuick glance over the power values: Woodland Changeling 2 - Echo Mage 2 - tied.\r\nExpected output: I should have been prompted to discard a card\r\nWhat happened: ability resolves, I didn't have to discard. What version of the product are you using? On what operating system? magarena 1.48.860 - linux Zorin 8 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Triumph of Cruelty - tied for greatest power does not trigger",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 21, 2014 13:08:28",
+      "body": "**Status:** Accepted  \n  **Owner:** ShawnieBoyUK  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 21, 2014 14:28:02",
+      "body": "Fixed in Revision d07fe2459cfe Further testing would be much appreciated :)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 21, 2014 14:28:36",
+      "body": "**Status:** Fixed  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "March 21, 2014 17:06:10",
+      "body": "seems fine by now (.862)\r\n\r\nstrange thing, though: had a run again in 860, both opponent and me were tied for greatest power, both we had Triumph of Cruelty out on the battlefield...\r\n\r\nmy Triumph triggered, his did not.\r\n\r\nnow in 862, same situation - both triggered...",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 21, 2014 19:28:01_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Opponent played Triumph of Cruelty while I had an Echo Mage with 4 Level Counters (2/4)) in play. He had an unkicked Ardent Soldier (1/2 Vigilance), 2 Human Soldier Tokens (1/1) and a Woodland Changeling (2/2) present.\r\nEnd of turn.\r\nMy turn - passing, doing nothing.\r\nHis upkeep: Ability was put on stack\r\n\"player discards a  card if Mini Max controls the creature with the greatest power or tied for the greatest power\"\r\nQuick glance over the power values: Woodland Changeling 2 - Echo Mage 2 - tied.\r\nExpected output: I should have been prompted to discard a card\r\nWhat happened: ability resolves, I didn't have to discard. What version of the product are you using? On what operating system? magarena 1.48.860 - linux Zorin 8 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=531_",
+  "date": "2014-03-21T19:28:01",
+  "state": "closed",
+  "gid": 531,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=531",
+  "owner": "ShawnieBoyUK"
+}

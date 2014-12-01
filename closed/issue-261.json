@@ -1,0 +1,30 @@
+{
+  "status": "wontfix",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Maybe that's a new rule? But I have 1 red mana to start the spell, but none left for X. But still, I think I should be able to cast a 0 damage earthquake. I am trying to pair this with Balefire Liege for the 3 pt damage for casting a red spell. What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)",
+  "title": "Cant cast 0 damage Earthquake",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "July 20, 2012 05:04:16",
+      "body": "Sort of, this is a house rule of Magarena, see https://code.google.com/p/magarena/wiki/GameRules\n\n**Status:** WontFix  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 23, 2012 06:22:55",
+      "body": "Thanks, see that now. Cool game, still enjoying very much!\n\n\nFrom: \"magarena@googlecode.com\" <magarena@googlecode.com>\nTo: clayton.berry@ymail.com \nSent: Friday, July 20, 2012 8:04 AM\nSubject: Re: Issue 261 in magarena: Cant cast 0 damage Earthquake",
+      "author": "[clayton....@ymail.com](https://code.google.com/u/115389003795609959110/)"
+    }
+  ],
+  "content": "_From [clayton....@ymail.com](https://code.google.com/u/115389003795609959110/) on July 20, 2012 09:38:39_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? Maybe that's a new rule? But I have 1 red mana to start the spell, but none left for X. But still, I think I should be able to cast a 0 damage earthquake. I am trying to pair this with Balefire Liege for the 3 pt damage for casting a red spell. What version of the product are you using? On what operating system? 1.26\r\nWindows 7 If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=261_",
+  "date": "2012-07-20T09:38:39",
+  "state": "closed",
+  "gid": 261,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=261",
+  "owner": ""
+}

@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Reported by pete.b...@gmail.com, Dec 30, 2010\r\nRepro:\r\n\r\nComputer attacking with Godhead of Awe (4/4) and TukTuk the Returned token (1/1 due to Godhead).  I blocked Godhead with two Dragon tokens from a Dragonmaster Outcast, where each token was equipped with a Bonesplitter (3/1 each) and TukTuk the Returned with another Dragon token (1/1).  All of my blockers had first strike due to Bloodmark Mentor.  The computer gave Godhead of Awe first strike with Rise of the Hobgoblins.\r\n\r\nResult:\r\n\r\nBoth of the 3/1 Dragon tokens and the Godhead of Awe go to the graveyard, as does the 1/1 Dragon token.  But the TukTuk the Redeemed token does not, despite the fact that it took lethal first strike damage.  Instead, it reverts back to 5/5 with one point of damage.\r\n\r\nExpected:\r\n\r\nBoth of the 3/1 Dragon tokens, the Godhead of Awe, and the TukTuk the Redeemed token should go to the graveyard.  The rules state, in 704.3, that \"the game checks for any of the listed conditions for state-based actions, then performs all applicable state-based actions simultaneously as a single event.\"  Because they are performed simultaneously and all of these creatures have lethal damage on them after first strike damage is dealt, there is no chance for 613.4 to recalculate the power and toughness when the Godhead of Awe is put into the graveyard as part of resolving 704.5g before TukTuk is also sent to the graveyard.\r\n\r\nConfiguration:\r\n\r\nMagarena v1.5\r\nJava build 1.60.0_23.b05\r\nWindows Vista\r\n\r\n\r\nComment 1 by project member ubeefx, Dec 31, 2010\r\nI like the detailed description! Thanks.\r\n\r\nThe Godhead of Awe is sure a tricky creature to implement.\r\nThere was another bug report involving the interaction of Godhead of Awe and for instance Aven Mimeomancer, requiring timestamps, but unfortunately that would require several changes to fix so I added that to the rule differences instead.\r\n\r\nIt is correct that combat is not handled as single event right now.\r\nThe same is also valid for effects that deal X damage to all creatures.\r\nI will see how to improve that for next release.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Problem in interaction between 704.3/704.5g and 613.4",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 13, 2011 21:35:10",
+      "body": "This issue was closed by revision 405cfa7b9c39 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:25:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 20, 2011 13:56:44_\n\nReported by pete.b...@gmail.com, Dec 30, 2010\r\nRepro:\r\n\r\nComputer attacking with Godhead of Awe (4/4) and TukTuk the Returned token (1/1 due to Godhead).  I blocked Godhead with two Dragon tokens from a Dragonmaster Outcast, where each token was equipped with a Bonesplitter (3/1 each) and TukTuk the Returned with another Dragon token (1/1).  All of my blockers had first strike due to Bloodmark Mentor.  The computer gave Godhead of Awe first strike with Rise of the Hobgoblins.\r\n\r\nResult:\r\n\r\nBoth of the 3/1 Dragon tokens and the Godhead of Awe go to the graveyard, as does the 1/1 Dragon token.  But the TukTuk the Redeemed token does not, despite the fact that it took lethal first strike damage.  Instead, it reverts back to 5/5 with one point of damage.\r\n\r\nExpected:\r\n\r\nBoth of the 3/1 Dragon tokens, the Godhead of Awe, and the TukTuk the Redeemed token should go to the graveyard.  The rules state, in 704.3, that \"the game checks for any of the listed conditions for state-based actions, then performs all applicable state-based actions simultaneously as a single event.\"  Because they are performed simultaneously and all of these creatures have lethal damage on them after first strike damage is dealt, there is no chance for 613.4 to recalculate the power and toughness when the Godhead of Awe is put into the graveyard as part of resolving 704.5g before TukTuk is also sent to the graveyard.\r\n\r\nConfiguration:\r\n\r\nMagarena v1.5\r\nJava build 1.60.0_23.b05\r\nWindows Vista\r\n\r\n\r\nComment 1 by project member ubeefx, Dec 31, 2010\r\nI like the detailed description! Thanks.\r\n\r\nThe Godhead of Awe is sure a tricky creature to implement.\r\nThere was another bug report involving the interaction of Godhead of Awe and for instance Aven Mimeomancer, requiring timestamps, but unfortunately that would require several changes to fix so I added that to the rule differences instead.\r\n\r\nIt is correct that combat is not handled as single event right now.\r\nThe same is also valid for effects that deal X damage to all creatures.\r\nI will see how to improve that for next release.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=7_",
+  "date": "2011-05-20T13:56:44",
+  "state": "closed",
+  "gid": 7,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=7",
+  "owner": "melvinzh...@gmail.com"
+}

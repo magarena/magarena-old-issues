@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Enchant Target Creatur 2. 3. What is the expected output? What do you see instead? Everything looks normal, an ability just doesn't appl What version of the product are you using? On what operating system? Version 1.18 on Windows XP and Vista Please provide any additional information below. Enchanted creature should gain defender, but it doesn't.",
+  "author": "[tjohnson...@gmail.com](https://code.google.com/u/104640295609337470789/)",
+  "title": "Guard Duty's Ability Doesn't Work",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "October 03, 2011 21:44:30",
+      "body": "Thank you for the report.\r\n\r\nIn version 1.18 we made some significant changes to the way enchantments and equipment functions. This unfortunately introduced a bug that was reported in issue 61 .\r\nThe fix for that issue also fixed the bug you mentioned.\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [tjohnson...@gmail.com](https://code.google.com/u/104640295609337470789/) on October 04, 2011 03:45:06_\n\nWhat steps will reproduce the problem? 1. Enchant Target Creatur 2. 3. What is the expected output? What do you see instead? Everything looks normal, an ability just doesn't appl What version of the product are you using? On what operating system? Version 1.18 on Windows XP and Vista Please provide any additional information below. Enchanted creature should gain defender, but it doesn't.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=67_",
+  "date": "2011-10-04T03:45:06",
+  "state": "closed",
+  "gid": 67,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=67",
+  "owner": ""
+}

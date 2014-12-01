@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "Reported by HuggyBaby on the forum:\r\n\r\nOn the right, my 6/9 is about to kill a 3/3...\r\nAfter resolving, the 3/3 is dead and my 6/9 switches places with the 4/11.\r\n\r\nThat confused me when it happened. Hey, where did my card go?   The card should always stay in its column shouldn't it, just like real life?",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "order of blockers may change after combat",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "August 19, 2011 19:39:41",
+      "body": "comment by ubeefx on forum:\r\nThis behaviour is explainable. \r\nDue to the card sorting, when the blocker is no longer attached to an attacker, the order can change. \r\nSo to fix this the sort ordering will need to be changed.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 20, 2011 19:45:14",
+      "body": "**Summary:** order of blockers may change after combat  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "September 12, 2011 05:06:24",
+      "body": "This issue was closed by revision 2472ffa6c50f .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on August 20, 2011 10:39:20_\n\nReported by HuggyBaby on the forum:\r\n\r\nOn the right, my 6/9 is about to kill a 3/3...\r\nAfter resolving, the 3/3 is dead and my 6/9 switches places with the 4/11.\r\n\r\nThat confused me when it happened. Hey, where did my card go?   The card should always stay in its column shouldn't it, just like real life?\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=44_",
+  "date": "2011-08-20T10:39:20",
+  "state": "closed",
+  "gid": 44,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=44",
+  "owner": "melvinzh...@gmail.com"
+}

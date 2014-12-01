@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have at least one charge counter on Umezawa's Jitte\r\n2. Have at least 2 untapped mana.\r\n3. Try to use Umezawa's Jittes ability to gain life in first or second main phase. What is the expected output? What do you see instead? To have all 4 buttons for the abilities (Equip, +2/+2, -1/-1, life +2), but the gain life button is not present. What version of the product are you using? On what operating system? 1.27 on WinXP SP3",
+  "author": "[Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/)",
+  "title": "Problem with Umezawa's Jitte",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "January 06, 2014 15:24:34",
+      "body": "Gain life button currently present 1.45",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "January 06, 2014 19:40:07",
+      "body": "Thanks for the helping to check! Marking this as fixed.\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/) on July 31, 2012 21:07:25_\n\nWhat steps will reproduce the problem? 1. Have at least one charge counter on Umezawa's Jitte\r\n2. Have at least 2 untapped mana.\r\n3. Try to use Umezawa's Jittes ability to gain life in first or second main phase. What is the expected output? What do you see instead? To have all 4 buttons for the abilities (Equip, +2/+2, -1/-1, life +2), but the gain life button is not present. What version of the product are you using? On what operating system? 1.27 on WinXP SP3\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=267_",
+  "date": "2012-07-31T21:07:25",
+  "state": "closed",
+  "gid": 267,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=267",
+  "owner": ""
+}

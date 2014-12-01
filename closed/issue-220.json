@@ -1,0 +1,25 @@
+{
+  "status": "wontfix",
+  "body": "What steps will reproduce the problem? 1. Start a Duel\r\n2. Start a game\r\n3. Sometime you get asked if you want to Mulligan, sometimes not..\r\n\r\nWhat is the expected output? \r\nAsk at the start of every game if you want to Mulligan. What version of the product are you using? On what operating system? 1.26 on WinXP SP3 32-bit",
+  "author": "[Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/)",
+  "title": "option to Mulligan not in every game",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "June 08, 2012 00:16:27",
+      "body": "Thanks for the report.\r\n\r\nThe option to take a mulligan is disabled when using generated decks. This is because generated decks use a smart shuffle routine that makes sure you get a decent opening hand.\n\n**Status:** WontFix  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/) on June 07, 2012 23:19:32_\n\nWhat steps will reproduce the problem? 1. Start a Duel\r\n2. Start a game\r\n3. Sometime you get asked if you want to Mulligan, sometimes not..\r\n\r\nWhat is the expected output? \r\nAsk at the start of every game if you want to Mulligan. What version of the product are you using? On what operating system? 1.26 on WinXP SP3 32-bit\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=220_",
+  "date": "2012-06-07T23:19:32",
+  "state": "closed",
+  "gid": 220,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=220",
+  "owner": ""
+}

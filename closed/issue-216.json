@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "DeckUtils.loadDeck should deal with errors/exceptions encountered while parsing the deck. Currently any exceptions would lead to the termination of the while program.\r\n\r\nShow a message to user that dec file is in an invalid format instead of crashing the program.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "handle errors while loading decks",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 11, 2013 06:38:53",
+      "body": "see also Issue 387 .",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 15, 2013 15:56:41",
+      "body": "This appears to have been fixed at some point. I have tried to load a dec file that I have deliberately messed up and each time it displays a parse error and refuses to load the deck, which is what you would expect. Tested using 1.44.\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 17, 2012 14:15:19_\n\nDeckUtils.loadDeck should deal with errors/exceptions encountered while parsing the deck. Currently any exceptions would lead to the termination of the while program.\r\n\r\nShow a message to user that dec file is in an invalid format instead of crashing the program.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=216_",
+  "date": "2012-05-17T14:15:19",
+  "state": "closed",
+  "gid": 216,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=216",
+  "owner": "melvinzh...@gmail.com"
+}

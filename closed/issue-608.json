@@ -1,0 +1,40 @@
+{
+  "status": "wontfix",
+  "body": "V1.49 of Magarena is impossible to start, because my antivirus (AVast 9 free edition, with up-to-date signatures) detects a malware (Win32:Malware.Gen) in \"Magarena.exe\".\r\n\r\nIt's been almost one month that i have that problem (signatures in antivirus are updated every day, and it still warn and block me).\r\n\r\nNo problem with Magarena V1.48, that works fine...",
+  "author": "[marcjero...@gmail.com](https://code.google.com/u/105934027594611189275/)",
+  "title": "Virus/Malware in Magarena v1.49 ?",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "May 31, 2014 01:57:53",
+      "body": "99% sure it is a false positive. Magarena.exe is just a convenience for Windows that lets you run a java program directly. You can also launch it using \"java -Xms256M -Xmx512M -jar Magarena.exe\" from the command line or as a batch file.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "May 31, 2014 05:23:40",
+      "body": "Recent scan of the 1.49 Magarena.exe https://www.metascan-online.com/en/scanresult/file/3d1c36b2fde34d43b12d5d4f68b53d59 On a side note, if you've used the AVast forums, they've been hacked recently, so I'd change your passwords.",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "May 31, 2014 05:30:42",
+      "body": "Ok, Metascan is prettier, but their links don't last - https://www.virustotal.com/uk/file/bd66d225a3a27021ed87e83e669486d5848c332ef61aa822742220ad91797ddc/analysis/1401539268/ See issue 458\n\n**Status:** WontFix  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "May 31, 2014 05:35:13",
+      "body": "Hi, i can't do what you say because \"magarena.exe\" is erased as soon as i try to access it. So, the command line doesn't work...\r\nI only write in this forum to inform you that an heuristic signature in \"magarena.exe\" is known as a virus (and i hope it's false positive !). At the moment, i keep v1.48 and it's fine.",
+      "author": "[marcjero...@gmail.com](https://code.google.com/u/105934027594611189275/)"
+    }
+  ],
+  "content": "_From [marcjero...@gmail.com](https://code.google.com/u/105934027594611189275/) on May 31, 2014 16:28:47_\n\nV1.49 of Magarena is impossible to start, because my antivirus (AVast 9 free edition, with up-to-date signatures) detects a malware (Win32:Malware.Gen) in \"Magarena.exe\".\r\n\r\nIt's been almost one month that i have that problem (signatures in antivirus are updated every day, and it still warn and block me).\r\n\r\nNo problem with Magarena V1.48, that works fine...\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=608_",
+  "date": "2014-05-31T16:28:47",
+  "state": "closed",
+  "gid": 608,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=608",
+  "owner": ""
+}

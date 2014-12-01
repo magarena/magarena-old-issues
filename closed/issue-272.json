@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Start a new Duel with random deck or some of the premade ones.\r\n2. No Chance to take mulligan What is the expected output? What do you see instead? At every game have the chance to take a mulligan What version of the product are you using? On what operating system? 1.28 on WinXP SP3\r\n\r\nTwo examples where a mulligan would have helped.\r\nI had a game with a 2 color deck and had only spells/creatures of one color and lands of the other color in hand.\r\nOther time I had no creatures, only enchantments and lands. (with the GW_Aura_Fun_40.dec).\r\nAt both situations I was at a so big disadvantage that I lost clearly (no draw luck either).\r\nSo, those times a mulligan would have been very nice to have.",
+  "author": "[Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/)",
+  "title": "Mulligan",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 26, 2012 01:13:09",
+      "body": "Currently mulligan is not available for randomly generated decks by design as we use a custom deck shuffler for these decks. However, as you mentioned our current method of shuffling the deck could lead to situations where you have enough land but not of the right color. We will enable mulligan for all decks.\n\n**Status:** Accepted  \n  **Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 26, 2012 01:37:50",
+      "body": "This issue was closed by revision c618211f7620 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Jak1...@gmail.com](https://code.google.com/u/112622755219524898050/) on August 11, 2012 21:14:24_\n\nWhat steps will reproduce the problem? 1. Start a new Duel with random deck or some of the premade ones.\r\n2. No Chance to take mulligan What is the expected output? What do you see instead? At every game have the chance to take a mulligan What version of the product are you using? On what operating system? 1.28 on WinXP SP3\r\n\r\nTwo examples where a mulligan would have helped.\r\nI had a game with a 2 color deck and had only spells/creatures of one color and lands of the other color in hand.\r\nOther time I had no creatures, only enchantments and lands. (with the GW_Aura_Fun_40.dec).\r\nAt both situations I was at a so big disadvantage that I lost clearly (no draw luck either).\r\nSo, those times a mulligan would have been very nice to have.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=272_",
+  "date": "2012-08-11T21:14:24",
+  "state": "closed",
+  "gid": 272,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=272",
+  "owner": ""
+}

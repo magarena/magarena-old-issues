@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "I've read your comment on Siren of the Silent Song. \r\nMaybe you'll like this one better:\r\n\r\n.txt\r\n\r\nname=Siren of the Silent Song\r\nurl= http://magiccards.info/query?q=%21siren%20of%20the%20silent%20song image= http://mtgimage.com/card/siren%20of%20the%20silent%20song.jpg value=3.854\r\nrarity=U\r\ntype=Creature\r\nsubtype=Zombie,Siren\r\ncost={1}{U}{B}\r\npt=2/1\r\nability=flying\r\ntiming=main\r\nrequires_groovy_code\r\n\r\n.groovy\r\n[\r\n    new MagicWhenBecomesUntappedTrigger() {\r\n        @Override\r\n        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent untapped) {\r\n            return (permanent == untapped) ?\r\n                new MagicEvent(\r\n                    permanent,\r\n                    permanent.getOpponent(),\r\n                    MagicTargetChoice.TARGET_CARD_FROM_HAND,\r\n                    this,\r\n                    \"Opponent discards a card, then puts the top card of his or her library into his or her graveyard.\"\r\n                ) :\r\n                MagicEvent.NONE;\r\n        }\r\n        @Override\r\n        public void executeEvent(final MagicGame game, final MagicEvent event) {\r\n            event.processTargetCard(game, {\r\n                final MagicCard targetCard ->\r\n\t        game.doAction(new MagicDiscardCardAction(event.getPlayer(),targetCard));\r\n                game.doAction(new MagicMillLibraryAction(event.getPlayer(),1));\r\n            });\r\n        }\r\n    }\r\n]",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "fix Siren of the Silent Song",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 07, 2014 01:22:29",
+      "body": "This issue was closed by revision 1fdc6347129f .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "April 07, 2014 01:23:12",
+      "body": "Thanks, this is better. For a more description message, \"Opponent discards\" can be replaced with \"PN discards\" and the game will fill in the opponent's name.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on April 07, 2014 16:04:21_\n\nI've read your comment on Siren of the Silent Song. \r\nMaybe you'll like this one better:\r\n\r\n.txt\r\n\r\nname=Siren of the Silent Song\r\nurl= http://magiccards.info/query?q=%21siren%20of%20the%20silent%20song image= http://mtgimage.com/card/siren%20of%20the%20silent%20song.jpg value=3.854\r\nrarity=U\r\ntype=Creature\r\nsubtype=Zombie,Siren\r\ncost={1}{U}{B}\r\npt=2/1\r\nability=flying\r\ntiming=main\r\nrequires_groovy_code\r\n\r\n.groovy\r\n[\r\n    new MagicWhenBecomesUntappedTrigger() {\r\n        @Override\r\n        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent untapped) {\r\n            return (permanent == untapped) ?\r\n                new MagicEvent(\r\n                    permanent,\r\n                    permanent.getOpponent(),\r\n                    MagicTargetChoice.TARGET_CARD_FROM_HAND,\r\n                    this,\r\n                    \"Opponent discards a card, then puts the top card of his or her library into his or her graveyard.\"\r\n                ) :\r\n                MagicEvent.NONE;\r\n        }\r\n        @Override\r\n        public void executeEvent(final MagicGame game, final MagicEvent event) {\r\n            event.processTargetCard(game, {\r\n                final MagicCard targetCard ->\r\n\t        game.doAction(new MagicDiscardCardAction(event.getPlayer(),targetCard));\r\n                game.doAction(new MagicMillLibraryAction(event.getPlayer(),1));\r\n            });\r\n        }\r\n    }\r\n]\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=581_",
+  "date": "2014-04-07T16:04:21",
+  "state": "closed",
+  "gid": 581,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=581",
+  "owner": ""
+}

@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "see http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=153489#p153452 for details and logs.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Version 1.5 crashes upon entering new game",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 03, 2014 10:05:50",
+      "body": "According to the crash log the culprit is TransparentImagePanel and its use of RescaleOp. See http://stackoverflow.com/questions/18222891/rescaleop-does-not-work-according-to-docs and http://stackoverflow.com/questions/9612677/java-buffered-image-rescaleop-transparency-issue for possibly related discussion.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 03, 2014 10:07:40",
+      "body": "OP seems to have resolved the issue by doing a clean install (ie. re-downloading all the images again).",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 03, 2014 10:23:01",
+      "body": "Possible fix - https://bitbucket.org/lodici/magarena/commits/a6026b39ec6be5d686e49267b9ddcdf798d9bba5 .\r\n\r\nThis does not use RescaleOp, the cause of the original error.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 03, 2014 12:10:59",
+      "body": "**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on June 04, 2014 00:53:47_\n\nsee http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=153489#p153452 for details and logs.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=609_",
+  "date": "2014-06-04T00:53:47",
+  "state": "closed",
+  "gid": 609,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=609",
+  "owner": "lodici123"
+}

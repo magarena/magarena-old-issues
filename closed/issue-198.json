@@ -1,0 +1,36 @@
+{
+  "status": "wontfix",
+  "body": "Please provide any additional information below. This is just an enhancement request.\r\n\r\nIt would be nice if there was a filter in the deck editor that would filter the cards by their sets, so you can see just cards that are standard or extended, etc.\r\n\r\nThank you",
+  "author": "[Comix...@gmail.com](https://code.google.com/u/100880791201746159829/)",
+  "title": "Would love to see a filter in the deck editor for sets",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement",
+    "wontfix"
+  ],
+  "comments": [
+    {
+      "date": "May 08, 2012 06:53:51",
+      "body": "Sorry for the lack of attention on this issue, it somehow slipped below the radar it seems.\r\n\r\nIt is possible to filter cards by format (standard,extended,etc) in the New Duel screen by choosing a different Cube.\r\nBut maybe you want to filter by expansion (Magic 2012,Dark Ascension,etc)? In that case, well we don't store that information at the moment but it would certainly be possible to download such info and use it as a filter.\r\n\r\nConsider this something we will look in to.\n\n**Status:** Accepted  \n  **Labels:** -Type-Defect -Priority-Medium Type-Enhancement Priority-Low  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "November 15, 2013 17:37:26",
+      "body": "Categorized as UI\n\n**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 04, 2013 06:00:06",
+      "body": "If set information is not available then it is not possible and I don't believe there are any plans to include such information in future. Therefore I have updated to WontFix.\n\n**Status:** WontFix  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    }
+  ],
+  "content": "_From [Comix...@gmail.com](https://code.google.com/u/100880791201746159829/) on March 29, 2012 12:32:54_\n\nPlease provide any additional information below. This is just an enhancement request.\r\n\r\nIt would be nice if there was a filter in the deck editor that would filter the cards by their sets, so you can see just cards that are standard or extended, etc.\r\n\r\nThank you\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=198_",
+  "date": "2012-03-29T12:32:54",
+  "state": "closed",
+  "gid": 198,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=198",
+  "owner": ""
+}

@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": ">What is the expected output? What do you see instead?\r\n\r\nI noticed that Hedge Troll's outline is green despite my only unused land being a forest. I clicked on it, an successfully regenerated it. What version of the product are you using? On what operating system? Magarena 1.39 on Debian Linux (Wheezy). Fresh install of Magarena, except literally the one directory with images which I copied by hand. If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder).",
+  "author": "[jaze...@gmail.com](https://code.google.com/u/102707833900773093014/)",
+  "title": "(1.39) Hedge Troll uses G instead of W for regeneration",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "July 02, 2013 03:02:34",
+      "body": "This issue was closed by revision f248de1800e7 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "July 02, 2013 03:03:00",
+      "body": "Thanks for catching this. Fixed for next release.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [jaze...@gmail.com](https://code.google.com/u/102707833900773093014/) on June 30, 2013 22:30:06_\n\n>What is the expected output? What do you see instead?\r\n\r\nI noticed that Hedge Troll's outline is green despite my only unused land being a forest. I clicked on it, an successfully regenerated it. What version of the product are you using? On what operating system? Magarena 1.39 on Debian Linux (Wheezy). Fresh install of Magarena, except literally the one directory with images which I copied by hand. If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder).\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=359_",
+  "date": "2013-06-30T22:30:06",
+  "state": "closed",
+  "gid": 359,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=359",
+  "owner": ""
+}

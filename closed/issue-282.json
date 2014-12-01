@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Provide a *cheat* command that would allow to look inside AI's hand. It could be initiated as a separate, \"devel\" or training duel type. It would be very useful for highlighting AI's dumb behavior, for instance. Speaking of revealing in general, I would like to examine AI's hand when the game is decided, and a top cards of each library.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Allow player to see AI's hand",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "March 02, 2013 17:42:28",
+      "body": "This issue was closed by revision db9bed367134 .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on August 26, 2012 23:40:31_\n\nProvide a *cheat* command that would allow to look inside AI's hand. It could be initiated as a separate, \"devel\" or training duel type. It would be very useful for highlighting AI's dumb behavior, for instance. Speaking of revealing in general, I would like to examine AI's hand when the game is decided, and a top cards of each library.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=282_",
+  "date": "2012-08-26T23:40:31",
+  "state": "closed",
+  "gid": 282,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=282",
+  "owner": "melvinzh...@gmail.com"
+}

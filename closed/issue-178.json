@@ -1,0 +1,29 @@
+{
+  "status": "cantreproduce",
+  "body": "sponeta @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=84303#p84294 writes\r\n\r\nComputer played Parallax Nexus and used its ability. The info box said \"Choose a card from your hand\", but none of the cards in my hand were highlighted, and I couldn't choose any, therefore preventing the game from continuing. Parallax Nexus works fine when I use it against the computer. I had turned on \"Remove unusual target choices\", so maybe that affected it.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Computer played Parallax Nexus and game became stuck",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 05, 2012 08:03:06",
+      "body": "I can not reproduce this. Regardless of what the \"Remove unusual target choices\" option was set to, I could choose a card.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 29, 2012 20:31:16",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on March 05, 2012 23:28:24_\n\nsponeta @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=84303#p84294 writes\r\n\r\nComputer played Parallax Nexus and used its ability. The info box said \"Choose a card from your hand\", but none of the cards in my hand were highlighted, and I couldn't choose any, therefore preventing the game from continuing. Parallax Nexus works fine when I use it against the computer. I had turned on \"Remove unusual target choices\", so maybe that affected it.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=178_",
+  "date": "2012-03-05T23:28:24",
+  "state": "closed",
+  "gid": 178,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=178",
+  "owner": "melvinzh...@gmail.com"
+}

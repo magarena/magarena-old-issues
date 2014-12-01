@@ -1,0 +1,29 @@
+{
+  "status": "cantreproduce",
+  "body": "What steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? seen on opponent's side, he played Juggernaut, I used my turn to ready the defenses, next turn Juggernaut did not attack What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.",
+  "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)",
+  "title": "Juggernaut: although it is forced to attack each turn, if able, it does not",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "April 09, 2014 08:07:42",
+      "body": "It seems to be fixed by now. Both opponents as well as mine did attack each turn.\r\n\r\nI think this.issue can be closed",
+      "author": "[Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/)"
+    },
+    {
+      "date": "April 09, 2014 18:38:53",
+      "body": "**Status:** CantReproduce  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    }
+  ],
+  "content": "_From [Landhotel.Westerwald](https://code.google.com/u/Landhotel.Westerwald/) on March 23, 2014 00:08:20_\n\nWhat steps will reproduce the problem? 1. 2. 3. What is the expected output? What do you see instead? seen on opponent's side, he played Juggernaut, I used my turn to ready the defenses, next turn Juggernaut did not attack What version of the product are you using? On what operating system? If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=543_",
+  "date": "2014-03-23T00:08:20",
+  "state": "closed",
+  "gid": 543,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=543",
+  "owner": ""
+}

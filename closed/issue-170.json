@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. I have Sulfur Falls (tap for {R} or {U}) and Vivid Marsh (tap: {B}; tap and remove counter: any color) in play and untapped.\r\n2. I play Maritime Guard (cost: {1}{U}).\r\n3. Computer automatically chooses to charge {U} to Vivid Marsh (for counter) and {1} to Sulfur Falls. What is the expected output? What do you see instead? I expected to be prompted as to which land to tap for {U}. This would have allowed me to use Sulfur Falls, and preserve a counter on Vivid Marsh. Instead, there was no prompt and Vivid Marsh lost one counter. What version of the product are you using? On what operating system? Magarena 1.23 on WinXP",
+  "author": "[i...@tandetnik.org](https://code.google.com/u/100964988663965718405/)",
+  "title": "Computer automatically takes counter from Vivid Marsh, though another land is available",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 29, 2012 03:42:40",
+      "body": "Thanks for the report.\r\n\r\nThis is caused by my change in revision 6e31eed92e07 . I'll have a look if I can somehow make the code take vivid lands into account or else I'll undo my change since it only makes things more convenient but leads to the bug you describe.\n\n**Status:** Accepted  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 29, 2012 06:08:56",
+      "body": "This issue was closed by revision 5bc65b305b2e .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 29, 2012 06:13:28",
+      "body": "If the next mana source has charge counters on it then the game will prompt the user which source to use. Note that it can still happen that in the above scenario the game automatically uses both sources but only if the first choice is the source without counters.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [i...@tandetnik.org](https://code.google.com/u/100964988663965718405/) on February 27, 2012 22:42:41_\n\nWhat steps will reproduce the problem? 1. I have Sulfur Falls (tap for {R} or {U}) and Vivid Marsh (tap: {B}; tap and remove counter: any color) in play and untapped.\r\n2. I play Maritime Guard (cost: {1}{U}).\r\n3. Computer automatically chooses to charge {U} to Vivid Marsh (for counter) and {1} to Sulfur Falls. What is the expected output? What do you see instead? I expected to be prompted as to which land to tap for {U}. This would have allowed me to use Sulfur Falls, and preserve a counter on Vivid Marsh. Instead, there was no prompt and Vivid Marsh lost one counter. What version of the product are you using? On what operating system? Magarena 1.23 on WinXP\n\n**Attachment:** [vivid-marsh-before.PNG vivid-marsh-after.PNG](http://code.google.com/p/magarena/issues/detail?id=170)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=170_",
+  "date": "2012-02-27T22:42:41",
+  "state": "closed",
+  "gid": 170,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=170",
+  "owner": ""
+}

@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "suggested by Huggybaby on the forum:\r\n\r\nThe colored border is OK, but it should be an option because the highlight is also very good. The highlight color should not be fixed by the game. If the theme maker makes an unusable theme, with an unorganized palette and bad color choices, it is his responsibility. I find most of the themes available now pretty to look at---but unusable---because there is so much distracting artwork that I can't see the cards well. (I usually use the Wood theme.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "provide option for themes to choose whether to use colored border or overlay to highlight usable cards",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 09, 2011 00:24:32",
+      "body": "So it's back to loading choiceColor from the theme instead of fixed red/green?\r\nI suggest something like 'option_use_overlay=true' in theme.properties. Does that sound intuitive?",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 10, 2011 06:19:27",
+      "body": "option_use_overlay=true sounds good. Yeah, back to loading the color from the theme.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 10, 2011 10:21:44",
+      "body": "There is now an option 'option_use_overlay' that defaults to false.\r\nIt's been reported that the bordered color is hard to see on some themes, so I still need to check the current themes and maybe set the option to 'true' on some.\n\n**Status:** Started  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 11, 2011 10:14:41",
+      "body": "All themes, except for the felt theme, now use the colored overlay to highlight cards. Just needs an update to the wiki.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 12, 2011 01:55:59",
+      "body": "updated wiki\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 30, 2011 12:39:56_\n\nsuggested by Huggybaby on the forum:\r\n\r\nThe colored border is OK, but it should be an option because the highlight is also very good. The highlight color should not be fixed by the game. If the theme maker makes an unusable theme, with an unorganized palette and bad color choices, it is his responsibility. I find most of the themes available now pretty to look at---but unusable---because there is so much distracting artwork that I can't see the cards well. (I usually use the Wood theme.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=38_",
+  "date": "2011-07-30T12:39:56",
+  "state": "closed",
+  "gid": 38,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=38",
+  "owner": "melvinzh...@gmail.com"
+}

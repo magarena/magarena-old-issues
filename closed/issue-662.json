@@ -1,0 +1,40 @@
+{
+  "status": "verified",
+  "body": "...to a link under the Themes dropdown in the preferences dialog.",
+  "author": "[lodici123](https://code.google.com/u/lodici123/)",
+  "title": "Move \"More Themes Online\" option from Settings menu...",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Low",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 29, 2014 02:55:02",
+      "body": "fixed in https://bitbucket.org/lodici/magarena/commits/52bcfb1642ebc5ff15b6fcd2caa0f365067bc177 .\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 03:52:49",
+      "body": "I hate google. Whenever a task is \"Fixed\" I would expect it to disappear from my list of \"open\" tasks. Sometimes it does and sometimes (as in this case) it doesn't. I hate google.\n\n**Status:** Done  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:22:58",
+      "body": "Google assumes a separate QA team that can verify any fixes by Development.\r\n\r\nI might go on a verification mission...",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [lodici123](https://code.google.com/u/lodici123/) on August 21, 2014 14:39:48_\n\n...to a link under the Themes dropdown in the preferences dialog.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=662_",
+  "date": "2014-08-21T14:39:48",
+  "state": "closed",
+  "gid": 662,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=662",
+  "owner": "lodici123"
+}

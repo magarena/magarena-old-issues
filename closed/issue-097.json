@@ -1,0 +1,30 @@
+{
+  "status": "invalid",
+  "body": "Huggybaby posted @ http://www.slightlymagic.net/forum/viewtopic.php?t=3735&p=75453#p75453 I couldn't play my Basilisk Collar on my opponent's Keening Banshee. So I took control of it with Mark of Mutiny. At the end of my turn when control reverted, the artifact stayed on the creature and I was unable to reattach the Basilisk Collar to one of my creatures.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "unable to reattach equipment after control reverted",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug",
+    "invalid"
+  ],
+  "comments": [
+    {
+      "date": "November 23, 2011 01:36:43",
+      "body": "I think this is correct behavior. The equipment stays attached to Keening Banshee until the owner of the equipment decides to attach it to another creature. I did a test and was able to equip Basilisk Collar once it was my turn again.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "January 07, 2012 04:16:59",
+      "body": "I'm closing this because every relevant info I can find about the above situation suggests that the current behavior is the right one.\n\n**Status:** Invalid  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on November 23, 2011 11:35:37_\n\nHuggybaby posted @ http://www.slightlymagic.net/forum/viewtopic.php?t=3735&p=75453#p75453 I couldn't play my Basilisk Collar on my opponent's Keening Banshee. So I took control of it with Mark of Mutiny. At the end of my turn when control reverted, the artifact stayed on the creature and I was unable to reattach the Basilisk Collar to one of my creatures.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=97_",
+  "date": "2011-11-23T11:35:37",
+  "state": "closed",
+  "gid": 97,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=97",
+  "owner": "melvinzh...@gmail.com"
+}

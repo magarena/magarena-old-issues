@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "Attaching patch to support Return to Ravnica's Stealer of Secrets.",
+  "author": "[nad...@gmail.com](https://code.google.com/u/108639406225975804166/)",
+  "title": "Card: Stealer of Secrets",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 07, 2012 21:19:06",
+      "body": "Thanks for the contribution :) Merged in https://code.google.com/p/magarena/source/detail?r=b3b83cb60aa7bd14778687f48e9f9deb1b28162d\n\n**Status:** Fixed  \n  **Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "November 07, 2012 21:22:56",
+      "body": "Hi,\n\nI'm currently testing the support I just added for Dispel (had to create a new \"instant spell\" target).\n\nIs submitting cards as tickets what you guys would like to see or is there a more efficient way to go about it?",
+      "author": "[nad...@gmail.com](https://code.google.com/u/108639406225975804166/)"
+    },
+    {
+      "date": "November 07, 2012 21:28:54",
+      "body": "Hmm, the preferred way would be to create a clone @ https://code.google.com/p/magarena/source/clones then push your changes to the clone. \r\n\r\nWhen the change is ready, just request for a merge with an issue or by posting to our mailing list, magarena@googlegroups.com",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [nad...@gmail.com](https://code.google.com/u/108639406225975804166/) on November 08, 2012 11:11:11_\n\nAttaching patch to support Return to Ravnica's Stealer of Secrets.\n\n**Attachment:** [Stealer_of_Secrets.patch](http://code.google.com/p/magarena/issues/detail?id=303)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=303_",
+  "date": "2012-11-08T11:11:11",
+  "state": "closed",
+  "gid": 303,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=303",
+  "owner": ""
+}

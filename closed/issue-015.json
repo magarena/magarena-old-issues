@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Currently adding cards require making changes to a number of different source files, ideally the changes should be more localized.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "refactor the code base to make it easier to add cards",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "June 09, 2011 01:09:23",
+      "body": "done, now when loading card definitions, the engine tries to load them from magic.card.card_name where card_name is the card's name with ' and <space> replaced with _\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:25:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on May 26, 2011 22:08:00_\n\nCurrently adding cards require making changes to a number of different source files, ideally the changes should be more localized.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=15_",
+  "date": "2011-05-26T22:08:00",
+  "state": "closed",
+  "gid": 15,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=15",
+  "owner": "melvinzh...@gmail.com"
+}

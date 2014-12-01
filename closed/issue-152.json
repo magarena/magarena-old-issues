@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Have a deck with Dreads in it playing against a deck with Hedron Crabs.\r\n2. Get the Dreads put into the graveyard by a Crab's landfall ability. What is the expected output? What do you see instead? Dread should be shuffled back into your library. Instead it remains in the graveyard. What version of the product are you using? On what operating system? 1.22, Mac OS 10.6.",
+  "author": "[manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/)",
+  "title": "Dread (and other Incarnations?) doesn't get reshuffled into library when milled",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 03, 2012 23:26:40",
+      "body": "Thanks for the report.\r\n\r\nI can confirm this happens. It's because the game only evaluates cards on the battlefield. So when Dread moves from the battlefield to the graveyard, it will get shuffled back into the library. When it moves from the library to the graveyard, abilities are never read so there is nothing to trigger.\r\nThis was most likely done as a way to lower the number of options the AI has to consider and it's why we don't support casting from the graveyard and effects like that. Cards like Dread and Vigor shouldn't have been added for the above reason.\r\n\r\nThe best solution IMHO would be to remove those two cards, because adding support for them would be a major undertaking and might not be possible without sacrificing AI speed.\n\n**Status:** Accepted  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 04, 2012 19:27:54",
+      "body": "Actually we do support \"when X enters the graveyard\" triggers, seems that our implementation misses the case when a card enters the graveyard from the library. In particular, for Dread and other incarnations, the trigger does not require any decisions to be made so there is no effect on AI. We probably should fix them.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 16, 2012 06:50:17",
+      "body": "This issue was closed by revision f84bfd8e7529 .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 16, 2012 06:52:49",
+      "body": "I stand corrected.\r\n\r\nThe issue was caused by MagicMillLibraryAction manipulating the library and graveyard directly instead of using MagicMoveCardAction which is needed to trigger Dread's effect.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [manve.he...@gmail.com](https://code.google.com/u/107839499302741838633/) on February 04, 2012 08:21:49_\n\nWhat steps will reproduce the problem? 1. Have a deck with Dreads in it playing against a deck with Hedron Crabs.\r\n2. Get the Dreads put into the graveyard by a Crab's landfall ability. What is the expected output? What do you see instead? Dread should be shuffled back into your library. Instead it remains in the graveyard. What version of the product are you using? On what operating system? 1.22, Mac OS 10.6.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=152_",
+  "date": "2012-02-04T08:21:49",
+  "state": "closed",
+  "gid": 152,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=152",
+  "owner": ""
+}

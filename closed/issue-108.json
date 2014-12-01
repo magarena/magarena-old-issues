@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "body": "Gold counters from Aurification doesn't displayed on creatures they put on.",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Show all counter types in graphics mode",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "December 03, 2011 04:27:53",
+      "body": "The gold counters and quite a few other icons are only shown in text mode. I know this is far from ideal and I'll have a look at showing more icons in graphics mode.\r\n\r\nIt's not a bug though so I'll change this into an enhancement request.\n\n**Summary:** Show all counter types in graphics mode  \n  **Labels:** -Type-Defect Type-Enhancement  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 04, 2011 07:14:54",
+      "body": "revision 2af6bbfa8a3c added feather and gold counters.\r\n\r\nPlusOne and MinusOne must show the number of counters but the icons we use now aren't good for that.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 06, 2011 06:42:43",
+      "body": "How about this icon and text? Could be a bit better readable I guess.\n\n**Attachment:** [plusone_preview.png](http://code.google.com/p/magarena/issues/detail?id=108#hc3)",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "February 04, 2012 22:56:35",
+      "body": "Looks good, the forum would be a good place to get some feedback from other users.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "February 08, 2012 05:05:29",
+      "body": "This issue was closed by revision 5048f5121e9b .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on December 02, 2011 17:07:10_\n\nGold counters from Aurification doesn't displayed on creatures they put on.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=108_",
+  "date": "2011-12-02T17:07:10",
+  "state": "closed",
+  "gid": 108,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=108",
+  "owner": ""
+}

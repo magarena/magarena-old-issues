@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "body": "What steps will reproduce the problem? 1. Play \"Scorch the Fields\"\r\n2. Destroy target land 3. What is the expected output? What do you see instead? Expected: \"Scorch the Fields\" should destroy target land, then deal 1 damage to all Human creatures.\r\n\r\nWhat I get: It destroys the land, but it doesn't deal the damage. What version of the product are you using? On what operating system? I am using Magarena 1.25 on Windows 7 Ultimate If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. Scorch the Fields was the last thing to be played before the computer attacked at the end of the log",
+  "author": "[tjohnson...@gmail.com](https://code.google.com/u/104640295609337470789/)",
+  "title": "Scorch the Fields doesn't deal its damage",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "May 10, 2012 00:47:01",
+      "body": "This issue was closed by revision 8d844c49243d .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "May 10, 2012 00:50:42",
+      "body": "Thanks for the report.\r\n\r\nScorch the Fields was mistakenly only targeting humans controlled by its controller. Now it correctly targets every human on the battlefield.\r\n\r\nI'm pretty confident that my change fixes your issue but I'm surprised that, when reading through the game.log, it seems there were no human creatures in play when Scorch the Fields was cast.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "May 10, 2012 07:12:03",
+      "body": "If you mean that you don't see any Humans, there was one. The computer controlled a Lifesmith (Creature - Human Artificer).\r\n\r\nIf you mean that the game wasn't recognizing it as a Human, I'm just wondering why that would happen?",
+      "author": "[tjohnson...@gmail.com](https://code.google.com/u/104640295609337470789/)"
+    },
+    {
+      "date": "May 10, 2012 07:35:18",
+      "body": "I meant I didn't see any Humans in play while the spell was cast. I was mistaken as I see the Lifesmith now.\r\n\r\nMy fix is correct but my description of the problem wrongly states \"only targeting humans controlled by its controller\" but the bug was that damage was only done to humans controlled by the opponent. The game.log confirms this is what happened.\r\n\r\nSo anyway, thanks again for the report. Another bug squashed!",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [tjohnson...@gmail.com](https://code.google.com/u/104640295609337470789/) on May 10, 2012 01:13:36_\n\nWhat steps will reproduce the problem? 1. Play \"Scorch the Fields\"\r\n2. Destroy target land 3. What is the expected output? What do you see instead? Expected: \"Scorch the Fields\" should destroy target land, then deal 1 damage to all Human creatures.\r\n\r\nWhat I get: It destroys the land, but it doesn't deal the damage. What version of the product are you using? On what operating system? I am using Magarena 1.25 on Windows 7 Ultimate If you are reporting a game play bug, please attach your game.log file. If you are reporting a crash, please attach both crash.log and game.log files (both files are found in the main game folder). Please provide any additional information below. Scorch the Fields was the last thing to be played before the computer attacked at the end of the log\n\n**Attachment:** [game.log](http://code.google.com/p/magarena/issues/detail?id=214)\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=214_",
+  "date": "2012-05-10T01:13:36",
+  "state": "closed",
+  "gid": 214,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=214",
+  "owner": ""
+}

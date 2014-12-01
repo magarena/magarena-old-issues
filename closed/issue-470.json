@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "body": "Use 'Tower of the Magistrate' to give a creature protection from artifacts.\r\nYou can then still target it with cards like 'Dragon Blood' and 'Vial of Poison'",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Given Protection from Artifacts still allows Artifact Target",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "February 01, 2014 17:15:10",
+      "body": "This issue was closed by revision 19a2bb86395f .\n\n**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:55",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on February 02, 2014 05:25:22_\n\nUse 'Tower of the Magistrate' to give a creature protection from artifacts.\r\nYou can then still target it with cards like 'Dragon Blood' and 'Vial of Poison'\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=470_",
+  "date": "2014-02-02T05:25:22",
+  "state": "closed",
+  "gid": 470,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=470",
+  "owner": ""
+}

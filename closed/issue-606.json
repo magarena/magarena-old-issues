@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "body": "In the Card Explorer and Deck Editor, cards (artifacts) with a mana cost of {0} are lost amongst the land cards. They also don't show a {0} mana cost symbol.\r\n\r\nA cost=null should be separated from cost={0}",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Mana cost {0} not showing clearly in Card Explorer",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "June 03, 2014 12:09:09",
+      "body": "fix: https://bitbucket.org/lodici/magarena/commits/3b72bc99d6e0763fc66daf7b723daac5517881a9\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "June 03, 2014 13:26:08",
+      "body": "Nice work - Although there's still some cost=null cards slipping through the net and being given a mana cost of {0} (Going the other way now, hehe), although they might just be because they are also in the scripts_missing folder.\r\n\r\nFor example, Lotus Bloom, Ghastly Haunting, Evermind. Suspend, Flip and 'awkward' cards respectively :)",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    },
+    {
+      "date": "August 29, 2014 04:29:37",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on May 31, 2014 06:50:31_\n\nIn the Card Explorer and Deck Editor, cards (artifacts) with a mana cost of {0} are lost amongst the land cards. They also don't show a {0} mana cost symbol.\r\n\r\nA cost=null should be separated from cost={0}\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=606_",
+  "date": "2014-05-31T06:50:31",
+  "state": "closed",
+  "gid": 606,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=606",
+  "owner": "ShawnieBoyUK"
+}

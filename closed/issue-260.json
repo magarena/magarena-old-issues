@@ -1,0 +1,40 @@
+{
+  "status": "verified",
+  "body": "requested by mecheng @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3700&p=93195#p92428 when playing a duel, the program asks you to pick a deck – either random or pre-constructed, but doesn’t seem to be a way to pick one we have created and saved – that would be a nice option. Yes, you can get there eventually, but save some clicking around.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Load custom deck in \"New duel\" dialog",
+  "labels": [
+    "imported",
+    "Component-UI",
+    "Priority-High",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "November 15, 2013 17:41:18",
+      "body": "**Labels:** Component-UI  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "December 04, 2013 06:33:29",
+      "body": "Completely agree so have increased priority.\n\n**Labels:** -Priority-Medium Priority-High  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "March 14, 2014 00:12:49",
+      "body": "Fixed in build 1.48.831 ( http://buildhive.cloudbees.com/job/melvinzhang/job/magarena/ ).\n\n**Status:** Fixed  \n",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on July 15, 2012 11:29:28_\n\nrequested by mecheng @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3700&p=93195#p92428 when playing a duel, the program asks you to pick a deck – either random or pre-constructed, but doesn’t seem to be a way to pick one we have created and saved – that would be a nice option. Yes, you can get there eventually, but save some clicking around.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=260_",
+  "date": "2012-07-15T11:29:28",
+  "state": "closed",
+  "gid": 260,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=260",
+  "owner": "melvinzh...@gmail.com"
+}

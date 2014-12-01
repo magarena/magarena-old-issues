@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "body": "sponeta @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=84303#p84294 writes:\r\n\r\nCopying any creature or spell that has \"shuffle X into owner's library\" puts a copy of that card into the library. For example, if I cast Beacon of Unrest and copy it with Twincast, two copies of Beacon of Unrest get added into my library. Same with creatures, like Dread copied with Kiki-Jiki, Mirror Breaker.",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "Copying any creature or spell that has \"shuffle X into owner's library\" puts a copy of that card into the library",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "March 05, 2012 07:45:17",
+      "body": "Revision 03e6b277def1 fixed the issue where a copy of Beacon of Unrest end up in the library.\r\n\r\nI can not reproduce this issue with Dread copied with Kiki-Jiki, Mirror Breaker. I end up with only one Dread in the library. This makes sense since MagicFromGraveyardToLibraryTrigger checks for tokens.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "September 29, 2012 20:30:40",
+      "body": "**Status:** Fixed  \n",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 29, 2014 04:28:13",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on March 05, 2012 23:36:12_\n\nsponeta @ http://www.slightlymagic.net/forum/viewtopic.php?f=82&t=3735&p=84303#p84294 writes:\r\n\r\nCopying any creature or spell that has \"shuffle X into owner's library\" puts a copy of that card into the library. For example, if I cast Beacon of Unrest and copy it with Twincast, two copies of Beacon of Unrest get added into my library. Same with creatures, like Dread copied with Kiki-Jiki, Mirror Breaker.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=181_",
+  "date": "2012-03-05T23:36:12",
+  "state": "closed",
+  "gid": 181,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=181",
+  "owner": "melvinzh...@gmail.com"
+}

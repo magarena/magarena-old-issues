@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "body": "same as popup delay",
+  "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)",
+  "title": "make delay for stack to resolve configurable",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "enhancement"
+  ],
+  "comments": [
+    {
+      "date": "August 11, 2011 10:10:06",
+      "body": "A change for this has been committed.\r\nThe default, min, max are open for suggestions. Also needs a different icon?\n\n**Status:** Started  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 11, 2011 18:43:27",
+      "body": "I suggest the following\n\ndefault: 2s\nmin: 0s\nmax: 3s\nresolution: 0.5s\n\neg 0, 0.5, 1, 1.5, 2, 2.5, 3\n\nI think we can use the same icon as the pop up delay.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "August 12, 2011 01:40:29",
+      "body": "fixed by <a href=\"/p/magarena/source/detail?r=4502c445e527\"> revision 4502c445e527 </a>\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:42",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/) on August 05, 2011 13:14:24_\n\nsame as popup delay\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=41_",
+  "date": "2011-08-05T13:14:24",
+  "state": "closed",
+  "gid": 41,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=41",
+  "owner": "melvinzh...@gmail.com"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "duplicate",
+  "body": "I could be just missing the point entirely, but it looks as though the Tribal Mono and Ability Mono generators require an additional color selection.\r\n\r\nBoth are defaulting to black, which I'm assuming is because '{B}' is the first color alphabetically. Either that or something's going on with the RNG.",
+  "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)",
+  "title": "Deck Generators",
+  "labels": [
+    "imported",
+    "Priority-Low",
+    "bug",
+    "duplicate"
+  ],
+  "comments": [
+    {
+      "date": "September 13, 2014 21:12:57",
+      "body": "Might be worth re-opening Issue 446 - see comment #6.",
+      "author": "[lodici123](https://code.google.com/u/lodici123/)"
+    },
+    {
+      "date": "September 13, 2014 21:35:11",
+      "body": "**Status:** Duplicate  \n  **Mergedinto:** 446  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/) on September 14, 2014 12:05:16_\n\nI could be just missing the point entirely, but it looks as though the Tribal Mono and Ability Mono generators require an additional color selection.\r\n\r\nBoth are defaulting to black, which I'm assuming is because '{B}' is the first color alphabetically. Either that or something's going on with the RNG.\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=691_",
+  "date": "2014-09-14T12:05:16",
+  "state": "closed",
+  "gid": 691,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=691",
+  "owner": ""
+}

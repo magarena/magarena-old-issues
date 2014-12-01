@@ -1,0 +1,54 @@
+{
+  "status": "verified",
+  "body": "When spell had no legal targets on resolve (Nantuko Husk \"sacrificed himself\") it's put into hand instead of graveyard, according to rule 702.25a - \"If the buyback cost was paid, put this spell into its owner‘s\r\nhand instead of into that player‘s graveyard AS IT Resolves\".",
+  "author": "[OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/)",
+  "title": "Mind Games - Buyback",
+  "labels": [
+    "imported",
+    "Priority-Medium",
+    "bug"
+  ],
+  "comments": [
+    {
+      "date": "December 05, 2011 06:40:20",
+      "body": "Agreed.\r\nThe current behavior is indeed wrong. I'm working on this.\n\n**Status:** Started  \n  **Owner:** BeHold...@gmail.com  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 05, 2011 07:09:06",
+      "body": "This issue was closed by revision 55aec10fec8d .\n\n**Status:** Fixed  \n",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 05, 2011 07:11:35",
+      "body": "Changed every occurrence where the bug could occur. I did not change buyback cards where the target is a player since in a two player game there will either be a player or the game is over.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 05, 2011 07:12:04",
+      "body": "Forgot to say ..\r\n\r\nThanks again for spotting this bug :D",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "December 05, 2011 22:25:43",
+      "body": "Probably should handle it for player as well since it is possible that a player has the \"cannot be the target of spells and abilities\" effect due to Spirit of the Heath.",
+      "author": "[melvinzh...@gmail.com](https://code.google.com/u/108278210804167927868/)"
+    },
+    {
+      "date": "December 06, 2011 00:27:44",
+      "body": "I didn't think of that, thanks melvin. revision 307e108995 added two buyback cards that target a player and Corpse Dance because it returns the top creature card of player's graveyard and could have no valid target.\r\n\r\nThe only buyback cards that were not changed (because they do not target) are:\r\nEvincar's Justice, Lab Rats and Whispers of the Muse.",
+      "author": "[BeHold...@gmail.com](https://code.google.com/u/116281131070537299190/)"
+    },
+    {
+      "date": "August 29, 2014 04:27:43",
+      "body": "**Status:** Verified  \n",
+      "author": "[ShawnieBoyUK](https://code.google.com/u/ShawnieBoyUK/)"
+    }
+  ],
+  "content": "_From [OLEGtheK...@gmail.com](https://code.google.com/u/106579007142717194127/) on December 05, 2011 21:48:15_\n\nWhen spell had no legal targets on resolve (Nantuko Husk \"sacrificed himself\") it's put into hand instead of graveyard, according to rule 702.25a - \"If the buyback cost was paid, put this spell into its owner‘s\r\nhand instead of into that player‘s graveyard AS IT Resolves\".\n\n_Original issue: http://code.google.com/p/magarena/issues/detail?id=118_",
+  "date": "2011-12-05T21:48:15",
+  "state": "closed",
+  "gid": 118,
+  "link": "http://code.google.com/p/magarena/issues/detail?id=118",
+  "owner": "BeHold...@gmail.com"
+}
